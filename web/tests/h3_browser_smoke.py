@@ -64,7 +64,8 @@ def main() -> None:
             page.wait_for_function("state.csrf && state.scenarios.length >= 18")
             page.locator("#catalog-open").click()
             page.locator("#open-templates").click()
-            assert page.locator("#catalog-list .scenario-item").count() == page.evaluate("state.scenarios.length")
+            page.locator('[data-template-folder="simple"]').click()
+            assert page.locator("#catalog-list .scenario-item").count() == page.evaluate("state.scenarios.filter(s => !s.real_elevation).length")
             page.locator(".scenario-item").filter(has_text="S00").click()
             page.wait_for_function("state.mapReady && state.scene?.scenario_id === 'S00_smoke_rgb'")
             assert page.locator("#catalog-list .terrain-catalog-group").count() == 2

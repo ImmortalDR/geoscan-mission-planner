@@ -19,7 +19,7 @@ with sync_playwright() as pw:
  try:
   p.goto(args.url,wait_until='domcontentloaded');p.locator('#username').fill(args.username);p.locator('#access-code').fill(os.environ['GMP_ACCESS_CODE']);p.locator('#login-form button[type=submit]').click()
   p.wait_for_function('state.csrf && state.scene && !state.sceneLoading && !state.busy')
-  p.locator('#catalog-open').click();p.locator('#open-templates').click();p.locator('[data-template-id="S00_smoke_rgb"]').click()
+  p.locator('#catalog-open').click();p.locator('#open-templates').click();p.locator('[data-template-folder="simple"]').click();p.locator('[data-template-id="S00_smoke_rgb"]').click()
   p.wait_for_function('state.scene?.scenario_id==="S00_smoke_rgb" && state.mapReady && !state.sceneLoading && !state.busy')
   p.get_by_role('button',name='Job_0',exact=True).click()
   assert p.locator('.object-entry.active').count()==1

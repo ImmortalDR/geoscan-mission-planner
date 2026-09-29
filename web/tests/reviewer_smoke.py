@@ -80,6 +80,9 @@ def main():
                         if role == "admin":
                             page.locator("#catalog-open").click()
                             page.locator("#open-templates").click()
+                            assert page.locator('[data-template-folder="complex"]').get_attribute("aria-pressed") == "true"
+                            assert page.locator("#catalog-list .scenario-item").count() == 10
+                            page.locator('[data-template-folder="simple"]').click()
                             page.locator(".scenario-item").filter(has_text="S00").click()
                             page.wait_for_function("state.scene?.scenario_id === 'S00_smoke_rgb'")
                             page.wait_for_timeout(1000)

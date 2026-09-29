@@ -38,6 +38,8 @@ def main():
         def open_template(scenario="S00_smoke_rgb"):
             page.locator('#catalog-open').click()
             page.locator('#open-templates').click()
+            folder = page.evaluate("id => state.scenarios.find(s => s.id === id).real_elevation ? 'complex' : 'simple'", scenario)
+            page.locator(f'[data-template-folder="{folder}"]').click()
             old = page.evaluate('state.scene?.id')
             page.locator(f'[data-template-id="{scenario}"]').click()
             page.wait_for_function('data => state.scene?.scenario_id === data.scenario && state.scene.id !== data.old && !state.sceneLoading && !state.busy', arg={"old": old, "scenario": scenario})

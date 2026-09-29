@@ -33,6 +33,7 @@ def main():
             page.wait_for_function("state.csrf && state.scenarios.length >= 18")
             page.locator("#catalog-open").click()
             page.locator("#open-templates").click()
+            page.locator('[data-template-folder="simple"]').click()
             page.locator(".scenario-item").filter(has_text="S00").click()
             page.wait_for_function("state.scene?.scenario_id === 'S00_smoke_rgb'")
             created.append(page.evaluate("state.scene.id"))
