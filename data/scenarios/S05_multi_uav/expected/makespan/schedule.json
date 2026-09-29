@@ -1,0 +1,24 @@
+[
+  {
+    "id": "U01_S1",
+    "uav_id": "U01",
+    "index": 1,
+    "start_site": "WEST",
+    "landing_site": "WEST",
+    "t_start": "2026-06-15T08:30:00+03:00",
+    "t_end": "2026-06-15T08:41:45.234111+03:00",
+    "flight_time_s": 705.234111,
+    "distance_m": 6734.809611262585
+  },
+  {
+    "id": "U02_S1",
+    "uav_id": "U02",
+    "index": 1,
+    "start_site": "EAST",
+    "landing_site": "EAST",
+    "t_start": "2026-06-15T08:30:00+03:00",
+    "t_end": "2026-06-15T08:45:32.988006+03:00",
+    "flight_time_s": 932.988006,
+    "distance_m": 8548.989314574692
+  }
+]

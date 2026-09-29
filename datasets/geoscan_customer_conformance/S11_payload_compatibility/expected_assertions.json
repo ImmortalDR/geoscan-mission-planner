@@ -1,0 +1,5 @@
+{
+  "expected_status": "SAFE",
+  "payload_compatibility_violations": 0,
+  "all_jobs_assigned_exactly_once": true
+}

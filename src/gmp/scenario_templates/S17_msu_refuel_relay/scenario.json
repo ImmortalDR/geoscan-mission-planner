@@ -1,0 +1,20 @@
+{
+  "id": "S17_msu_refuel_relay",
+  "title": "МГУ: дозарядка по пути к другой базе",
+  "objectives": [
+    "makespan",
+    "total_flight"
+  ],
+  "expected_status": "SAFE",
+  "role": "refuel_relay",
+  "fleet_count": 2,
+  "real_elevation": true,
+  "purpose_ru": "Геоскан 201 снимает RGB, Геоскан 401 — LiDAR. Четыре сложные области, старт на западной базе, дозарядка только на центральной, финиш на восточной.",
+  "catalog_badge_ru": "2 БВС · промежуточная дозарядка",
+  "checks": {
+    "minimum_used_uavs": 2,
+    "minimum_sorties": 3,
+    "different_start_end": true,
+    "required_refuel_site": "Base_1"
+  }
+}

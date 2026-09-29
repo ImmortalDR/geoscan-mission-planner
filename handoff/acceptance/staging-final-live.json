@@ -1,0 +1,4120 @@
+{
+  "schema": "geoscan.h3.live_acceptance.v1",
+  "url": "http://127.0.0.1:8092",
+  "started_at": "2026-09-22T08:20:17.492678+00:00",
+  "mode": "live",
+  "planner_budget_s": 40.0,
+  "timeout_per_case_s": 600.0,
+  "seed": 20260918,
+  "cases": [
+    {
+      "scenario_id": "S00_smoke_rgb",
+      "objective": "makespan",
+      "scene_id": "3a35d5c16e1c40ad8fcb79c15f9ef9d2",
+      "started_at": "2026-09-22T08:20:17.763827+00:00",
+      "expected_status": "SAFE",
+      "passed": true,
+      "status": "SAFE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "SAFE"
+        },
+        {
+          "stage": "complete",
+          "message": "SAFE"
+        }
+      ],
+      "plan_id": "f8a4d6102086498cb54b7a85769e3539",
+      "elapsed_s": 8.366,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "live_candidate_provenance": true,
+        "canonical_pipeline": true,
+        "standalone_h2": true,
+        "certificate_present": true,
+        "certificate_result_hash": true,
+        "certificate_input_hash": true
+      },
+      "metrics": {
+        "distance_m": 9811.905241550214,
+        "total_flight_s": 1165.8749918937683,
+        "makespan_s": 1165.8749918937683,
+        "airborne_span_s": 1165.8749918937683,
+        "coverage_percent": 100.0,
+        "required_area_m2": 800000.0000011409,
+        "covered_area_m2": 800000.0000011409,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 800000.0000011409,
+            "covered_area_m2": 800000.0000011409,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "validation": {
+        "passed": true,
+        "status": "SAFE",
+        "violations": [],
+        "metrics": {
+          "distance_m": 9811.905241550214,
+          "total_flight_s": 1165.8749918937683,
+          "makespan_s": 1165.8749918937683,
+          "airborne_span_s": 1165.8749918937683,
+          "coverage_percent": 100.0,
+          "required_area_m2": 800000.0000011409,
+          "covered_area_m2": 800000.0000011409,
+          "sortie_count": 1,
+          "per_job": {
+            "JOB_RGB": {
+              "required_area_m2": 800000.0000011409,
+              "covered_area_m2": 800000.0000011409,
+              "coverage_percent": 100.0
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "SAFE",
+        "certificate": {
+          "schema": "geoscan.h3.certificate.v1",
+          "validator_version": "geoscan.h3.validator.v1",
+          "validator_source_sha256": "93fba1af646f88e65acd07e3b236b8747b6c0dd90c0aa4055395bf53cfdf8aee",
+          "validator_gate_source_sha256": "dfeb2630b00d1c3b857734e483c833ba8c3e7140f971067c8f67497fcf8bd523",
+          "software_versions": {
+            "python": "3.12.3",
+            "numpy": "1.26.4",
+            "shapely": "2.0.7",
+            "pyproj": "3.8.0",
+            "rasterio": "1.3.11"
+          },
+          "issued_at": "2026-09-22T08:20:25.109159+00:00",
+          "plan_id": "f8a4d6102086498cb54b7a85769e3539",
+          "scene_id": "S00_smoke_rgb",
+          "objective": "makespan",
+          "status": "SAFE",
+          "input_sha256": "d698083afe6a015b0de7f3dc59ad84ec1ddf4d1ff857c9eeae9deff54b1c0187",
+          "input_files_sha256": {
+            "metadata.json": "31996cd4ee611d3965984a240c6d50877a13fd638d28d82bf92072e26f7de3a7",
+            "mission.json": "4de55f0d6ea6ce1643edc15e61e5ac90243cea9b6a6b36f82ce175f90475ce2a",
+            "fleet.json": "6fd2468441a1372d6167329753ced9a72ce958783299e943ea5ea8b607acabad",
+            "payload_catalog.json": "c449324cfa3e5596a0f448f9a45cab9573755f4175d6520af18da17378bff71d",
+            "survey_areas.geojson": "bc4384650a05a6aa8129ecf26096527606ad0655e48efa07b9f02a49dad3083a",
+            "allowed_airspace.geojson": "d4b90a014cac012b05be782d0c2f6572b9a9abbc29e1da8927112f9ce8bd385f",
+            "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "landing_sites.geojson": "d2d1ef7f426bb69b356b81dd02e5f0ec46a6f8a3abcc4e8ce6e79958be7b24f6",
+            "dem.tif": "95f8dbf94836bf7aeca016b9f9a93f8c00b64a71261abb1f0dedde4406d6ec7b"
+          },
+          "result_sha256": "32b997c095cac01676a966e0c21e92fde7bea290b8d28670bc6fcbdd43b4bb09",
+          "metrics": {
+            "distance_m": 9811.905241550214,
+            "total_flight_s": 1165.8749918937683,
+            "makespan_s": 1165.8749918937683,
+            "airborne_span_s": 1165.8749918937683,
+            "coverage_percent": 100.0,
+            "required_area_m2": 800000.0000011409,
+            "covered_area_m2": 800000.0000011409,
+            "sortie_count": 1,
+            "per_job": {
+              "JOB_RGB": {
+                "required_area_m2": 800000.0000011409,
+                "covered_area_m2": 800000.0000011409,
+                "coverage_percent": 100.0
+              }
+            },
+            "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+            "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+          },
+          "coverage_policy": {
+            "required_fraction": 1.0,
+            "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+            "input_fractional_tolerance_does_not_relax_service_coverage": true
+          },
+          "checks": [
+            "input_schema",
+            "original_required_coverage",
+            "full_segment_airspace",
+            "raster_cell_surface_clearance",
+            "continuous_temporal_airspace",
+            "continuous_pairwise_separation",
+            "resource_and_landing_suffix",
+            "payload_gsd",
+            "site_roles",
+            "service_and_mission_windows",
+            "wind_limits",
+            "declared_survey_turn_buffers",
+            "metric_claims"
+          ],
+          "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+          "not_checked": [
+            "discrete_photo_front_overlap",
+            "side_overlap_quality",
+            "aircraft_dynamics",
+            "off_track_sensor_terrain_occlusion",
+            "real_operational_permissions",
+            "global_optimality"
+          ],
+          "fingerprint_sha256": "b3c91ef5ee50751fefa93c18a977b7a9cf4d85d474cd2e319e645eca8d48454e"
+        },
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:20:25.109159+00:00",
+        "input_sha256": "d698083afe6a015b0de7f3dc59ad84ec1ddf4d1ff857c9eeae9deff54b1c0187",
+        "result_sha256": "32b997c095cac01676a966e0c21e92fde7bea290b8d28670bc6fcbdd43b4bb09"
+      },
+      "diagnosis": {
+        "h2_status": "FEASIBLE",
+        "unassigned": [],
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "requires_h3_validation": true
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "canonical h1_coverage.run_h1_scene -> standalone h2.planner.plan_bundle -> independent H3 gate",
+        "pipeline": "h1_coverage -> h2 -> h3",
+        "planner_module": "h2.planner",
+        "h2_input_sha256": "c3b66a19d200f2b31b5ddf2c7923ab41f4151a624eb8fcf984a313f31fd97de5",
+        "candidate_requires_independent_check": true,
+        "candidate_service_status": "FEASIBLE",
+        "candidate_service_reasons": [],
+        "input_sha256": "d698083afe6a015b0de7f3dc59ad84ec1ddf4d1ff857c9eeae9deff54b1c0187",
+        "input_files_sha256": {
+          "metadata.json": "31996cd4ee611d3965984a240c6d50877a13fd638d28d82bf92072e26f7de3a7",
+          "mission.json": "4de55f0d6ea6ce1643edc15e61e5ac90243cea9b6a6b36f82ce175f90475ce2a",
+          "fleet.json": "6fd2468441a1372d6167329753ced9a72ce958783299e943ea5ea8b607acabad",
+          "payload_catalog.json": "c449324cfa3e5596a0f448f9a45cab9573755f4175d6520af18da17378bff71d",
+          "survey_areas.geojson": "bc4384650a05a6aa8129ecf26096527606ad0655e48efa07b9f02a49dad3083a",
+          "allowed_airspace.geojson": "d4b90a014cac012b05be782d0c2f6572b9a9abbc29e1da8927112f9ce8bd385f",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "d2d1ef7f426bb69b356b81dd02e5f0ec46a6f8a3abcc4e8ce6e79958be7b24f6",
+          "dem.tif": "95f8dbf94836bf7aeca016b9f9a93f8c00b64a71261abb1f0dedde4406d6ec7b"
+        },
+        "h1_bundle_schema": "gmp.h1_h2.v1",
+        "h1_bundle_sha256": "c3b66a19d200f2b31b5ddf2c7923ab41f4151a624eb8fcf984a313f31fd97de5",
+        "h1_task_geometry_sha256": "1e587ce790705565569328e672bff925b1f1b860dce8072b4b8b9164542c5435",
+        "h2_plan_schema": "h2.plan.v1",
+        "h2_plan_sha256": "93a9f65307dfe1f92fee107e81e3ad9deb83de67bbe3ad2d1c43108f1362b9e2",
+        "h2_status": "FEASIBLE",
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "h2_unassigned": [],
+        "h2_settings": {
+          "objective": "makespan",
+          "time_budget_s": 40.0,
+          "seed": 20260918,
+          "max_iterations": 200,
+          "cpsat": true,
+          "deconflict": true,
+          "survey_speed_factor": 1.0,
+          "multirotor_turn_s": 6.0,
+          "vertical_speed_ms": 3.0,
+          "sample_step_m": 20.0,
+          "task_windows": {},
+          "task_service_s": {}
+        },
+        "h2_solver_log": [
+          {
+            "stage": "greedy",
+            "elapsed_s": 0.11711081198882312,
+            "objective_value": 1165.874991549508,
+            "unassigned_count": 0
+          }
+        ],
+        "h2_deconfliction": {
+          "before": [],
+          "remaining": [],
+          "ladder_actions": [],
+          "ladder_used": []
+        },
+        "h2_assumptions": [
+          "linear time resource model",
+          "fixed-wing launch/landing scheduling envelopes; H3 checks manoeuvres",
+          "Obstacles are avoided horizontally at every altitude",
+          "Temporal restrictions conservatively block the full sortie interval at every altitude"
+        ],
+        "seed": 20260918,
+        "planner_time_budget_s": 40.0,
+        "waypoint_step_m": 20,
+        "waypoint_phase_semantics": "incoming segment",
+        "position_interpolation": "linear metric X/Y and AMSL between timestamps",
+        "dem_sampling": "containing raster cell",
+        "metric_crs": 32637,
+        "planning_profiles": [
+          {
+            "id": "RGB",
+            "gsd_limit_cm": 3.0,
+            "planning_gsd_cm": 3.0,
+            "camera": {
+              "image_width_px": 6000,
+              "image_height_px": 4000,
+              "focal_length_mm": 16,
+              "pixel_pitch_um": 3.9
+            }
+          }
+        ],
+        "h1_task_count": 1,
+        "h1_config": {
+          "nfz_buffer_m": 30.0,
+          "allowed_inset_m": 20.0,
+          "coverage_pass_percent": 99.9,
+          "angle_step_deg": 15.0,
+          "keep_candidates": 4,
+          "max_tasks_per_job": 80,
+          "strict_coverage": false,
+          "crosswind_weight": 1.0,
+          "headland_m": 0.0,
+          "terrain_strict": false
+        },
+        "h1_warnings": [
+          "site BASE: outside survey area (+50m slack)",
+          "site RESERVE: outside survey area (+50m slack)"
+        ]
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "SAFE",
+        "metrics": {
+          "makespan_s": {
+            "actual": 1165.8749918937683,
+            "reference": 1165.8751769065857,
+            "delta": -0.0001850128173828125,
+            "delta_percent": -1.5869007338650663e-05
+          },
+          "total_flight_s": {
+            "actual": 1165.8749918937683,
+            "reference": 1165.8751769065857,
+            "delta": -0.0001850128173828125,
+            "delta_percent": -1.5869007338650663e-05
+          },
+          "distance_m": {
+            "actual": 9811.905241550214,
+            "reference": 9811.905241550212,
+            "delta": 1.8189894035458565e-12,
+            "delta_percent": 1.8538595295876188e-14
+          },
+          "coverage_percent": {
+            "actual": 100.0,
+            "reference": 100.0,
+            "delta": 0.0,
+            "delta_percent": 0.0
+          }
+        },
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": "b3c91ef5ee50751fefa93c18a977b7a9cf4d85d474cd2e319e645eca8d48454e",
+      "recommendations": [],
+      "finished_at": "2026-09-22T08:20:26.130162+00:00"
+    },
+    {
+      "scenario_id": "S01_msu_100km2",
+      "objective": "makespan",
+      "scene_id": "e254356fdfd644d89fcce8f6d75dc81f",
+      "started_at": "2026-09-22T08:20:26.218271+00:00",
+      "expected_status": "SAFE",
+      "passed": true,
+      "status": "SAFE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "SAFE"
+        },
+        {
+          "stage": "complete",
+          "message": "SAFE"
+        }
+      ],
+      "plan_id": "eb2e59fbbbd549d2a4b11e513bcc39b0",
+      "elapsed_s": 90.868,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "live_candidate_provenance": true,
+        "canonical_pipeline": true,
+        "standalone_h2": true,
+        "certificate_present": true,
+        "certificate_result_hash": true,
+        "certificate_input_hash": true
+      },
+      "metrics": {
+        "distance_m": 298583.3859935488,
+        "total_flight_s": 14362.248302936554,
+        "makespan_s": 8114.943068027496,
+        "airborne_span_s": 8114.943068027496,
+        "coverage_percent": 100.0,
+        "required_area_m2": 100000000.00000146,
+        "covered_area_m2": 100000000.00000146,
+        "sortie_count": 2,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 100000000.00000146,
+            "covered_area_m2": 100000000.00000146,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "validation": {
+        "passed": true,
+        "status": "SAFE",
+        "violations": [],
+        "metrics": {
+          "distance_m": 298583.3859935488,
+          "total_flight_s": 14362.248302936554,
+          "makespan_s": 8114.943068027496,
+          "airborne_span_s": 8114.943068027496,
+          "coverage_percent": 100.0,
+          "required_area_m2": 100000000.00000146,
+          "covered_area_m2": 100000000.00000146,
+          "sortie_count": 2,
+          "per_job": {
+            "JOB_RGB": {
+              "required_area_m2": 100000000.00000146,
+              "covered_area_m2": 100000000.00000146,
+              "coverage_percent": 100.0
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "SAFE",
+        "certificate": {
+          "schema": "geoscan.h3.certificate.v1",
+          "validator_version": "geoscan.h3.validator.v1",
+          "validator_source_sha256": "93fba1af646f88e65acd07e3b236b8747b6c0dd90c0aa4055395bf53cfdf8aee",
+          "validator_gate_source_sha256": "dfeb2630b00d1c3b857734e483c833ba8c3e7140f971067c8f67497fcf8bd523",
+          "software_versions": {
+            "python": "3.12.3",
+            "numpy": "1.26.4",
+            "shapely": "2.0.7",
+            "pyproj": "3.8.0",
+            "rasterio": "1.3.11"
+          },
+          "issued_at": "2026-09-22T08:21:52.405141+00:00",
+          "plan_id": "eb2e59fbbbd549d2a4b11e513bcc39b0",
+          "scene_id": "S01_msu_100km2",
+          "objective": "makespan",
+          "status": "SAFE",
+          "input_sha256": "d6271140e225d686852e2a4c020f12d4aa191bd688244e9cc872d7f0164c3eba",
+          "input_files_sha256": {
+            "metadata.json": "22986b3c88809f771a345fdee6576796c23f65414994b86946ac9646a8b0b65b",
+            "mission.json": "1821ec91509f499552c99d109b7f76589484076e743d9b6dd773017c02e15c72",
+            "fleet.json": "a169064080f6926d9e3c712dc4173ef0900f18db9f2643908e45b9e0a3291df0",
+            "payload_catalog.json": "1dc1e21c51919bf4e0858a4dde0e75b358aec719f7404a1ee1f711e0c8466530",
+            "survey_areas.geojson": "a1a7dee1ef03bfe4c8d14b2eb66719328b8918d1cb1b50da01dacae92d983b19",
+            "allowed_airspace.geojson": "652dc58805e8d5b4c4733cc77264136648f51566018cf438e59705c5a9b3dd23",
+            "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "landing_sites.geojson": "2d9e16330d3eeedcb7ee7c9d8222c057bfdcd12346b03fd54e76a246070e7a9c",
+            "dem.tif": "752d5b2dd3769afd9bbac6af5decddfde681550aededd641dbe6a9ab69c64246"
+          },
+          "result_sha256": "a6365c3b52e12dce76fd8efe0a1d77168bbb18b55c016003c01858dd6c503494",
+          "metrics": {
+            "distance_m": 298583.3859935488,
+            "total_flight_s": 14362.248302936554,
+            "makespan_s": 8114.943068027496,
+            "airborne_span_s": 8114.943068027496,
+            "coverage_percent": 100.0,
+            "required_area_m2": 100000000.00000146,
+            "covered_area_m2": 100000000.00000146,
+            "sortie_count": 2,
+            "per_job": {
+              "JOB_RGB": {
+                "required_area_m2": 100000000.00000146,
+                "covered_area_m2": 100000000.00000146,
+                "coverage_percent": 100.0
+              }
+            },
+            "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+            "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+          },
+          "coverage_policy": {
+            "required_fraction": 1.0,
+            "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+            "input_fractional_tolerance_does_not_relax_service_coverage": true
+          },
+          "checks": [
+            "input_schema",
+            "original_required_coverage",
+            "full_segment_airspace",
+            "raster_cell_surface_clearance",
+            "continuous_temporal_airspace",
+            "continuous_pairwise_separation",
+            "resource_and_landing_suffix",
+            "payload_gsd",
+            "site_roles",
+            "service_and_mission_windows",
+            "wind_limits",
+            "declared_survey_turn_buffers",
+            "metric_claims"
+          ],
+          "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+          "not_checked": [
+            "discrete_photo_front_overlap",
+            "side_overlap_quality",
+            "aircraft_dynamics",
+            "off_track_sensor_terrain_occlusion",
+            "real_operational_permissions",
+            "global_optimality"
+          ],
+          "fingerprint_sha256": "7809ebb3a88c862cde342f65b2623b81e61e3ee13a88fd10e8198dfcf991db2f"
+        },
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:21:52.405141+00:00",
+        "input_sha256": "d6271140e225d686852e2a4c020f12d4aa191bd688244e9cc872d7f0164c3eba",
+        "result_sha256": "a6365c3b52e12dce76fd8efe0a1d77168bbb18b55c016003c01858dd6c503494"
+      },
+      "diagnosis": {
+        "h2_status": "FEASIBLE",
+        "unassigned": [],
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "requires_h3_validation": true
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "canonical h1_coverage.run_h1_scene -> standalone h2.planner.plan_bundle -> independent H3 gate",
+        "pipeline": "h1_coverage -> h2 -> h3",
+        "planner_module": "h2.planner",
+        "h2_input_sha256": "24d732b57d996a36c41b1518bfa0d179e7cdca2b41488dc2bd9db7d84bf7e6b8",
+        "candidate_requires_independent_check": true,
+        "candidate_service_status": "FEASIBLE",
+        "candidate_service_reasons": [],
+        "input_sha256": "d6271140e225d686852e2a4c020f12d4aa191bd688244e9cc872d7f0164c3eba",
+        "input_files_sha256": {
+          "metadata.json": "22986b3c88809f771a345fdee6576796c23f65414994b86946ac9646a8b0b65b",
+          "mission.json": "1821ec91509f499552c99d109b7f76589484076e743d9b6dd773017c02e15c72",
+          "fleet.json": "a169064080f6926d9e3c712dc4173ef0900f18db9f2643908e45b9e0a3291df0",
+          "payload_catalog.json": "1dc1e21c51919bf4e0858a4dde0e75b358aec719f7404a1ee1f711e0c8466530",
+          "survey_areas.geojson": "a1a7dee1ef03bfe4c8d14b2eb66719328b8918d1cb1b50da01dacae92d983b19",
+          "allowed_airspace.geojson": "652dc58805e8d5b4c4733cc77264136648f51566018cf438e59705c5a9b3dd23",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "2d9e16330d3eeedcb7ee7c9d8222c057bfdcd12346b03fd54e76a246070e7a9c",
+          "dem.tif": "752d5b2dd3769afd9bbac6af5decddfde681550aededd641dbe6a9ab69c64246"
+        },
+        "h1_bundle_schema": "gmp.h1_h2.v1",
+        "h1_bundle_sha256": "24d732b57d996a36c41b1518bfa0d179e7cdca2b41488dc2bd9db7d84bf7e6b8",
+        "h1_task_geometry_sha256": "0a529bcf4c34c33933dfab3713dc287233c7af740e82ec4ab73efe57d7159602",
+        "h2_plan_schema": "h2.plan.v1",
+        "h2_plan_sha256": "fb6573bd3c4a1396c43eb834881815ed1a683c658844d193cd02a6d608023260",
+        "h2_status": "FEASIBLE",
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "h2_unassigned": [],
+        "h2_settings": {
+          "objective": "makespan",
+          "time_budget_s": 40.0,
+          "seed": 20260918,
+          "max_iterations": 200,
+          "cpsat": true,
+          "deconflict": true,
+          "survey_speed_factor": 1.0,
+          "multirotor_turn_s": 6.0,
+          "vertical_speed_ms": 3.0,
+          "sample_step_m": 20.0,
+          "task_windows": {},
+          "task_service_s": {}
+        },
+        "h2_solver_log": [
+          {
+            "stage": "greedy",
+            "elapsed_s": 6.639477209013421,
+            "objective_value": 8114.943068314394,
+            "unassigned_count": 0
+          }
+        ],
+        "h2_deconfliction": {
+          "before": [],
+          "remaining": [],
+          "ladder_actions": [],
+          "ladder_used": []
+        },
+        "h2_assumptions": [
+          "linear time resource model",
+          "fixed-wing launch/landing scheduling envelopes; H3 checks manoeuvres",
+          "Obstacles are avoided horizontally at every altitude",
+          "Temporal restrictions conservatively block the full sortie interval at every altitude"
+        ],
+        "seed": 20260918,
+        "planner_time_budget_s": 40.0,
+        "waypoint_step_m": 20,
+        "waypoint_phase_semantics": "incoming segment",
+        "position_interpolation": "linear metric X/Y and AMSL between timestamps",
+        "dem_sampling": "containing raster cell",
+        "metric_crs": 32637,
+        "planning_profiles": [
+          {
+            "id": "RGB",
+            "gsd_limit_cm": 14.399999999999999,
+            "planning_gsd_cm": 12.0,
+            "camera": {
+              "image_width_px": 6000,
+              "image_height_px": 4000,
+              "focal_length_mm": 16,
+              "pixel_pitch_um": 3.9
+            }
+          }
+        ],
+        "h1_task_count": 2,
+        "h1_config": {
+          "nfz_buffer_m": 30.0,
+          "allowed_inset_m": 20.0,
+          "coverage_pass_percent": 99.9,
+          "angle_step_deg": 15.0,
+          "keep_candidates": 4,
+          "max_tasks_per_job": 80,
+          "strict_coverage": false,
+          "crosswind_weight": 1.0,
+          "headland_m": 0.0,
+          "terrain_strict": false
+        },
+        "h1_warnings": [
+          "site BASE_0: outside survey area (+50m slack)",
+          "site BASE_1: outside survey area (+50m slack)",
+          "site BASE_2: outside survey area (+50m slack)",
+          "site BASE_3: outside survey area (+50m slack)",
+          "site RESERVE: outside survey area (+50m slack)"
+        ]
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "SAFE",
+        "metrics": {
+          "makespan_s": {
+            "actual": 8114.943068027496,
+            "reference": 7028.651726961136,
+            "delta": 1086.2913410663605,
+            "delta_percent": 15.455188039826561
+          },
+          "total_flight_s": {
+            "actual": 14362.248302936554,
+            "reference": 12293.023616075516,
+            "delta": 2069.224686861038,
+            "delta_percent": 16.832512093730344
+          },
+          "distance_m": {
+            "actual": 298583.3859935488,
+            "reference": 297122.59973929095,
+            "delta": 1460.7862542578368,
+            "delta_percent": 0.4916442759788714
+          },
+          "coverage_percent": {
+            "actual": 100.0,
+            "reference": 100.0,
+            "delta": 0.0,
+            "delta_percent": 0.0
+          }
+        },
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": "7809ebb3a88c862cde342f65b2623b81e61e3ee13a88fd10e8198dfcf991db2f",
+      "recommendations": [],
+      "finished_at": "2026-09-22T08:21:57.085914+00:00"
+    },
+    {
+      "scenario_id": "S01_msu_100km2",
+      "objective": "total_flight",
+      "scene_id": "e254356fdfd644d89fcce8f6d75dc81f",
+      "started_at": "2026-09-22T08:21:57.091555+00:00",
+      "expected_status": "SAFE",
+      "passed": true,
+      "status": "SAFE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "SAFE"
+        },
+        {
+          "stage": "complete",
+          "message": "SAFE"
+        }
+      ],
+      "plan_id": "4aaa88320e4a4b18835849c65ffb88ed",
+      "elapsed_s": 88.468,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "live_candidate_provenance": true,
+        "canonical_pipeline": true,
+        "standalone_h2": true,
+        "certificate_present": true,
+        "certificate_result_hash": true,
+        "certificate_input_hash": true
+      },
+      "metrics": {
+        "distance_m": 294121.76167988963,
+        "total_flight_s": 13757.950282096863,
+        "makespan_s": 13757.950282096863,
+        "airborne_span_s": 13757.950282096863,
+        "coverage_percent": 100.0,
+        "required_area_m2": 100000000.00000146,
+        "covered_area_m2": 100000000.00000146,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 100000000.00000146,
+            "covered_area_m2": 100000000.00000146,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "validation": {
+        "passed": true,
+        "status": "SAFE",
+        "violations": [],
+        "metrics": {
+          "distance_m": 294121.76167988963,
+          "total_flight_s": 13757.950282096863,
+          "makespan_s": 13757.950282096863,
+          "airborne_span_s": 13757.950282096863,
+          "coverage_percent": 100.0,
+          "required_area_m2": 100000000.00000146,
+          "covered_area_m2": 100000000.00000146,
+          "sortie_count": 1,
+          "per_job": {
+            "JOB_RGB": {
+              "required_area_m2": 100000000.00000146,
+              "covered_area_m2": 100000000.00000146,
+              "coverage_percent": 100.0
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "SAFE",
+        "certificate": {
+          "schema": "geoscan.h3.certificate.v1",
+          "validator_version": "geoscan.h3.validator.v1",
+          "validator_source_sha256": "93fba1af646f88e65acd07e3b236b8747b6c0dd90c0aa4055395bf53cfdf8aee",
+          "validator_gate_source_sha256": "dfeb2630b00d1c3b857734e483c833ba8c3e7140f971067c8f67497fcf8bd523",
+          "software_versions": {
+            "python": "3.12.3",
+            "numpy": "1.26.4",
+            "shapely": "2.0.7",
+            "pyproj": "3.8.0",
+            "rasterio": "1.3.11"
+          },
+          "issued_at": "2026-09-22T08:23:22.487985+00:00",
+          "plan_id": "4aaa88320e4a4b18835849c65ffb88ed",
+          "scene_id": "S01_msu_100km2",
+          "objective": "total_flight",
+          "status": "SAFE",
+          "input_sha256": "d6271140e225d686852e2a4c020f12d4aa191bd688244e9cc872d7f0164c3eba",
+          "input_files_sha256": {
+            "metadata.json": "22986b3c88809f771a345fdee6576796c23f65414994b86946ac9646a8b0b65b",
+            "mission.json": "1821ec91509f499552c99d109b7f76589484076e743d9b6dd773017c02e15c72",
+            "fleet.json": "a169064080f6926d9e3c712dc4173ef0900f18db9f2643908e45b9e0a3291df0",
+            "payload_catalog.json": "1dc1e21c51919bf4e0858a4dde0e75b358aec719f7404a1ee1f711e0c8466530",
+            "survey_areas.geojson": "a1a7dee1ef03bfe4c8d14b2eb66719328b8918d1cb1b50da01dacae92d983b19",
+            "allowed_airspace.geojson": "652dc58805e8d5b4c4733cc77264136648f51566018cf438e59705c5a9b3dd23",
+            "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "landing_sites.geojson": "2d9e16330d3eeedcb7ee7c9d8222c057bfdcd12346b03fd54e76a246070e7a9c",
+            "dem.tif": "752d5b2dd3769afd9bbac6af5decddfde681550aededd641dbe6a9ab69c64246"
+          },
+          "result_sha256": "7e4ddcbbdda99f3545e893dba39a7fdc654ffa4d51318ce491d8817647beaa72",
+          "metrics": {
+            "distance_m": 294121.76167988963,
+            "total_flight_s": 13757.950282096863,
+            "makespan_s": 13757.950282096863,
+            "airborne_span_s": 13757.950282096863,
+            "coverage_percent": 100.0,
+            "required_area_m2": 100000000.00000146,
+            "covered_area_m2": 100000000.00000146,
+            "sortie_count": 1,
+            "per_job": {
+              "JOB_RGB": {
+                "required_area_m2": 100000000.00000146,
+                "covered_area_m2": 100000000.00000146,
+                "coverage_percent": 100.0
+              }
+            },
+            "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+            "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+          },
+          "coverage_policy": {
+            "required_fraction": 1.0,
+            "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+            "input_fractional_tolerance_does_not_relax_service_coverage": true
+          },
+          "checks": [
+            "input_schema",
+            "original_required_coverage",
+            "full_segment_airspace",
+            "raster_cell_surface_clearance",
+            "continuous_temporal_airspace",
+            "continuous_pairwise_separation",
+            "resource_and_landing_suffix",
+            "payload_gsd",
+            "site_roles",
+            "service_and_mission_windows",
+            "wind_limits",
+            "declared_survey_turn_buffers",
+            "metric_claims"
+          ],
+          "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+          "not_checked": [
+            "discrete_photo_front_overlap",
+            "side_overlap_quality",
+            "aircraft_dynamics",
+            "off_track_sensor_terrain_occlusion",
+            "real_operational_permissions",
+            "global_optimality"
+          ],
+          "fingerprint_sha256": "c344bd48243835c5b0de34de590e8a3d138789155c42a92d742984ca3be3cc3f"
+        },
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:23:22.487985+00:00",
+        "input_sha256": "d6271140e225d686852e2a4c020f12d4aa191bd688244e9cc872d7f0164c3eba",
+        "result_sha256": "7e4ddcbbdda99f3545e893dba39a7fdc654ffa4d51318ce491d8817647beaa72"
+      },
+      "diagnosis": {
+        "h2_status": "FEASIBLE",
+        "unassigned": [],
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "requires_h3_validation": true
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "canonical h1_coverage.run_h1_scene -> standalone h2.planner.plan_bundle -> independent H3 gate",
+        "pipeline": "h1_coverage -> h2 -> h3",
+        "planner_module": "h2.planner",
+        "h2_input_sha256": "38089d73137b22878db840eeb50e1e3f4cab2cf0d9b9e4a6bec2b342682db4ec",
+        "candidate_requires_independent_check": true,
+        "candidate_service_status": "FEASIBLE",
+        "candidate_service_reasons": [],
+        "input_sha256": "d6271140e225d686852e2a4c020f12d4aa191bd688244e9cc872d7f0164c3eba",
+        "input_files_sha256": {
+          "metadata.json": "22986b3c88809f771a345fdee6576796c23f65414994b86946ac9646a8b0b65b",
+          "mission.json": "1821ec91509f499552c99d109b7f76589484076e743d9b6dd773017c02e15c72",
+          "fleet.json": "a169064080f6926d9e3c712dc4173ef0900f18db9f2643908e45b9e0a3291df0",
+          "payload_catalog.json": "1dc1e21c51919bf4e0858a4dde0e75b358aec719f7404a1ee1f711e0c8466530",
+          "survey_areas.geojson": "a1a7dee1ef03bfe4c8d14b2eb66719328b8918d1cb1b50da01dacae92d983b19",
+          "allowed_airspace.geojson": "652dc58805e8d5b4c4733cc77264136648f51566018cf438e59705c5a9b3dd23",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "2d9e16330d3eeedcb7ee7c9d8222c057bfdcd12346b03fd54e76a246070e7a9c",
+          "dem.tif": "752d5b2dd3769afd9bbac6af5decddfde681550aededd641dbe6a9ab69c64246"
+        },
+        "h1_bundle_schema": "gmp.h1_h2.v1",
+        "h1_bundle_sha256": "38089d73137b22878db840eeb50e1e3f4cab2cf0d9b9e4a6bec2b342682db4ec",
+        "h1_task_geometry_sha256": "0a529bcf4c34c33933dfab3713dc287233c7af740e82ec4ab73efe57d7159602",
+        "h2_plan_schema": "h2.plan.v1",
+        "h2_plan_sha256": "cc26d2cb40afaba81f00832ac3c4e5f8ab49ad72227a0662965021e4164083fd",
+        "h2_status": "FEASIBLE",
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "h2_unassigned": [],
+        "h2_settings": {
+          "objective": "total_flight",
+          "time_budget_s": 40.0,
+          "seed": 20260918,
+          "max_iterations": 200,
+          "cpsat": true,
+          "deconflict": true,
+          "survey_speed_factor": 1.0,
+          "multirotor_turn_s": 6.0,
+          "vertical_speed_ms": 3.0,
+          "sample_step_m": 20.0,
+          "task_windows": {},
+          "task_service_s": {}
+        },
+        "h2_solver_log": [
+          {
+            "stage": "greedy",
+            "elapsed_s": 6.636990313010756,
+            "objective_value": 13757.950282431913,
+            "unassigned_count": 0
+          }
+        ],
+        "h2_deconfliction": {
+          "before": [],
+          "remaining": [],
+          "ladder_actions": [],
+          "ladder_used": []
+        },
+        "h2_assumptions": [
+          "linear time resource model",
+          "fixed-wing launch/landing scheduling envelopes; H3 checks manoeuvres",
+          "Obstacles are avoided horizontally at every altitude",
+          "Temporal restrictions conservatively block the full sortie interval at every altitude"
+        ],
+        "seed": 20260918,
+        "planner_time_budget_s": 40.0,
+        "waypoint_step_m": 20,
+        "waypoint_phase_semantics": "incoming segment",
+        "position_interpolation": "linear metric X/Y and AMSL between timestamps",
+        "dem_sampling": "containing raster cell",
+        "metric_crs": 32637,
+        "planning_profiles": [
+          {
+            "id": "RGB",
+            "gsd_limit_cm": 14.399999999999999,
+            "planning_gsd_cm": 12.0,
+            "camera": {
+              "image_width_px": 6000,
+              "image_height_px": 4000,
+              "focal_length_mm": 16,
+              "pixel_pitch_um": 3.9
+            }
+          }
+        ],
+        "h1_task_count": 2,
+        "h1_config": {
+          "nfz_buffer_m": 30.0,
+          "allowed_inset_m": 20.0,
+          "coverage_pass_percent": 99.9,
+          "angle_step_deg": 15.0,
+          "keep_candidates": 4,
+          "max_tasks_per_job": 80,
+          "strict_coverage": false,
+          "crosswind_weight": 1.0,
+          "headland_m": 0.0,
+          "terrain_strict": false
+        },
+        "h1_warnings": [
+          "site BASE_0: outside survey area (+50m slack)",
+          "site BASE_1: outside survey area (+50m slack)",
+          "site BASE_2: outside survey area (+50m slack)",
+          "site BASE_3: outside survey area (+50m slack)",
+          "site RESERVE: outside survey area (+50m slack)"
+        ]
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "SAFE",
+        "metrics": {
+          "makespan_s": {
+            "actual": 13757.950282096863,
+            "reference": 11831.640350103378,
+            "delta": 1926.3099319934845,
+            "delta_percent": 16.281004788796285
+          },
+          "total_flight_s": {
+            "actual": 13757.950282096863,
+            "reference": 11831.640350103378,
+            "delta": 1926.3099319934845,
+            "delta_percent": 16.281004788796285
+          },
+          "distance_m": {
+            "actual": 294121.76167988963,
+            "reference": 295963.8622381112,
+            "delta": -1842.100558221573,
+            "delta_percent": -0.6224072575250933
+          },
+          "coverage_percent": {
+            "actual": 100.0,
+            "reference": 100.0,
+            "delta": 0.0,
+            "delta_percent": 0.0
+          }
+        },
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": "c344bd48243835c5b0de34de590e8a3d138789155c42a92d742984ca3be3cc3f",
+      "recommendations": [],
+      "finished_at": "2026-09-22T08:23:25.559148+00:00"
+    },
+    {
+      "scenario_id": "S02_peredelkino",
+      "objective": "total_flight",
+      "scene_id": "65365d6ae93544b4bdb6481706b00121",
+      "started_at": "2026-09-22T08:23:25.661955+00:00",
+      "expected_status": "SAFE",
+      "passed": true,
+      "status": "SAFE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "SAFE"
+        },
+        {
+          "stage": "complete",
+          "message": "SAFE"
+        }
+      ],
+      "plan_id": "6f2fb22272564152964c1d04b48f1eda",
+      "elapsed_s": 24.761,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "live_candidate_provenance": true,
+        "canonical_pipeline": true,
+        "standalone_h2": true,
+        "certificate_present": true,
+        "certificate_result_hash": true,
+        "certificate_input_hash": true
+      },
+      "metrics": {
+        "distance_m": 38794.84158826313,
+        "total_flight_s": 2580.8185839653015,
+        "makespan_s": 2580.8185839653015,
+        "airborne_span_s": 2580.8185839653015,
+        "coverage_percent": 100.0,
+        "required_area_m2": 5480000.000000611,
+        "covered_area_m2": 5480000.000000611,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 5480000.000000611,
+            "covered_area_m2": 5480000.000000611,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "validation": {
+        "passed": true,
+        "status": "SAFE",
+        "violations": [],
+        "metrics": {
+          "distance_m": 38794.84158826313,
+          "total_flight_s": 2580.8185839653015,
+          "makespan_s": 2580.8185839653015,
+          "airborne_span_s": 2580.8185839653015,
+          "coverage_percent": 100.0,
+          "required_area_m2": 5480000.000000611,
+          "covered_area_m2": 5480000.000000611,
+          "sortie_count": 1,
+          "per_job": {
+            "JOB_RGB": {
+              "required_area_m2": 5480000.000000611,
+              "covered_area_m2": 5480000.000000611,
+              "coverage_percent": 100.0
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "SAFE",
+        "certificate": {
+          "schema": "geoscan.h3.certificate.v1",
+          "validator_version": "geoscan.h3.validator.v1",
+          "validator_source_sha256": "93fba1af646f88e65acd07e3b236b8747b6c0dd90c0aa4055395bf53cfdf8aee",
+          "validator_gate_source_sha256": "dfeb2630b00d1c3b857734e483c833ba8c3e7140f971067c8f67497fcf8bd523",
+          "software_versions": {
+            "python": "3.12.3",
+            "numpy": "1.26.4",
+            "shapely": "2.0.7",
+            "pyproj": "3.8.0",
+            "rasterio": "1.3.11"
+          },
+          "issued_at": "2026-09-22T08:23:48.111712+00:00",
+          "plan_id": "6f2fb22272564152964c1d04b48f1eda",
+          "scene_id": "S02_peredelkino",
+          "objective": "total_flight",
+          "status": "SAFE",
+          "input_sha256": "f8ebf31dd1434f9a94ca11c1d5fa45b1e556bea23c7ab4be45c00ff930c5d206",
+          "input_files_sha256": {
+            "metadata.json": "b6e808a4ded1634fa798af5bae3295d71247945a51d4fb337dd8a74b5f728338",
+            "mission.json": "ba6b5bf6315c8dfc133100ef9713e92134f2e2f895997ac2a54d2ebfd5bed60a",
+            "fleet.json": "3142722845f08e6e55653d9d543e4d79c769fc7b4d2cd596a0d79ec1e4b09eff",
+            "payload_catalog.json": "4e167fb7db960572e1dd2678b3c732b7cb667840f7d9954bc2c28cadd80785f3",
+            "survey_areas.geojson": "52ea9d3910f8bdbaafa05a7fb929e63bcd5c28f897a512b4345f4edc6ac3ea6c",
+            "allowed_airspace.geojson": "37a1b42c799d142fcc110d1e26a07312f34b3eb1f6f3f26a610e7bdee542e052",
+            "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "landing_sites.geojson": "56ad7dd45624a0d8a97e25cde361779aa7fe5d5535ffd0254f1243f290427193",
+            "dem.tif": "21465f211102bc9c5068bd712efcca9c2d03478ef33a43138577c101dc811088"
+          },
+          "result_sha256": "5e791dc5c79a7a1085e408170424646813217a8eabb1ecfa75a0e499313212bd",
+          "metrics": {
+            "distance_m": 38794.84158826313,
+            "total_flight_s": 2580.8185839653015,
+            "makespan_s": 2580.8185839653015,
+            "airborne_span_s": 2580.8185839653015,
+            "coverage_percent": 100.0,
+            "required_area_m2": 5480000.000000611,
+            "covered_area_m2": 5480000.000000611,
+            "sortie_count": 1,
+            "per_job": {
+              "JOB_RGB": {
+                "required_area_m2": 5480000.000000611,
+                "covered_area_m2": 5480000.000000611,
+                "coverage_percent": 100.0
+              }
+            },
+            "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+            "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+          },
+          "coverage_policy": {
+            "required_fraction": 1.0,
+            "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+            "input_fractional_tolerance_does_not_relax_service_coverage": true
+          },
+          "checks": [
+            "input_schema",
+            "original_required_coverage",
+            "full_segment_airspace",
+            "raster_cell_surface_clearance",
+            "continuous_temporal_airspace",
+            "continuous_pairwise_separation",
+            "resource_and_landing_suffix",
+            "payload_gsd",
+            "site_roles",
+            "service_and_mission_windows",
+            "wind_limits",
+            "declared_survey_turn_buffers",
+            "metric_claims"
+          ],
+          "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+          "not_checked": [
+            "discrete_photo_front_overlap",
+            "side_overlap_quality",
+            "aircraft_dynamics",
+            "off_track_sensor_terrain_occlusion",
+            "real_operational_permissions",
+            "global_optimality"
+          ],
+          "fingerprint_sha256": "a10f63b6a43fead060c184c67cb9583896f35156f0fbfe3d574c8d806224af8a"
+        },
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:23:48.111712+00:00",
+        "input_sha256": "f8ebf31dd1434f9a94ca11c1d5fa45b1e556bea23c7ab4be45c00ff930c5d206",
+        "result_sha256": "5e791dc5c79a7a1085e408170424646813217a8eabb1ecfa75a0e499313212bd"
+      },
+      "diagnosis": {
+        "h2_status": "FEASIBLE",
+        "unassigned": [],
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "requires_h3_validation": true
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "canonical h1_coverage.run_h1_scene -> standalone h2.planner.plan_bundle -> independent H3 gate",
+        "pipeline": "h1_coverage -> h2 -> h3",
+        "planner_module": "h2.planner",
+        "h2_input_sha256": "e4f8f951ebb89bb29a4b4d4724e6943af70af8d28f8b0e2481ed930b4aa9e5f4",
+        "candidate_requires_independent_check": true,
+        "candidate_service_status": "FEASIBLE",
+        "candidate_service_reasons": [],
+        "input_sha256": "f8ebf31dd1434f9a94ca11c1d5fa45b1e556bea23c7ab4be45c00ff930c5d206",
+        "input_files_sha256": {
+          "metadata.json": "b6e808a4ded1634fa798af5bae3295d71247945a51d4fb337dd8a74b5f728338",
+          "mission.json": "ba6b5bf6315c8dfc133100ef9713e92134f2e2f895997ac2a54d2ebfd5bed60a",
+          "fleet.json": "3142722845f08e6e55653d9d543e4d79c769fc7b4d2cd596a0d79ec1e4b09eff",
+          "payload_catalog.json": "4e167fb7db960572e1dd2678b3c732b7cb667840f7d9954bc2c28cadd80785f3",
+          "survey_areas.geojson": "52ea9d3910f8bdbaafa05a7fb929e63bcd5c28f897a512b4345f4edc6ac3ea6c",
+          "allowed_airspace.geojson": "37a1b42c799d142fcc110d1e26a07312f34b3eb1f6f3f26a610e7bdee542e052",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "56ad7dd45624a0d8a97e25cde361779aa7fe5d5535ffd0254f1243f290427193",
+          "dem.tif": "21465f211102bc9c5068bd712efcca9c2d03478ef33a43138577c101dc811088"
+        },
+        "h1_bundle_schema": "gmp.h1_h2.v1",
+        "h1_bundle_sha256": "e4f8f951ebb89bb29a4b4d4724e6943af70af8d28f8b0e2481ed930b4aa9e5f4",
+        "h1_task_geometry_sha256": "187023d0bd224993962f7405e8d0a28a5c3b4f38f1b17cc44af5ce25f70ab699",
+        "h2_plan_schema": "h2.plan.v1",
+        "h2_plan_sha256": "62ecf7249a42f643862cc61d855088d8bfd5f36119cd147c9697b6f2e7d5edaf",
+        "h2_status": "FEASIBLE",
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "h2_unassigned": [],
+        "h2_settings": {
+          "objective": "total_flight",
+          "time_budget_s": 40.0,
+          "seed": 20260918,
+          "max_iterations": 200,
+          "cpsat": true,
+          "deconflict": true,
+          "survey_speed_factor": 1.0,
+          "multirotor_turn_s": 6.0,
+          "vertical_speed_ms": 3.0,
+          "sample_step_m": 20.0,
+          "task_windows": {},
+          "task_service_s": {}
+        },
+        "h2_solver_log": [
+          {
+            "stage": "greedy",
+            "elapsed_s": 0.5246509249554947,
+            "objective_value": 2580.8185841279997,
+            "unassigned_count": 0
+          }
+        ],
+        "h2_deconfliction": {
+          "before": [],
+          "remaining": [],
+          "ladder_actions": [],
+          "ladder_used": []
+        },
+        "h2_assumptions": [
+          "linear time resource model",
+          "fixed-wing launch/landing scheduling envelopes; H3 checks manoeuvres",
+          "Obstacles are avoided horizontally at every altitude",
+          "Temporal restrictions conservatively block the full sortie interval at every altitude"
+        ],
+        "seed": 20260918,
+        "planner_time_budget_s": 40.0,
+        "waypoint_step_m": 20,
+        "waypoint_phase_semantics": "incoming segment",
+        "position_interpolation": "linear metric X/Y and AMSL between timestamps",
+        "dem_sampling": "containing raster cell",
+        "metric_crs": 32637,
+        "planning_profiles": [
+          {
+            "id": "RGB",
+            "gsd_limit_cm": 7.199999999999999,
+            "planning_gsd_cm": 6.0,
+            "camera": {
+              "image_width_px": 6000,
+              "image_height_px": 4000,
+              "focal_length_mm": 16,
+              "pixel_pitch_um": 3.9
+            }
+          }
+        ],
+        "h1_task_count": 1,
+        "h1_config": {
+          "nfz_buffer_m": 30.0,
+          "allowed_inset_m": 20.0,
+          "coverage_pass_percent": 99.9,
+          "angle_step_deg": 15.0,
+          "keep_candidates": 4,
+          "max_tasks_per_job": 80,
+          "strict_coverage": false,
+          "crosswind_weight": 1.0,
+          "headland_m": 0.0,
+          "terrain_strict": false
+        },
+        "h1_warnings": [
+          "job JOB_RGB: 1 hole(s) preserved",
+          "site BASE: outside survey area (+50m slack)",
+          "site RESERVE: outside survey area (+50m slack)"
+        ]
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "SAFE",
+        "metrics": {
+          "makespan_s": {
+            "actual": 2580.8185839653015,
+            "reference": 2344.089229106903,
+            "delta": 236.72935485839844,
+            "delta_percent": 10.098990768734184
+          },
+          "total_flight_s": {
+            "actual": 2580.8185839653015,
+            "reference": 2344.089229106903,
+            "delta": 236.72935485839844,
+            "delta_percent": 10.098990768734184
+          },
+          "distance_m": {
+            "actual": 38794.84158826313,
+            "reference": 38794.84158826301,
+            "delta": 1.2369127944111824e-10,
+            "delta_percent": 3.1883434595216855e-13
+          },
+          "coverage_percent": {
+            "actual": 100.0,
+            "reference": 100.0,
+            "delta": 0.0,
+            "delta_percent": 0.0
+          }
+        },
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": "a10f63b6a43fead060c184c67cb9583896f35156f0fbfe3d574c8d806224af8a",
+      "recommendations": [],
+      "finished_at": "2026-09-22T08:23:50.422502+00:00"
+    },
+    {
+      "scenario_id": "S03_orekhovo_domodedovskaya",
+      "objective": "makespan",
+      "scene_id": "66f958abd1884ea6aff85cc7f1339c1e",
+      "started_at": "2026-09-22T08:23:50.506321+00:00",
+      "expected_status": "SAFE",
+      "passed": true,
+      "status": "SAFE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "SAFE"
+        },
+        {
+          "stage": "complete",
+          "message": "SAFE"
+        }
+      ],
+      "plan_id": "6679be5539684690954bdc8fbeae79ed",
+      "elapsed_s": 55.096,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "live_candidate_provenance": true,
+        "canonical_pipeline": true,
+        "standalone_h2": true,
+        "certificate_present": true,
+        "certificate_result_hash": true,
+        "certificate_input_hash": true
+      },
+      "metrics": {
+        "distance_m": 69579.23600977373,
+        "total_flight_s": 3852.6704909801483,
+        "makespan_s": 7452.671490907669,
+        "airborne_span_s": 3852.6704909801483,
+        "coverage_percent": 99.99999999999999,
+        "required_area_m2": 12000000.000001602,
+        "covered_area_m2": 12000000.0000016,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 12000000.000001602,
+            "covered_area_m2": 12000000.0000016,
+            "coverage_percent": 99.99999999999999
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "validation": {
+        "passed": true,
+        "status": "SAFE",
+        "violations": [],
+        "metrics": {
+          "distance_m": 69579.23600977373,
+          "total_flight_s": 3852.6704909801483,
+          "makespan_s": 7452.671490907669,
+          "airborne_span_s": 3852.6704909801483,
+          "coverage_percent": 99.99999999999999,
+          "required_area_m2": 12000000.000001602,
+          "covered_area_m2": 12000000.0000016,
+          "sortie_count": 1,
+          "per_job": {
+            "JOB_RGB": {
+              "required_area_m2": 12000000.000001602,
+              "covered_area_m2": 12000000.0000016,
+              "coverage_percent": 99.99999999999999
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "SAFE",
+        "certificate": {
+          "schema": "geoscan.h3.certificate.v1",
+          "validator_version": "geoscan.h3.validator.v1",
+          "validator_source_sha256": "93fba1af646f88e65acd07e3b236b8747b6c0dd90c0aa4055395bf53cfdf8aee",
+          "validator_gate_source_sha256": "dfeb2630b00d1c3b857734e483c833ba8c3e7140f971067c8f67497fcf8bd523",
+          "software_versions": {
+            "python": "3.12.3",
+            "numpy": "1.26.4",
+            "shapely": "2.0.7",
+            "pyproj": "3.8.0",
+            "rasterio": "1.3.11"
+          },
+          "issued_at": "2026-09-22T08:24:44.424046+00:00",
+          "plan_id": "6679be5539684690954bdc8fbeae79ed",
+          "scene_id": "S03_orekhovo_domodedovskaya",
+          "objective": "makespan",
+          "status": "SAFE",
+          "input_sha256": "3bbf9b55cdf0d7fe6e4b32bd204c562a0c964948fb4107ddaaa6a74833e14ce6",
+          "input_files_sha256": {
+            "metadata.json": "34edf0e6dd2fb9607286e3c73254806ef4f5546cc116f4eded37b4ae628268d7",
+            "mission.json": "9bf033f17d62a5a49401a6d3c8c21dee5b1b4ff9b24bff5e75617925760a3512",
+            "fleet.json": "3142722845f08e6e55653d9d543e4d79c769fc7b4d2cd596a0d79ec1e4b09eff",
+            "payload_catalog.json": "4e167fb7db960572e1dd2678b3c732b7cb667840f7d9954bc2c28cadd80785f3",
+            "survey_areas.geojson": "1593990fcc8d29827aae307a5bdb6fbd101d00b5a47761c339f2cf96c7aff782",
+            "allowed_airspace.geojson": "0470dfbcb9849d943d95bc99d33945beee3a3cf9112023581e3c3b6a2539c90f",
+            "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "temporal_airspace.geojson": "973dde56df93eb9fd2300150610223053c86ebd0577aeb043bdd8c5f17d12de2",
+            "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "landing_sites.geojson": "f7f8e001a861b88466bfa3f82624991f80016d95d85acd8d4ce56eadef334d30",
+            "dem.tif": "98ae3415e0864e9a6d0b7fbe7dc46b9f819c7c90a37fe8a104faaaa15e73e45f"
+          },
+          "result_sha256": "157e94fdd634c65cd917eea7411144dff543a77b218898280e34422f74d0a953",
+          "metrics": {
+            "distance_m": 69579.23600977373,
+            "total_flight_s": 3852.6704909801483,
+            "makespan_s": 7452.671490907669,
+            "airborne_span_s": 3852.6704909801483,
+            "coverage_percent": 99.99999999999999,
+            "required_area_m2": 12000000.000001602,
+            "covered_area_m2": 12000000.0000016,
+            "sortie_count": 1,
+            "per_job": {
+              "JOB_RGB": {
+                "required_area_m2": 12000000.000001602,
+                "covered_area_m2": 12000000.0000016,
+                "coverage_percent": 99.99999999999999
+              }
+            },
+            "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+            "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+          },
+          "coverage_policy": {
+            "required_fraction": 1.0,
+            "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+            "input_fractional_tolerance_does_not_relax_service_coverage": true
+          },
+          "checks": [
+            "input_schema",
+            "original_required_coverage",
+            "full_segment_airspace",
+            "raster_cell_surface_clearance",
+            "continuous_temporal_airspace",
+            "continuous_pairwise_separation",
+            "resource_and_landing_suffix",
+            "payload_gsd",
+            "site_roles",
+            "service_and_mission_windows",
+            "wind_limits",
+            "declared_survey_turn_buffers",
+            "metric_claims"
+          ],
+          "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+          "not_checked": [
+            "discrete_photo_front_overlap",
+            "side_overlap_quality",
+            "aircraft_dynamics",
+            "off_track_sensor_terrain_occlusion",
+            "real_operational_permissions",
+            "global_optimality"
+          ],
+          "fingerprint_sha256": "d829e07375532788a31da6b8d755c904cf1cd49e99439c05f64e6352262fb262"
+        },
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:24:44.424046+00:00",
+        "input_sha256": "3bbf9b55cdf0d7fe6e4b32bd204c562a0c964948fb4107ddaaa6a74833e14ce6",
+        "result_sha256": "157e94fdd634c65cd917eea7411144dff543a77b218898280e34422f74d0a953"
+      },
+      "diagnosis": {
+        "h2_status": "FEASIBLE",
+        "unassigned": [],
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "requires_h3_validation": true
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "canonical h1_coverage.run_h1_scene -> standalone h2.planner.plan_bundle -> independent H3 gate",
+        "pipeline": "h1_coverage -> h2 -> h3",
+        "planner_module": "h2.planner",
+        "h2_input_sha256": "ea500d633a9ef26818440172a7ea7f9efc2a4b3d8501ba7021db6e1b2557a44a",
+        "candidate_requires_independent_check": true,
+        "candidate_service_status": "FEASIBLE",
+        "candidate_service_reasons": [],
+        "input_sha256": "3bbf9b55cdf0d7fe6e4b32bd204c562a0c964948fb4107ddaaa6a74833e14ce6",
+        "input_files_sha256": {
+          "metadata.json": "34edf0e6dd2fb9607286e3c73254806ef4f5546cc116f4eded37b4ae628268d7",
+          "mission.json": "9bf033f17d62a5a49401a6d3c8c21dee5b1b4ff9b24bff5e75617925760a3512",
+          "fleet.json": "3142722845f08e6e55653d9d543e4d79c769fc7b4d2cd596a0d79ec1e4b09eff",
+          "payload_catalog.json": "4e167fb7db960572e1dd2678b3c732b7cb667840f7d9954bc2c28cadd80785f3",
+          "survey_areas.geojson": "1593990fcc8d29827aae307a5bdb6fbd101d00b5a47761c339f2cf96c7aff782",
+          "allowed_airspace.geojson": "0470dfbcb9849d943d95bc99d33945beee3a3cf9112023581e3c3b6a2539c90f",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "973dde56df93eb9fd2300150610223053c86ebd0577aeb043bdd8c5f17d12de2",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "f7f8e001a861b88466bfa3f82624991f80016d95d85acd8d4ce56eadef334d30",
+          "dem.tif": "98ae3415e0864e9a6d0b7fbe7dc46b9f819c7c90a37fe8a104faaaa15e73e45f"
+        },
+        "h1_bundle_schema": "gmp.h1_h2.v1",
+        "h1_bundle_sha256": "ea500d633a9ef26818440172a7ea7f9efc2a4b3d8501ba7021db6e1b2557a44a",
+        "h1_task_geometry_sha256": "b3af316f7ccd246013a124134bdd5d06975bfd74e0a9c63049d4cdc989c737a3",
+        "h2_plan_schema": "h2.plan.v1",
+        "h2_plan_sha256": "3542d24570c418db65afc773ef6316289141ffccd15a5ac27eced4b4f7ca564c",
+        "h2_status": "FEASIBLE",
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "h2_unassigned": [],
+        "h2_settings": {
+          "objective": "makespan",
+          "time_budget_s": 40.0,
+          "seed": 20260918,
+          "max_iterations": 200,
+          "cpsat": true,
+          "deconflict": true,
+          "survey_speed_factor": 1.0,
+          "multirotor_turn_s": 6.0,
+          "vertical_speed_ms": 3.0,
+          "sample_step_m": 20.0,
+          "task_windows": {},
+          "task_service_s": {}
+        },
+        "h2_solver_log": [
+          {
+            "stage": "greedy",
+            "elapsed_s": 0.9445073599927127,
+            "objective_value": 7452.6714910284145,
+            "unassigned_count": 0
+          }
+        ],
+        "h2_deconfliction": {
+          "before": [],
+          "remaining": [],
+          "ladder_actions": [],
+          "ladder_used": []
+        },
+        "h2_assumptions": [
+          "linear time resource model",
+          "fixed-wing launch/landing scheduling envelopes; H3 checks manoeuvres",
+          "Obstacles are avoided horizontally at every altitude",
+          "Temporal restrictions conservatively block the full sortie interval at every altitude"
+        ],
+        "seed": 20260918,
+        "planner_time_budget_s": 40.0,
+        "waypoint_step_m": 20,
+        "waypoint_phase_semantics": "incoming segment",
+        "position_interpolation": "linear metric X/Y and AMSL between timestamps",
+        "dem_sampling": "containing raster cell",
+        "metric_crs": 32637,
+        "planning_profiles": [
+          {
+            "id": "RGB",
+            "gsd_limit_cm": 7.199999999999999,
+            "planning_gsd_cm": 6.0,
+            "camera": {
+              "image_width_px": 6000,
+              "image_height_px": 4000,
+              "focal_length_mm": 16,
+              "pixel_pitch_um": 3.9
+            }
+          }
+        ],
+        "h1_task_count": 1,
+        "h1_config": {
+          "nfz_buffer_m": 30.0,
+          "allowed_inset_m": 20.0,
+          "coverage_pass_percent": 99.9,
+          "angle_step_deg": 15.0,
+          "keep_candidates": 4,
+          "max_tasks_per_job": 80,
+          "strict_coverage": false,
+          "crosswind_weight": 1.0,
+          "headland_m": 0.0,
+          "terrain_strict": false
+        },
+        "h1_warnings": [
+          "site BASE: outside survey area (+50m slack)",
+          "site RESERVE: outside survey area (+50m slack)",
+          "M1: 1 temporal airspace zone(s) loaded (H1 does not schedule around windows; H2/H3)",
+          "M3: task JOB_RGB#T000 local AGL swing 49.8m (GSD/overlap will drift on hills)"
+        ]
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "SAFE",
+        "metrics": {
+          "makespan_s": {
+            "actual": 7452.671490907669,
+            "reference": 7039.8724529743195,
+            "delta": 412.7990379333496,
+            "delta_percent": 5.8637289338806635
+          },
+          "total_flight_s": {
+            "actual": 3852.6704909801483,
+            "reference": 3409.8724529743195,
+            "delta": 442.79803800582886,
+            "delta_percent": 12.985765424146312
+          },
+          "distance_m": {
+            "actual": 69579.23600977373,
+            "reference": 69579.23600977371,
+            "delta": 1.4551915228366852e-11,
+            "delta_percent": 2.091416356788218e-14
+          },
+          "coverage_percent": {
+            "actual": 99.99999999999999,
+            "reference": 99.99999999999999,
+            "delta": 0.0,
+            "delta_percent": 0.0
+          }
+        },
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": "d829e07375532788a31da6b8d755c904cf1cd49e99439c05f64e6352262fb262",
+      "recommendations": [],
+      "finished_at": "2026-09-22T08:24:45.602172+00:00"
+    },
+    {
+      "scenario_id": "S04_multi_sortie",
+      "objective": "makespan",
+      "scene_id": "574206c1292941d0a1e2b802a83e487f",
+      "started_at": "2026-09-22T08:24:45.699541+00:00",
+      "expected_status": "SAFE",
+      "passed": true,
+      "status": "SAFE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "SAFE"
+        },
+        {
+          "stage": "complete",
+          "message": "SAFE"
+        }
+      ],
+      "plan_id": "4a83fab7db9a440d8947788deeeb6ae1",
+      "elapsed_s": 55.206,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "live_candidate_provenance": true,
+        "canonical_pipeline": true,
+        "standalone_h2": true,
+        "certificate_present": true,
+        "certificate_result_hash": true,
+        "certificate_input_hash": true
+      },
+      "metrics": {
+        "distance_m": 72188.58897986684,
+        "total_flight_s": 6855.7157480716705,
+        "makespan_s": 9375.71574807167,
+        "airborne_span_s": 9375.71574807167,
+        "coverage_percent": 100.0,
+        "required_area_m2": 3360000.0000000815,
+        "covered_area_m2": 3360000.0000000815,
+        "sortie_count": 7,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 3360000.0000000815,
+            "covered_area_m2": 3360000.0000000815,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "validation": {
+        "passed": true,
+        "status": "SAFE",
+        "violations": [],
+        "metrics": {
+          "distance_m": 72188.58897986684,
+          "total_flight_s": 6855.7157480716705,
+          "makespan_s": 9375.71574807167,
+          "airborne_span_s": 9375.71574807167,
+          "coverage_percent": 100.0,
+          "required_area_m2": 3360000.0000000815,
+          "covered_area_m2": 3360000.0000000815,
+          "sortie_count": 7,
+          "per_job": {
+            "JOB_RGB": {
+              "required_area_m2": 3360000.0000000815,
+              "covered_area_m2": 3360000.0000000815,
+              "coverage_percent": 100.0
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "SAFE",
+        "certificate": {
+          "schema": "geoscan.h3.certificate.v1",
+          "validator_version": "geoscan.h3.validator.v1",
+          "validator_source_sha256": "93fba1af646f88e65acd07e3b236b8747b6c0dd90c0aa4055395bf53cfdf8aee",
+          "validator_gate_source_sha256": "dfeb2630b00d1c3b857734e483c833ba8c3e7140f971067c8f67497fcf8bd523",
+          "software_versions": {
+            "python": "3.12.3",
+            "numpy": "1.26.4",
+            "shapely": "2.0.7",
+            "pyproj": "3.8.0",
+            "rasterio": "1.3.11"
+          },
+          "issued_at": "2026-09-22T08:25:39.724509+00:00",
+          "plan_id": "4a83fab7db9a440d8947788deeeb6ae1",
+          "scene_id": "S04_multi_sortie",
+          "objective": "makespan",
+          "status": "SAFE",
+          "input_sha256": "015ef60787e6d240801950a3a782b076b75ab14e0eeee6798ee10b74366f7641",
+          "input_files_sha256": {
+            "metadata.json": "d06eab9ae4cafb7fcdc123ab29537d95728e5ac66cbb48bb8cd6614e979f0c16",
+            "mission.json": "4de55f0d6ea6ce1643edc15e61e5ac90243cea9b6a6b36f82ce175f90475ce2a",
+            "fleet.json": "856bb2e66c2b2580fbc6b47b647e1d212c2291c9e83772a795107eeadec71cd7",
+            "payload_catalog.json": "f6ec29b6e6f0a9627fc222b7e956f8c9fc1b3bd824e9e69097d7949a170d992a",
+            "survey_areas.geojson": "c06b7d13fb61fd2673d09da125ee768d4b75e3a50c72efbf048b3dcd40937128",
+            "allowed_airspace.geojson": "44f977522cc655660d573b15091d439bebf044acb00e12c1a79b3fa3320b7b72",
+            "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "landing_sites.geojson": "c0f62c87b3ae6252530d7e4a2af50b3a6668a1d42b3146b98b81fe9771ced890",
+            "dem.tif": "568deaba1ff551472d7d2fe4add34e82907b6782792aed62db6dd1c728c573ac"
+          },
+          "result_sha256": "a43b32be3462a2e7b820647a90fe24ad70a07e1aca28bd6ab03ebbb9ce1471af",
+          "metrics": {
+            "distance_m": 72188.58897986684,
+            "total_flight_s": 6855.7157480716705,
+            "makespan_s": 9375.71574807167,
+            "airborne_span_s": 9375.71574807167,
+            "coverage_percent": 100.0,
+            "required_area_m2": 3360000.0000000815,
+            "covered_area_m2": 3360000.0000000815,
+            "sortie_count": 7,
+            "per_job": {
+              "JOB_RGB": {
+                "required_area_m2": 3360000.0000000815,
+                "covered_area_m2": 3360000.0000000815,
+                "coverage_percent": 100.0
+              }
+            },
+            "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+            "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+          },
+          "coverage_policy": {
+            "required_fraction": 1.0,
+            "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+            "input_fractional_tolerance_does_not_relax_service_coverage": true
+          },
+          "checks": [
+            "input_schema",
+            "original_required_coverage",
+            "full_segment_airspace",
+            "raster_cell_surface_clearance",
+            "continuous_temporal_airspace",
+            "continuous_pairwise_separation",
+            "resource_and_landing_suffix",
+            "payload_gsd",
+            "site_roles",
+            "service_and_mission_windows",
+            "wind_limits",
+            "declared_survey_turn_buffers",
+            "metric_claims"
+          ],
+          "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+          "not_checked": [
+            "discrete_photo_front_overlap",
+            "side_overlap_quality",
+            "aircraft_dynamics",
+            "off_track_sensor_terrain_occlusion",
+            "real_operational_permissions",
+            "global_optimality"
+          ],
+          "fingerprint_sha256": "61fcb67f7c6bc067b23a4e45af1fc5f47a25506f521570e346a7ff9ce5d51087"
+        },
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:25:39.724509+00:00",
+        "input_sha256": "015ef60787e6d240801950a3a782b076b75ab14e0eeee6798ee10b74366f7641",
+        "result_sha256": "a43b32be3462a2e7b820647a90fe24ad70a07e1aca28bd6ab03ebbb9ce1471af"
+      },
+      "diagnosis": {
+        "h2_status": "FEASIBLE",
+        "unassigned": [],
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "requires_h3_validation": true
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "canonical h1_coverage.run_h1_scene -> standalone h2.planner.plan_bundle -> independent H3 gate",
+        "pipeline": "h1_coverage -> h2 -> h3",
+        "planner_module": "h2.planner",
+        "h2_input_sha256": "d8fde03bf9cda21e7d4495a90bbf9ba9b00738716f6ceda92975ca548134a283",
+        "candidate_requires_independent_check": true,
+        "candidate_service_status": "FEASIBLE",
+        "candidate_service_reasons": [],
+        "input_sha256": "015ef60787e6d240801950a3a782b076b75ab14e0eeee6798ee10b74366f7641",
+        "input_files_sha256": {
+          "metadata.json": "d06eab9ae4cafb7fcdc123ab29537d95728e5ac66cbb48bb8cd6614e979f0c16",
+          "mission.json": "4de55f0d6ea6ce1643edc15e61e5ac90243cea9b6a6b36f82ce175f90475ce2a",
+          "fleet.json": "856bb2e66c2b2580fbc6b47b647e1d212c2291c9e83772a795107eeadec71cd7",
+          "payload_catalog.json": "f6ec29b6e6f0a9627fc222b7e956f8c9fc1b3bd824e9e69097d7949a170d992a",
+          "survey_areas.geojson": "c06b7d13fb61fd2673d09da125ee768d4b75e3a50c72efbf048b3dcd40937128",
+          "allowed_airspace.geojson": "44f977522cc655660d573b15091d439bebf044acb00e12c1a79b3fa3320b7b72",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "c0f62c87b3ae6252530d7e4a2af50b3a6668a1d42b3146b98b81fe9771ced890",
+          "dem.tif": "568deaba1ff551472d7d2fe4add34e82907b6782792aed62db6dd1c728c573ac"
+        },
+        "h1_bundle_schema": "gmp.h1_h2.v1",
+        "h1_bundle_sha256": "d8fde03bf9cda21e7d4495a90bbf9ba9b00738716f6ceda92975ca548134a283",
+        "h1_task_geometry_sha256": "8558845b67a413b8bf052cf2fdffdfd6f821183cdde43e55dbe1763835523bea",
+        "h2_plan_schema": "h2.plan.v1",
+        "h2_plan_sha256": "50dd27b480b7c37be80c0663124a0a0a90380bbb3223a1979c6d6a65debea572",
+        "h2_status": "FEASIBLE",
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "h2_unassigned": [],
+        "h2_settings": {
+          "objective": "makespan",
+          "time_budget_s": 40.0,
+          "seed": 20260918,
+          "max_iterations": 200,
+          "cpsat": true,
+          "deconflict": true,
+          "survey_speed_factor": 1.0,
+          "multirotor_turn_s": 6.0,
+          "vertical_speed_ms": 3.0,
+          "sample_step_m": 20.0,
+          "task_windows": {},
+          "task_service_s": {}
+        },
+        "h2_solver_log": [
+          {
+            "stage": "greedy",
+            "elapsed_s": 20.546164451981895,
+            "objective_value": 9375.715748321807,
+            "unassigned_count": 0
+          }
+        ],
+        "h2_deconfliction": {
+          "before": [],
+          "remaining": [],
+          "ladder_actions": [],
+          "ladder_used": []
+        },
+        "h2_assumptions": [
+          "linear time resource model",
+          "fixed-wing launch/landing scheduling envelopes; H3 checks manoeuvres",
+          "Obstacles are avoided horizontally at every altitude",
+          "Temporal restrictions conservatively block the full sortie interval at every altitude"
+        ],
+        "seed": 20260918,
+        "planner_time_budget_s": 40.0,
+        "waypoint_step_m": 20,
+        "waypoint_phase_semantics": "incoming segment",
+        "position_interpolation": "linear metric X/Y and AMSL between timestamps",
+        "dem_sampling": "containing raster cell",
+        "metric_crs": 32637,
+        "planning_profiles": [
+          {
+            "id": "RGB",
+            "gsd_limit_cm": 3.0,
+            "planning_gsd_cm": 3.0,
+            "camera": {
+              "image_width_px": 6000,
+              "image_height_px": 4000,
+              "focal_length_mm": 16,
+              "pixel_pitch_um": 3.9
+            }
+          }
+        ],
+        "h1_task_count": 25,
+        "h1_config": {
+          "nfz_buffer_m": 30.0,
+          "allowed_inset_m": 20.0,
+          "coverage_pass_percent": 99.9,
+          "angle_step_deg": 15.0,
+          "keep_candidates": 4,
+          "max_tasks_per_job": 80,
+          "strict_coverage": false,
+          "crosswind_weight": 1.0,
+          "headland_m": 0.0,
+          "terrain_strict": false
+        },
+        "h1_warnings": [
+          "site BASE: outside survey area (+50m slack)",
+          "site RESERVE: outside survey area (+50m slack)"
+        ]
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "SAFE",
+        "metrics": {
+          "makespan_s": {
+            "actual": 9375.71574807167,
+            "reference": 9443.082777023315,
+            "delta": -67.3670289516449,
+            "delta_percent": -0.7134008092734372
+          },
+          "total_flight_s": {
+            "actual": 6855.7157480716705,
+            "reference": 6923.082777023315,
+            "delta": -67.3670289516449,
+            "delta_percent": -0.9730784842733077
+          },
+          "distance_m": {
+            "actual": 72188.58897986684,
+            "reference": 72996.97989399955,
+            "delta": -808.3909141327167,
+            "delta_percent": -1.1074306297419403
+          },
+          "coverage_percent": {
+            "actual": 100.0,
+            "reference": 100.0,
+            "delta": 0.0,
+            "delta_percent": 0.0
+          }
+        },
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": "61fcb67f7c6bc067b23a4e45af1fc5f47a25506f521570e346a7ff9ce5d51087",
+      "recommendations": [],
+      "finished_at": "2026-09-22T08:25:40.905488+00:00"
+    },
+    {
+      "scenario_id": "S05_multi_uav",
+      "objective": "makespan",
+      "scene_id": "fc430c927afd46cea35f2b6a73698bb4",
+      "started_at": "2026-09-22T08:25:41.068107+00:00",
+      "expected_status": "SAFE",
+      "passed": true,
+      "status": "SAFE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "SAFE"
+        },
+        {
+          "stage": "complete",
+          "message": "SAFE"
+        }
+      ],
+      "plan_id": "846b25fd08ae44d39240b243d2d9f48c",
+      "elapsed_s": 22.704,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "live_candidate_provenance": true,
+        "canonical_pipeline": true,
+        "standalone_h2": true,
+        "certificate_present": true,
+        "certificate_result_hash": true,
+        "certificate_input_hash": true
+      },
+      "metrics": {
+        "distance_m": 15283.79892583807,
+        "total_flight_s": 1579.6499099731445,
+        "makespan_s": 874.415776014328,
+        "airborne_span_s": 874.415776014328,
+        "coverage_percent": 100.0,
+        "required_area_m2": 405000.00000017026,
+        "covered_area_m2": 405000.00000017026,
+        "sortie_count": 2,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 202500.00000018335,
+            "covered_area_m2": 202500.00000018335,
+            "coverage_percent": 100.0
+          },
+          "JOB_MS": {
+            "required_area_m2": 202499.9999999869,
+            "covered_area_m2": 202499.9999999869,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "validation": {
+        "passed": true,
+        "status": "SAFE",
+        "violations": [],
+        "metrics": {
+          "distance_m": 15283.79892583807,
+          "total_flight_s": 1579.6499099731445,
+          "makespan_s": 874.415776014328,
+          "airborne_span_s": 874.415776014328,
+          "coverage_percent": 100.0,
+          "required_area_m2": 405000.00000017026,
+          "covered_area_m2": 405000.00000017026,
+          "sortie_count": 2,
+          "per_job": {
+            "JOB_RGB": {
+              "required_area_m2": 202500.00000018335,
+              "covered_area_m2": 202500.00000018335,
+              "coverage_percent": 100.0
+            },
+            "JOB_MS": {
+              "required_area_m2": 202499.9999999869,
+              "covered_area_m2": 202499.9999999869,
+              "coverage_percent": 100.0
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "SAFE",
+        "certificate": {
+          "schema": "geoscan.h3.certificate.v1",
+          "validator_version": "geoscan.h3.validator.v1",
+          "validator_source_sha256": "93fba1af646f88e65acd07e3b236b8747b6c0dd90c0aa4055395bf53cfdf8aee",
+          "validator_gate_source_sha256": "dfeb2630b00d1c3b857734e483c833ba8c3e7140f971067c8f67497fcf8bd523",
+          "software_versions": {
+            "python": "3.12.3",
+            "numpy": "1.26.4",
+            "shapely": "2.0.7",
+            "pyproj": "3.8.0",
+            "rasterio": "1.3.11"
+          },
+          "issued_at": "2026-09-22T08:26:02.376415+00:00",
+          "plan_id": "846b25fd08ae44d39240b243d2d9f48c",
+          "scene_id": "S05_multi_uav",
+          "objective": "makespan",
+          "status": "SAFE",
+          "input_sha256": "13cc73e7aa98db3663524a1fa5e25c7fe0c71cc5deb0e63c21c8f364a03eda81",
+          "input_files_sha256": {
+            "metadata.json": "ff0d4ab5aeacfcd81d92d966b0f18d9e533fd61bb8a87889a61da6c34a51c4c2",
+            "mission.json": "4de55f0d6ea6ce1643edc15e61e5ac90243cea9b6a6b36f82ce175f90475ce2a",
+            "fleet.json": "09dc80facff9539ed141d68f775b3ff80f8155f85810c87f1f23a511c4876a23",
+            "payload_catalog.json": "6d95a56c97c315c9ad03e634f3e2ba9d76e27b7b7f8512e12a1625eb09f8cf42",
+            "survey_areas.geojson": "1c8ca02d7e14eeeecb9f5ded3515ecfe5d92042fbd64735109fa8c47ae045a02",
+            "allowed_airspace.geojson": "fc43f530e35bbc98fda92d4dde8f8afb9c3d5c5fb083cd2a518ca3cec9f564ac",
+            "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "landing_sites.geojson": "a975b012797ef4c8a2ae7a932048ec4b38b8c1692697c50552ac5cd0cb93a2a5",
+            "dem.tif": "5910446d44dcad3177ea9b83bdbb557d98381983fc1b7ca6ab40584aa9d77bcc"
+          },
+          "result_sha256": "c5084a05e1db375df91caf476ee92323916f6fa55eeca5017b54715a6a208920",
+          "metrics": {
+            "distance_m": 15283.79892583807,
+            "total_flight_s": 1579.6499099731445,
+            "makespan_s": 874.415776014328,
+            "airborne_span_s": 874.415776014328,
+            "coverage_percent": 100.0,
+            "required_area_m2": 405000.00000017026,
+            "covered_area_m2": 405000.00000017026,
+            "sortie_count": 2,
+            "per_job": {
+              "JOB_RGB": {
+                "required_area_m2": 202500.00000018335,
+                "covered_area_m2": 202500.00000018335,
+                "coverage_percent": 100.0
+              },
+              "JOB_MS": {
+                "required_area_m2": 202499.9999999869,
+                "covered_area_m2": 202499.9999999869,
+                "coverage_percent": 100.0
+              }
+            },
+            "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+            "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+          },
+          "coverage_policy": {
+            "required_fraction": 1.0,
+            "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+            "input_fractional_tolerance_does_not_relax_service_coverage": true
+          },
+          "checks": [
+            "input_schema",
+            "original_required_coverage",
+            "full_segment_airspace",
+            "raster_cell_surface_clearance",
+            "continuous_temporal_airspace",
+            "continuous_pairwise_separation",
+            "resource_and_landing_suffix",
+            "payload_gsd",
+            "site_roles",
+            "service_and_mission_windows",
+            "wind_limits",
+            "declared_survey_turn_buffers",
+            "metric_claims"
+          ],
+          "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+          "not_checked": [
+            "discrete_photo_front_overlap",
+            "side_overlap_quality",
+            "aircraft_dynamics",
+            "off_track_sensor_terrain_occlusion",
+            "real_operational_permissions",
+            "global_optimality"
+          ],
+          "fingerprint_sha256": "7ee5634e48d93adb3ff8872dc457d0734bc6c98b71ee388bd56da8045418a2d8"
+        },
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:26:02.376415+00:00",
+        "input_sha256": "13cc73e7aa98db3663524a1fa5e25c7fe0c71cc5deb0e63c21c8f364a03eda81",
+        "result_sha256": "c5084a05e1db375df91caf476ee92323916f6fa55eeca5017b54715a6a208920"
+      },
+      "diagnosis": {
+        "h2_status": "FEASIBLE",
+        "unassigned": [],
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "requires_h3_validation": true
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "canonical h1_coverage.run_h1_scene -> standalone h2.planner.plan_bundle -> independent H3 gate",
+        "pipeline": "h1_coverage -> h2 -> h3",
+        "planner_module": "h2.planner",
+        "h2_input_sha256": "9df7f242f6e936af620133c1006ba741f178b158165e211a826969b2b29da1db",
+        "candidate_requires_independent_check": true,
+        "candidate_service_status": "FEASIBLE",
+        "candidate_service_reasons": [],
+        "input_sha256": "13cc73e7aa98db3663524a1fa5e25c7fe0c71cc5deb0e63c21c8f364a03eda81",
+        "input_files_sha256": {
+          "metadata.json": "ff0d4ab5aeacfcd81d92d966b0f18d9e533fd61bb8a87889a61da6c34a51c4c2",
+          "mission.json": "4de55f0d6ea6ce1643edc15e61e5ac90243cea9b6a6b36f82ce175f90475ce2a",
+          "fleet.json": "09dc80facff9539ed141d68f775b3ff80f8155f85810c87f1f23a511c4876a23",
+          "payload_catalog.json": "6d95a56c97c315c9ad03e634f3e2ba9d76e27b7b7f8512e12a1625eb09f8cf42",
+          "survey_areas.geojson": "1c8ca02d7e14eeeecb9f5ded3515ecfe5d92042fbd64735109fa8c47ae045a02",
+          "allowed_airspace.geojson": "fc43f530e35bbc98fda92d4dde8f8afb9c3d5c5fb083cd2a518ca3cec9f564ac",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "a975b012797ef4c8a2ae7a932048ec4b38b8c1692697c50552ac5cd0cb93a2a5",
+          "dem.tif": "5910446d44dcad3177ea9b83bdbb557d98381983fc1b7ca6ab40584aa9d77bcc"
+        },
+        "h1_bundle_schema": "gmp.h1_h2.v1",
+        "h1_bundle_sha256": "9df7f242f6e936af620133c1006ba741f178b158165e211a826969b2b29da1db",
+        "h1_task_geometry_sha256": "1e6e1375211c7a2229ac4ab60372ac79cddd963b19003c3ce7fd17dba59f7c39",
+        "h2_plan_schema": "h2.plan.v1",
+        "h2_plan_sha256": "986314934341728e57ebf8217a3b6ffe86c7707f649f10168cac6a358d86a95b",
+        "h2_status": "FEASIBLE",
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "h2_unassigned": [],
+        "h2_settings": {
+          "objective": "makespan",
+          "time_budget_s": 40.0,
+          "seed": 20260918,
+          "max_iterations": 200,
+          "cpsat": true,
+          "deconflict": true,
+          "survey_speed_factor": 1.0,
+          "multirotor_turn_s": 6.0,
+          "vertical_speed_ms": 3.0,
+          "sample_step_m": 20.0,
+          "task_windows": {},
+          "task_service_s": {}
+        },
+        "h2_solver_log": [
+          {
+            "stage": "greedy",
+            "elapsed_s": 0.3075132620288059,
+            "objective_value": 874.4157762145574,
+            "unassigned_count": 0
+          }
+        ],
+        "h2_deconfliction": {
+          "before": [],
+          "remaining": [],
+          "ladder_actions": [],
+          "ladder_used": []
+        },
+        "h2_assumptions": [
+          "linear time resource model",
+          "fixed-wing launch/landing scheduling envelopes; H3 checks manoeuvres",
+          "Obstacles are avoided horizontally at every altitude",
+          "Temporal restrictions conservatively block the full sortie interval at every altitude"
+        ],
+        "seed": 20260918,
+        "planner_time_budget_s": 40.0,
+        "waypoint_step_m": 20,
+        "waypoint_phase_semantics": "incoming segment",
+        "position_interpolation": "linear metric X/Y and AMSL between timestamps",
+        "dem_sampling": "containing raster cell",
+        "metric_crs": 32637,
+        "planning_profiles": [
+          {
+            "id": "RGB",
+            "gsd_limit_cm": 3.0,
+            "planning_gsd_cm": 3.0,
+            "camera": {
+              "image_width_px": 6000,
+              "image_height_px": 4000,
+              "focal_length_mm": 16,
+              "pixel_pitch_um": 3.9
+            }
+          },
+          {
+            "id": "MULTISPECTRAL",
+            "gsd_limit_cm": 8.547008547008547,
+            "planning_gsd_cm": 8.547008547008547,
+            "camera": {
+              "image_width_px": 1280,
+              "image_height_px": 960,
+              "focal_length_mm": 5.4,
+              "pixel_pitch_um": 3.75
+            }
+          }
+        ],
+        "h1_task_count": 2,
+        "h1_config": {
+          "nfz_buffer_m": 30.0,
+          "allowed_inset_m": 20.0,
+          "coverage_pass_percent": 99.9,
+          "angle_step_deg": 15.0,
+          "keep_candidates": 4,
+          "max_tasks_per_job": 80,
+          "strict_coverage": false,
+          "crosswind_weight": 1.0,
+          "headland_m": 0.0,
+          "terrain_strict": false
+        },
+        "h1_warnings": [
+          "site WEST: outside survey area (+50m slack)",
+          "site EAST: outside survey area (+50m slack)"
+        ]
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "SAFE",
+        "metrics": {
+          "makespan_s": {
+            "actual": 874.415776014328,
+            "reference": 932.9880061149597,
+            "delta": -58.572230100631714,
+            "delta_percent": -6.277918871061525
+          },
+          "total_flight_s": {
+            "actual": 1579.6499099731445,
+            "reference": 1638.2221171855927,
+            "delta": -58.57220721244812,
+            "delta_percent": -3.5753519988530673
+          },
+          "distance_m": {
+            "actual": 15283.79892583807,
+            "reference": 15283.798925838062,
+            "delta": 7.275957614183426e-12,
+            "delta_percent": 4.7605687888781624e-14
+          },
+          "coverage_percent": {
+            "actual": 100.0,
+            "reference": 100.0,
+            "delta": 0.0,
+            "delta_percent": 0.0
+          }
+        },
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": "7ee5634e48d93adb3ff8872dc457d0734bc6c98b71ee388bd56da8045418a2d8",
+      "recommendations": [],
+      "finished_at": "2026-09-22T08:26:03.771763+00:00"
+    },
+    {
+      "scenario_id": "S06_alternate_site",
+      "objective": "makespan",
+      "scene_id": "e147c325ac354f68a3e2502b31939e6d",
+      "started_at": "2026-09-22T08:26:04.215772+00:00",
+      "expected_status": "INFEASIBLE",
+      "passed": true,
+      "status": "INFEASIBLE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "INFEASIBLE"
+        },
+        {
+          "stage": "recommendations",
+          "message": "Recalculating available candidate sites"
+        },
+        {
+          "stage": "complete",
+          "message": "INFEASIBLE"
+        }
+      ],
+      "plan_id": "84f657972c0145048cc2ac305a166dcd",
+      "elapsed_s": 26.647,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "no_flight_certificate": true,
+        "necessary_condition_proof_verified": true
+      },
+      "metrics": {
+        "proof_type": "unreachable_required_point",
+        "proof_verified": true,
+        "bounds": [
+          {
+            "uav_id": "U01",
+            "minimum_time_s": 1938.0844133831636,
+            "usable_time_s": 768.0
+          }
+        ],
+        "sensor_half_diagonal_m": 110.80309763410271,
+        "proof_scope": "entire_required_job",
+        "bound_model": "horizontal_distance_at_maximum_ground_speed"
+      },
+      "validation": {
+        "passed": true,
+        "status": "INFEASIBLE",
+        "violations": [],
+        "metrics": {
+          "proof_type": "unreachable_required_point",
+          "proof_verified": true,
+          "bounds": [
+            {
+              "uav_id": "U01",
+              "minimum_time_s": 1938.0844133831636,
+              "usable_time_s": 768.0
+            }
+          ],
+          "sensor_half_diagonal_m": 110.80309763410271,
+          "proof_scope": "entire_required_job",
+          "bound_model": "horizontal_distance_at_maximum_ground_speed"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "INFEASIBLE",
+        "certificate": null,
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:26:06.385186+00:00",
+        "input_sha256": "57390470354d9c3baf6c5a8ea39fcba4a79f17a6df574ccfe22ef103fff1731c",
+        "result_sha256": "cf51101ff3a0148a8497dce924a3396da652afbbd0893e7b7967525c1e51f04c"
+      },
+      "diagnosis": {
+        "proof": {
+          "type": "unreachable_required_point",
+          "job_id": "JOB_RGB",
+          "point": [
+            37.53,
+            55.7
+          ]
+        },
+        "reason_codes": [
+          "unreachable_required_point"
+        ],
+        "scope": "Necessary-condition proof within the declared input model"
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "H3 necessary-condition proof before H1/H2 planning",
+        "input_sha256": "57390470354d9c3baf6c5a8ea39fcba4a79f17a6df574ccfe22ef103fff1731c",
+        "input_files_sha256": {
+          "metadata.json": "b19f218df953d7eb6c81839f182dc0c72ab7e90df5fb8507ee25f3629b2d3433",
+          "mission.json": "4de55f0d6ea6ce1643edc15e61e5ac90243cea9b6a6b36f82ce175f90475ce2a",
+          "fleet.json": "88439178569f9d0cde979d50471569797dcf1e28984d5d2183ef457477c171b3",
+          "payload_catalog.json": "c449324cfa3e5596a0f448f9a45cab9573755f4175d6520af18da17378bff71d",
+          "survey_areas.geojson": "3a837402bf6c30ec027db7f4f8e6f4ae966bd39b98e100cfca2a564a8c83f1be",
+          "allowed_airspace.geojson": "53b129d6236c178358e3b7a9d583ba48ab404ce4cd7ff82766ea4b834138ed2c",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "91000240bdbdea7da9867aec83c0b507635716aac5787a7442f04f1d7d89bf37",
+          "dem.tif": "7aa2a798189de4532ce918f9598c1261a35e84ef9ccd3030ec4ca5b6768a5daa"
+        },
+        "h1_executed": false,
+        "h2_executed": false
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "INFEASIBLE",
+        "metrics": {},
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": null,
+      "recommendations": [
+        {
+          "id": "proposal_1620750285f3",
+          "type": "change_base",
+          "title": "Старт и посадка на площадке CANDIDATE_NEAR",
+          "scene_id": "3acc78340fe240b5bc34c1d62bf6672b",
+          "verified": true,
+          "status": "SAFE"
+        },
+        {
+          "id": "proposal_e56000e0ed16",
+          "type": "replace_uav",
+          "title": "При наличии geoscan_701: заменить БВС U01",
+          "scene_id": "8a565ab44d3d46aaaa7233950a5f29b3",
+          "verified": true,
+          "status": "SAFE"
+        }
+      ],
+      "finished_at": "2026-09-22T08:26:30.862451+00:00"
+    },
+    {
+      "scenario_id": "S07_unreachable_landing",
+      "objective": "makespan",
+      "scene_id": "4e38162f0159445ca49e7ea82b2cf5ae",
+      "started_at": "2026-09-22T08:26:30.973806+00:00",
+      "expected_status": "INFEASIBLE",
+      "passed": true,
+      "status": "INFEASIBLE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "INFEASIBLE"
+        },
+        {
+          "stage": "recommendations",
+          "message": "Recalculating available candidate sites"
+        },
+        {
+          "stage": "complete",
+          "message": "INFEASIBLE"
+        }
+      ],
+      "plan_id": "711062a3be424ec79a39aa309d45d1d2",
+      "elapsed_s": 18.597,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "no_flight_certificate": true,
+        "necessary_condition_proof_verified": true
+      },
+      "metrics": {
+        "proof_type": "unreachable_required_point",
+        "proof_verified": true,
+        "bounds": [
+          {
+            "uav_id": "U01",
+            "minimum_time_s": 1738.2509412766,
+            "usable_time_s": 960.0
+          }
+        ],
+        "sensor_half_diagonal_m": 110.80309763410271,
+        "proof_scope": "entire_required_job",
+        "bound_model": "horizontal_distance_at_maximum_ground_speed"
+      },
+      "validation": {
+        "passed": true,
+        "status": "INFEASIBLE",
+        "violations": [],
+        "metrics": {
+          "proof_type": "unreachable_required_point",
+          "proof_verified": true,
+          "bounds": [
+            {
+              "uav_id": "U01",
+              "minimum_time_s": 1738.2509412766,
+              "usable_time_s": 960.0
+            }
+          ],
+          "sensor_half_diagonal_m": 110.80309763410271,
+          "proof_scope": "entire_required_job",
+          "bound_model": "horizontal_distance_at_maximum_ground_speed"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "INFEASIBLE",
+        "certificate": null,
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:26:33.389834+00:00",
+        "input_sha256": "dbcf0a847ba399dfe30f40cfc9502ab735384859d8a9ed42413fc624250d3931",
+        "result_sha256": "1d2239d5c90b8cfea82d71fddc866596e2b4ba673b3a8d358390b743082bf73a"
+      },
+      "diagnosis": {
+        "proof": {
+          "type": "unreachable_required_point",
+          "job_id": "JOB_RGB",
+          "point": [
+            37.53,
+            55.7
+          ]
+        },
+        "reason_codes": [
+          "unreachable_required_point"
+        ],
+        "scope": "Necessary-condition proof within the declared input model"
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "H3 necessary-condition proof before H1/H2 planning",
+        "input_sha256": "dbcf0a847ba399dfe30f40cfc9502ab735384859d8a9ed42413fc624250d3931",
+        "input_files_sha256": {
+          "metadata.json": "d062530fc6bdb3dd3128757a3ad18c1e680f5697569687ca7ff18323f6d8e923",
+          "mission.json": "0f2cf90e2d0e382edb2026a5fc628386673e91847e2de059fd8c77fd5a7fb1a2",
+          "fleet.json": "6def4d392941e83ddfd4b623a302f670a4b731b6e1be5e9ce2ceef18810ac1b9",
+          "payload_catalog.json": "c449324cfa3e5596a0f448f9a45cab9573755f4175d6520af18da17378bff71d",
+          "survey_areas.geojson": "3a837402bf6c30ec027db7f4f8e6f4ae966bd39b98e100cfca2a564a8c83f1be",
+          "allowed_airspace.geojson": "69743d6d2ac6429e215374c57bc96f32fb169a988442f6e6ea559ce07bdb2017",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "0af317c8e8f4786002fb3ec3216345b593fe9494c5bdeffcc4a36e08586c9d04",
+          "dem.tif": "7b3804d8fc6fa5e6e373bacc57eb7f2654a0d427c3031bfdcf6211a503f922f7"
+        },
+        "h1_executed": false,
+        "h2_executed": false
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "INFEASIBLE",
+        "metrics": {},
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": null,
+      "recommendations": [
+        {
+          "id": "proposal_80dd612fceae",
+          "type": "replace_uav",
+          "title": "При наличии geoscan_701: заменить БВС U01",
+          "scene_id": "9c3344c2c49a4cfdac2572a6915d6542",
+          "verified": true,
+          "status": "SAFE"
+        }
+      ],
+      "finished_at": "2026-09-22T08:26:49.570713+00:00"
+    },
+    {
+      "scenario_id": "S08_fixed_wing_nfz",
+      "objective": "makespan",
+      "scene_id": "c9b7984c82ae48b4a2c6e93228cd2408",
+      "started_at": "2026-09-22T08:26:49.661539+00:00",
+      "expected_status": "SAFE",
+      "passed": true,
+      "status": "SAFE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "SAFE"
+        },
+        {
+          "stage": "complete",
+          "message": "SAFE"
+        }
+      ],
+      "plan_id": "3edfcd2b4b7d4c49a37f2c56a2505b2a",
+      "elapsed_s": 14.781,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "live_candidate_provenance": true,
+        "canonical_pipeline": true,
+        "standalone_h2": true,
+        "certificate_present": true,
+        "certificate_result_hash": true,
+        "certificate_input_hash": true
+      },
+      "metrics": {
+        "distance_m": 16531.2317418614,
+        "total_flight_s": 1599.8186230659485,
+        "makespan_s": 1599.8186230659485,
+        "airborne_span_s": 1599.8186230659485,
+        "coverage_percent": 100.0,
+        "required_area_m2": 1200000.0000007625,
+        "covered_area_m2": 1200000.0000007625,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 1200000.0000007625,
+            "covered_area_m2": 1200000.0000007625,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "validation": {
+        "passed": true,
+        "status": "SAFE",
+        "violations": [],
+        "metrics": {
+          "distance_m": 16531.2317418614,
+          "total_flight_s": 1599.8186230659485,
+          "makespan_s": 1599.8186230659485,
+          "airborne_span_s": 1599.8186230659485,
+          "coverage_percent": 100.0,
+          "required_area_m2": 1200000.0000007625,
+          "covered_area_m2": 1200000.0000007625,
+          "sortie_count": 1,
+          "per_job": {
+            "JOB_RGB": {
+              "required_area_m2": 1200000.0000007625,
+              "covered_area_m2": 1200000.0000007625,
+              "coverage_percent": 100.0
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "SAFE",
+        "certificate": {
+          "schema": "geoscan.h3.certificate.v1",
+          "validator_version": "geoscan.h3.validator.v1",
+          "validator_source_sha256": "93fba1af646f88e65acd07e3b236b8747b6c0dd90c0aa4055395bf53cfdf8aee",
+          "validator_gate_source_sha256": "dfeb2630b00d1c3b857734e483c833ba8c3e7140f971067c8f67497fcf8bd523",
+          "software_versions": {
+            "python": "3.12.3",
+            "numpy": "1.26.4",
+            "shapely": "2.0.7",
+            "pyproj": "3.8.0",
+            "rasterio": "1.3.11"
+          },
+          "issued_at": "2026-09-22T08:27:03.604179+00:00",
+          "plan_id": "3edfcd2b4b7d4c49a37f2c56a2505b2a",
+          "scene_id": "S08_fixed_wing_nfz",
+          "objective": "makespan",
+          "status": "SAFE",
+          "input_sha256": "660a8f40335eca1c508b11aeed1c408bc56e1469b9dbf2fb681455d4786121b7",
+          "input_files_sha256": {
+            "metadata.json": "f15451b74860314d939310698f0ca5003c659dd912eb4a2e1f52664f94dd20fe",
+            "mission.json": "4de55f0d6ea6ce1643edc15e61e5ac90243cea9b6a6b36f82ce175f90475ce2a",
+            "fleet.json": "6fd2468441a1372d6167329753ced9a72ce958783299e943ea5ea8b607acabad",
+            "payload_catalog.json": "c449324cfa3e5596a0f448f9a45cab9573755f4175d6520af18da17378bff71d",
+            "survey_areas.geojson": "a504b3296832ab1eca204de07a6d179df144ec1486e60c74c132f0f9b61d5d50",
+            "allowed_airspace.geojson": "82e9c105af86eec3b2250e31352183a5d2446406ef82d6fa91a1eb39da8ee079",
+            "no_fly_zones.geojson": "6da18757de64e00fa70ec31a38cc41f0dd3aa8ef51d79bc5397f0c19eb84bb7b",
+            "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "obstacles.geojson": "3cb153558c758eaf483422b0cfe95495d52dbdf09742a620ede48f45f0fd3cc9",
+            "landing_sites.geojson": "e165779f9b9be5f6fbe48630d9da8366302bc1ab8235d580e4532aa00caf91ea",
+            "dem.tif": "5af535e7ac82c95546b7a1daa2212e00d0fb02f4041ba71bd8f4149823222280"
+          },
+          "result_sha256": "37061889cc9a78dabff00353c2646bd99a832d2140d29a1ba46512d92b8fae70",
+          "metrics": {
+            "distance_m": 16531.2317418614,
+            "total_flight_s": 1599.8186230659485,
+            "makespan_s": 1599.8186230659485,
+            "airborne_span_s": 1599.8186230659485,
+            "coverage_percent": 100.0,
+            "required_area_m2": 1200000.0000007625,
+            "covered_area_m2": 1200000.0000007625,
+            "sortie_count": 1,
+            "per_job": {
+              "JOB_RGB": {
+                "required_area_m2": 1200000.0000007625,
+                "covered_area_m2": 1200000.0000007625,
+                "coverage_percent": 100.0
+              }
+            },
+            "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+            "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+          },
+          "coverage_policy": {
+            "required_fraction": 1.0,
+            "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+            "input_fractional_tolerance_does_not_relax_service_coverage": true
+          },
+          "checks": [
+            "input_schema",
+            "original_required_coverage",
+            "full_segment_airspace",
+            "raster_cell_surface_clearance",
+            "continuous_temporal_airspace",
+            "continuous_pairwise_separation",
+            "resource_and_landing_suffix",
+            "payload_gsd",
+            "site_roles",
+            "service_and_mission_windows",
+            "wind_limits",
+            "declared_survey_turn_buffers",
+            "metric_claims"
+          ],
+          "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+          "not_checked": [
+            "discrete_photo_front_overlap",
+            "side_overlap_quality",
+            "aircraft_dynamics",
+            "off_track_sensor_terrain_occlusion",
+            "real_operational_permissions",
+            "global_optimality"
+          ],
+          "fingerprint_sha256": "74128364033121953fc52fd7c8b6ee77f76fbb52710c96eb964987360fc0c6e7"
+        },
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:27:03.604179+00:00",
+        "input_sha256": "660a8f40335eca1c508b11aeed1c408bc56e1469b9dbf2fb681455d4786121b7",
+        "result_sha256": "37061889cc9a78dabff00353c2646bd99a832d2140d29a1ba46512d92b8fae70"
+      },
+      "diagnosis": {
+        "h2_status": "FEASIBLE",
+        "unassigned": [],
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "requires_h3_validation": true
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "canonical h1_coverage.run_h1_scene -> standalone h2.planner.plan_bundle -> independent H3 gate",
+        "pipeline": "h1_coverage -> h2 -> h3",
+        "planner_module": "h2.planner",
+        "h2_input_sha256": "a93b966fd51c63db9196b05ec12de44e88e9776fa09c337a8f012809986ba5af",
+        "candidate_requires_independent_check": true,
+        "candidate_service_status": "FEASIBLE",
+        "candidate_service_reasons": [],
+        "input_sha256": "660a8f40335eca1c508b11aeed1c408bc56e1469b9dbf2fb681455d4786121b7",
+        "input_files_sha256": {
+          "metadata.json": "f15451b74860314d939310698f0ca5003c659dd912eb4a2e1f52664f94dd20fe",
+          "mission.json": "4de55f0d6ea6ce1643edc15e61e5ac90243cea9b6a6b36f82ce175f90475ce2a",
+          "fleet.json": "6fd2468441a1372d6167329753ced9a72ce958783299e943ea5ea8b607acabad",
+          "payload_catalog.json": "c449324cfa3e5596a0f448f9a45cab9573755f4175d6520af18da17378bff71d",
+          "survey_areas.geojson": "a504b3296832ab1eca204de07a6d179df144ec1486e60c74c132f0f9b61d5d50",
+          "allowed_airspace.geojson": "82e9c105af86eec3b2250e31352183a5d2446406ef82d6fa91a1eb39da8ee079",
+          "no_fly_zones.geojson": "6da18757de64e00fa70ec31a38cc41f0dd3aa8ef51d79bc5397f0c19eb84bb7b",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "3cb153558c758eaf483422b0cfe95495d52dbdf09742a620ede48f45f0fd3cc9",
+          "landing_sites.geojson": "e165779f9b9be5f6fbe48630d9da8366302bc1ab8235d580e4532aa00caf91ea",
+          "dem.tif": "5af535e7ac82c95546b7a1daa2212e00d0fb02f4041ba71bd8f4149823222280"
+        },
+        "h1_bundle_schema": "gmp.h1_h2.v1",
+        "h1_bundle_sha256": "a93b966fd51c63db9196b05ec12de44e88e9776fa09c337a8f012809986ba5af",
+        "h1_task_geometry_sha256": "b103c2268a1ba8f92692fefafe7675e339705575f092f9d4fa2ea22e687d22b6",
+        "h2_plan_schema": "h2.plan.v1",
+        "h2_plan_sha256": "05265afee371c9dd54a59cd01787f28736dc744b59a0756d4bf567597e0753ba",
+        "h2_status": "FEASIBLE",
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "h2_unassigned": [],
+        "h2_settings": {
+          "objective": "makespan",
+          "time_budget_s": 40.0,
+          "seed": 20260918,
+          "max_iterations": 200,
+          "cpsat": true,
+          "deconflict": true,
+          "survey_speed_factor": 1.0,
+          "multirotor_turn_s": 6.0,
+          "vertical_speed_ms": 3.0,
+          "sample_step_m": 20.0,
+          "task_windows": {},
+          "task_service_s": {}
+        },
+        "h2_solver_log": [
+          {
+            "stage": "greedy",
+            "elapsed_s": 0.33593597798608243,
+            "objective_value": 1599.818622846939,
+            "unassigned_count": 0
+          }
+        ],
+        "h2_deconfliction": {
+          "before": [],
+          "remaining": [],
+          "ladder_actions": [],
+          "ladder_used": []
+        },
+        "h2_assumptions": [
+          "linear time resource model",
+          "fixed-wing launch/landing scheduling envelopes; H3 checks manoeuvres",
+          "Obstacles are avoided horizontally at every altitude",
+          "Temporal restrictions conservatively block the full sortie interval at every altitude"
+        ],
+        "seed": 20260918,
+        "planner_time_budget_s": 40.0,
+        "waypoint_step_m": 20,
+        "waypoint_phase_semantics": "incoming segment",
+        "position_interpolation": "linear metric X/Y and AMSL between timestamps",
+        "dem_sampling": "containing raster cell",
+        "metric_crs": 32637,
+        "planning_profiles": [
+          {
+            "id": "RGB",
+            "gsd_limit_cm": 3.0,
+            "planning_gsd_cm": 3.0,
+            "camera": {
+              "image_width_px": 6000,
+              "image_height_px": 4000,
+              "focal_length_mm": 16,
+              "pixel_pitch_um": 3.9
+            }
+          }
+        ],
+        "h1_task_count": 1,
+        "h1_config": {
+          "nfz_buffer_m": 30.0,
+          "allowed_inset_m": 20.0,
+          "coverage_pass_percent": 99.9,
+          "angle_step_deg": 15.0,
+          "keep_candidates": 4,
+          "max_tasks_per_job": 80,
+          "strict_coverage": false,
+          "crosswind_weight": 1.0,
+          "headland_m": 0.0,
+          "terrain_strict": false
+        },
+        "h1_warnings": [
+          "site BASE: outside survey area (+50m slack)",
+          "site RESERVE: outside survey area (+50m slack)",
+          "M1: 1 obstacle(s) loaded as soft exclusion"
+        ]
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "SAFE",
+        "metrics": {
+          "makespan_s": {
+            "actual": 1599.8186230659485,
+            "reference": 1686.1362199783325,
+            "delta": -86.31759691238403,
+            "delta_percent": -5.119254060831055
+          },
+          "total_flight_s": {
+            "actual": 1599.8186230659485,
+            "reference": 1686.1362199783325,
+            "delta": -86.31759691238403,
+            "delta_percent": -5.119254060831055
+          },
+          "distance_m": {
+            "actual": 16531.2317418614,
+            "reference": 16545.25914878087,
+            "delta": -14.027406919471105,
+            "delta_percent": -0.08478203208140567
+          },
+          "coverage_percent": {
+            "actual": 100.0,
+            "reference": 100.0,
+            "delta": 0.0,
+            "delta_percent": 0.0
+          }
+        },
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": "74128364033121953fc52fd7c8b6ee77f76fbb52710c96eb964987360fc0c6e7",
+      "recommendations": [],
+      "finished_at": "2026-09-22T08:27:04.442901+00:00"
+    },
+    {
+      "scenario_id": "S09_wind_refusal",
+      "objective": "makespan",
+      "scene_id": "a3b620eee63949a3a66cde1f454176f2",
+      "started_at": "2026-09-22T08:27:04.550898+00:00",
+      "expected_status": "INFEASIBLE",
+      "passed": true,
+      "status": "INFEASIBLE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "INFEASIBLE"
+        },
+        {
+          "stage": "recommendations",
+          "message": "Recalculating available candidate sites"
+        },
+        {
+          "stage": "complete",
+          "message": "INFEASIBLE"
+        }
+      ],
+      "plan_id": "d74f76365b2c4b94ae33f62831ed2381",
+      "elapsed_s": 4.425,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "no_flight_certificate": true,
+        "necessary_condition_proof_verified": true
+      },
+      "metrics": {
+        "proof_type": "wind_excludes_all",
+        "proof_verified": true,
+        "compatible_uavs": 1,
+        "wind_eligible_uavs": 0
+      },
+      "validation": {
+        "passed": true,
+        "status": "INFEASIBLE",
+        "violations": [],
+        "metrics": {
+          "proof_type": "wind_excludes_all",
+          "proof_verified": true,
+          "compatible_uavs": 1,
+          "wind_eligible_uavs": 0
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "INFEASIBLE",
+        "certificate": null,
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:27:06.916566+00:00",
+        "input_sha256": "6a6a2c501a718d4551a9ad5626638b5eecbb7a77112e5ee3bd30ebc70bfb65e5",
+        "result_sha256": "513bc27d5639c1e42d963a579110931a0182284f8b70a2a97be70635c7a0619c"
+      },
+      "diagnosis": {
+        "proof": {
+          "type": "wind_excludes_all",
+          "job_id": "JOB_RGB"
+        },
+        "reason_codes": [
+          "wind_excludes_all"
+        ],
+        "scope": "Necessary-condition proof within the declared input model"
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "H3 necessary-condition proof before H1/H2 planning",
+        "input_sha256": "6a6a2c501a718d4551a9ad5626638b5eecbb7a77112e5ee3bd30ebc70bfb65e5",
+        "input_files_sha256": {
+          "metadata.json": "565f03f1cd31530d36f65d5299f45cecf33eec01c6090bddf477ec6ba53d78da",
+          "mission.json": "43739b11943943e489e5ffa73601ca6f6eaea2ceb6839ee39be9b1e0ef3dfeae",
+          "fleet.json": "a2603ba74dac3e768ee79be3b3db02e058c002b4c085f948987764bb9c8dfd25",
+          "payload_catalog.json": "c449324cfa3e5596a0f448f9a45cab9573755f4175d6520af18da17378bff71d",
+          "survey_areas.geojson": "3a837402bf6c30ec027db7f4f8e6f4ae966bd39b98e100cfca2a564a8c83f1be",
+          "allowed_airspace.geojson": "1f780be3eec5924e28e489203738a62d23a37996f1a79775801f0bf6b4bad76a",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "3168ce9c4c2da26be2f8b234de7ec078778f667f141d64d87f90965de9b45483",
+          "dem.tif": "a3207e1690f46c8217c88bf37f131a35dcb1226f74b1964a16fa7a15c3f6bab5"
+        },
+        "h1_executed": false,
+        "h2_executed": false
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "INFEASIBLE",
+        "metrics": {},
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": null,
+      "recommendations": [],
+      "finished_at": "2026-09-22T08:27:08.975743+00:00"
+    },
+    {
+      "scenario_id": "S10_different_start_end",
+      "objective": "makespan",
+      "scene_id": "d83080d8b44e49938b7e9109868bcb8c",
+      "started_at": "2026-09-22T08:27:09.066251+00:00",
+      "expected_status": "SAFE",
+      "passed": true,
+      "status": "SAFE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "SAFE"
+        },
+        {
+          "stage": "complete",
+          "message": "SAFE"
+        }
+      ],
+      "plan_id": "d860a13c231d4992b72d66af1caf3641",
+      "elapsed_s": 10.443,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "live_candidate_provenance": true,
+        "canonical_pipeline": true,
+        "standalone_h2": true,
+        "certificate_present": true,
+        "certificate_result_hash": true,
+        "certificate_input_hash": true
+      },
+      "metrics": {
+        "distance_m": 12710.311981034518,
+        "total_flight_s": 1211.9409530162811,
+        "makespan_s": 1211.9409530162811,
+        "airborne_span_s": 1211.9409530162811,
+        "coverage_percent": 100.0,
+        "required_area_m2": 959999.9999993423,
+        "covered_area_m2": 959999.9999993423,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 959999.9999993423,
+            "covered_area_m2": 959999.9999993423,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "validation": {
+        "passed": true,
+        "status": "SAFE",
+        "violations": [],
+        "metrics": {
+          "distance_m": 12710.311981034518,
+          "total_flight_s": 1211.9409530162811,
+          "makespan_s": 1211.9409530162811,
+          "airborne_span_s": 1211.9409530162811,
+          "coverage_percent": 100.0,
+          "required_area_m2": 959999.9999993423,
+          "covered_area_m2": 959999.9999993423,
+          "sortie_count": 1,
+          "per_job": {
+            "JOB_RGB": {
+              "required_area_m2": 959999.9999993423,
+              "covered_area_m2": 959999.9999993423,
+              "coverage_percent": 100.0
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "SAFE",
+        "certificate": {
+          "schema": "geoscan.h3.certificate.v1",
+          "validator_version": "geoscan.h3.validator.v1",
+          "validator_source_sha256": "93fba1af646f88e65acd07e3b236b8747b6c0dd90c0aa4055395bf53cfdf8aee",
+          "validator_gate_source_sha256": "dfeb2630b00d1c3b857734e483c833ba8c3e7140f971067c8f67497fcf8bd523",
+          "software_versions": {
+            "python": "3.12.3",
+            "numpy": "1.26.4",
+            "shapely": "2.0.7",
+            "pyproj": "3.8.0",
+            "rasterio": "1.3.11"
+          },
+          "issued_at": "2026-09-22T08:27:18.324285+00:00",
+          "plan_id": "d860a13c231d4992b72d66af1caf3641",
+          "scene_id": "S10_different_start_end",
+          "objective": "makespan",
+          "status": "SAFE",
+          "input_sha256": "1406d68cebf2f7b6adefb23d920ecc804cc7499903255078cd655b74abffb730",
+          "input_files_sha256": {
+            "metadata.json": "9915d0419188e759c43593d662db9701339a756c08a90eebc5f74f2309c5520f",
+            "mission.json": "0f2cf90e2d0e382edb2026a5fc628386673e91847e2de059fd8c77fd5a7fb1a2",
+            "fleet.json": "25e034bb18f903cce29dbfaf23e3f67d04e05d84ea15a99e380fcd63eef7ed8c",
+            "payload_catalog.json": "c449324cfa3e5596a0f448f9a45cab9573755f4175d6520af18da17378bff71d",
+            "survey_areas.geojson": "c5cf078d49ac67ded5e0f23af8371e258dfbcafd529bbdfc5448c301551ea081",
+            "allowed_airspace.geojson": "ebf2ceac68549a0a638aa851c2b99003d6f881987dd3ddedf4b63502190e665e",
+            "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "landing_sites.geojson": "1d264b151977b628df27c333b3c4ce8dc8c59ea2a0f002179dc98163d573e031",
+            "dem.tif": "21beaa46c73e5af88325a4056ef5e8aeec8adbf0cedb5590c11376af148e36b7"
+          },
+          "result_sha256": "28386b1ae2c15d450a9fb3c99fb81231586cefcdd81b536342ddbec53e288c28",
+          "metrics": {
+            "distance_m": 12710.311981034518,
+            "total_flight_s": 1211.9409530162811,
+            "makespan_s": 1211.9409530162811,
+            "airborne_span_s": 1211.9409530162811,
+            "coverage_percent": 100.0,
+            "required_area_m2": 959999.9999993423,
+            "covered_area_m2": 959999.9999993423,
+            "sortie_count": 1,
+            "per_job": {
+              "JOB_RGB": {
+                "required_area_m2": 959999.9999993423,
+                "covered_area_m2": 959999.9999993423,
+                "coverage_percent": 100.0
+              }
+            },
+            "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+            "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+          },
+          "coverage_policy": {
+            "required_fraction": 1.0,
+            "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+            "input_fractional_tolerance_does_not_relax_service_coverage": true
+          },
+          "checks": [
+            "input_schema",
+            "original_required_coverage",
+            "full_segment_airspace",
+            "raster_cell_surface_clearance",
+            "continuous_temporal_airspace",
+            "continuous_pairwise_separation",
+            "resource_and_landing_suffix",
+            "payload_gsd",
+            "site_roles",
+            "service_and_mission_windows",
+            "wind_limits",
+            "declared_survey_turn_buffers",
+            "metric_claims"
+          ],
+          "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+          "not_checked": [
+            "discrete_photo_front_overlap",
+            "side_overlap_quality",
+            "aircraft_dynamics",
+            "off_track_sensor_terrain_occlusion",
+            "real_operational_permissions",
+            "global_optimality"
+          ],
+          "fingerprint_sha256": "d8d2667946d6071c1fd056add3defd41dfa65a0ace38e56ee07b2d1424ea136e"
+        },
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:27:18.324285+00:00",
+        "input_sha256": "1406d68cebf2f7b6adefb23d920ecc804cc7499903255078cd655b74abffb730",
+        "result_sha256": "28386b1ae2c15d450a9fb3c99fb81231586cefcdd81b536342ddbec53e288c28"
+      },
+      "diagnosis": {
+        "h2_status": "FEASIBLE",
+        "unassigned": [],
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "requires_h3_validation": true
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "canonical h1_coverage.run_h1_scene -> standalone h2.planner.plan_bundle -> independent H3 gate",
+        "pipeline": "h1_coverage -> h2 -> h3",
+        "planner_module": "h2.planner",
+        "h2_input_sha256": "a5e9cc269d068820f22c95e40b02deb0d470aa87c2b8320e51e4de0c98f905c5",
+        "candidate_requires_independent_check": true,
+        "candidate_service_status": "FEASIBLE",
+        "candidate_service_reasons": [],
+        "input_sha256": "1406d68cebf2f7b6adefb23d920ecc804cc7499903255078cd655b74abffb730",
+        "input_files_sha256": {
+          "metadata.json": "9915d0419188e759c43593d662db9701339a756c08a90eebc5f74f2309c5520f",
+          "mission.json": "0f2cf90e2d0e382edb2026a5fc628386673e91847e2de059fd8c77fd5a7fb1a2",
+          "fleet.json": "25e034bb18f903cce29dbfaf23e3f67d04e05d84ea15a99e380fcd63eef7ed8c",
+          "payload_catalog.json": "c449324cfa3e5596a0f448f9a45cab9573755f4175d6520af18da17378bff71d",
+          "survey_areas.geojson": "c5cf078d49ac67ded5e0f23af8371e258dfbcafd529bbdfc5448c301551ea081",
+          "allowed_airspace.geojson": "ebf2ceac68549a0a638aa851c2b99003d6f881987dd3ddedf4b63502190e665e",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "1d264b151977b628df27c333b3c4ce8dc8c59ea2a0f002179dc98163d573e031",
+          "dem.tif": "21beaa46c73e5af88325a4056ef5e8aeec8adbf0cedb5590c11376af148e36b7"
+        },
+        "h1_bundle_schema": "gmp.h1_h2.v1",
+        "h1_bundle_sha256": "a5e9cc269d068820f22c95e40b02deb0d470aa87c2b8320e51e4de0c98f905c5",
+        "h1_task_geometry_sha256": "100132372d077f2b15cf5ec47681945e113581f78bcf32a6355844ba7a0f3f7c",
+        "h2_plan_schema": "h2.plan.v1",
+        "h2_plan_sha256": "573c3953dc373af19628b037f30474527cf57cbd1779f4dca9124ffeb821629f",
+        "h2_status": "FEASIBLE",
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "h2_unassigned": [],
+        "h2_settings": {
+          "objective": "makespan",
+          "time_budget_s": 40.0,
+          "seed": 20260918,
+          "max_iterations": 200,
+          "cpsat": true,
+          "deconflict": true,
+          "survey_speed_factor": 1.0,
+          "multirotor_turn_s": 6.0,
+          "vertical_speed_ms": 3.0,
+          "sample_step_m": 20.0,
+          "task_windows": {},
+          "task_service_s": {}
+        },
+        "h2_solver_log": [
+          {
+            "stage": "greedy",
+            "elapsed_s": 0.17482867499347776,
+            "objective_value": 1211.9409527918635,
+            "unassigned_count": 0
+          }
+        ],
+        "h2_deconfliction": {
+          "before": [],
+          "remaining": [],
+          "ladder_actions": [],
+          "ladder_used": []
+        },
+        "h2_assumptions": [
+          "linear time resource model",
+          "fixed-wing launch/landing scheduling envelopes; H3 checks manoeuvres",
+          "Obstacles are avoided horizontally at every altitude",
+          "Temporal restrictions conservatively block the full sortie interval at every altitude"
+        ],
+        "seed": 20260918,
+        "planner_time_budget_s": 40.0,
+        "waypoint_step_m": 20,
+        "waypoint_phase_semantics": "incoming segment",
+        "position_interpolation": "linear metric X/Y and AMSL between timestamps",
+        "dem_sampling": "containing raster cell",
+        "metric_crs": 32637,
+        "planning_profiles": [
+          {
+            "id": "RGB",
+            "gsd_limit_cm": 3.0,
+            "planning_gsd_cm": 3.0,
+            "camera": {
+              "image_width_px": 6000,
+              "image_height_px": 4000,
+              "focal_length_mm": 16,
+              "pixel_pitch_um": 3.9
+            }
+          }
+        ],
+        "h1_task_count": 1,
+        "h1_config": {
+          "nfz_buffer_m": 30.0,
+          "allowed_inset_m": 20.0,
+          "coverage_pass_percent": 99.9,
+          "angle_step_deg": 15.0,
+          "keep_candidates": 4,
+          "max_tasks_per_job": 80,
+          "strict_coverage": false,
+          "crosswind_weight": 1.0,
+          "headland_m": 0.0,
+          "terrain_strict": false
+        },
+        "h1_warnings": [
+          "site START: outside survey area (+50m slack)",
+          "site END: outside survey area (+50m slack)"
+        ]
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "SAFE",
+        "metrics": {
+          "makespan_s": {
+            "actual": 1211.9409530162811,
+            "reference": 1211.9412190914154,
+            "delta": -0.00026607513427734375,
+            "delta_percent": -2.1954458688748832e-05
+          },
+          "total_flight_s": {
+            "actual": 1211.9409530162811,
+            "reference": 1211.9412190914154,
+            "delta": -0.00026607513427734375,
+            "delta_percent": -2.1954458688748832e-05
+          },
+          "distance_m": {
+            "actual": 12710.311981034518,
+            "reference": 12710.311981034522,
+            "delta": -3.637978807091713e-12,
+            "delta_percent": -2.862226208546306e-14
+          },
+          "coverage_percent": {
+            "actual": 100.0,
+            "reference": 100.0,
+            "delta": 0.0,
+            "delta_percent": 0.0
+          }
+        },
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": "d8d2667946d6071c1fd056add3defd41dfa65a0ace38e56ee07b2d1424ea136e",
+      "recommendations": [],
+      "finished_at": "2026-09-22T08:27:19.509025+00:00"
+    },
+    {
+      "scenario_id": "S11_payload_compatibility",
+      "objective": "makespan",
+      "scene_id": "12596693d9524398be648b36aa2e1a96",
+      "started_at": "2026-09-22T08:27:19.614989+00:00",
+      "expected_status": "SAFE",
+      "passed": true,
+      "status": "SAFE",
+      "progress": [
+        {
+          "stage": "running",
+          "message": "Canonical H1/H2 calculation and independent safety validation"
+        },
+        {
+          "stage": "validation",
+          "message": "SAFE"
+        },
+        {
+          "stage": "complete",
+          "message": "SAFE"
+        }
+      ],
+      "plan_id": "e2d06518def744b587fd30b41a4fd27f",
+      "elapsed_s": 46.782,
+      "mode": "live",
+      "checks": {
+        "mode_live": true,
+        "completed_without_error": true,
+        "expected_status": true,
+        "independent_validation_passed": true,
+        "input_snapshot_unchanged": true,
+        "live_candidate_provenance": true,
+        "canonical_pipeline": true,
+        "standalone_h2": true,
+        "certificate_present": true,
+        "certificate_result_hash": true,
+        "certificate_input_hash": true
+      },
+      "metrics": {
+        "distance_m": 15849.32933594776,
+        "total_flight_s": 2046.7774441242218,
+        "makespan_s": 527.3389389514923,
+        "airborne_span_s": 527.3389389514923,
+        "coverage_percent": 99.99999999936517,
+        "required_area_m2": 511999.9999999348,
+        "covered_area_m2": 511999.9999966845,
+        "sortie_count": 5,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 102399.99999980442,
+            "covered_area_m2": 102399.99999980442,
+            "coverage_percent": 100.0
+          },
+          "JOB_MULTISPECTRAL": {
+            "required_area_m2": 102399.99999996275,
+            "covered_area_m2": 102399.99999996275,
+            "coverage_percent": 100.0
+          },
+          "JOB_THERMAL": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102400.00000006519,
+            "coverage_percent": 100.0
+          },
+          "JOB_LIDAR": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102399.99999792533,
+            "coverage_percent": 99.9999999979103
+          },
+          "JOB_GEOPHYSICS": {
+            "required_area_m2": 102400.00000003725,
+            "covered_area_m2": 102399.99999892675,
+            "coverage_percent": 99.99999999891553
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "validation": {
+        "passed": true,
+        "status": "SAFE",
+        "violations": [],
+        "metrics": {
+          "distance_m": 15849.32933594776,
+          "total_flight_s": 2046.7774441242218,
+          "makespan_s": 527.3389389514923,
+          "airborne_span_s": 527.3389389514923,
+          "coverage_percent": 99.99999999936517,
+          "required_area_m2": 511999.9999999348,
+          "covered_area_m2": 511999.9999966845,
+          "sortie_count": 5,
+          "per_job": {
+            "JOB_RGB": {
+              "required_area_m2": 102399.99999980442,
+              "covered_area_m2": 102399.99999980442,
+              "coverage_percent": 100.0
+            },
+            "JOB_MULTISPECTRAL": {
+              "required_area_m2": 102399.99999996275,
+              "covered_area_m2": 102399.99999996275,
+              "coverage_percent": 100.0
+            },
+            "JOB_THERMAL": {
+              "required_area_m2": 102400.00000006519,
+              "covered_area_m2": 102400.00000006519,
+              "coverage_percent": 100.0
+            },
+            "JOB_LIDAR": {
+              "required_area_m2": 102400.00000006519,
+              "covered_area_m2": 102399.99999792533,
+              "coverage_percent": 99.9999999979103
+            },
+            "JOB_GEOPHYSICS": {
+              "required_area_m2": 102400.00000003725,
+              "covered_area_m2": 102399.99999892675,
+              "coverage_percent": 99.99999999891553
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "claimed_status": "SAFE",
+        "certificate": {
+          "schema": "geoscan.h3.certificate.v1",
+          "validator_version": "geoscan.h3.validator.v1",
+          "validator_source_sha256": "93fba1af646f88e65acd07e3b236b8747b6c0dd90c0aa4055395bf53cfdf8aee",
+          "validator_gate_source_sha256": "dfeb2630b00d1c3b857734e483c833ba8c3e7140f971067c8f67497fcf8bd523",
+          "software_versions": {
+            "python": "3.12.3",
+            "numpy": "1.26.4",
+            "shapely": "2.0.7",
+            "pyproj": "3.8.0",
+            "rasterio": "1.3.11"
+          },
+          "issued_at": "2026-09-22T08:28:04.422008+00:00",
+          "plan_id": "e2d06518def744b587fd30b41a4fd27f",
+          "scene_id": "S11_payload_compatibility",
+          "objective": "makespan",
+          "status": "SAFE",
+          "input_sha256": "5038c6ec14ffb54894181aac091c1375df587e1f844dc1e82797a2248a4397fd",
+          "input_files_sha256": {
+            "metadata.json": "4c13d78e16c923f54e79ecca07bf0479a6c28271d96dbfbc1798dcfc37dcaa9e",
+            "mission.json": "4de55f0d6ea6ce1643edc15e61e5ac90243cea9b6a6b36f82ce175f90475ce2a",
+            "fleet.json": "d5a90707b95392942228bc37540f3cca932f65978aa295a15d5a8a2af5ef86d1",
+            "payload_catalog.json": "65732ed579390fb29482bd2b23a679a2744196108a9edd0e062e6b86f07e1984",
+            "survey_areas.geojson": "71124e51f30cb0b37f0eee01da08bae9fcd15ef562159b60715cec866434fc02",
+            "allowed_airspace.geojson": "8e82f734d7e375532403c5dbc2dd703b41c73371f6916ba23eaa574a82cf6ebe",
+            "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+            "landing_sites.geojson": "6002ee12d76809112d73c61552ec8cdda0b3a56791b485f54c3162a3677fe021",
+            "dem.tif": "752eea933e48dd5fea75228f84fef13d3442ba090ce35009d3b804651117c460"
+          },
+          "result_sha256": "e04e5e8e048f07d930c2658dfa500dea9076facc85ba0afd44af5845a09c3b18",
+          "metrics": {
+            "distance_m": 15849.32933594776,
+            "total_flight_s": 2046.7774441242218,
+            "makespan_s": 527.3389389514923,
+            "airborne_span_s": 527.3389389514923,
+            "coverage_percent": 99.99999999936517,
+            "required_area_m2": 511999.9999999348,
+            "covered_area_m2": 511999.9999966845,
+            "sortie_count": 5,
+            "per_job": {
+              "JOB_RGB": {
+                "required_area_m2": 102399.99999980442,
+                "covered_area_m2": 102399.99999980442,
+                "coverage_percent": 100.0
+              },
+              "JOB_MULTISPECTRAL": {
+                "required_area_m2": 102399.99999996275,
+                "covered_area_m2": 102399.99999996275,
+                "coverage_percent": 100.0
+              },
+              "JOB_THERMAL": {
+                "required_area_m2": 102400.00000006519,
+                "covered_area_m2": 102400.00000006519,
+                "coverage_percent": 100.0
+              },
+              "JOB_LIDAR": {
+                "required_area_m2": 102400.00000006519,
+                "covered_area_m2": 102399.99999792533,
+                "coverage_percent": 99.9999999979103
+              },
+              "JOB_GEOPHYSICS": {
+                "required_area_m2": 102400.00000003725,
+                "covered_area_m2": 102399.99999892675,
+                "coverage_percent": 99.99999999891553
+              }
+            },
+            "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+            "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+          },
+          "coverage_policy": {
+            "required_fraction": 1.0,
+            "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+            "input_fractional_tolerance_does_not_relax_service_coverage": true
+          },
+          "checks": [
+            "input_schema",
+            "original_required_coverage",
+            "full_segment_airspace",
+            "raster_cell_surface_clearance",
+            "continuous_temporal_airspace",
+            "continuous_pairwise_separation",
+            "resource_and_landing_suffix",
+            "payload_gsd",
+            "site_roles",
+            "service_and_mission_windows",
+            "wind_limits",
+            "declared_survey_turn_buffers",
+            "metric_claims"
+          ],
+          "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+          "not_checked": [
+            "discrete_photo_front_overlap",
+            "side_overlap_quality",
+            "aircraft_dynamics",
+            "off_track_sensor_terrain_occlusion",
+            "real_operational_permissions",
+            "global_optimality"
+          ],
+          "fingerprint_sha256": "6b641cc54efe99bba104745121ea735739912bb5f84beeebebc6fe3beb480cd4"
+        },
+        "validator_version": "geoscan.h3.validator.v1",
+        "validated_at": "2026-09-22T08:28:04.422008+00:00",
+        "input_sha256": "5038c6ec14ffb54894181aac091c1375df587e1f844dc1e82797a2248a4397fd",
+        "result_sha256": "e04e5e8e048f07d930c2658dfa500dea9076facc85ba0afd44af5845a09c3b18"
+      },
+      "diagnosis": {
+        "h2_status": "FEASIBLE",
+        "unassigned": [],
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "requires_h3_validation": true
+      },
+      "provenance": {
+        "mode": "live",
+        "generator": "canonical h1_coverage.run_h1_scene -> standalone h2.planner.plan_bundle -> independent H3 gate",
+        "pipeline": "h1_coverage -> h2 -> h3",
+        "planner_module": "h2.planner",
+        "h2_input_sha256": "98a8c62664d6f655361965b278c95684171d1c608b12ce5d71374e4f1e425b97",
+        "candidate_requires_independent_check": true,
+        "candidate_service_status": "FEASIBLE",
+        "candidate_service_reasons": [],
+        "input_sha256": "5038c6ec14ffb54894181aac091c1375df587e1f844dc1e82797a2248a4397fd",
+        "input_files_sha256": {
+          "metadata.json": "4c13d78e16c923f54e79ecca07bf0479a6c28271d96dbfbc1798dcfc37dcaa9e",
+          "mission.json": "4de55f0d6ea6ce1643edc15e61e5ac90243cea9b6a6b36f82ce175f90475ce2a",
+          "fleet.json": "d5a90707b95392942228bc37540f3cca932f65978aa295a15d5a8a2af5ef86d1",
+          "payload_catalog.json": "65732ed579390fb29482bd2b23a679a2744196108a9edd0e062e6b86f07e1984",
+          "survey_areas.geojson": "71124e51f30cb0b37f0eee01da08bae9fcd15ef562159b60715cec866434fc02",
+          "allowed_airspace.geojson": "8e82f734d7e375532403c5dbc2dd703b41c73371f6916ba23eaa574a82cf6ebe",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "6002ee12d76809112d73c61552ec8cdda0b3a56791b485f54c3162a3677fe021",
+          "dem.tif": "752eea933e48dd5fea75228f84fef13d3442ba090ce35009d3b804651117c460"
+        },
+        "h1_bundle_schema": "gmp.h1_h2.v1",
+        "h1_bundle_sha256": "98a8c62664d6f655361965b278c95684171d1c608b12ce5d71374e4f1e425b97",
+        "h1_task_geometry_sha256": "704a529d8314fb96706fcb203dc8b2a25b1910d022e4de145703ec79725b7e9c",
+        "h2_plan_schema": "h2.plan.v1",
+        "h2_plan_sha256": "d40d8d8f6e66c5402c089bdc7e6ed76367fd2858d5a2d3638d50edfcf9982320",
+        "h2_status": "FEASIBLE",
+        "h2_checks": {
+          "passed": true,
+          "violations": [],
+          "scope": {
+            "geometry": "immutable survey and supplied static geographic context",
+            "resource": "independent time-linear endurance with reserve",
+            "geographic_coverage": "supplied scene only",
+            "emergency_reachability": "25 m sampled static paths",
+            "certificate": false
+          }
+        },
+        "h2_unassigned": [],
+        "h2_settings": {
+          "objective": "makespan",
+          "time_budget_s": 40.0,
+          "seed": 20260918,
+          "max_iterations": 200,
+          "cpsat": true,
+          "deconflict": true,
+          "survey_speed_factor": 1.0,
+          "multirotor_turn_s": 6.0,
+          "vertical_speed_ms": 3.0,
+          "sample_step_m": 20.0,
+          "task_windows": {},
+          "task_service_s": {}
+        },
+        "h2_solver_log": [
+          {
+            "stage": "greedy",
+            "elapsed_s": 0.48743486998137087,
+            "objective_value": 527.3389391449894,
+            "unassigned_count": 0
+          }
+        ],
+        "h2_deconfliction": {
+          "before": [],
+          "remaining": [],
+          "ladder_actions": [],
+          "ladder_used": []
+        },
+        "h2_assumptions": [
+          "linear time resource model",
+          "fixed-wing launch/landing scheduling envelopes; H3 checks manoeuvres",
+          "Obstacles are avoided horizontally at every altitude",
+          "Temporal restrictions conservatively block the full sortie interval at every altitude"
+        ],
+        "seed": 20260918,
+        "planner_time_budget_s": 40.0,
+        "waypoint_step_m": 20,
+        "waypoint_phase_semantics": "incoming segment",
+        "position_interpolation": "linear metric X/Y and AMSL between timestamps",
+        "dem_sampling": "containing raster cell",
+        "metric_crs": 32637,
+        "planning_profiles": [
+          {
+            "id": "RGB",
+            "gsd_limit_cm": 2.925,
+            "planning_gsd_cm": 2.925,
+            "camera": {
+              "image_width_px": 6000,
+              "image_height_px": 4000,
+              "focal_length_mm": 16,
+              "pixel_pitch_um": 3.9
+            }
+          },
+          {
+            "id": "MULTISPECTRAL",
+            "gsd_limit_cm": 8.333333333333332,
+            "planning_gsd_cm": 8.333333333333332,
+            "camera": {
+              "image_width_px": 1280,
+              "image_height_px": 960,
+              "focal_length_mm": 5.4,
+              "pixel_pitch_um": 3.75
+            }
+          },
+          {
+            "id": "THERMAL",
+            "gsd_limit_cm": 11.076923076923077,
+            "planning_gsd_cm": 11.076923076923077,
+            "camera": {
+              "image_width_px": 640,
+              "image_height_px": 512,
+              "focal_length_mm": 13,
+              "pixel_pitch_um": 12
+            }
+          },
+          {
+            "id": "LIDAR",
+            "gsd_limit_cm": null,
+            "planning_gsd_cm": null,
+            "camera": null
+          },
+          {
+            "id": "GEOPHYSICS",
+            "gsd_limit_cm": null,
+            "planning_gsd_cm": null,
+            "camera": null
+          }
+        ],
+        "h1_task_count": 5,
+        "h1_config": {
+          "nfz_buffer_m": 30.0,
+          "allowed_inset_m": 20.0,
+          "coverage_pass_percent": 99.9,
+          "angle_step_deg": 180.0,
+          "keep_candidates": 4,
+          "max_tasks_per_job": 80,
+          "strict_coverage": false,
+          "crosswind_weight": 1.0,
+          "headland_m": 0.0,
+          "terrain_strict": false
+        },
+        "h1_warnings": [
+          "site BASE_0: outside survey area (+50m slack)",
+          "site BASE_1: outside survey area (+50m slack)",
+          "site BASE_2: outside survey area (+50m slack)",
+          "site BASE_3: outside survey area (+50m slack)",
+          "site BASE_4: outside survey area (+50m slack)"
+        ]
+      },
+      "comparison": {
+        "available": true,
+        "reference_status": "SAFE",
+        "metrics": {
+          "makespan_s": {
+            "actual": 527.3389389514923,
+            "reference": 573.8619980812073,
+            "delta": -46.523059129714966,
+            "delta_percent": -8.107011665743979
+          },
+          "total_flight_s": {
+            "actual": 2046.7774441242218,
+            "reference": 2211.409682035446,
+            "delta": -164.63223791122437,
+            "delta_percent": -7.444673831747541
+          },
+          "distance_m": {
+            "actual": 15849.32933594776,
+            "reference": 15849.32933594775,
+            "delta": 9.094947017729282e-12,
+            "delta_percent": 5.738379728851427e-14
+          },
+          "coverage_percent": {
+            "actual": 99.99999999936517,
+            "reference": 99.99999999975927,
+            "delta": -3.9409542296198197e-10,
+            "delta_percent": -3.940954229629307e-10
+          }
+        },
+        "route_identity_required": false,
+        "optimality_proven": false
+      },
+      "certificate_fingerprint": "6b641cc54efe99bba104745121ea735739912bb5f84beeebebc6fe3beb480cd4",
+      "recommendations": [],
+      "finished_at": "2026-09-22T08:28:06.397413+00:00"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "3a35d5c16e1c40ad8fcb79c15f9ef9d2",
+      "name": "Basic RGB end-to-end",
+      "scenario_id": "S00_smoke_rgb",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "d698083afe6a015b0de7f3dc59ad84ec1ddf4d1ff857c9eeae9deff54b1c0187"
+    },
+    {
+      "id": "e254356fdfd644d89fcce8f6d75dc81f",
+      "name": "MSU surroundings, 100 square km",
+      "scenario_id": "S01_msu_100km2",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "d6271140e225d686852e2a4c020f12d4aa191bd688244e9cc872d7f0164c3eba"
+    },
+    {
+      "id": "65365d6ae93544b4bdb6481706b00121",
+      "name": "Peredelkino and Lukinskaya, multipolygon with hole",
+      "scenario_id": "S02_peredelkino",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "f8ebf31dd1434f9a94ca11c1d5fa45b1e556bea23c7ab4be45c00ff930c5d206"
+    },
+    {
+      "id": "66f958abd1884ea6aff85cc7f1339c1e",
+      "name": "Orekhovo - Domodedovskaya, temporal and daylight window",
+      "scenario_id": "S03_orekhovo_domodedovskaya",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "3bbf9b55cdf0d7fe6e4b32bd204c562a0c964948fb4107ddaaa6a74833e14ce6"
+    },
+    {
+      "id": "574206c1292941d0a1e2b802a83e487f",
+      "name": "Repeated sorties with service time",
+      "scenario_id": "S04_multi_sortie",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "015ef60787e6d240801950a3a782b076b75ab14e0eeee6798ee10b74366f7641"
+    },
+    {
+      "id": "fc430c927afd46cea35f2b6a73698bb4",
+      "name": "Two payloads and opposing launch sites",
+      "scenario_id": "S05_multi_uav",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "13cc73e7aa98db3663524a1fa5e25c7fe0c71cc5deb0e63c21c8f364a03eda81"
+    },
+    {
+      "id": "e147c325ac354f68a3e2502b31939e6d",
+      "name": "Distant launch cannot reach task; alternative provided separately",
+      "scenario_id": "S06_alternate_site",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "57390470354d9c3baf6c5a8ea39fcba4a79f17a6df574ccfe22ef103fff1731c"
+    },
+    {
+      "id": "4e38162f0159445ca49e7ea82b2cf5ae",
+      "name": "Only permitted landing exceeds the available resource",
+      "scenario_id": "S07_unreachable_landing",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "dbcf0a847ba399dfe30f40cfc9502ab735384859d8a9ed42413fc624250d3931"
+    },
+    {
+      "id": "c9b7984c82ae48b4a2c6e93228cd2408",
+      "name": "Fixed-wing turn buffers, NFZ and obstacle",
+      "scenario_id": "S08_fixed_wing_nfz",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "660a8f40335eca1c508b11aeed1c408bc56e1469b9dbf2fb681455d4786121b7"
+    },
+    {
+      "id": "a3b620eee63949a3a66cde1f454176f2",
+      "name": "Wind excludes every compatible aircraft",
+      "scenario_id": "S09_wind_refusal",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "6a6a2c501a718d4551a9ad5626638b5eecbb7a77112e5ee3bd30ebc70bfb65e5"
+    },
+    {
+      "id": "d83080d8b44e49938b7e9109868bcb8c",
+      "name": "Different permitted takeoff and landing sites",
+      "scenario_id": "S10_different_start_end",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "1406d68cebf2f7b6adefb23d920ecc804cc7499903255078cd655b74abffb730"
+    },
+    {
+      "id": "12596693d9524398be648b36aa2e1a96",
+      "name": "Five survey classes and explicit compatibility",
+      "scenario_id": "S11_payload_compatibility",
+      "purpose": "h3-live-acceptance",
+      "input_sha256": "5038c6ec14ffb54894181aac091c1375df587e1f844dc1e82797a2248a4397fd"
+    }
+  ],
+  "passed": true,
+  "state": "complete",
+  "updated_at": "2026-09-22T08:28:06.409372+00:00",
+  "catalog_count": 12,
+  "objective_count": 13,
+  "finished_at": "2026-09-22T08:28:06.409338+00:00"
+}

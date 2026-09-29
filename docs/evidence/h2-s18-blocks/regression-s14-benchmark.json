@@ -1,0 +1,187 @@
+[
+  {
+    "input_dir": "src/gmp/scenario_templates/S14_MSU_geo401_and_201/input",
+    "input_sha256": "c6a84cc5e4ff65e720316d9bb388be6d6f0340aade3f900245ab19abeb387d2b",
+    "source_code_sha256": "8e92a2d016a8b617a2a2b0b5b9c0912853ff4fe9e32ca04db755fb8c4e193f6b",
+    "source_input_dir": "src/gmp/scenario_templates/S14_MSU_geo401_and_201/input",
+    "source_input_sha256": "c6a84cc5e4ff65e720316d9bb388be6d6f0340aade3f900245ab19abeb387d2b",
+    "objective_added": false,
+    "objective": "makespan",
+    "depth": "standard",
+    "seed": 20260918,
+    "pipeline_s": 37.95319687400479,
+    "h3_gate_s": 13.486453842022456,
+    "total_s": 51.439650716027245,
+    "h3_status": "SAFE",
+    "metrics": {
+      "distance_m": 260115.08733161454,
+      "total_flight_s": 20111.582178115845,
+      "makespan_s": 13223.106126070023,
+      "airborne_span_s": 13223.106126070023,
+      "coverage_percent": 100.0,
+      "required_area_m2": 70753564.53938845,
+      "covered_area_m2": 70753564.53938845,
+      "sortie_count": 7,
+      "per_job": {
+        "JOB_mug9k0vy": {
+          "required_area_m2": 8821453.32666627,
+          "covered_area_m2": 8821453.32666627,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugady20": {
+          "required_area_m2": 2539587.5601959103,
+          "covered_area_m2": 2539587.56019591,
+          "coverage_percent": 99.99999999999997
+        },
+        "JOB_mugaf9eh": {
+          "required_area_m2": 57439189.16001186,
+          "covered_area_m2": 57439189.16001186,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugafdz8": {
+          "required_area_m2": 1953334.4925144129,
+          "covered_area_m2": 1953334.492514413,
+          "coverage_percent": 100.0
+        }
+      },
+      "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+      "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+    },
+    "violations": {},
+    "routing": {
+      "graph": {
+        "preparation_s": 17.12327387998812,
+        "vertices": 93,
+        "transects": 44,
+        "orientations": 88,
+        "profiles": [
+          {
+            "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "UAV_mugacog6"
+            ],
+            "physical_edges": 1732,
+            "expanded_edges": 0,
+            "valid_orientations": 88,
+            "detailed_edges_s": 4.9772822560044006,
+            "total_s": 5.611762969987467
+          },
+          {
+            "id": "e41c112b8cab34220a23e4367247138d00b4dfb9002efdbf742d704bae33b156",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "UAV_mugacog6_copy1",
+              "UAV_mugacog6_copy1_copy1"
+            ],
+            "physical_edges": 1732,
+            "expanded_edges": 0,
+            "valid_orientations": 88,
+            "detailed_edges_s": 4.9823329109931365,
+            "total_s": 5.646354030934162
+          },
+          {
+            "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+            "model": "geoscan_201",
+            "uav_ids": [
+              "UAV_mugaekoc"
+            ],
+            "physical_edges": 1732,
+            "expanded_edges": 0,
+            "valid_orientations": 88,
+            "detailed_edges_s": 5.042711023008451,
+            "total_s": 5.747735898010433
+          }
+        ],
+        "knn": 4,
+        "corners": 86,
+        "base_connections": "all_corners",
+        "base_transfers": false,
+        "long_links_per_corner": 2,
+        "long_link_pairs": 172,
+        "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+        "transit_factor": 1.0,
+        "return_margin_s": 60.0,
+        "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+        "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+        "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+      },
+      "model_s": 0.225081583019346,
+      "seed_s": 0.15583385690115392,
+      "initial_objective_s": 13308.4,
+      "search_s": 0.5761630960041657,
+      "solutions_seen": 9,
+      "branches": 961,
+      "failures": 62,
+      "branch_limit": 5000,
+      "status": 2,
+      "logical_nodes": 160,
+      "reload_copies": {
+        "UAV_mugacog6": 17,
+        "UAV_mugacog6_copy1": 17,
+        "UAV_mugacog6_copy1_copy1": 17,
+        "UAV_mugaekoc": 5
+      },
+      "greedy_missing": [],
+      "finalists": 4,
+      "reload_copy_limit_reached": [],
+      "depth": "standard",
+      "seed_candidates": 5,
+      "selected_seed": "whole_sweeps_reverse",
+      "block_search": [
+        {
+          "evaluations": 75,
+          "proposals": 160,
+          "evaluation_limit": 320,
+          "accepted": [
+            {
+              "operation": "snake_order",
+              "before": 218998053384,
+              "after": 218998053383
+            }
+          ],
+          "initial_cost": 218998053384,
+          "final_cost": 218998053383,
+          "elapsed_s": 0.12453207396902144
+        }
+      ],
+      "table_reads": 402824,
+      "table_read_limit": 400000,
+      "emergency_time_limit_s": 120,
+      "emergency_time_limit_reached": false,
+      "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+      "seed": 20260918,
+      "diagnostic": false,
+      "final_validation_s": 4.1320036289980635,
+      "finalist_checks": [
+        {
+          "candidate": 1,
+          "passed": true,
+          "metric_s": 13223.106125866276,
+          "violations": [],
+          "repairs": 1
+        },
+        {
+          "candidate": 2,
+          "skipped": "dominated_before_ground_delays",
+          "lower_bound_s": 13223.106125866276
+        },
+        {
+          "candidate": 3,
+          "skipped": "dominated_before_ground_delays",
+          "lower_bound_s": 13223.106125866276
+        },
+        {
+          "candidate": 4,
+          "skipped": "dominated_before_ground_delays",
+          "lower_bound_s": 13287.627504851394
+        }
+      ],
+      "total_s": 23.90601279202383,
+      "objective": "makespan",
+      "strict_search": null,
+      "copy_expansions": [],
+      "solution_sha256": "3c100fe4a61e85637eda70d4fd1b6a814c3ff226daa12e581c978bd378f6d9c8"
+    }
+  }
+]

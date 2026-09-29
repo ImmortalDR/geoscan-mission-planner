@@ -1,0 +1,1949 @@
+{
+  "schema_version": "gmp.h1_h2.v1",
+  "scene_id": "S07_reserve_landing_failure",
+  "crs": {
+    "metric_epsg": 32637,
+    "axis": "ENU_metres",
+    "note": "Coordinates in metres, not lon/lat"
+  },
+  "generated_at": "2026-09-21T01:19:23Z",
+  "source": "coverage",
+  "fleet": [
+    {
+      "id": "GS201_01",
+      "model": "geoscan_201",
+      "uav_class": "fixed_wing",
+      "ground_speed_ms": 22.0,
+      "operational_endurance_min": 22.0,
+      "max_wind_ms": 12.0,
+      "payload_classes": [
+        "rgb",
+        "thermal",
+        "geophysics"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 300.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 150.0
+    }
+  ],
+  "sites": [
+    {
+      "id": "BASE",
+      "x": 411700.0000000001,
+      "y": 6176899.999999999,
+      "role": "both",
+      "candidate": false
+    }
+  ],
+  "mission": {
+    "objectives": [
+      "total_flight"
+    ],
+    "window_start": "2026-06-15T09:00:00+03:00",
+    "window_end": "2026-06-15T17:00:00+03:00",
+    "wind": {
+      "speed_ms": 2.0,
+      "direction_deg_from": 90.0
+    },
+    "allow_different_start_end": false,
+    "require_complete_coverage": true,
+    "require_schedule": true
+  },
+  "tasks": [
+    {
+      "id": "CORRIDOR#T000",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000035,
+              6176025.0
+            ],
+            [
+              420999.9999999998,
+              6176025.0
+            ]
+          ],
+          "length_m": 8999.999999999476,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999476,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000035,
+        6176025.0
+      ],
+      "exit": [
+        420999.9999999998,
+        6176025.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000035,
+          6176025.0
+        ],
+        [
+          420999.9999999998,
+          6176025.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T001",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              420999.9999999998,
+              6176075.0
+            ],
+            [
+              412000.00000000035,
+              6176075.0
+            ]
+          ],
+          "length_m": 8999.999999999476,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999476,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        420999.9999999998,
+        6176075.0
+      ],
+      "exit": [
+        412000.00000000035,
+        6176075.0
+      ],
+      "geom_coords": [
+        [
+          420999.9999999998,
+          6176075.0
+        ],
+        [
+          412000.00000000035,
+          6176075.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T002",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000035,
+              6176125.0
+            ],
+            [
+              420999.9999999999,
+              6176125.0
+            ]
+          ],
+          "length_m": 8999.999999999534,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999534,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000035,
+        6176125.0
+      ],
+      "exit": [
+        420999.9999999999,
+        6176125.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000035,
+          6176125.0
+        ],
+        [
+          420999.9999999999,
+          6176125.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T003",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              420999.9999999999,
+              6176175.0
+            ],
+            [
+              412000.0000000003,
+              6176175.0
+            ]
+          ],
+          "length_m": 8999.999999999593,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999593,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        420999.9999999999,
+        6176175.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6176175.0
+      ],
+      "geom_coords": [
+        [
+          420999.9999999999,
+          6176175.0
+        ],
+        [
+          412000.0000000003,
+          6176175.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T004",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176225.0
+            ],
+            [
+              420999.9999999999,
+              6176225.0
+            ]
+          ],
+          "length_m": 8999.999999999593,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999593,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6176225.0
+      ],
+      "exit": [
+        420999.9999999999,
+        6176225.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6176225.0
+        ],
+        [
+          420999.9999999999,
+          6176225.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T005",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              420999.9999999999,
+              6176275.0
+            ],
+            [
+              412000.0000000003,
+              6176275.0
+            ]
+          ],
+          "length_m": 8999.999999999593,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999593,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        420999.9999999999,
+        6176275.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6176275.0
+      ],
+      "geom_coords": [
+        [
+          420999.9999999999,
+          6176275.0
+        ],
+        [
+          412000.0000000003,
+          6176275.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T006",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176325.0
+            ],
+            [
+              420999.9999999999,
+              6176325.0
+            ]
+          ],
+          "length_m": 8999.999999999593,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999593,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6176325.0
+      ],
+      "exit": [
+        420999.9999999999,
+        6176325.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6176325.0
+        ],
+        [
+          420999.9999999999,
+          6176325.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T007",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              420999.99999999994,
+              6176375.0
+            ],
+            [
+              412000.0000000003,
+              6176375.0
+            ]
+          ],
+          "length_m": 8999.99999999965,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.99999999965,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        420999.99999999994,
+        6176375.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6176375.0
+      ],
+      "geom_coords": [
+        [
+          420999.99999999994,
+          6176375.0
+        ],
+        [
+          412000.0000000003,
+          6176375.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T008",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6176425.0
+            ],
+            [
+              420999.99999999994,
+              6176425.0
+            ]
+          ],
+          "length_m": 8999.999999999709,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6176425.0
+      ],
+      "exit": [
+        420999.99999999994,
+        6176425.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6176425.0
+        ],
+        [
+          420999.99999999994,
+          6176425.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T009",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              420999.99999999994,
+              6176475.0
+            ],
+            [
+              412000.00000000023,
+              6176475.0
+            ]
+          ],
+          "length_m": 8999.999999999709,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        420999.99999999994,
+        6176475.0
+      ],
+      "exit": [
+        412000.00000000023,
+        6176475.0
+      ],
+      "geom_coords": [
+        [
+          420999.99999999994,
+          6176475.0
+        ],
+        [
+          412000.00000000023,
+          6176475.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T010",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6176525.0
+            ],
+            [
+              420999.99999999994,
+              6176525.0
+            ]
+          ],
+          "length_m": 8999.999999999709,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6176525.0
+      ],
+      "exit": [
+        420999.99999999994,
+        6176525.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6176525.0
+        ],
+        [
+          420999.99999999994,
+          6176525.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T011",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.0,
+              6176575.0
+            ],
+            [
+              412000.00000000023,
+              6176575.0
+            ]
+          ],
+          "length_m": 8999.999999999767,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.0,
+        6176575.0
+      ],
+      "exit": [
+        412000.00000000023,
+        6176575.0
+      ],
+      "geom_coords": [
+        [
+          421000.0,
+          6176575.0
+        ],
+        [
+          412000.00000000023,
+          6176575.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T012",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6176625.0
+            ],
+            [
+              421000.0,
+              6176625.0
+            ]
+          ],
+          "length_m": 8999.999999999767,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6176625.0
+      ],
+      "exit": [
+        421000.0,
+        6176625.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6176625.0
+        ],
+        [
+          421000.0,
+          6176625.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T013",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.0,
+              6176675.0
+            ],
+            [
+              412000.0000000002,
+              6176675.0
+            ]
+          ],
+          "length_m": 8999.999999999825,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.0,
+        6176675.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6176675.0
+      ],
+      "geom_coords": [
+        [
+          421000.0,
+          6176675.0
+        ],
+        [
+          412000.0000000002,
+          6176675.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T014",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6176725.0
+            ],
+            [
+              421000.0,
+              6176725.0
+            ]
+          ],
+          "length_m": 8999.999999999825,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6176725.0
+      ],
+      "exit": [
+        421000.0,
+        6176725.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6176725.0
+        ],
+        [
+          421000.0,
+          6176725.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T015",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.0,
+              6176775.0
+            ],
+            [
+              412000.0000000002,
+              6176775.0
+            ]
+          ],
+          "length_m": 8999.999999999825,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.0,
+        6176775.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6176775.0
+      ],
+      "geom_coords": [
+        [
+          421000.0,
+          6176775.0
+        ],
+        [
+          412000.0000000002,
+          6176775.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T016",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6176825.0
+            ],
+            [
+              421000.00000000006,
+              6176825.0
+            ]
+          ],
+          "length_m": 8999.999999999884,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6176825.0
+      ],
+      "exit": [
+        421000.00000000006,
+        6176825.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6176825.0
+        ],
+        [
+          421000.00000000006,
+          6176825.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T017",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.00000000006,
+              6176875.0
+            ],
+            [
+              412000.0000000002,
+              6176875.0
+            ]
+          ],
+          "length_m": 8999.999999999884,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.00000000006,
+        6176875.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6176875.0
+      ],
+      "geom_coords": [
+        [
+          421000.00000000006,
+          6176875.0
+        ],
+        [
+          412000.0000000002,
+          6176875.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T018",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6176925.0
+            ],
+            [
+              421000.00000000006,
+              6176925.0
+            ]
+          ],
+          "length_m": 8999.999999999942,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999942,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6176925.0
+      ],
+      "exit": [
+        421000.00000000006,
+        6176925.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6176925.0
+        ],
+        [
+          421000.00000000006,
+          6176925.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T019",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.00000000006,
+              6176975.0
+            ],
+            [
+              412000.0000000001,
+              6176975.0
+            ]
+          ],
+          "length_m": 8999.999999999942,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 8999.999999999942,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.00000000006,
+        6176975.0
+      ],
+      "exit": [
+        412000.0000000001,
+        6176975.0
+      ],
+      "geom_coords": [
+        [
+          421000.00000000006,
+          6176975.0
+        ],
+        [
+          412000.0000000001,
+          6176975.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T020",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6177025.0
+            ],
+            [
+              421000.0000000001,
+              6177025.0
+            ]
+          ],
+          "length_m": 9000.0,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6177025.0
+      ],
+      "exit": [
+        421000.0000000001,
+        6177025.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6177025.0
+        ],
+        [
+          421000.0000000001,
+          6177025.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T021",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.0000000001,
+              6177075.0
+            ],
+            [
+              412000.0000000001,
+              6177075.0
+            ]
+          ],
+          "length_m": 9000.0,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.0000000001,
+        6177075.0
+      ],
+      "exit": [
+        412000.0000000001,
+        6177075.0
+      ],
+      "geom_coords": [
+        [
+          421000.0000000001,
+          6177075.0
+        ],
+        [
+          412000.0000000001,
+          6177075.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T022",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6177125.0
+            ],
+            [
+              421000.0000000001,
+              6177125.0
+            ]
+          ],
+          "length_m": 9000.0,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6177125.0
+      ],
+      "exit": [
+        421000.0000000001,
+        6177125.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6177125.0
+        ],
+        [
+          421000.0000000001,
+          6177125.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T023",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.0000000001,
+              6177175.0
+            ],
+            [
+              412000.00000000006,
+              6177175.0
+            ]
+          ],
+          "length_m": 9000.000000000058,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.000000000058,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.0000000001,
+        6177175.0
+      ],
+      "exit": [
+        412000.00000000006,
+        6177175.0
+      ],
+      "geom_coords": [
+        [
+          421000.0000000001,
+          6177175.0
+        ],
+        [
+          412000.00000000006,
+          6177175.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T024",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000006,
+              6177225.0
+            ],
+            [
+              421000.0000000001,
+              6177225.0
+            ]
+          ],
+          "length_m": 9000.000000000058,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.000000000058,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000006,
+        6177225.0
+      ],
+      "exit": [
+        421000.0000000001,
+        6177225.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000006,
+          6177225.0
+        ],
+        [
+          421000.0000000001,
+          6177225.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T025",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.0000000002,
+              6177275.0
+            ],
+            [
+              412000.00000000006,
+              6177275.0
+            ]
+          ],
+          "length_m": 9000.000000000116,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.000000000116,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.0000000002,
+        6177275.0
+      ],
+      "exit": [
+        412000.00000000006,
+        6177275.0
+      ],
+      "geom_coords": [
+        [
+          421000.0000000002,
+          6177275.0
+        ],
+        [
+          412000.00000000006,
+          6177275.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T026",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000006,
+              6177325.0
+            ],
+            [
+              421000.0000000002,
+              6177325.0
+            ]
+          ],
+          "length_m": 9000.000000000116,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.000000000116,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000006,
+        6177325.0
+      ],
+      "exit": [
+        421000.0000000002,
+        6177325.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000006,
+          6177325.0
+        ],
+        [
+          421000.0000000002,
+          6177325.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T027",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.0000000002,
+              6177375.0
+            ],
+            [
+              412000.00000000006,
+              6177375.0
+            ]
+          ],
+          "length_m": 9000.000000000116,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.000000000116,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.0000000002,
+        6177375.0
+      ],
+      "exit": [
+        412000.00000000006,
+        6177375.0
+      ],
+      "geom_coords": [
+        [
+          421000.0000000002,
+          6177375.0
+        ],
+        [
+          412000.00000000006,
+          6177375.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T028",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0,
+              6177425.0
+            ],
+            [
+              421000.0000000002,
+              6177425.0
+            ]
+          ],
+          "length_m": 9000.000000000175,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.000000000175,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0,
+        6177425.0
+      ],
+      "exit": [
+        421000.0000000002,
+        6177425.0
+      ],
+      "geom_coords": [
+        [
+          412000.0,
+          6177425.0
+        ],
+        [
+          421000.0000000002,
+          6177425.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T029",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.00000000023,
+              6177475.0
+            ],
+            [
+              412000.0,
+              6177475.0
+            ]
+          ],
+          "length_m": 9000.000000000233,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.000000000233,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.00000000023,
+        6177475.0
+      ],
+      "exit": [
+        412000.0,
+        6177475.0
+      ],
+      "geom_coords": [
+        [
+          421000.00000000023,
+          6177475.0
+        ],
+        [
+          412000.0,
+          6177475.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T030",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0,
+              6177525.0
+            ],
+            [
+              421000.00000000023,
+              6177525.0
+            ]
+          ],
+          "length_m": 9000.000000000233,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.000000000233,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0,
+        6177525.0
+      ],
+      "exit": [
+        421000.00000000023,
+        6177525.0
+      ],
+      "geom_coords": [
+        [
+          412000.0,
+          6177525.0
+        ],
+        [
+          421000.00000000023,
+          6177525.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T031",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.00000000023,
+              6177575.0
+            ],
+            [
+              412000.0,
+              6177575.0
+            ]
+          ],
+          "length_m": 9000.000000000233,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.000000000233,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.00000000023,
+        6177575.0
+      ],
+      "exit": [
+        412000.0,
+        6177575.0
+      ],
+      "geom_coords": [
+        [
+          421000.00000000023,
+          6177575.0
+        ],
+        [
+          412000.0,
+          6177575.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T032",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0,
+              6177625.0
+            ],
+            [
+              421000.00000000023,
+              6177625.0
+            ]
+          ],
+          "length_m": 9000.000000000233,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.000000000233,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0,
+        6177625.0
+      ],
+      "exit": [
+        421000.00000000023,
+        6177625.0
+      ],
+      "geom_coords": [
+        [
+          412000.0,
+          6177625.0
+        ],
+        [
+          421000.00000000023,
+          6177625.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T033",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.00000000023,
+              6177675.0
+            ],
+            [
+              411999.99999999994,
+              6177675.0
+            ]
+          ],
+          "length_m": 9000.000000000291,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.000000000291,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.00000000023,
+        6177675.0
+      ],
+      "exit": [
+        411999.99999999994,
+        6177675.0
+      ],
+      "geom_coords": [
+        [
+          421000.00000000023,
+          6177675.0
+        ],
+        [
+          411999.99999999994,
+          6177675.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T034",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              411999.99999999994,
+              6177725.0
+            ],
+            [
+              421000.0000000003,
+              6177725.0
+            ]
+          ],
+          "length_m": 9000.00000000035,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.00000000035,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        411999.99999999994,
+        6177725.0
+      ],
+      "exit": [
+        421000.0000000003,
+        6177725.0
+      ],
+      "geom_coords": [
+        [
+          411999.99999999994,
+          6177725.0
+        ],
+        [
+          421000.0000000003,
+          6177725.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "CORRIDOR#T035",
+      "job_id": "CORRIDOR",
+      "payload_class": "geophysics",
+      "payload_profile_id": "GEO_STD",
+      "agl_m": 80.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              421000.0000000003,
+              6177775.0
+            ],
+            [
+              411999.99999999994,
+              6177775.0
+            ]
+          ],
+          "length_m": 9000.00000000035,
+          "job_id": "CORRIDOR"
+        }
+      ],
+      "survey_length_m": 9000.00000000035,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        421000.0000000003,
+        6177775.0
+      ],
+      "exit": [
+        411999.99999999994,
+        6177775.0
+      ],
+      "geom_coords": [
+        [
+          421000.0000000003,
+          6177775.0
+        ],
+        [
+          411999.99999999994,
+          6177775.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    }
+  ],
+  "feasibility": {
+    "eligible_uav_ids_by_task": {
+      "CORRIDOR#T000": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T001": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T002": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T003": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T004": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T005": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T006": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T007": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T008": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T009": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T010": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T011": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T012": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T013": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T014": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T015": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T016": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T017": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T018": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T019": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T020": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T021": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T022": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T023": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T024": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T025": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T026": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T027": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T028": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T029": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T030": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T031": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T032": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T033": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T034": [
+        "GS201_01"
+      ],
+      "CORRIDOR#T035": [
+        "GS201_01"
+      ]
+    },
+    "ineligible_reasons": {},
+    "ineligible_reasons_human": {}
+  },
+  "coverage_meta": {
+    "coverage_percent": 100.0,
+    "task_count": 36,
+    "per_job": [
+      {
+        "job_id": "CORRIDOR",
+        "task_count": 36,
+        "sweep_angle_deg": 0.0,
+        "coverage_percent": 100.0,
+        "eligible_uavs": [
+          "GS201_01"
+        ]
+      }
+    ],
+    "sweep_candidates": {
+      "CORRIDOR": [
+        {
+          "label": "corridor_along",
+          "angle_deg": 0.0,
+          "survey_length_m": 324000.0,
+          "turn_count": 35,
+          "score": 342243.4,
+          "maneuver_violations": 0,
+          "selected": true
+        },
+        {
+          "label": "grid_165",
+          "angle_deg": 165.0,
+          "survey_length_m": 324026.6,
+          "turn_count": 80,
+          "score": 374013.7,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_15",
+          "angle_deg": 15.0,
+          "survey_length_m": 324026.6,
+          "turn_count": 80,
+          "score": 374049.5,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_150",
+          "angle_deg": 150.0,
+          "survey_length_m": 324000.0,
+          "turn_count": 120,
+          "score": 394427.5,
+          "maneuver_violations": 0,
+          "selected": false
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "h1": {
+      "energy_hints": [
+        {
+          "scope": "mission",
+          "uav_id": "GS201_01",
+          "survey_length_m": 324000.0,
+          "need_flight_s": 14727.3,
+          "usable_endurance_s": 1056.0,
+          "sorties_hint": 14
+        }
+      ],
+      "reserve_sites": [],
+      "terrain": {
+        "dem_available": true,
+        "warning_count": 0,
+        "warnings": [],
+        "note": "planning checks only; terrain-following is autopilot/H3"
+      }
+    }
+  },
+  "warnings": [
+    "site BASE: outside survey area (+50m slack)",
+    "job CORRIDOR: corridor mode — prefer along/across angles",
+    "S04: mission ≈14 sorties on GS201_01 (total survey 324.0 km → 245 min vs usable 18 min) — multi-sortie, not H1 schedule",
+    "S07: no reserve landing site in scene"
+  ]
+}

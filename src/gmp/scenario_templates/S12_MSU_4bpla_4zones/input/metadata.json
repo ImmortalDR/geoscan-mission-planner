@@ -1,0 +1,57 @@
+{
+  "scenario_id": "S01_msu_100km2",
+  "description": "MSU surroundings, 100 square km",
+  "vector_crs": "EPSG:4326",
+  "metric_crs": "EPSG:32637",
+  "temporal_altitude_reference": "AMSL",
+  "height_reference": "EGM2008",
+  "surface_model": "DSM",
+  "terrain": {
+    "schema": "h3.terrain_crop.v1",
+    "path": "dem.tif",
+    "sha256": "752d5b2dd3769afd9bbac6af5decddfde681550aededd641dbe6a9ab69c64246",
+    "bytes": 547398,
+    "source_id": "Copernicus_DSM_COG_10_N55_00_E037_00_DEM",
+    "source_url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N55_00_E037_00_DEM/Copernicus_DSM_COG_10_N55_00_E037_00_DEM.tif",
+    "source_sha256": "027a31311fd198c54d08d7f6025835fa34b24c3e08ddc43023b485ee63f21320",
+    "source_manifest": "sources/copernicus_glo30_manifest.json",
+    "horizontal_crs": "EPSG:32637",
+    "vertical_datum": "EGM2008",
+    "vertical_crs": "EPSG:3855",
+    "surface_type": "DSM",
+    "bare_earth": false,
+    "height_units": "m",
+    "requested_bounds_m": [
+      400956.23670406174,
+      6167309.677043553,
+      414356.23670406174,
+      6180709.677043553
+    ],
+    "raster_bounds_m": [
+      400950,
+      6167280,
+      414360,
+      6180720
+    ],
+    "resolution_m": 30,
+    "width": 447,
+    "height": 448,
+    "resampling": "bilinear",
+    "nodata": -9999.0,
+    "nodata_pixel_count": 0,
+    "minimum_m": 111.4891357421875,
+    "maximum_m": 256.5834655761719,
+    "attribution": "produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved",
+    "license_notice": "The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30",
+    "software": {
+      "rasterio": "1.3.11",
+      "gdal": "3.9.2",
+      "numpy": "1.26.4"
+    }
+  },
+  "real_elevation": true,
+  "synthetic_mission": true,
+  "not_operational_data": true,
+  "trajectory_model": "piecewise_linear_XYZ_AMSL_time",
+  "seed": 20260920
+}

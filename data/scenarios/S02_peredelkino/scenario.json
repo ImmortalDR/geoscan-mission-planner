@@ -1,0 +1,18 @@
+{
+  "id": "S02_peredelkino",
+  "title": "Peredelkino and Lukinskaya, multipolygon with hole",
+  "expected_status": "SAFE",
+  "objectives": [
+    "total_flight"
+  ],
+  "real_elevation": true,
+  "checks": {
+    "multipolygon": true,
+    "holes": true
+  },
+  "proof": null,
+  "role": "geometry",
+  "purpose_ru": "Геометрия: мультиполигон с отверстием (не stress флота)",
+  "catalog_badge_ru": "1 БВС · геометрия",
+  "fleet_count": 1
+}

@@ -1,0 +1,166 @@
+{
+  "generated_at_unix": 1790338934.0601413,
+  "method": "scenario regression, not ML k-fold",
+  "algorithms": [
+    {
+      "id": "h1.projection",
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 0.014,
+      "source_sha256": "e7cdfa690fb700d6c5b14e441142b4b1b8cdbb2552dbbfe6a78a2afe36e46edf"
+    },
+    {
+      "id": "h1.terrain",
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 1.421,
+      "source_sha256": "c98c29015004cdd032f5e0d2d504d7bb8cb2b5775348b3ee529594e9e211b196"
+    },
+    {
+      "id": "h1.survey",
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 0.004,
+      "source_sha256": "1a23bc9cc93e6ffd7ae76de8b7b455d1b85d771fdad313cd377b9b4d0b4c755a"
+    },
+    {
+      "id": "h1.exclusions",
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 2.1109999999999998,
+      "source_sha256": "87afffb63ec5c6d8de2ec600d7104cd095a1eb75f36f6d3e2e819a2ee21c3c33"
+    },
+    {
+      "id": "h1.decomposition",
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 1.654,
+      "source_sha256": "61502e4ef37b7bef70f0471af831917ae304e751a58cd628735a4c87f0d8de5b"
+    },
+    {
+      "id": "h1.sweep",
+      "passed": 49,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 3.753,
+      "source_sha256": "4dd7e2c2b3adb586eb41e5979e7d684a05baebb7fda833e0314ba826f0092a8a"
+    },
+    {
+      "id": "h1.candidates",
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 0.934,
+      "source_sha256": "4ffacf85ce70132697895ea7226c4fc0c69a9c8daf5c1d18dc0dabd342de7df4"
+    },
+    {
+      "id": "h1.atomic",
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 2.405,
+      "source_sha256": "f0abf8d0715400b64ecc0a299d363d0f2a0338386e3f0c3d7e01bf5a39b6247d"
+    },
+    {
+      "id": "h1.fixed_wing",
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 2.0060000000000002,
+      "source_sha256": "4a9a4a7507d090fc3daad075916269cf9ee5e68b0249faa149943845b5d01de1"
+    },
+    {
+      "id": "h1.feasibility",
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 2.15,
+      "source_sha256": "04f6941496c528f90424570e6353b846438105c86e21c10ed4269cd6cff5971a"
+    },
+    {
+      "id": "h2.assignment",
+      "passed": 15,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 1.179,
+      "source_sha256": "7a787ca6c00e5151cc74c8e81a91ab2e62ff1bb16482ff3ee44a97b5d5e2d429"
+    },
+    {
+      "id": "h2.search",
+      "passed": 18,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 1.19,
+      "source_sha256": "6d612f5e09d7c6de2c3abfa35b1d43113f7a1052b379443bbf0774dc80ed25ee"
+    },
+    {
+      "id": "h2.schedule",
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 0.021,
+      "source_sha256": "89896fdaa234dd094d2f3b5f8c35c5e20515826d4aba77e23b01d73c5159f357"
+    },
+    {
+      "id": "h2.transit",
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 0.132,
+      "source_sha256": "b84cb16a58c847c826e9672173b749dd40166fee34b39473a2fa115d927879de"
+    },
+    {
+      "id": "h2.temporal",
+      "passed": 15,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 1.179,
+      "source_sha256": "6595861eb2bf7f9552de1a5e868adf8b3c40a11039913256fdabb0a32b56948c"
+    },
+    {
+      "id": "h2.conflicts",
+      "passed": 15,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 0.18,
+      "source_sha256": "bd1f6dd5d632d757b079865b3768e17c392657508f5ac0db58149bac64793b23"
+    },
+    {
+      "id": "h2.departure_shifts",
+      "passed": 15,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 0.18,
+      "source_sha256": "b19e50464db52906291646ede7f95a757a2c85755c9a8b2dd7d0e1773cd50230"
+    },
+    {
+      "id": "h3.geometry",
+      "passed": 26,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 1.352,
+      "source_sha256": "bb75fad87be93e2f16401c9b85dfe8783419e35f85db8c107791eb5ee03d3e4d"
+    },
+    {
+      "id": "h3.validation",
+      "passed": 48,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 1.799,
+      "source_sha256": "acfd6e4a0003b9b3461c5a0acbb6293cc0735f888878f3e66d06cf1f0cbae854"
+    },
+    {
+      "id": "h3.gate",
+      "passed": 25,
+      "failed": 0,
+      "skipped": 0,
+      "duration_s": 1.616,
+      "source_sha256": "37b382443da91fc4c8b58616b17bcb846b98cd8d5695e3b12060d959ab71b038"
+    }
+  ]
+}

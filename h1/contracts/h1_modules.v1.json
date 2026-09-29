@@ -1,0 +1,159 @@
+{
+  "schema": "gmp.h1.modules.v1",
+  "title": "H1 per-module contracts — canonical implementation h1_coverage",
+  "updated": "2026-09-19",
+  "package": "h1_coverage",
+  "docs": {
+    "human": "h1/docs/acceptance.md",
+    "h1_h2": "docs/contract/H1_H2.md",
+    "architecture": "h1/docs/architecture.md"
+  },
+  "datasets_root": "h1/h1_coverage/fixtures/conformance",
+  "modules": [
+    {
+      "id": "M1",
+      "contract_id": "h1.m1.scene_loader.v1",
+      "code": ["h1_coverage/io/scene.py"],
+      "input": ["scene_directory"],
+      "output": ["Scene"],
+      "invariants": [
+        "survey_areas.geojson required",
+        "scene.jobs non-empty",
+        "scene.crs.metric_epsg set"
+      ],
+      "fixtures": ["S00_smoke_rgb"],
+      "pytest": ["test_m1_scene_loader_s00"]
+    },
+    {
+      "id": "M2",
+      "contract_id": "h1.m2.geo_projector.v1",
+      "code": ["h1_coverage/geo.py"],
+      "input": ["lonlat"],
+      "output": ["metric_xy", "metric_epsg"],
+      "invariants": [
+        "utm_epsg_for_lonlat(37.6,55.75)==EPSG:32637",
+        "roundtrip_error_deg < 1e-6"
+      ],
+      "fixtures": ["fixtures/h1_modules/m2_roundtrip_points.json"],
+      "pytest": ["test_m2_crs_roundtrip"]
+    },
+    {
+      "id": "M3",
+      "contract_id": "h1.m3.terrain.v1",
+      "code": ["h1_coverage/io/dem.py"],
+      "input": ["dem.tif", "metric_xy"],
+      "output": ["elevation_m"],
+      "invariants": ["elevation finite", "dem opens for S00"],
+      "fixtures": ["S00_smoke_rgb/dem.tif"],
+      "pytest": ["test_m3_dem_sample_s00"]
+    },
+    {
+      "id": "M4",
+      "contract_id": "h1.m4.uav_kb.v1",
+      "code": ["h1_coverage/kb/catalog.py", "h1_coverage/kb/seed.yaml"],
+      "input": ["seed.yaml"],
+      "output": ["OperationalProfile[]"],
+      "invariants": [
+        "geoscan_201|401|701|801|gemini present",
+        "model_count >= 10",
+        "provenance on facts"
+      ],
+      "fixtures": ["h1_coverage/kb/seed.yaml"],
+      "pytest": ["test_m4_kb_mvp_models"]
+    },
+    {
+      "id": "M5",
+      "contract_id": "h1.m5.survey.v1",
+      "code": ["h1_coverage/coverage/survey.py"],
+      "input": ["gsd", "overlap", "camera"],
+      "output": ["agl_m", "swath_spacing_m"],
+      "invariants": ["agl_m >= 40", "swath_spacing_m > 0", "gsd_agl_invertible"],
+      "fixtures": ["fixtures/h1_modules/m5_payload_rgb.json"],
+      "pytest": ["test_m5_gsd_and_swath"]
+    },
+    {
+      "id": "M6",
+      "contract_id": "h1.m6.coverage_engine.v1",
+      "code": ["h1_coverage/coverage/engine.py", "h1_coverage/coverage/sweep.py"],
+      "input": ["Scene"],
+      "output": ["CoverageResult"],
+      "invariants": ["task_count >= 1 on S00", "coverage_percent >= 99 on S00", "overshoot clipped"],
+      "fixtures": ["S00_smoke_rgb"],
+      "pytest": ["test_m6_coverage_s00"]
+    },
+    {
+      "id": "M7",
+      "contract_id": "h1.m7.decomp_holes.v1",
+      "code": ["h1_coverage/coverage/decomp.py", "h1_coverage/coverage/sweep.py"],
+      "input": ["Polygon_with_holes"],
+      "output": ["cells", "transects avoiding hole interiors"],
+      "invariants": ["no transect midpoint inside hole"],
+      "fixtures": ["S02_multipolygon_holes"],
+      "pytest": ["test_m7_holes_s02"]
+    },
+    {
+      "id": "M8",
+      "contract_id": "h1.m8.nfz.v1",
+      "code": ["h1_coverage/coverage/exclusions.py"],
+      "input": ["survey", "nfz", "allowed"],
+      "output": ["effective_area"],
+      "invariants": ["G1: survey lines do not intersect hard NFZ", "effective disjoint NFZ core"],
+      "fixtures": ["S08_fixed_wing_turnaround", "fixtures/h1_modules/m8_nfz_metric.json"],
+      "pytest": ["test_m8_nfz_no_intersect"]
+    },
+    {
+      "id": "M9",
+      "contract_id": "h1.m9.fixed_wing.v1",
+      "code": ["h1_coverage/coverage/fixed_wing.py"],
+      "input": ["transects", "nfz", "turnaround_buffer_m"],
+      "output": ["maneuver_violations", "fixed_wing_safe"],
+      "invariants": ["S08 checks maneuver buffer", "G5 via feasibility"],
+      "fixtures": ["S08_fixed_wing_turnaround"],
+      "pytest": ["test_m9_fixed_wing_s08"]
+    },
+    {
+      "id": "M10",
+      "contract_id": "h1.m10.candidates.v1",
+      "code": ["h1_coverage/coverage/candidates.py"],
+      "input": ["area", "wind"],
+      "output": ["SweepCandidate[]"],
+      "invariants": ["wind direction affects score ranking", "candidates >= 2"],
+      "fixtures": ["S09_wind_feasibility"],
+      "pytest": ["test_m10_wind_scores_s09"]
+    },
+    {
+      "id": "M11",
+      "contract_id": "h1.m11.atomic_task.v1",
+      "code": ["h1_coverage/coverage/atomic.py"],
+      "input": ["transects"],
+      "output": ["AtomicTask[]"],
+      "invariants": ["G2 entry/exit", "G3 length", "G6 unique deterministic ids"],
+      "fixtures": ["S00_smoke_rgb"],
+      "pytest": ["test_m11_atomic_invariants_s00"]
+    },
+    {
+      "id": "M12",
+      "contract_id": "h1.m12.feasibility.v1",
+      "code": ["h1_coverage/feasibility.py"],
+      "input": ["tasks", "fleet", "wind"],
+      "output": ["eligible_uav_ids_by_task", "ineligible_reasons"],
+      "invariants": [
+        "wind filters fleet",
+        "payload mismatch filtered",
+        "wind does not change energy numbers"
+      ],
+      "fixtures": ["S09_wind_feasibility", "S11_payload_compatibility"],
+      "pytest": ["test_m12_feasibility_s09_s11"]
+    },
+    {
+      "id": "M13",
+      "contract_id": "h1.m13.bundle.v1",
+      "code": ["h1_coverage/bundle.py"],
+      "input": ["CoverageResult", "Scene"],
+      "output": ["H1H2Bundle gmp.h1_h2.v1"],
+      "invariants": ["schema_version == gmp.h1_h2.v1", "G1-G7 when source=coverage"],
+      "fixtures": ["S00_smoke_rgb"],
+      "pytest": ["test_m13_bundle_contract"]
+    }
+  ]
+}

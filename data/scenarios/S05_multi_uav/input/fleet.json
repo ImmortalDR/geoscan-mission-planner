@@ -1,0 +1,46 @@
+{
+  "uavs": [
+    {
+      "id": "U01",
+      "model": "gemini",
+      "class": "multirotor",
+      "ground_speed_kmh": 43.2,
+      "operational_endurance_min": 32,
+      "max_wind_ms": 10,
+      "payload_classes": [
+        "rgb"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 30,
+      "start_site": "WEST",
+      "landing_site": "WEST",
+      "takeoff_time_s": 60,
+      "landing_time_s": 60,
+      "service_time_s": 420,
+      "parameter_status": "explicit_synthetic_operational_profile_not_manufacturer_guarantee"
+    },
+    {
+      "id": "U02",
+      "model": "gemini",
+      "class": "multirotor",
+      "ground_speed_kmh": 43.2,
+      "operational_endurance_min": 32,
+      "max_wind_ms": 10,
+      "payload_classes": [
+        "multispectral"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 30,
+      "start_site": "EAST",
+      "landing_site": "EAST",
+      "takeoff_time_s": 60,
+      "landing_time_s": 60,
+      "service_time_s": 420,
+      "parameter_status": "explicit_synthetic_operational_profile_not_manufacturer_guarantee"
+    }
+  ]
+}

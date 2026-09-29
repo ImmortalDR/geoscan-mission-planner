@@ -1,0 +1,32 @@
+{
+  "id": "S15_MSU_geo401",
+  "title": "MSU_geo401",
+  "objectives": [
+    "makespan",
+    "total_flight"
+  ],
+  "role": "user_template",
+  "purpose_ru": "МГУ: 5 областей съёмки, 3 БВС; датчики: rgb.",
+  "catalog_badge_ru": "Авторский сценарий",
+  "fleet_count": 3,
+  "real_elevation": true,
+  "promotion": {
+    "source_scene_id": "47cf7b87bf9b4806a42d3957b2c422ff",
+    "source_library_id": "47cf7b87bf9b4806a42d3957b2c422ff",
+    "source_saved_at": "2026-09-25T01:53:37.335080+00:00",
+    "input_sha256": "129eb4905b0703ff4894edada0befefafa957126529627e9988382ac8d7accfd",
+    "file_sha256": {
+      "allowed_airspace.geojson": "709d0013216ae2bde4a8a515371540518cdb789decaa4ec26d888365478bc0a3",
+      "dem.tif": "752d5b2dd3769afd9bbac6af5decddfde681550aededd641dbe6a9ab69c64246",
+      "fleet.json": "65076de104d8f0a7db6c9593f5622ae3ebfcae3a59c66a0a5ec24be7af39d262",
+      "landing_sites.geojson": "9b9f30761eca5c777a2dc2c5391d7b99712720bf4d6bb53b301f1b0cb5324963",
+      "metadata.json": "8cb27d1c4d1583b7c0ddd71a5fe33ee49f844059b1039a5d394891060558c95f",
+      "mission.json": "1821ec91509f499552c99d109b7f76589484076e743d9b6dd773017c02e15c72",
+      "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+      "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+      "payload_catalog.json": "01fb84fc7286592519096a807761e6ba0353a98dab5f9f51102a848566e9f259",
+      "survey_areas.geojson": "408266857e675e38ccbbcee2006afb9717cf73d8de3922412b9088666e4445e4",
+      "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    }
+  }
+}

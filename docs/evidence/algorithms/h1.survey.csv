@@ -1,0 +1,4 @@
+algorithm_id,test_file,test_case,outcome,duration_s,source_sha256
+h1.survey,h1/h1_coverage/tests/test_m05_survey.py,test_module_registry_m5,passed,0.001,1a23bc9cc93e6ffd7ae76de8b7b455d1b85d771fdad313cd377b9b4d0b4c755a
+h1.survey,h1/h1_coverage/tests/test_m05_survey.py,test_m5_gsd_and_swath,passed,0.002,1a23bc9cc93e6ffd7ae76de8b7b455d1b85d771fdad313cd377b9b4d0b4c755a
+h1.survey,h1/h1_coverage/tests/test_m05_survey.py,test_m5_raises_agl_to_min_safe,passed,0.001,1a23bc9cc93e6ffd7ae76de8b7b455d1b85d771fdad313cd377b9b4d0b4c755a

@@ -1,0 +1,34 @@
+......                                                                   [100%]
+=============================== warnings summary ===============================
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[makespan]
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[makespan]
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[total_flight]
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[total_flight]
+  /tmp/20260929-tz-compliance/app/src/gmp/io/dem.py:52: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    col, row = ~self.transform * (rx, ry)
+
+tests/api/test_h3_h2_pipeline.py: 38 warnings
+  /tmp/20260929-tz-compliance/dataset/reference_builder.py:47: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    column, row = ~sampler.transform * (x, y)
+
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[makespan]
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[makespan]
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[makespan]
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[makespan]
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[total_flight]
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[total_flight]
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[total_flight]
+tests/api/test_h3_h2_pipeline.py::test_ground_work_is_scheduled_and_independently_counted[total_flight]
+  /tmp/20260929-tz-compliance/h2/src/h2/transit.py:83: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    center = self._transform * (self._values.shape[1]/2, self._values.shape[0]/2)
+
+tests/api/test_h3_h2_pipeline.py: 16 warnings
+  /tmp/20260929-tz-compliance/h2/src/h2/transit.py:84: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    neighbors = [self._transform * (self._values.shape[1]/2+dx, self._values.shape[0]/2+dy)
+
+tests/api/test_h3_h2_pipeline.py: 1358 warnings
+  /tmp/20260929-tz-compliance/h2/src/h2/transit.py:110: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    col, row = self._inverse_transform * (rx, ry)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+6 passed, 13 deselected, 1424 warnings in 5.92s

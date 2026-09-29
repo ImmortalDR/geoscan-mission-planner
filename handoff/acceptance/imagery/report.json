@@ -1,0 +1,13 @@
+{
+  "test_scope": "offline frontend with real local image files; mocked read-only API",
+  "default_imagery": true,
+  "preference_persists": true,
+  "all_three_crops_render": true,
+  "outside_coverage_fallback": true,
+  "layer_order_and_attribution": true,
+  "mobile_no_overflow_or_toolbar_overlap": true,
+  "image_error_fallback_preserves_editor": true,
+  "manifest_error_fallback": true,
+  "javascript_errors": [],
+  "osm_requests_aborted_locally": 375
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "status": "INFEASIBLE",
+  "violations": [],
+  "metrics": {
+    "proof_type": "wind_excludes_all",
+    "proof_verified": true,
+    "compatible_uavs": 1,
+    "wind_eligible_uavs": 0
+  },
+  "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+  "not_checked": [
+    "discrete_photo_front_overlap",
+    "side_overlap_quality",
+    "aircraft_dynamics",
+    "real_operational_permissions",
+    "global_optimality"
+  ]
+}

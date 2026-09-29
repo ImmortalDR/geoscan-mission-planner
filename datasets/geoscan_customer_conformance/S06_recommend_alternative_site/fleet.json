@@ -1,0 +1,21 @@
+{
+  "uavs": [
+    {
+      "id": "GS201_01",
+      "model": "geoscan_gemini",
+      "class": "multirotor",
+      "ground_speed_kmh": 42,
+      "operational_endurance_min": 24,
+      "max_wind_ms": 10,
+      "payload_classes": [
+        "rgb",
+        "multispectral"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 300,
+      "start_site": "BAD_BASE"
+    }
+  ]
+}

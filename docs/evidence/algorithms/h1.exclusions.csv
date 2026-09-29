@@ -1,0 +1,4 @@
+algorithm_id,test_file,test_case,outcome,duration_s,source_sha256
+h1.exclusions,h1/h1_coverage/tests/test_m08_nfz.py,test_module_registry_m8,passed,0.001,87afffb63ec5c6d8de2ec600d7104cd095a1eb75f36f6d3e2e819a2ee21c3c33
+h1.exclusions,h1/h1_coverage/tests/test_m08_nfz.py,test_m8_nfz_metric_fixture,passed,0.005,87afffb63ec5c6d8de2ec600d7104cd095a1eb75f36f6d3e2e819a2ee21c3c33
+h1.exclusions,h1/h1_coverage/tests/test_m08_nfz.py,test_m8_nfz_no_intersect_s08,passed,2.105,87afffb63ec5c6d8de2ec600d7104cd095a1eb75f36f6d3e2e819a2ee21c3c33

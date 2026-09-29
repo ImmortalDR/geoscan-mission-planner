@@ -1,0 +1,296 @@
+{
+  "health": {
+    "status": "ready",
+    "storage": "sqlite",
+    "pipeline": "h1_coverage -> h2 -> h3",
+    "components": {
+      "h1_coverage": true,
+      "h2": true
+    },
+    "release": "h2-development"
+  },
+  "runs": [
+    {
+      "scenario": "S17_msu_refuel_relay",
+      "objective": "makespan",
+      "plan_id": "72a51c314cb741a3a25f1270efdfd906",
+      "status": "SAFE",
+      "error": null,
+      "wall_s": 23.68,
+      "metrics": {
+        "distance_m": 46889.03381248043,
+        "total_flight_s": 5619.101980924606,
+        "makespan_s": 4068.5885128974915,
+        "airborne_span_s": 4068.5885128974915,
+        "coverage_percent": 100.00000000000544,
+        "required_area_m2": 4086249.9999971977,
+        "covered_area_m2": 4086249.99999742,
+        "sortie_count": 3,
+        "per_job": {
+          "Job_0": {
+            "required_area_m2": 854999.9999998923,
+            "covered_area_m2": 855000.000000259,
+            "coverage_percent": 100.0
+          },
+          "Job_1": {
+            "required_area_m2": 854999.99999906,
+            "covered_area_m2": 854999.9999989157,
+            "coverage_percent": 99.99999999998312
+          },
+          "Job_2": {
+            "required_area_m2": 1302499.9999982452,
+            "covered_area_m2": 1302499.999998245,
+            "coverage_percent": 99.99999999999997
+          },
+          "Job_3": {
+            "required_area_m2": 1073750.0000000002,
+            "covered_area_m2": 1073750.0,
+            "coverage_percent": 99.99999999999997
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "graph": {
+        "preparation_s": 5.18012054101564,
+        "vertices": 85,
+        "transects": 41,
+        "orientations": 82,
+        "profiles": [
+          {
+            "id": "68a7c420c3b456efe8c61498c157a4789f1d506d8fc806861266df861473cdf2",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "UAV_0"
+            ],
+            "physical_edges": 1170,
+            "expanded_edges": 0,
+            "valid_orientations": 60,
+            "detailed_edges_s": 2.143509679939598,
+            "total_s": 2.6606302289292216
+          },
+          {
+            "id": "66ccd7c7a710b5283bc04fbef0684e249c379f0f9fc83b1429ae32a93768bb80",
+            "model": "geoscan_201",
+            "uav_ids": [
+              "UAV_1"
+            ],
+            "physical_edges": 1170,
+            "expanded_edges": 0,
+            "valid_orientations": 22,
+            "detailed_edges_s": 1.9457870309706777,
+            "total_s": 2.458735716994852
+          }
+        ],
+        "knn": 4,
+        "corners": 60,
+        "base_connections": "all_corners",
+        "base_transfers": false,
+        "corner_spacing_m": 300.0,
+        "corner_policy": "both ends of boundary transects; recursive physical midpoint; existing H1 endpoints only",
+        "long_links_per_corner": 2,
+        "long_link_pairs": 120,
+        "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+        "transit_factor": 1.0,
+        "return_margin_s": 60.0,
+        "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+        "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+        "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+      },
+      "solution_sha256": "cd62c562441279e0a53c2a06a45b59988f6f0e5fb501316e76e06706cbb0ae76",
+      "shortcuts": {
+        "transfers_checked": 0,
+        "direct_evaluations": 0,
+        "blocked": 0,
+        "resource_rejections": 0,
+        "accepted": 0,
+        "removed_edges": 0,
+        "saved_flight_s": 0.0,
+        "calculation_s": 0.0,
+        "adopted": false,
+        "before_metrics": {
+          "makespan_s": 4068.5885133720844,
+          "total_flight_s": 5619.101981593181,
+          "total_distance_m": 46889.03381245237,
+          "sortie_count": 3,
+          "used_uav_count": 2
+        },
+        "reason": "no_resource_feasible_improvement",
+        "violations": [],
+        "elapsed_s": 0.017738546011969447
+      },
+      "verified_refuel_pause_s": 420.0,
+      "sortie_routes": [
+        {
+          "uav_id": "UAV_0",
+          "start_site": "Base_0",
+          "landing_site": "Base_1",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:00:19.366662+03:00"
+        },
+        {
+          "uav_id": "UAV_0",
+          "start_site": "Base_1",
+          "landing_site": "Base_2",
+          "t_start": "2026-06-15T09:07:19.366662+03:00",
+          "t_end": "2026-06-15T09:37:48.588513+03:00"
+        },
+        {
+          "uav_id": "UAV_1",
+          "start_site": "Base_0",
+          "landing_site": "Base_2",
+          "t_start": "2026-06-15T08:30:37.501000+03:00",
+          "t_end": "2026-06-15T09:03:28.014468+03:00"
+        }
+      ]
+    },
+    {
+      "scenario": "S17_msu_refuel_relay",
+      "objective": "total_flight",
+      "plan_id": "edd13566830f4361b958fd87281a0c73",
+      "status": "SAFE",
+      "error": null,
+      "wall_s": 27.2,
+      "metrics": {
+        "distance_m": 46889.03381248043,
+        "total_flight_s": 5619.101980924606,
+        "makespan_s": 4068.5885128974915,
+        "airborne_span_s": 4068.5885128974915,
+        "coverage_percent": 100.00000000000544,
+        "required_area_m2": 4086249.9999971977,
+        "covered_area_m2": 4086249.99999742,
+        "sortie_count": 3,
+        "per_job": {
+          "Job_0": {
+            "required_area_m2": 854999.9999998923,
+            "covered_area_m2": 855000.000000259,
+            "coverage_percent": 100.0
+          },
+          "Job_1": {
+            "required_area_m2": 854999.99999906,
+            "covered_area_m2": 854999.9999989157,
+            "coverage_percent": 99.99999999998312
+          },
+          "Job_2": {
+            "required_area_m2": 1302499.9999982452,
+            "covered_area_m2": 1302499.999998245,
+            "coverage_percent": 99.99999999999997
+          },
+          "Job_3": {
+            "required_area_m2": 1073750.0000000002,
+            "covered_area_m2": 1073750.0,
+            "coverage_percent": 99.99999999999997
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "graph": {
+        "preparation_s": 4.948157924111001,
+        "vertices": 85,
+        "transects": 41,
+        "orientations": 82,
+        "profiles": [
+          {
+            "id": "68a7c420c3b456efe8c61498c157a4789f1d506d8fc806861266df861473cdf2",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "UAV_0"
+            ],
+            "physical_edges": 1170,
+            "expanded_edges": 0,
+            "valid_orientations": 60,
+            "detailed_edges_s": 1.9650778470095247,
+            "total_s": 2.464006502996199
+          },
+          {
+            "id": "66ccd7c7a710b5283bc04fbef0684e249c379f0f9fc83b1429ae32a93768bb80",
+            "model": "geoscan_201",
+            "uav_ids": [
+              "UAV_1"
+            ],
+            "physical_edges": 1170,
+            "expanded_edges": 0,
+            "valid_orientations": 22,
+            "detailed_edges_s": 1.9462346070213243,
+            "total_s": 2.430383592029102
+          }
+        ],
+        "knn": 4,
+        "corners": 60,
+        "base_connections": "all_corners",
+        "base_transfers": false,
+        "corner_spacing_m": 300.0,
+        "corner_policy": "both ends of boundary transects; recursive physical midpoint; existing H1 endpoints only",
+        "long_links_per_corner": 2,
+        "long_link_pairs": 120,
+        "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+        "transit_factor": 1.0,
+        "return_margin_s": 60.0,
+        "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+        "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+        "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+      },
+      "solution_sha256": "cd62c562441279e0a53c2a06a45b59988f6f0e5fb501316e76e06706cbb0ae76",
+      "shortcuts": {
+        "transfers_checked": 0,
+        "direct_evaluations": 0,
+        "blocked": 0,
+        "resource_rejections": 0,
+        "accepted": 0,
+        "removed_edges": 0,
+        "saved_flight_s": 0.0,
+        "calculation_s": 0.0,
+        "adopted": false,
+        "before_metrics": {
+          "makespan_s": 4068.5885133720844,
+          "total_flight_s": 5619.101981593181,
+          "total_distance_m": 46889.03381245237,
+          "sortie_count": 3,
+          "used_uav_count": 2
+        },
+        "reason": "no_resource_feasible_improvement",
+        "violations": [],
+        "elapsed_s": 0.030601780046708882
+      },
+      "verified_refuel_pause_s": 420.0,
+      "sortie_routes": [
+        {
+          "uav_id": "UAV_0",
+          "start_site": "Base_0",
+          "landing_site": "Base_1",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:00:19.366662+03:00"
+        },
+        {
+          "uav_id": "UAV_0",
+          "start_site": "Base_1",
+          "landing_site": "Base_2",
+          "t_start": "2026-06-15T09:07:19.366662+03:00",
+          "t_end": "2026-06-15T09:37:48.588513+03:00"
+        },
+        {
+          "uav_id": "UAV_1",
+          "start_site": "Base_0",
+          "landing_site": "Base_2",
+          "t_start": "2026-06-15T08:30:37.501000+03:00",
+          "t_end": "2026-06-15T09:03:28.014468+03:00"
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "h2/src/h2/routing_graph.py": "8b33f0ff24e0343b76930fb992726860b4a531bb03a1295250b95348a05edc5c",
+    "h2/src/h2/routing_shortcuts.py": "8cf10a47c27bbc20add01b5b6f85be9c92a2467a884574a17ced0468f416b631",
+    "h2/src/h2/routing_planner.py": "9084413de0e7764f1a1c395ceafa85fc495d14f7fff55859647497fc0e5a15be",
+    "h2/src/h2/routing_windows.py": "07563b3365f8042462baed055b40d1ec7eb004229a16ac948470fefc464417fc",
+    "h2/src/h2/routing_solver.py": "424aaa357202f40e2b4615367ed03844fab013d4d8eaee9602d1ce208a9bf28b",
+    "h2/src/h2/routing_seed.py": "597b8ac173bf6bfdd404dc68ff5e78067c57eaaad53ced5af5b4c51775048b44",
+    "h2/src/h2/routing_blocks.py": "a08ec55cb7c9b52f8f0376e10709768747301a6dc88390f1a3b5e5de564fa651",
+    "h1/h1_coverage/src/h1_coverage/coverage/grid.py": "44ec1ac36437ebd5d69b25cbce4d959737e64dcc1f0f888ecd9a3f9f6be3723e",
+    "h1/h1_coverage/src/h1_coverage/coverage/sweep.py": "ccad9a7413a7c07ca73845a720e8f4f833292c17327f3e20fc05b55ae76d9565",
+    "h1/h1_coverage/src/h1_coverage/coverage/complete.py": "748f6e88942a52303690df405207c06d10272df24ffaa989f94575ac16dd6e56",
+    "h1/h1_coverage/src/h1_coverage/coverage/candidates.py": "678ec4d2823276031275227c54c0069a8ac614cf6fc52360510097fa64a0c83f",
+    "h1/h1_coverage/src/h1_coverage/coverage/engine.py": "bcb68ea97d76147dc42ef17bcedde187ff78671aea852dca0b966a947ccf790b"
+  }
+}

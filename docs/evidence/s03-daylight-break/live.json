@@ -1,0 +1,102 @@
+{
+  "health": {
+    "status": "ready",
+    "storage": "sqlite",
+    "pipeline": "h1_coverage -> h2 -> h3",
+    "components": {
+      "h1_coverage": true,
+      "h2": true
+    },
+    "release": "h2-development"
+  },
+  "runs": [
+    {
+      "scenario": "S03_orekhovo_domodedovskaya",
+      "objective": "makespan",
+      "plan_id": "eea21627e578420fadb118598b4878b4",
+      "status": "SAFE",
+      "error": null,
+      "wall_s": 22.51,
+      "metrics": {
+        "distance_m": 69579.23600977383,
+        "total_flight_s": 3924.519937992096,
+        "makespan_s": 9324.520937919617,
+        "airborne_span_s": 3924.519937992096,
+        "coverage_percent": 99.99999999999999,
+        "required_area_m2": 12000000.000001602,
+        "covered_area_m2": 12000000.0000016,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 12000000.000001602,
+            "covered_area_m2": 12000000.0000016,
+            "coverage_percent": 99.99999999999999
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "graph": {
+        "preparation_s": 0.5593769140541553,
+        "vertices": 34,
+        "transects": 16,
+        "orientations": 32,
+        "profiles": [
+          {
+            "id": "8a016cd2f77d07b13c74f2c03834d6b0e5685ac920102c6df2b601cca8d0552d",
+            "model": "geoscan_701",
+            "uav_ids": [
+              "U01"
+            ],
+            "physical_edges": 220,
+            "expanded_edges": 0,
+            "valid_orientations": 32,
+            "detailed_edges_s": 0.44417902000714093,
+            "total_s": 0.5065694620134309
+          }
+        ],
+        "knn": 4,
+        "corners": 32,
+        "base_connections": "all_corners",
+        "base_transfers": false,
+        "corner_spacing_m": 300.0,
+        "corner_policy": "both ends of boundary transects; recursive physical midpoint; existing H1 endpoints only",
+        "long_links_per_corner": 2,
+        "long_link_pairs": 0,
+        "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+        "transit_factor": 1.0,
+        "return_margin_s": 60.0,
+        "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+        "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+        "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+      },
+      "solution_sha256": "e7cbfdd77cd202f04925435d85e4f2531b3a30868567797dd181171c8308f64e",
+      "shortcuts": {
+        "transfers_checked": 0,
+        "direct_evaluations": 0,
+        "blocked": 0,
+        "resource_rejections": 0,
+        "accepted": 0,
+        "removed_edges": 0,
+        "saved_flight_s": 0.0,
+        "calculation_s": 0.0,
+        "adopted": false,
+        "before_metrics": {
+          "makespan_s": 9324.520937885512,
+          "total_flight_s": 3924.519937885512,
+          "total_distance_m": 69579.23600977616,
+          "sortie_count": 1,
+          "used_uav_count": 1
+        },
+        "reason": "no_resource_feasible_improvement",
+        "violations": [],
+        "elapsed_s": 0.011874716030433774
+      }
+    }
+  ],
+  "sources": {
+    "h2/src/h2/routing_graph.py": "8b33f0ff24e0343b76930fb992726860b4a531bb03a1295250b95348a05edc5c",
+    "h2/src/h2/routing_shortcuts.py": "8cf10a47c27bbc20add01b5b6f85be9c92a2467a884574a17ced0468f416b631",
+    "h2/src/h2/routing_planner.py": "1bebd23cfcb380f9553cdb25feb5009deec15157da8b313dd725d8ecb4942923"
+  }
+}

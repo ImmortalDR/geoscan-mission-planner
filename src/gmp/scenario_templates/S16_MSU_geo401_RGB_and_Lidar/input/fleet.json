@@ -1,0 +1,438 @@
+{
+  "uavs": [
+    {
+      "id": "UAV_mugb19r3_copy1",
+      "model": "geoscan_401",
+      "class": "multirotor",
+      "ground_speed_kmh": 30.6,
+      "operational_endurance_min": 48,
+      "max_wind_ms": 10.8,
+      "payload_classes": [
+        "rgb",
+        "lidar",
+        "geophysics"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 30,
+      "start_site": "BASE_2",
+      "landing_site": "BASE_2",
+      "takeoff_time_s": 60,
+      "landing_time_s": 60,
+      "service_time_s": 300,
+      "parameter_status": "catalog_derived_planning_assumption_not_flight_authorization",
+      "catalog_provenance": {
+        "model_id": "geoscan_401_geo",
+        "vehicle_class": "multirotor",
+        "operational_endurance_min": 48,
+        "planning_speed_ms": 8.5,
+        "max_wind_ms": 10.8,
+        "payload_classes": [
+          "rgb",
+          "lidar",
+          "geophysics"
+        ],
+        "min_safe_agl_m": 25,
+        "max_altitude_msl_m": null,
+        "ground_times_s": {
+          "takeoff": 60,
+          "landing": 60,
+          "service": 300
+        },
+        "energy_reserve_fraction": 0.2,
+        "separation_m": {
+          "horizontal": 50,
+          "vertical": 50
+        },
+        "turnaround_buffer_m": 30,
+        "derating": {
+          "endurance": 0.8,
+          "speed": 0.85,
+          "wind": 0.9
+        },
+        "conflicts": [],
+        "provenance": [
+          {
+            "key": "passport_max_flight_time_min",
+            "value": 60,
+            "unit": "min",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": "public maximum, not a planning limit"
+          },
+          {
+            "key": "operational_endurance_min",
+            "value": 48,
+            "unit": "min",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": "derated by factor 0.8 from public maximum"
+          },
+          {
+            "key": "passport_max_speed_kmh",
+            "value": 36,
+            "unit": "km/h",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": null
+          },
+          {
+            "key": "planning_speed_ms",
+            "value": 8.5,
+            "unit": "m/s",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": "derated by factor 0.85"
+          },
+          {
+            "key": "passport_max_wind_ms",
+            "value": 12,
+            "unit": "m/s",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": "lowest published limit retained"
+          },
+          {
+            "key": "operational_max_wind_ms",
+            "value": 10.8,
+            "unit": "m/s",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": "safety margin 10%"
+          },
+          {
+            "key": "min_safe_agl_m",
+            "value": 25,
+            "unit": "m",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": null
+          }
+        ]
+      },
+      "operator_override": true
+    },
+    {
+      "id": "UAV_mugb19r3_copy1_copy1",
+      "model": "geoscan_401",
+      "class": "multirotor",
+      "ground_speed_kmh": 30.6,
+      "operational_endurance_min": 48,
+      "max_wind_ms": 10.8,
+      "payload_classes": [
+        "rgb",
+        "lidar",
+        "geophysics"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 30,
+      "start_site": "BASE_3",
+      "landing_site": "BASE_3",
+      "takeoff_time_s": 60,
+      "landing_time_s": 60,
+      "service_time_s": 300,
+      "parameter_status": "catalog_derived_planning_assumption_not_flight_authorization",
+      "catalog_provenance": {
+        "model_id": "geoscan_401_geo",
+        "vehicle_class": "multirotor",
+        "operational_endurance_min": 48,
+        "planning_speed_ms": 8.5,
+        "max_wind_ms": 10.8,
+        "payload_classes": [
+          "rgb",
+          "lidar",
+          "geophysics"
+        ],
+        "min_safe_agl_m": 25,
+        "max_altitude_msl_m": null,
+        "ground_times_s": {
+          "takeoff": 60,
+          "landing": 60,
+          "service": 300
+        },
+        "energy_reserve_fraction": 0.2,
+        "separation_m": {
+          "horizontal": 50,
+          "vertical": 50
+        },
+        "turnaround_buffer_m": 30,
+        "derating": {
+          "endurance": 0.8,
+          "speed": 0.85,
+          "wind": 0.9
+        },
+        "conflicts": [],
+        "provenance": [
+          {
+            "key": "passport_max_flight_time_min",
+            "value": 60,
+            "unit": "min",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": "public maximum, not a planning limit"
+          },
+          {
+            "key": "operational_endurance_min",
+            "value": 48,
+            "unit": "min",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": "derated by factor 0.8 from public maximum"
+          },
+          {
+            "key": "passport_max_speed_kmh",
+            "value": 36,
+            "unit": "km/h",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": null
+          },
+          {
+            "key": "planning_speed_ms",
+            "value": 8.5,
+            "unit": "m/s",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": "derated by factor 0.85"
+          },
+          {
+            "key": "passport_max_wind_ms",
+            "value": 12,
+            "unit": "m/s",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": "lowest published limit retained"
+          },
+          {
+            "key": "operational_max_wind_ms",
+            "value": 10.8,
+            "unit": "m/s",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": "safety margin 10%"
+          },
+          {
+            "key": "min_safe_agl_m",
+            "value": 25,
+            "unit": "m",
+            "source": "Geoscan 401 Geodesy",
+            "source_url": "https://www.geoscan.ru/ru/products/geoscan401/geo",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_product",
+            "confidence": 0.9,
+            "notes": null
+          }
+        ]
+      },
+      "operator_override": true
+    },
+    {
+      "id": "UAV_mugb1t5y",
+      "model": "geoscan_201",
+      "class": "fixed_wing",
+      "ground_speed_kmh": 76,
+      "operational_endurance_min": 144,
+      "max_wind_ms": 10.8,
+      "payload_classes": [
+        "rgb",
+        "thermal",
+        "video"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 300,
+      "start_site": "BASE_0",
+      "landing_site": "BASE_0",
+      "takeoff_time_s": 180,
+      "landing_time_s": 240,
+      "service_time_s": 600,
+      "parameter_status": "catalog_derived_planning_assumption_not_flight_authorization",
+      "catalog_provenance": {
+        "model_id": "geoscan_201",
+        "vehicle_class": "fixed_wing",
+        "operational_endurance_min": 144,
+        "planning_speed_ms": 21.11,
+        "max_wind_ms": 10.8,
+        "payload_classes": [
+          "rgb",
+          "thermal",
+          "video"
+        ],
+        "min_safe_agl_m": 100,
+        "max_altitude_msl_m": 4000,
+        "ground_times_s": {
+          "takeoff": 180,
+          "landing": 240,
+          "service": 600
+        },
+        "energy_reserve_fraction": 0.2,
+        "separation_m": {
+          "horizontal": 300,
+          "vertical": 50
+        },
+        "turnaround_buffer_m": 300,
+        "derating": {
+          "endurance": 0.8,
+          "speed": 0.95,
+          "wind": 0.9
+        },
+        "conflicts": [],
+        "provenance": [
+          {
+            "key": "passport_max_flight_time_min",
+            "value": 180,
+            "unit": "min",
+            "source": "Geoscan 201 Video / 2025 release",
+            "source_url": "https://www.geoscan.ru/ru/press-releases/geoskan-predstavil-bespilotnyy-videosamolet-geoskan-201-video-s-umnoy-kameroy-sobstvennoy",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_current",
+            "confidence": 0.9,
+            "notes": "public maximum, not a planning limit"
+          },
+          {
+            "key": "operational_endurance_min",
+            "value": 144,
+            "unit": "min",
+            "source": "Geoscan 201 Video / 2025 release",
+            "source_url": "https://www.geoscan.ru/ru/press-releases/geoskan-predstavil-bespilotnyy-videosamolet-geoskan-201-video-s-umnoy-kameroy-sobstvennoy",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_current",
+            "confidence": 0.9,
+            "notes": "derated by factor 0.8 from public maximum"
+          },
+          {
+            "key": "passport_cruise_speed_kmh",
+            "value": 80,
+            "unit": "km/h",
+            "source": "Geoscan 201 Video / 2025 release",
+            "source_url": "https://www.geoscan.ru/ru/press-releases/geoskan-predstavil-bespilotnyy-videosamolet-geoskan-201-video-s-umnoy-kameroy-sobstvennoy",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_current",
+            "confidence": 0.9,
+            "notes": null
+          },
+          {
+            "key": "planning_speed_ms",
+            "value": 21.11,
+            "unit": "m/s",
+            "source": "Geoscan 201 Video / 2025 release",
+            "source_url": "https://www.geoscan.ru/ru/press-releases/geoskan-predstavil-bespilotnyy-videosamolet-geoskan-201-video-s-umnoy-kameroy-sobstvennoy",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_current",
+            "confidence": 0.9,
+            "notes": "derated by factor 0.95"
+          },
+          {
+            "key": "passport_max_wind_ms",
+            "value": 12,
+            "unit": "m/s",
+            "source": "Geoscan 201 Video / 2025 release",
+            "source_url": "https://www.geoscan.ru/ru/press-releases/geoskan-predstavil-bespilotnyy-videosamolet-geoskan-201-video-s-umnoy-kameroy-sobstvennoy",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_current",
+            "confidence": 0.9,
+            "notes": "lowest published limit retained"
+          },
+          {
+            "key": "operational_max_wind_ms",
+            "value": 10.8,
+            "unit": "m/s",
+            "source": "Geoscan 201 Video / 2025 release",
+            "source_url": "https://www.geoscan.ru/ru/press-releases/geoskan-predstavil-bespilotnyy-videosamolet-geoskan-201-video-s-umnoy-kameroy-sobstvennoy",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_current",
+            "confidence": 0.9,
+            "notes": "safety margin 10%"
+          },
+          {
+            "key": "min_safe_agl_m",
+            "value": 100,
+            "unit": "m",
+            "source": "Geoscan 201 Video / 2025 release",
+            "source_url": "https://www.geoscan.ru/ru/press-releases/geoskan-predstavil-bespilotnyy-videosamolet-geoskan-201-video-s-umnoy-kameroy-sobstvennoy",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_current",
+            "confidence": 0.9,
+            "notes": null
+          },
+          {
+            "key": "max_altitude_msl_m",
+            "value": 4000,
+            "unit": "m",
+            "source": "Geoscan 201 Video / 2025 release",
+            "source_url": "https://www.geoscan.ru/ru/press-releases/geoskan-predstavil-bespilotnyy-videosamolet-geoskan-201-video-s-umnoy-kameroy-sobstvennoy",
+            "source_date": "2026-09-18",
+            "retrieved_at": "2026-09-18",
+            "priority": "official_current",
+            "confidence": 0.9,
+            "notes": null
+          }
+        ]
+      }
+    }
+  ]
+}

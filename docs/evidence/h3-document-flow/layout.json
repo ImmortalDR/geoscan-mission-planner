@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "mobile_widths": [
+    390,
+    360
+  ],
+  "project_bar_rows": 2,
+  "sidebar_below_project_bar": true,
+  "javascript_errors": []
+}

@@ -1,0 +1,70 @@
+{
+  "objective": "makespan",
+  "wall_s": 178.10447470098734,
+  "status": "UNSAFE",
+  "metrics": {
+    "distance_m": 756636.0606160457,
+    "total_flight_s": 80544.45278716087,
+    "makespan_s": 39385.50868010521,
+    "airborne_span_s": 39385.50868010521,
+    "coverage_percent": 91.79534558700752,
+    "required_area_m2": 90632129.40107909,
+    "covered_area_m2": 83196076.39658439,
+    "sortie_count": 34,
+    "per_job": {
+      "JOB_mug9k0vy": {
+        "required_area_m2": 8821453.32666627,
+        "covered_area_m2": 8821453.32666627,
+        "coverage_percent": 100.0
+      },
+      "JOB_mug9kanh": {
+        "required_area_m2": 50186139.47201809,
+        "covered_area_m2": 50186139.47201809,
+        "coverage_percent": 100.0
+      },
+      "JOB_mug9zkpn": {
+        "required_area_m2": 3986429.328159467,
+        "covered_area_m2": 3986429.328159467,
+        "coverage_percent": 100.0
+      },
+      "JOB_mug9zsll": {
+        "required_area_m2": 5012891.177459043,
+        "covered_area_m2": 5012891.177459043,
+        "coverage_percent": 100.0
+      },
+      "JOB_mugb47tq": {
+        "required_area_m2": 1189332.133614003,
+        "covered_area_m2": 1189332.1336140027,
+        "coverage_percent": 99.99999999999997
+      },
+      "JOB_mugbfiq1": {
+        "required_area_m2": 12771765.743474418,
+        "covered_area_m2": 5335712.738979827,
+        "coverage_percent": 41.77740843474243
+      },
+      "JOB_mugbgfz6": {
+        "required_area_m2": 8664118.219687786,
+        "covered_area_m2": 8664118.219687678,
+        "coverage_percent": 99.99999999999875
+      }
+    },
+    "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment"
+  },
+  "violations": [
+    {
+      "code": "UNSAFE_CANDIDATE",
+      "message": "Planner did not confirm a complete feasible plan; diagnostic checks only"
+    },
+    {
+      "code": "COVERAGE_GAP",
+      "message": "Required survey area is not completely covered by physical sensor swaths",
+      "job_id": "JOB_mugbfiq1",
+      "uncovered_area_m2": 7436053.004494592,
+      "coverage_percent": 41.77740843474243
+    }
+  ],
+  "unassigned_reasons": {
+    "graph_resource_limit": 31
+  },
+  "input_sha256": "fc9cb66ba6d21a64283ef4433b311d5cf1f88dbd41e25313aed4845c43222d18"
+}

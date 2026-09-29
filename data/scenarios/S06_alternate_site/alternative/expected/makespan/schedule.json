@@ -1,0 +1,13 @@
+[
+  {
+    "id": "U01_S1",
+    "uav_id": "U01",
+    "index": 1,
+    "start_site": "NEAR",
+    "landing_site": "NEAR",
+    "t_start": "2026-06-15T08:30:00+03:00",
+    "t_end": "2026-06-15T08:38:21.353050+03:00",
+    "flight_time_s": 501.35305,
+    "distance_m": 4360.236034401278
+  }
+]

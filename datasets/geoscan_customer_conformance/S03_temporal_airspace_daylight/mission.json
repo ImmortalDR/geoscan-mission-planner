@@ -1,0 +1,15 @@
+{
+  "objective": "makespan",
+  "mission_window": {
+    "start": "2026-06-15T09:00:00+03:00",
+    "end": "2026-06-15T16:00:00+03:00"
+  },
+  "daylight_window": {
+    "start": "2026-06-15T09:15:00+03:00",
+    "end": "2026-06-15T15:45:00+03:00"
+  },
+  "wind": {
+    "speed_ms": 5,
+    "direction_deg_from": 270
+  }
+}

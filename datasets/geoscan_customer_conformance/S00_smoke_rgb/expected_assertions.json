@@ -1,0 +1,7 @@
+{
+  "expected_status": "SAFE",
+  "coverage_required": 1.0,
+  "nfz_violations": 0,
+  "vehicle_conflicts": 0,
+  "reserve_landing_reachability": true
+}

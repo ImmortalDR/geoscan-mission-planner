@@ -1,0 +1,1084 @@
+{
+  "site": "https://45.87.246.124:9443/",
+  "seed": 20260918,
+  "search_depth": "standard",
+  "time_budget_s": 60,
+  "runs": [
+    {
+      "scenario": "S14_MSU_geo401_and_201",
+      "objective": "makespan",
+      "plan_id": "02c79dc2eeb94a30802227cd7b1f7207",
+      "run_code": "RUN-20260927-02c79dc2eeb9",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 278295.44223938766,
+        "total_flight_s": 22347.666344165802,
+        "makespan_s": 13223.106126070023,
+        "airborne_span_s": 13223.106126070023,
+        "coverage_percent": 100.0,
+        "required_area_m2": 70753564.53938845,
+        "covered_area_m2": 70753564.53938845,
+        "sortie_count": 8,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugady20": {
+            "required_area_m2": 2539587.5601959103,
+            "covered_area_m2": 2539587.56019591,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugaf9eh": {
+            "required_area_m2": 57439189.16001186,
+            "covered_area_m2": 57439189.16001186,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugafdz8": {
+            "required_area_m2": 1953334.4925144129,
+            "covered_area_m2": 1953334.492514413,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 70.18573191901669,
+      "input_sha256": "c6a84cc5e4ff65e720316d9bb388be6d6f0340aade3f900245ab19abeb387d2b",
+      "source_sha256": "0992bdb62b517dc7c2e462941358ad1e240f2ad26ee88926d39f07daabdc7593",
+      "transit_factor": 1.0,
+      "routing": {
+        "graph": {
+          "preparation_s": 18.332431725924835,
+          "vertices": 93,
+          "transects": 44,
+          "orientations": 88,
+          "profiles": [
+            {
+              "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugacog6"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 5.219304314930923,
+              "total_s": 5.952780023915693
+            },
+            {
+              "id": "e41c112b8cab34220a23e4367247138d00b4dfb9002efdbf742d704bae33b156",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugacog6_copy1",
+                "UAV_mugacog6_copy1_copy1"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 5.190590779995546,
+              "total_s": 5.957408201065846
+            },
+            {
+              "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+              "model": "geoscan_201",
+              "uav_ids": [
+                "UAV_mugaekoc"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 5.430987154017203,
+              "total_s": 6.332229700987227
+            }
+          ],
+          "knn": 4,
+          "corners": 86,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 172,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.0,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.4373048240086064,
+        "seed_s": 0.3007544159190729,
+        "initial_objective_s": 13308.4,
+        "search_s": 0.9332264700205997,
+        "solutions_seen": 19,
+        "branches": 2008,
+        "failures": 120,
+        "branch_limit": 5000,
+        "status": 2,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400002,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 6.062226308975369,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 13223.106125866276,
+            "violations": [],
+            "repairs": 1
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 13223.106125866276
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 13223.106125866276
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 13223.106125866276
+          }
+        ],
+        "total_s": 28.228808217914775,
+        "objective": "makespan",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "219eb038bbe448b534bc5c8db379f79c376171da3bec13cee9e2ced33e8b52bc"
+      },
+      "sorties_per_uav": {
+        "UAV_mugacog6": 1,
+        "UAV_mugacog6_copy1": 3,
+        "UAV_mugacog6_copy1_copy1": 2,
+        "UAV_mugaekoc": 2
+      },
+      "prior_dev_metric_s": 15468.301271915436,
+      "prior_production_metric_s": 12306.108584880829,
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 38 задач",
+          "duration_s": 0.38878655433654785
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 44 из 44 галсов; 8 вылетов",
+          "duration_s": 28.77239155769348
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 16.231656074523926
+        }
+      ]
+    },
+    {
+      "scenario": "S14_MSU_geo401_and_201",
+      "objective": "total_flight",
+      "plan_id": "a3a06a8b0b8e46a284c337484f24f106",
+      "run_code": "RUN-20260927-a3a06a8b0b8e",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 254430.14389536096,
+        "total_flight_s": 17328.870606184006,
+        "makespan_s": 16631.259164094925,
+        "airborne_span_s": 16631.259164094925,
+        "coverage_percent": 100.0,
+        "required_area_m2": 70753564.53938845,
+        "covered_area_m2": 70753564.53938845,
+        "sortie_count": 5,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugady20": {
+            "required_area_m2": 2539587.5601959103,
+            "covered_area_m2": 2539587.56019591,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugaf9eh": {
+            "required_area_m2": 57439189.16001186,
+            "covered_area_m2": 57439189.16001186,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugafdz8": {
+            "required_area_m2": 1953334.4925144129,
+            "covered_area_m2": 1953334.492514413,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 64.5726373520447,
+      "input_sha256": "c6a84cc5e4ff65e720316d9bb388be6d6f0340aade3f900245ab19abeb387d2b",
+      "source_sha256": "0992bdb62b517dc7c2e462941358ad1e240f2ad26ee88926d39f07daabdc7593",
+      "transit_factor": 1.0,
+      "routing": {
+        "graph": {
+          "preparation_s": 17.039513702969998,
+          "vertices": 93,
+          "transects": 44,
+          "orientations": 88,
+          "profiles": [
+            {
+              "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugacog6"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 4.702358543989249,
+              "total_s": 5.48213530506473
+            },
+            {
+              "id": "e41c112b8cab34220a23e4367247138d00b4dfb9002efdbf742d704bae33b156",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugacog6_copy1",
+                "UAV_mugacog6_copy1_copy1"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 4.853595273103565,
+              "total_s": 5.602242145105265
+            },
+            {
+              "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+              "model": "geoscan_201",
+              "uav_ids": [
+                "UAV_mugaekoc"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 5.126100977999158,
+              "total_s": 5.851647999021225
+            }
+          ],
+          "knn": 4,
+          "corners": 86,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 172,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.0,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.4886630099499598,
+        "seed_s": 0.25981257297098637,
+        "initial_objective_s": 21278.200000000004,
+        "search_s": 1.0059615600621328,
+        "solutions_seen": 50,
+        "branches": 338,
+        "failures": 160,
+        "branch_limit": 5000,
+        "status": 1,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400001,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 3.83885197294876,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 17328.87060611155,
+            "violations": [],
+            "repairs": 1
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 17338.133792365636
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 17393.827153604107
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 17409.106453924695
+          }
+        ],
+        "total_s": 24.436256523011252,
+        "objective": "total_flight",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "851055657d960d1456f422b68d629eba6e1de58cb220bb018bbfe27838f4cacc"
+      },
+      "sorties_per_uav": {
+        "UAV_mugacog6": 1,
+        "UAV_mugacog6_copy1_copy1": 1,
+        "UAV_mugaekoc": 3
+      },
+      "prior_dev_metric_s": 19701.48899102211,
+      "prior_production_metric_s": 15991.957385063171,
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 38 задач",
+          "duration_s": 0.5302121639251709
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 44 из 44 галсов; 5 вылетов",
+          "duration_s": 24.975293397903442
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 15.410430431365967
+        }
+      ]
+    },
+    {
+      "scenario": "S15_MSU_geo401",
+      "objective": "makespan",
+      "plan_id": "8ff949fddca945e4a58af189604b3406",
+      "run_code": "RUN-20260927-8ff949fddca9",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 270842.98537584924,
+        "total_flight_s": 23530.60516500473,
+        "makespan_s": 11537.444061994553,
+        "airborne_span_s": 11537.444061994553,
+        "coverage_percent": 100.0,
+        "required_area_m2": 69196245.43791687,
+        "covered_area_m2": 69196245.43791687,
+        "sortie_count": 9,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9kanh": {
+            "required_area_m2": 50186139.47201809,
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zkpn": {
+            "required_area_m2": 3986429.328159467,
+            "covered_area_m2": 3986429.328159467,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zsll": {
+            "required_area_m2": 5012891.177459043,
+            "covered_area_m2": 5012891.177459043,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugb47tq": {
+            "required_area_m2": 1189332.133614003,
+            "covered_area_m2": 1189332.1336140027,
+            "coverage_percent": 99.99999999999997
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 58.281551431980915,
+      "input_sha256": "129eb4905b0703ff4894edada0befefafa957126529627e9988382ac8d7accfd",
+      "source_sha256": "0992bdb62b517dc7c2e462941358ad1e240f2ad26ee88926d39f07daabdc7593",
+      "transit_factor": 1.0,
+      "routing": {
+        "graph": {
+          "preparation_s": 11.348679304937832,
+          "vertices": 95,
+          "transects": 45,
+          "orientations": 90,
+          "profiles": [
+            {
+              "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugb19r3_copy1",
+                "UAV_mugb19r3_copy1_copy1"
+              ],
+              "physical_edges": 1734,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 4.914249347988516,
+              "total_s": 5.612835874082521
+            },
+            {
+              "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+              "model": "geoscan_201",
+              "uav_ids": [
+                "UAV_mugb1t5y"
+              ],
+              "physical_edges": 1734,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 4.975904086022638,
+              "total_s": 5.660897042020224
+            }
+          ],
+          "knn": 4,
+          "corners": 88,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 176,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.0,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.3082082460168749,
+        "seed_s": 0.246620427002199,
+        "initial_objective_s": 11539.0,
+        "search_s": 0.8166947150602937,
+        "solutions_seen": 12,
+        "branches": 1013,
+        "failures": 96,
+        "branch_limit": 5000,
+        "status": 2,
+        "logical_nodes": 139,
+        "reload_copies": {
+          "UAV_mugb19r3_copy1": 16,
+          "UAV_mugb19r3_copy1_copy1": 16,
+          "UAV_mugb1t5y": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 404736,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 2.9981050989590585,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 11537.444062024624,
+            "violations": [],
+            "repairs": 0
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 11537.444062024624
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 11537.444062024624
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 11537.444062024624
+          }
+        ],
+        "total_s": 16.917435404029675,
+        "objective": "makespan",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "bc3da35945b41f32f03486b153eff576630268a110925325f4eaecdc690d57ec"
+      },
+      "sorties_per_uav": {
+        "UAV_mugb19r3_copy1": 4,
+        "UAV_mugb19r3_copy1_copy1": 3,
+        "UAV_mugb1t5y": 2
+      },
+      "prior_dev_metric_s": 12253.70215010643,
+      "prior_production_metric_s": 10785.425450086594,
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 43 задач",
+          "duration_s": 0.4851653575897217
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 45 из 45 галсов; 9 вылетов",
+          "duration_s": 17.478191375732422
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 15.914860010147095
+        }
+      ]
+    },
+    {
+      "scenario": "S15_MSU_geo401",
+      "objective": "total_flight",
+      "plan_id": "c211a32c495d4e0db3a9dc569235b58f",
+      "run_code": "RUN-20260927-c211a32c495d",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 256125.43290862156,
+        "total_flight_s": 17610.25603699684,
+        "makespan_s": 16752.789431095123,
+        "airborne_span_s": 16752.789431095123,
+        "coverage_percent": 100.0,
+        "required_area_m2": 69196245.43791687,
+        "covered_area_m2": 69196245.43791687,
+        "sortie_count": 5,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9kanh": {
+            "required_area_m2": 50186139.47201809,
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zkpn": {
+            "required_area_m2": 3986429.328159467,
+            "covered_area_m2": 3986429.328159467,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zsll": {
+            "required_area_m2": 5012891.177459043,
+            "covered_area_m2": 5012891.177459043,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugb47tq": {
+            "required_area_m2": 1189332.133614003,
+            "covered_area_m2": 1189332.1336140027,
+            "coverage_percent": 99.99999999999997
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 58.049285012995824,
+      "input_sha256": "129eb4905b0703ff4894edada0befefafa957126529627e9988382ac8d7accfd",
+      "source_sha256": "0992bdb62b517dc7c2e462941358ad1e240f2ad26ee88926d39f07daabdc7593",
+      "transit_factor": 1.0,
+      "routing": {
+        "graph": {
+          "preparation_s": 11.781390412943438,
+          "vertices": 95,
+          "transects": 45,
+          "orientations": 90,
+          "profiles": [
+            {
+              "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugb19r3_copy1",
+                "UAV_mugb19r3_copy1_copy1"
+              ],
+              "physical_edges": 1734,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 5.040949241025373,
+              "total_s": 5.672929206048138
+            },
+            {
+              "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+              "model": "geoscan_201",
+              "uav_ids": [
+                "UAV_mugb1t5y"
+              ],
+              "physical_edges": 1734,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 5.282094467896968,
+              "total_s": 6.032063900958747
+            }
+          ],
+          "knn": 4,
+          "corners": 88,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 176,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.0,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.164090703940019,
+        "seed_s": 0.1976646059192717,
+        "initial_objective_s": 19027.199999999997,
+        "search_s": 0.9237337550148368,
+        "solutions_seen": 26,
+        "branches": 196,
+        "failures": 100,
+        "branch_limit": 5000,
+        "status": 1,
+        "logical_nodes": 139,
+        "reload_copies": {
+          "UAV_mugb19r3_copy1": 16,
+          "UAV_mugb19r3_copy1_copy1": 16,
+          "UAV_mugb1t5y": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 407801,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 2.556344347889535,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 17610.25603717413,
+            "violations": [],
+            "repairs": 0
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 17613.298662867946
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 17613.483401511054
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 17621.249365669657
+          }
+        ],
+        "total_s": 16.91585341002792,
+        "objective": "total_flight",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "9e90ddba1d7ab7621a801423395de11ad20084ab180cfe97b23ba3f62d47c6e5"
+      },
+      "sorties_per_uav": {
+        "UAV_mugb19r3_copy1": 1,
+        "UAV_mugb19r3_copy1_copy1": 1,
+        "UAV_mugb1t5y": 3
+      },
+      "prior_dev_metric_s": 18927.525789022446,
+      "prior_production_metric_s": 16255.861755132675,
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 43 задач",
+          "duration_s": 0.4908149242401123
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 45 из 45 галсов; 5 вылетов",
+          "duration_s": 17.45167875289917
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 15.63443112373352
+        }
+      ]
+    },
+    {
+      "scenario": "S12_MSU_4bpla_4zones",
+      "objective": "makespan",
+      "plan_id": "c6a6e8682d62426190a2ae53fb8d9fd1",
+      "run_code": "RUN-20260927-c6a6e8682d62",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 317139.6151440551,
+        "total_flight_s": 16259.490164756775,
+        "makespan_s": 4121.421355009079,
+        "airborne_span_s": 4121.421355009079,
+        "coverage_percent": 99.99999999999997,
+        "required_area_m2": 74527675.88677241,
+        "covered_area_m2": 74527675.8867724,
+        "sortie_count": 4,
+        "per_job": {
+          "JOB_mug9jv49": {
+            "required_area_m2": 15520083.088088043,
+            "covered_area_m2": 15520083.088088041,
+            "coverage_percent": 99.99999999999999
+          },
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9kanh": {
+            "required_area_m2": 50186139.47201809,
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 131.219070445979,
+      "input_sha256": "ba20f0b084e3ef1ca728504a297500ae9aad283dd0264c05958f4c75a654fdb1",
+      "source_sha256": "0992bdb62b517dc7c2e462941358ad1e240f2ad26ee88926d39f07daabdc7593",
+      "transit_factor": 1.0,
+      "routing": {
+        "graph": {
+          "preparation_s": 2.1851383940083906,
+          "vertices": 95,
+          "transects": 45,
+          "orientations": 90,
+          "profiles": [
+            {
+              "id": "8a016cd2f77d07b13c74f2c03834d6b0e5685ac920102c6df2b601cca8d0552d",
+              "model": "geoscan_701",
+              "uav_ids": [
+                "U01",
+                "U02",
+                "U03",
+                "U04"
+              ],
+              "physical_edges": 562,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 1.8220492990221828,
+              "total_s": 2.148075422970578
+            }
+          ],
+          "knn": 4,
+          "corners": 16,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 31,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.0,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.22390900494065136,
+        "seed_s": 0.2016019520815462,
+        "initial_objective_s": 4568.5,
+        "search_s": 0.7089395489310846,
+        "solutions_seen": 41,
+        "branches": 2659,
+        "failures": 111,
+        "branch_limit": 5000,
+        "status": 2,
+        "logical_nodes": 118,
+        "reload_copies": {
+          "U01": 3,
+          "U02": 3,
+          "U03": 3,
+          "U04": 3
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400018,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 78.10082553804386,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 4121.421355139299,
+            "violations": [],
+            "repairs": 5
+          },
+          {
+            "candidate": 2,
+            "passed": true,
+            "metric_s": 4121.421355139299,
+            "violations": [],
+            "repairs": 5
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 4135.505759213627
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 4135.505759213627
+          }
+        ],
+        "total_s": 81.57066489802673,
+        "objective": "makespan",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "7f312d999454b50d01d5de9bcd8d8cfe100db3b89373990f7cf1ecc7df588d94"
+      },
+      "sorties_per_uav": {
+        "U01": 1,
+        "U02": 1,
+        "U03": 1,
+        "U04": 1
+      },
+      "prior_dev_metric_s": 4758.534621953964,
+      "prior_production_metric_s": 5048.291007041931,
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 4 задач",
+          "duration_s": 1.2346956729888916
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 45 из 45 галсов; 4 вылетов",
+          "duration_s": 82.11850214004517
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 19.68152689933777
+        }
+      ]
+    },
+    {
+      "scenario": "S12_MSU_4bpla_4zones",
+      "objective": "total_flight",
+      "plan_id": "db903759dd0d415283768d57b5b71c95",
+      "run_code": "RUN-20260927-db903759dd0d",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 253718.990779768,
+        "total_flight_s": 13431.976766109467,
+        "makespan_s": 8685.404438018799,
+        "airborne_span_s": 8685.404438018799,
+        "coverage_percent": 99.99999999999997,
+        "required_area_m2": 74527675.88677241,
+        "covered_area_m2": 74527675.8867724,
+        "sortie_count": 3,
+        "per_job": {
+          "JOB_mug9jv49": {
+            "required_area_m2": 15520083.088088043,
+            "covered_area_m2": 15520083.088088041,
+            "coverage_percent": 99.99999999999999
+          },
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9kanh": {
+            "required_area_m2": 50186139.47201809,
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 45.932993402006105,
+      "input_sha256": "ba20f0b084e3ef1ca728504a297500ae9aad283dd0264c05958f4c75a654fdb1",
+      "source_sha256": "0992bdb62b517dc7c2e462941358ad1e240f2ad26ee88926d39f07daabdc7593",
+      "transit_factor": 1.0,
+      "routing": {
+        "graph": {
+          "preparation_s": 1.84203259809874,
+          "vertices": 95,
+          "transects": 45,
+          "orientations": 90,
+          "profiles": [
+            {
+              "id": "8a016cd2f77d07b13c74f2c03834d6b0e5685ac920102c6df2b601cca8d0552d",
+              "model": "geoscan_701",
+              "uav_ids": [
+                "U01",
+                "U02",
+                "U03",
+                "U04"
+              ],
+              "physical_edges": 562,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 1.5045719479676336,
+              "total_s": 1.8072469379985705
+            }
+          ],
+          "knn": 4,
+          "corners": 16,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 31,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.0,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.1582209130283445,
+        "seed_s": 0.17839551798533648,
+        "initial_objective_s": 14206.899999999998,
+        "search_s": 0.6154887080192566,
+        "solutions_seen": 38,
+        "branches": 269,
+        "failures": 124,
+        "branch_limit": 5000,
+        "status": 1,
+        "logical_nodes": 118,
+        "reload_copies": {
+          "U01": 3,
+          "U02": 3,
+          "U03": 3,
+          "U04": 3
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400003,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 4.8245744130108505,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 13432.00963208237,
+            "violations": [],
+            "repairs": 0
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 13432.042498095505
+          },
+          {
+            "candidate": 3,
+            "passed": true,
+            "metric_s": 13431.976766069236,
+            "violations": [],
+            "repairs": 0
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 13446.382180124912
+          }
+        ],
+        "total_s": 7.752873295918107,
+        "objective": "total_flight",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "05f4dba2b51cbe087d12e4e5a6b34647a0977e9b3169937a7b54e6a4898e8992"
+      },
+      "sorties_per_uav": {
+        "U01": 1,
+        "U02": 1,
+        "U04": 1
+      },
+      "prior_dev_metric_s": 14810.186977148056,
+      "prior_production_metric_s": 11861.934622049332,
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 4 задач",
+          "duration_s": 1.0634288787841797
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 45 из 45 галсов; 3 вылетов",
+          "duration_s": 8.292243957519531
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 14.788339853286743
+        }
+      ]
+    }
+  ]
+}

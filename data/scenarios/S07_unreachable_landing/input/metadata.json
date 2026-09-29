@@ -1,0 +1,19 @@
+{
+  "scenario_id": "S07_unreachable_landing",
+  "description": "Only permitted landing exceeds the available resource",
+  "vector_crs": "EPSG:4326",
+  "metric_crs": "EPSG:32637",
+  "temporal_altitude_reference": "AMSL",
+  "height_reference": "synthetic_datum",
+  "surface_model": "synthetic_flat",
+  "terrain": {
+    "kind": "synthetic_flat_surface",
+    "height_m": 160,
+    "resolution_m": 30
+  },
+  "real_elevation": false,
+  "synthetic_mission": true,
+  "not_operational_data": true,
+  "trajectory_model": "piecewise_linear_XYZ_AMSL_time",
+  "seed": 20260920
+}

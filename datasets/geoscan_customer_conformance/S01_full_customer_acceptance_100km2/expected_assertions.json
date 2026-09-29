@@ -1,0 +1,18 @@
+{
+  "expected_status": "SAFE_AFTER_OPTIMIZATION",
+  "coverage_required": 1.0,
+  "max_physical_uav": 10,
+  "nfz_violations": 0,
+  "obstacle_violations": 0,
+  "vehicle_conflicts": 0,
+  "airspace_time_violations": 0,
+  "reserve_landing_reachability": true,
+  "required_exports": [
+    "kml",
+    "geojson"
+  ],
+  "required_objectives": [
+    "makespan",
+    "total_flight"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "S09_wind_refusal",
+  "title": "Wind excludes every compatible aircraft",
+  "expected_status": "INFEASIBLE",
+  "objectives": [
+    "makespan"
+  ],
+  "real_elevation": false,
+  "checks": {},
+  "proof": {
+    "type": "wind_excludes_all",
+    "job_id": "JOB_RGB"
+  },
+  "role": "wind",
+  "purpose_ru": "Отказ: ветер выше предела всех подходящих",
+  "catalog_badge_ru": "1 БВС · ветер",
+  "fleet_count": 1
+}

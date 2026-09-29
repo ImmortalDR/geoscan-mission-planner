@@ -1,0 +1,17 @@
+{
+  "id": "S10_different_start_end",
+  "title": "Different permitted takeoff and landing sites",
+  "expected_status": "SAFE",
+  "objectives": [
+    "makespan"
+  ],
+  "real_elevation": false,
+  "checks": {
+    "different_start_end": true
+  },
+  "proof": null,
+  "role": "sites",
+  "purpose_ru": "Разные площадки старта и посадки",
+  "catalog_badge_ru": "1 БВС · площадки",
+  "fleet_count": 1
+}

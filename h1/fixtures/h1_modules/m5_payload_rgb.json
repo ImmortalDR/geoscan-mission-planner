@@ -1,0 +1,23 @@
+{
+  "schema": "gmp.h1.fixture.m5.v1",
+  "description": "RGB payload profile for SurveyModel acceptance",
+  "camera": {
+    "id": "rgb_test",
+    "image_width_px": 6000,
+    "image_height_px": 4000,
+    "focal_length_mm": 16.0,
+    "pixel_pitch_um": 3.9166667
+  },
+  "payload": {
+    "id": "rgb_default",
+    "type": "rgb",
+    "gsd_cm": 3.0,
+    "side_overlap": 0.7,
+    "front_overlap": 0.8,
+    "nominal_agl_m": 120
+  },
+  "expect": {
+    "min_agl_m": 40.0,
+    "keep_factor": 0.3
+  }
+}

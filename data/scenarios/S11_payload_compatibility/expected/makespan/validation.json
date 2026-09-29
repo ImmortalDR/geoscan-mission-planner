@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "status": "SAFE",
+  "violations": [],
+  "metrics": {
+    "distance_m": 15849.32933594775,
+    "total_flight_s": 2211.409682035446,
+    "makespan_s": 573.8619980812073,
+    "airborne_span_s": 573.8619980812073,
+    "coverage_percent": 99.99999999975927,
+    "required_area_m2": 511999.9999999348,
+    "covered_area_m2": 511999.99999870226,
+    "sortie_count": 5,
+    "per_job": {
+      "JOB_RGB": {
+        "required_area_m2": 102399.99999980442,
+        "covered_area_m2": 102399.99999980442,
+        "coverage_percent": 100.0
+      },
+      "JOB_MULTISPECTRAL": {
+        "required_area_m2": 102399.99999996275,
+        "covered_area_m2": 102399.99999996275,
+        "coverage_percent": 100.0
+      },
+      "JOB_THERMAL": {
+        "required_area_m2": 102400.00000006519,
+        "covered_area_m2": 102400.00000006519,
+        "coverage_percent": 100.0
+      },
+      "JOB_LIDAR": {
+        "required_area_m2": 102400.00000006519,
+        "covered_area_m2": 102399.99999898623,
+        "coverage_percent": 99.99999999894632
+      },
+      "JOB_GEOPHYSICS": {
+        "required_area_m2": 102400.00000003725,
+        "covered_area_m2": 102399.99999988364,
+        "coverage_percent": 99.99999999984999
+      }
+    },
+    "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+    "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+  },
+  "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+  "not_checked": [
+    "discrete_photo_front_overlap",
+    "side_overlap_quality",
+    "aircraft_dynamics",
+    "real_operational_permissions",
+    "global_optimality"
+  ]
+}

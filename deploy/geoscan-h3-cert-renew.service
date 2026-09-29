@@ -1,0 +1,7 @@
+[Unit]
+Description=Renew short-lived Geoscan H3 IP certificate
+After=network-online.target nginx.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/geoscan-h3-tools/bin/certbot renew --cert-name geoscan-h3-ip --quiet --deploy-hook "/usr/sbin/nginx -t && /usr/bin/systemctl reload nginx"

@@ -1,0 +1,6 @@
+{
+  "expected_status": "SAFE",
+  "airspace_time_violations": 0,
+  "schedule_required": true,
+  "must_respect_active_interval": true
+}

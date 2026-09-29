@@ -1,0 +1,27 @@
+[Unit]
+Description=H2 fixture development viewer
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=h2-viewer
+Group=h2-viewer
+WorkingDirectory=/opt/h2-fixture-viewer
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONPATH=/opt/h2-fixture-viewer/src
+Environment=H2_ARTIFACTS_DIR=/opt/h2-fixture-viewer/artifacts
+ExecStart=/opt/h2-fixture-viewer/.venv/bin/python /opt/h2-fixture-viewer/viewer/server.py --host 127.0.0.1 --port 8090
+Restart=on-failure
+RestartSec=2
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadOnlyPaths=/opt/h2-fixture-viewer
+ReadWritePaths=/opt/h2-fixture-viewer/artifacts
+BindPaths=/root/H2_Optimize_4D/artifacts/viewer-runs:/opt/h2-fixture-viewer/artifacts
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

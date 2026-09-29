@@ -1,0 +1,9 @@
+{
+  "scenario_id": "S08_fixed_wing_turnaround",
+  "description": "Raw transects fit, but a fixed-wing turnaround protection buffer conflicts with NFZ.",
+  "seed": 20260926,
+  "vector_crs": "EPSG:4326",
+  "internal_generation_crs": "EPSG:32637",
+  "synthetic": true,
+  "not_operational_data": true
+}

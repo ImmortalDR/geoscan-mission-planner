@@ -1,0 +1,18 @@
+{
+  "objectives": [
+    "makespan",
+    "total_flight"
+  ],
+  "mission_window": {
+    "start": "2026-06-15T08:30:00+03:00",
+    "end": "2026-06-15T18:00:00+03:00"
+  },
+  "wind": {
+    "speed_ms": 7,
+    "direction_deg_from": 250
+  },
+  "dem_sampling_step_m": 30,
+  "service_time_min": 8,
+  "require_schedule": true,
+  "require_complete_coverage": true
+}

@@ -1,0 +1,9 @@
+{
+  "scenario_id": "S03_temporal_airspace_daylight",
+  "description": "Temporal restriction forces scheduling around an active interval.",
+  "seed": 20260921,
+  "vector_crs": "EPSG:4326",
+  "internal_generation_crs": "EPSG:32637",
+  "synthetic": true,
+  "not_operational_data": true
+}

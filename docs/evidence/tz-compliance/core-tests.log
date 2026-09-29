@@ -1,0 +1,33 @@
+.................................................................. [ 42%]
+........................................................................ [ 87%]
+...................                                                      [100%]
+=============================== warnings summary ===============================
+tests/safety/test_h3_core.py: 30 warnings
+tests/safety/test_h3_gate.py: 20 warnings
+tests/safety/test_h3_proposals.py: 7 warnings
+  /root/.venv/lib/python3.12/site-packages/rasterio/transform.py:177: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+
+tests/safety/test_h3_gate.py: 2 warnings
+tests/api/test_h3_h2_pipeline.py: 14 warnings
+  /root/h3/src/gmp/io/dem.py:52: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    col, row = ~self.transform * (rx, ry)
+
+tests/api/test_h3_h2_pipeline.py: 127 warnings
+  /root/h3/data/reference_builder.py:47: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    column, row = ~sampler.transform * (x, y)
+
+tests/api/test_h3_h2_pipeline.py: 20 warnings
+  /root/h3/h2/src/h2/transit.py:83: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    center = self._transform * (self._values.shape[1]/2, self._values.shape[0]/2)
+
+tests/api/test_h3_h2_pipeline.py: 40 warnings
+  /root/h3/h2/src/h2/transit.py:84: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    neighbors = [self._transform * (self._values.shape[1]/2+dx, self._values.shape[0]/2+dy)
+
+tests/api/test_h3_h2_pipeline.py: 3009 warnings
+  /root/h3/h2/src/h2/transit.py:110: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    col, row = self._inverse_transform * (rx, ry)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+157 passed, 3269 warnings, 6 subtests passed in 21.75s

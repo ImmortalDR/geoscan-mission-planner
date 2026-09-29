@@ -1,0 +1,9 @@
+{
+  "scenario_id": "S11_payload_compatibility",
+  "description": "Only compatible UAV/payload combinations may receive each survey task.",
+  "seed": 20260929,
+  "vector_crs": "EPSG:4326",
+  "internal_generation_crs": "EPSG:32637",
+  "synthetic": true,
+  "not_operational_data": true
+}

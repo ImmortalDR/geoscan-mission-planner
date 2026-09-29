@@ -1,0 +1,15 @@
+{
+  "id": "S00_smoke_rgb",
+  "title": "Basic RGB end-to-end",
+  "expected_status": "SAFE",
+  "objectives": [
+    "makespan"
+  ],
+  "real_elevation": false,
+  "checks": {},
+  "proof": null,
+  "role": "smoke",
+  "purpose_ru": "Smoke: один БВС, полный проход RGB",
+  "catalog_badge_ru": "1 БВС · e2e smoke",
+  "fleet_count": 1
+}

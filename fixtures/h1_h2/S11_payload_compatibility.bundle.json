@@ -1,0 +1,3530 @@
+{
+  "schema_version": "gmp.h1_h2.v1",
+  "scene_id": "S11_payload_compatibility",
+  "crs": {
+    "metric_epsg": 32637,
+    "axis": "ENU_metres",
+    "note": "Coordinates in metres, not lon/lat"
+  },
+  "generated_at": "2026-09-24T18:30:50Z",
+  "source": "coverage",
+  "fleet": [
+    {
+      "id": "GS201_01",
+      "model": "geoscan_201",
+      "uav_class": "fixed_wing",
+      "ground_speed_ms": 22.0,
+      "operational_endurance_min": 144.0,
+      "max_wind_ms": 12.0,
+      "payload_classes": [
+        "rgb",
+        "thermal"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 300.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 150.0
+    },
+    {
+      "id": "GS701_02",
+      "model": "geoscan_701",
+      "uav_class": "fixed_wing",
+      "ground_speed_ms": 28.0,
+      "operational_endurance_min": 480.0,
+      "max_wind_ms": 12.0,
+      "payload_classes": [
+        "rgb",
+        "multispectral"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 300.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 180.0
+    },
+    {
+      "id": "GS401_03",
+      "model": "geoscan_401_geo",
+      "uav_class": "multirotor",
+      "ground_speed_ms": 8.0,
+      "operational_endurance_min": 48.0,
+      "max_wind_ms": 12.0,
+      "payload_classes": [
+        "rgb",
+        "lidar",
+        "geophysics"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 30.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 80.0
+    },
+    {
+      "id": "GS801_04",
+      "model": "geoscan_801",
+      "uav_class": "multirotor",
+      "ground_speed_ms": 12.0,
+      "operational_endurance_min": 32.0,
+      "max_wind_ms": 10.0,
+      "payload_classes": [
+        "thermal",
+        "rgb_video"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 30.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 100.0
+    },
+    {
+      "id": "GEMINI_05",
+      "model": "geoscan_gemini",
+      "uav_class": "multirotor",
+      "ground_speed_ms": 12.0,
+      "operational_endurance_min": 32.0,
+      "max_wind_ms": 10.0,
+      "payload_classes": [
+        "rgb",
+        "multispectral"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 30.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 120.0
+    }
+  ],
+  "sites": [
+    {
+      "id": "BASE",
+      "x": 411700.0,
+      "y": 6177499.999999999,
+      "role": "both",
+      "candidate": false
+    },
+    {
+      "id": "RES",
+      "x": 417899.9999999999,
+      "y": 6177500.0,
+      "role": "reserve",
+      "candidate": false
+    }
+  ],
+  "mission": {
+    "objectives": [
+      "makespan"
+    ],
+    "window_start": "2026-06-15T09:00:00+03:00",
+    "window_end": "2026-06-15T16:00:00+03:00",
+    "wind": {
+      "speed_ms": 4.0,
+      "direction_deg_from": 220.0
+    },
+    "allow_different_start_end": false,
+    "require_complete_coverage": true,
+    "require_schedule": true
+  },
+  "tasks": [
+    {
+      "id": "IR_JOB#T000",
+      "job_id": "IR_JOB",
+      "payload_class": "thermal",
+      "payload_profile_id": "IR_STD",
+      "agl_m": 492.3076923076923,
+      "transects": [
+        {
+          "coords": [
+            [
+              415178.0,
+              6178899.999999999
+            ],
+            [
+              415178.0,
+              6176100.000000001
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "IR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        415178.0,
+        6178899.999999999
+      ],
+      "exit": [
+        415178.0,
+        6176100.000000001
+      ],
+      "geom_coords": [
+        [
+          415178.0,
+          6178899.999999999
+        ],
+        [
+          415178.0,
+          6176100.000000001
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "IR_JOB#T001",
+      "job_id": "IR_JOB",
+      "payload_class": "thermal",
+      "payload_profile_id": "IR_STD",
+      "agl_m": 492.3076923076923,
+      "transects": [
+        {
+          "coords": [
+            [
+              415502.0,
+              6176100.000000001
+            ],
+            [
+              415502.0,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "IR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        415502.0,
+        6176100.000000001
+      ],
+      "exit": [
+        415502.0,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          415502.0,
+          6176100.000000001
+        ],
+        [
+          415502.0,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "IR_JOB#T002",
+      "job_id": "IR_JOB",
+      "payload_class": "thermal",
+      "payload_profile_id": "IR_STD",
+      "agl_m": 492.3076923076923,
+      "transects": [
+        {
+          "coords": [
+            [
+              415826.0,
+              6178899.999999999
+            ],
+            [
+              415826.0,
+              6176100.000000001
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "IR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        415826.0,
+        6178899.999999999
+      ],
+      "exit": [
+        415826.0,
+        6176100.000000001
+      ],
+      "geom_coords": [
+        [
+          415826.0,
+          6178899.999999999
+        ],
+        [
+          415826.0,
+          6176100.000000001
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "IR_JOB#T003",
+      "job_id": "IR_JOB",
+      "payload_class": "thermal",
+      "payload_profile_id": "IR_STD",
+      "agl_m": 492.3076923076923,
+      "transects": [
+        {
+          "coords": [
+            [
+              416150.0,
+              6176100.000000001
+            ],
+            [
+              416150.0,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "IR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        416150.0,
+        6176100.000000001
+      ],
+      "exit": [
+        416150.0,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          416150.0,
+          6176100.000000001
+        ],
+        [
+          416150.0,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "IR_JOB#T004",
+      "job_id": "IR_JOB",
+      "payload_class": "thermal",
+      "payload_profile_id": "IR_STD",
+      "agl_m": 492.3076923076923,
+      "transects": [
+        {
+          "coords": [
+            [
+              416474.0,
+              6178899.999999999
+            ],
+            [
+              416474.0,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "IR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        416474.0,
+        6178899.999999999
+      ],
+      "exit": [
+        416474.0,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          416474.0,
+          6178899.999999999
+        ],
+        [
+          416474.0,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "IR_JOB#T005",
+      "job_id": "IR_JOB",
+      "payload_class": "thermal",
+      "payload_profile_id": "IR_STD",
+      "agl_m": 492.3076923076923,
+      "transects": [
+        {
+          "coords": [
+            [
+              416798.0,
+              6176100.0
+            ],
+            [
+              416798.0,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "IR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        416798.0,
+        6176100.0
+      ],
+      "exit": [
+        416798.0,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          416798.0,
+          6176100.0
+        ],
+        [
+          416798.0,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "IR_JOB#T006",
+      "job_id": "IR_JOB",
+      "payload_class": "thermal",
+      "payload_profile_id": "IR_STD",
+      "agl_m": 492.3076923076923,
+      "transects": [
+        {
+          "coords": [
+            [
+              417122.0,
+              6178899.999999999
+            ],
+            [
+              417122.0,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "IR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        417122.0,
+        6178899.999999999
+      ],
+      "exit": [
+        417122.0,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          417122.0,
+          6178899.999999999
+        ],
+        [
+          417122.0,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T000",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412139.05000000075,
+              6178899.999999999
+            ],
+            [
+              412139.05000000075,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412139.05000000075,
+        6178899.999999999
+      ],
+      "exit": [
+        412139.05000000075,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          412139.05000000075,
+          6178899.999999999
+        ],
+        [
+          412139.05000000075,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T001",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412191.7000000002,
+              6176100.0
+            ],
+            [
+              412191.7000000002,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412191.7000000002,
+        6176100.0
+      ],
+      "exit": [
+        412191.7000000002,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          412191.7000000002,
+          6176100.0
+        ],
+        [
+          412191.7000000002,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T002",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412244.35000000056,
+              6178899.999999999
+            ],
+            [
+              412244.35000000056,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412244.35000000056,
+        6178899.999999999
+      ],
+      "exit": [
+        412244.35000000056,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          412244.35000000056,
+          6178899.999999999
+        ],
+        [
+          412244.35000000056,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T003",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412297.0,
+              6176100.0
+            ],
+            [
+              412297.0,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412297.0,
+        6176100.0
+      ],
+      "exit": [
+        412297.0,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          412297.0,
+          6176100.0
+        ],
+        [
+          412297.0,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T004",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412349.6500000004,
+              6178899.999999999
+            ],
+            [
+              412349.6500000004,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412349.6500000004,
+        6178899.999999999
+      ],
+      "exit": [
+        412349.6500000004,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          412349.6500000004,
+          6178899.999999999
+        ],
+        [
+          412349.6500000004,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T005",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412402.30000000075,
+              6176100.0
+            ],
+            [
+              412402.30000000075,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412402.30000000075,
+        6176100.0
+      ],
+      "exit": [
+        412402.30000000075,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          412402.30000000075,
+          6176100.0
+        ],
+        [
+          412402.30000000075,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T006",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412454.9500000002,
+              6178899.999999999
+            ],
+            [
+              412454.9500000002,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412454.9500000002,
+        6178899.999999999
+      ],
+      "exit": [
+        412454.9500000002,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          412454.9500000002,
+          6178899.999999999
+        ],
+        [
+          412454.9500000002,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T007",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412507.60000000056,
+              6176100.0
+            ],
+            [
+              412507.60000000056,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412507.60000000056,
+        6176100.0
+      ],
+      "exit": [
+        412507.60000000056,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          412507.60000000056,
+          6176100.0
+        ],
+        [
+          412507.60000000056,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T008",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412560.25,
+              6178899.999999999
+            ],
+            [
+              412560.25,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412560.25,
+        6178899.999999999
+      ],
+      "exit": [
+        412560.25,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          412560.25,
+          6178899.999999999
+        ],
+        [
+          412560.25,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T009",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412612.9000000004,
+              6176100.0
+            ],
+            [
+              412612.9000000004,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412612.9000000004,
+        6176100.0
+      ],
+      "exit": [
+        412612.9000000004,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          412612.9000000004,
+          6176100.0
+        ],
+        [
+          412612.9000000004,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T010",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412665.55000000075,
+              6178899.999999999
+            ],
+            [
+              412665.55000000075,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412665.55000000075,
+        6178899.999999999
+      ],
+      "exit": [
+        412665.55000000075,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          412665.55000000075,
+          6178899.999999999
+        ],
+        [
+          412665.55000000075,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T011",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412718.2000000002,
+              6176100.0
+            ],
+            [
+              412718.2000000002,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412718.2000000002,
+        6176100.0
+      ],
+      "exit": [
+        412718.2000000002,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          412718.2000000002,
+          6176100.0
+        ],
+        [
+          412718.2000000002,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T012",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412770.85000000056,
+              6178899.999999999
+            ],
+            [
+              412770.85000000056,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412770.85000000056,
+        6178899.999999999
+      ],
+      "exit": [
+        412770.85000000056,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          412770.85000000056,
+          6178899.999999999
+        ],
+        [
+          412770.85000000056,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T013",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412823.5,
+              6176100.0
+            ],
+            [
+              412823.5,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412823.5,
+        6176100.0
+      ],
+      "exit": [
+        412823.5,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          412823.5,
+          6176100.0
+        ],
+        [
+          412823.5,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T014",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412876.1500000004,
+              6178899.999999999
+            ],
+            [
+              412876.1500000004,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412876.1500000004,
+        6178899.999999999
+      ],
+      "exit": [
+        412876.1500000004,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          412876.1500000004,
+          6178899.999999999
+        ],
+        [
+          412876.1500000004,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T015",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412928.80000000075,
+              6176100.0
+            ],
+            [
+              412928.80000000075,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412928.80000000075,
+        6176100.0
+      ],
+      "exit": [
+        412928.80000000075,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          412928.80000000075,
+          6176100.0
+        ],
+        [
+          412928.80000000075,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T016",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              412981.4500000002,
+              6178899.999999999
+            ],
+            [
+              412981.4500000002,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        412981.4500000002,
+        6178899.999999999
+      ],
+      "exit": [
+        412981.4500000002,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          412981.4500000002,
+          6178899.999999999
+        ],
+        [
+          412981.4500000002,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T017",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413034.10000000056,
+              6176100.0
+            ],
+            [
+              413034.10000000056,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413034.10000000056,
+        6176100.0
+      ],
+      "exit": [
+        413034.10000000056,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          413034.10000000056,
+          6176100.0
+        ],
+        [
+          413034.10000000056,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T018",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413086.75,
+              6178899.999999999
+            ],
+            [
+              413086.75,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413086.75,
+        6178899.999999999
+      ],
+      "exit": [
+        413086.75,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          413086.75,
+          6178899.999999999
+        ],
+        [
+          413086.75,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T019",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413139.4000000004,
+              6176100.0
+            ],
+            [
+              413139.4000000004,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413139.4000000004,
+        6176100.0
+      ],
+      "exit": [
+        413139.4000000004,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          413139.4000000004,
+          6176100.0
+        ],
+        [
+          413139.4000000004,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T020",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413192.05000000075,
+              6178899.999999999
+            ],
+            [
+              413192.05000000075,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413192.05000000075,
+        6178899.999999999
+      ],
+      "exit": [
+        413192.05000000075,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          413192.05000000075,
+          6178899.999999999
+        ],
+        [
+          413192.05000000075,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T021",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413244.7000000002,
+              6176100.0
+            ],
+            [
+              413244.7000000002,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413244.7000000002,
+        6176100.0
+      ],
+      "exit": [
+        413244.7000000002,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          413244.7000000002,
+          6176100.0
+        ],
+        [
+          413244.7000000002,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T022",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413297.35000000056,
+              6178899.999999999
+            ],
+            [
+              413297.35000000056,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413297.35000000056,
+        6178899.999999999
+      ],
+      "exit": [
+        413297.35000000056,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          413297.35000000056,
+          6178899.999999999
+        ],
+        [
+          413297.35000000056,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T023",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413350.0,
+              6176100.0
+            ],
+            [
+              413350.0,
+              6178899.999999999
+            ]
+          ],
+          "length_m": 2799.9999999990687,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999990687,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413350.0,
+        6176100.0
+      ],
+      "exit": [
+        413350.0,
+        6178899.999999999
+      ],
+      "geom_coords": [
+        [
+          413350.0,
+          6176100.0
+        ],
+        [
+          413350.0,
+          6178899.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T024",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413402.6500000004,
+              6178899.999999998
+            ],
+            [
+              413402.6500000004,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413402.6500000004,
+        6178899.999999998
+      ],
+      "exit": [
+        413402.6500000004,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          413402.6500000004,
+          6178899.999999998
+        ],
+        [
+          413402.6500000004,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T025",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413455.30000000075,
+              6176100.0
+            ],
+            [
+              413455.30000000075,
+              6178899.999999998
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413455.30000000075,
+        6176100.0
+      ],
+      "exit": [
+        413455.30000000075,
+        6178899.999999998
+      ],
+      "geom_coords": [
+        [
+          413455.30000000075,
+          6176100.0
+        ],
+        [
+          413455.30000000075,
+          6178899.999999998
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T026",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413507.9500000002,
+              6178899.999999998
+            ],
+            [
+              413507.9500000002,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413507.9500000002,
+        6178899.999999998
+      ],
+      "exit": [
+        413507.9500000002,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          413507.9500000002,
+          6178899.999999998
+        ],
+        [
+          413507.9500000002,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T027",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413560.60000000056,
+              6176100.0
+            ],
+            [
+              413560.60000000056,
+              6178899.999999998
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413560.60000000056,
+        6176100.0
+      ],
+      "exit": [
+        413560.60000000056,
+        6178899.999999998
+      ],
+      "geom_coords": [
+        [
+          413560.60000000056,
+          6176100.0
+        ],
+        [
+          413560.60000000056,
+          6178899.999999998
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T028",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413613.25,
+              6178899.999999998
+            ],
+            [
+              413613.25,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413613.25,
+        6178899.999999998
+      ],
+      "exit": [
+        413613.25,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          413613.25,
+          6178899.999999998
+        ],
+        [
+          413613.25,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T029",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413665.9000000004,
+              6176100.0
+            ],
+            [
+              413665.9000000004,
+              6178899.999999998
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413665.9000000004,
+        6176100.0
+      ],
+      "exit": [
+        413665.9000000004,
+        6178899.999999998
+      ],
+      "geom_coords": [
+        [
+          413665.9000000004,
+          6176100.0
+        ],
+        [
+          413665.9000000004,
+          6178899.999999998
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T030",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413718.55000000075,
+              6178899.999999998
+            ],
+            [
+              413718.55000000075,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413718.55000000075,
+        6178899.999999998
+      ],
+      "exit": [
+        413718.55000000075,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          413718.55000000075,
+          6178899.999999998
+        ],
+        [
+          413718.55000000075,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T031",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413771.2000000002,
+              6176100.0
+            ],
+            [
+              413771.2000000002,
+              6178899.999999998
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413771.2000000002,
+        6176100.0
+      ],
+      "exit": [
+        413771.2000000002,
+        6178899.999999998
+      ],
+      "geom_coords": [
+        [
+          413771.2000000002,
+          6176100.0
+        ],
+        [
+          413771.2000000002,
+          6178899.999999998
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T032",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413823.85000000056,
+              6178899.999999998
+            ],
+            [
+              413823.85000000056,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413823.85000000056,
+        6178899.999999998
+      ],
+      "exit": [
+        413823.85000000056,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          413823.85000000056,
+          6178899.999999998
+        ],
+        [
+          413823.85000000056,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T033",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413876.5,
+              6176100.0
+            ],
+            [
+              413876.5,
+              6178899.999999998
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413876.5,
+        6176100.0
+      ],
+      "exit": [
+        413876.5,
+        6178899.999999998
+      ],
+      "geom_coords": [
+        [
+          413876.5,
+          6176100.0
+        ],
+        [
+          413876.5,
+          6178899.999999998
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T034",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413929.1500000004,
+              6178899.999999998
+            ],
+            [
+              413929.1500000004,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413929.1500000004,
+        6178899.999999998
+      ],
+      "exit": [
+        413929.1500000004,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          413929.1500000004,
+          6178899.999999998
+        ],
+        [
+          413929.1500000004,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T035",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              413981.80000000075,
+              6176100.0
+            ],
+            [
+              413981.80000000075,
+              6178899.999999998
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        413981.80000000075,
+        6176100.0
+      ],
+      "exit": [
+        413981.80000000075,
+        6178899.999999998
+      ],
+      "geom_coords": [
+        [
+          413981.80000000075,
+          6176100.0
+        ],
+        [
+          413981.80000000075,
+          6178899.999999998
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T036",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              414034.4500000002,
+              6178899.999999998
+            ],
+            [
+              414034.4500000002,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        414034.4500000002,
+        6178899.999999998
+      ],
+      "exit": [
+        414034.4500000002,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          414034.4500000002,
+          6178899.999999998
+        ],
+        [
+          414034.4500000002,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T037",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              414087.10000000056,
+              6176100.0
+            ],
+            [
+              414087.10000000056,
+              6178899.999999998
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        414087.10000000056,
+        6176100.0
+      ],
+      "exit": [
+        414087.10000000056,
+        6178899.999999998
+      ],
+      "geom_coords": [
+        [
+          414087.10000000056,
+          6176100.0
+        ],
+        [
+          414087.10000000056,
+          6178899.999999998
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T038",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              414139.75,
+              6178899.999999998
+            ],
+            [
+              414139.75,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        414139.75,
+        6178899.999999998
+      ],
+      "exit": [
+        414139.75,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          414139.75,
+          6178899.999999998
+        ],
+        [
+          414139.75,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T039",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              414192.4000000004,
+              6176100.0
+            ],
+            [
+              414192.4000000004,
+              6178899.999999998
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        414192.4000000004,
+        6176100.0
+      ],
+      "exit": [
+        414192.4000000004,
+        6178899.999999998
+      ],
+      "geom_coords": [
+        [
+          414192.4000000004,
+          6176100.0
+        ],
+        [
+          414192.4000000004,
+          6178899.999999998
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T040",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              414245.05000000075,
+              6178899.999999998
+            ],
+            [
+              414245.05000000075,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        414245.05000000075,
+        6178899.999999998
+      ],
+      "exit": [
+        414245.05000000075,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          414245.05000000075,
+          6178899.999999998
+        ],
+        [
+          414245.05000000075,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T041",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              414297.7000000002,
+              6176100.0
+            ],
+            [
+              414297.7000000002,
+              6178899.999999998
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        414297.7000000002,
+        6176100.0
+      ],
+      "exit": [
+        414297.7000000002,
+        6178899.999999998
+      ],
+      "geom_coords": [
+        [
+          414297.7000000002,
+          6176100.0
+        ],
+        [
+          414297.7000000002,
+          6178899.999999998
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T042",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              414350.35000000056,
+              6178899.999999998
+            ],
+            [
+              414350.35000000056,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        414350.35000000056,
+        6178899.999999998
+      ],
+      "exit": [
+        414350.35000000056,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          414350.35000000056,
+          6178899.999999998
+        ],
+        [
+          414350.35000000056,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T043",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              414403.0,
+              6176100.0
+            ],
+            [
+              414403.0,
+              6178899.999999998
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        414403.0,
+        6176100.0
+      ],
+      "exit": [
+        414403.0,
+        6178899.999999998
+      ],
+      "geom_coords": [
+        [
+          414403.0,
+          6176100.0
+        ],
+        [
+          414403.0,
+          6178899.999999998
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T044",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              414455.6500000004,
+              6178899.999999998
+            ],
+            [
+              414455.6500000004,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        414455.6500000004,
+        6178899.999999998
+      ],
+      "exit": [
+        414455.6500000004,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          414455.6500000004,
+          6178899.999999998
+        ],
+        [
+          414455.6500000004,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T045",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              414508.30000000075,
+              6176100.0
+            ],
+            [
+              414508.30000000075,
+              6178899.999999998
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        414508.30000000075,
+        6176100.0
+      ],
+      "exit": [
+        414508.30000000075,
+        6178899.999999998
+      ],
+      "geom_coords": [
+        [
+          414508.30000000075,
+          6176100.0
+        ],
+        [
+          414508.30000000075,
+          6178899.999999998
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "LIDAR_JOB#T046",
+      "job_id": "LIDAR_JOB",
+      "payload_class": "lidar",
+      "payload_profile_id": "LIDAR_STD",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              414560.9500000002,
+              6178899.999999998
+            ],
+            [
+              414560.9500000002,
+              6176100.0
+            ]
+          ],
+          "length_m": 2799.9999999981374,
+          "job_id": "LIDAR_JOB"
+        }
+      ],
+      "survey_length_m": 2799.9999999981374,
+      "turn_count": 0,
+      "sweep_angle_deg": 90.0,
+      "entry": [
+        414560.9500000002,
+        6178899.999999998
+      ],
+      "exit": [
+        414560.9500000002,
+        6176100.0
+      ],
+      "geom_coords": [
+        [
+          414560.9500000002,
+          6178899.999999998
+        ],
+        [
+          414560.9500000002,
+          6176100.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    }
+  ],
+  "feasibility": {
+    "eligible_uav_ids_by_task": {
+      "LIDAR_JOB#T000": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T001": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T002": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T003": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T004": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T005": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T006": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T007": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T008": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T009": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T010": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T011": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T012": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T013": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T014": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T015": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T016": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T017": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T018": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T019": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T020": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T021": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T022": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T023": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T024": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T025": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T026": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T027": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T028": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T029": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T030": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T031": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T032": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T033": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T034": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T035": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T036": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T037": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T038": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T039": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T040": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T041": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T042": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T043": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T044": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T045": [
+        "GS401_03"
+      ],
+      "LIDAR_JOB#T046": [
+        "GS401_03"
+      ],
+      "IR_JOB#T000": [
+        "GS201_01",
+        "GS801_04"
+      ],
+      "IR_JOB#T001": [
+        "GS201_01",
+        "GS801_04"
+      ],
+      "IR_JOB#T002": [
+        "GS201_01",
+        "GS801_04"
+      ],
+      "IR_JOB#T003": [
+        "GS201_01",
+        "GS801_04"
+      ],
+      "IR_JOB#T004": [
+        "GS201_01",
+        "GS801_04"
+      ],
+      "IR_JOB#T005": [
+        "GS201_01",
+        "GS801_04"
+      ],
+      "IR_JOB#T006": [
+        "GS201_01",
+        "GS801_04"
+      ]
+    },
+    "ineligible_reasons": {
+      "LIDAR_JOB#T000:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T000:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T000:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T000:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T001:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T001:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T001:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T001:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T002:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T002:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T002:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T002:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T003:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T003:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T003:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T003:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T004:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T004:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T004:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T004:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T005:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T005:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T005:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T005:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T006:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T006:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T006:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T006:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T007:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T007:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T007:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T007:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T008:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T008:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T008:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T008:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T009:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T009:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T009:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T009:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T010:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T010:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T010:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T010:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T011:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T011:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T011:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T011:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T012:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T012:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T012:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T012:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T013:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T013:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T013:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T013:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T014:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T014:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T014:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T014:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T015:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T015:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T015:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T015:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T016:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T016:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T016:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T016:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T017:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T017:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T017:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T017:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T018:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T018:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T018:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T018:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T019:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T019:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T019:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T019:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T020:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T020:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T020:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T020:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T021:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T021:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T021:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T021:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T022:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T022:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T022:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T022:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T023:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T023:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T023:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T023:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T024:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T024:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T024:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T024:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T025:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T025:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T025:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T025:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T026:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T026:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T026:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T026:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T027:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T027:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T027:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T027:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T028:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T028:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T028:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T028:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T029:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T029:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T029:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T029:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T030:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T030:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T030:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T030:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T031:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T031:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T031:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T031:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T032:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T032:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T032:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T032:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T033:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T033:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T033:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T033:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T034:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T034:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T034:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T034:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T035:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T035:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T035:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T035:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T036:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T036:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T036:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T036:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T037:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T037:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T037:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T037:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T038:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T038:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T038:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T038:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T039:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T039:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T039:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T039:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T040:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T040:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T040:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T040:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T041:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T041:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T041:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T041:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T042:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T042:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T042:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T042:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T043:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T043:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T043:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T043:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T044:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T044:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T044:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T044:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T045:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T045:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T045:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T045:GEMINI_05": "payload_class_mismatch",
+      "LIDAR_JOB#T046:GS201_01": "payload_class_mismatch",
+      "LIDAR_JOB#T046:GS701_02": "payload_class_mismatch",
+      "LIDAR_JOB#T046:GS801_04": "payload_class_mismatch",
+      "LIDAR_JOB#T046:GEMINI_05": "payload_class_mismatch",
+      "IR_JOB#T000:GS701_02": "payload_class_mismatch",
+      "IR_JOB#T000:GS401_03": "payload_class_mismatch",
+      "IR_JOB#T000:GEMINI_05": "payload_class_mismatch",
+      "IR_JOB#T001:GS701_02": "payload_class_mismatch",
+      "IR_JOB#T001:GS401_03": "payload_class_mismatch",
+      "IR_JOB#T001:GEMINI_05": "payload_class_mismatch",
+      "IR_JOB#T002:GS701_02": "payload_class_mismatch",
+      "IR_JOB#T002:GS401_03": "payload_class_mismatch",
+      "IR_JOB#T002:GEMINI_05": "payload_class_mismatch",
+      "IR_JOB#T003:GS701_02": "payload_class_mismatch",
+      "IR_JOB#T003:GS401_03": "payload_class_mismatch",
+      "IR_JOB#T003:GEMINI_05": "payload_class_mismatch",
+      "IR_JOB#T004:GS701_02": "payload_class_mismatch",
+      "IR_JOB#T004:GS401_03": "payload_class_mismatch",
+      "IR_JOB#T004:GEMINI_05": "payload_class_mismatch",
+      "IR_JOB#T005:GS701_02": "payload_class_mismatch",
+      "IR_JOB#T005:GS401_03": "payload_class_mismatch",
+      "IR_JOB#T005:GEMINI_05": "payload_class_mismatch",
+      "IR_JOB#T006:GS701_02": "payload_class_mismatch",
+      "IR_JOB#T006:GS401_03": "payload_class_mismatch",
+      "IR_JOB#T006:GEMINI_05": "payload_class_mismatch"
+    },
+    "ineligible_reasons_human": {
+      "LIDAR_JOB#T000:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T000:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T000:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T000:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T001:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T001:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T001:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T001:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T002:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T002:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T002:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T002:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T003:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T003:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T003:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T003:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T004:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T004:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T004:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T004:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T005:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T005:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T005:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T005:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T006:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T006:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T006:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T006:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T007:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T007:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T007:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T007:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T008:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T008:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T008:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T008:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T009:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T009:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T009:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T009:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T010:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T010:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T010:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T010:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T011:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T011:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T011:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T011:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T012:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T012:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T012:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T012:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T013:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T013:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T013:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T013:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T014:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T014:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T014:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T014:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T015:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T015:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T015:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T015:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T016:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T016:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T016:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T016:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T017:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T017:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T017:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T017:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T018:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T018:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T018:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T018:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T019:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T019:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T019:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T019:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T020:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T020:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T020:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T020:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T021:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T021:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T021:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T021:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T022:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T022:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T022:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T022:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T023:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T023:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T023:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T023:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T024:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T024:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T024:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T024:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T025:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T025:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T025:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T025:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T026:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T026:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T026:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T026:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T027:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T027:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T027:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T027:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T028:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T028:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T028:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T028:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T029:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T029:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T029:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T029:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T030:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T030:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T030:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T030:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T031:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T031:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T031:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T031:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T032:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T032:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T032:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T032:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T033:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T033:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T033:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T033:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T034:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T034:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T034:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T034:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T035:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T035:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T035:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T035:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T036:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T036:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T036:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T036:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T037:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T037:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T037:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T037:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T038:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T038:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T038:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T038:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T039:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T039:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T039:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T039:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T040:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T040:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T040:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T040:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T041:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T041:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T041:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T041:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T042:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T042:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T042:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T042:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T043:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T043:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T043:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T043:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T044:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T044:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T044:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T044:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T045:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T045:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T045:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T045:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T046:GS201_01": "geoscan_201: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T046:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T046:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "LIDAR_JOB#T046:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T000:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T000:GS401_03": "geoscan_401_geo: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T000:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T001:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T001:GS401_03": "geoscan_401_geo: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T001:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T002:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T002:GS401_03": "geoscan_401_geo: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T002:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T003:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T003:GS401_03": "geoscan_401_geo: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T003:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T004:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T004:GS401_03": "geoscan_401_geo: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T004:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T005:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T005:GS401_03": "geoscan_401_geo: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T005:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T006:GS701_02": "geoscan_701: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T006:GS401_03": "geoscan_401_geo: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "IR_JOB#T006:GEMINI_05": "geoscan_gemini: нагрузка задачи несовместима с полезной нагрузкой борта"
+    }
+  },
+  "coverage_meta": {
+    "coverage_percent": 100.0,
+    "task_count": 54,
+    "per_job": [
+      {
+        "job_id": "LIDAR_JOB",
+        "task_count": 47,
+        "sweep_angle_deg": 90.0,
+        "coverage_percent": 100.0,
+        "eligible_uavs": [
+          "GS401_03"
+        ]
+      },
+      {
+        "job_id": "IR_JOB",
+        "task_count": 7,
+        "sweep_angle_deg": 90.0,
+        "coverage_percent": 100.0,
+        "eligible_uavs": [
+          "GS201_01",
+          "GS801_04"
+        ]
+      }
+    ],
+    "sweep_candidates": {
+      "LIDAR_JOB": [
+        {
+          "label": "grid_90",
+          "angle_deg": 90.0,
+          "survey_length_m": 131600.0,
+          "turn_count": 46,
+          "score": 139245.5,
+          "maneuver_violations": 0,
+          "selected": true
+        },
+        {
+          "label": "wind_aligned",
+          "angle_deg": 50.0,
+          "survey_length_m": 132946.1,
+          "turn_count": 69,
+          "score": 140867.3,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_0",
+          "angle_deg": 0.0,
+          "survey_length_m": 132500.0,
+          "turn_count": 52,
+          "score": 141377.8,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_45",
+          "angle_deg": 45.0,
+          "survey_length_m": 132977.4,
+          "turn_count": 70,
+          "score": 141450.9,
+          "maneuver_violations": 0,
+          "selected": false
+        }
+      ],
+      "IR_JOB": [
+        {
+          "label": "grid_90",
+          "angle_deg": 90.0,
+          "survey_length_m": 19600.0,
+          "turn_count": 6,
+          "score": 24875.4,
+          "maneuver_violations": 0,
+          "selected": true
+        },
+        {
+          "label": "grid_0",
+          "angle_deg": 0.0,
+          "survey_length_m": 20000.0,
+          "turn_count": 7,
+          "score": 26179.5,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_75",
+          "angle_deg": 75.0,
+          "survey_length_m": 21465.9,
+          "turn_count": 8,
+          "score": 28673.7,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_15",
+          "angle_deg": 15.0,
+          "survey_length_m": 21606.3,
+          "turn_count": 9,
+          "score": 30408.4,
+          "maneuver_violations": 0,
+          "selected": false
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "h1": {
+      "energy_hints": [
+        {
+          "scope": "mission",
+          "uav_id": "GS401_03",
+          "survey_length_m": 151200.0,
+          "need_flight_s": 18900.0,
+          "usable_endurance_s": 2304.0,
+          "sorties_hint": 9
+        },
+        {
+          "scope": "mission",
+          "uav_id": "GS801_04",
+          "survey_length_m": 151200.0,
+          "need_flight_s": 12600.0,
+          "usable_endurance_s": 1536.0,
+          "sorties_hint": 9
+        },
+        {
+          "scope": "mission",
+          "uav_id": "GEMINI_05",
+          "survey_length_m": 151200.0,
+          "need_flight_s": 12600.0,
+          "usable_endurance_s": 1536.0,
+          "sorties_hint": 9
+        }
+      ],
+      "reserve_sites": [
+        "RES"
+      ],
+      "terrain": {
+        "dem_available": true,
+        "warning_count": 71,
+        "warnings": [
+          "M3: task LIDAR_JOB#T014 local AGL swing 24.9m (GSD/overlap will drift on hills)",
+          "M3: task LIDAR_JOB#T015 local AGL swing 27.9m (GSD/overlap will drift on hills)",
+          "M3: task LIDAR_JOB#T016 ground relief 31.1m vs AGL 120m (consider terrain-following in autopilot)",
+          "M3: task LIDAR_JOB#T016 local AGL swing 31.1m (GSD/overlap will drift on hills)",
+          "M3: task LIDAR_JOB#T017 ground relief 32.7m vs AGL 120m (consider terrain-following in autopilot)",
+          "M3: task LIDAR_JOB#T017 local AGL swing 32.7m (GSD/overlap will drift on hills)",
+          "M3: task LIDAR_JOB#T018 ground relief 36.0m vs AGL 120m (consider terrain-following in autopilot)",
+          "M3: task LIDAR_JOB#T018 local AGL swing 36.0m (GSD/overlap will drift on hills)",
+          "M3: task LIDAR_JOB#T019 ground relief 39.4m vs AGL 120m (consider terrain-following in autopilot)",
+          "M3: task LIDAR_JOB#T019 local AGL swing 39.4m (GSD/overlap will drift on hills)",
+          "M3: task LIDAR_JOB#T020 ground relief 42.8m vs AGL 120m (consider terrain-following in autopilot)",
+          "M3: task LIDAR_JOB#T020 local AGL swing 42.8m (GSD/overlap will drift on hills)",
+          "M3: task LIDAR_JOB#T021 ground relief 44.6m vs AGL 120m (consider terrain-following in autopilot)",
+          "M3: task LIDAR_JOB#T021 local AGL swing 44.6m (GSD/overlap will drift on hills)",
+          "M3: task LIDAR_JOB#T022 ground relief 48.0m vs AGL 120m (consider terrain-following in autopilot)",
+          "M3: task LIDAR_JOB#T022 local AGL swing 48.0m (GSD/overlap will drift on hills)",
+          "M3: task LIDAR_JOB#T023 ground relief 51.3m vs AGL 120m (consider terrain-following in autopilot)",
+          "M3: task LIDAR_JOB#T023 local AGL swing 51.3m (GSD/overlap will drift on hills)",
+          "M3: task LIDAR_JOB#T024 ground relief 54.6m vs AGL 120m (consider terrain-following in autopilot)",
+          "M3: task LIDAR_JOB#T024 local AGL swing 54.6m (GSD/overlap will drift on hills)"
+        ],
+        "note": "planning checks only; terrain-following is autopilot/H3"
+      }
+    }
+  },
+  "warnings": [
+    "site BASE: outside survey area (+50m slack)",
+    "site RES: outside survey area (+50m slack)",
+    "M3: task LIDAR_JOB#T014 local AGL swing 24.9m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T015 local AGL swing 27.9m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T016 ground relief 31.1m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T016 local AGL swing 31.1m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T017 ground relief 32.7m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T017 local AGL swing 32.7m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T018 ground relief 36.0m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T018 local AGL swing 36.0m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T019 ground relief 39.4m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T019 local AGL swing 39.4m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T020 ground relief 42.8m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T020 local AGL swing 42.8m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T021 ground relief 44.6m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T021 local AGL swing 44.6m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T022 ground relief 48.0m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T022 local AGL swing 48.0m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T023 ground relief 51.3m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T023 local AGL swing 51.3m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T024 ground relief 54.6m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T024 local AGL swing 54.6m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T025 ground relief 57.7m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T025 local AGL swing 57.7m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T026 ground relief 59.2m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T026 local AGL swing 59.2m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T027 ground relief 62.1m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T027 local AGL swing 62.1m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T028 ground relief 64.7m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T028 local AGL swing 64.7m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T029 ground relief 67.1m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T029 local AGL swing 67.1m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T030 ground relief 68.1m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T030 local AGL swing 68.1m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T031 ground relief 70.1m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T031 local AGL swing 70.1m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T032 ground relief 71.7m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T032 local AGL swing 71.7m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T033 ground relief 73.0m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T033 local AGL swing 73.0m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T034 ground relief 73.6m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T034 local AGL swing 73.6m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T035 ground relief 74.4m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T035 local AGL swing 74.4m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T036 ground relief 74.8m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T036 local AGL swing 74.8m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T037 ground relief 74.8m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T037 local AGL swing 74.8m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T038 ground relief 74.7m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T038 local AGL swing 74.7m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T039 ground relief 74.2m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T039 local AGL swing 74.2m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T040 LOCAL_AGL_BELOW_MIN min_local_agl=38.4m < 40m (ref_z=139.7m, planned_agl=120m) — raise AGL or follow terrain",
+    "M3: task LIDAR_JOB#T040 ground relief 73.4m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T040 local AGL swing 73.4m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T041 LOCAL_AGL_BELOW_MIN min_local_agl=36.0m < 40m (ref_z=139.7m, planned_agl=120m) — raise AGL or follow terrain",
+    "M3: task LIDAR_JOB#T041 ground relief 72.2m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T041 local AGL swing 72.2m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T042 LOCAL_AGL_BELOW_MIN min_local_agl=34.8m < 40m (ref_z=139.7m, planned_agl=120m) — raise AGL or follow terrain",
+    "M3: task LIDAR_JOB#T042 ground relief 71.4m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T042 local AGL swing 71.4m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T043 LOCAL_AGL_BELOW_MIN min_local_agl=32.8m < 40m (ref_z=139.7m, planned_agl=120m) — raise AGL or follow terrain",
+    "M3: task LIDAR_JOB#T043 ground relief 69.7m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T043 local AGL swing 69.7m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T044 LOCAL_AGL_BELOW_MIN min_local_agl=31.2m < 40m (ref_z=139.7m, planned_agl=120m) — raise AGL or follow terrain",
+    "M3: task LIDAR_JOB#T044 ground relief 67.7m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T044 local AGL swing 67.7m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T045 LOCAL_AGL_BELOW_MIN min_local_agl=29.9m < 40m (ref_z=139.7m, planned_agl=120m) — raise AGL or follow terrain",
+    "M3: task LIDAR_JOB#T045 ground relief 65.4m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T045 local AGL swing 65.4m (GSD/overlap will drift on hills)",
+    "M3: task LIDAR_JOB#T046 LOCAL_AGL_BELOW_MIN min_local_agl=29.4m < 40m (ref_z=139.7m, planned_agl=120m) — raise AGL or follow terrain",
+    "M3: task LIDAR_JOB#T046 ground relief 64.2m vs AGL 120m (consider terrain-following in autopilot)",
+    "M3: task LIDAR_JOB#T046 local AGL swing 64.2m (GSD/overlap will drift on hills)",
+    "S04: mission ≈9 sorties on GS401_03 (total survey 151.2 km → 315 min vs usable 38 min) — multi-sortie, not H1 schedule",
+    "S04: mission ≈9 sorties on GS801_04 (total survey 151.2 km → 210 min vs usable 26 min) — multi-sortie, not H1 schedule",
+    "S04: mission ≈9 sorties on GEMINI_05 (total survey 151.2 km → 210 min vs usable 26 min) — multi-sortie, not H1 schedule"
+  ]
+}

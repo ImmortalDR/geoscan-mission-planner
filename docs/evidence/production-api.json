@@ -1,0 +1,206 @@
+{
+  "url": "https://45.87.246.124",
+  "passed": true,
+  "checks": [
+    {
+      "name": "anonymous workspace denied",
+      "passed": true
+    },
+    {
+      "name": "service ready",
+      "passed": true
+    },
+    {
+      "name": "secure session cookie",
+      "passed": true
+    },
+    {
+      "name": "mutation without CSRF denied",
+      "passed": true
+    },
+    {
+      "name": "all versioned reference scenarios are in catalog",
+      "passed": true
+    },
+    {
+      "name": "valid scene S00_smoke_rgb",
+      "passed": true
+    },
+    {
+      "name": "completed S00_smoke_rgb makespan default",
+      "passed": true
+    },
+    {
+      "name": "independent validation passed",
+      "passed": true
+    },
+    {
+      "name": "certificate binds actual plan",
+      "passed": true
+    },
+    {
+      "name": "certificate binds input snapshot",
+      "passed": true
+    },
+    {
+      "name": "real calculation is default",
+      "passed": true
+    },
+    {
+      "name": "standalone H2 builds live plan",
+      "passed": true
+    },
+    {
+      "name": "live S00 safe",
+      "passed": true
+    },
+    {
+      "name": "honest metric comparison",
+      "passed": true
+    },
+    {
+      "name": "export geojson",
+      "passed": true
+    },
+    {
+      "name": "export kml",
+      "passed": true
+    },
+    {
+      "name": "export mission",
+      "passed": true
+    },
+    {
+      "name": "export certificate",
+      "passed": true
+    },
+    {
+      "name": "PDF signature",
+      "passed": true
+    },
+    {
+      "name": "export pdf",
+      "passed": true
+    },
+    {
+      "name": "DOCX Cyrillic text",
+      "passed": true
+    },
+    {
+      "name": "export docx",
+      "passed": true
+    },
+    {
+      "name": "download and reupload input ZIP",
+      "passed": true
+    },
+    {
+      "name": "ZIP traversal rejected",
+      "passed": true
+    },
+    {
+      "name": "edited version has new fingerprint",
+      "passed": true
+    },
+    {
+      "name": "original version immutable",
+      "passed": true
+    },
+    {
+      "name": "changed input cannot reuse fixture",
+      "passed": true
+    },
+    {
+      "name": "valid scene S06_alternate_site",
+      "passed": true
+    },
+    {
+      "name": "completed S06_alternate_site makespan default",
+      "passed": true
+    },
+    {
+      "name": "independent validation passed",
+      "passed": true
+    },
+    {
+      "name": "refusal has no safety certificate",
+      "passed": true
+    },
+    {
+      "name": "S06 proven refusal",
+      "passed": true
+    },
+    {
+      "name": "refused flight export blocked",
+      "passed": true
+    },
+    {
+      "name": "recomputed alternatives available",
+      "passed": true
+    },
+    {
+      "name": "recommendation independently certified",
+      "passed": true
+    },
+    {
+      "name": "user application creates verified new version",
+      "passed": true
+    }
+  ],
+  "plans": [
+    {
+      "id": "5f368635e45f4c69974ae27ba8de81ce",
+      "scene_id": "1e81a26c5544448480a3034ad0a2e28d",
+      "status": "SAFE",
+      "mode": "live",
+      "objective": "makespan",
+      "metrics": {
+        "per_job": {
+          "JOB_RGB": {
+            "covered_area_m2": 800000.0000011409,
+            "coverage_percent": 100.0,
+            "required_area_m2": 800000.0000011409
+          }
+        },
+        "distance_m": 9811.905241550214,
+        "makespan_s": 1165.8749918937683,
+        "sortie_count": 1,
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "total_flight_s": 1165.8749918937683,
+        "airborne_span_s": 1165.8749918937683,
+        "covered_area_m2": 800000.0000011409,
+        "coverage_percent": 100.0,
+        "required_area_m2": 800000.0000011409,
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      }
+    },
+    {
+      "id": "0060603cf8bf4e62a175882f8f957fff",
+      "scene_id": "da261e0ca2284f038fafa5c292317dc7",
+      "status": "INFEASIBLE",
+      "mode": "live",
+      "objective": "makespan",
+      "metrics": {
+        "bounds": [
+          {
+            "uav_id": "U01",
+            "usable_time_s": 768.0,
+            "minimum_time_s": 1938.0844133831636
+          }
+        ],
+        "proof_type": "unreachable_required_point",
+        "bound_model": "horizontal_distance_at_maximum_ground_speed",
+        "proof_scope": "entire_required_job",
+        "proof_verified": true,
+        "sensor_half_diagonal_m": 110.80309763410271
+      }
+    }
+  ],
+  "scenes": [
+    "1e81a26c5544448480a3034ad0a2e28d",
+    "6c927177d8e94a90916214ab0285f759",
+    "f8afdacfa6b04afc923a19faa6169f09",
+    "da261e0ca2284f038fafa5c292317dc7",
+    "f9311383c37e421e97210ad20d8787a2"
+  ]
+}

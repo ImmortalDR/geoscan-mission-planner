@@ -1,0 +1,6 @@
+{
+  "expected_initial_status": "INFEASIBLE",
+  "expected_recommendation_type": "change_start_site",
+  "expected_candidate": "CANDIDATE_GOOD_BASE",
+  "recommended_replan_must_be_safe": true
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "plan_id": "78204b0fd73344e892b1cdd2ff02c924",
+  "export_sha256": "65c035aa1e7de7d5f6cb6d457d543d223d9d92b0654acf36f6fbcb6e673984a2",
+  "service": "geoscan-mvp.service",
+  "unchanged_after_restart": true
+}

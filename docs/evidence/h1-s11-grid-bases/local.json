@@ -1,0 +1,51 @@
+{
+  "wall_s": 10.968566484982148,
+  "status": "SAFE",
+  "metrics": {
+    "distance_m": 15974.33443541963,
+    "total_flight_s": 2104.8678386211395,
+    "makespan_s": 567.5326099395752,
+    "airborne_span_s": 567.5326099395752,
+    "coverage_percent": 99.99999999734894,
+    "required_area_m2": 511999.9999999348,
+    "covered_area_m2": 511999.9999863614,
+    "sortie_count": 5,
+    "per_job": {
+      "JOB_RGB": {
+        "required_area_m2": 102399.99999980442,
+        "covered_area_m2": 102399.99999980442,
+        "coverage_percent": 100.0
+      },
+      "JOB_MULTISPECTRAL": {
+        "required_area_m2": 102399.99999996275,
+        "covered_area_m2": 102399.99999996275,
+        "coverage_percent": 100.0
+      },
+      "JOB_THERMAL": {
+        "required_area_m2": 102400.00000006519,
+        "covered_area_m2": 102400.00000006519,
+        "coverage_percent": 100.0
+      },
+      "JOB_LIDAR": {
+        "required_area_m2": 102400.00000006519,
+        "covered_area_m2": 102399.9999944133,
+        "coverage_percent": 99.99999999448058
+      },
+      "JOB_GEOPHYSICS": {
+        "required_area_m2": 102400.00000003725,
+        "covered_area_m2": 102399.99999211576,
+        "coverage_percent": 99.99999999226416
+      }
+    },
+    "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+    "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+  },
+  "violations": [],
+  "angles": {
+    "JOB_GEOPHYSICS": 0.0,
+    "JOB_LIDAR": 0.0,
+    "JOB_MULTISPECTRAL": 0.0,
+    "JOB_RGB": 0.0,
+    "JOB_THERMAL": 0.0
+  }
+}

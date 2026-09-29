@@ -1,0 +1,1507 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412139.05000000075,
+            6178899.999999999
+          ],
+          [
+            412139.05000000075,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T000",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412191.7000000002,
+            6176100.0
+          ],
+          [
+            412191.7000000002,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T001",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412244.35000000056,
+            6178899.999999999
+          ],
+          [
+            412244.35000000056,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T002",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412297.0,
+            6176100.0
+          ],
+          [
+            412297.0,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T003",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412349.6500000004,
+            6178899.999999999
+          ],
+          [
+            412349.6500000004,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T004",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412402.30000000075,
+            6176100.0
+          ],
+          [
+            412402.30000000075,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T005",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412454.9500000002,
+            6178899.999999999
+          ],
+          [
+            412454.9500000002,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T006",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412507.60000000056,
+            6176100.0
+          ],
+          [
+            412507.60000000056,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T007",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412560.25,
+            6178899.999999999
+          ],
+          [
+            412560.25,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T008",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412612.9000000004,
+            6176100.0
+          ],
+          [
+            412612.9000000004,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T009",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412665.55000000075,
+            6178899.999999999
+          ],
+          [
+            412665.55000000075,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T010",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412718.2000000002,
+            6176100.0
+          ],
+          [
+            412718.2000000002,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T011",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412770.85000000056,
+            6178899.999999999
+          ],
+          [
+            412770.85000000056,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T012",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412823.5,
+            6176100.0
+          ],
+          [
+            412823.5,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T013",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412876.1500000004,
+            6178899.999999999
+          ],
+          [
+            412876.1500000004,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T014",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412928.80000000075,
+            6176100.0
+          ],
+          [
+            412928.80000000075,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T015",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412981.4500000002,
+            6178899.999999999
+          ],
+          [
+            412981.4500000002,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T016",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413034.10000000056,
+            6176100.0
+          ],
+          [
+            413034.10000000056,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T017",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413086.75,
+            6178899.999999999
+          ],
+          [
+            413086.75,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T018",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413139.4000000004,
+            6176100.0
+          ],
+          [
+            413139.4000000004,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T019",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413192.05000000075,
+            6178899.999999999
+          ],
+          [
+            413192.05000000075,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T020",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413244.7000000002,
+            6176100.0
+          ],
+          [
+            413244.7000000002,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T021",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413297.35000000056,
+            6178899.999999999
+          ],
+          [
+            413297.35000000056,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T022",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413350.0,
+            6176100.0
+          ],
+          [
+            413350.0,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T023",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413402.6500000004,
+            6178899.999999998
+          ],
+          [
+            413402.6500000004,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T024",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413455.30000000075,
+            6176100.0
+          ],
+          [
+            413455.30000000075,
+            6178899.999999998
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T025",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413507.9500000002,
+            6178899.999999998
+          ],
+          [
+            413507.9500000002,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T026",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413560.60000000056,
+            6176100.0
+          ],
+          [
+            413560.60000000056,
+            6178899.999999998
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T027",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413613.25,
+            6178899.999999998
+          ],
+          [
+            413613.25,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T028",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413665.9000000004,
+            6176100.0
+          ],
+          [
+            413665.9000000004,
+            6178899.999999998
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T029",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413718.55000000075,
+            6178899.999999998
+          ],
+          [
+            413718.55000000075,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T030",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413771.2000000002,
+            6176100.0
+          ],
+          [
+            413771.2000000002,
+            6178899.999999998
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T031",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413823.85000000056,
+            6178899.999999998
+          ],
+          [
+            413823.85000000056,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T032",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413876.5,
+            6176100.0
+          ],
+          [
+            413876.5,
+            6178899.999999998
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T033",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413929.1500000004,
+            6178899.999999998
+          ],
+          [
+            413929.1500000004,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T034",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413981.80000000075,
+            6176100.0
+          ],
+          [
+            413981.80000000075,
+            6178899.999999998
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T035",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414034.4500000002,
+            6178899.999999998
+          ],
+          [
+            414034.4500000002,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T036",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414087.10000000056,
+            6176100.0
+          ],
+          [
+            414087.10000000056,
+            6178899.999999998
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T037",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414139.75,
+            6178899.999999998
+          ],
+          [
+            414139.75,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T038",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414192.4000000004,
+            6176100.0
+          ],
+          [
+            414192.4000000004,
+            6178899.999999998
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T039",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414245.05000000075,
+            6178899.999999998
+          ],
+          [
+            414245.05000000075,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T040",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414297.7000000002,
+            6176100.0
+          ],
+          [
+            414297.7000000002,
+            6178899.999999998
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T041",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414350.35000000056,
+            6178899.999999998
+          ],
+          [
+            414350.35000000056,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T042",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414403.0,
+            6176100.0
+          ],
+          [
+            414403.0,
+            6178899.999999998
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T043",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414455.6500000004,
+            6178899.999999998
+          ],
+          [
+            414455.6500000004,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T044",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414508.30000000075,
+            6176100.0
+          ],
+          [
+            414508.30000000075,
+            6178899.999999998
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T045",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414560.9500000002,
+            6178899.999999998
+          ],
+          [
+            414560.9500000002,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "LIDAR_JOB#T046",
+        "job_id": "LIDAR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 120.0,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "lidar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415178.0,
+            6178899.999999999
+          ],
+          [
+            415178.0,
+            6176100.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "IR_JOB#T000",
+        "job_id": "IR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 492.3076923076923,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "thermal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415502.0,
+            6176100.000000001
+          ],
+          [
+            415502.0,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "IR_JOB#T001",
+        "job_id": "IR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 492.3076923076923,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "thermal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415826.0,
+            6178899.999999999
+          ],
+          [
+            415826.0,
+            6176100.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "IR_JOB#T002",
+        "job_id": "IR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 492.3076923076923,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "thermal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416150.0,
+            6176100.000000001
+          ],
+          [
+            416150.0,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "IR_JOB#T003",
+        "job_id": "IR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999981374,
+        "agl_m": 492.3076923076923,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "thermal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416474.0,
+            6178899.999999999
+          ],
+          [
+            416474.0,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "IR_JOB#T004",
+        "job_id": "IR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 492.3076923076923,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "thermal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416798.0,
+            6176100.0
+          ],
+          [
+            416798.0,
+            6178899.999999999
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "IR_JOB#T005",
+        "job_id": "IR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 492.3076923076923,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "thermal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417122.0,
+            6178899.999999999
+          ],
+          [
+            417122.0,
+            6176100.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "IR_JOB#T006",
+        "job_id": "IR_JOB",
+        "transect_i": 0,
+        "length_m": 2799.9999999990687,
+        "agl_m": 492.3076923076923,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "thermal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          411700.0,
+          6177499.999999999
+        ]
+      },
+      "properties": {
+        "site_id": "BASE",
+        "role": "both",
+        "kind": "site"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          417899.9999999999,
+          6177500.0
+        ]
+      },
+      "properties": {
+        "site_id": "RES",
+        "role": "reserve",
+        "kind": "site"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              412100.00000000006,
+              6178899.999999999
+            ],
+            [
+              414600.0,
+              6178899.999999998
+            ],
+            [
+              414599.9999999999,
+              6176100.0
+            ],
+            [
+              412099.9999999999,
+              6176100.0
+            ],
+            [
+              412100.00000000006,
+              6178899.999999999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "job_id": "LIDAR_JOB",
+        "kind": "survey_effective"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              414899.9999999998,
+              6178899.999999999
+            ],
+            [
+              417399.9999999999,
+              6178899.999999999
+            ],
+            [
+              417400.0000000001,
+              6176100.0
+            ],
+            [
+              414900.0000000001,
+              6176100.000000001
+            ],
+            [
+              414899.9999999998,
+              6178899.999999999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "job_id": "IR_JOB",
+        "kind": "survey_effective"
+      }
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "url": "https://45.87.246.124:9443/",
+  "checks": [
+    "one opener in second row; pristine template runnable; loaded terrain silent",
+    "template calculates SAFE directly; scenario unchanged by calculation",
+    "result exports available separately",
+    "reopening template clears results",
+    "metric selection does not modify scenario",
+    "template edit requires Save As; undo restores runnable original",
+    "own scenario supports Save after editing",
+    "reopening saved scenario restores input only, without results or terrain notification",
+    "same template imported as ZIP gives identical SAFE solution and metrics",
+    "desktop and mobile layout, no horizontal overflow",
+    "missing terrain asks with Later / Copernicus / flat; Later starts nothing",
+    "flat choice prepares terrain only; explicit Save and Run remain separate",
+    "present terrain never opens notice, even if coverage validation fails"
+  ],
+  "runs": [
+    {
+      "status": "SAFE",
+      "metrics": {
+        "distance_m": 9811.90524155021,
+        "total_flight_s": 1183.3202340602875,
+        "makespan_s": 1183.3202340602875,
+        "airborne_span_s": 1183.3202340602875,
+        "coverage_percent": 100,
+        "required_area_m2": 800000.0000011409,
+        "covered_area_m2": 800000.0000011409,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 800000.0000011409,
+            "covered_area_m2": 800000.0000011409,
+            "coverage_percent": 100
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "hash": "ce73d8a6bdd541713babc56de88656601877fd30d62b69edb457adcd8064b12f",
+      "error": null,
+      "elapsed_s": 12.68
+    },
+    {
+      "status": "SAFE",
+      "metrics": {
+        "distance_m": 9811.90524155021,
+        "total_flight_s": 1202.3447380065918,
+        "makespan_s": 1202.3447380065918,
+        "airborne_span_s": 1202.3447380065918,
+        "coverage_percent": 100,
+        "required_area_m2": 800000.0000011409,
+        "covered_area_m2": 800000.0000011409,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 800000.0000011409,
+            "covered_area_m2": 800000.0000011409,
+            "coverage_percent": 100
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "hash": "e26ba7db81d230bc44321519b1fd680dffe70b5948a9344fae34283a84c0561a",
+      "error": null,
+      "elapsed_s": 7.54
+    },
+    {
+      "status": "SAFE",
+      "metrics": {
+        "distance_m": 9811.90524155021,
+        "total_flight_s": 1183.3202340602875,
+        "makespan_s": 1183.3202340602875,
+        "airborne_span_s": 1183.3202340602875,
+        "coverage_percent": 100,
+        "required_area_m2": 800000.0000011409,
+        "covered_area_m2": 800000.0000011409,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 800000.0000011409,
+            "covered_area_m2": 800000.0000011409,
+            "coverage_percent": 100
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "hash": "ce73d8a6bdd541713babc56de88656601877fd30d62b69edb457adcd8064b12f",
+      "error": null,
+      "elapsed_s": 15.85
+    }
+  ],
+  "exports": {
+    "kml": 200,
+    "geojson": 200,
+    "mission": 200,
+    "pdf": 200,
+    "docx": 200,
+    "certificate": 200
+  },
+  "saved_scene_id": "227ee6565fd94a21b17bae09e3476f79",
+  "passed": true,
+  "javascript_errors": []
+}

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>H2 Scenario Viewer</title>
+<style>
+:root{color-scheme:dark;--bg:#08111f;--panel:#101d2e;--line:#26374d;--text:#e8f0fa;--muted:#93a8c1;--accent:#57c7ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px Inter,system-ui,sans-serif}
+header{padding:20px 24px;border-bottom:1px solid var(--line);display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+h1{font-size:22px;margin:0}select{background:#17283d;color:var(--text);border:1px solid #39506c;border-radius:8px;padding:10px;min-width:360px}
+.viewer-lede{display:flex;flex-direction:column;gap:4px;flex:1;min-width:220px}.viewer-lede b{color:var(--text);font-weight:700}
+main{padding:18px;display:grid;grid-template-columns:minmax(0,2fr) minmax(320px,1fr);gap:16px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}.wide{grid-column:1/-1}
+#map{display:block;width:100%;height:590px;background:#07101b;border-radius:8px;cursor:grab;touch-action:none;user-select:none}#map.dragging{cursor:grabbing}.map-wrap{position:relative}.map-controls{position:absolute;z-index:2;top:10px;right:10px;display:flex;gap:5px}.map-controls button{border:1px solid #48617e;border-radius:7px;background:#14243a;color:var(--text);padding:7px 10px;font:inherit;font-weight:700;cursor:pointer;box-shadow:0 2px 8px #0008}.map-controls button:hover{background:#203653}.map-help{position:absolute;z-index:2;left:10px;bottom:9px;padding:5px 8px;border-radius:6px;background:#07101bcc;color:var(--muted);font-size:11px;pointer-events:none}h2{font-size:16px;margin:0 0 12px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}.card{background:#14243a;border-radius:8px;padding:10px}.value{font-size:19px;font-weight:700}.label,.muted{color:var(--muted);font-size:12px}
+table{border-collapse:collapse;width:100%;font-size:12px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}th{color:#9fc4e8;position:sticky;top:0;background:var(--panel)}.scroll{overflow:auto;max-height:410px}.legend{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}details{margin-top:12px}pre{white-space:pre-wrap;max-height:380px;overflow:auto;background:#07101b;padding:12px;border-radius:8px}.error{color:#ff7c7c}
+.planner-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.planner-controls select{min-width:220px}.action{border:1px solid #48617e;border-radius:7px;background:#1d6f9c;color:white;padding:9px 15px;font:inherit;font-weight:700;cursor:pointer}.action.secondary{background:#26374d}.action:disabled{cursor:not-allowed;opacity:.45}#run-status{color:var(--muted)}#result-frame{width:100%;height:900px;margin-top:14px;border:1px solid var(--line);border-radius:8px;background:white}
+.panel{min-width:0}.value{overflow-wrap:anywhere}.map-toolbar{position:absolute;z-index:2;top:10px;left:10px;right:10px;display:flex;align-items:start;justify-content:space-between;gap:8px}.map-controls{position:static;flex-shrink:0}.map-controls button{min-width:30px;padding:7px}.basemap-switch{display:flex;flex-shrink:0;background:#14243a;border:1px solid #48617e;border-radius:7px;overflow:hidden}.basemap-switch button{border:0;padding:8px 7px;background:transparent;color:var(--text);font:inherit;font-size:12px;cursor:pointer}.basemap-switch button[aria-pressed="true"]{background:#e8f0fa;color:#14243a}.map-credit{position:absolute;z-index:2;left:10px;right:10px;bottom:9px;width:fit-content;max-width:calc(100% - 20px);padding:5px 8px;border-radius:6px;background:#07101be6;color:#e8f0fa;font-size:10px;line-height:1.35;overflow-wrap:anywhere;pointer-events:auto}.map-credit a{color:inherit}.map-credit small{display:block;font-size:10px;color:#c0d2e6}.map-credit[hidden]{display:none}.route-casing{display:none}.imagery-visible .route-casing{display:block}.imagery-visible text{paint-order:stroke;stroke:#07101b;stroke-width:3px;stroke-linejoin:round}
+@media(max-width:900px){main{grid-template-columns:1fr}.wide{grid-column:auto}select{min-width:0;width:100%}#map{height:430px}}
+</style>
+<header><h1>H2 Scenario Viewer</h1><div class="viewer-lede"><span class="muted">Вход оптимизатора = готовый H1 bundle (не «проект» H3).</span><span class="muted">Сложные алгосы: <b>S01</b> 10&nbsp;БВС · S02/S03/S09/S11. Карточки с 1&nbsp;БВС — constraint, не дыры suite.</span></div><select id="scenario" aria-label="Сценарий H1 bundle"></select></header>
+<main>
+  <section class="panel"><h2>Карта задач и площадок</h2><div class="map-wrap"><div class="map-toolbar"><div class="basemap-switch" role="group" aria-label="Подложка карты"><button id="basemap-image" type="button" aria-pressed="true">Снимок</button><button id="basemap-scheme" type="button" aria-pressed="false">Схема</button></div><div class="map-controls"><button id="zoom-in" title="Приблизить">+</button><button id="zoom-out" title="Отдалить">−</button><button id="zoom-reset" title="Показать всю карту">Сброс</button></div></div><svg id="map" role="img" aria-label="Карта задач и площадок"></svg><div id="map-credit" class="map-credit" aria-live="polite" hidden></div></div><div class="legend" id="legend"></div></section>
+  <section class="panel"><h2>Сводка</h2><div class="cards" id="summary"></div><h2 style="margin-top:18px">Миссия</h2><div id="mission"></div></section>
+  <section class="panel wide"><h2>БВС</h2><div class="scroll"><table id="fleet"></table></div></section>
+  <section class="panel"><h2>Площадки</h2><table id="sites"></table></section>
+  <section class="panel"><h2>Группы задач</h2><div class="scroll"><table id="jobs"></table></div></section>
+  <section class="panel wide"><h2>Запуск H2</h2><div class="planner-controls"><label>Алгоритм <select id="algorithm"><option value="greedy_baseline">greedy_baseline</option><option value="cpsat_warmstart">cpsat_warmstart</option><option value="lns_anytime">lns_anytime</option></select></label><button class="action" id="run-algorithm">Запустить</button><button class="action secondary" id="save-run" disabled>Save в artifacts</button><span id="run-status"></span></div><iframe id="result-frame" title="Отчёт H2" sandbox="allow-scripts" hidden></iframe></section>
+  <section class="panel wide"><details><summary>Показать исходный JSON bundle</summary><pre id="raw"></pre></details></section>
+  <section class="panel wide"><h2>Результаты алгоритмов для выбранной карты</h2><p class="muted">Последний расчёт каждого алгоритма и цели оптимизации. Conflicts before→after — из deconfliction ladder. Save сохраняет результат после перезапуска сервера.</p><div class="scroll"><table id="algorithm-results"></table></div><p id="results-note" class="muted"></p></section>
+</main>
+<script>
+const $=id=>document.getElementById(id), colors=['#57c7ff','#ffbd59','#69db9c','#d28cff','#ff718b','#90a4ff','#ff914d'];
+const esc=s=>String(s??'—').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const n=(v,d=1)=>Number(v||0).toLocaleString('ru-RU',{maximumFractionDigits:d});
+function table(id,heads,rows){$(id).innerHTML='<thead><tr>'+heads.map(x=>`<th>${x}</th>`).join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map(x=>`<td>${x}</td>`).join('')+'</tr>').join('')+'</tbody>'}
+function taskRectangle(points,direction,gap){
+ const dx=direction[1][0]-direction[0][0],dy=direction[1][1]-direction[0][1],len=Math.hypot(dx,dy)||1,u=[dx/len,dy/len],v=[-u[1],u[0]],along=points.map(p=>p[0]*u[0]+p[1]*u[1]),across=points.map(p=>p[0]*v[0]+p[1]*v[1]),a0=Math.min(...along)-gap,a1=Math.max(...along)+gap,c0=Math.min(...across)-gap,c1=Math.max(...across)+gap,xy=(a,c)=>[a*u[0]+c*v[0],a*u[1]+c*v[1]];
+ return [xy(a0,c0),xy(a1,c0),xy(a1,c1),xy(a0,c1)];
+}
+function convexHull(points){
+ const p=[...new Map(points.map(v=>[`${v[0]},${v[1]}`,v])).values()].sort((a,b)=>a[0]-b[0]||a[1]-b[1]);if(p.length<3)return p;
+ const cross=(o,a,b)=>(a[0]-o[0])*(b[1]-o[1])-(a[1]-o[1])*(b[0]-o[0]),lower=[],upper=[];
+ for(const v of p){while(lower.length>1&&cross(lower.at(-2),lower.at(-1),v)<=0)lower.pop();lower.push(v)}for(const v of p.slice().reverse()){while(upper.length>1&&cross(upper.at(-2),upper.at(-1),v)<=0)upper.pop();upper.push(v)}return lower.slice(0,-1).concat(upper.slice(0,-1));
+}
+function offsetHull(hull,distance){
+ const area=hull.reduce((s,p,i)=>{const q=hull[(i+1)%hull.length];return s+p[0]*q[1]-q[0]*p[1]},0),side=area>=0?1:-1;
+ return hull.map((p,i)=>{const a=hull[(i+hull.length-1)%hull.length],b=hull[(i+1)%hull.length],normal=(u,v)=>{const dx=v[0]-u[0],dy=v[1]-u[1],len=Math.hypot(dx,dy)||1,k=side/len;return[dy*k,-dx*k]},n1=normal(a,p),n2=normal(p,b),mx=n1[0]+n2[0],my=n1[1]+n2[1],ml=Math.hypot(mx,my)||1,ux=mx/ml,uy=my/ml,den=Math.max(.2,ux*n2[0]+uy*n2[1]),step=distance/den;return[p[0]+ux*step,p[1]+uy*step]});
+}
+function transectSpacingByJob(tasks){
+ const groups=new Map;
+ for(const t of tasks){let g=groups.get(t.job_id);if(!g){g={normal:null,offsets:[]};groups.set(t.job_id,g)}for(const tr of t.transects){const a=tr.coords[0],b=tr.coords.at(-1),dx=b[0]-a[0],dy=b[1]-a[1],len=Math.hypot(dx,dy);if(!len)continue;if(!g.normal){const sign=dx<0||(Math.abs(dx)<1e-9&&dy<0)?-1:1;g.normal=[-sign*dy/len,sign*dx/len]}const m=[(a[0]+b[0])/2,(a[1]+b[1])/2];g.offsets.push(m[0]*g.normal[0]+m[1]*g.normal[1])}}
+ const result=new Map;
+ for(const [job,g] of groups){const values=g.offsets.sort((a,b)=>a-b),diffs=[];for(let i=1;i<values.length;i++){const d=values[i]-values[i-1];if(d>.1)diffs.push(d)}if(diffs.length)result.set(job,Math.min(...diffs))}
+ return result;
+}
+const mapView={base:null,current:null,drag:null,envelopes:[],projection:null,bundle:null,viewport:null};
+let imageryManifest=null,imageryCatalogState='loading',imageryRequest=0,imageryTimer=null,basemapMode='image';
+try{if(localStorage.getItem('h2.basemap')==='scheme')basemapMode='scheme'}catch{}
+function setBasemapMode(mode){
+ basemapMode=mode;try{localStorage.setItem('h2.basemap',mode)}catch{}
+ renderImagery();
+}
+function imageryCredit(text,detail='',source=''){
+ const el=$('map-credit');el.replaceChildren();el.hidden=!text;if(!text)return;
+ const title=document.createElement(source?'a':'span');title.textContent=text;
+ if(source){title.href=source;title.target='_blank';title.rel='noopener noreferrer'}el.append(title);
+ if(detail){const sub=document.createElement('small');sub.textContent=detail;el.append(sub)}
+}
+function renderImagery(){
+ const svg=$('map'),layer=$('map-imagery'),request=++imageryRequest;
+ clearTimeout(imageryTimer);
+ $('basemap-image').setAttribute('aria-pressed',String(basemapMode==='image'));
+ $('basemap-scheme').setAttribute('aria-pressed',String(basemapMode==='scheme'));
+ svg.classList.remove('imagery-visible');layer?.replaceChildren();imageryCredit('');
+ if(basemapMode!=='image'||!layer||!mapView.projection)return;
+ if(imageryCatalogState==='loading'){imageryCredit('Снимок загружается…');return}
+ const {xy,epsg,bounds,scale}=mapView.projection;
+ const entry=imageryManifest?.images.find(item=>item.metric_epsg===epsg&&item.bounds_xy[0]<=bounds[0]&&item.bounds_xy[1]<=bounds[1]&&item.bounds_xy[2]>=bounds[2]&&item.bounds_xy[3]>=bounds[3]);
+ if(!entry){imageryCredit('Снимок недоступен для этой сцены');return}
+ const image=document.createElementNS('http://www.w3.org/2000/svg','image'),[left,bottom,right,top]=entry.bounds_xy,[x,y]=xy([left,top]);
+ image.setAttribute('x',x);image.setAttribute('y',y);image.setAttribute('width',(right-left)*scale);image.setAttribute('height',(top-bottom)*scale);image.setAttribute('preserveAspectRatio','none');image.setAttribute('pointer-events','none');image.setAttribute('visibility','hidden');
+ imageryCredit('Снимок загружается…');
+ image.addEventListener('load',()=>{
+  if(request!==imageryRequest||!image.isConnected)return;
+  clearTimeout(imageryTimer);
+  image.removeAttribute('visibility');svg.classList.add('imagery-visible');
+  const date=new Date(entry.acquired_at).toLocaleDateString('ru-RU',{timeZone:'UTC'});
+  imageryCredit(imageryManifest.attribution,`${date} · ${n(entry.resolution_m,0)} м/пикс · Sentinel-2`,imageryManifest.source_url);
+ });
+ const fail=()=>{if(request===imageryRequest){clearTimeout(imageryTimer);image.remove();svg.classList.remove('imagery-visible');imageryCredit('Снимок недоступен')}};
+ image.addEventListener('error',fail);imageryTimer=setTimeout(fail,20000);
+ layer.append(image);image.setAttribute('href',entry.url);
+}
+async function loadImageryManifest(){
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
+ try{
+  const response=await fetch('/imagery/manifest.json',{signal:controller.signal});if(!response.ok)throw Error('imagery unavailable');const manifest=await response.json();
+  if(manifest.schema!=='geoscan.viewer.imagery.v1'||!Array.isArray(manifest.images)||typeof manifest.attribution!=='string')throw Error('invalid imagery manifest');
+  manifest.images=manifest.images.filter(item=>Number.isInteger(item.metric_epsg)&&Array.isArray(item.bounds_xy)&&item.bounds_xy.length===4&&item.bounds_xy.every(Number.isFinite)&&item.bounds_xy[0]<item.bounds_xy[2]&&item.bounds_xy[1]<item.bounds_xy[3]&&typeof item.url==='string'&&item.url.startsWith('/imagery/')&&!item.url.includes('..')&&Number.isFinite(item.resolution_m)&&item.resolution_m>0&&Number.isFinite(Date.parse(item.acquired_at)));
+  manifest.source_url=typeof manifest.source_url==='string'&&manifest.source_url.startsWith('https://')?manifest.source_url:'';
+  imageryManifest=manifest;imageryCatalogState='ready';
+ }catch{imageryCatalogState='failed'}finally{clearTimeout(timer)}
+ renderImagery();
+}
+function adaptMapDetails(){
+ if(!mapView.base||!mapView.current)return;
+ const ratio=mapView.current.width/mapView.base.width,zoom=1/ratio;
+ for(const item of mapView.envelopes){
+  if(item.area)item.el.setAttribute('fill-opacity',Math.max(.015,.07/Math.sqrt(zoom)));
+  if(item.outline)item.el.setAttribute('stroke-width',Math.max(.45,1.5/Math.sqrt(zoom)));
+ }
+}
+function applyMapView(v){mapView.current={...v};$('map').setAttribute('viewBox',`${v.x} ${v.y} ${v.width} ${v.height}`);adaptMapDetails()}
+function resetMapView(){if(mapView.base)applyMapView(mapView.base)}
+function zoomMap(factor,clientX=null,clientY=null){
+ if(!mapView.current||!mapView.base)return;
+ const svg=$('map'),v=mapView.current,minW=mapView.base.width/80,maxW=mapView.base.width*5,newW=Math.min(maxW,Math.max(minW,v.width*factor)),actual=newW/v.width,newH=v.height*actual;
+ let anchor={x:v.x+v.width/2,y:v.y+v.height/2};
+ if(clientX!==null){const point=svg.createSVGPoint();point.x=clientX;point.y=clientY;anchor=point.matrixTransform(svg.getScreenCTM().inverse())}
+ applyMapView({x:anchor.x-(anchor.x-v.x)*actual,y:anchor.y-(anchor.y-v.y)*actual,width:newW,height:newH});
+}
+function setupMapNavigation(){
+ const svg=$('map');
+ svg.addEventListener('wheel',e=>{e.preventDefault();zoomMap(e.deltaY<0 ? .82 : 1.22,e.clientX,e.clientY)},{passive:false});
+ svg.addEventListener('pointerdown',e=>{if(e.button!==0||!mapView.current)return;svg.setPointerCapture(e.pointerId);svg.classList.add('dragging');mapView.drag={x:e.clientX,y:e.clientY,view:{...mapView.current}}});
+ svg.addEventListener('pointermove',e=>{if(!mapView.drag)return;const rect=svg.getBoundingClientRect(),d=mapView.drag,v=d.view;applyMapView({x:v.x-(e.clientX-d.x)*v.width/rect.width,y:v.y-(e.clientY-d.y)*v.height/rect.height,width:v.width,height:v.height})});
+ const stop=()=>{mapView.drag=null;svg.classList.remove('dragging')};svg.addEventListener('pointerup',stop);svg.addEventListener('pointercancel',stop);
+ svg.addEventListener('dblclick',resetMapView);$('zoom-in').onclick=()=>zoomMap(.8);$('zoom-out').onclick=()=>zoomMap(1.25);$('zoom-reset').onclick=resetMapView;
+ let resizeFrame=null;
+ new ResizeObserver(()=>{
+  if(mapView.bundle&&mapView.viewport&&(svg.clientWidth!==mapView.viewport[0]||svg.clientHeight!==mapView.viewport[1])){
+   cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(()=>renderMap(mapView.bundle,true));
+  }
+ }).observe(svg);
+}
+function renderMap(b,preserveView=false){
+ const svg=$('map'), jobs=[...new Set(b.tasks.map(t=>t.job_id))], color=j=>colors[jobs.indexOf(j)%colors.length];
+ const previous=preserveView&&mapView.projection&&mapView.current?{center:mapView.projection.unproject([mapView.current.x+mapView.current.width/2,mapView.current.y+mapView.current.height/2]),ratio:mapView.current.width/mapView.base.width}:null;
+ mapView.bundle=b;mapView.viewport=[svg.clientWidth,svg.clientHeight];
+ const spacing=transectSpacingByJob(b.tasks);
+ const pts=[]; b.tasks.forEach(t=>t.transects.forEach(tr=>tr.coords.forEach(p=>pts.push(p)))); b.sites.forEach(s=>pts.push([s.x,s.y]));
+ if(!pts.length){svg.innerHTML='';mapView.projection=null;renderImagery();return} const xs=pts.map(p=>p[0]),ys=pts.map(p=>p[1]),x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys),pad=30,w=Math.max(80,svg.clientWidth),h=Math.max(80,svg.clientHeight),scale=Math.min((w-2*pad)/Math.max(1,x1-x0),(h-2*pad)/Math.max(1,y1-y0)),offsetX=(w-(x1-x0)*scale)/2,offsetY=(h-(y1-y0)*scale)/2,xy=p=>[offsetX+(p[0]-x0)*scale,h-offsetY-(p[1]-y0)*scale],unproject=p=>[x0+(p[0]-offsetX)/scale,y0+(h-offsetY-p[1])/scale];
+ mapView.projection={xy,unproject,epsg:b.crs.metric_epsg,bounds:[x0,y0,x1,y1],scale};
+ mapView.base={x:0,y:0,width:w,height:h};mapView.envelopes=[];
+ if(previous){const center=xy(previous.center),width=w*previous.ratio,height=h*previous.ratio;applyMapView({x:center[0]-width/2,y:center[1]-height/2,width,height})}else resetMapView();
+ let out='<g id="map-imagery"></g>',envelopes=[];
+ // Exactly one buffered convex envelope for all transects of each AtomicTask.
+ b.tasks.forEach(t=>{
+  const pitch=spacing.get(t.job_id)||24,gap=pitch*scale/4;
+  const points=t.transects.flatMap(tr=>tr.coords.map(xy)),hull=convexHull(points);
+  const first=t.transects.find(tr=>tr.coords.length>1);
+  if(!first||!points.length)return;
+  const shape=hull.length>=3?offsetHull(hull,gap):taskRectangle(points,first.coords.slice(0,2).map(xy),gap);
+  const idx=envelopes.length,title=`AtomicTask ${t.id} · ${t.transects.length} галсов · ${n(t.survey_length_m/1000,2)} км · отступ ${n(pitch/4,1)} м`;
+  envelopes.push({area:true,outline:true});
+  out+=`<polygon data-envelope="${idx}" data-task-id="${esc(t.id)}" points="${shape.map(p=>p.join(',')).join(' ')}" fill="#d9e5f2" fill-opacity=".07" stroke="#d9e5f2" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="6 4" vector-effect="non-scaling-stroke"><title>${esc(title)}</title></polygon>`;
+ });
+ b.tasks.forEach(t=>t.transects.forEach(tr=>{const q=tr.coords.map(p=>xy(p).join(',')).join(' ');out+=`<polyline class="route-casing" points="${q}" fill="none" stroke="#07101b" stroke-opacity=".8" stroke-width="4" vector-effect="non-scaling-stroke" pointer-events="none"/><polyline points="${q}" fill="none" stroke="${color(t.job_id)}" stroke-width="2" opacity=".86" vector-effect="non-scaling-stroke"><title>${esc(t.id)} · ${n(tr.length_m/1000,2)} км</title></polyline>`}));
+ b.sites.forEach(s=>{const p=xy([s.x,s.y]),left=p[0]+11+s.id.length*8>w-8;out+=`<circle cx="${p[0]}" cy="${p[1]}" r="8" fill="#fff" stroke="#07101b" stroke-width="3"><title>${esc(s.id)} · ${esc(s.role)}</title></circle><text x="${p[0]+(left?-11:11)}" y="${p[1]-9}" text-anchor="${left?'end':'start'}" fill="#fff" font-size="13">${esc(s.id)}</text>`});svg.innerHTML=out;
+ mapView.envelopes=envelopes.map((item,i)=>({...item,el:svg.querySelector(`[data-envelope="${i}"]`)}));adaptMapDetails();renderImagery();
+ $('legend').innerHTML=jobs.map((j,i)=>`<span><i class="dot" style="background:${colors[i%colors.length]}"></i>${esc(j)}</span>`).join('')+'<span>⬚ одна оболочка = одна задача (отступ = ¼ шага)</span><span><i class="dot" style="background:#fff"></i>площадка</span>';
+}
+function render(b){
+ const total=b.tasks.reduce((s,t)=>s+t.survey_length_m,0), transects=b.tasks.reduce((s,t)=>s+t.transects.length,0),cov=b.coverage_meta?.coverage_percent;
+ $('summary').innerHTML=[['Сценарий',b.scene_id],['Задачи',b.tasks.length],['Галсы',transects],['БВС',b.fleet.length],['Съёмка',`${n(total/1000)} км`],['Покрытие',cov==null?'—':`${n(cov,3)}%`]].map(([l,v])=>`<div class="card"><div class="value">${esc(v)}</div><div class="label">${l}</div></div>`).join('');
+ const m=b.mission;$('mission').innerHTML=`<p><b>Цели:</b> ${esc(m.objectives.join(', '))}</p><p><b>Окно:</b> ${esc(m.window_start)} → ${esc(m.window_end)}</p><p><b>Ветер:</b> ${n(m.wind?.speed_ms)} м/с, ${n(m.wind?.direction_deg_from,0)}°</p><p><b>CRS:</b> EPSG:${esc(b.crs.metric_epsg)}</p>`;
+ table('fleet',['ID / модель','Класс','Скорость','Ресурс','Оценка дальности','Payload','Старт → посадка','Сепарация'],b.fleet.map(u=>{const usable=u.operational_endurance_min*(1-u.energy_reserve_fraction),range=usable*60*u.ground_speed_ms/1000;return [`<b>${esc(u.id)}</b><br>${esc(u.model)}`,esc(u.uav_class),`${n(u.ground_speed_ms)} м/с`,`${n(u.operational_endurance_min)} мин<br><span class="muted">с резервом ${n(usable)} мин</span>`,`${n(range)} км`,esc(u.payload_classes.join(', ')),`${esc(u.start_site)} → ${esc(u.landing_site)}`,`${n(u.horizontal_separation_m,0)} м / ${n(u.vertical_separation_m,0)} м`]}));
+ table('sites',['Площадка','Роль','Координаты'],b.sites.map(s=>[esc(s.id),esc(s.role),`${n(s.x,1)}, ${n(s.y,1)}`]));
+ const groups={};b.tasks.forEach(t=>{const k=`${t.job_id}|${t.payload_class}`;groups[k]??={job:t.job_id,payload:t.payload_class,count:0,length:0,trs:0,eligible:new Set};const g=groups[k];g.count++;g.length+=t.survey_length_m;g.trs+=t.transects.length;(b.feasibility.eligible_uav_ids_by_task[t.id]||[]).forEach(x=>g.eligible.add(x))});
+ table('jobs',['Job / payload','Задачи','Галсы','Длина','Допустимые БВС'],Object.values(groups).map(g=>[`<b>${esc(g.job)}</b><br>${esc(g.payload)}`,g.count,g.trs,`${n(g.length/1000)} км`,esc([...g.eligible].join(', '))]));
+ $('raw').textContent=JSON.stringify(b,null,2);renderMap(b);
+}
+function duration(seconds){
+ if(seconds==null||!Number.isFinite(Number(seconds)))return '—';
+ const s=Math.max(0,Math.round(Number(seconds)));
+ return [Math.floor(s/3600),Math.floor(s/60)%60,s%60].map(v=>String(v).padStart(2,'0')).join(':');
+}
+async function refreshResults(name=$('scenario').value){
+ const heads=['Алгоритм','Цель','Статус','Makespan','Total flight','Conflicts before→after','Ladder','Сохранение'];
+ table('algorithm-results',heads,[]);$('results-note').textContent='Загрузка результатов…';
+ try{
+  const r=await fetch('/api/results/'+encodeURIComponent(name));if(!r.ok)throw Error(await r.text());
+  const rows=await r.json();if($('scenario').value!==name)return;
+  table('algorithm-results',heads,rows.map(row=>{
+   const valid=row.status==='FEASIBLE';
+   const conf=`${row.conflicts_before??'—'}→${row.conflicts_remaining??'—'}`;
+   const ladder=(row.ladder_used&&row.ladder_used.length)?row.ladder_used.join(','):'—';
+   return [esc(row.algorithm),esc(row.objective),esc(row.status),valid?duration(row.metrics.makespan_s):'—',valid?duration(row.metrics.total_flight_s):'—',esc(conf),esc(ladder),row.saved?'Сохранён':'Не сохранён'];
+  }));
+  $('results-note').textContent=rows.length?'':'Эту карту ещё не рассчитывали. Выберите алгоритм и нажмите «Запустить».';
+ }catch(e){if($('scenario').value===name)$('results-note').textContent='Не удалось загрузить результаты: '+e.message}
+}
+let sceneRequest=0;
+async function load(name){const request=++sceneRequest;refreshResults(name);try{const r=await fetch('/api/scenarios/'+encodeURIComponent(name));if(!r.ok)throw Error(await r.text());const bundle=await r.json();if(request===sceneRequest)render(bundle)}catch(e){if(request===sceneRequest)$('summary').innerHTML=`<p class="error">${esc(e.message)}</p>`}}
+let currentRun=null;
+function clearRun(){currentRun=null;$('save-run').disabled=true;$('result-frame').hidden=true;$('result-frame').removeAttribute('src');$('run-status').textContent=''}
+async function post(url,body){const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:body===undefined?null:JSON.stringify(body)}),data=await r.json();if(!r.ok)throw Error(data.error||`HTTP ${r.status}`);return data}
+async function runAlgorithm(){const button=$('run-algorithm');button.disabled=true;$('save-run').disabled=true;$('run-status').textContent='Алгоритм работает…';try{const data=await post('/api/runs',{scenario:$('scenario').value,algorithm:$('algorithm').value});currentRun=data.run_id;$('result-frame').src=data.report_url;$('result-frame').hidden=false;$('save-run').disabled=false;$('run-status').textContent=`${data.status} · ${n(data.metrics.makespan_s)} с · ${data.metrics.sortie_count} вылетов`}catch(e){$('run-status').innerHTML=`<span class="error">${esc(e.message)}</span>`}finally{button.disabled=false;refreshResults()}}
+async function saveRun(){if(!currentRun)return;const button=$('save-run');button.disabled=true;$('run-status').textContent='Сохранение…';try{const data=await post(`/api/runs/${currentRun}/save`);$('run-status').textContent=`Сохранено: ${data.artifact_dir}`}catch(e){$('run-status').innerHTML=`<span class="error">${esc(e.message)}</span>`}finally{button.disabled=false;refreshResults()}}
+async function init(){setupMapNavigation();$('basemap-image').onclick=()=>setBasemapMode('image');$('basemap-scheme').onclick=()=>setBasemapMode('scheme');loadImageryManifest();$('run-algorithm').onclick=runAlgorithm;$('save-run').onclick=saveRun;const rows=(await (await fetch('/api/scenarios')).json()).slice().sort((a,b)=>b.uavs-a.uavs||b.tasks-a.tasks||a.file.localeCompare(b.file));const sel=$('scenario');sel.innerHTML=rows.map(x=>{const tag=x.uavs>=2?' · группа':' · 1 БВС constraint';return `<option value="${esc(x.file)}">${esc(x.scene_id||x.file)} — ${x.tasks} задач, ${x.uavs} БВС${tag}</option>`}).join('');sel.onchange=()=>{clearRun();load(sel.value)};const preferred=rows.find(x=>String(x.file).includes('S01_'))||rows.find(x=>x.uavs>=2)||rows[0];if(preferred){sel.value=preferred.file;load(preferred.file)}}init();
+</script>
+</html>

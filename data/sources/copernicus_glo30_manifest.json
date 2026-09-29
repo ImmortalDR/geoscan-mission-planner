@@ -1,0 +1,74 @@
+{
+  "schema": "h3.terrain_source.v1",
+  "source_id": "Copernicus_DSM_COG_10_N55_00_E037_00_DEM",
+  "dataset": "Copernicus DEM GLO-30 Public, AWS COG 2021 release",
+  "surface_type": "DSM",
+  "bare_earth": false,
+  "vertical_datum": "EGM2008",
+  "vertical_crs": "EPSG:3855",
+  "height_units": "m",
+  "source_raster": {
+    "horizontal_crs": "EPSG:4326",
+    "bounds_lonlat": [
+      36.99979166666667,
+      55.00013888888889,
+      37.99979166666667,
+      56.00013888888889
+    ],
+    "width": 2400,
+    "height": 3600,
+    "dtype": "float32",
+    "nodata": null
+  },
+  "artifacts": {
+    "tile": {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N55_00_E037_00_DEM/Copernicus_DSM_COG_10_N55_00_E037_00_DEM.tif",
+      "resolved_url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N55_00_E037_00_DEM/Copernicus_DSM_COG_10_N55_00_E037_00_DEM.tif",
+      "retrieved_at_utc": "2026-09-20T19:54:47.243596+00:00",
+      "bytes": 30719198,
+      "sha256": "027a31311fd198c54d08d7f6025835fa34b24c3e08ddc43023b485ee63f21320",
+      "http_etag": "\"664ed528b2124a4f435df8503f84bd66\"",
+      "http_last_modified": "Mon, 09 May 2022 14:33:21 GMT",
+      "path": "cache://Copernicus_DSM_COG_10_N55_00_E037_00_DEM.tif"
+    },
+    "tile_metadata": {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N55_00_E037_00_DEM/Copernicus_DSM_10_N55_00_E037_00.xml",
+      "resolved_url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N55_00_E037_00_DEM/Copernicus_DSM_10_N55_00_E037_00.xml",
+      "retrieved_at_utc": "2026-09-20T19:54:47.643949+00:00",
+      "bytes": 44712,
+      "sha256": "e11d644ac938a442e5f8508643c42bd955d48c1a781f81f621e39f82fa278947",
+      "http_etag": "\"f1e6751004cb77bda208d9e43c900908\"",
+      "http_last_modified": "Mon, 09 May 2022 14:33:21 GMT",
+      "path": "sources/Copernicus_DSM_10_N55_00_E037_00.xml"
+    },
+    "aws_readme": {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/readme.html",
+      "resolved_url": "https://copernicus-dem-30m.s3.amazonaws.com/readme.html",
+      "retrieved_at_utc": "2026-09-20T19:54:47.800396+00:00",
+      "bytes": 8536,
+      "sha256": "922461d55070e3c7e0cf2903ec54190d69e3773da2dc9e776a3f03566cfd56d2",
+      "http_etag": "\"022cee281269bfa9eafa36401ef3e104\"",
+      "http_last_modified": "Wed, 22 Nov 2023 10:39:04 GMT",
+      "path": "sources/aws_readme.html"
+    },
+    "license": {
+      "url": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+      "resolved_url": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+      "retrieved_at_utc": "2026-09-20T19:54:47.940813+00:00",
+      "bytes": 113786,
+      "sha256": "9cd37d37ea654bbcaf0a2e059e6a3a5b5f76072824d8dd860ccf274ada8951bd",
+      "http_etag": "\"a87b232ad933d89a3b43e2367432eb2a\"",
+      "http_last_modified": "Thu, 06 Aug 2026 11:28:45 GMT",
+      "path": "sources/copernicus_dem_licenses.pdf"
+    }
+  },
+  "license_section": "COP-DEM-GLO-30-F, all three pages",
+  "license_reference_url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+  "derived_attribution": "produced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved",
+  "license_notice": "The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30",
+  "limitations": [
+    "DSM includes buildings, infrastructure and vegetation; it is not a DTM.",
+    "Pixel spacing does not establish vertical accuracy or obstacle completeness.",
+    "Synthetic obstacles and mission constraints are separate dataset layers."
+  ]
+}

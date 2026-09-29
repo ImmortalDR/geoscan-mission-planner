@@ -1,0 +1,23 @@
+{
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "horizontal_overflow": false
+    }
+  ],
+  "roles": [
+    "admin",
+    "planner",
+    "viewer",
+    "legacy"
+  ],
+  "javascript_errors": [],
+  "map_colors": 3900,
+  "passed": true
+}

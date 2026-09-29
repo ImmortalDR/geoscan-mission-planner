@@ -1,0 +1,44 @@
+{
+  "schema_version": "h2.scene.v1",
+  "crs": {
+    "metric_epsg": 32637
+  },
+  "temporal": [
+    {
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -50,
+              -50
+            ],
+            [
+              150,
+              -50
+            ],
+            [
+              150,
+              150
+            ],
+            [
+              -50,
+              150
+            ],
+            [
+              -50,
+              -50
+            ]
+          ]
+        ]
+      },
+      "start_s": 0,
+      "end_s": 600,
+      "note": "demo daylight/temporal block \u2014 whole sortie deferred past end_s"
+    }
+  ],
+  "assumptions": [
+    "flat_amsl_without_terrain_grid",
+    "conservative_whole_sortie_shift"
+  ]
+}

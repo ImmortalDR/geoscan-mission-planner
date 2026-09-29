@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.59417471983584,
+          55.723483841383924
+        ]
+      },
+      "properties": {
+        "id": "BASE",
+        "layer": "landing_site",
+        "role": "both"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.71944328281587,
+          55.73923152405155
+        ]
+      },
+      "properties": {
+        "id": "RES",
+        "layer": "landing_site",
+        "role": "reserve"
+      }
+    }
+  ]
+}

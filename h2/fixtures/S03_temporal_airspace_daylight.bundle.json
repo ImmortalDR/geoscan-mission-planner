@@ -1,0 +1,3782 @@
+{
+  "schema_version": "gmp.h1_h2.v1",
+  "scene_id": "S03_temporal_airspace_daylight",
+  "crs": {
+    "metric_epsg": 32637,
+    "axis": "ENU_metres",
+    "note": "Coordinates in metres, not lon/lat"
+  },
+  "generated_at": "2026-09-21T01:19:16Z",
+  "source": "coverage",
+  "fleet": [
+    {
+      "id": "GS201_01",
+      "model": "geoscan_201",
+      "uav_class": "fixed_wing",
+      "ground_speed_ms": 22.0,
+      "operational_endurance_min": 144.0,
+      "max_wind_ms": 12.0,
+      "payload_classes": [
+        "rgb",
+        "thermal"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 300.0,
+      "start_site": "BASE_W",
+      "landing_site": "BASE_W",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 150.0
+    },
+    {
+      "id": "GS701_02",
+      "model": "geoscan_701",
+      "uav_class": "fixed_wing",
+      "ground_speed_ms": 28.0,
+      "operational_endurance_min": 480.0,
+      "max_wind_ms": 12.0,
+      "payload_classes": [
+        "rgb",
+        "multispectral"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 300.0,
+      "start_site": "BASE_W",
+      "landing_site": "BASE_W",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 180.0
+    },
+    {
+      "id": "GS401_03",
+      "model": "geoscan_401_geo",
+      "uav_class": "multirotor",
+      "ground_speed_ms": 8.0,
+      "operational_endurance_min": 48.0,
+      "max_wind_ms": 12.0,
+      "payload_classes": [
+        "rgb",
+        "lidar",
+        "geophysics"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 30.0,
+      "start_site": "BASE_W",
+      "landing_site": "BASE_W",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 80.0
+    },
+    {
+      "id": "GS801_04",
+      "model": "geoscan_801",
+      "uav_class": "multirotor",
+      "ground_speed_ms": 12.0,
+      "operational_endurance_min": 32.0,
+      "max_wind_ms": 10.0,
+      "payload_classes": [
+        "thermal",
+        "rgb_video"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 30.0,
+      "start_site": "BASE_W",
+      "landing_site": "BASE_W",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 100.0
+    }
+  ],
+  "sites": [
+    {
+      "id": "BASE_W",
+      "x": 411500.0000000001,
+      "y": 6177800.000000001,
+      "role": "both",
+      "candidate": false
+    },
+    {
+      "id": "BASE_E",
+      "x": 417499.99999999994,
+      "y": 6177799.999999999,
+      "role": "both",
+      "candidate": false
+    }
+  ],
+  "mission": {
+    "objectives": [
+      "makespan"
+    ],
+    "window_start": "2026-06-15T09:00:00+03:00",
+    "window_end": "2026-06-15T16:00:00+03:00",
+    "wind": {
+      "speed_ms": 5.0,
+      "direction_deg_from": 270.0
+    },
+    "allow_different_start_end": false,
+    "require_complete_coverage": true,
+    "require_schedule": true
+  },
+  "tasks": [
+    {
+      "id": "RGB_T#T000",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000035,
+              6176049.0
+            ],
+            [
+              417000.00000000006,
+              6176049.0
+            ]
+          ],
+          "length_m": 4999.999999999709,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000035,
+        6176049.0
+      ],
+      "exit": [
+        417000.00000000006,
+        6176049.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000035,
+          6176049.0
+        ],
+        [
+          417000.00000000006,
+          6176049.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T001",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.00000000006,
+              6176103.0
+            ],
+            [
+              412000.00000000035,
+              6176103.0
+            ]
+          ],
+          "length_m": 4999.999999999709,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.00000000006,
+        6176103.0
+      ],
+      "exit": [
+        412000.00000000035,
+        6176103.0
+      ],
+      "geom_coords": [
+        [
+          417000.00000000006,
+          6176103.0
+        ],
+        [
+          412000.00000000035,
+          6176103.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T002",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000035,
+              6176157.0
+            ],
+            [
+              417000.00000000006,
+              6176157.0
+            ]
+          ],
+          "length_m": 4999.999999999709,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000035,
+        6176157.0
+      ],
+      "exit": [
+        417000.00000000006,
+        6176157.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000035,
+          6176157.0
+        ],
+        [
+          417000.00000000006,
+          6176157.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T003",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.00000000006,
+              6176211.0
+            ],
+            [
+              412000.00000000035,
+              6176211.0
+            ]
+          ],
+          "length_m": 4999.999999999709,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.00000000006,
+        6176211.0
+      ],
+      "exit": [
+        412000.00000000035,
+        6176211.0
+      ],
+      "geom_coords": [
+        [
+          417000.00000000006,
+          6176211.0
+        ],
+        [
+          412000.00000000035,
+          6176211.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T004",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000035,
+              6176265.0
+            ],
+            [
+              417000.00000000006,
+              6176265.0
+            ]
+          ],
+          "length_m": 4999.999999999709,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000035,
+        6176265.0
+      ],
+      "exit": [
+        417000.00000000006,
+        6176265.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000035,
+          6176265.0
+        ],
+        [
+          417000.00000000006,
+          6176265.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T005",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.00000000006,
+              6176319.0
+            ],
+            [
+              412000.00000000035,
+              6176319.0
+            ]
+          ],
+          "length_m": 4999.999999999709,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.00000000006,
+        6176319.0
+      ],
+      "exit": [
+        412000.00000000035,
+        6176319.0
+      ],
+      "geom_coords": [
+        [
+          417000.00000000006,
+          6176319.0
+        ],
+        [
+          412000.00000000035,
+          6176319.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T006",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000035,
+              6176373.0
+            ],
+            [
+              417000.00000000006,
+              6176373.0
+            ]
+          ],
+          "length_m": 4999.999999999709,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000035,
+        6176373.0
+      ],
+      "exit": [
+        417000.00000000006,
+        6176373.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000035,
+          6176373.0
+        ],
+        [
+          417000.00000000006,
+          6176373.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T007",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.00000000006,
+              6176427.0
+            ],
+            [
+              412000.00000000035,
+              6176427.0
+            ]
+          ],
+          "length_m": 4999.999999999709,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.00000000006,
+        6176427.0
+      ],
+      "exit": [
+        412000.00000000035,
+        6176427.0
+      ],
+      "geom_coords": [
+        [
+          417000.00000000006,
+          6176427.0
+        ],
+        [
+          412000.00000000035,
+          6176427.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T008",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176481.0
+            ],
+            [
+              417000.00000000006,
+              6176481.0
+            ]
+          ],
+          "length_m": 4999.999999999767,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6176481.0
+      ],
+      "exit": [
+        417000.00000000006,
+        6176481.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6176481.0
+        ],
+        [
+          417000.00000000006,
+          6176481.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T009",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.00000000006,
+              6176535.0
+            ],
+            [
+              412000.0000000003,
+              6176535.0
+            ]
+          ],
+          "length_m": 4999.999999999767,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.00000000006,
+        6176535.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6176535.0
+      ],
+      "geom_coords": [
+        [
+          417000.00000000006,
+          6176535.0
+        ],
+        [
+          412000.0000000003,
+          6176535.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T010",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176589.0
+            ],
+            [
+              417000.0000000001,
+              6176589.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6176589.0
+      ],
+      "exit": [
+        417000.0000000001,
+        6176589.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6176589.0
+        ],
+        [
+          417000.0000000001,
+          6176589.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T011",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000001,
+              6176643.0
+            ],
+            [
+              412000.0000000003,
+              6176643.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000001,
+        6176643.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6176643.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000001,
+          6176643.0
+        ],
+        [
+          412000.0000000003,
+          6176643.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T012",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176697.0
+            ],
+            [
+              417000.0000000001,
+              6176697.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6176697.0
+      ],
+      "exit": [
+        417000.0000000001,
+        6176697.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6176697.0
+        ],
+        [
+          417000.0000000001,
+          6176697.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T013",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000001,
+              6176751.0
+            ],
+            [
+              412000.0000000003,
+              6176751.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000001,
+        6176751.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6176751.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000001,
+          6176751.0
+        ],
+        [
+          412000.0000000003,
+          6176751.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T014",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176805.0
+            ],
+            [
+              417000.0000000001,
+              6176805.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6176805.0
+      ],
+      "exit": [
+        417000.0000000001,
+        6176805.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6176805.0
+        ],
+        [
+          417000.0000000001,
+          6176805.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T015",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000001,
+              6176859.0
+            ],
+            [
+              412000.0000000003,
+              6176859.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000001,
+        6176859.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6176859.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000001,
+          6176859.0
+        ],
+        [
+          412000.0000000003,
+          6176859.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T016",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176913.0
+            ],
+            [
+              417000.0000000001,
+              6176913.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6176913.0
+      ],
+      "exit": [
+        417000.0000000001,
+        6176913.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6176913.0
+        ],
+        [
+          417000.0000000001,
+          6176913.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T017",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000001,
+              6176967.0
+            ],
+            [
+              412000.0000000003,
+              6176967.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000001,
+        6176967.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6176967.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000001,
+          6176967.0
+        ],
+        [
+          412000.0000000003,
+          6176967.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T018",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6177021.0
+            ],
+            [
+              417000.0000000001,
+              6177021.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6177021.0
+      ],
+      "exit": [
+        417000.0000000001,
+        6177021.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6177021.0
+        ],
+        [
+          417000.0000000001,
+          6177021.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T019",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000001,
+              6177075.0
+            ],
+            [
+              412000.0000000003,
+              6177075.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000001,
+        6177075.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6177075.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000001,
+          6177075.0
+        ],
+        [
+          412000.0000000003,
+          6177075.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T020",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6177129.0
+            ],
+            [
+              417000.0000000001,
+              6177129.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6177129.0
+      ],
+      "exit": [
+        417000.0000000001,
+        6177129.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6177129.0
+        ],
+        [
+          417000.0000000001,
+          6177129.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T021",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000001,
+              6177183.0
+            ],
+            [
+              412000.0000000003,
+              6177183.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000001,
+        6177183.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6177183.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000001,
+          6177183.0
+        ],
+        [
+          412000.0000000003,
+          6177183.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T022",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6177237.0
+            ],
+            [
+              417000.0000000001,
+              6177237.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6177237.0
+      ],
+      "exit": [
+        417000.0000000001,
+        6177237.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6177237.0
+        ],
+        [
+          417000.0000000001,
+          6177237.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T023",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000001,
+              6177291.0
+            ],
+            [
+              412000.0000000003,
+              6177291.0
+            ]
+          ],
+          "length_m": 4999.999999999825,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000001,
+        6177291.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6177291.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000001,
+          6177291.0
+        ],
+        [
+          412000.0000000003,
+          6177291.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T024",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6177345.0
+            ],
+            [
+              417000.0000000001,
+              6177345.0
+            ]
+          ],
+          "length_m": 4999.999999999884,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6177345.0
+      ],
+      "exit": [
+        417000.0000000001,
+        6177345.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6177345.0
+        ],
+        [
+          417000.0000000001,
+          6177345.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T025",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000001,
+              6177399.0
+            ],
+            [
+              412000.00000000023,
+              6177399.0
+            ]
+          ],
+          "length_m": 4999.999999999884,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000001,
+        6177399.0
+      ],
+      "exit": [
+        412000.00000000023,
+        6177399.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000001,
+          6177399.0
+        ],
+        [
+          412000.00000000023,
+          6177399.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T026",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6177453.0
+            ],
+            [
+              417000.0000000001,
+              6177453.0
+            ]
+          ],
+          "length_m": 4999.999999999884,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6177453.0
+      ],
+      "exit": [
+        417000.0000000001,
+        6177453.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6177453.0
+        ],
+        [
+          417000.0000000001,
+          6177453.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T027",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000001,
+              6177507.0
+            ],
+            [
+              412000.00000000023,
+              6177507.0
+            ]
+          ],
+          "length_m": 4999.999999999884,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000001,
+        6177507.0
+      ],
+      "exit": [
+        412000.00000000023,
+        6177507.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000001,
+          6177507.0
+        ],
+        [
+          412000.00000000023,
+          6177507.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T028",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6177561.0
+            ],
+            [
+              417000.0000000001,
+              6177561.0
+            ]
+          ],
+          "length_m": 4999.999999999884,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6177561.0
+      ],
+      "exit": [
+        417000.0000000001,
+        6177561.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6177561.0
+        ],
+        [
+          417000.0000000001,
+          6177561.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T029",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000001,
+              6177615.0
+            ],
+            [
+              412000.00000000023,
+              6177615.0
+            ]
+          ],
+          "length_m": 4999.999999999884,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000001,
+        6177615.0
+      ],
+      "exit": [
+        412000.00000000023,
+        6177615.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000001,
+          6177615.0
+        ],
+        [
+          412000.00000000023,
+          6177615.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T030",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6177669.0
+            ],
+            [
+              417000.0000000001,
+              6177669.0
+            ]
+          ],
+          "length_m": 4999.999999999884,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6177669.0
+      ],
+      "exit": [
+        417000.0000000001,
+        6177669.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6177669.0
+        ],
+        [
+          417000.0000000001,
+          6177669.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T031",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000001,
+              6177723.0
+            ],
+            [
+              412000.00000000023,
+              6177723.0
+            ]
+          ],
+          "length_m": 4999.999999999884,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000001,
+        6177723.0
+      ],
+      "exit": [
+        412000.00000000023,
+        6177723.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000001,
+          6177723.0
+        ],
+        [
+          412000.00000000023,
+          6177723.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T032",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6177777.0
+            ],
+            [
+              417000.0000000002,
+              6177777.0
+            ]
+          ],
+          "length_m": 4999.999999999942,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999942,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6177777.0
+      ],
+      "exit": [
+        417000.0000000002,
+        6177777.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6177777.0
+        ],
+        [
+          417000.0000000002,
+          6177777.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T033",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000002,
+              6177831.0
+            ],
+            [
+              412000.00000000023,
+              6177831.0
+            ]
+          ],
+          "length_m": 4999.999999999942,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999942,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000002,
+        6177831.0
+      ],
+      "exit": [
+        412000.00000000023,
+        6177831.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000002,
+          6177831.0
+        ],
+        [
+          412000.00000000023,
+          6177831.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T034",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6177885.0
+            ],
+            [
+              417000.0000000002,
+              6177885.0
+            ]
+          ],
+          "length_m": 4999.999999999942,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999942,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6177885.0
+      ],
+      "exit": [
+        417000.0000000002,
+        6177885.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6177885.0
+        ],
+        [
+          417000.0000000002,
+          6177885.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T035",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000002,
+              6177939.0
+            ],
+            [
+              412000.00000000023,
+              6177939.0
+            ]
+          ],
+          "length_m": 4999.999999999942,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999942,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000002,
+        6177939.0
+      ],
+      "exit": [
+        412000.00000000023,
+        6177939.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000002,
+          6177939.0
+        ],
+        [
+          412000.00000000023,
+          6177939.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T036",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6177993.0
+            ],
+            [
+              417000.0000000002,
+              6177993.0
+            ]
+          ],
+          "length_m": 4999.999999999942,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999942,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6177993.0
+      ],
+      "exit": [
+        417000.0000000002,
+        6177993.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6177993.0
+        ],
+        [
+          417000.0000000002,
+          6177993.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T037",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000002,
+              6178047.0
+            ],
+            [
+              412000.00000000023,
+              6178047.0
+            ]
+          ],
+          "length_m": 4999.999999999942,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999942,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000002,
+        6178047.0
+      ],
+      "exit": [
+        412000.00000000023,
+        6178047.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000002,
+          6178047.0
+        ],
+        [
+          412000.00000000023,
+          6178047.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T038",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6178101.0
+            ],
+            [
+              417000.0000000002,
+              6178101.0
+            ]
+          ],
+          "length_m": 4999.999999999942,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999942,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6178101.0
+      ],
+      "exit": [
+        417000.0000000002,
+        6178101.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6178101.0
+        ],
+        [
+          417000.0000000002,
+          6178101.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T039",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000002,
+              6178155.0
+            ],
+            [
+              412000.00000000023,
+              6178155.0
+            ]
+          ],
+          "length_m": 4999.999999999942,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 4999.999999999942,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000002,
+        6178155.0
+      ],
+      "exit": [
+        412000.00000000023,
+        6178155.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000002,
+          6178155.0
+        ],
+        [
+          412000.00000000023,
+          6178155.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T040",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6178209.0
+            ],
+            [
+              417000.0000000002,
+              6178209.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6178209.0
+      ],
+      "exit": [
+        417000.0000000002,
+        6178209.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6178209.0
+        ],
+        [
+          417000.0000000002,
+          6178209.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T041",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000002,
+              6178263.0
+            ],
+            [
+              412000.0000000002,
+              6178263.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000002,
+        6178263.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6178263.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000002,
+          6178263.0
+        ],
+        [
+          412000.0000000002,
+          6178263.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T042",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6178317.0
+            ],
+            [
+              417000.0000000002,
+              6178317.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6178317.0
+      ],
+      "exit": [
+        417000.0000000002,
+        6178317.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6178317.0
+        ],
+        [
+          417000.0000000002,
+          6178317.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T043",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000002,
+              6178371.0
+            ],
+            [
+              412000.0000000002,
+              6178371.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000002,
+        6178371.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6178371.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000002,
+          6178371.0
+        ],
+        [
+          412000.0000000002,
+          6178371.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T044",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6178425.0
+            ],
+            [
+              417000.0000000002,
+              6178425.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6178425.0
+      ],
+      "exit": [
+        417000.0000000002,
+        6178425.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6178425.0
+        ],
+        [
+          417000.0000000002,
+          6178425.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T045",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000002,
+              6178479.0
+            ],
+            [
+              412000.0000000002,
+              6178479.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000002,
+        6178479.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6178479.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000002,
+          6178479.0
+        ],
+        [
+          412000.0000000002,
+          6178479.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T046",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6178533.0
+            ],
+            [
+              417000.0000000002,
+              6178533.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6178533.0
+      ],
+      "exit": [
+        417000.0000000002,
+        6178533.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6178533.0
+        ],
+        [
+          417000.0000000002,
+          6178533.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T047",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000002,
+              6178587.0
+            ],
+            [
+              412000.0000000002,
+              6178587.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000002,
+        6178587.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6178587.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000002,
+          6178587.0
+        ],
+        [
+          412000.0000000002,
+          6178587.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T048",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6178641.0
+            ],
+            [
+              417000.0000000002,
+              6178641.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6178641.0
+      ],
+      "exit": [
+        417000.0000000002,
+        6178641.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6178641.0
+        ],
+        [
+          417000.0000000002,
+          6178641.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T049",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000002,
+              6178695.0
+            ],
+            [
+              412000.0000000002,
+              6178695.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000002,
+        6178695.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6178695.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000002,
+          6178695.0
+        ],
+        [
+          412000.0000000002,
+          6178695.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T050",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6178749.0
+            ],
+            [
+              417000.0000000002,
+              6178749.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6178749.0
+      ],
+      "exit": [
+        417000.0000000002,
+        6178749.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6178749.0
+        ],
+        [
+          417000.0000000002,
+          6178749.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T051",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000002,
+              6178803.0
+            ],
+            [
+              412000.0000000002,
+              6178803.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000002,
+        6178803.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6178803.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000002,
+          6178803.0
+        ],
+        [
+          412000.0000000002,
+          6178803.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T052",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6178857.0
+            ],
+            [
+              417000.0000000002,
+              6178857.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6178857.0
+      ],
+      "exit": [
+        417000.0000000002,
+        6178857.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6178857.0
+        ],
+        [
+          417000.0000000002,
+          6178857.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T053",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.0000000002,
+              6178911.0
+            ],
+            [
+              412000.0000000002,
+              6178911.0
+            ]
+          ],
+          "length_m": 5000.0,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.0000000002,
+        6178911.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6178911.0
+      ],
+      "geom_coords": [
+        [
+          417000.0000000002,
+          6178911.0
+        ],
+        [
+          412000.0000000002,
+          6178911.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T054",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6178965.0
+            ],
+            [
+              417000.00000000023,
+              6178965.0
+            ]
+          ],
+          "length_m": 5000.000000000058,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.000000000058,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6178965.0
+      ],
+      "exit": [
+        417000.00000000023,
+        6178965.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6178965.0
+        ],
+        [
+          417000.00000000023,
+          6178965.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T055",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.00000000023,
+              6179019.0
+            ],
+            [
+              412000.0000000002,
+              6179019.0
+            ]
+          ],
+          "length_m": 5000.000000000058,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.000000000058,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.00000000023,
+        6179019.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6179019.0
+      ],
+      "geom_coords": [
+        [
+          417000.00000000023,
+          6179019.0
+        ],
+        [
+          412000.0000000002,
+          6179019.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T056",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6179073.0
+            ],
+            [
+              417000.00000000023,
+              6179073.0
+            ]
+          ],
+          "length_m": 5000.000000000116,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.000000000116,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6179073.0
+      ],
+      "exit": [
+        417000.00000000023,
+        6179073.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6179073.0
+        ],
+        [
+          417000.00000000023,
+          6179073.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T057",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.00000000023,
+              6179127.0
+            ],
+            [
+              412000.0000000001,
+              6179127.0
+            ]
+          ],
+          "length_m": 5000.000000000116,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.000000000116,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.00000000023,
+        6179127.0
+      ],
+      "exit": [
+        412000.0000000001,
+        6179127.0
+      ],
+      "geom_coords": [
+        [
+          417000.00000000023,
+          6179127.0
+        ],
+        [
+          412000.0000000001,
+          6179127.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T058",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6179181.0
+            ],
+            [
+              417000.00000000023,
+              6179181.0
+            ]
+          ],
+          "length_m": 5000.000000000116,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.000000000116,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6179181.0
+      ],
+      "exit": [
+        417000.00000000023,
+        6179181.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6179181.0
+        ],
+        [
+          417000.00000000023,
+          6179181.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T059",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.00000000023,
+              6179235.0
+            ],
+            [
+              412000.0000000001,
+              6179235.0
+            ]
+          ],
+          "length_m": 5000.000000000116,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.000000000116,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.00000000023,
+        6179235.0
+      ],
+      "exit": [
+        412000.0000000001,
+        6179235.0
+      ],
+      "geom_coords": [
+        [
+          417000.00000000023,
+          6179235.0
+        ],
+        [
+          412000.0000000001,
+          6179235.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T060",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6179289.0
+            ],
+            [
+              417000.00000000023,
+              6179289.0
+            ]
+          ],
+          "length_m": 5000.000000000116,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.000000000116,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6179289.0
+      ],
+      "exit": [
+        417000.00000000023,
+        6179289.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6179289.0
+        ],
+        [
+          417000.00000000023,
+          6179289.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T061",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.00000000023,
+              6179343.0
+            ],
+            [
+              412000.0000000001,
+              6179343.0
+            ]
+          ],
+          "length_m": 5000.000000000116,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.000000000116,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.00000000023,
+        6179343.0
+      ],
+      "exit": [
+        412000.0000000001,
+        6179343.0
+      ],
+      "geom_coords": [
+        [
+          417000.00000000023,
+          6179343.0
+        ],
+        [
+          412000.0000000001,
+          6179343.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T062",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6179397.0
+            ],
+            [
+              417000.00000000023,
+              6179397.0
+            ]
+          ],
+          "length_m": 5000.000000000116,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.000000000116,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6179397.0
+      ],
+      "exit": [
+        417000.00000000023,
+        6179397.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6179397.0
+        ],
+        [
+          417000.00000000023,
+          6179397.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_T#T063",
+      "job_id": "RGB_T",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417000.00000000023,
+              6179451.0
+            ],
+            [
+              412000.0000000001,
+              6179451.0
+            ]
+          ],
+          "length_m": 5000.000000000116,
+          "job_id": "RGB_T"
+        }
+      ],
+      "survey_length_m": 5000.000000000116,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417000.00000000023,
+        6179451.0
+      ],
+      "exit": [
+        412000.0000000001,
+        6179451.0
+      ],
+      "geom_coords": [
+        [
+          417000.00000000023,
+          6179451.0
+        ],
+        [
+          412000.0000000001,
+          6179451.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    }
+  ],
+  "feasibility": {
+    "eligible_uav_ids_by_task": {
+      "RGB_T#T000": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T001": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T002": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T003": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T004": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T005": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T006": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T007": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T008": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T009": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T010": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T011": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T012": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T013": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T014": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T015": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T016": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T017": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T018": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T019": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T020": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T021": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T022": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T023": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T024": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T025": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T026": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T027": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T028": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T029": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T030": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T031": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T032": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T033": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T034": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T035": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T036": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T037": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T038": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T039": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T040": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T041": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T042": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T043": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T044": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T045": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T046": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T047": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T048": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T049": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T050": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T051": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T052": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T053": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T054": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T055": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T056": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T057": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T058": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T059": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T060": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T061": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T062": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "RGB_T#T063": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ]
+    },
+    "ineligible_reasons": {
+      "RGB_T#T000:GS801_04": "payload_class_mismatch",
+      "RGB_T#T001:GS801_04": "payload_class_mismatch",
+      "RGB_T#T002:GS801_04": "payload_class_mismatch",
+      "RGB_T#T003:GS801_04": "payload_class_mismatch",
+      "RGB_T#T004:GS801_04": "payload_class_mismatch",
+      "RGB_T#T005:GS801_04": "payload_class_mismatch",
+      "RGB_T#T006:GS801_04": "payload_class_mismatch",
+      "RGB_T#T007:GS801_04": "payload_class_mismatch",
+      "RGB_T#T008:GS801_04": "payload_class_mismatch",
+      "RGB_T#T009:GS801_04": "payload_class_mismatch",
+      "RGB_T#T010:GS801_04": "payload_class_mismatch",
+      "RGB_T#T011:GS801_04": "payload_class_mismatch",
+      "RGB_T#T012:GS801_04": "payload_class_mismatch",
+      "RGB_T#T013:GS801_04": "payload_class_mismatch",
+      "RGB_T#T014:GS801_04": "payload_class_mismatch",
+      "RGB_T#T015:GS801_04": "payload_class_mismatch",
+      "RGB_T#T016:GS801_04": "payload_class_mismatch",
+      "RGB_T#T017:GS801_04": "payload_class_mismatch",
+      "RGB_T#T018:GS801_04": "payload_class_mismatch",
+      "RGB_T#T019:GS801_04": "payload_class_mismatch",
+      "RGB_T#T020:GS801_04": "payload_class_mismatch",
+      "RGB_T#T021:GS801_04": "payload_class_mismatch",
+      "RGB_T#T022:GS801_04": "payload_class_mismatch",
+      "RGB_T#T023:GS801_04": "payload_class_mismatch",
+      "RGB_T#T024:GS801_04": "payload_class_mismatch",
+      "RGB_T#T025:GS801_04": "payload_class_mismatch",
+      "RGB_T#T026:GS801_04": "payload_class_mismatch",
+      "RGB_T#T027:GS801_04": "payload_class_mismatch",
+      "RGB_T#T028:GS801_04": "payload_class_mismatch",
+      "RGB_T#T029:GS801_04": "payload_class_mismatch",
+      "RGB_T#T030:GS801_04": "payload_class_mismatch",
+      "RGB_T#T031:GS801_04": "payload_class_mismatch",
+      "RGB_T#T032:GS801_04": "payload_class_mismatch",
+      "RGB_T#T033:GS801_04": "payload_class_mismatch",
+      "RGB_T#T034:GS801_04": "payload_class_mismatch",
+      "RGB_T#T035:GS801_04": "payload_class_mismatch",
+      "RGB_T#T036:GS801_04": "payload_class_mismatch",
+      "RGB_T#T037:GS801_04": "payload_class_mismatch",
+      "RGB_T#T038:GS801_04": "payload_class_mismatch",
+      "RGB_T#T039:GS801_04": "payload_class_mismatch",
+      "RGB_T#T040:GS801_04": "payload_class_mismatch",
+      "RGB_T#T041:GS801_04": "payload_class_mismatch",
+      "RGB_T#T042:GS801_04": "payload_class_mismatch",
+      "RGB_T#T043:GS801_04": "payload_class_mismatch",
+      "RGB_T#T044:GS801_04": "payload_class_mismatch",
+      "RGB_T#T045:GS801_04": "payload_class_mismatch",
+      "RGB_T#T046:GS801_04": "payload_class_mismatch",
+      "RGB_T#T047:GS801_04": "payload_class_mismatch",
+      "RGB_T#T048:GS801_04": "payload_class_mismatch",
+      "RGB_T#T049:GS801_04": "payload_class_mismatch",
+      "RGB_T#T050:GS801_04": "payload_class_mismatch",
+      "RGB_T#T051:GS801_04": "payload_class_mismatch",
+      "RGB_T#T052:GS801_04": "payload_class_mismatch",
+      "RGB_T#T053:GS801_04": "payload_class_mismatch",
+      "RGB_T#T054:GS801_04": "payload_class_mismatch",
+      "RGB_T#T055:GS801_04": "payload_class_mismatch",
+      "RGB_T#T056:GS801_04": "payload_class_mismatch",
+      "RGB_T#T057:GS801_04": "payload_class_mismatch",
+      "RGB_T#T058:GS801_04": "payload_class_mismatch",
+      "RGB_T#T059:GS801_04": "payload_class_mismatch",
+      "RGB_T#T060:GS801_04": "payload_class_mismatch",
+      "RGB_T#T061:GS801_04": "payload_class_mismatch",
+      "RGB_T#T062:GS801_04": "payload_class_mismatch",
+      "RGB_T#T063:GS801_04": "payload_class_mismatch"
+    },
+    "ineligible_reasons_human": {
+      "RGB_T#T000:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T001:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T002:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T003:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T004:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T005:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T006:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T007:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T008:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T009:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T010:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T011:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T012:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T013:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T014:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T015:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T016:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T017:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T018:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T019:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T020:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T021:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T022:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T023:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T024:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T025:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T026:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T027:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T028:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T029:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T030:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T031:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T032:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T033:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T034:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T035:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T036:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T037:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T038:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T039:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T040:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T041:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T042:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T043:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T044:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T045:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T046:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T047:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T048:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T049:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T050:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T051:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T052:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T053:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T054:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T055:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T056:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T057:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T058:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T059:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T060:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T061:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T062:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "RGB_T#T063:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта"
+    }
+  },
+  "coverage_meta": {
+    "coverage_percent": 100.0,
+    "task_count": 64,
+    "per_job": [
+      {
+        "job_id": "RGB_T",
+        "task_count": 64,
+        "sweep_angle_deg": 0.0,
+        "coverage_percent": 100.0,
+        "eligible_uavs": [
+          "GS201_01",
+          "GS701_02",
+          "GS401_03"
+        ]
+      }
+    ],
+    "sweep_candidates": {
+      "RGB_T": [
+        {
+          "label": "wind_aligned",
+          "angle_deg": 0.0,
+          "survey_length_m": 320000.0,
+          "turn_count": 63,
+          "score": 353090.1,
+          "maneuver_violations": 0,
+          "selected": true
+        },
+        {
+          "label": "grid_15",
+          "angle_deg": 15.0,
+          "survey_length_m": 324078.7,
+          "turn_count": 85,
+          "score": 376596.0,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_165",
+          "angle_deg": 165.0,
+          "survey_length_m": 324078.7,
+          "turn_count": 85,
+          "score": 376596.0,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "wind_perpendicular",
+          "angle_deg": 90.0,
+          "survey_length_m": 322000.0,
+          "turn_count": 91,
+          "score": 385896.7,
+          "maneuver_violations": 0,
+          "selected": false
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "h1": {
+      "energy_hints": [
+        {
+          "scope": "mission",
+          "uav_id": "GS201_01",
+          "survey_length_m": 320000.0,
+          "need_flight_s": 14545.5,
+          "usable_endurance_s": 6912.0,
+          "sorties_hint": 3
+        },
+        {
+          "scope": "mission",
+          "uav_id": "GS401_03",
+          "survey_length_m": 320000.0,
+          "need_flight_s": 40000.0,
+          "usable_endurance_s": 2304.0,
+          "sorties_hint": 18
+        },
+        {
+          "scope": "mission",
+          "uav_id": "GS801_04",
+          "survey_length_m": 320000.0,
+          "need_flight_s": 26666.7,
+          "usable_endurance_s": 1536.0,
+          "sorties_hint": 18
+        }
+      ],
+      "reserve_sites": [],
+      "terrain": {
+        "dem_available": true,
+        "warning_count": 60,
+        "warnings": [
+          "M3: task RGB_T#T000 local AGL swing 25.9m (GSD/overlap will drift on hills)",
+          "M3: task RGB_T#T001 local AGL swing 28.3m (GSD/overlap will drift on hills)",
+          "M3: task RGB_T#T002 local AGL swing 30.6m (GSD/overlap will drift on hills)",
+          "M3: task RGB_T#T003 ground relief 32.9m vs AGL 123m (consider terrain-following in autopilot)",
+          "M3: task RGB_T#T003 local AGL swing 32.9m (GSD/overlap will drift on hills)",
+          "M3: task RGB_T#T004 ground relief 35.1m vs AGL 123m (consider terrain-following in autopilot)",
+          "M3: task RGB_T#T004 local AGL swing 35.1m (GSD/overlap will drift on hills)",
+          "M3: task RGB_T#T005 ground relief 36.1m vs AGL 123m (consider terrain-following in autopilot)",
+          "M3: task RGB_T#T005 local AGL swing 36.1m (GSD/overlap will drift on hills)",
+          "M3: task RGB_T#T006 ground relief 38.0m vs AGL 123m (consider terrain-following in autopilot)",
+          "M3: task RGB_T#T006 local AGL swing 38.0m (GSD/overlap will drift on hills)",
+          "M3: task RGB_T#T007 ground relief 39.8m vs AGL 123m (consider terrain-following in autopilot)",
+          "M3: task RGB_T#T007 local AGL swing 39.8m (GSD/overlap will drift on hills)",
+          "M3: task RGB_T#T008 ground relief 41.4m vs AGL 123m (consider terrain-following in autopilot)",
+          "M3: task RGB_T#T008 local AGL swing 41.4m (GSD/overlap will drift on hills)",
+          "M3: task RGB_T#T009 ground relief 42.1m vs AGL 123m (consider terrain-following in autopilot)",
+          "M3: task RGB_T#T009 local AGL swing 42.1m (GSD/overlap will drift on hills)",
+          "M3: task RGB_T#T010 ground relief 43.4m vs AGL 123m (consider terrain-following in autopilot)",
+          "M3: task RGB_T#T010 local AGL swing 43.4m (GSD/overlap will drift on hills)",
+          "M3: task RGB_T#T011 ground relief 44.4m vs AGL 123m (consider terrain-following in autopilot)"
+        ],
+        "note": "planning checks only; terrain-following is autopilot/H3"
+      }
+    }
+  },
+  "warnings": [
+    "site BASE_W: outside survey area (+50m slack)",
+    "site BASE_E: outside survey area (+50m slack)",
+    "M1: 1 temporal airspace zone(s) loaded (H1 does not schedule around windows; H2/H3)",
+    "M3: task RGB_T#T000 local AGL swing 25.9m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T001 local AGL swing 28.3m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T002 local AGL swing 30.6m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T003 ground relief 32.9m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T003 local AGL swing 32.9m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T004 ground relief 35.1m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T004 local AGL swing 35.1m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T005 ground relief 36.1m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T005 local AGL swing 36.1m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T006 ground relief 38.0m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T006 local AGL swing 38.0m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T007 ground relief 39.8m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T007 local AGL swing 39.8m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T008 ground relief 41.4m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T008 local AGL swing 41.4m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T009 ground relief 42.1m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T009 local AGL swing 42.1m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T010 ground relief 43.4m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T010 local AGL swing 43.4m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T011 ground relief 44.4m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T011 local AGL swing 44.4m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T012 ground relief 45.1m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T012 local AGL swing 45.1m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T013 ground relief 45.6m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T013 local AGL swing 45.6m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T014 ground relief 45.8m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T014 local AGL swing 45.8m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T015 ground relief 45.8m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T015 local AGL swing 45.8m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T016 ground relief 45.5m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T016 local AGL swing 45.5m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T017 ground relief 44.9m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T017 local AGL swing 44.9m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T018 ground relief 44.0m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T018 local AGL swing 44.0m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T019 ground relief 43.5m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T019 local AGL swing 43.5m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T020 ground relief 42.1m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T020 local AGL swing 42.1m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T021 ground relief 40.5m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T021 local AGL swing 40.5m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T022 ground relief 38.6m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T022 local AGL swing 38.6m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T023 ground relief 36.4m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T023 local AGL swing 36.4m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T024 ground relief 34.0m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T024 local AGL swing 34.0m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T025 ground relief 32.7m vs AGL 123m (consider terrain-following in autopilot)",
+    "M3: task RGB_T#T025 local AGL swing 32.7m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T026 local AGL swing 30.0m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T027 local AGL swing 27.0m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T047 local AGL swing 25.2m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T048 local AGL swing 26.3m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T049 local AGL swing 26.7m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T050 local AGL swing 27.2m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T051 local AGL swing 27.5m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T052 local AGL swing 27.3m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T053 local AGL swing 26.9m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T054 local AGL swing 26.1m (GSD/overlap will drift on hills)",
+    "M3: task RGB_T#T055 local AGL swing 25.6m (GSD/overlap will drift on hills)",
+    "S04: mission ≈3 sorties on GS201_01 (total survey 320.0 km → 242 min vs usable 115 min) — multi-sortie, not H1 schedule",
+    "S04: mission ≈18 sorties on GS401_03 (total survey 320.0 km → 667 min vs usable 38 min) — multi-sortie, not H1 schedule",
+    "S04: mission ≈18 sorties on GS801_04 (total survey 320.0 km → 444 min vs usable 26 min) — multi-sortie, not H1 schedule",
+    "S07: no reserve landing site in scene"
+  ]
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "U02_S1",
+    "uav_id": "U02",
+    "index": 1,
+    "start_site": "BASE_1",
+    "landing_site": "BASE_1",
+    "t_start": "2026-06-15T08:30:00+03:00",
+    "t_end": "2026-06-15T10:27:08.651727+03:00",
+    "flight_time_s": 7028.651727,
+    "distance_m": 170905.01277231262
+  },
+  {
+    "id": "U04_S1",
+    "uav_id": "U04",
+    "index": 1,
+    "start_site": "BASE_3",
+    "landing_site": "BASE_3",
+    "t_start": "2026-06-15T08:30:00+03:00",
+    "t_end": "2026-06-15T09:57:44.371889+03:00",
+    "flight_time_s": 5264.371889,
+    "distance_m": 126217.58696697085
+  }
+]

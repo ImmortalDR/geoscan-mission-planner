@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.50773228996215,
+          55.69973139183856
+        ]
+      },
+      "properties": {
+        "id": "WEST",
+        "role": "both",
+        "candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.55226808383892,
+          55.70026457151591
+        ]
+      },
+      "properties": {
+        "id": "EAST",
+        "role": "both",
+        "candidate": false
+      }
+    }
+  ]
+}

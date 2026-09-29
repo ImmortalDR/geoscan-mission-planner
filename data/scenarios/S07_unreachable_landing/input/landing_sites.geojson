@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.52045664959698,
+          55.69988537649114
+        ]
+      },
+      "properties": {
+        "id": "START",
+        "role": "start",
+        "candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.86405734071318,
+          55.70354464789666
+        ]
+      },
+      "properties": {
+        "id": "END",
+        "role": "landing",
+        "candidate": false
+      }
+    }
+  ]
+}

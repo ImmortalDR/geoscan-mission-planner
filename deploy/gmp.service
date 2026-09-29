@@ -1,0 +1,16 @@
+[Unit]
+Description=Geoscan Mission Planner web service
+After=network.target postgresql.service
+
+[Service]
+Type=simple
+WorkingDirectory=/root/geoscan-mission-planner
+Environment=PYTHONPATH=/root/geoscan-mission-planner/src
+# Legacy service: set GMP_DSN in a private file outside the repository.
+EnvironmentFile=/etc/geoscan/legacy.env
+ExecStart=/root/geoscan-mission-planner/.venv/bin/python /root/geoscan-mission-planner/scripts/serve.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

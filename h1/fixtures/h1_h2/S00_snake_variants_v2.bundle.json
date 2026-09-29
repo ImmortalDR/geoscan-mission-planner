@@ -1,0 +1,252 @@
+{
+  "schema_version": "gmp.h1_h2.v2",
+  "scene_id": "S00_snake_variants_v2",
+  "generated_at": "2026-09-20T00:00:00Z",
+  "source": "synthetic",
+  "crs": {
+    "metric_epsg": 32637,
+    "axis": "ENU_metres"
+  },
+  "fleet": [
+    {
+      "id": "u0",
+      "model": "geoscan_201",
+      "uav_class": "multirotor",
+      "ground_speed_ms": 10.0,
+      "operational_endurance_min": 30,
+      "max_wind_ms": 10.0,
+      "payload_classes": [
+        "rgb"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 10.0,
+      "vertical_separation_m": 10.0,
+      "turnaround_buffer_m": 0.0,
+      "start_site": "base",
+      "landing_site": "base",
+      "takeoff_time_s": 5.0,
+      "landing_time_s": 5.0,
+      "service_time_s": 30.0,
+      "cruise_agl_m": 60.0
+    }
+  ],
+  "sites": [
+    {
+      "id": "base",
+      "x": 500000.0,
+      "y": 6000000.0,
+      "role": "both",
+      "candidate": false
+    }
+  ],
+  "mission": {
+    "objectives": [
+      "makespan",
+      "total_flight"
+    ],
+    "window_start": "2026-09-20T00:00:00Z",
+    "window_end": "2026-09-20T08:00:00Z",
+    "wind": {
+      "speed_ms": 0.0,
+      "direction_deg_from": 0.0
+    },
+    "allow_different_start_end": false,
+    "require_complete_coverage": true,
+    "require_schedule": true
+  },
+  "tasks": [
+    {
+      "id": "t0",
+      "job_id": "job",
+      "payload_class": "rgb",
+      "payload_profile_id": "rgb",
+      "agl_m": 60.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              500100.0,
+              6000000.0
+            ],
+            [
+              500100.0,
+              6000400.0
+            ]
+          ],
+          "length_m": 400.0,
+          "job_id": "job"
+        },
+        {
+          "coords": [
+            [
+              500200.0,
+              6000500.0
+            ],
+            [
+              500200.0,
+              6000000.0
+            ]
+          ],
+          "length_m": 500.0,
+          "job_id": "job"
+        }
+      ],
+      "survey_length_m": 900.0,
+      "turn_count": 1,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        500100.0,
+        6000000.0
+      ],
+      "exit": [
+        500200.0,
+        6000000.0
+      ],
+      "geom_coords": [
+        [
+          500100.0,
+          6000000.0
+        ],
+        [
+          500100.0,
+          6000400.0
+        ],
+        [
+          500200.0,
+          6000500.0
+        ],
+        [
+          500200.0,
+          6000000.0
+        ]
+      ],
+      "internal_transition_m": 141.4213562373095,
+      "fixed_wing_safe": true,
+      "notes": [],
+      "route_variants": [
+        {
+          "id": "primary",
+          "geom_coords": [
+            [
+              500100.0,
+              6000000.0
+            ],
+            [
+              500100.0,
+              6000400.0
+            ],
+            [
+              500200.0,
+              6000500.0
+            ],
+            [
+              500200.0,
+              6000000.0
+            ]
+          ],
+          "internal_transition_m": 141.4213562373095,
+          "fixed_wing_safe": true
+        },
+        {
+          "id": "alternate",
+          "geom_coords": [
+            [
+              500100.0,
+              6000400.0
+            ],
+            [
+              500100.0,
+              6000000.0
+            ],
+            [
+              500200.0,
+              6000000.0
+            ],
+            [
+              500200.0,
+              6000500.0
+            ]
+          ],
+          "internal_transition_m": 100.0,
+          "fixed_wing_safe": true
+        }
+      ]
+    },
+    {
+      "id": "t1",
+      "job_id": "job",
+      "payload_class": "rgb",
+      "payload_profile_id": "rgb",
+      "agl_m": 60.0,
+      "transects": [
+        {
+          "coords": [
+            [
+              500100.0,
+              6000000.0
+            ],
+            [
+              500100.0,
+              6000400.0
+            ]
+          ],
+          "length_m": 400.0,
+          "job_id": "job"
+        }
+      ],
+      "survey_length_m": 400.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        500100.0,
+        6000000.0
+      ],
+      "exit": [
+        500100.0,
+        6000400.0
+      ],
+      "geom_coords": [
+        [
+          500100.0,
+          6000000.0
+        ],
+        [
+          500100.0,
+          6000400.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": [],
+      "route_variants": [
+        {
+          "id": "primary",
+          "geom_coords": [
+            [
+              500100.0,
+              6000000.0
+            ],
+            [
+              500100.0,
+              6000400.0
+            ]
+          ],
+          "internal_transition_m": 0,
+          "fixed_wing_safe": true
+        }
+      ]
+    }
+  ],
+  "feasibility": {
+    "eligible_uav_ids_by_task": {
+      "t0": [
+        "u0"
+      ],
+      "t1": [
+        "u0"
+      ]
+    },
+    "ineligible_reasons": {}
+  },
+  "warnings": []
+}

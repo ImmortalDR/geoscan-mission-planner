@@ -1,0 +1,70 @@
+{
+  "schema_version": "gmp.h1_h2.v1",
+  "scene_id": "S00_contract_smoke",
+  "crs": { "metric_epsg": 32637, "axis": "ENU_metres" },
+  "generated_at": "2026-09-19T12:00:00Z",
+  "source": "fixture",
+  "fleet": [
+    {
+      "id": "uav1",
+      "model": "geoscan_gemini",
+      "uav_class": "multirotor",
+      "ground_speed_ms": 12.0,
+      "operational_endurance_min": 35.0,
+      "max_wind_ms": 10.0,
+      "payload_classes": ["rgb"],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50.0,
+      "vertical_separation_m": 30.0,
+      "turnaround_buffer_m": 10.0,
+      "start_site": "pad_a",
+      "landing_site": "pad_a",
+      "takeoff_time_s": 60,
+      "landing_time_s": 60,
+      "service_time_s": 480,
+      "cruise_agl_m": 120
+    }
+  ],
+  "sites": [
+    { "id": "pad_a", "x": 500.0, "y": 500.0, "role": "both", "candidate": false }
+  ],
+  "mission": {
+    "objectives": ["makespan", "total_flight"],
+    "window_start": null,
+    "window_end": null,
+    "wind": { "speed_ms": 3.0, "direction_deg_from": 270.0 },
+    "allow_different_start_end": false,
+    "require_complete_coverage": true,
+    "require_schedule": true
+  },
+  "tasks": [
+    {
+      "id": "job1#T000",
+      "job_id": "job1",
+      "payload_class": "rgb",
+      "payload_profile_id": "rgb_default",
+      "agl_m": 120.0,
+      "transects": [
+        {
+          "coords": [[1000.0, 1000.0], [1000.0, 1400.0]],
+          "length_m": 400.0,
+          "job_id": "job1"
+        }
+      ],
+      "survey_length_m": 400.0,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [1000.0, 1000.0],
+      "exit": [1000.0, 1400.0],
+      "geom_coords": [[1000.0, 1000.0], [1000.0, 1400.0]],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    }
+  ],
+  "feasibility": {
+    "eligible_uav_ids_by_task": { "job1#T000": ["uav1"] },
+    "ineligible_reasons": {}
+  },
+  "warnings": []
+}

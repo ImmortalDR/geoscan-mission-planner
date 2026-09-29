@@ -1,0 +1,17 @@
+{
+  "id": "S05_multi_uav",
+  "title": "Two payloads and opposing launch sites",
+  "expected_status": "SAFE",
+  "objectives": [
+    "makespan"
+  ],
+  "real_elevation": false,
+  "checks": {
+    "minimum_used_uavs": 2
+  },
+  "proof": null,
+  "role": "multi_uav",
+  "purpose_ru": "Согласование двух БВС с разных площадок",
+  "catalog_badge_ru": "Группа · 2 БВС",
+  "fleet_count": 2
+}

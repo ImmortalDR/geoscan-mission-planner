@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6094518741979,
+          55.7416303523518
+        ]
+      },
+      "properties": {
+        "id": "START_W",
+        "layer": "landing_site",
+        "role": "start"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.73047266433575,
+          55.74294043920598
+        ]
+      },
+      "properties": {
+        "id": "LAND_E",
+        "layer": "landing_site",
+        "role": "landing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.67097319180589,
+          55.75938501553986
+        ]
+      },
+      "properties": {
+        "id": "RES",
+        "layer": "landing_site",
+        "role": "reserve"
+      }
+    }
+  ]
+}

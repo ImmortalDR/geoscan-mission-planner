@@ -1,0 +1,386 @@
+{
+  "manifest_mismatches": [],
+  "pairs": [
+    {
+      "pair": "scenarios/S00_smoke_rgb/expected/makespan/result.json",
+      "passed": true,
+      "status": "SAFE",
+      "seconds": 1.457,
+      "certificate": true,
+      "metrics": {
+        "distance_m": 9811.905241550212,
+        "total_flight_s": 1165.8751769065857,
+        "makespan_s": 1165.8751769065857,
+        "airborne_span_s": 1165.8751769065857,
+        "coverage_percent": 100.0,
+        "required_area_m2": 800000.0000011409,
+        "covered_area_m2": 800000.0000011409,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 800000.0000011409,
+            "covered_area_m2": 800000.0000011409,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S01_msu_100km2/expected/makespan/result.json",
+      "passed": true,
+      "status": "SAFE",
+      "seconds": 17.11,
+      "certificate": true,
+      "metrics": {
+        "distance_m": 297122.59973929095,
+        "total_flight_s": 12293.023616075516,
+        "makespan_s": 7028.651726961136,
+        "airborne_span_s": 7028.651726961136,
+        "coverage_percent": 100.0,
+        "required_area_m2": 100000000.00000146,
+        "covered_area_m2": 100000000.00000146,
+        "sortie_count": 2,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 100000000.00000146,
+            "covered_area_m2": 100000000.00000146,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S01_msu_100km2/expected/total_flight/result.json",
+      "passed": true,
+      "status": "SAFE",
+      "seconds": 15.219,
+      "certificate": true,
+      "metrics": {
+        "distance_m": 295963.8622381112,
+        "total_flight_s": 11831.640350103378,
+        "makespan_s": 11831.640350103378,
+        "airborne_span_s": 11831.640350103378,
+        "coverage_percent": 100.0,
+        "required_area_m2": 100000000.00000146,
+        "covered_area_m2": 100000000.00000146,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 100000000.00000146,
+            "covered_area_m2": 100000000.00000146,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S02_peredelkino/expected/total_flight/result.json",
+      "passed": true,
+      "status": "SAFE",
+      "seconds": 2.094,
+      "certificate": true,
+      "metrics": {
+        "distance_m": 38794.84158826301,
+        "total_flight_s": 2344.089229106903,
+        "makespan_s": 2344.089229106903,
+        "airborne_span_s": 2344.089229106903,
+        "coverage_percent": 100.0,
+        "required_area_m2": 5480000.000000611,
+        "covered_area_m2": 5480000.000000611,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 5480000.000000611,
+            "covered_area_m2": 5480000.000000611,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S03_orekhovo_domodedovskaya/expected/makespan/result.json",
+      "passed": true,
+      "status": "SAFE",
+      "seconds": 3.554,
+      "certificate": true,
+      "metrics": {
+        "distance_m": 69579.23600977371,
+        "total_flight_s": 3409.8724529743195,
+        "makespan_s": 7039.8724529743195,
+        "airborne_span_s": 3409.8724529743195,
+        "coverage_percent": 99.99999999999999,
+        "required_area_m2": 12000000.000001602,
+        "covered_area_m2": 12000000.0000016,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 12000000.000001602,
+            "covered_area_m2": 12000000.0000016,
+            "coverage_percent": 99.99999999999999
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S04_multi_sortie/expected/makespan/result.json",
+      "passed": true,
+      "status": "SAFE",
+      "seconds": 3.786,
+      "certificate": true,
+      "metrics": {
+        "distance_m": 72996.97989399955,
+        "total_flight_s": 6923.082777023315,
+        "makespan_s": 9443.082777023315,
+        "airborne_span_s": 9443.082777023315,
+        "coverage_percent": 100.0,
+        "required_area_m2": 3360000.0000000815,
+        "covered_area_m2": 3360000.0000000815,
+        "sortie_count": 7,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 3360000.0000000815,
+            "covered_area_m2": 3360000.0000000815,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S05_multi_uav/expected/makespan/result.json",
+      "passed": true,
+      "status": "SAFE",
+      "seconds": 0.869,
+      "certificate": true,
+      "metrics": {
+        "distance_m": 15283.798925838062,
+        "total_flight_s": 1638.2221171855927,
+        "makespan_s": 932.9880061149597,
+        "airborne_span_s": 932.9880061149597,
+        "coverage_percent": 100.0,
+        "required_area_m2": 405000.00000017026,
+        "covered_area_m2": 405000.00000017026,
+        "sortie_count": 2,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 202500.00000018335,
+            "covered_area_m2": 202500.00000018335,
+            "coverage_percent": 100.0
+          },
+          "JOB_MS": {
+            "required_area_m2": 202499.9999999869,
+            "covered_area_m2": 202499.9999999869,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S06_alternate_site/alternative/expected/makespan/result.json",
+      "passed": true,
+      "status": "SAFE",
+      "seconds": 0.286,
+      "certificate": true,
+      "metrics": {
+        "distance_m": 4360.236034405,
+        "total_flight_s": 501.353049993515,
+        "makespan_s": 501.353049993515,
+        "airborne_span_s": 501.353049993515,
+        "coverage_percent": 100.0,
+        "required_area_m2": 249999.9999999709,
+        "covered_area_m2": 249999.9999999709,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 249999.9999999709,
+            "covered_area_m2": 249999.9999999709,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S06_alternate_site/expected/makespan/result.json",
+      "passed": true,
+      "status": "INFEASIBLE",
+      "seconds": 0.02,
+      "certificate": false,
+      "metrics": {
+        "proof_type": "unreachable_required_point",
+        "proof_verified": true,
+        "bounds": [
+          {
+            "uav_id": "U01",
+            "minimum_time_s": 1938.0844133831636,
+            "usable_time_s": 768.0
+          }
+        ],
+        "sensor_half_diagonal_m": 110.80309763410271,
+        "proof_scope": "entire_required_job",
+        "bound_model": "horizontal_distance_at_maximum_ground_speed"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S07_unreachable_landing/expected/makespan/result.json",
+      "passed": true,
+      "status": "INFEASIBLE",
+      "seconds": 0.024,
+      "certificate": false,
+      "metrics": {
+        "proof_type": "unreachable_required_point",
+        "proof_verified": true,
+        "bounds": [
+          {
+            "uav_id": "U01",
+            "minimum_time_s": 1738.2509412766,
+            "usable_time_s": 960.0
+          }
+        ],
+        "sensor_half_diagonal_m": 110.80309763410271,
+        "proof_scope": "entire_required_job",
+        "bound_model": "horizontal_distance_at_maximum_ground_speed"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S08_fixed_wing_nfz/expected/makespan/result.json",
+      "passed": true,
+      "status": "SAFE",
+      "seconds": 1.28,
+      "certificate": true,
+      "metrics": {
+        "distance_m": 16545.25914878087,
+        "total_flight_s": 1686.1362199783325,
+        "makespan_s": 1686.1362199783325,
+        "airborne_span_s": 1686.1362199783325,
+        "coverage_percent": 100.0,
+        "required_area_m2": 1200000.0000007625,
+        "covered_area_m2": 1200000.0000007625,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 1200000.0000007625,
+            "covered_area_m2": 1200000.0000007625,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S09_wind_refusal/expected/makespan/result.json",
+      "passed": true,
+      "status": "INFEASIBLE",
+      "seconds": 0.014,
+      "certificate": false,
+      "metrics": {
+        "proof_type": "wind_excludes_all",
+        "proof_verified": true,
+        "compatible_uavs": 1,
+        "wind_eligible_uavs": 0
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S10_different_start_end/expected/makespan/result.json",
+      "passed": true,
+      "status": "SAFE",
+      "seconds": 0.53,
+      "certificate": true,
+      "metrics": {
+        "distance_m": 12710.311981034522,
+        "total_flight_s": 1211.9412190914154,
+        "makespan_s": 1211.9412190914154,
+        "airborne_span_s": 1211.9412190914154,
+        "coverage_percent": 100.0,
+        "required_area_m2": 959999.9999993423,
+        "covered_area_m2": 959999.9999993423,
+        "sortie_count": 1,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 959999.9999993423,
+            "covered_area_m2": 959999.9999993423,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "violations": []
+    },
+    {
+      "pair": "scenarios/S11_payload_compatibility/expected/makespan/result.json",
+      "passed": true,
+      "status": "SAFE",
+      "seconds": 0.928,
+      "certificate": true,
+      "metrics": {
+        "distance_m": 15849.32933594775,
+        "total_flight_s": 2211.409682035446,
+        "makespan_s": 573.8619980812073,
+        "airborne_span_s": 573.8619980812073,
+        "coverage_percent": 99.99999999975927,
+        "required_area_m2": 511999.9999999348,
+        "covered_area_m2": 511999.99999870226,
+        "sortie_count": 5,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 102399.99999980442,
+            "covered_area_m2": 102399.99999980442,
+            "coverage_percent": 100.0
+          },
+          "JOB_MULTISPECTRAL": {
+            "required_area_m2": 102399.99999996275,
+            "covered_area_m2": 102399.99999996275,
+            "coverage_percent": 100.0
+          },
+          "JOB_THERMAL": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102400.00000006519,
+            "coverage_percent": 100.0
+          },
+          "JOB_LIDAR": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102399.99999898623,
+            "coverage_percent": 99.99999999894632
+          },
+          "JOB_GEOPHYSICS": {
+            "required_area_m2": 102400.00000003725,
+            "covered_area_m2": 102399.99999988364,
+            "coverage_percent": 99.99999999984999
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "violations": []
+    }
+  ],
+  "passed": true
+}

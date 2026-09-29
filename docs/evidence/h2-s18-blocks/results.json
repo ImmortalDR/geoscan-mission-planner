@@ -1,0 +1,1368 @@
+{
+  "date": "2026-09-27",
+  "server": "https://45.87.246.124:9443/",
+  "scenario": "S18_MSU_geo401_alotofZones",
+  "source_code_sha256": "8e92a2d016a8b617a2a2b0b5b9c0912853ff4fe9e32ca04db755fb8c4e193f6b",
+  "input_sha256": "02ce5995c2394b541130df20c8d74ba6502870a74a7f4d003bcffcb27472233f",
+  "seed": 20260918,
+  "depth": "standard",
+  "runs": [
+    {
+      "scene_id": "437fe5b616ce48f394fcd6a1b58b2cee",
+      "id": "0cb115e04b7546348f80cb4718985ecf",
+      "run_code": "RUN-20260927-0cb115e04b75",
+      "objective": "makespan",
+      "status": "SAFE",
+      "error": null,
+      "wall_s": 156.9252293399768,
+      "metrics": {
+        "distance_m": 393456.14449780376,
+        "total_flight_s": 41498.08917593956,
+        "makespan_s": 14142.520653009415,
+        "airborne_span_s": 14142.520653009415,
+        "coverage_percent": 99.99999999923519,
+        "required_area_m2": 42024620.21615,
+        "covered_area_m2": 42024620.21582859,
+        "sortie_count": 17,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zkpn": {
+            "required_area_m2": 3986429.328159467,
+            "covered_area_m2": 3986429.328159467,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zsll": {
+            "required_area_m2": 5012891.177459043,
+            "covered_area_m2": 5012891.177459043,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugb47tq": {
+            "required_area_m2": 1189332.133614003,
+            "covered_area_m2": 1189332.1336140027,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugboooc": {
+            "required_area_m2": 864915.3200386352,
+            "covered_area_m2": 864915.3200386352,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbouwk": {
+            "required_area_m2": 330498.2863635038,
+            "covered_area_m2": 330498.2863635038,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbp6jk": {
+            "required_area_m2": 997967.6012594478,
+            "covered_area_m2": 997967.6012594479,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpdk2": {
+            "required_area_m2": 1474012.7920848657,
+            "covered_area_m2": 1474012.7920848657,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpkox": {
+            "required_area_m2": 501195.5396158969,
+            "covered_area_m2": 501195.5396158969,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpt86": {
+            "required_area_m2": 2319662.203248926,
+            "covered_area_m2": 2319662.2031729217,
+            "coverage_percent": 99.99999999672347
+          },
+          "JOB_mugbq43d": {
+            "required_area_m2": 1426149.4494681838,
+            "covered_area_m2": 1426149.4494681838,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbq9i2": {
+            "required_area_m2": 2338834.299114999,
+            "covered_area_m2": 2338834.2991149984,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugbqdxs": {
+            "required_area_m2": 3062171.421146065,
+            "covered_area_m2": 3062171.421146065,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbqk0e": {
+            "required_area_m2": 610456.9544530762,
+            "covered_area_m2": 610456.9544530762,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbqw64": {
+            "required_area_m2": 2776489.8995889095,
+            "covered_area_m2": 2776489.899588909,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugbtq3n": {
+            "required_area_m2": 936334.5051221845,
+            "covered_area_m2": 936334.5051221846,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugc6vdy": {
+            "required_area_m2": 2585772.408926365,
+            "covered_area_m2": 2585772.408806272,
+            "coverage_percent": 99.99999999535561
+          },
+          "JOB_mujkb5uw": {
+            "required_area_m2": 2790053.5698201577,
+            "covered_area_m2": 2790053.5696948464,
+            "coverage_percent": 99.99999999550863
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "certificate": {
+        "schema": "geoscan.h3.certificate.v1",
+        "validator_version": "geoscan.h3.validator.v1",
+        "validator_source_sha256": "fe67908a9ca8c6cd3df14dcb9c25aa219d7978e5d821d69686390b9f1c7e23dc",
+        "validator_gate_source_sha256": "37b382443da91fc4c8b58616b17bcb846b98cd8d5695e3b12060d959ab71b038",
+        "validator_geometry_source_sha256": "bb75fad87be93e2f16401c9b85dfe8783419e35f85db8c107791eb5ee03d3e4d",
+        "software_versions": {
+          "python": "3.12.3",
+          "numpy": "1.26.4",
+          "shapely": "2.0.7",
+          "pyproj": "3.8.0",
+          "rasterio": "1.3.11"
+        },
+        "issued_at": "2026-09-27T09:24:16.415729+00:00",
+        "plan_id": "0cb115e04b7546348f80cb4718985ecf",
+        "scene_id": "S01_msu_100km2",
+        "objective": "makespan",
+        "status": "SAFE",
+        "input_sha256": "02ce5995c2394b541130df20c8d74ba6502870a74a7f4d003bcffcb27472233f",
+        "input_files_sha256": {
+          "metadata.json": "8cb27d1c4d1583b7c0ddd71a5fe33ee49f844059b1039a5d394891060558c95f",
+          "mission.json": "1821ec91509f499552c99d109b7f76589484076e743d9b6dd773017c02e15c72",
+          "fleet.json": "1df13714e577a4c333cb10daf450eab33ce3f012e490c909105bf07b71d53632",
+          "payload_catalog.json": "b3e6680a32aaacfcd5c316479234fcbf2412db7b91a1d428c9ffa1c0414fbb41",
+          "survey_areas.geojson": "c3d3095164e6b7a49eb844955adc6c58bc40eff28c2625aca8e1bde558cac333",
+          "allowed_airspace.geojson": "709d0013216ae2bde4a8a515371540518cdb789decaa4ec26d888365478bc0a3",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "db9d0d46c03975a9df4152ada08abbff46840294749ed3565cb70c444031443d",
+          "dem.tif": "752d5b2dd3769afd9bbac6af5decddfde681550aededd641dbe6a9ab69c64246"
+        },
+        "result_sha256": "f45a850befd5fd67dce91edf6fbf190737f9e35cd4a5713910d15bb43a578f8e",
+        "metrics": {
+          "distance_m": 393456.14449780376,
+          "total_flight_s": 41498.08917593956,
+          "makespan_s": 14142.520653009415,
+          "airborne_span_s": 14142.520653009415,
+          "coverage_percent": 99.99999999923519,
+          "required_area_m2": 42024620.21615,
+          "covered_area_m2": 42024620.21582859,
+          "sortie_count": 17,
+          "per_job": {
+            "JOB_mug9k0vy": {
+              "required_area_m2": 8821453.32666627,
+              "covered_area_m2": 8821453.32666627,
+              "coverage_percent": 100.0
+            },
+            "JOB_mug9zkpn": {
+              "required_area_m2": 3986429.328159467,
+              "covered_area_m2": 3986429.328159467,
+              "coverage_percent": 100.0
+            },
+            "JOB_mug9zsll": {
+              "required_area_m2": 5012891.177459043,
+              "covered_area_m2": 5012891.177459043,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugb47tq": {
+              "required_area_m2": 1189332.133614003,
+              "covered_area_m2": 1189332.1336140027,
+              "coverage_percent": 99.99999999999997
+            },
+            "JOB_mugboooc": {
+              "required_area_m2": 864915.3200386352,
+              "covered_area_m2": 864915.3200386352,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbouwk": {
+              "required_area_m2": 330498.2863635038,
+              "covered_area_m2": 330498.2863635038,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbp6jk": {
+              "required_area_m2": 997967.6012594478,
+              "covered_area_m2": 997967.6012594479,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbpdk2": {
+              "required_area_m2": 1474012.7920848657,
+              "covered_area_m2": 1474012.7920848657,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbpkox": {
+              "required_area_m2": 501195.5396158969,
+              "covered_area_m2": 501195.5396158969,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbpt86": {
+              "required_area_m2": 2319662.203248926,
+              "covered_area_m2": 2319662.2031729217,
+              "coverage_percent": 99.99999999672347
+            },
+            "JOB_mugbq43d": {
+              "required_area_m2": 1426149.4494681838,
+              "covered_area_m2": 1426149.4494681838,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbq9i2": {
+              "required_area_m2": 2338834.299114999,
+              "covered_area_m2": 2338834.2991149984,
+              "coverage_percent": 99.99999999999997
+            },
+            "JOB_mugbqdxs": {
+              "required_area_m2": 3062171.421146065,
+              "covered_area_m2": 3062171.421146065,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbqk0e": {
+              "required_area_m2": 610456.9544530762,
+              "covered_area_m2": 610456.9544530762,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbqw64": {
+              "required_area_m2": 2776489.8995889095,
+              "covered_area_m2": 2776489.899588909,
+              "coverage_percent": 99.99999999999997
+            },
+            "JOB_mugbtq3n": {
+              "required_area_m2": 936334.5051221845,
+              "covered_area_m2": 936334.5051221846,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugc6vdy": {
+              "required_area_m2": 2585772.408926365,
+              "covered_area_m2": 2585772.408806272,
+              "coverage_percent": 99.99999999535561
+            },
+            "JOB_mujkb5uw": {
+              "required_area_m2": 2790053.5698201577,
+              "covered_area_m2": 2790053.5696948464,
+              "coverage_percent": 99.99999999550863
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "checks": [
+          "input_schema",
+          "original_required_coverage",
+          "full_segment_airspace",
+          "raster_cell_surface_clearance",
+          "continuous_temporal_airspace",
+          "continuous_pairwise_separation",
+          "resource_and_landing_suffix",
+          "payload_gsd",
+          "site_roles",
+          "service_and_mission_windows",
+          "wind_limits",
+          "declared_survey_turn_buffers",
+          "metric_claims"
+        ],
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "fingerprint_sha256": "a4c340833ae54e68e71887318db8c1f29be7d3eef5e200acc768e4b41ddfd455"
+      },
+      "routing": {
+        "graph": {
+          "preparation_s": 41.07651246304158,
+          "vertices": 508,
+          "transects": 251,
+          "orientations": 502,
+          "profiles": [
+            {
+              "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugb19r3_copy1",
+                "UAV_mugb19r3_copy1_copy1",
+                "UAV_mugb19r3_copy1_copy1_copy1"
+              ],
+              "physical_edges": 5060,
+              "expanded_edges": 0,
+              "valid_orientations": 502,
+              "detailed_edges_s": 12.533086066017859,
+              "total_s": 20.571241189027205
+            },
+            {
+              "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+              "model": "geoscan_201",
+              "uav_ids": [
+                "UAV_mugb1t5y"
+              ],
+              "physical_edges": 4940,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 12.551957657095045,
+              "total_s": 20.09968425601255
+            }
+          ],
+          "knn": 4,
+          "corners": 178,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 356,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.0,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 3.9575269339838997,
+        "seed_s": 3.5911798250162974,
+        "initial_objective_s": 22208.4,
+        "search_s": 22.506273161969148,
+        "solutions_seen": 6,
+        "branches": 1805,
+        "failures": 178,
+        "branch_limit": 5000,
+        "status": 2,
+        "logical_nodes": 572,
+        "reload_copies": {
+          "UAV_mugb19r3_copy1": 17,
+          "UAV_mugb19r3_copy1_copy1": 17,
+          "UAV_mugb19r3_copy1_copy1_copy1": 17,
+          "UAV_mugb1t5y": 3
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 5,
+        "selected_seed": "whole_sweeps",
+        "block_search": [
+          {
+            "evaluations": 320,
+            "proposals": 364,
+            "evaluation_limit": 320,
+            "accepted": [
+              {
+                "operation": "snake_order",
+                "before": 240859210703,
+                "after": 240859177142
+              },
+              {
+                "operation": "snake_order",
+                "before": 240859177142,
+                "after": 240859166816
+              },
+              {
+                "operation": "snake_order",
+                "before": 240859166816,
+                "after": 240859166814
+              },
+              {
+                "operation": "snake_order",
+                "before": 240859166814,
+                "after": 235765304662
+              },
+              {
+                "operation": "snake_order",
+                "before": 235765304662,
+                "after": 234228534806
+              },
+              {
+                "operation": "snake_order",
+                "before": 234228534806,
+                "after": 234228526663
+              },
+              {
+                "operation": "snake_order",
+                "before": 234228526663,
+                "after": 234228526656
+              },
+              {
+                "operation": "snake_order",
+                "before": 234228526656,
+                "after": 234228526277
+              },
+              {
+                "operation": "snake_order",
+                "before": 234228526277,
+                "after": 234228525910
+              },
+              {
+                "operation": "snake_order",
+                "before": 234228525910,
+                "after": 234228523603
+              },
+              {
+                "operation": "snake_order",
+                "before": 234228523603,
+                "after": 234228523443
+              },
+              {
+                "operation": "snake_order",
+                "before": 234228523443,
+                "after": 234228523289
+              },
+              {
+                "operation": "snake_order",
+                "before": 234228523289,
+                "after": 234228523123
+              },
+              {
+                "operation": "move_snake",
+                "before": 234228523123,
+                "after": 234228508613
+              },
+              {
+                "operation": "snake_order",
+                "before": 234228508613,
+                "after": 234228508556
+              }
+            ],
+            "initial_cost": 240859210703,
+            "final_cost": 234228508556,
+            "elapsed_s": 18.080852888990194
+          }
+        ],
+        "table_reads": 400141,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 8.462724698940292,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 14142.520652971703,
+            "violations": [],
+            "repairs": 1
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 14142.520652971703
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 14142.520652971703
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 14142.520652971703
+          }
+        ],
+        "total_s": 83.12709409499075,
+        "objective": "makespan",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "ed9060a07f5f108cb8080c5ce9aafdd0e9d54ed17eb344b0317337d6afbf8b99"
+      },
+      "stages_s": {
+        "h1": 2.387701988220215,
+        "h2": 83.95798707008362,
+        "h3": 26.03296685218811
+      },
+      "certificate_file": "makespan-certificate.json"
+    },
+    {
+      "scene_id": "437fe5b616ce48f394fcd6a1b58b2cee",
+      "id": "6049083a65134956a12db5c59850d0a5",
+      "run_code": "RUN-20260927-6049083a6513",
+      "objective": "total_flight",
+      "status": "SAFE",
+      "error": null,
+      "wall_s": 146.91824422392529,
+      "metrics": {
+        "distance_m": 370091.9132300528,
+        "total_flight_s": 40321.34911298752,
+        "makespan_s": 21890.107552051544,
+        "airborne_span_s": 21890.107552051544,
+        "coverage_percent": 99.99999999923519,
+        "required_area_m2": 42024620.21615,
+        "covered_area_m2": 42024620.21582859,
+        "sortie_count": 17,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zkpn": {
+            "required_area_m2": 3986429.328159467,
+            "covered_area_m2": 3986429.328159467,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zsll": {
+            "required_area_m2": 5012891.177459043,
+            "covered_area_m2": 5012891.177459043,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugb47tq": {
+            "required_area_m2": 1189332.133614003,
+            "covered_area_m2": 1189332.1336140027,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugboooc": {
+            "required_area_m2": 864915.3200386352,
+            "covered_area_m2": 864915.3200386352,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbouwk": {
+            "required_area_m2": 330498.2863635038,
+            "covered_area_m2": 330498.2863635038,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbp6jk": {
+            "required_area_m2": 997967.6012594478,
+            "covered_area_m2": 997967.6012594479,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpdk2": {
+            "required_area_m2": 1474012.7920848657,
+            "covered_area_m2": 1474012.7920848657,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpkox": {
+            "required_area_m2": 501195.5396158969,
+            "covered_area_m2": 501195.5396158969,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpt86": {
+            "required_area_m2": 2319662.203248926,
+            "covered_area_m2": 2319662.2031729217,
+            "coverage_percent": 99.99999999672347
+          },
+          "JOB_mugbq43d": {
+            "required_area_m2": 1426149.4494681838,
+            "covered_area_m2": 1426149.4494681838,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbq9i2": {
+            "required_area_m2": 2338834.299114999,
+            "covered_area_m2": 2338834.2991149984,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugbqdxs": {
+            "required_area_m2": 3062171.421146065,
+            "covered_area_m2": 3062171.421146065,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbqk0e": {
+            "required_area_m2": 610456.9544530762,
+            "covered_area_m2": 610456.9544530762,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbqw64": {
+            "required_area_m2": 2776489.8995889095,
+            "covered_area_m2": 2776489.899588909,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugbtq3n": {
+            "required_area_m2": 936334.5051221845,
+            "covered_area_m2": 936334.5051221846,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugc6vdy": {
+            "required_area_m2": 2585772.408926365,
+            "covered_area_m2": 2585772.408806272,
+            "coverage_percent": 99.99999999535561
+          },
+          "JOB_mujkb5uw": {
+            "required_area_m2": 2790053.5698201577,
+            "covered_area_m2": 2790053.5696948455,
+            "coverage_percent": 99.9999999955086
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "certificate": {
+        "schema": "geoscan.h3.certificate.v1",
+        "validator_version": "geoscan.h3.validator.v1",
+        "validator_source_sha256": "fe67908a9ca8c6cd3df14dcb9c25aa219d7978e5d821d69686390b9f1c7e23dc",
+        "validator_gate_source_sha256": "37b382443da91fc4c8b58616b17bcb846b98cd8d5695e3b12060d959ab71b038",
+        "validator_geometry_source_sha256": "bb75fad87be93e2f16401c9b85dfe8783419e35f85db8c107791eb5ee03d3e4d",
+        "software_versions": {
+          "python": "3.12.3",
+          "numpy": "1.26.4",
+          "shapely": "2.0.7",
+          "pyproj": "3.8.0",
+          "rasterio": "1.3.11"
+        },
+        "issued_at": "2026-09-27T09:26:43.695320+00:00",
+        "plan_id": "6049083a65134956a12db5c59850d0a5",
+        "scene_id": "S01_msu_100km2",
+        "objective": "total_flight",
+        "status": "SAFE",
+        "input_sha256": "02ce5995c2394b541130df20c8d74ba6502870a74a7f4d003bcffcb27472233f",
+        "input_files_sha256": {
+          "metadata.json": "8cb27d1c4d1583b7c0ddd71a5fe33ee49f844059b1039a5d394891060558c95f",
+          "mission.json": "1821ec91509f499552c99d109b7f76589484076e743d9b6dd773017c02e15c72",
+          "fleet.json": "1df13714e577a4c333cb10daf450eab33ce3f012e490c909105bf07b71d53632",
+          "payload_catalog.json": "b3e6680a32aaacfcd5c316479234fcbf2412db7b91a1d428c9ffa1c0414fbb41",
+          "survey_areas.geojson": "c3d3095164e6b7a49eb844955adc6c58bc40eff28c2625aca8e1bde558cac333",
+          "allowed_airspace.geojson": "709d0013216ae2bde4a8a515371540518cdb789decaa4ec26d888365478bc0a3",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "db9d0d46c03975a9df4152ada08abbff46840294749ed3565cb70c444031443d",
+          "dem.tif": "752d5b2dd3769afd9bbac6af5decddfde681550aededd641dbe6a9ab69c64246"
+        },
+        "result_sha256": "e85b473318dce7d94996480d4f7f1cbe27b1ac692a194a75c4a264ac16b6e9b1",
+        "metrics": {
+          "distance_m": 370091.9132300528,
+          "total_flight_s": 40321.34911298752,
+          "makespan_s": 21890.107552051544,
+          "airborne_span_s": 21890.107552051544,
+          "coverage_percent": 99.99999999923519,
+          "required_area_m2": 42024620.21615,
+          "covered_area_m2": 42024620.21582859,
+          "sortie_count": 17,
+          "per_job": {
+            "JOB_mug9k0vy": {
+              "required_area_m2": 8821453.32666627,
+              "covered_area_m2": 8821453.32666627,
+              "coverage_percent": 100.0
+            },
+            "JOB_mug9zkpn": {
+              "required_area_m2": 3986429.328159467,
+              "covered_area_m2": 3986429.328159467,
+              "coverage_percent": 100.0
+            },
+            "JOB_mug9zsll": {
+              "required_area_m2": 5012891.177459043,
+              "covered_area_m2": 5012891.177459043,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugb47tq": {
+              "required_area_m2": 1189332.133614003,
+              "covered_area_m2": 1189332.1336140027,
+              "coverage_percent": 99.99999999999997
+            },
+            "JOB_mugboooc": {
+              "required_area_m2": 864915.3200386352,
+              "covered_area_m2": 864915.3200386352,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbouwk": {
+              "required_area_m2": 330498.2863635038,
+              "covered_area_m2": 330498.2863635038,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbp6jk": {
+              "required_area_m2": 997967.6012594478,
+              "covered_area_m2": 997967.6012594479,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbpdk2": {
+              "required_area_m2": 1474012.7920848657,
+              "covered_area_m2": 1474012.7920848657,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbpkox": {
+              "required_area_m2": 501195.5396158969,
+              "covered_area_m2": 501195.5396158969,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbpt86": {
+              "required_area_m2": 2319662.203248926,
+              "covered_area_m2": 2319662.2031729217,
+              "coverage_percent": 99.99999999672347
+            },
+            "JOB_mugbq43d": {
+              "required_area_m2": 1426149.4494681838,
+              "covered_area_m2": 1426149.4494681838,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbq9i2": {
+              "required_area_m2": 2338834.299114999,
+              "covered_area_m2": 2338834.2991149984,
+              "coverage_percent": 99.99999999999997
+            },
+            "JOB_mugbqdxs": {
+              "required_area_m2": 3062171.421146065,
+              "covered_area_m2": 3062171.421146065,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbqk0e": {
+              "required_area_m2": 610456.9544530762,
+              "covered_area_m2": 610456.9544530762,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugbqw64": {
+              "required_area_m2": 2776489.8995889095,
+              "covered_area_m2": 2776489.899588909,
+              "coverage_percent": 99.99999999999997
+            },
+            "JOB_mugbtq3n": {
+              "required_area_m2": 936334.5051221845,
+              "covered_area_m2": 936334.5051221846,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugc6vdy": {
+              "required_area_m2": 2585772.408926365,
+              "covered_area_m2": 2585772.408806272,
+              "coverage_percent": 99.99999999535561
+            },
+            "JOB_mujkb5uw": {
+              "required_area_m2": 2790053.5698201577,
+              "covered_area_m2": 2790053.5696948455,
+              "coverage_percent": 99.9999999955086
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "checks": [
+          "input_schema",
+          "original_required_coverage",
+          "full_segment_airspace",
+          "raster_cell_surface_clearance",
+          "continuous_temporal_airspace",
+          "continuous_pairwise_separation",
+          "resource_and_landing_suffix",
+          "payload_gsd",
+          "site_roles",
+          "service_and_mission_windows",
+          "wind_limits",
+          "declared_survey_turn_buffers",
+          "metric_claims"
+        ],
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "fingerprint_sha256": "4be00445bf8ee0f7b0730e4f1530019ee63d414394f5cdcd633c5594457f95be"
+      },
+      "routing": {
+        "graph": {
+          "preparation_s": 48.72933710901998,
+          "vertices": 508,
+          "transects": 251,
+          "orientations": 502,
+          "profiles": [
+            {
+              "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugb19r3_copy1",
+                "UAV_mugb19r3_copy1_copy1",
+                "UAV_mugb19r3_copy1_copy1_copy1"
+              ],
+              "physical_edges": 5060,
+              "expanded_edges": 0,
+              "valid_orientations": 502,
+              "detailed_edges_s": 13.479833818040788,
+              "total_s": 28.152629568008706
+            },
+            {
+              "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+              "model": "geoscan_201",
+              "uav_ids": [
+                "UAV_mugb1t5y"
+              ],
+              "physical_edges": 4940,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 12.431591309024952,
+              "total_s": 20.199547277996317
+            }
+          ],
+          "knn": 4,
+          "corners": 178,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 356,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.0,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 4.357733673998155,
+        "seed_s": 3.3184623119886965,
+        "initial_objective_s": 41793.4,
+        "search_s": 12.720711778965779,
+        "solutions_seen": 15,
+        "branches": 116,
+        "failures": 169,
+        "branch_limit": 5000,
+        "status": 2,
+        "logical_nodes": 572,
+        "reload_copies": {
+          "UAV_mugb19r3_copy1": 17,
+          "UAV_mugb19r3_copy1_copy1": 17,
+          "UAV_mugb19r3_copy1_copy1_copy1": 17,
+          "UAV_mugb1t5y": 3
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 5,
+        "selected_seed": "whole_sweeps_reverse",
+        "block_search": [
+          {
+            "evaluations": 320,
+            "proposals": 439,
+            "evaluation_limit": 320,
+            "accepted": [
+              {
+                "operation": "snake_order",
+                "before": 409480,
+                "after": 409365
+              },
+              {
+                "operation": "snake_order",
+                "before": 409365,
+                "after": 407217
+              },
+              {
+                "operation": "snake_order",
+                "before": 407217,
+                "after": 406671
+              },
+              {
+                "operation": "snake_order",
+                "before": 406671,
+                "after": 406249
+              },
+              {
+                "operation": "move_snake",
+                "before": 406249,
+                "after": 405181
+              },
+              {
+                "operation": "move_snake",
+                "before": 405181,
+                "after": 403352
+              }
+            ],
+            "initial_cost": 409480,
+            "final_cost": 403352,
+            "elapsed_s": 9.107604263932444
+          }
+        ],
+        "table_reads": 400001,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 5.275549047975801,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 40321.349112582044,
+            "violations": [],
+            "repairs": 0
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 40504.203748710905
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 40610.943219110006
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 40653.18160369108
+          }
+        ],
+        "total_s": 77.92533215100411,
+        "objective": "total_flight",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "7399a3336d97b453ab212611be0845a97391565beb2845ecbb91d6ddf6f5c75f"
+      },
+      "stages_s": {
+        "h2": 78.61573505401611,
+        "h3": 23.29744553565979
+      },
+      "certificate_file": "total_flight-certificate.json"
+    }
+  ],
+  "local_makespan": {
+    "input_dir": "src/gmp/scenario_templates/S18_MSU_geo401_alotofZones/input",
+    "input_sha256": "02ce5995c2394b541130df20c8d74ba6502870a74a7f4d003bcffcb27472233f",
+    "source_code_sha256": "fdd4c9c03e66961237bc87df24895a5f5723799e917552042de0d7a77906a0fc",
+    "source_input_dir": "src/gmp/scenario_templates/S18_MSU_geo401_alotofZones/input",
+    "source_input_sha256": "02ce5995c2394b541130df20c8d74ba6502870a74a7f4d003bcffcb27472233f",
+    "objective_added": false,
+    "objective": "makespan",
+    "depth": "standard",
+    "seed": 20260918,
+    "pipeline_s": 95.74821218394209,
+    "h3_gate_s": 27.25075565802399,
+    "total_s": 122.99896784196608,
+    "h3_status": "SAFE",
+    "metrics": {
+      "distance_m": 393456.14449780376,
+      "total_flight_s": 41498.08917593956,
+      "makespan_s": 14142.520653009415,
+      "airborne_span_s": 14142.520653009415,
+      "coverage_percent": 99.99999999923519,
+      "required_area_m2": 42024620.21615,
+      "covered_area_m2": 42024620.21582859,
+      "sortie_count": 17,
+      "per_job": {
+        "JOB_mug9k0vy": {
+          "required_area_m2": 8821453.32666627,
+          "covered_area_m2": 8821453.32666627,
+          "coverage_percent": 100.0
+        },
+        "JOB_mug9zkpn": {
+          "required_area_m2": 3986429.328159467,
+          "covered_area_m2": 3986429.328159467,
+          "coverage_percent": 100.0
+        },
+        "JOB_mug9zsll": {
+          "required_area_m2": 5012891.177459043,
+          "covered_area_m2": 5012891.177459043,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugb47tq": {
+          "required_area_m2": 1189332.133614003,
+          "covered_area_m2": 1189332.1336140027,
+          "coverage_percent": 99.99999999999997
+        },
+        "JOB_mugboooc": {
+          "required_area_m2": 864915.3200386352,
+          "covered_area_m2": 864915.3200386352,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugbouwk": {
+          "required_area_m2": 330498.2863635038,
+          "covered_area_m2": 330498.2863635038,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugbp6jk": {
+          "required_area_m2": 997967.6012594478,
+          "covered_area_m2": 997967.6012594479,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugbpdk2": {
+          "required_area_m2": 1474012.7920848657,
+          "covered_area_m2": 1474012.7920848657,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugbpkox": {
+          "required_area_m2": 501195.5396158969,
+          "covered_area_m2": 501195.5396158969,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugbpt86": {
+          "required_area_m2": 2319662.203248926,
+          "covered_area_m2": 2319662.2031729217,
+          "coverage_percent": 99.99999999672347
+        },
+        "JOB_mugbq43d": {
+          "required_area_m2": 1426149.4494681838,
+          "covered_area_m2": 1426149.4494681838,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugbq9i2": {
+          "required_area_m2": 2338834.299114999,
+          "covered_area_m2": 2338834.2991149984,
+          "coverage_percent": 99.99999999999997
+        },
+        "JOB_mugbqdxs": {
+          "required_area_m2": 3062171.421146065,
+          "covered_area_m2": 3062171.421146065,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugbqk0e": {
+          "required_area_m2": 610456.9544530762,
+          "covered_area_m2": 610456.9544530762,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugbqw64": {
+          "required_area_m2": 2776489.8995889095,
+          "covered_area_m2": 2776489.899588909,
+          "coverage_percent": 99.99999999999997
+        },
+        "JOB_mugbtq3n": {
+          "required_area_m2": 936334.5051221845,
+          "covered_area_m2": 936334.5051221846,
+          "coverage_percent": 100.0
+        },
+        "JOB_mugc6vdy": {
+          "required_area_m2": 2585772.408926365,
+          "covered_area_m2": 2585772.408806272,
+          "coverage_percent": 99.99999999535561
+        },
+        "JOB_mujkb5uw": {
+          "required_area_m2": 2790053.5698201577,
+          "covered_area_m2": 2790053.5696948464,
+          "coverage_percent": 99.99999999550863
+        }
+      },
+      "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+      "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+    },
+    "violations": {},
+    "routing": {
+      "graph": {
+        "preparation_s": 39.27757585700601,
+        "vertices": 508,
+        "transects": 251,
+        "orientations": 502,
+        "profiles": [
+          {
+            "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "UAV_mugb19r3_copy1",
+              "UAV_mugb19r3_copy1_copy1",
+              "UAV_mugb19r3_copy1_copy1_copy1"
+            ],
+            "physical_edges": 5060,
+            "expanded_edges": 0,
+            "valid_orientations": 502,
+            "detailed_edges_s": 13.135064022964798,
+            "total_s": 20.463975494029
+          },
+          {
+            "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+            "model": "geoscan_201",
+            "uav_ids": [
+              "UAV_mugb1t5y"
+            ],
+            "physical_edges": 4940,
+            "expanded_edges": 0,
+            "valid_orientations": 90,
+            "detailed_edges_s": 11.462442483985797,
+            "total_s": 18.57743413094431
+          }
+        ],
+        "knn": 4,
+        "corners": 178,
+        "base_connections": "all_corners",
+        "base_transfers": false,
+        "long_links_per_corner": 2,
+        "long_link_pairs": 356,
+        "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+        "transit_factor": 1.0,
+        "return_margin_s": 60.0,
+        "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+        "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+        "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+      },
+      "model_s": 2.9983070209855214,
+      "seed_s": 3.067299698945135,
+      "initial_objective_s": 22208.4,
+      "search_s": 11.872922408976592,
+      "solutions_seen": 6,
+      "branches": 1805,
+      "failures": 178,
+      "branch_limit": 5000,
+      "status": 2,
+      "logical_nodes": 572,
+      "reload_copies": {
+        "UAV_mugb19r3_copy1": 17,
+        "UAV_mugb19r3_copy1_copy1": 17,
+        "UAV_mugb19r3_copy1_copy1_copy1": 17,
+        "UAV_mugb1t5y": 3
+      },
+      "greedy_missing": [],
+      "finalists": 4,
+      "reload_copy_limit_reached": [],
+      "depth": "standard",
+      "seed_candidates": 5,
+      "selected_seed": "whole_sweeps",
+      "block_search": [
+        {
+          "evaluations": 320,
+          "proposals": 364,
+          "evaluation_limit": 320,
+          "accepted": [
+            {
+              "operation": "snake_order",
+              "before": 240859210703,
+              "after": 240859177142
+            },
+            {
+              "operation": "snake_order",
+              "before": 240859177142,
+              "after": 240859166816
+            },
+            {
+              "operation": "snake_order",
+              "before": 240859166816,
+              "after": 240859166814
+            },
+            {
+              "operation": "snake_order",
+              "before": 240859166814,
+              "after": 235765304662
+            },
+            {
+              "operation": "snake_order",
+              "before": 235765304662,
+              "after": 234228534806
+            },
+            {
+              "operation": "snake_order",
+              "before": 234228534806,
+              "after": 234228526663
+            },
+            {
+              "operation": "snake_order",
+              "before": 234228526663,
+              "after": 234228526656
+            },
+            {
+              "operation": "snake_order",
+              "before": 234228526656,
+              "after": 234228526277
+            },
+            {
+              "operation": "snake_order",
+              "before": 234228526277,
+              "after": 234228525910
+            },
+            {
+              "operation": "snake_order",
+              "before": 234228525910,
+              "after": 234228523603
+            },
+            {
+              "operation": "snake_order",
+              "before": 234228523603,
+              "after": 234228523443
+            },
+            {
+              "operation": "snake_order",
+              "before": 234228523443,
+              "after": 234228523289
+            },
+            {
+              "operation": "snake_order",
+              "before": 234228523289,
+              "after": 234228523123
+            },
+            {
+              "operation": "move_snake",
+              "before": 234228523123,
+              "after": 234228508613
+            },
+            {
+              "operation": "snake_order",
+              "before": 234228508613,
+              "after": 234228508556
+            }
+          ],
+          "initial_cost": 240859210703,
+          "final_cost": 234228508556,
+          "elapsed_s": 8.587174060987309
+        }
+      ],
+      "table_reads": 400141,
+      "table_read_limit": 400000,
+      "emergency_time_limit_s": 120,
+      "emergency_time_limit_reached": false,
+      "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+      "seed": 20260918,
+      "diagnostic": false,
+      "final_validation_s": 7.272437956999056,
+      "finalist_checks": [
+        {
+          "candidate": 1,
+          "passed": true,
+          "metric_s": 14142.520652971703,
+          "violations": [],
+          "repairs": 1
+        },
+        {
+          "candidate": 2,
+          "skipped": "dominated_before_ground_delays",
+          "lower_bound_s": 14142.520652971703
+        },
+        {
+          "candidate": 3,
+          "skipped": "dominated_before_ground_delays",
+          "lower_bound_s": 14142.520652971703
+        },
+        {
+          "candidate": 4,
+          "skipped": "dominated_before_ground_delays",
+          "lower_bound_s": 14142.520652971703
+        }
+      ],
+      "total_s": 67.39671637001447,
+      "objective": "makespan",
+      "strict_search": null,
+      "copy_expansions": [],
+      "solution_sha256": "ed9060a07f5f108cb8080c5ce9aafdd0e9d54ed17eb344b0317337d6afbf8b99"
+    }
+  },
+  "determinism": {
+    "local_and_live_solution_sha256_equal": true
+  },
+  "old_graph_refinement": {
+    "seed_s": 3.727409524959512,
+    "initial_objective_s": 19592.4,
+    "search_s": 10.01239406305831,
+    "solutions_seen": 6,
+    "branches": 1833,
+    "failures": 59,
+    "branch_limit": 5000,
+    "status": 2,
+    "logical_nodes": 583,
+    "reload_copies": {
+      "UAV_mugb19r3_copy1": 16,
+      "UAV_mugb19r3_copy1_copy1": 16,
+      "UAV_mugb19r3_copy1_copy1_copy1": 16,
+      "UAV_mugb1t5y": 3
+    },
+    "greedy_missing": [],
+    "finalists": 4,
+    "reload_copy_limit_reached": [],
+    "depth": "standard",
+    "seed_candidates": 5,
+    "selected_seed": "whole_sweeps",
+    "block_search": [
+      {
+        "evaluations": 320,
+        "proposals": 363,
+        "evaluation_limit": 320,
+        "accepted": [
+          {
+            "operation": "snake_order",
+            "before": 255675464928,
+            "after": 255675434749
+          },
+          {
+            "operation": "snake_order",
+            "before": 255675434749,
+            "after": 241900809835
+          },
+          {
+            "operation": "snake_order",
+            "before": 241900809835,
+            "after": 241900809834
+          },
+          {
+            "operation": "snake_order",
+            "before": 241900809834,
+            "after": 234483570229
+          },
+          {
+            "operation": "snake_order",
+            "before": 234483570229,
+            "after": 234483569793
+          },
+          {
+            "operation": "snake_order",
+            "before": 234483569793,
+            "after": 234483558989
+          },
+          {
+            "operation": "snake_order",
+            "before": 234483558989,
+            "after": 234483558924
+          },
+          {
+            "operation": "snake_order",
+            "before": 234483558924,
+            "after": 234483556617
+          },
+          {
+            "operation": "snake_order",
+            "before": 234483556617,
+            "after": 234483556457
+          },
+          {
+            "operation": "snake_order",
+            "before": 234483556457,
+            "after": 234483556281
+          },
+          {
+            "operation": "move_snake",
+            "before": 234483556281,
+            "after": 223433039649
+          },
+          {
+            "operation": "swap_snakes",
+            "before": 223433039649,
+            "after": 223433037205
+          },
+          {
+            "operation": "snake_order",
+            "before": 223433037205,
+            "after": 223433036959
+          },
+          {
+            "operation": "snake_order",
+            "before": 223433036959,
+            "after": 223433036958
+          }
+        ],
+        "initial_cost": 255675464928,
+        "final_cost": 223433036958,
+        "elapsed_s": 9.00408369593788
+      }
+    ],
+    "table_reads": 400128,
+    "table_read_limit": 400000,
+    "emergency_time_limit_s": 120,
+    "emergency_time_limit_reached": false,
+    "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+    "seed": 20260918,
+    "diagnostic": false
+  },
+  "tests": {
+    "routing_and_physical_completion": 32,
+    "api_and_terrain": 39,
+    "h1": {
+      "passed": 146,
+      "skipped": 33,
+      "deselected": 3,
+      "selection": "not s01"
+    },
+    "contract_bundles": 22,
+    "h2_acceptance": 4
+  }
+}

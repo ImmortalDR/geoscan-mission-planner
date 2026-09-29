@@ -1,0 +1,6 @@
+{
+  "expected_status": "SAFE",
+  "minimum_sorties": 2,
+  "each_sortie_resource_feasible": true,
+  "energy_reserve_fraction": 0.2
+}

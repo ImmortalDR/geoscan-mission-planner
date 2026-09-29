@@ -1,0 +1,17 @@
+{
+  "id": "S04_multi_sortie",
+  "title": "Repeated sorties with service time",
+  "expected_status": "SAFE",
+  "objectives": [
+    "makespan"
+  ],
+  "real_elevation": false,
+  "checks": {
+    "minimum_sorties": 2
+  },
+  "proof": null,
+  "role": "multi_sortie",
+  "purpose_ru": "Несколько вылетов одного БВС и обслуживание",
+  "catalog_badge_ru": "1 БВС · multi-sortie",
+  "fleet_count": 1
+}

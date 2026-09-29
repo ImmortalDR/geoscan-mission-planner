@@ -1,0 +1,5 @@
+{
+  "expected_status": "SAFE_AFTER_DECONFLICTION",
+  "vehicle_conflicts_final": 0,
+  "deconfliction_action_required": true
+}

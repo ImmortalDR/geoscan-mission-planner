@@ -1,0 +1,15 @@
+{
+  "id": "S03_orekhovo_domodedovskaya",
+  "title": "Орехово — Домодедовская: световое окно и перерыв в полётах",
+  "expected_status": "SAFE",
+  "objectives": [
+    "makespan"
+  ],
+  "real_elevation": true,
+  "checks": {},
+  "proof": null,
+  "role": "temporal",
+  "purpose_ru": "Световое окно 09:00–19:00; запрет полётов 09:30–10:30. Разрешено летать 09:00–09:30 и 10:30–19:00 (МСК).",
+  "catalog_badge_ru": "1 БВС · время",
+  "fleet_count": 1
+}

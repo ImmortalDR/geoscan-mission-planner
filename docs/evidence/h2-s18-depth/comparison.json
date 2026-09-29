@@ -1,0 +1,35 @@
+[
+  {
+    "depth": "quick",
+    "full_s": 103.49610061093699,
+    "h2_s": 59.71638608491048,
+    "search_s": 3.2674877640092745,
+    "makespan_min": 235.70867755015692,
+    "total_flight_min": 691.729784198602,
+    "status": "SAFE",
+    "coverage_percent": 99.99999999923519,
+    "solution_sha256": "4c331ab19656709efb3729d2f0b8a992110e996df3e5ebaff8272d4212a96b31"
+  },
+  {
+    "depth": "standard",
+    "full_s": 122.99896784196608,
+    "h2_s": 67.39671637001447,
+    "search_s": 11.872922408976592,
+    "makespan_min": 235.70867755015692,
+    "total_flight_min": 691.6348195989926,
+    "status": "SAFE",
+    "coverage_percent": 99.99999999923519,
+    "solution_sha256": "ed9060a07f5f108cb8080c5ce9aafdd0e9d54ed17eb344b0317337d6afbf8b99"
+  },
+  {
+    "depth": "deep",
+    "full_s": 112.97055082593579,
+    "h2_s": 71.97352637397125,
+    "search_s": 16.95692856993992,
+    "makespan_min": 235.70867755015692,
+    "total_flight_min": 691.6348195989926,
+    "status": "SAFE",
+    "coverage_percent": 99.99999999923519,
+    "solution_sha256": "ed9060a07f5f108cb8080c5ce9aafdd0e9d54ed17eb344b0317337d6afbf8b99"
+  }
+]

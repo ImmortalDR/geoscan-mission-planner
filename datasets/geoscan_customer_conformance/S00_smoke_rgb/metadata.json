@@ -1,0 +1,9 @@
+{
+  "scenario_id": "S00_smoke_rgb",
+  "description": "Simple one-UAV RGB mission; parser/coverage/export smoke test.",
+  "seed": 20260918,
+  "vector_crs": "EPSG:4326",
+  "internal_generation_crs": "EPSG:32637",
+  "synthetic": true,
+  "not_operational_data": true
+}

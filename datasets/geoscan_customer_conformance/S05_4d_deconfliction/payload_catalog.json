@@ -1,0 +1,40 @@
+{
+  "payload_profiles": [
+    {
+      "id": "RGB_STD",
+      "type": "rgb",
+      "gsd_cm": 3,
+      "front_overlap": 0.8,
+      "side_overlap": 0.7,
+      "nominal_agl_m": 150
+    },
+    {
+      "id": "MS_STD",
+      "type": "multispectral",
+      "gsd_cm": 8,
+      "front_overlap": 0.75,
+      "side_overlap": 0.65,
+      "nominal_agl_m": 120
+    },
+    {
+      "id": "IR_STD",
+      "type": "thermal",
+      "gsd_cm": 12,
+      "front_overlap": 0.65,
+      "side_overlap": 0.55,
+      "nominal_agl_m": 100
+    },
+    {
+      "id": "LIDAR_STD",
+      "type": "lidar",
+      "strip_overlap": 0.25,
+      "nominal_agl_m": 120
+    },
+    {
+      "id": "GEO_STD",
+      "type": "geophysics",
+      "line_spacing_m": 50,
+      "nominal_agl_m": 80
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD_CORRIDOR",
+        "survey_type": "rgb",
+        "mode": "corridor",
+        "payload_profile": "rgb_default",
+        "half_width_m": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [37.60, 55.73],
+          [37.62, 55.73],
+          [37.64, 55.731],
+          [37.66, 55.732]
+        ]
+      }
+    }
+  ]
+}

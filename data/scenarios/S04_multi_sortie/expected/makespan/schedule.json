@@ -1,0 +1,79 @@
+[
+  {
+    "id": "U01_S1",
+    "uav_id": "U01",
+    "index": 1,
+    "start_site": "BASE",
+    "landing_site": "BASE",
+    "t_start": "2026-06-15T08:30:00+03:00",
+    "t_end": "2026-06-15T08:46:58.965990+03:00",
+    "flight_time_s": 1018.96599,
+    "distance_m": 10787.589193191738
+  },
+  {
+    "id": "U01_S2",
+    "uav_id": "U01",
+    "index": 2,
+    "start_site": "BASE",
+    "landing_site": "BASE",
+    "t_start": "2026-06-15T08:53:58.965990+03:00",
+    "t_end": "2026-06-15T09:11:10.088378+03:00",
+    "flight_time_s": 1031.122388,
+    "distance_m": 10933.465957433713
+  },
+  {
+    "id": "U01_S3",
+    "uav_id": "U01",
+    "index": 3,
+    "start_site": "BASE",
+    "landing_site": "BASE",
+    "t_start": "2026-06-15T09:18:10.088378+03:00",
+    "t_end": "2026-06-15T09:35:43.355280+03:00",
+    "flight_time_s": 1053.266902,
+    "distance_m": 11199.200443474723
+  },
+  {
+    "id": "U01_S4",
+    "uav_id": "U01",
+    "index": 4,
+    "start_site": "BASE",
+    "landing_site": "BASE",
+    "t_start": "2026-06-15T09:42:43.355280+03:00",
+    "t_end": "2026-06-15T10:01:02.860952+03:00",
+    "flight_time_s": 1099.505672,
+    "distance_m": 11754.06582694506
+  },
+  {
+    "id": "U01_S5",
+    "uav_id": "U01",
+    "index": 5,
+    "start_site": "BASE",
+    "landing_site": "BASE",
+    "t_start": "2026-06-15T10:08:02.860952+03:00",
+    "t_end": "2026-06-15T10:25:13.983288+03:00",
+    "flight_time_s": 1031.122336,
+    "distance_m": 10933.465957433156
+  },
+  {
+    "id": "U01_S6",
+    "uav_id": "U01",
+    "index": 6,
+    "start_site": "BASE",
+    "landing_site": "BASE",
+    "t_start": "2026-06-15T10:32:13.983288+03:00",
+    "t_end": "2026-06-15T10:49:47.250138+03:00",
+    "flight_time_s": 1053.26685,
+    "distance_m": 11199.200443473977
+  },
+  {
+    "id": "U01_S7",
+    "uav_id": "U01",
+    "index": 7,
+    "start_site": "BASE",
+    "landing_site": "BASE",
+    "t_start": "2026-06-15T10:56:47.250138+03:00",
+    "t_end": "2026-06-15T11:07:23.082777+03:00",
+    "flight_time_s": 635.832639,
+    "distance_m": 6189.992072043449
+  }
+]

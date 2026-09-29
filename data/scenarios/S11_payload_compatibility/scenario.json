@@ -1,0 +1,24 @@
+{
+  "id": "S11_payload_compatibility",
+  "title": "Five survey classes and explicit compatibility — wind",
+  "expected_status": "SAFE",
+  "objectives": [
+    "makespan"
+  ],
+  "real_elevation": false,
+  "checks": {
+    "minimum_used_uavs": 5,
+    "survey_types": [
+      "rgb",
+      "multispectral",
+      "thermal",
+      "lidar",
+      "geophysics"
+    ]
+  },
+  "proof": null,
+  "role": "payload",
+  "purpose_ru": "Пять классов полезной нагрузки и совместимость. Западный ветер 3 м/с; сравнение с S19 без ветра.",
+  "catalog_badge_ru": "Группа · 5 БВС",
+  "fleet_count": 5
+}

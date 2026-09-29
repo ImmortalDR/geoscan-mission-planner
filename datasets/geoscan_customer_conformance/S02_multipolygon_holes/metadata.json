@@ -1,0 +1,9 @@
+{
+  "scenario_id": "S02_multipolygon_holes",
+  "description": "MultiPolygon and hole geometry coverage test.",
+  "seed": 20260920,
+  "vector_crs": "EPSG:4326",
+  "internal_generation_crs": "EPSG:32637",
+  "synthetic": true,
+  "not_operational_data": true
+}

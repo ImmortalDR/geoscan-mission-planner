@@ -1,0 +1,18 @@
+{
+  "generated_at_unix": 1790338902.1265953,
+  "duration_s": 213.382,
+  "passed": 450,
+  "failed": 0,
+  "skipped": 0,
+  "exit_code": 0,
+  "suites": [
+    "tests/safety",
+    "tests/api",
+    "tests/infrastructure",
+    "tests/property",
+    "tests/report",
+    "h1/h1_coverage/tests",
+    "h2/tests"
+  ],
+  "postgres_configured": true
+}

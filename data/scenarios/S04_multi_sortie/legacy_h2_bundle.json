@@ -1,0 +1,958 @@
+{
+  "schema_version": "gmp.h1_h2.v1",
+  "scene_id": "S04_multi_sortie_energy",
+  "crs": {
+    "metric_epsg": 32637,
+    "axis": "ENU_metres",
+    "note": "Coordinates in metres, not lon/lat"
+  },
+  "generated_at": "2026-09-21T01:19:18Z",
+  "source": "coverage",
+  "fleet": [
+    {
+      "id": "GS201_01",
+      "model": "geoscan_201",
+      "uav_class": "fixed_wing",
+      "ground_speed_ms": 22.0,
+      "operational_endurance_min": 32.0,
+      "max_wind_ms": 12.0,
+      "payload_classes": [
+        "rgb",
+        "thermal"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 300.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 150.0
+    }
+  ],
+  "sites": [
+    {
+      "id": "BASE",
+      "x": 411699.9999999998,
+      "y": 6176699.999999999,
+      "role": "both",
+      "candidate": false
+    },
+    {
+      "id": "RES",
+      "x": 414700.0000000003,
+      "y": 6176700.0,
+      "role": "reserve",
+      "candidate": false
+    }
+  ],
+  "mission": {
+    "objectives": [
+      "makespan"
+    ],
+    "window_start": "2026-06-15T08:30:00+03:00",
+    "window_end": "2026-06-15T18:00:00+03:00",
+    "wind": {
+      "speed_ms": 3.0,
+      "direction_deg_from": 210.0
+    },
+    "allow_different_start_end": false,
+    "require_complete_coverage": true,
+    "require_schedule": true
+  },
+  "tasks": [
+    {
+      "id": "RGB_LONG#T000",
+      "job_id": "RGB_LONG",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000035,
+              6176052.0
+            ],
+            [
+              414400.0,
+              6176052.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              414400.0,
+              6176106.0
+            ],
+            [
+              412000.00000000035,
+              6176106.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              412000.00000000035,
+              6176160.0
+            ],
+            [
+              414400.0,
+              6176160.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        }
+      ],
+      "survey_length_m": 7199.999999998952,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000035,
+        6176052.0
+      ],
+      "exit": [
+        414400.0,
+        6176160.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000035,
+          6176052.0
+        ],
+        [
+          414400.0,
+          6176052.0
+        ],
+        [
+          414400.0,
+          6176106.0
+        ],
+        [
+          412000.00000000035,
+          6176106.0
+        ],
+        [
+          412000.00000000035,
+          6176160.0
+        ],
+        [
+          414400.0,
+          6176160.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_LONG#T001",
+      "job_id": "RGB_LONG",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              414400.0,
+              6176214.0
+            ],
+            [
+              412000.0000000003,
+              6176214.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176268.0
+            ],
+            [
+              414399.99999999994,
+              6176268.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              414399.99999999994,
+              6176322.0
+            ],
+            [
+              412000.0000000003,
+              6176322.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        }
+      ],
+      "survey_length_m": 7199.9999999990105,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        414400.0,
+        6176214.0
+      ],
+      "exit": [
+        412000.0000000003,
+        6176322.0
+      ],
+      "geom_coords": [
+        [
+          414400.0,
+          6176214.0
+        ],
+        [
+          412000.0000000003,
+          6176214.0
+        ],
+        [
+          412000.0000000003,
+          6176268.0
+        ],
+        [
+          414399.99999999994,
+          6176268.0
+        ],
+        [
+          414399.99999999994,
+          6176322.0
+        ],
+        [
+          412000.0000000003,
+          6176322.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_LONG#T002",
+      "job_id": "RGB_LONG",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176376.0
+            ],
+            [
+              414399.99999999994,
+              6176376.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              414399.99999999994,
+              6176430.0
+            ],
+            [
+              412000.0000000003,
+              6176430.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176484.0
+            ],
+            [
+              414399.99999999994,
+              6176484.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        }
+      ],
+      "survey_length_m": 7199.999999998952,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6176376.0
+      ],
+      "exit": [
+        414399.99999999994,
+        6176484.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6176376.0
+        ],
+        [
+          414399.99999999994,
+          6176376.0
+        ],
+        [
+          414399.99999999994,
+          6176430.0
+        ],
+        [
+          412000.0000000003,
+          6176430.0
+        ],
+        [
+          412000.0000000003,
+          6176484.0
+        ],
+        [
+          414399.99999999994,
+          6176484.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_LONG#T003",
+      "job_id": "RGB_LONG",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              414399.99999999994,
+              6176538.0
+            ],
+            [
+              412000.00000000023,
+              6176538.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6176592.0
+            ],
+            [
+              414399.99999999994,
+              6176592.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              414399.99999999994,
+              6176646.0
+            ],
+            [
+              412000.00000000023,
+              6176646.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        }
+      ],
+      "survey_length_m": 7199.999999999127,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        414399.99999999994,
+        6176538.0
+      ],
+      "exit": [
+        412000.00000000023,
+        6176646.0
+      ],
+      "geom_coords": [
+        [
+          414399.99999999994,
+          6176538.0
+        ],
+        [
+          412000.00000000023,
+          6176538.0
+        ],
+        [
+          412000.00000000023,
+          6176592.0
+        ],
+        [
+          414399.99999999994,
+          6176592.0
+        ],
+        [
+          414399.99999999994,
+          6176646.0
+        ],
+        [
+          412000.00000000023,
+          6176646.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_LONG#T004",
+      "job_id": "RGB_LONG",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6176700.0
+            ],
+            [
+              414399.9999999999,
+              6176700.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              414399.9999999999,
+              6176754.0
+            ],
+            [
+              412000.00000000023,
+              6176754.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6176808.0
+            ],
+            [
+              414399.9999999999,
+              6176808.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        }
+      ],
+      "survey_length_m": 7199.999999998952,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6176700.0
+      ],
+      "exit": [
+        414399.9999999999,
+        6176808.0
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6176700.0
+        ],
+        [
+          414399.9999999999,
+          6176700.0
+        ],
+        [
+          414399.9999999999,
+          6176754.0
+        ],
+        [
+          412000.00000000023,
+          6176754.0
+        ],
+        [
+          412000.00000000023,
+          6176808.0
+        ],
+        [
+          414399.9999999999,
+          6176808.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_LONG#T005",
+      "job_id": "RGB_LONG",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              414399.9999999999,
+              6176862.0
+            ],
+            [
+              412000.00000000023,
+              6176862.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6176916.0
+            ],
+            [
+              414399.9999999999,
+              6176916.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              414399.9999999999,
+              6176970.0
+            ],
+            [
+              412000.0000000002,
+              6176970.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        }
+      ],
+      "survey_length_m": 7199.999999999069,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        414399.9999999999,
+        6176862.0
+      ],
+      "exit": [
+        412000.0000000002,
+        6176970.0
+      ],
+      "geom_coords": [
+        [
+          414399.9999999999,
+          6176862.0
+        ],
+        [
+          412000.00000000023,
+          6176862.0
+        ],
+        [
+          412000.0000000002,
+          6176916.0
+        ],
+        [
+          414399.9999999999,
+          6176916.0
+        ],
+        [
+          414399.9999999999,
+          6176970.0
+        ],
+        [
+          412000.0000000002,
+          6176970.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_LONG#T006",
+      "job_id": "RGB_LONG",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6177024.0
+            ],
+            [
+              414399.9999999999,
+              6177024.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              414399.9999999999,
+              6177078.0
+            ],
+            [
+              412000.0000000002,
+              6177078.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6177132.0
+            ],
+            [
+              414399.9999999999,
+              6177132.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        }
+      ],
+      "survey_length_m": 7199.999999999127,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6177024.0
+      ],
+      "exit": [
+        414399.9999999999,
+        6177132.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6177024.0
+        ],
+        [
+          414399.9999999999,
+          6177024.0
+        ],
+        [
+          414399.9999999999,
+          6177078.0
+        ],
+        [
+          412000.0000000002,
+          6177078.0
+        ],
+        [
+          412000.0000000002,
+          6177132.0
+        ],
+        [
+          414399.9999999999,
+          6177132.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_LONG#T007",
+      "job_id": "RGB_LONG",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              414399.9999999998,
+              6177186.0
+            ],
+            [
+              412000.0000000002,
+              6177186.0
+            ]
+          ],
+          "length_m": 2399.9999999996508,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6177240.0
+            ],
+            [
+              414399.9999999998,
+              6177240.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        },
+        {
+          "coords": [
+            [
+              414399.9999999998,
+              6177294.0
+            ],
+            [
+              412000.0000000001,
+              6177294.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        }
+      ],
+      "survey_length_m": 7199.999999999069,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        414399.9999999998,
+        6177186.0
+      ],
+      "exit": [
+        412000.0000000001,
+        6177294.0
+      ],
+      "geom_coords": [
+        [
+          414399.9999999998,
+          6177186.0
+        ],
+        [
+          412000.0000000002,
+          6177186.0
+        ],
+        [
+          412000.0000000001,
+          6177240.0
+        ],
+        [
+          414399.9999999998,
+          6177240.0
+        ],
+        [
+          414399.9999999998,
+          6177294.0
+        ],
+        [
+          412000.0000000001,
+          6177294.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_LONG#T008",
+      "job_id": "RGB_LONG",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6177348.0
+            ],
+            [
+              414399.9999999998,
+              6177348.0
+            ]
+          ],
+          "length_m": 2399.999999999709,
+          "job_id": "RGB_LONG"
+        }
+      ],
+      "survey_length_m": 2399.999999999709,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6177348.0
+      ],
+      "exit": [
+        414399.9999999998,
+        6177348.0
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6177348.0
+        ],
+        [
+          414399.9999999998,
+          6177348.0
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    }
+  ],
+  "feasibility": {
+    "eligible_uav_ids_by_task": {
+      "RGB_LONG#T000": [
+        "GS201_01"
+      ],
+      "RGB_LONG#T001": [
+        "GS201_01"
+      ],
+      "RGB_LONG#T002": [
+        "GS201_01"
+      ],
+      "RGB_LONG#T003": [
+        "GS201_01"
+      ],
+      "RGB_LONG#T004": [
+        "GS201_01"
+      ],
+      "RGB_LONG#T005": [
+        "GS201_01"
+      ],
+      "RGB_LONG#T006": [
+        "GS201_01"
+      ],
+      "RGB_LONG#T007": [
+        "GS201_01"
+      ],
+      "RGB_LONG#T008": [
+        "GS201_01"
+      ]
+    },
+    "ineligible_reasons": {},
+    "ineligible_reasons_human": {}
+  },
+  "coverage_meta": {
+    "coverage_percent": 100.0,
+    "task_count": 9,
+    "per_job": [
+      {
+        "job_id": "RGB_LONG",
+        "task_count": 9,
+        "sweep_angle_deg": 0.0,
+        "coverage_percent": 100.0,
+        "eligible_uavs": [
+          "GS201_01"
+        ]
+      }
+    ],
+    "sweep_candidates": {
+      "RGB_LONG": [
+        {
+          "label": "grid_0",
+          "angle_deg": 0.0,
+          "survey_length_m": 60000.0,
+          "turn_count": 24,
+          "score": 74164.6,
+          "maneuver_violations": 0,
+          "selected": true
+        },
+        {
+          "label": "grid_15",
+          "angle_deg": 15.0,
+          "survey_length_m": 62217.6,
+          "turn_count": 35,
+          "score": 83612.0,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_165",
+          "angle_deg": 165.0,
+          "survey_length_m": 62217.6,
+          "turn_count": 35,
+          "score": 84095.1,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_90",
+          "angle_deg": 90.0,
+          "survey_length_m": 61600.0,
+          "turn_count": 43,
+          "score": 85109.3,
+          "maneuver_violations": 0,
+          "selected": false
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "h1": {
+      "energy_hints": [
+        {
+          "scope": "mission",
+          "uav_id": "GS201_01",
+          "survey_length_m": 60000.0,
+          "need_flight_s": 2727.3,
+          "usable_endurance_s": 1536.0,
+          "sorties_hint": 2
+        }
+      ],
+      "reserve_sites": [
+        "RES"
+      ],
+      "terrain": {
+        "dem_available": true,
+        "warning_count": 0,
+        "warnings": [],
+        "note": "planning checks only; terrain-following is autopilot/H3"
+      }
+    }
+  },
+  "warnings": [
+    "site BASE: outside survey area (+50m slack)",
+    "site RES: outside survey area (+50m slack)",
+    "S04: mission ≈2 sorties on GS201_01 (total survey 60.0 km → 45 min vs usable 26 min) — multi-sortie, not H1 schedule"
+  ]
+}

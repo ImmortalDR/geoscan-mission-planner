@@ -1,0 +1,69 @@
+{
+  "uavs": [
+    {
+      "id": "GS201_01",
+      "model": "geoscan_201",
+      "class": "fixed_wing",
+      "ground_speed_kmh": 80,
+      "operational_endurance_min": 144,
+      "max_wind_ms": 12,
+      "payload_classes": [
+        "rgb",
+        "thermal"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 300
+    },
+    {
+      "id": "GS701_02",
+      "model": "geoscan_701",
+      "class": "fixed_wing",
+      "ground_speed_kmh": 100,
+      "operational_endurance_min": 480,
+      "max_wind_ms": 12,
+      "payload_classes": [
+        "rgb",
+        "multispectral"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 300
+    },
+    {
+      "id": "GS401_03",
+      "model": "geoscan_401_geo",
+      "class": "multirotor",
+      "ground_speed_kmh": 30,
+      "operational_endurance_min": 48,
+      "max_wind_ms": 12,
+      "payload_classes": [
+        "rgb",
+        "lidar",
+        "geophysics"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 30
+    },
+    {
+      "id": "GS801_04",
+      "model": "geoscan_801",
+      "class": "multirotor",
+      "ground_speed_kmh": 45,
+      "operational_endurance_min": 32,
+      "max_wind_ms": 10,
+      "payload_classes": [
+        "thermal",
+        "rgb_video"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 30
+    }
+  ]
+}

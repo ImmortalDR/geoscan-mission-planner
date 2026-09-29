@@ -1,0 +1,19 @@
+{
+  "id": "S01_msu_100km2",
+  "title": "MSU surroundings, 100 square km",
+  "expected_status": "SAFE",
+  "objectives": [
+    "makespan",
+    "total_flight"
+  ],
+  "real_elevation": true,
+  "checks": {
+    "survey_area_m2": 100000000,
+    "max_fleet": 10
+  },
+  "proof": null,
+  "role": "scale",
+  "purpose_ru": "Эталон масштаба: ~100 км², группа БВС, оба критерия",
+  "catalog_badge_ru": "Группа · масштаб H2",
+  "fleet_count": 4
+}

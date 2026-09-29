@@ -1,0 +1,25 @@
+{
+  "uavs": [
+    {
+      "id": "U01",
+      "model": "geoscan_201",
+      "class": "fixed_wing",
+      "ground_speed_kmh": 79.2,
+      "operational_endurance_min": 144,
+      "max_wind_ms": 12,
+      "payload_classes": [
+        "rgb"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 300,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 180,
+      "landing_time_s": 240,
+      "service_time_s": 420,
+      "parameter_status": "explicit_synthetic_operational_profile_not_manufacturer_guarantee"
+    }
+  ]
+}

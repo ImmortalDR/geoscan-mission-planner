@@ -1,0 +1,18 @@
+{
+  "schema": "gmp.h1.fixture.m8.v1",
+  "description": "Metric CRS polygons: survey rectangle with central NFZ square",
+  "crs": "EPSG:32637",
+  "survey": {
+    "type": "Polygon",
+    "coordinates": [[[0, 0], [500, 0], [500, 400], [0, 400], [0, 0]]]
+  },
+  "nfz": {
+    "type": "Polygon",
+    "coordinates": [[[200, 150], [300, 150], [300, 250], [200, 250], [200, 150]]]
+  },
+  "nfz_buffer_m": 30,
+  "expect": {
+    "effective_disjoint_nfz_core": true,
+    "effective_area_lt_survey": true
+  }
+}

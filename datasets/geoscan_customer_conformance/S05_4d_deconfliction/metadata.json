@@ -1,0 +1,9 @@
+{
+  "scenario_id": "S05_4d_deconfliction",
+  "description": "Geometry is arranged to make naive opposite-base transits cross; final plan must be conflict-free.",
+  "seed": 20260923,
+  "vector_crs": "EPSG:4326",
+  "internal_generation_crs": "EPSG:32637",
+  "synthetic": true,
+  "not_operational_data": true
+}

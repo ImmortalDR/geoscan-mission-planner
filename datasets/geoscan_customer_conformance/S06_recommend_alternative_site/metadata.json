@@ -1,0 +1,9 @@
+{
+  "scenario_id": "S06_recommend_alternative_site",
+  "description": "Initial configuration infeasible by range; Recommendation Engine should propose a closer site.",
+  "seed": 20260924,
+  "vector_crs": "EPSG:4326",
+  "internal_generation_crs": "EPSG:32637",
+  "synthetic": true,
+  "not_operational_data": true
+}

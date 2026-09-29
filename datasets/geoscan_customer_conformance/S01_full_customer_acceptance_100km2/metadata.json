@@ -1,0 +1,9 @@
+{
+  "scenario_id": "S01_full_customer_acceptance_100km2",
+  "description": "Comprehensive acceptance scene covering every original input class and all five survey types.",
+  "seed": 20260919,
+  "vector_crs": "EPSG:4326",
+  "internal_generation_crs": "EPSG:32637",
+  "synthetic": true,
+  "not_operational_data": true
+}

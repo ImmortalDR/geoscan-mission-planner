@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BASE_0",
+        "role": "both",
+        "candidate": false
+      },
+      "geometry": {
+        "coordinates": [
+          37.444141608157544,
+          55.67503163303533
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BASE_1",
+        "role": "both",
+        "candidate": false
+      },
+      "geometry": {
+        "coordinates": [
+          37.443428115041705,
+          55.692995818389235
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BASE_2",
+        "role": "both",
+        "candidate": false
+      },
+      "geometry": {
+        "coordinates": [
+          37.442713814525746,
+          55.71095994475972
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BASE_3",
+        "role": "both",
+        "candidate": false
+      },
+      "geometry": {
+        "coordinates": [
+          37.44199870535853,
+          55.7289240121504
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RESERVE",
+        "role": "reserve",
+        "candidate": false
+      },
+      "geometry": {
+        "coordinates": [
+          37.618046702214905,
+          55.704071803685025
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SITE_muidzpir",
+        "role": "both",
+        "candidate": false
+      },
+      "geometry": {
+        "coordinates": [
+          37.566379257842556,
+          55.705382969316446
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

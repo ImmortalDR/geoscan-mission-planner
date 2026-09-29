@@ -1,0 +1,12 @@
+{
+  "objective": "makespan",
+  "mission_window": {
+    "start": "2026-06-15T09:00:00+03:00",
+    "end": "2026-06-15T14:00:00+03:00"
+  },
+  "force_simultaneous_initial_departure": true,
+  "wind": {
+    "speed_ms": 2,
+    "direction_deg_from": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "payload_profiles": [
+    {
+      "id": "RGB",
+      "type": "rgb",
+      "nominal_agl_m": 492.3076923076923,
+      "front_overlap": 0.8,
+      "side_overlap": 0.5,
+      "survey_speed_factor": 1,
+      "camera": {
+        "image_width_px": 6000,
+        "image_height_px": 4000,
+        "focal_length_mm": 16,
+        "pixel_pitch_um": 3.9
+      },
+      "planning_gsd_cm": 12,
+      "gsd_cm": 14.399999999999999
+    }
+  ]
+}

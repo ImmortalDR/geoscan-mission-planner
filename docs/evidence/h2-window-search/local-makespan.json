@@ -1,0 +1,241 @@
+{
+  "wall_s": 23.847301289904863,
+  "status": "SAFE",
+  "metrics": {
+    "distance_m": 73103.02171200178,
+    "total_flight_s": 4460.411679983139,
+    "makespan_s": 8106.901571989059,
+    "airborne_span_s": 8106.901571989059,
+    "coverage_percent": 99.99999999999999,
+    "required_area_m2": 12000000.000001602,
+    "covered_area_m2": 12000000.0000016,
+    "sortie_count": 2,
+    "per_job": {
+      "JOB_RGB": {
+        "required_area_m2": 12000000.000001602,
+        "covered_area_m2": 12000000.0000016,
+        "coverage_percent": 99.99999999999999
+      }
+    },
+    "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+    "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+  },
+  "violations": [],
+  "window_search": {
+    "attempted": true,
+    "adopted": true,
+    "windows": [
+      {
+        "start_s": 0.0,
+        "end_s": 1799.8
+      },
+      {
+        "start_s": 5400.2,
+        "end_s": 36000.0
+      }
+    ],
+    "policy": "whole transects; ground during union of temporal closures; intermediate ends must allow refuelling and final landing",
+    "baseline_feasible": true,
+    "baseline_metrics": {
+      "makespan_s": 9324.520937885512,
+      "total_flight_s": 3924.519937885512,
+      "total_distance_m": 69579.23600977616,
+      "sortie_count": 1,
+      "used_uav_count": 1
+    },
+    "stages": [
+      {
+        "window": 1,
+        "start_s": 0.0,
+        "end_s": 1799.8,
+        "remaining_before": 16,
+        "search": {
+          "seed_s": 0.013634372036904097,
+          "initial_objective_s": 1674.2,
+          "search_s": 0.16149864392355084,
+          "solutions_seen": 46,
+          "branches": 1801,
+          "failures": 177,
+          "branch_limit": 2500,
+          "status": 1,
+          "logical_nodes": 39,
+          "reload_copies": {
+            "U01": 3
+          },
+          "greedy_missing": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            15
+          ],
+          "finalists": 7,
+          "reload_copy_limit_reached": [],
+          "depth": "deep",
+          "seed_candidates": 1,
+          "selected_seed": "greedy_fallback",
+          "block_search": [
+            {
+              "evaluations": 2,
+              "proposals": 4,
+              "evaluation_limit": 1000,
+              "accepted": [
+                {
+                  "operation": "snake_order",
+                  "before": 316512000,
+                  "after": 315738000
+                }
+              ],
+              "initial_cost": 316512000,
+              "final_cost": 315738000,
+              "elapsed_s": 0.0011076070368289948
+            }
+          ],
+          "table_reads": 74911,
+          "table_read_limit": 250000,
+          "stagnation_read_limit": 66666,
+          "reads_since_improvement": 66675,
+          "stagnation_limit_reached": true,
+          "emergency_time_limit_s": 60,
+          "emergency_time_limit_reached": false,
+          "stop_policy": "deterministic no-improvement/branch/table-read limits; emergency time limit separately",
+          "seed": 20260918,
+          "diagnostic": true
+        },
+        "trials": [
+          {
+            "assigned": 6,
+            "violations": []
+          },
+          {
+            "assigned": 6,
+            "violations": []
+          },
+          {
+            "assigned": 6,
+            "violations": []
+          }
+        ],
+        "completed": 6,
+        "remaining_after": 10
+      },
+      {
+        "window": 2,
+        "start_s": 5400.2,
+        "end_s": 36000.0,
+        "remaining_before": 10,
+        "search": {
+          "seed_s": 0.024134006001986563,
+          "initial_objective_s": 8107.4,
+          "search_s": 0.11723131709732115,
+          "solutions_seen": 20,
+          "branches": 458,
+          "failures": 103,
+          "branch_limit": 2500,
+          "status": 1,
+          "logical_nodes": 27,
+          "reload_copies": {
+            "U01": 3
+          },
+          "greedy_missing": [],
+          "finalists": 4,
+          "reload_copy_limit_reached": [],
+          "depth": "deep",
+          "seed_candidates": 5,
+          "selected_seed": "whole_sweeps_reverse",
+          "block_search": [
+            {
+              "evaluations": 1,
+              "proposals": 2,
+              "evaluation_limit": 1000,
+              "accepted": [],
+              "initial_cost": 29186748146,
+              "final_cost": 29186748146,
+              "elapsed_s": 0.002680485020391643
+            }
+          ],
+          "table_reads": 66680,
+          "table_read_limit": 250000,
+          "stagnation_read_limit": 66666,
+          "reads_since_improvement": 66680,
+          "stagnation_limit_reached": true,
+          "emergency_time_limit_s": 60,
+          "emergency_time_limit_reached": false,
+          "stop_policy": "deterministic no-improvement/branch/table-read limits; emergency time limit separately",
+          "seed": 20260918,
+          "diagnostic": true
+        },
+        "trials": [
+          {
+            "assigned": 10,
+            "violations": []
+          },
+          {
+            "assigned": 10,
+            "violations": []
+          },
+          {
+            "assigned": 10,
+            "violations": []
+          }
+        ],
+        "completed": 10,
+        "remaining_after": 0
+      }
+    ],
+    "candidate_feasible": true,
+    "candidate_metrics": {
+      "makespan_s": 8106.901571628962,
+      "total_flight_s": 4460.411679670792,
+      "total_distance_m": 73103.02171200205,
+      "sortie_count": 2,
+      "used_uav_count": 1
+    },
+    "remaining": 0,
+    "violations": [],
+    "elapsed_s": 3.606249145930633,
+    "reason": "feasible_window_plan_improves_or_rescues_baseline"
+  },
+  "sorties": [
+    {
+      "id": "U01_S1",
+      "t_start": "2026-06-15T09:00:00+03:00",
+      "t_end": "2026-06-15T09:29:13.710108+03:00",
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "task_ids": [
+        "JOB_RGB#T000#G0003",
+        "JOB_RGB#T000#G0004",
+        "JOB_RGB#T000#G0005",
+        "JOB_RGB#T000#G0010",
+        "JOB_RGB#T000#G0011",
+        "JOB_RGB#T000#G0012"
+      ]
+    },
+    {
+      "id": "U01_S2",
+      "t_start": "2026-06-15T10:30:00.200000+03:00",
+      "t_end": "2026-06-15T11:15:06.901572+03:00",
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "task_ids": [
+        "JOB_RGB#T000#G0015",
+        "JOB_RGB#T000#G0014",
+        "JOB_RGB#T000#G0013",
+        "JOB_RGB#T000#G0009",
+        "JOB_RGB#T000#G0008",
+        "JOB_RGB#T000#G0007",
+        "JOB_RGB#T000#G0006",
+        "JOB_RGB#T000#G0002",
+        "JOB_RGB#T000#G0001",
+        "JOB_RGB#T000#G0000"
+      ]
+    }
+  ]
+}

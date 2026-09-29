@@ -1,0 +1,26 @@
+{
+  "release": "20260929-tz-compliance",
+  "source_commit": "54fff756f6de16d2840955f11998041325c6c418",
+  "previous_release": "/opt/geoscan-mvp/releases/20260927-routing-workspace",
+  "backup": "/opt/geoscan-mvp/backups/20260929-175628-before-tz-compliance",
+  "counts_before": {
+    "scenes": 108,
+    "plans": 89
+  },
+  "counts_after": {
+    "scenes": 108,
+    "plans": 89
+  },
+  "health": {
+    "status": "ready",
+    "storage": "postgresql",
+    "pipeline": "h1_coverage -> h2 -> h3",
+    "components": {
+      "h1_coverage": true,
+      "h2": true
+    },
+    "release": "20260929-tz-compliance"
+  },
+  "active_before": 0,
+  "passed": true
+}

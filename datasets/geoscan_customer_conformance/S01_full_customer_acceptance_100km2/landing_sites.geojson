@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.59060328278907,
+          55.73422651651202
+        ]
+      },
+      "properties": {
+        "id": "BASE_W",
+        "layer": "landing_site",
+        "role": "both"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.765705325274524,
+          55.73700916590442
+        ]
+      },
+      "properties": {
+        "id": "BASE_E",
+        "layer": "landing_site",
+        "role": "both"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.73602345836755,
+          55.817582046078094
+        ]
+      },
+      "properties": {
+        "id": "BASE_N",
+        "layer": "landing_site",
+        "role": "both"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.654191906917305,
+          55.73763545663013
+        ]
+      },
+      "properties": {
+        "id": "RES_1",
+        "layer": "landing_site",
+        "role": "reserve"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.69345742360058,
+          55.80186089640711
+        ]
+      },
+      "properties": {
+        "id": "RES_2",
+        "layer": "landing_site",
+        "role": "reserve"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.62347700140679,
+          55.79570569919545
+        ]
+      },
+      "properties": {
+        "id": "RES_3",
+        "layer": "landing_site",
+        "role": "reserve"
+      }
+    }
+  ]
+}

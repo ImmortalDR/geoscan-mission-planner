@@ -1,0 +1,51 @@
+{
+  "generated_at_unix": 1790337765.574426,
+  "hardware": {
+    "cpus": 2,
+    "memory_mb": 5925,
+    "cpu_profile": "compatibility"
+  },
+  "peak_api_worker_rss_mb": 243.4,
+  "database": "PostgreSQL",
+  "transport": "HTTP loopback for test only; production requires TLS",
+  "target_16cpu_64gb_tested": false,
+  "failure": null,
+  "runs": [
+    {
+      "users": 1,
+      "requests": 12,
+      "p95_ms": 230.863,
+      "server_errors": 0,
+      "rate_limited": 0,
+      "accepted_plans": 1,
+      "terminal_statuses": {
+        "SAFE": 1
+      },
+      "all_accepted_completed_safe": true
+    },
+    {
+      "users": 8,
+      "requests": 108,
+      "p95_ms": 4090.026,
+      "server_errors": 0,
+      "rate_limited": 4,
+      "accepted_plans": 4,
+      "terminal_statuses": {
+        "SAFE": 4
+      },
+      "all_accepted_completed_safe": true
+    },
+    {
+      "users": 32,
+      "requests": 253,
+      "p95_ms": 17946.634,
+      "server_errors": 0,
+      "rate_limited": 28,
+      "accepted_plans": 4,
+      "terminal_statuses": {
+        "SAFE": 4
+      },
+      "all_accepted_completed_safe": true
+    }
+  ]
+}

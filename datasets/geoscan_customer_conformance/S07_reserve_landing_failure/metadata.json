@@ -1,0 +1,9 @@
+{
+  "scenario_id": "S07_reserve_landing_failure",
+  "description": "A long corridor has a middle portion without a reachable landing site under conservative reserve.",
+  "seed": 20260925,
+  "vector_crs": "EPSG:4326",
+  "internal_generation_crs": "EPSG:32637",
+  "synthetic": true,
+  "not_operational_data": true
+}

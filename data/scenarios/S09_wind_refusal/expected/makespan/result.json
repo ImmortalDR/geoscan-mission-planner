@@ -1,0 +1,23 @@
+{
+  "schema": "geoscan.h3.result.v1",
+  "scene_id": "S09_wind_refusal",
+  "objective": "makespan",
+  "status": "INFEASIBLE",
+  "optimality": {
+    "status": "unknown"
+  },
+  "metrics": {
+    "proof_type": "wind_excludes_all",
+    "proof_verified": true,
+    "compatible_uavs": 1,
+    "wind_eligible_uavs": 0
+  },
+  "sorties": [],
+  "diagnosis": {
+    "proof": {
+      "type": "wind_excludes_all",
+      "job_id": "JOB_RGB"
+    },
+    "message": "Wind excludes every compatible aircraft"
+  }
+}

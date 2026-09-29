@@ -1,0 +1,84 @@
+{
+  "desktop": {
+    "simple": [
+      "Первая RGB-съёмка",
+      "Дозарядка между вылетами",
+      "Два аппарата, два датчика",
+      "Слишком далёкая стартовая база",
+      "Не хватает ресурса на посадку",
+      "Самолёт рядом с запретной зоной",
+      "Слишком сильный ветер",
+      "Старт и финиш на разных базах",
+      "Пять датчиков — с ветром",
+      "Пять датчиков — без ветра"
+    ],
+    "complex": [
+      "МГУ: съёмка территории 100 км²",
+      "Переделкино: область с вырезом",
+      "Орехово: полёты с перерывом",
+      "МГУ: три зоны, четыре аппарата",
+      "МГУ: четыре зоны, четыре аппарата",
+      "МГУ: совместная работа 201 и 401",
+      "МГУ: пять зон для трёх аппаратов",
+      "МГУ: RGB и лазерная съёмка",
+      "МГУ: 19 зон, RGB и LiDAR",
+      "МГУ: 18 зон и четыре аппарата"
+    ],
+    "opened_template": {
+      "name": "S18 · МГУ: 18 зон и четыре аппарата",
+      "hash": "02ce5995c2394b541130df20c8d74ba6502870a74a7f4d003bcffcb27472233f",
+      "readonly": true,
+      "ready": true
+    },
+    "result_tabs": {
+      "summary": "ok",
+      "h1": "ok",
+      "graph": "ok",
+      "timeline": "ok",
+      "h3": "ok",
+      "export": "ok"
+    },
+    "javascript_errors": []
+  },
+  "mobile": {
+    "no_horizontal_overflow": true,
+    "folder_switch_and_search": true,
+    "open_tabs": true,
+    "health": {
+      "status": "ready",
+      "storage": "sqlite",
+      "pipeline": "h1_coverage -> h2 -> h3",
+      "components": {
+        "h1_coverage": true,
+        "h2": true
+      },
+      "release": "h2-development"
+    },
+    "production_health": {
+      "status": "ready",
+      "storage": "postgresql",
+      "pipeline": "h1_coverage -> h2 -> h3",
+      "components": {
+        "h1_coverage": true,
+        "h2": true
+      },
+      "release": "20260927-routing-workspace"
+    },
+    "passed": true,
+    "javascript_errors": []
+  },
+  "source_sha256": {
+    "src/gmp/api/app.py": "51448ee793765fafa0e4561dc3c8f902c2a75a78e41919796fb40ab4ff8c7b0d",
+    "src/gmp/api/scenario_catalog.py": "f0fcec373365dac52a8dd057d474b1489fb0a19d67a36b99277c83ba47835dfb",
+    "web/h3/app.js": "4ae4a1e1c0e740dfeaf69729726e026e4e9ff35c9c1b546e918f86c317bf4b3e",
+    "web/h3/index.html": "55b997f1ffd24696e239b9873980431e2dff60199988583f84b5cea4ed520f6c",
+    "web/h3/styles.css": "94a2dae9eed06af3c77cf3e5c993c2496c84903562a3fcf5b43f17a3b9583425"
+  },
+  "screenshots_note": "Фон карты скрыт при desktop-снимках. Для отдельной проверки мобильного каталога освобождён программный WebGL-контекст после авторизации; код приложения не менялся для этого.",
+  "api_tests": {
+    "full_suite_passed": 40,
+    "full_process_exit": 143,
+    "focused_passed": 4,
+    "focused_exit": 0
+  }
+}

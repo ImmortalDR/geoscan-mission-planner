@@ -1,0 +1,393 @@
+{
+  "runs": [
+    {
+      "status": "SAFE",
+      "objective": "makespan",
+      "search": {
+        "graph": {
+          "preparation_s": 0.5427626839373261,
+          "vertices": 28,
+          "transects": 13,
+          "orientations": 26,
+          "profiles": [
+            {
+              "id": "3d2622416f50dde31d36925b7af2d14528e2d2fd0723e96d09ff53f80bea9929",
+              "model": "gemini",
+              "uav_ids": [
+                "U01"
+              ],
+              "physical_edges": 134,
+              "expanded_edges": 0,
+              "valid_orientations": 10,
+              "detailed_edges_s": 0.285630114027299,
+              "total_s": 0.3306966780219227
+            },
+            {
+              "id": "03028edd9607a4a130365c57beea251652dff4335e5ca5bf23b9220eea415e1c",
+              "model": "gemini",
+              "uav_ids": [
+                "U02"
+              ],
+              "physical_edges": 134,
+              "expanded_edges": 0,
+              "valid_orientations": 16,
+              "detailed_edges_s": 0.14500265393871814,
+              "total_s": 0.1798460449790582
+            }
+          ],
+          "knn": 4,
+          "corners": 8,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 0,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.25,
+          "return_margin_s": 60,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.038079285994172096,
+        "seed_s": 0.05003291193861514,
+        "initial_objective_s": 895.2,
+        "search_s": 0.13167228607926518,
+        "solutions_seen": 17,
+        "branches": 557,
+        "failures": 78,
+        "branch_limit": 1200,
+        "status": 1,
+        "logical_nodes": 46,
+        "reload_copies": {
+          "U01": 3,
+          "U02": 3
+        },
+        "greedy_missing": [],
+        "finalists": 2,
+        "reload_copy_limit_reached": [],
+        "depth": "quick",
+        "seed_candidates": 3,
+        "table_reads": 100000,
+        "table_read_limit": 100000,
+        "emergency_time_limit_s": 30,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 0.8761193479876965,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 925.0558486421569,
+            "violations": [],
+            "repairs": 1
+          },
+          {
+            "candidate": 2,
+            "passed": true,
+            "metric_s": 895.1798486421569,
+            "violations": [],
+            "repairs": 0
+          }
+        ],
+        "total_s": 1.6744480220368132,
+        "objective": "makespan",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "81f164b2ab241fdece7d7c8e9ff85ea92bd5b88ed860b3a527d678c6bdcf2fda"
+      },
+      "error": null,
+      "metrics": {
+        "distance_m": 14387.745156955438,
+        "total_flight_s": 1707.8734488487244,
+        "makespan_s": 895.179848909378,
+        "airborne_span_s": 895.179848909378,
+        "coverage_percent": 100,
+        "required_area_m2": 405000.00000017026,
+        "covered_area_m2": 405000.00000017026,
+        "sortie_count": 2,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 202500.00000018335,
+            "covered_area_m2": 202500.00000018335,
+            "coverage_percent": 100
+          },
+          "JOB_MS": {
+            "required_area_m2": 202499.9999999869,
+            "covered_area_m2": 202499.9999999869,
+            "coverage_percent": 100
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "browser_wait_s": 23.143926388002,
+      "visible_time": "14 мин 56 с"
+    },
+    {
+      "status": "SAFE",
+      "objective": "makespan",
+      "search": {
+        "graph": {
+          "preparation_s": 0.4388846590882167,
+          "vertices": 28,
+          "transects": 13,
+          "orientations": 26,
+          "profiles": [
+            {
+              "id": "3d2622416f50dde31d36925b7af2d14528e2d2fd0723e96d09ff53f80bea9929",
+              "model": "gemini",
+              "uav_ids": [
+                "U01"
+              ],
+              "physical_edges": 134,
+              "expanded_edges": 0,
+              "valid_orientations": 10,
+              "detailed_edges_s": 0.19386013294570148,
+              "total_s": 0.22085907694417983
+            },
+            {
+              "id": "03028edd9607a4a130365c57beea251652dff4335e5ca5bf23b9220eea415e1c",
+              "model": "gemini",
+              "uav_ids": [
+                "U02"
+              ],
+              "physical_edges": 134,
+              "expanded_edges": 0,
+              "valid_orientations": 16,
+              "detailed_edges_s": 0.159802814014256,
+              "total_s": 0.20109727699309587
+            }
+          ],
+          "knn": 4,
+          "corners": 8,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 0,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.25,
+          "return_margin_s": 60,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.02430278796236962,
+        "seed_s": 0.030773436068557203,
+        "initial_objective_s": 895.2,
+        "search_s": 0.24957690597511828,
+        "solutions_seen": 17,
+        "branches": 557,
+        "failures": 78,
+        "branch_limit": 1200,
+        "status": 1,
+        "logical_nodes": 46,
+        "reload_copies": {
+          "U01": 3,
+          "U02": 3
+        },
+        "greedy_missing": [],
+        "finalists": 2,
+        "reload_copy_limit_reached": [],
+        "depth": "quick",
+        "seed_candidates": 3,
+        "table_reads": 100000,
+        "table_read_limit": 100000,
+        "emergency_time_limit_s": 30,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 0.8393783170031384,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 925.0558486421569,
+            "violations": [],
+            "repairs": 1
+          },
+          {
+            "candidate": 2,
+            "passed": true,
+            "metric_s": 895.1798486421569,
+            "violations": [],
+            "repairs": 0
+          }
+        ],
+        "total_s": 1.6233292169636115,
+        "objective": "makespan",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "81f164b2ab241fdece7d7c8e9ff85ea92bd5b88ed860b3a527d678c6bdcf2fda"
+      },
+      "error": null,
+      "metrics": {
+        "distance_m": 14387.745156955438,
+        "total_flight_s": 1707.8734488487244,
+        "makespan_s": 895.179848909378,
+        "airborne_span_s": 895.179848909378,
+        "coverage_percent": 100,
+        "required_area_m2": 405000.00000017026,
+        "covered_area_m2": 405000.00000017026,
+        "sortie_count": 2,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 202500.00000018335,
+            "covered_area_m2": 202500.00000018335,
+            "coverage_percent": 100
+          },
+          "JOB_MS": {
+            "required_area_m2": 202499.9999999869,
+            "covered_area_m2": 202499.9999999869,
+            "coverage_percent": 100
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "browser_wait_s": 9.642707163002342,
+      "visible_time": "14 мин 56 с"
+    },
+    {
+      "status": "SAFE",
+      "objective": "total_flight",
+      "search": {
+        "graph": {
+          "preparation_s": 0.46259190794080496,
+          "vertices": 28,
+          "transects": 13,
+          "orientations": 26,
+          "profiles": [
+            {
+              "id": "3d2622416f50dde31d36925b7af2d14528e2d2fd0723e96d09ff53f80bea9929",
+              "model": "gemini",
+              "uav_ids": [
+                "U01"
+              ],
+              "physical_edges": 134,
+              "expanded_edges": 0,
+              "valid_orientations": 10,
+              "detailed_edges_s": 0.18883539095986634,
+              "total_s": 0.2152216989779845
+            },
+            {
+              "id": "03028edd9607a4a130365c57beea251652dff4335e5ca5bf23b9220eea415e1c",
+              "model": "gemini",
+              "uav_ids": [
+                "U02"
+              ],
+              "physical_edges": 134,
+              "expanded_edges": 0,
+              "valid_orientations": 16,
+              "detailed_edges_s": 0.18736325902864337,
+              "total_s": 0.23222776700276881
+            }
+          ],
+          "knn": 4,
+          "corners": 8,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 0,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.25,
+          "return_margin_s": 60,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.02492665103636682,
+        "seed_s": 0.027782057994045317,
+        "initial_objective_s": 1708.1000000000004,
+        "search_s": 0.24871693493332714,
+        "solutions_seen": 34,
+        "branches": 264,
+        "failures": 134,
+        "branch_limit": 1200,
+        "status": 1,
+        "logical_nodes": 46,
+        "reload_copies": {
+          "U01": 3,
+          "U02": 3
+        },
+        "greedy_missing": [],
+        "finalists": 2,
+        "reload_copy_limit_reached": [],
+        "depth": "quick",
+        "seed_candidates": 3,
+        "table_reads": 102037,
+        "table_read_limit": 100000,
+        "emergency_time_limit_s": 30,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 0.8290810610633343,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 1707.8734482157263,
+            "violations": [],
+            "repairs": 1
+          },
+          {
+            "candidate": 2,
+            "passed": true,
+            "metric_s": 1707.8734482157256,
+            "violations": [],
+            "repairs": 0
+          }
+        ],
+        "total_s": 1.6469798850594088,
+        "objective": "total_flight",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "81f164b2ab241fdece7d7c8e9ff85ea92bd5b88ed860b3a527d678c6bdcf2fda"
+      },
+      "error": null,
+      "metrics": {
+        "distance_m": 14387.745156955438,
+        "total_flight_s": 1707.8734488487244,
+        "makespan_s": 895.179848909378,
+        "airborne_span_s": 895.179848909378,
+        "coverage_percent": 100,
+        "required_area_m2": 405000.00000017026,
+        "covered_area_m2": 405000.00000017026,
+        "sortie_count": 2,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 202500.00000018335,
+            "covered_area_m2": 202500.00000018335,
+            "coverage_percent": 100
+          },
+          "JOB_MS": {
+            "required_area_m2": 202499.9999999869,
+            "covered_area_m2": 202499.9999999869,
+            "coverage_percent": 100
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "browser_wait_s": 9.849350107950158,
+      "visible_time": "28 мин 28 с"
+    }
+  ],
+  "graph": {
+    "layers": [
+      "visible",
+      "visible",
+      "visible"
+    ],
+    "features": 129,
+    "directed": 30,
+    "profiles": 2
+  },
+  "javascript_errors": [],
+  "passed": true,
+  "refuel_choices_saved": true,
+  "mobile_overflow": false
+}

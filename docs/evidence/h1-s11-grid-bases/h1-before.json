@@ -1,0 +1,185 @@
+{
+  "elapsed_s": 0.04617522796615958,
+  "coverage": 99.99999999992906,
+  "per_job": [
+    {
+      "job_id": "JOB_RGB",
+      "task_count": 1,
+      "sweep_angle_deg": 0.0,
+      "coverage_percent": 100.0,
+      "eligible_uavs": [
+        "U01"
+      ]
+    },
+    {
+      "job_id": "JOB_MULTISPECTRAL",
+      "task_count": 1,
+      "sweep_angle_deg": 0.0,
+      "coverage_percent": 100.0,
+      "eligible_uavs": [
+        "U02"
+      ]
+    },
+    {
+      "job_id": "JOB_THERMAL",
+      "task_count": 1,
+      "sweep_angle_deg": 0.0,
+      "coverage_percent": 100.0,
+      "eligible_uavs": [
+        "U03"
+      ]
+    },
+    {
+      "job_id": "JOB_LIDAR",
+      "task_count": 1,
+      "sweep_angle_deg": 90.0,
+      "coverage_percent": 100.0,
+      "eligible_uavs": [
+        "U04"
+      ]
+    },
+    {
+      "job_id": "JOB_GEOPHYSICS",
+      "task_count": 1,
+      "sweep_angle_deg": 90.0,
+      "coverage_percent": 100.0,
+      "eligible_uavs": [
+        "U05"
+      ]
+    }
+  ],
+  "candidates": {
+    "JOB_RGB": [
+      {
+        "label": "wind_aligned",
+        "angle_deg": 0.0,
+        "survey_length_m": 960.0,
+        "turn_count": 2,
+        "score": 1215.5,
+        "maneuver_violations": 0,
+        "selected": true
+      },
+      {
+        "label": "wind_perpendicular",
+        "angle_deg": 90.0,
+        "survey_length_m": 960.0,
+        "turn_count": 2,
+        "score": 1244.3,
+        "maneuver_violations": 0,
+        "selected": false
+      }
+    ],
+    "JOB_MULTISPECTRAL": [
+      {
+        "label": "wind_aligned",
+        "angle_deg": 0.0,
+        "survey_length_m": 1920.0,
+        "turn_count": 5,
+        "score": 2386.7,
+        "maneuver_violations": 0,
+        "selected": true
+      },
+      {
+        "label": "wind_perpendicular",
+        "angle_deg": 90.0,
+        "survey_length_m": 1920.0,
+        "turn_count": 5,
+        "score": 2444.3,
+        "maneuver_violations": 0,
+        "selected": false
+      }
+    ],
+    "JOB_THERMAL": [
+      {
+        "label": "wind_aligned",
+        "angle_deg": 0.0,
+        "survey_length_m": 2880.0,
+        "turn_count": 8,
+        "score": 3483.6,
+        "maneuver_violations": 0,
+        "selected": true
+      },
+      {
+        "label": "wind_perpendicular",
+        "angle_deg": 90.0,
+        "survey_length_m": 2880.0,
+        "turn_count": 8,
+        "score": 3570.0,
+        "maneuver_violations": 0,
+        "selected": false
+      }
+    ],
+    "JOB_LIDAR": [
+      {
+        "label": "wind_perpendicular",
+        "angle_deg": 90.0,
+        "survey_length_m": 1280.0,
+        "turn_count": 3,
+        "score": 1678.4,
+        "maneuver_violations": 0,
+        "selected": true
+      },
+      {
+        "label": "wind_aligned",
+        "angle_deg": 0.0,
+        "survey_length_m": 1600.0,
+        "turn_count": 4,
+        "score": 2080.0,
+        "maneuver_violations": 0,
+        "selected": false
+      }
+    ],
+    "JOB_GEOPHYSICS": [
+      {
+        "label": "wind_perpendicular",
+        "angle_deg": 90.0,
+        "survey_length_m": 1280.0,
+        "turn_count": 3,
+        "score": 1678.4,
+        "maneuver_violations": 0,
+        "selected": true
+      },
+      {
+        "label": "wind_aligned",
+        "angle_deg": 0.0,
+        "survey_length_m": 1600.0,
+        "turn_count": 4,
+        "score": 2080.0,
+        "maneuver_violations": 0,
+        "selected": false
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "id": "JOB_RGB#T000",
+      "job_id": "JOB_RGB",
+      "angle": 0.0,
+      "transects": 3
+    },
+    {
+      "id": "JOB_MULTISPECTRAL#T000",
+      "job_id": "JOB_MULTISPECTRAL",
+      "angle": 0.0,
+      "transects": 6
+    },
+    {
+      "id": "JOB_THERMAL#T000",
+      "job_id": "JOB_THERMAL",
+      "angle": 0.0,
+      "transects": 9
+    },
+    {
+      "id": "JOB_LIDAR#T000",
+      "job_id": "JOB_LIDAR",
+      "angle": 90.0,
+      "transects": 4
+    },
+    {
+      "id": "JOB_GEOPHYSICS#T000",
+      "job_id": "JOB_GEOPHYSICS",
+      "angle": 90.0,
+      "transects": 4
+    }
+  ]
+}

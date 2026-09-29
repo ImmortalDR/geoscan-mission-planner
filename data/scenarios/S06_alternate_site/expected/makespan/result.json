@@ -1,0 +1,42 @@
+{
+  "schema": "geoscan.h3.result.v1",
+  "scene_id": "S06_alternate_site",
+  "objective": "makespan",
+  "status": "INFEASIBLE",
+  "optimality": {
+    "status": "unknown"
+  },
+  "metrics": {
+    "proof_type": "unreachable_required_point",
+    "proof_verified": true,
+    "bounds": [
+      {
+        "uav_id": "U01",
+        "minimum_time_s": 1938.0844133831636,
+        "usable_time_s": 768.0
+      }
+    ],
+    "sensor_half_diagonal_m": 110.80309763410271,
+    "proof_scope": "entire_required_job",
+    "bound_model": "horizontal_distance_at_maximum_ground_speed"
+  },
+  "sorties": [],
+  "diagnosis": {
+    "proof": {
+      "type": "unreachable_required_point",
+      "job_id": "JOB_RGB",
+      "point": [
+        37.53,
+        55.7
+      ]
+    },
+    "message": "Distant launch cannot reach task; alternative provided separately"
+  },
+  "recommendations": [
+    {
+      "change": "Activate the separate NEAR site input",
+      "paired_case": "alternative/",
+      "requires_new_input_and_revalidation": true
+    }
+  ]
+}

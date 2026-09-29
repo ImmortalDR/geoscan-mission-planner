@@ -1,0 +1,787 @@
+[
+  {
+    "path": "S00_smoke_rgb/allowed_airspace.geojson",
+    "size_bytes": 6808,
+    "sha256": "f5ebe9723f9a92c0a49a50d767e9f4395c61768d30cece7ff9cacc22620f8438"
+  },
+  {
+    "path": "S00_smoke_rgb/dem.tif",
+    "size_bytes": 2468,
+    "sha256": "0cff16ee46199b0a3f5bb8c35cff8839448f6664e31c93a91be24ee6e2cf60ff"
+  },
+  {
+    "path": "S00_smoke_rgb/expected_assertions.json",
+    "size_bytes": 148,
+    "sha256": "a822cb463d45fcf5175fa0cd22137a74505c3cdd5681f237cff912e5104955be"
+  },
+  {
+    "path": "S00_smoke_rgb/fleet.json",
+    "size_bytes": 452,
+    "sha256": "5b174e4d71bcfd7726fe9be1bab894c0dc84189c279b51db0b03ce7605c63524"
+  },
+  {
+    "path": "S00_smoke_rgb/landing_sites.geojson",
+    "size_bytes": 644,
+    "sha256": "ed3bf9c023b927bb778e07abc22b68a7b5dbedb9a9a4fbb21eed9eb45a9421f7"
+  },
+  {
+    "path": "S00_smoke_rgb/metadata.json",
+    "size_bytes": 264,
+    "sha256": "978fe8f5609281bdaee6a6851bcebe90645bb2840065514c97726c961540d8b2"
+  },
+  {
+    "path": "S00_smoke_rgb/mission.json",
+    "size_bytes": 203,
+    "sha256": "6581053c2386b288ae474967770cc5d07abc805d247004400e288ec79f3558f6"
+  },
+  {
+    "path": "S00_smoke_rgb/no_fly_zones.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S00_smoke_rgb/obstacles.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S00_smoke_rgb/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S00_smoke_rgb/scene.kml",
+    "size_bytes": 2901,
+    "sha256": "25a02fc8bd87334146b59b6a9b2346cbadf469f321ee029b53e94a8f534d76aa"
+  },
+  {
+    "path": "S00_smoke_rgb/survey_areas.geojson",
+    "size_bytes": 795,
+    "sha256": "add601c2caef08c207fbf0a15fccf93ce37aaeb95d4f27334b8227124b59ccdd"
+  },
+  {
+    "path": "S00_smoke_rgb/temporal_airspace.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/allowed_airspace.geojson",
+    "size_bytes": 6814,
+    "sha256": "4ccf34f88bd7d735d35b2ceae4f7298b59788e166ce8da758448f2a5964f52eb"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/dem.tif",
+    "size_bytes": 684936,
+    "sha256": "09bc15acb16b2d7b7419b0f22467bccab0f29031b81205b50e766768f11c3edc"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/expected_assertions.json",
+    "size_bytes": 375,
+    "sha256": "39f4ed73d35bc53d2c8180f51abbe12f37ca80fd4d62862189dccf859279880c"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/fleet.json",
+    "size_bytes": 4434,
+    "sha256": "0cd012913b8fbda9c23b3e615fb22d921d125635fc9f6f0f52c72f7642c3b2fc"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/landing_sites.geojson",
+    "size_bytes": 1826,
+    "sha256": "261667deb97e59538e9ed9769fc9706699b725bc30ea658a3c0e77aad9728531"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/metadata.json",
+    "size_bytes": 317,
+    "sha256": "caac71d5989d662ead39efcd0c79cf2cb3453c388af32b77c6a16f198db36c5f"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/mission.json",
+    "size_bytes": 353,
+    "sha256": "1b5904600ece4f8c5ea1097c8bc2c4e50c64c83219c7c08fcbc123ec9d66b534"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/no_fly_zones.geojson",
+    "size_bytes": 1515,
+    "sha256": "7443fc23463b20ac1bf90a41467ab68cfd762180e3b9920b6c1380a87ea69b5c"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/obstacles.geojson",
+    "size_bytes": 19349,
+    "sha256": "614f3a1916752324387003ba1a367a78218d2d90217bca1a9ab20269e0f36977"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/scene.kml",
+    "size_bytes": 11035,
+    "sha256": "bea60fd063d5dea6c355793859bead6f0a9a557d7e6f63b426dfdb64d0964eb0"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/survey_areas.geojson",
+    "size_bytes": 4303,
+    "sha256": "4a866eafa8c33027198752a916032c9030207bee33eeda6b0f78128172594417"
+  },
+  {
+    "path": "S01_full_customer_acceptance_100km2/temporal_airspace.geojson",
+    "size_bytes": 1791,
+    "sha256": "23db3d2d3c26a46879afd8e2ea669eb7463ade494d3a1a1b48eb16dea1b727dd"
+  },
+  {
+    "path": "S02_multipolygon_holes/allowed_airspace.geojson",
+    "size_bytes": 7098,
+    "sha256": "297142892ef37b75cd41da40d6d5f9bc5de904e2324952fdb1aae29995ca82b1"
+  },
+  {
+    "path": "S02_multipolygon_holes/dem.tif",
+    "size_bytes": 3806,
+    "sha256": "591dc8c354ef661091bddf13f92c73341ae250c4c41a6c786f46e8fe463790c3"
+  },
+  {
+    "path": "S02_multipolygon_holes/expected_assertions.json",
+    "size_bytes": 118,
+    "sha256": "63f524a91aae315d1aa222ac4d3e63a33a28ec859039f8c4112cb5bd69959c23"
+  },
+  {
+    "path": "S02_multipolygon_holes/fleet.json",
+    "size_bytes": 1258,
+    "sha256": "4b7481c8c4b2d48428ab577976f5f2497c1c2a533da08a11932359e6bf44fd0c"
+  },
+  {
+    "path": "S02_multipolygon_holes/landing_sites.geojson",
+    "size_bytes": 640,
+    "sha256": "32ab17a47c1d7b0f6d40b06912119b21da0e33cb9d86f684ef932ea9434aa4dc"
+  },
+  {
+    "path": "S02_multipolygon_holes/metadata.json",
+    "size_bytes": 256,
+    "sha256": "b47e18da44b2ba907daa7514feecd343ca1ea2db400c6ec2fdfdbc77ff9d78f0"
+  },
+  {
+    "path": "S02_multipolygon_holes/mission.json",
+    "size_bytes": 207,
+    "sha256": "2ba33b685888bbe82211881d3f65609bc04563580faf118d1d7cd8adf08fd3ad"
+  },
+  {
+    "path": "S02_multipolygon_holes/no_fly_zones.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S02_multipolygon_holes/obstacles.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S02_multipolygon_holes/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S02_multipolygon_holes/scene.kml",
+    "size_bytes": 3502,
+    "sha256": "dab4b918b486dad62006f655934ab7627f0a279857db39cd456f7768628729a7"
+  },
+  {
+    "path": "S02_multipolygon_holes/survey_areas.geojson",
+    "size_bytes": 1967,
+    "sha256": "85d75a6a7b058fbc2704e4a9f6cca012dececfbf48784abc9af9ea5476a7243c"
+  },
+  {
+    "path": "S02_multipolygon_holes/temporal_airspace.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/allowed_airspace.geojson",
+    "size_bytes": 6812,
+    "sha256": "968d745647a9a3b460491a27cd454c285c64909142764fa9913959322abe64a9"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/dem.tif",
+    "size_bytes": 223674,
+    "sha256": "daf3bc3bff72b6c07bf16b23bfc3edd2a1f2e09c97c1eee604eac62f73dc7efa"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/expected_assertions.json",
+    "size_bytes": 133,
+    "sha256": "a4524e860871bb671f1f19d93a5622ced669977ed107f3a2d01143eb2d28efe8"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/fleet.json",
+    "size_bytes": 1665,
+    "sha256": "f13fa477d2eb0899d6451fda5b852cc2a2b9265c6bbdadabe06721987d35ca63"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/landing_sites.geojson",
+    "size_bytes": 641,
+    "sha256": "6c15d38048f7c4dd8a150b0c9c38ecc064594ca9cc6fe31c525fb945f153e348"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/metadata.json",
+    "size_bytes": 284,
+    "sha256": "1696fe8e9dd4d2d5f8e9ccb276e3c1b9d444807588e901d52636641bd2bf0d60"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/mission.json",
+    "size_bytes": 312,
+    "sha256": "500f1b963ba306feaba2ed55cc3fc6fe5577b0ceda31412b4051614bb232093c"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/no_fly_zones.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/obstacles.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/scene.kml",
+    "size_bytes": 2899,
+    "sha256": "27df43d1577e426a6e3618fda26904d13e13c6a170291e251a3d838d7809f994"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/survey_areas.geojson",
+    "size_bytes": 795,
+    "sha256": "83a26b200cc9751da284b70396d37d255881a8f5cc38973b227bcfe1509e0e38"
+  },
+  {
+    "path": "S03_temporal_airspace_daylight/temporal_airspace.geojson",
+    "size_bytes": 924,
+    "sha256": "855c7dd9c0bf7d9109f6ab536da063f0e8e37e28462ba016c95830663ab17ad5"
+  },
+  {
+    "path": "S04_multi_sortie_energy/allowed_airspace.geojson",
+    "size_bytes": 6799,
+    "sha256": "d17a2346b3137dcfe7f07771ffd1c3bb93d96251429e3d3ce9d6389c2b04c6fc"
+  },
+  {
+    "path": "S04_multi_sortie_energy/dem.tif",
+    "size_bytes": 1934,
+    "sha256": "42dc8187b695be4fb6b7f8b5c790daf8599c3d907f654deec015eb503518a778"
+  },
+  {
+    "path": "S04_multi_sortie_energy/expected_assertions.json",
+    "size_bytes": 130,
+    "sha256": "a0203da5babb26c96542cd63d851d26341def420750e394b81b1973103748b01"
+  },
+  {
+    "path": "S04_multi_sortie_energy/fleet.json",
+    "size_bytes": 449,
+    "sha256": "4cb5f69b7a5ee5d459da16cdb506063b4a40c25ea6bb3bc6b3438cbd0b0bf795"
+  },
+  {
+    "path": "S04_multi_sortie_energy/landing_sites.geojson",
+    "size_bytes": 640,
+    "sha256": "08c1a76f3863642bce95059e9da1afc8200e8fe53cc91958d6b48ac1c345776a"
+  },
+  {
+    "path": "S04_multi_sortie_energy/metadata.json",
+    "size_bytes": 300,
+    "sha256": "d53c9ce4c75c7f404481d861a29b7474a3804538f71ceb27da0ad6d5ab6543e4"
+  },
+  {
+    "path": "S04_multi_sortie_energy/mission.json",
+    "size_bytes": 228,
+    "sha256": "b16d54abbd24438d55db3b091f88158fcb368d026cc2f59d73cd211a8a65bcba"
+  },
+  {
+    "path": "S04_multi_sortie_energy/no_fly_zones.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S04_multi_sortie_energy/obstacles.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S04_multi_sortie_energy/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S04_multi_sortie_energy/scene.kml",
+    "size_bytes": 2900,
+    "sha256": "d5e7a288e08a3014dd7c5b12b9766c7e35fb26a4337820b5373bc2074f854e20"
+  },
+  {
+    "path": "S04_multi_sortie_energy/survey_areas.geojson",
+    "size_bytes": 796,
+    "sha256": "ca396a3156553749122b86541970bd60b2fd1097e37257657589baeedf3301da"
+  },
+  {
+    "path": "S04_multi_sortie_energy/temporal_airspace.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S05_4d_deconfliction/allowed_airspace.geojson",
+    "size_bytes": 6794,
+    "sha256": "682b5110b357b914af87873a7223d2be5e270556835ee00bf36bd7f8f7a425f1"
+  },
+  {
+    "path": "S05_4d_deconfliction/dem.tif",
+    "size_bytes": 4702,
+    "sha256": "20e10e1ce737dac5f642ada8bd8b2bfba84873eeb1dda19f8388aa6386702f86"
+  },
+  {
+    "path": "S05_4d_deconfliction/expected_assertions.json",
+    "size_bytes": 124,
+    "sha256": "ff52a04871a5fec8803fce91e95b1121b43074f70efd3e0a9813eed6a8a6a4a1"
+  },
+  {
+    "path": "S05_4d_deconfliction/fleet.json",
+    "size_bytes": 833,
+    "sha256": "f22984af7ae851adf8cf50359f3bd68a5daa3e26f4727fac36cf0aa0b10c878f"
+  },
+  {
+    "path": "S05_4d_deconfliction/landing_sites.geojson",
+    "size_bytes": 936,
+    "sha256": "88ebfee646e1514c88426c3516aa470eec121842cc5cbaca7ad5f89ca489f396"
+  },
+  {
+    "path": "S05_4d_deconfliction/metadata.json",
+    "size_bytes": 307,
+    "sha256": "e7643822ca6a8b82d82c6f71eee1c1b6fa2cbc1c60e04152d6dba6c9ca02eba9"
+  },
+  {
+    "path": "S05_4d_deconfliction/mission.json",
+    "size_bytes": 249,
+    "sha256": "1984f01414c4c253e24af2821546f7585322c9ce3eba853e57963966468f87bb"
+  },
+  {
+    "path": "S05_4d_deconfliction/no_fly_zones.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S05_4d_deconfliction/obstacles.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S05_4d_deconfliction/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S05_4d_deconfliction/scene.kml",
+    "size_bytes": 3044,
+    "sha256": "236fef1f52fbeb204e066b8035cb5d2343e946f16675386c1b5a6a1a86d9ddcf"
+  },
+  {
+    "path": "S05_4d_deconfliction/survey_areas.geojson",
+    "size_bytes": 801,
+    "sha256": "b2e412eb4cda9e1c25979a2c22b551b72d19758ab5e7b96607196fd92a1614c0"
+  },
+  {
+    "path": "S05_4d_deconfliction/temporal_airspace.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S06_recommend_alternative_site/allowed_airspace.geojson",
+    "size_bytes": 6807,
+    "sha256": "8bbcd6eeb4549762db29c9e6d2fc6c159dafc40295f3d85051849c438836b5bb"
+  },
+  {
+    "path": "S06_recommend_alternative_site/dem.tif",
+    "size_bytes": 5246,
+    "sha256": "e0ea7ba9ad9234780f70e78d49339bc4024594e48106734665ff397afaa64f5c"
+  },
+  {
+    "path": "S06_recommend_alternative_site/expected_assertions.json",
+    "size_bytes": 190,
+    "sha256": "e9ac41e74778d29cde99f524ab3d667be95704b69ddf3c68bce1230ce203e597"
+  },
+  {
+    "path": "S06_recommend_alternative_site/fleet.json",
+    "size_bytes": 462,
+    "sha256": "cf6278303d87296b239412e4f559120e3220d69cf3af34d938b21e9130de8b6b"
+  },
+  {
+    "path": "S06_recommend_alternative_site/landing_sites.geojson",
+    "size_bytes": 951,
+    "sha256": "7beb85ca4b2de2118834af48741a8c68355f01e6583d94fc4d98f9f513a7aee7"
+  },
+  {
+    "path": "S06_recommend_alternative_site/metadata.json",
+    "size_bytes": 313,
+    "sha256": "8c55fac00222a294b1f2f0479fed79d2162058dd782f9aaf25554fc9f68a07ab"
+  },
+  {
+    "path": "S06_recommend_alternative_site/mission.json",
+    "size_bytes": 238,
+    "sha256": "3237e26931f7f18209e8b9b8115fe95b8fd008854d4d9752f1cd884a13031c2d"
+  },
+  {
+    "path": "S06_recommend_alternative_site/no_fly_zones.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S06_recommend_alternative_site/obstacles.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S06_recommend_alternative_site/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S06_recommend_alternative_site/scene.kml",
+    "size_bytes": 3060,
+    "sha256": "d88d120b486d18bbbeec118351246a9bd214679d9375b704455e47621f1d19c3"
+  },
+  {
+    "path": "S06_recommend_alternative_site/survey_areas.geojson",
+    "size_bytes": 802,
+    "sha256": "8219338a43331a56359c223722923e80d35fe8da5f418d4c2a6435f90e59f156"
+  },
+  {
+    "path": "S06_recommend_alternative_site/temporal_airspace.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S07_reserve_landing_failure/allowed_airspace.geojson",
+    "size_bytes": 6816,
+    "sha256": "5df2b0d27896e105f83ef90df53fd9e23f0ec85902405b20fb0cc4b369b3696f"
+  },
+  {
+    "path": "S07_reserve_landing_failure/dem.tif",
+    "size_bytes": 3428,
+    "sha256": "93dd8c09d5ebc66f43a7ca9bf50a4665247bd2ad709ff85221aad2c362dfdef9"
+  },
+  {
+    "path": "S07_reserve_landing_failure/expected_assertions.json",
+    "size_bytes": 144,
+    "sha256": "1878af436a5b8f4e6398a68b5c5dc8de69fa785a4ca91102702c5779ede1f755"
+  },
+  {
+    "path": "S07_reserve_landing_failure/fleet.json",
+    "size_bytes": 471,
+    "sha256": "259c993502d99788952bbdb87fa0f2742befc3fb42ba6f4faf4bc29e7480c52a"
+  },
+  {
+    "path": "S07_reserve_landing_failure/landing_sites.geojson",
+    "size_bytes": 345,
+    "sha256": "d93fb74820dd95b000168401306f94d47b64661f07465d2d4edf4ddbbb1ae5fb"
+  },
+  {
+    "path": "S07_reserve_landing_failure/metadata.json",
+    "size_bytes": 313,
+    "sha256": "569a77927c042cc7e5894342da7646c0e4b2323d5d2c2c4c47a3e0b90af0ce4d"
+  },
+  {
+    "path": "S07_reserve_landing_failure/mission.json",
+    "size_bytes": 206,
+    "sha256": "0f5f3d48db2cbb58c212a8981d7fe1b9f5fe66e568f0d115cfdbbe66a266cf69"
+  },
+  {
+    "path": "S07_reserve_landing_failure/no_fly_zones.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S07_reserve_landing_failure/obstacles.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S07_reserve_landing_failure/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S07_reserve_landing_failure/scene.kml",
+    "size_bytes": 2759,
+    "sha256": "9ed7b6f568c3ce8a4947160497c0b1f29b81ee408991ccc1dd6ea762c4f7b632"
+  },
+  {
+    "path": "S07_reserve_landing_failure/survey_areas.geojson",
+    "size_bytes": 802,
+    "sha256": "ecd6390a608d716afa37e27933c5d1e51430f256e5a95f3355a80301c2ad16d0"
+  },
+  {
+    "path": "S07_reserve_landing_failure/temporal_airspace.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/allowed_airspace.geojson",
+    "size_bytes": 6812,
+    "sha256": "b344e3577bee423b574b26643066d87849dea62ce75cd27380d5660883e84256"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/dem.tif",
+    "size_bytes": 3242,
+    "sha256": "476464ab5831989417fd23f8cb5f19f1b869443a4979787de6c865686e3675f7"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/expected_assertions.json",
+    "size_bytes": 132,
+    "sha256": "42a3e0f2c61d13087ef94abe4b47cebae02eac793aa66d437b1104abff9859e6"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/fleet.json",
+    "size_bytes": 450,
+    "sha256": "1f33887857d8e9dcbdfac8701563017ddec2ba32467207333795949fc2b3de5f"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/landing_sites.geojson",
+    "size_bytes": 639,
+    "sha256": "62926f12ed6f700bdbcd146330931e9f4055f7ac9c6a64ac9ced825b87b3666e"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/metadata.json",
+    "size_bytes": 298,
+    "sha256": "b572cc06c1f2b5d1e617c11180fa10ba4b4ac31e32da49c7965a8c32a1871613"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/mission.json",
+    "size_bytes": 207,
+    "sha256": "62e1515e296fff6878bd8a8f2927c2346cd36e41a45d7805ba540e0801f88466"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/no_fly_zones.geojson",
+    "size_bytes": 786,
+    "sha256": "055743021584b23d8292d75f95d8ceba0475b96b6bec52603943f741cd765dd1"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/obstacles.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/scene.kml",
+    "size_bytes": 3203,
+    "sha256": "a116829576fff9948955ade2ffb632816a9ef8cf156008c61053651178b40885"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/survey_areas.geojson",
+    "size_bytes": 796,
+    "sha256": "25881a36701de10f0914882f85b7affc95cf391948387548f472347e8706c0ed"
+  },
+  {
+    "path": "S08_fixed_wing_turnaround/temporal_airspace.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S09_wind_feasibility/allowed_airspace.geojson",
+    "size_bytes": 6815,
+    "sha256": "68fe85408adbed32dbbd575aeb70423e0fdc429014005629189387fab1a28361"
+  },
+  {
+    "path": "S09_wind_feasibility/dem.tif",
+    "size_bytes": 3116,
+    "sha256": "9f6a72b5d8dc1e9b1ae8f945d693f0308cef309d65abef3b5a22bf07667a12c4"
+  },
+  {
+    "path": "S09_wind_feasibility/expected_assertions.json",
+    "size_bytes": 199,
+    "sha256": "36fbd49998d1e392f3fae7b4e2b60124ec0b38ae46c103da5e3fdf7af1f4b684"
+  },
+  {
+    "path": "S09_wind_feasibility/fleet.json",
+    "size_bytes": 2076,
+    "sha256": "67518f7c81b62440437a5a05d9fe55ce539a9574cd4d36951e55fbf6231085d8"
+  },
+  {
+    "path": "S09_wind_feasibility/landing_sites.geojson",
+    "size_bytes": 640,
+    "sha256": "98757769e4d0789779261dc365ba8a6e1029d954c40bf79e3ebc25eadb03a29d"
+  },
+  {
+    "path": "S09_wind_feasibility/metadata.json",
+    "size_bytes": 305,
+    "sha256": "0c8f92790598b0414c980c232ff9c325fd3ba8b17b8e606d8f8847947c6b1c70"
+  },
+  {
+    "path": "S09_wind_feasibility/mission.json",
+    "size_bytes": 242,
+    "sha256": "541ab515c4362753e3605d6c6d9adc005acfb6dd8686693ab240b0a0cc69481a"
+  },
+  {
+    "path": "S09_wind_feasibility/no_fly_zones.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S09_wind_feasibility/obstacles.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S09_wind_feasibility/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S09_wind_feasibility/scene.kml",
+    "size_bytes": 2900,
+    "sha256": "b91aa33e157e91a8b4f0d4fb60264a72d4161cf3699f94efcddba0fed7d3e5d6"
+  },
+  {
+    "path": "S09_wind_feasibility/survey_areas.geojson",
+    "size_bytes": 799,
+    "sha256": "0150a7ab89d7560ea5103f519da3146aa8c15173a146fee828ba9314f5a849cc"
+  },
+  {
+    "path": "S09_wind_feasibility/temporal_airspace.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S10_different_start_end/allowed_airspace.geojson",
+    "size_bytes": 6810,
+    "sha256": "45e8e902a5ee141a702e31d1d02a7e28c987d496d60f001183cbc89b876328de"
+  },
+  {
+    "path": "S10_different_start_end/dem.tif",
+    "size_bytes": 3052,
+    "sha256": "428a5a6c3a240ccd3c1a603aa35c0fd91d42fc425d01aed0e61ee54766b3a373"
+  },
+  {
+    "path": "S10_different_start_end/expected_assertions.json",
+    "size_bytes": 86,
+    "sha256": "8896f2a8d69bb2fe0a97adb24c9735b30cf84c4418cfcf1ef32b937ad825e175"
+  },
+  {
+    "path": "S10_different_start_end/fleet.json",
+    "size_bytes": 485,
+    "sha256": "2bd40f16be519a72b392915c308f86d205a32ff97bffee61988a83687480acf9"
+  },
+  {
+    "path": "S10_different_start_end/landing_sites.geojson",
+    "size_bytes": 938,
+    "sha256": "2a1f7a0e1bd1cc8e83e84eb2874a9ec52cb0f9447af476dd0e4f11e8371876cd"
+  },
+  {
+    "path": "S10_different_start_end/metadata.json",
+    "size_bytes": 276,
+    "sha256": "e97a0a5c37e4eefe5244cf470bac1b784452656962bd23bab363cb02d72073e3"
+  },
+  {
+    "path": "S10_different_start_end/mission.json",
+    "size_bytes": 244,
+    "sha256": "104a1be77cfad9ab979a5f364ba2efa5a0b6b0a5ea7be7c8bb2452ec50313263"
+  },
+  {
+    "path": "S10_different_start_end/no_fly_zones.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S10_different_start_end/obstacles.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S10_different_start_end/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S10_different_start_end/scene.kml",
+    "size_bytes": 3058,
+    "sha256": "72374c28c031c5e3161edcb104426d61cf40044a3bc2d0028b024ae3ac2dd71b"
+  },
+  {
+    "path": "S10_different_start_end/survey_areas.geojson",
+    "size_bytes": 811,
+    "sha256": "7eb96cac9d66aafe692b0d6b4dd76db4c07de10fd038a56270a378c2de9d66fd"
+  },
+  {
+    "path": "S10_different_start_end/temporal_airspace.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S11_payload_compatibility/allowed_airspace.geojson",
+    "size_bytes": 6814,
+    "sha256": "5185e63daf26f9d37351f99cb0702996e858da71094c5a7e20208ed3582c8ca9"
+  },
+  {
+    "path": "S11_payload_compatibility/dem.tif",
+    "size_bytes": 199682,
+    "sha256": "7ca59e28b04aedf98933a34ebe043e57cc34dc5522261d89570b64f5a26422ab"
+  },
+  {
+    "path": "S11_payload_compatibility/expected_assertions.json",
+    "size_bytes": 114,
+    "sha256": "b9675d30c6f139cac6fa26b0b4432dbeee6cdcd3d6369162ece1e9d3b4ec22e0"
+  },
+  {
+    "path": "S11_payload_compatibility/fleet.json",
+    "size_bytes": 2076,
+    "sha256": "67518f7c81b62440437a5a05d9fe55ce539a9574cd4d36951e55fbf6231085d8"
+  },
+  {
+    "path": "S11_payload_compatibility/landing_sites.geojson",
+    "size_bytes": 641,
+    "sha256": "d7b4a2541b7554fc56e0d8f5398befeb4c642247c7a2fe32ccb404d4c86283bb"
+  },
+  {
+    "path": "S11_payload_compatibility/metadata.json",
+    "size_bytes": 284,
+    "sha256": "14ac76ef73d5eac8a59f99cd08a24e77ddd1a40ae51208bec8fe1fff333b4b52"
+  },
+  {
+    "path": "S11_payload_compatibility/mission.json",
+    "size_bytes": 203,
+    "sha256": "9f127752edfea037a1fe5828300ba3231d6f6a5cd4238ca551b76d49151244ee"
+  },
+  {
+    "path": "S11_payload_compatibility/no_fly_zones.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S11_payload_compatibility/obstacles.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "S11_payload_compatibility/payload_catalog.json",
+    "size_bytes": 756,
+    "sha256": "6065605749432c2d7d8622c605982f25c4fbc81e2b0fac666fc4a739a08641b5"
+  },
+  {
+    "path": "S11_payload_compatibility/scene.kml",
+    "size_bytes": 3207,
+    "sha256": "7a156a3f21ef60bfed322435bffb861db84c81a5c561e6674520ebc5be0a4b8d"
+  },
+  {
+    "path": "S11_payload_compatibility/survey_areas.geojson",
+    "size_bytes": 1556,
+    "sha256": "e27b6d83ecf061f89c86ac322db5df73f69620d557cbfa0817ce6eaa2e3afee0"
+  },
+  {
+    "path": "S11_payload_compatibility/temporal_airspace.geojson",
+    "size_bytes": 51,
+    "sha256": "9ecdafe2ce4c617b6be7420a06e6918223f34a6f429bfe957ee733c49d03be4d"
+  },
+  {
+    "path": "suite.json",
+    "size_bytes": 502,
+    "sha256": "d51290b8801006c3f675b92274eb5640a3711ccebf22edb33a5ba0edbed29c9e"
+  }
+]

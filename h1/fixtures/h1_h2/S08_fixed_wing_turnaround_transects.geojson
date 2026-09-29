@@ -1,0 +1,2678 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412839.0,
+            6179600.000000001
+          ],
+          [
+            412839.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 0,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412893.0,
+            6177200.000000001
+          ],
+          [
+            412893.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 1,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            412947.0,
+            6179600.000000001
+          ],
+          [
+            412947.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 2,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413001.0,
+            6177200.000000001
+          ],
+          [
+            413001.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 3,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413055.0,
+            6179600.000000001
+          ],
+          [
+            413055.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 4,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413109.0,
+            6177200.000000001
+          ],
+          [
+            413109.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 5,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413163.0,
+            6179600.000000001
+          ],
+          [
+            413163.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 6,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413217.0,
+            6177200.000000001
+          ],
+          [
+            413217.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 7,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413271.0,
+            6179600.000000001
+          ],
+          [
+            413271.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 8,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413325.0,
+            6177200.000000001
+          ],
+          [
+            413325.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 9,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413379.0,
+            6179600.000000001
+          ],
+          [
+            413379.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 10,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413433.0,
+            6177200.000000001
+          ],
+          [
+            413433.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 11,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413487.0,
+            6179600.000000001
+          ],
+          [
+            413487.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 12,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413541.0,
+            6177200.000000001
+          ],
+          [
+            413541.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 13,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413595.0,
+            6179600.000000001
+          ],
+          [
+            413595.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 14,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413649.0,
+            6177200.000000001
+          ],
+          [
+            413649.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T000",
+        "job_id": "FW_RGB",
+        "transect_i": 15,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413703.0,
+            6179600.000000001
+          ],
+          [
+            413703.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 0,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413757.0,
+            6177200.000000001
+          ],
+          [
+            413757.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 1,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413811.0,
+            6179600.000000001
+          ],
+          [
+            413811.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 2,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413865.0,
+            6177200.000000001
+          ],
+          [
+            413865.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 3,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413919.0,
+            6179600.000000001
+          ],
+          [
+            413919.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 4,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            413973.0,
+            6177200.000000001
+          ],
+          [
+            413973.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 5,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414027.0,
+            6179600.000000001
+          ],
+          [
+            414027.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 6,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414081.0,
+            6177200.000000001
+          ],
+          [
+            414081.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 7,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414135.0,
+            6179600.000000001
+          ],
+          [
+            414135.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 8,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414189.0,
+            6177200.000000001
+          ],
+          [
+            414189.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 9,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414243.0,
+            6179600.000000001
+          ],
+          [
+            414243.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 10,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414297.0,
+            6177200.000000001
+          ],
+          [
+            414297.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 11,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414351.0,
+            6179600.000000001
+          ],
+          [
+            414351.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 12,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414405.0,
+            6177200.000000001
+          ],
+          [
+            414405.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 13,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414459.0,
+            6179600.000000001
+          ],
+          [
+            414459.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 14,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414513.0,
+            6177200.000000001
+          ],
+          [
+            414513.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T001",
+        "job_id": "FW_RGB",
+        "transect_i": 15,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414567.0,
+            6179600.000000001
+          ],
+          [
+            414567.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 0,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414621.0,
+            6177200.000000001
+          ],
+          [
+            414621.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 1,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414675.0,
+            6179600.000000001
+          ],
+          [
+            414675.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 2,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414729.0,
+            6177200.000000001
+          ],
+          [
+            414729.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 3,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414783.0,
+            6179600.000000001
+          ],
+          [
+            414783.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 4,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414837.0,
+            6177200.000000001
+          ],
+          [
+            414837.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 5,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414891.0,
+            6179600.000000001
+          ],
+          [
+            414891.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 6,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414945.0,
+            6177200.000000001
+          ],
+          [
+            414945.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 7,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            414999.0,
+            6179600.000000001
+          ],
+          [
+            414999.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 8,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415053.0,
+            6177200.000000001
+          ],
+          [
+            415053.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 9,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415107.0,
+            6179600.000000001
+          ],
+          [
+            415107.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 10,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415161.0,
+            6177200.000000001
+          ],
+          [
+            415161.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 11,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415215.0,
+            6179600.000000001
+          ],
+          [
+            415215.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 12,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415269.0,
+            6177200.000000001
+          ],
+          [
+            415269.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 13,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415323.0,
+            6179600.000000001
+          ],
+          [
+            415323.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 14,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415377.0,
+            6177200.000000001
+          ],
+          [
+            415377.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T002",
+        "job_id": "FW_RGB",
+        "transect_i": 15,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415431.0,
+            6179600.000000001
+          ],
+          [
+            415431.0,
+            6177200.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 0,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415485.0,
+            6177200.000000001
+          ],
+          [
+            415485.0,
+            6179600.000000001
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 1,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415539.0,
+            6179600.0
+          ],
+          [
+            415539.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 2,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415593.0,
+            6177200.0
+          ],
+          [
+            415593.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 3,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415647.0,
+            6179600.0
+          ],
+          [
+            415647.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 4,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415701.0,
+            6177200.0
+          ],
+          [
+            415701.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 5,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415755.0,
+            6179600.0
+          ],
+          [
+            415755.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 6,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415809.0,
+            6177200.0
+          ],
+          [
+            415809.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 7,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415863.0,
+            6179600.0
+          ],
+          [
+            415863.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 8,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415917.0,
+            6177200.0
+          ],
+          [
+            415917.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 9,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            415971.0,
+            6179600.0
+          ],
+          [
+            415971.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 10,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416025.0,
+            6177200.0
+          ],
+          [
+            416025.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 11,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416079.0,
+            6179600.0
+          ],
+          [
+            416079.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 12,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416133.0,
+            6177200.0
+          ],
+          [
+            416133.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 13,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416187.0,
+            6179600.0
+          ],
+          [
+            416187.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 14,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416241.0,
+            6177200.0
+          ],
+          [
+            416241.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T003",
+        "job_id": "FW_RGB",
+        "transect_i": 15,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416295.0,
+            6179600.0
+          ],
+          [
+            416295.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 0,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416349.0,
+            6177200.0
+          ],
+          [
+            416349.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 1,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416403.0,
+            6179600.0
+          ],
+          [
+            416403.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 2,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416457.0,
+            6177200.0
+          ],
+          [
+            416457.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 3,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416511.0,
+            6179600.0
+          ],
+          [
+            416511.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 4,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416565.0,
+            6177200.0
+          ],
+          [
+            416565.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 5,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416619.0,
+            6179600.0
+          ],
+          [
+            416619.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 6,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416673.0,
+            6177200.0
+          ],
+          [
+            416673.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 7,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416727.0,
+            6179600.0
+          ],
+          [
+            416727.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 8,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416781.0,
+            6177200.0
+          ],
+          [
+            416781.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 9,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416835.0,
+            6179600.0
+          ],
+          [
+            416835.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 10,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416889.0,
+            6177200.0
+          ],
+          [
+            416889.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 11,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416943.0,
+            6179600.0
+          ],
+          [
+            416943.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 12,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            416997.0,
+            6177200.0
+          ],
+          [
+            416997.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 13,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417051.0,
+            6179600.0
+          ],
+          [
+            417051.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 14,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417105.0,
+            6177200.0
+          ],
+          [
+            417105.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T004",
+        "job_id": "FW_RGB",
+        "transect_i": 15,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": true,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417159.0,
+            6179600.0
+          ],
+          [
+            417159.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 0,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417213.0,
+            6177200.0
+          ],
+          [
+            417213.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 1,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417267.0,
+            6179600.0
+          ],
+          [
+            417267.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 2,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417321.0,
+            6177200.0
+          ],
+          [
+            417321.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 3,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417375.0,
+            6179600.0
+          ],
+          [
+            417375.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 4,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417429.0,
+            6177200.0
+          ],
+          [
+            417429.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 5,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417483.0,
+            6179600.0
+          ],
+          [
+            417483.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 6,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417537.0,
+            6177200.0
+          ],
+          [
+            417537.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 7,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417591.0,
+            6179600.0
+          ],
+          [
+            417591.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 8,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417645.0,
+            6177200.0
+          ],
+          [
+            417645.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 9,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417699.0,
+            6179600.0
+          ],
+          [
+            417699.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 10,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417753.0,
+            6177200.0
+          ],
+          [
+            417753.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 11,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417807.0,
+            6179600.0
+          ],
+          [
+            417807.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 12,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417861.0,
+            6177200.0
+          ],
+          [
+            417861.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 13,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417915.0,
+            6179600.0
+          ],
+          [
+            417915.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 14,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            417969.0,
+            6177200.0
+          ],
+          [
+            417969.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T005",
+        "job_id": "FW_RGB",
+        "transect_i": 15,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            418023.0,
+            6179600.0
+          ],
+          [
+            418023.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T006",
+        "job_id": "FW_RGB",
+        "transect_i": 0,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            418077.0,
+            6177200.0
+          ],
+          [
+            418077.0,
+            6179600.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T006",
+        "job_id": "FW_RGB",
+        "transect_i": 1,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            418131.0,
+            6179600.0
+          ],
+          [
+            418131.0,
+            6177200.0
+          ]
+        ]
+      },
+      "properties": {
+        "task_id": "FW_RGB#T006",
+        "job_id": "FW_RGB",
+        "transect_i": 2,
+        "length_m": 2400.0,
+        "agl_m": 123.07692307692308,
+        "sweep_angle_deg": 90.0,
+        "fixed_wing_safe": false,
+        "payload_class": "rgb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          412300.0000000002,
+          6178299.999999999
+        ]
+      },
+      "properties": {
+        "site_id": "BASE",
+        "role": "both",
+        "kind": "site"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          415499.9999999998,
+          6180400.0
+        ]
+      },
+      "properties": {
+        "site_id": "RES",
+        "role": "reserve",
+        "kind": "site"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              418200.0,
+              6176899.999999999
+            ],
+            [
+              418800.0000000001,
+              6176900.0
+            ],
+            [
+              418800.00000000023,
+              6179900.0
+            ],
+            [
+              418200.00000000047,
+              6179899.999999999
+            ],
+            [
+              418200.0,
+              6176899.999999999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "EDGE_NFZ",
+        "kind": "nfz",
+        "hard": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              418170.0000000004,
+              6179600.0
+            ],
+            [
+              418170.00000000006,
+              6177200.0
+            ],
+            [
+              412800.0,
+              6177200.000000001
+            ],
+            [
+              412800.0,
+              6179600.000000001
+            ],
+            [
+              418170.0000000004,
+              6179600.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "job_id": "FW_RGB",
+        "kind": "survey_effective"
+      }
+    }
+  ]
+}

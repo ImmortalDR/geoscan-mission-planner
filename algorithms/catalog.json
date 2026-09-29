@@ -1,0 +1,268 @@
+{
+  "schema": "geoscan.algorithm-catalog.v1",
+  "methodology": "Deterministic and scenario-based regression; no trained model and no statistical k-fold claim. Test CSVs are generated from actual JUnit results. Quality CSVs contain separately measured metrics. Historical CSVs apply only to the recorded source hashes and dates; newly catalogued modules have no implied historical measurement.",
+  "algorithms": [
+    {
+      "id": "h1.projection",
+      "title": "Проекция координат",
+      "source": "h1/h1_coverage/src/h1_coverage/geo.py",
+      "tests": [
+        "h1/h1_coverage/tests/test_m02_geo.py"
+      ],
+      "example": "h1/fixtures/h1_modules/m2_roundtrip_points.json",
+      "basis": "pyproj / PROJ; авторская интеграция"
+    },
+    {
+      "id": "h1.terrain",
+      "title": "Выборка высот DSM",
+      "source": "h1/h1_coverage/src/h1_coverage/io/dem.py",
+      "tests": [
+        "h1/h1_coverage/tests/test_m03_terrain.py"
+      ],
+      "example": "datasets/geoscan_customer_conformance/S00_smoke_rgb/dem.tif",
+      "basis": "rasterio / GDAL"
+    },
+    {
+      "id": "h1.survey",
+      "title": "Геометрия сенсора и шаг съёмки",
+      "source": "h1/h1_coverage/src/h1_coverage/coverage/survey.py",
+      "tests": [
+        "h1/h1_coverage/tests/test_m05_survey.py"
+      ],
+      "example": "h1/fixtures/h1_modules/m5_payload_rgb.json",
+      "basis": "Авторская реализация модели камеры"
+    },
+    {
+      "id": "h1.exclusions",
+      "title": "Вычитание запретных областей",
+      "source": "h1/h1_coverage/src/h1_coverage/coverage/exclusions.py",
+      "tests": [
+        "h1/h1_coverage/tests/test_m08_nfz.py"
+      ],
+      "example": "h1/fixtures/h1_modules/m8_nfz_metric.json",
+      "basis": "Авторская политика ограничений; Shapely / GEOS"
+    },
+    {
+      "id": "h1.decomposition",
+      "title": "Декомпозиция области",
+      "source": "h1/h1_coverage/src/h1_coverage/coverage/decomp.py",
+      "tests": [
+        "h1/h1_coverage/tests/test_m07_decomp.py"
+      ],
+      "example": "examples/algorithms/sweep.json",
+      "basis": "Авторская реализация на основе boustrophedon decomposition"
+    },
+    {
+      "id": "h1.sweep",
+      "title": "Построение галсов",
+      "source": "h1/h1_coverage/src/h1_coverage/coverage/sweep.py",
+      "tests": [
+        "h1/h1_coverage/tests/test_m06_coverage.py",
+        "h1/h1_coverage/tests/test_extreme_geometries.py"
+      ],
+      "example": "examples/algorithms/sweep.json",
+      "basis": "Авторская реализация lawnmower sweep; Shapely"
+    },
+    {
+      "id": "h1.candidates",
+      "title": "Выбор направления покрытия",
+      "source": "h1/h1_coverage/src/h1_coverage/coverage/candidates.py",
+      "tests": [
+        "h1/h1_coverage/tests/test_m10_candidates.py"
+      ],
+      "example": "datasets/geoscan_customer_conformance/S00_smoke_rgb",
+      "basis": "Авторская эвристика оценки кандидатов"
+    },
+    {
+      "id": "h1.atomic",
+      "title": "Атомарные задачи покрытия",
+      "source": "h1/h1_coverage/src/h1_coverage/coverage/atomic.py",
+      "tests": [
+        "h1/h1_coverage/tests/test_m11_atomic.py"
+      ],
+      "example": "h1/fixtures/h1_h2/S00_smoke_rgb.bundle.json",
+      "basis": "Авторское разбиение галсов по ресурсным границам"
+    },
+    {
+      "id": "h1.fixed_wing",
+      "title": "Проверка манёвров самолёта",
+      "source": "h1/h1_coverage/src/h1_coverage/coverage/fixed_wing.py",
+      "tests": [
+        "h1/h1_coverage/tests/test_m09_fixed_wing.py"
+      ],
+      "example": "h1/fixtures/h1_h2/S08_fixed_wing_turnaround.bundle.json",
+      "basis": "Авторская реализация геометрических приближений Dubins CSC"
+    },
+    {
+      "id": "h1.feasibility",
+      "title": "Предварительная выполнимость",
+      "source": "h1/h1_coverage/src/h1_coverage/feasibility.py",
+      "tests": [
+        "h1/h1_coverage/tests/test_m12_feasibility.py"
+      ],
+      "example": "h1/fixtures/h1_h2/S09_wind_feasibility.bundle.json",
+      "basis": "Авторские необходимые условия совместимости и ресурса"
+    },
+    {
+      "id": "h2.assignment",
+      "title": "Исторический контур: Начальное назначение БВС",
+      "source": "h2/src/h2/algorithms/assignment.py",
+      "tests": [
+        "h2/tests/test_planner.py"
+      ],
+      "example": "h2/fixtures/S05_4d_deconfliction.bundle.json",
+      "basis": "Авторская постановка; решатель Google OR-Tools CP-SAT",
+      "scope": "legacy; not the LIVE Routing implementation"
+    },
+    {
+      "id": "h2.search",
+      "title": "Исторический контур: Улучшение назначений и маршрутов",
+      "source": "h2/src/h2/planner.py",
+      "tests": [
+        "h2/tests/test_planner.py",
+        "h2/tests/test_capacity_bounds.py"
+      ],
+      "example": "h2/fixtures/S00_smoke_rgb.bundle.json",
+      "basis": "Авторская эвристика insertion / relocate / reorder / LNS",
+      "scope": "legacy; not the LIVE Routing implementation"
+    },
+    {
+      "id": "h2.schedule",
+      "title": "Исторический контур: Расписание и обслуживание",
+      "source": "h2/src/h2/scheduler.py",
+      "tests": [
+        "h2/tests/test_scheduler.py"
+      ],
+      "example": "h2/fixtures/S04_multi_sortie_energy.bundle.json",
+      "basis": "Авторская ресурсная модель и планирование вылетов",
+      "scope": "legacy; not the LIVE Routing implementation"
+    },
+    {
+      "id": "h2.transit",
+      "title": "Транзит с учётом препятствий",
+      "source": "h2/src/h2/transit.py",
+      "tests": [
+        "h2/tests/test_transit.py"
+      ],
+      "example": "h2/fixtures/S08_fixed_wing_turnaround.bundle.json",
+      "basis": "Авторская интеграция графового поиска и геометрии Shapely"
+    },
+    {
+      "id": "h2.temporal",
+      "title": "Временные ограничения пространства",
+      "source": "h2/src/h2/algorithms/temporal.py",
+      "tests": [
+        "h2/tests/test_planner.py"
+      ],
+      "example": "h2/fixtures/scenes/S03_temporal.scene.json",
+      "basis": "Авторское консервативное смещение отправлений"
+    },
+    {
+      "id": "h2.conflicts",
+      "title": "Непрерывное обнаружение сближений",
+      "source": "h2/src/h2/algorithms/conflict_detection.py",
+      "tests": [
+        "h2/tests/test_deconfliction.py"
+      ],
+      "example": "examples/algorithms/conflicts.json",
+      "basis": "Авторская аналитическая проверка относительного движения"
+    },
+    {
+      "id": "h2.departure_shifts",
+      "title": "Разведение вылетов по времени",
+      "source": "h2/src/h2/deconfliction.py",
+      "tests": [
+        "h2/tests/test_deconfliction.py"
+      ],
+      "example": "examples/algorithms/conflicts.json",
+      "basis": "Авторская стратегия задержек на земле с распространением по расписанию"
+    },
+    {
+      "id": "h3.geometry",
+      "title": "Независимая геометрия траектории",
+      "source": "src/gmp/safety/trajectory_geometry.py",
+      "tests": [
+        "tests/safety/test_h3_core.py"
+      ],
+      "example": "data/scenarios/S05_multi_uav/expected/makespan/result.json",
+      "basis": "Авторская независимая аналитическая реализация; NumPy / Shapely"
+    },
+    {
+      "id": "h3.validation",
+      "title": "Независимая проверка ограничений",
+      "source": "src/gmp/safety/h3_core.py",
+      "tests": [
+        "tests/safety/test_h3_core.py",
+        "tests/safety/test_terrain_index.py"
+      ],
+      "example": "data/scenarios/S00_smoke_rgb/expected/makespan/result.json",
+      "basis": "Авторская модель проверки входа и полного маршрута"
+    },
+    {
+      "id": "h3.gate",
+      "title": "Выпуск проверяемого сертификата",
+      "source": "src/gmp/safety/h3_gate.py",
+      "tests": [
+        "tests/safety/test_h3_gate.py",
+        "tests/safety/test_h3_proposals.py"
+      ],
+      "example": "data/scenarios/S06_alternate_site/expected/makespan/result.json",
+      "basis": "Авторская политика fail-closed; стандартный SHA-256"
+    },
+    {
+      "id": "h2.routing.graph",
+      "title": "Граф галсов и профильные таблицы",
+      "source": "h2/src/h2/routing_graph.py",
+      "tests": [
+        "h2/tests/test_routing.py"
+      ],
+      "example": "h2/fixtures/S00_smoke_rgb.bundle.json",
+      "basis": "Авторская постановка и реализация вокруг OR-Tools Routing",
+      "scope": "current LIVE"
+    },
+    {
+      "id": "h2.routing.seed",
+      "title": "Компактное начальное решение",
+      "source": "h2/src/h2/routing_seed.py",
+      "tests": [
+        "h2/tests/test_routing.py"
+      ],
+      "example": "h2/fixtures/S00_smoke_rgb.bundle.json",
+      "basis": "Авторская постановка и реализация вокруг OR-Tools Routing",
+      "scope": "current LIVE"
+    },
+    {
+      "id": "h2.routing.solver",
+      "title": "OR-Tools Routing и Guided Local Search",
+      "source": "h2/src/h2/routing_solver.py",
+      "tests": [
+        "h2/tests/test_routing.py"
+      ],
+      "example": "h2/fixtures/S00_smoke_rgb.bundle.json",
+      "basis": "Авторская постановка и реализация вокруг OR-Tools Routing",
+      "scope": "current LIVE"
+    },
+    {
+      "id": "h2.routing.blocks",
+      "title": "Перестановки и обмены блоками галсов",
+      "source": "h2/src/h2/routing_blocks.py",
+      "tests": [
+        "h2/tests/test_routing.py"
+      ],
+      "example": "h2/fixtures/S00_smoke_rgb.bundle.json",
+      "basis": "Авторская постановка и реализация вокруг OR-Tools Routing",
+      "scope": "current LIVE"
+    },
+    {
+      "id": "h2.routing.finalization",
+      "title": "Полная проверка кандидатов и разведение",
+      "source": "h2/src/h2/routing_planner.py",
+      "tests": [
+        "h2/tests/test_routing.py"
+      ],
+      "example": "h2/fixtures/S00_smoke_rgb.bundle.json",
+      "basis": "Авторская постановка и реализация вокруг OR-Tools Routing",
+      "scope": "current LIVE"
+    }
+  ]
+}

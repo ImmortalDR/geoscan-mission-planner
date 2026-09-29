@@ -1,0 +1,36 @@
+{
+  "schema": "geoscan.mvp.deployment.v1",
+  "release": "20260922-mvp-3",
+  "runtime": "/opt/geoscan-mvp/releases/20260922-mvp-3",
+  "url": "https://45.87.246.124/",
+  "health": {
+    "status": "ready",
+    "storage": "sqlite",
+    "pipeline": "h1_coverage -> h2 -> h3",
+    "components": {
+      "h1_coverage": true,
+      "h2": true
+    },
+    "release": "20260922-mvp-3"
+  },
+  "module_paths": {
+    "gmp": "/opt/geoscan-mvp/releases/20260922-mvp-3/app/src/gmp/__init__.py",
+    "h1_coverage": "/opt/geoscan-mvp/releases/20260922-mvp-3/h1/src/h1_coverage/__init__.py",
+    "h2": "/opt/geoscan-mvp/releases/20260922-mvp-3/h2/src/h2/__init__.py"
+  },
+  "manifest_sha256": "8ff4fdcfe0b35c139cdecf92cf89fc74b993e9fe359fa54ec4c89acf96a2fe4c",
+  "manifest_files": 991,
+  "manifest_mismatches": [],
+  "service_active": "active",
+  "service_enabled": "enabled",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "shapely": "2.0.7",
+    "pyproj": "3.8.0",
+    "rasterio": "1.3.11",
+    "ortools": "9.10.4067",
+    "fastapi": "0.141.1",
+    "uvicorn": "0.38.0"
+  },
+  "passed": true
+}

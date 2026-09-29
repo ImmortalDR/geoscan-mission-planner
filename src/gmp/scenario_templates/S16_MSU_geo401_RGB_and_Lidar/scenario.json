@@ -1,0 +1,32 @@
+{
+  "id": "S16_MSU_geo401_RGB_and_Lidar",
+  "title": "МГУ: недостаток времени — решение не ожидается",
+  "objectives": [
+    "makespan",
+    "total_flight"
+  ],
+  "role": "user_template",
+  "purpose_ru": "Отрицательный пример: при заданном времени полёта и размещении баз полный план RGB- и LiDAR-съёмки не ожидается. Незавершённый поиск не является доказательством невозможности любого плана.",
+  "catalog_badge_ru": "Авторский сценарий",
+  "fleet_count": 3,
+  "real_elevation": true,
+  "promotion": {
+    "source_scene_id": "71f99da204c74551b41d99d53d780175",
+    "source_library_id": "71f99da204c74551b41d99d53d780175",
+    "source_saved_at": "2026-09-25T02:03:30.515890+00:00",
+    "input_sha256": "fc9cb66ba6d21a64283ef4433b311d5cf1f88dbd41e25313aed4845c43222d18",
+    "file_sha256": {
+      "allowed_airspace.geojson": "709d0013216ae2bde4a8a515371540518cdb789decaa4ec26d888365478bc0a3",
+      "dem.tif": "752d5b2dd3769afd9bbac6af5decddfde681550aededd641dbe6a9ab69c64246",
+      "fleet.json": "65076de104d8f0a7db6c9593f5622ae3ebfcae3a59c66a0a5ec24be7af39d262",
+      "landing_sites.geojson": "9b9f30761eca5c777a2dc2c5391d7b99712720bf4d6bb53b301f1b0cb5324963",
+      "metadata.json": "8cb27d1c4d1583b7c0ddd71a5fe33ee49f844059b1039a5d394891060558c95f",
+      "mission.json": "1821ec91509f499552c99d109b7f76589484076e743d9b6dd773017c02e15c72",
+      "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+      "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+      "payload_catalog.json": "b3e6680a32aaacfcd5c316479234fcbf2412db7b91a1d428c9ffa1c0414fbb41",
+      "survey_areas.geojson": "35789b705730c5cb2e0ae85b0de0b03e62d8c368dc881300aab2a2464c653b28",
+      "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    }
+  }
+}

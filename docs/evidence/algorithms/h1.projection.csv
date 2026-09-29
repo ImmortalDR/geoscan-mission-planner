@@ -1,0 +1,4 @@
+algorithm_id,test_file,test_case,outcome,duration_s,source_sha256
+h1.projection,h1/h1_coverage/tests/test_m02_geo.py,test_module_registry_m2,passed,0.001,e7cdfa690fb700d6c5b14e441142b4b1b8cdbb2552dbbfe6a78a2afe36e46edf
+h1.projection,h1/h1_coverage/tests/test_m02_geo.py,test_m2_crs_roundtrip,passed,0.012,e7cdfa690fb700d6c5b14e441142b4b1b8cdbb2552dbbfe6a78a2afe36e46edf
+h1.projection,h1/h1_coverage/tests/test_m02_geo.py,test_m2_lonlat_heuristic,passed,0.001,e7cdfa690fb700d6c5b14e441142b4b1b8cdbb2552dbbfe6a78a2afe36e46edf

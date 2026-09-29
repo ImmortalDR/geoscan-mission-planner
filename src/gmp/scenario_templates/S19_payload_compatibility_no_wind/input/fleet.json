@@ -1,0 +1,109 @@
+{
+  "uavs": [
+    {
+      "id": "U01",
+      "model": "geoscan_401",
+      "class": "multirotor",
+      "ground_speed_kmh": 43.2,
+      "operational_endurance_min": 48,
+      "max_wind_ms": 10,
+      "payload_classes": [
+        "rgb"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 30,
+      "start_site": "BASE_0",
+      "landing_site": "BASE_0",
+      "takeoff_time_s": 60,
+      "landing_time_s": 60,
+      "service_time_s": 420,
+      "parameter_status": "explicit_synthetic_operational_profile_not_manufacturer_guarantee"
+    },
+    {
+      "id": "U02",
+      "model": "geoscan_401",
+      "class": "multirotor",
+      "ground_speed_kmh": 43.2,
+      "operational_endurance_min": 48,
+      "max_wind_ms": 10,
+      "payload_classes": [
+        "multispectral"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 30,
+      "start_site": "BASE_1",
+      "landing_site": "BASE_1",
+      "takeoff_time_s": 60,
+      "landing_time_s": 60,
+      "service_time_s": 420,
+      "parameter_status": "explicit_synthetic_operational_profile_not_manufacturer_guarantee"
+    },
+    {
+      "id": "U03",
+      "model": "geoscan_401",
+      "class": "multirotor",
+      "ground_speed_kmh": 43.2,
+      "operational_endurance_min": 48,
+      "max_wind_ms": 10,
+      "payload_classes": [
+        "thermal"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 30,
+      "start_site": "BASE_2",
+      "landing_site": "BASE_2",
+      "takeoff_time_s": 60,
+      "landing_time_s": 60,
+      "service_time_s": 420,
+      "parameter_status": "explicit_synthetic_operational_profile_not_manufacturer_guarantee"
+    },
+    {
+      "id": "U04",
+      "model": "geoscan_401",
+      "class": "multirotor",
+      "ground_speed_kmh": 43.2,
+      "operational_endurance_min": 48,
+      "max_wind_ms": 10,
+      "payload_classes": [
+        "lidar"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 30,
+      "start_site": "BASE_3",
+      "landing_site": "BASE_3",
+      "takeoff_time_s": 60,
+      "landing_time_s": 60,
+      "service_time_s": 420,
+      "parameter_status": "explicit_synthetic_operational_profile_not_manufacturer_guarantee"
+    },
+    {
+      "id": "U05",
+      "model": "geoscan_401",
+      "class": "multirotor",
+      "ground_speed_kmh": 43.2,
+      "operational_endurance_min": 48,
+      "max_wind_ms": 10,
+      "payload_classes": [
+        "geophysics"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 30,
+      "start_site": "BASE_4",
+      "landing_site": "BASE_4",
+      "takeoff_time_s": 60,
+      "landing_time_s": 60,
+      "service_time_s": 420,
+      "parameter_status": "explicit_synthetic_operational_profile_not_manufacturer_guarantee"
+    }
+  ]
+}

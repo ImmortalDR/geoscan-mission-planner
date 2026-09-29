@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f8">
+  <title>Geoscan | Планирование миссий</title>
+  <link rel="stylesheet" href="/static/vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="/static/vendor/mapbox-gl-draw.css">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script defer src="/static/vendor/maplibre-gl.js"></script>
+  <script defer src="/static/vendor/mapbox-gl-draw.js"></script>
+  <script defer src="/static/vendor/lucide.min.js"></script>
+  <script defer src="/static/editor.js"></script>
+  <script defer src="/static/app.js"></script>
+</head>
+<body>
+  <div id="login-screen" class="login-screen">
+    <form id="login-form" class="login-form" method="post" action="/api/v1/auth/login">
+      <div class="brand login-brand"><span class="brand-mark"><i data-lucide="scan-line"></i></span><strong>GEOSCAN</strong></div>
+      <h1>Планирование миссий</h1>
+      <p class="muted">Рабочее пространство команды</p>
+      <div id="username-field" hidden><label for="username">Пользователь</label><input id="username" name="username" autocomplete="username" maxlength="64"></div>
+      <label id="password-label" for="access-code">Код доступа</label>
+      <input id="access-code" name="code" type="password" inputmode="numeric" autocomplete="current-password" required maxlength="128" autofocus>
+      <p id="login-error" class="error-text" role="alert"></p>
+      <button class="primary" type="submit" disabled><i data-lucide="log-in"></i>Войти</button>
+      <span id="connection-status" class="login-status">Подключение к серверу...</span>
+    </form>
+  </div>
+  <div id="app" hidden>
+    <header class="app-header">
+      <button id="mobile-menu" class="icon-button mobile-only" title="Открыть параметры" aria-label="Открыть параметры"><i data-lucide="panel-left"></i></button>
+      <div class="brand"><span class="brand-mark"><i data-lucide="scan-line"></i></span><strong>GEOSCAN</strong><span class="brand-caption">Планирование миссий</span></div>
+      <div class="workspace-label"><span class="connection-dot"></span>Общее пространство</div>
+      <a class="quiet header-command docs-link" href="/documentation" title="Документация и испытания"><i data-lucide="book-open"></i><span>Документация</span></a>
+      <span id="session-role" class="small-text"></span>
+      <button id="logout" class="icon-button" title="Выйти" aria-label="Выйти"><i data-lucide="log-out"></i></button>
+    </header>
+    <div class="project-bar">
+      <button id="catalog-open" class="quiet"><i data-lucide="folder-open"></i><span>Открыть…</span></button>
+      <strong id="scenario-title" class="project-title">Сценарий не открыт</strong>
+      <span id="version-badge" class="badge neutral">Нет сценария</span>
+      <span id="dirty-badge" class="dirty-badge" hidden>Не сохранено</span>
+      <button id="save-scene" aria-label="Сохранить" title="Сохранить" class="quiet" disabled><i data-lucide="save"></i><span>Сохранить</span></button>
+      <button id="rename-scene" aria-label="Переименовать" title="Переименовать" class="quiet" disabled><i data-lucide="pencil"></i><span>Переименовать</span></button>
+      <button id="save-as-scene" aria-label="Сохранить как…" title="Сохранить как…" class="quiet" disabled><i data-lucide="save-all"></i><span>Сохранить как…</span></button>
+      <button id="delete-scene" aria-label="Удалить" title="Удалить" class="quiet danger" disabled><i data-lucide="trash-2"></i><span>Удалить</span></button>
+      <button id="undo-edit" class="icon-button" title="Отменить (Ctrl+Z)" aria-label="Отменить" disabled><i data-lucide="undo-2"></i></button>
+      <button id="redo-edit" class="icon-button" title="Повторить (Ctrl+Y)" aria-label="Повторить" disabled><i data-lucide="redo-2"></i></button>
+      <button id="refresh-scenarios" class="icon-button" title="Обновить сценарии" aria-label="Обновить сценарии"><i data-lucide="refresh-cw"></i></button>
+    </div>
+    <div class="workspace">
+      <aside id="sidebar" class="sidebar">
+        <nav class="sidebar-tabs" aria-label="Параметры сценария">
+          <button data-sidebar="scene" class="active"><i data-lucide="map"></i>Сцена</button>
+          <button data-sidebar="fleet"><i data-lucide="plane"></i>БВС</button>
+          <button data-sidebar="run"><i data-lucide="play"></i>Запуск</button>
+        </nav>
+        <div id="sidebar-content" class="sidebar-content"></div>
+        <div id="run-pane" hidden><div id="run-info"></div>
+        <form id="run-form" class="run-panel">
+          <div class="field"><label for="objective">Критерий оптимизации</label><select id="objective"><option value="makespan">Время завершения миссии</option><option value="total_flight">Суммарное время полёта</option></select></div>
+          <span class="small-text">Поиск автоматически завершается, когда перестаёт находить улучшения. Время расчёта зависит от сложности сцены.</span>
+          <button id="run-live" class="primary" type="submit" disabled><i data-lucide="play"></i><span id="run-live-label">Запустить расчёт</span></button>
+          <p id="run-save-hint" class="small-text" role="status" hidden></p>
+          <button id="stop-plan" class="quiet danger" type="button" disabled>ОСТАНОВИТЬ РАСЧЁТ</button>
+          <span class="small-text">Галсы → маршруты → проверка безопасности</span>
+          <button id="run-fixture" hidden class="quiet fixture-button" type="button" disabled><i data-lucide="file-check-2"></i>Открыть эталон</button>
+        </form>
+        </div>
+
+      </aside>
+      <main class="map-workspace">
+        <div id="map-area" class="map-area">
+          <div id="map" aria-label="Карта сцены и маршрутов"></div>
+          <div id="map-loading" class="map-loading" role="status" aria-live="polite" hidden><span class="progress-spinner"></span><strong>Загрузка сценария…</strong></div>
+          <div id="map-toolbar" class="map-toolbar" role="toolbar" aria-label="Редактор карты">
+            <button data-tool="select" class="icon-button active" title="Выделение и перемещение" aria-label="Выделение и перемещение"><i data-lucide="mouse-pointer-2"></i></button>
+            <span class="toolbar-divider"></span>
+            <button data-tool="survey_areas" class="icon-button" title="Новая область съёмки" aria-label="Новая область съёмки"><i data-lucide="scan"></i></button>
+            <button data-tool="no_fly_zones" class="icon-button" title="Новая запретная зона" aria-label="Новая запретная зона"><i data-lucide="ban"></i></button>
+            <button data-tool="allowed_airspace" class="icon-button" title="Новая разрешённая область" aria-label="Новая разрешённая область"><i data-lucide="pentagon"></i></button>
+            <button data-tool="landing_sites" class="icon-button" title="Новая площадка" aria-label="Новая площадка"><i data-lucide="map-pin-plus"></i></button>
+            <button data-tool="obstacles" class="icon-button" title="Новое препятствие" aria-label="Новое препятствие"><i data-lucide="building-2"></i></button>
+            <button data-tool="temporal_airspace" class="icon-button" title="Новая временная зона" aria-label="Новая временная зона"><i data-lucide="clock-4"></i></button>
+            <span class="toolbar-divider"></span>
+            <button id="delete-feature" class="icon-button danger" title="Удалить выбранный объект" aria-label="Удалить выбранный объект" disabled><i data-lucide="trash-2"></i></button>
+            <button id="fit-scene" class="icon-button" title="Показать всю сцену" aria-label="Показать всю сцену"><i data-lucide="maximize"></i></button>
+          </div>
+          <div class="map-context">
+            <div class="basemap-row">
+              <div id="basemap-switch" class="basemap-switch" role="group" aria-label="Подложка карты">
+                <button type="button" data-basemap="map" aria-pressed="true"><i data-lucide="map"></i>Карта</button>
+                <button type="button" data-basemap="imagery" aria-pressed="false"><i data-lucide="satellite"></i>Снимок</button>
+                <button type="button" data-basemap="terrain" aria-pressed="false"><i data-lucide="mountain"></i>Высоты</button>
+              </div>
+              <span id="basemap-message" class="basemap-message" role="status"></span>
+            </div>
+            <div id="imagery-info" class="imagery-info" hidden></div>
+            <div id="terrain-info" class="terrain-info" hidden aria-live="polite"></div>
+            <div id="map-network-warning" class="map-warning" hidden>Карта улиц недоступна. Геометрия сценария сохранена.</div>
+          </div>
+          <div id="map-failure" class="map-failure" hidden></div>
+          <div id="plan-overlay" class="plan-overlay" hidden></div>
+          <div class="map-footer"><span id="coordinates">55.70306, 37.53056</span><span id="terrain-label">Рельеф не выбран</span></div>
+        </div>
+        <section id="result-dock" class="result-dock" hidden aria-label="Результаты расчёта">
+          <header class="dock-header"><div id="result-heading"></div><nav id="result-tabs" aria-label="Разделы результата"><button data-result="summary" class="active">Обзор</button><button data-result="h1">Галсы и задачи</button><button data-result="graph">Граф перелётов</button><button data-result="timeline">Маршруты</button><button data-result="h3">Проверки</button><button data-result="export">Экспортировать результат</button></nav><button id="dock-close" class="icon-button" title="Свернуть результат" aria-label="Свернуть результат"><i data-lucide="chevron-down"></i></button></header>
+          <div id="result-content" class="result-content"></div>
+        </section>
+      </main>
+    </div>
+
+  </div>
+  <dialog id="catalog-dialog" class="wide-dialog" aria-labelledby="catalog-title">
+    <header><div><span class="eyebrow">СЦЕНАРИЙ</span><h2 id="catalog-title">Открыть сценарий</h2><p>Шаблон можно сразу рассчитать или изменить и сохранить как свой сценарий.</p></div><button class="icon-button" data-close="catalog-dialog" aria-label="Закрыть"><i data-lucide="x"></i></button></header>
+    <nav class="open-tabs" role="tablist" aria-label="Источник сценария">
+      <button id="open-templates" type="button" data-open-tab="templates" role="tab" aria-controls="open-panel-templates" aria-selected="true">Шаблоны</button>
+      <button id="open-saved" type="button" data-open-tab="saved" role="tab" aria-controls="open-panel-saved" aria-selected="false">Мои сценарии</button>
+      <button id="import-open" type="button" data-open-tab="files" role="tab" aria-controls="open-panel-files" aria-selected="false">Из файлов</button>
+    </nav>
+    <section id="open-panel-templates" data-open-panel="templates" role="tabpanel" aria-labelledby="open-templates">
+      <div class="template-folders" role="group" aria-label="Папки шаблонов">
+        <button type="button" class="template-folder" data-template-folder="complex" aria-pressed="false" aria-controls="catalog-list"><i data-lucide="folder"></i><span><strong>Сложные примеры</strong><small>Реальный рельеф</small></span><span id="folder-count-complex" class="folder-count"></span></button>
+        <button type="button" class="template-folder" data-template-folder="simple" aria-pressed="true" aria-controls="catalog-list"><i data-lucide="folder"></i><span><strong>Простые тесты</strong><small>Плоская поверхность</small></span><span id="folder-count-simple" class="folder-count"></span></button>
+      </div>
+      <div class="catalog-tools"><h3 id="template-folder-label">Простые тесты</h3><label class="catalog-search"><i data-lucide="search"></i><input id="template-search" type="search" aria-label="Поиск шаблонов в папке" placeholder="Номер, название или датчик" autocomplete="off"></label></div>
+      <p id="catalog-results" class="catalog-results" role="status" aria-live="polite"></p>
+      <div id="catalog-list" class="catalog-grid"></div>
+    </section>
+    <section id="open-panel-saved" data-open-panel="saved" role="tabpanel" aria-labelledby="open-saved" hidden><div id="my-scenarios-list" class="catalog-grid"></div></section>
+    <section id="open-panel-files" data-open-panel="files" role="tabpanel" aria-labelledby="import-open" hidden><form id="import-form"><div class="dialog-body"><label for="import-files" class="file-drop"><i data-lucide="files"></i><strong>Архив ZIP или файлы сцены</strong><span>GeoJSON, KML, GeoTIFF, JSON. Отдельный слой можно добавить в открытый сценарий.</span><input id="import-files" type="file" multiple accept=".zip,.geojson,.json,.kml,.tif,.tiff" required></label><div id="import-selection" class="muted"></div><label id="import-layer-field" class="field" hidden><span>Слой одиночного файла</span><select id="import-layer"><option value="survey_areas">Области съёмки</option><option value="no_fly_zones">Запретные зоны</option><option value="allowed_airspace">Разрешённая область</option><option value="landing_sites">Площадки</option><option value="obstacles">Препятствия</option><option value="temporal_airspace">Временные зоны</option></select></label><label class="layer-row" id="import-base-label"><input id="import-base" type="checkbox">Добавить файлы в открытый сценарий (как несохранённые изменения)</label><a id="input-template" class="small-text" href="#" download>Скачать исходные файлы текущей сцены</a><p class="retention-note"><i data-lucide="clock"></i>Полный набор файлов можно сразу рассчитать. «Сохранить» добавит сценарий в «Мои сценарии».</p><div id="import-error" class="error-text" role="alert"></div></div><footer class="dialog-footer"><button type="submit" class="primary"><i data-lucide="upload"></i>Открыть файлы</button></footer></form></section>
+    <footer class="dialog-footer"><button id="new-blank" class="quiet"><i data-lucide="plus"></i>Новый пустой сценарий</button><span class="muted">Сценарии сохраняют исходные данные. Результат расчёта скачивается отдельно.</span></footer>
+  </dialog>
+  <dialog id="terrain-dialog" aria-labelledby="terrain-dialog-title">
+    <header><h2 id="terrain-dialog-title">Рельеф сцены</h2><button type="button" class="icon-button" data-close="terrain-dialog" aria-label="Закрыть"><i data-lucide="x"></i></button></header>
+    <div class="dialog-body"><p id="terrain-dialog-text"></p><p id="terrain-dialog-hint" class="small-text"></p></div>
+    <footer class="dialog-footer"><button id="terrain-dialog-close" type="button" class="quiet" data-close="terrain-dialog">Понятно</button><button id="terrain-show-map" type="button" class="quiet">Показать карту высот</button><button id="terrain-flat" type="button" class="quiet">Использовать плоскую поверхность</button><button id="terrain-download" type="button" class="primary">Загрузить с Copernicus</button></footer>
+  </dialog>
+
+  <dialog id="save-as-dialog"><form id="save-as-form"><header><h2 id="scenario-name-title">Сохранить сценарий как</h2><button type="button" class="icon-button" data-close="save-as-dialog" aria-label="Закрыть"><i data-lucide="x"></i></button></header><div class="dialog-body"><label class="field"><span>Новое название</span><input id="save-as-name" required maxlength="160" autocomplete="off"></label><p id="scenario-name-hint">Будет создан отдельный сценарий в «Моих сценариях». Исходный останется без изменений.</p><p id="save-as-error" class="error-text" role="alert"></p></div><footer class="dialog-footer"><button type="submit" class="primary">Сохранить</button></footer></form></dialog>
+  <dialog id="json-dialog" class="wide-dialog"><form id="json-form"><header><h2 id="json-title">Параметры</h2><button type="button" class="icon-button" data-close="json-dialog" title="Закрыть" aria-label="Закрыть"><i data-lucide="x"></i></button></header><div class="dialog-body"><textarea id="json-editor" spellcheck="false" aria-label="Параметры JSON"></textarea><p id="json-error" class="error-text" role="alert"></p></div><footer class="dialog-footer"><button type="submit" class="primary"><i data-lucide="check"></i>Применить</button></footer></form></dialog>
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+</body>
+</html>

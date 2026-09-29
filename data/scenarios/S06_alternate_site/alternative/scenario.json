@@ -1,0 +1,11 @@
+{
+  "id": "S06_alternate_site",
+  "title": "Distant launch cannot reach task; alternative provided separately",
+  "expected_status": "SAFE",
+  "objectives": [
+    "makespan"
+  ],
+  "real_elevation": false,
+  "checks": {},
+  "proof": null
+}

@@ -1,0 +1,5 @@
+{
+  "expected_status": "INFEASIBLE",
+  "reason_contains": "reserve_landing_reachability",
+  "expected_recommendation_type": "add_landing_site"
+}

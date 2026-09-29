@@ -1,0 +1,111 @@
+{
+  "tests_passed": 34,
+  "contract_bundles_validated": 22,
+  "runs": [
+    {
+      "scenario": "S11_payload_compatibility",
+      "plan_id": "d1f91779447f4c988f4f3c3cb2c77d13",
+      "status": "SAFE",
+      "wall_s": 13.6,
+      "metrics": {
+        "distance_m": 15974.33443541963,
+        "total_flight_s": 2104.8678386211395,
+        "makespan_s": 567.5326099395752,
+        "airborne_span_s": 567.5326099395752,
+        "coverage_percent": 99.99999999734894,
+        "required_area_m2": 511999.9999999348,
+        "covered_area_m2": 511999.9999863614,
+        "sortie_count": 5,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 102399.99999980442,
+            "covered_area_m2": 102399.99999980442,
+            "coverage_percent": 100.0
+          },
+          "JOB_MULTISPECTRAL": {
+            "required_area_m2": 102399.99999996275,
+            "covered_area_m2": 102399.99999996275,
+            "coverage_percent": 100.0
+          },
+          "JOB_THERMAL": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102400.00000006519,
+            "coverage_percent": 100.0
+          },
+          "JOB_LIDAR": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102399.9999944133,
+            "coverage_percent": 99.99999999448058
+          },
+          "JOB_GEOPHYSICS": {
+            "required_area_m2": 102400.00000003725,
+            "covered_area_m2": 102399.99999211576,
+            "coverage_percent": 99.99999999226416
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "solution_sha256": "bc51c3c7923e7b45841d928fed23dc668ccf1fbf499f775ee03f72dd92513140"
+    },
+    {
+      "scenario": "S19_payload_compatibility_no_wind",
+      "plan_id": "6c92144d68254c94ab166a79235b270c",
+      "status": "SAFE",
+      "wall_s": 13.41,
+      "metrics": {
+        "distance_m": 14338.726983314591,
+        "total_flight_s": 1938.9238104820251,
+        "makespan_s": 535.3069620132446,
+        "airborne_span_s": 535.3069620132446,
+        "coverage_percent": 99.99999999952178,
+        "required_area_m2": 511999.9999999348,
+        "covered_area_m2": 511999.99999748636,
+        "sortie_count": 5,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 102399.99999980442,
+            "covered_area_m2": 102399.99999980442,
+            "coverage_percent": 100.0
+          },
+          "JOB_MULTISPECTRAL": {
+            "required_area_m2": 102399.99999996275,
+            "covered_area_m2": 102399.99999996275,
+            "coverage_percent": 100.0
+          },
+          "JOB_THERMAL": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102400.00000006519,
+            "coverage_percent": 100.0
+          },
+          "JOB_LIDAR": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102399.99999998264,
+            "coverage_percent": 99.99999999991938
+          },
+          "JOB_GEOPHYSICS": {
+            "required_area_m2": 102400.00000003725,
+            "covered_area_m2": 102399.99999767136,
+            "coverage_percent": 99.99999999768956
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "solution_sha256": "cbad0e040e2df2ccc3a10df5fd5c163bcf30197930cf865d25433964db2157fc"
+    }
+  ],
+  "sources": {
+    "h1/h1_coverage/src/h1_coverage/coverage/grid.py": "f8985087f076ff0a3ba4f4e71074d1fb66a20fcc55fe06cc155c682b1a821e69",
+    "h1/h1_coverage/src/h1_coverage/coverage/sweep.py": "f944241a8d8d28fecff6a0c8d5f90f1c90d7a15f7e28577542a163a39c20f8d9",
+    "h1/h1_coverage/src/h1_coverage/coverage/complete.py": "748f6e88942a52303690df405207c06d10272df24ffaa989f94575ac16dd6e56",
+    "h1/h1_coverage/src/h1_coverage/coverage/candidates.py": "678ec4d2823276031275227c54c0069a8ac614cf6fc52360510097fa64a0c83f",
+    "h1/h1_coverage/src/h1_coverage/coverage/engine.py": "bcb68ea97d76147dc42ef17bcedde187ff78671aea852dca0b966a947ccf790b"
+  },
+  "s18_h1_comparison": {
+    "elapsed_s": 3.037868471001275,
+    "previous_transects": 265,
+    "current_transects": 265,
+    "tasks_identical": true
+  }
+}

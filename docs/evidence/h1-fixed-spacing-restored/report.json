@@ -1,0 +1,710 @@
+{
+  "health": {
+    "status": "ready",
+    "storage": "sqlite",
+    "pipeline": "h1_coverage -> h2 -> h3",
+    "components": {
+      "h1_coverage": true,
+      "h2": true
+    },
+    "release": "h2-development"
+  },
+  "runs": [
+    {
+      "scenario": "S11_payload_compatibility",
+      "objective": "makespan",
+      "plan_id": "0c14c28dc06e4571b08f3528c938b98b",
+      "status": "SAFE",
+      "error": null,
+      "wall_s": 13.47,
+      "metrics": {
+        "distance_m": 15264.336359261844,
+        "total_flight_s": 2033.6769769191742,
+        "makespan_s": 534.4864530563354,
+        "airborne_span_s": 534.4864530563354,
+        "coverage_percent": 99.99999999734894,
+        "required_area_m2": 511999.9999999348,
+        "covered_area_m2": 511999.9999863614,
+        "sortie_count": 5,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 102399.99999980442,
+            "covered_area_m2": 102399.99999980442,
+            "coverage_percent": 100.0
+          },
+          "JOB_MULTISPECTRAL": {
+            "required_area_m2": 102399.99999996275,
+            "covered_area_m2": 102399.99999996275,
+            "coverage_percent": 100.0
+          },
+          "JOB_THERMAL": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102400.00000006519,
+            "coverage_percent": 100.0
+          },
+          "JOB_LIDAR": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102399.9999944133,
+            "coverage_percent": 99.99999999448058
+          },
+          "JOB_GEOPHYSICS": {
+            "required_area_m2": 102400.00000003725,
+            "covered_area_m2": 102399.99999211576,
+            "coverage_percent": 99.99999999226416
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "graph": {
+        "preparation_s": 3.9501729420153424,
+        "vertices": 57,
+        "transects": 26,
+        "orientations": 52,
+        "profiles": [
+          {
+            "id": "2d62b0a05f57a6f38c04b95b8a2d3e16fe2892ceca3f7c4e4b398edb3b654ced",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U01"
+            ],
+            "physical_edges": 512,
+            "expanded_edges": 0,
+            "valid_orientations": 6,
+            "detailed_edges_s": 0.6871798050124198,
+            "total_s": 0.8213165029883385
+          },
+          {
+            "id": "93a84facd1a5029710fbfaee4fa1ec5cf89583f8e513fbba081366d7c5da2eab",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U02"
+            ],
+            "physical_edges": 512,
+            "expanded_edges": 0,
+            "valid_orientations": 12,
+            "detailed_edges_s": 0.606294573051855,
+            "total_s": 0.7495274000102654
+          },
+          {
+            "id": "01640fa260d0d9cba17f74beb819359a12942544a49659db0cf5af6b4d71894d",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U03"
+            ],
+            "physical_edges": 512,
+            "expanded_edges": 0,
+            "valid_orientations": 18,
+            "detailed_edges_s": 0.6776213709963486,
+            "total_s": 0.8271187370410189
+          },
+          {
+            "id": "420222f6883c48b0863f8ad11d0e74adb87fbd25f3acf7c718dcd411c6563d63",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U04"
+            ],
+            "physical_edges": 512,
+            "expanded_edges": 0,
+            "valid_orientations": 8,
+            "detailed_edges_s": 0.6006824410287663,
+            "total_s": 0.7219984279945493
+          },
+          {
+            "id": "fbbbb294295d57e2854df15a3323d79581be9867936a5d937e7198565b74db3e",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U05"
+            ],
+            "physical_edges": 512,
+            "expanded_edges": 0,
+            "valid_orientations": 8,
+            "detailed_edges_s": 0.663100766018033,
+            "total_s": 0.7988526250701398
+          }
+        ],
+        "knn": 4,
+        "corners": 20,
+        "base_connections": "all_corners",
+        "base_transfers": false,
+        "corner_spacing_m": 300.0,
+        "corner_policy": "both ends of boundary transects; recursive physical midpoint; existing H1 endpoints only",
+        "long_links_per_corner": 2,
+        "long_link_pairs": 40,
+        "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+        "transit_factor": 1.0,
+        "return_margin_s": 60.0,
+        "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+        "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+        "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+      },
+      "solution_sha256": "315a8e633a3ca073428fcf1c3301a4b2bb01b729a4bc32fdb45b6ef64b5eacf9",
+      "shortcuts": {
+        "transfers_checked": 0,
+        "direct_evaluations": 0,
+        "blocked": 0,
+        "resource_rejections": 0,
+        "accepted": 0,
+        "removed_edges": 0,
+        "saved_flight_s": 0.0,
+        "calculation_s": 0.0,
+        "adopted": false,
+        "before_metrics": {
+          "makespan_s": 534.4864528579981,
+          "total_flight_s": 2033.676977912401,
+          "total_distance_m": 15264.336359253053,
+          "sortie_count": 5,
+          "used_uav_count": 5
+        },
+        "reason": "no_resource_feasible_improvement",
+        "violations": [],
+        "elapsed_s": 0.007903630030341446
+      }
+    },
+    {
+      "scenario": "S19_payload_compatibility_no_wind",
+      "objective": "makespan",
+      "plan_id": "212b6be340114bce925b3b4df4b49fff",
+      "status": "SAFE",
+      "error": null,
+      "wall_s": 13.29,
+      "metrics": {
+        "distance_m": 14236.380932928707,
+        "total_flight_s": 1928.3915061950684,
+        "makespan_s": 532.8362789154053,
+        "airborne_span_s": 532.8362789154053,
+        "coverage_percent": 99.99999999950552,
+        "required_area_m2": 511999.9999999348,
+        "covered_area_m2": 511999.99999740307,
+        "sortie_count": 5,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 102399.99999980442,
+            "covered_area_m2": 102399.99999980442,
+            "coverage_percent": 100.0
+          },
+          "JOB_MULTISPECTRAL": {
+            "required_area_m2": 102399.99999996275,
+            "covered_area_m2": 102399.99999996275,
+            "coverage_percent": 100.0
+          },
+          "JOB_THERMAL": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102400.00000006519,
+            "coverage_percent": 100.0
+          },
+          "JOB_LIDAR": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102399.99999982092,
+            "coverage_percent": 99.99999999976146
+          },
+          "JOB_GEOPHYSICS": {
+            "required_area_m2": 102400.00000003725,
+            "covered_area_m2": 102399.99999774975,
+            "coverage_percent": 99.99999999776611
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "graph": {
+        "preparation_s": 3.9562533140415326,
+        "vertices": 57,
+        "transects": 26,
+        "orientations": 52,
+        "profiles": [
+          {
+            "id": "2d62b0a05f57a6f38c04b95b8a2d3e16fe2892ceca3f7c4e4b398edb3b654ced",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U01"
+            ],
+            "physical_edges": 512,
+            "expanded_edges": 0,
+            "valid_orientations": 6,
+            "detailed_edges_s": 0.7102454929845408,
+            "total_s": 0.8393711179960519
+          },
+          {
+            "id": "93a84facd1a5029710fbfaee4fa1ec5cf89583f8e513fbba081366d7c5da2eab",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U02"
+            ],
+            "physical_edges": 512,
+            "expanded_edges": 0,
+            "valid_orientations": 12,
+            "detailed_edges_s": 0.5801954179769382,
+            "total_s": 0.7100660209544003
+          },
+          {
+            "id": "01640fa260d0d9cba17f74beb819359a12942544a49659db0cf5af6b4d71894d",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U03"
+            ],
+            "physical_edges": 512,
+            "expanded_edges": 0,
+            "valid_orientations": 18,
+            "detailed_edges_s": 0.6893673209706321,
+            "total_s": 0.8321733379270881
+          },
+          {
+            "id": "420222f6883c48b0863f8ad11d0e74adb87fbd25f3acf7c718dcd411c6563d63",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U04"
+            ],
+            "physical_edges": 512,
+            "expanded_edges": 0,
+            "valid_orientations": 8,
+            "detailed_edges_s": 0.6326199820032343,
+            "total_s": 0.7616156499134377
+          },
+          {
+            "id": "fbbbb294295d57e2854df15a3323d79581be9867936a5d937e7198565b74db3e",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U05"
+            ],
+            "physical_edges": 512,
+            "expanded_edges": 0,
+            "valid_orientations": 8,
+            "detailed_edges_s": 0.6579067229758948,
+            "total_s": 0.7900854169856757
+          }
+        ],
+        "knn": 4,
+        "corners": 20,
+        "base_connections": "all_corners",
+        "base_transfers": false,
+        "corner_spacing_m": 300.0,
+        "corner_policy": "both ends of boundary transects; recursive physical midpoint; existing H1 endpoints only",
+        "long_links_per_corner": 2,
+        "long_link_pairs": 40,
+        "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+        "transit_factor": 1.0,
+        "return_margin_s": 60.0,
+        "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+        "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+        "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+      },
+      "solution_sha256": "2e3002f94ae2f3edf117ae31a9a49f7cda2410a0cfa237a715c17e0d4bc8e105",
+      "shortcuts": {
+        "transfers_checked": 0,
+        "direct_evaluations": 0,
+        "blocked": 0,
+        "resource_rejections": 0,
+        "accepted": 0,
+        "removed_edges": 0,
+        "saved_flight_s": 0.0,
+        "calculation_s": 0.0,
+        "adopted": false,
+        "before_metrics": {
+          "makespan_s": 532.8362791743722,
+          "total_flight_s": 1928.3915072500804,
+          "total_distance_m": 14236.380932924001,
+          "sortie_count": 5,
+          "used_uav_count": 5
+        },
+        "reason": "no_resource_feasible_improvement",
+        "violations": [],
+        "elapsed_s": 0.006640124949626625
+      }
+    },
+    {
+      "scenario": "S18_MSU_geo401_alotofZones",
+      "objective": "makespan",
+      "plan_id": "ac8af7e8d2824a95a45c3393ee6b82bb",
+      "status": "SAFE",
+      "error": null,
+      "wall_s": 200.08,
+      "metrics": {
+        "distance_m": 399665.18113566854,
+        "total_flight_s": 42611.57053184509,
+        "makespan_s": 14067.11994099617,
+        "airborne_span_s": 14067.11994099617,
+        "coverage_percent": 99.99999999923519,
+        "required_area_m2": 42024620.21615,
+        "covered_area_m2": 42024620.21582859,
+        "sortie_count": 18,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zkpn": {
+            "required_area_m2": 3986429.328159467,
+            "covered_area_m2": 3986429.328159467,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zsll": {
+            "required_area_m2": 5012891.177459043,
+            "covered_area_m2": 5012891.177459043,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugb47tq": {
+            "required_area_m2": 1189332.133614003,
+            "covered_area_m2": 1189332.1336140027,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugboooc": {
+            "required_area_m2": 864915.3200386352,
+            "covered_area_m2": 864915.3200386352,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbouwk": {
+            "required_area_m2": 330498.2863635038,
+            "covered_area_m2": 330498.2863635038,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbp6jk": {
+            "required_area_m2": 997967.6012594478,
+            "covered_area_m2": 997967.6012594479,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpdk2": {
+            "required_area_m2": 1474012.7920848657,
+            "covered_area_m2": 1474012.7920848657,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpkox": {
+            "required_area_m2": 501195.5396158969,
+            "covered_area_m2": 501195.5396158969,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpt86": {
+            "required_area_m2": 2319662.203248926,
+            "covered_area_m2": 2319662.2031729217,
+            "coverage_percent": 99.99999999672347
+          },
+          "JOB_mugbq43d": {
+            "required_area_m2": 1426149.4494681838,
+            "covered_area_m2": 1426149.4494681838,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbq9i2": {
+            "required_area_m2": 2338834.299114999,
+            "covered_area_m2": 2338834.2991149984,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugbqdxs": {
+            "required_area_m2": 3062171.421146065,
+            "covered_area_m2": 3062171.421146065,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbqk0e": {
+            "required_area_m2": 610456.9544530762,
+            "covered_area_m2": 610456.9544530762,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbqw64": {
+            "required_area_m2": 2776489.8995889095,
+            "covered_area_m2": 2776489.899588909,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugbtq3n": {
+            "required_area_m2": 936334.5051221845,
+            "covered_area_m2": 936334.5051221846,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugc6vdy": {
+            "required_area_m2": 2585772.408926365,
+            "covered_area_m2": 2585772.408806272,
+            "coverage_percent": 99.99999999535561
+          },
+          "JOB_mujkb5uw": {
+            "required_area_m2": 2790053.5698201577,
+            "covered_area_m2": 2790053.5696948464,
+            "coverage_percent": 99.99999999550863
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "graph": {
+        "preparation_s": 58.1819273440633,
+        "vertices": 508,
+        "transects": 251,
+        "orientations": 502,
+        "profiles": [
+          {
+            "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "UAV_mugb19r3_copy1",
+              "UAV_mugb19r3_copy1_copy1",
+              "UAV_mugb19r3_copy1_copy1_copy1"
+            ],
+            "physical_edges": 7708,
+            "expanded_edges": 0,
+            "valid_orientations": 502,
+            "detailed_edges_s": 18.088920289068483,
+            "total_s": 29.30075727100484
+          },
+          {
+            "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+            "model": "geoscan_201",
+            "uav_ids": [
+              "UAV_mugb1t5y"
+            ],
+            "physical_edges": 7452,
+            "expanded_edges": 0,
+            "valid_orientations": 90,
+            "detailed_edges_s": 17.478827001992613,
+            "total_s": 28.1236961169634
+          }
+        ],
+        "knn": 4,
+        "corners": 294,
+        "base_connections": "all_corners",
+        "base_transfers": false,
+        "corner_spacing_m": 300.0,
+        "corner_policy": "both ends of boundary transects; recursive physical midpoint; existing H1 endpoints only",
+        "long_links_per_corner": 2,
+        "long_link_pairs": 588,
+        "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+        "transit_factor": 1.0,
+        "return_margin_s": 60.0,
+        "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+        "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+        "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+      },
+      "solution_sha256": "679fb4d440053ab6bd403715acc64e16f9c344d3d0e47bd21b8e7bafafd514f6",
+      "shortcuts": {
+        "transfers_checked": 28,
+        "direct_evaluations": 49,
+        "blocked": 0,
+        "resource_rejections": 0,
+        "accepted": 17,
+        "removed_edges": 31,
+        "saved_flight_s": 1017.101951353904,
+        "calculation_s": 0.12481998093426228,
+        "adopted": true,
+        "before_metrics": {
+          "makespan_s": 14072.622521507188,
+          "total_flight_s": 43628.67248328102,
+          "total_distance_m": 410009.1929864343,
+          "sortie_count": 18,
+          "used_uav_count": 4
+        },
+        "after_metrics": {
+          "makespan_s": 14067.119940968134,
+          "total_flight_s": 42611.57053192638,
+          "total_distance_m": 399665.181135651,
+          "sortie_count": 18,
+          "used_uav_count": 4
+        },
+        "violations": [],
+        "repairs": 1,
+        "elapsed_s": 8.273144943988882,
+        "reason": "checked_objective_improvement"
+      }
+    },
+    {
+      "scenario": "S18_MSU_geo401_alotofZones",
+      "objective": "total_flight",
+      "plan_id": "0abdae28b0d54b0f9dac1e021505c16f",
+      "status": "SAFE",
+      "error": null,
+      "wall_s": 170.99,
+      "metrics": {
+        "distance_m": 360303.83611563756,
+        "total_flight_s": 38991.08556509018,
+        "makespan_s": 21073.52309703827,
+        "airborne_span_s": 21073.52309703827,
+        "coverage_percent": 99.99999999923519,
+        "required_area_m2": 42024620.21615,
+        "covered_area_m2": 42024620.21582859,
+        "sortie_count": 17,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zkpn": {
+            "required_area_m2": 3986429.328159467,
+            "covered_area_m2": 3986429.328159467,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zsll": {
+            "required_area_m2": 5012891.177459043,
+            "covered_area_m2": 5012891.177459043,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugb47tq": {
+            "required_area_m2": 1189332.133614003,
+            "covered_area_m2": 1189332.1336140027,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugboooc": {
+            "required_area_m2": 864915.3200386352,
+            "covered_area_m2": 864915.3200386352,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbouwk": {
+            "required_area_m2": 330498.2863635038,
+            "covered_area_m2": 330498.2863635038,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbp6jk": {
+            "required_area_m2": 997967.6012594478,
+            "covered_area_m2": 997967.6012594479,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpdk2": {
+            "required_area_m2": 1474012.7920848657,
+            "covered_area_m2": 1474012.7920848657,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpkox": {
+            "required_area_m2": 501195.5396158969,
+            "covered_area_m2": 501195.5396158969,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbpt86": {
+            "required_area_m2": 2319662.203248926,
+            "covered_area_m2": 2319662.2031729217,
+            "coverage_percent": 99.99999999672347
+          },
+          "JOB_mugbq43d": {
+            "required_area_m2": 1426149.4494681838,
+            "covered_area_m2": 1426149.4494681838,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbq9i2": {
+            "required_area_m2": 2338834.299114999,
+            "covered_area_m2": 2338834.2991149984,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugbqdxs": {
+            "required_area_m2": 3062171.421146065,
+            "covered_area_m2": 3062171.421146065,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbqk0e": {
+            "required_area_m2": 610456.9544530762,
+            "covered_area_m2": 610456.9544530762,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugbqw64": {
+            "required_area_m2": 2776489.8995889095,
+            "covered_area_m2": 2776489.899588909,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugbtq3n": {
+            "required_area_m2": 936334.5051221845,
+            "covered_area_m2": 936334.5051221846,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugc6vdy": {
+            "required_area_m2": 2585772.408926365,
+            "covered_area_m2": 2585772.408806272,
+            "coverage_percent": 99.99999999535561
+          },
+          "JOB_mujkb5uw": {
+            "required_area_m2": 2790053.5698201577,
+            "covered_area_m2": 2790053.5696948455,
+            "coverage_percent": 99.9999999955086
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "graph": {
+        "preparation_s": 59.29527513193898,
+        "vertices": 508,
+        "transects": 251,
+        "orientations": 502,
+        "profiles": [
+          {
+            "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "UAV_mugb19r3_copy1",
+              "UAV_mugb19r3_copy1_copy1",
+              "UAV_mugb19r3_copy1_copy1_copy1"
+            ],
+            "physical_edges": 7708,
+            "expanded_edges": 0,
+            "valid_orientations": 502,
+            "detailed_edges_s": 18.067582811927423,
+            "total_s": 28.62971051502973
+          },
+          {
+            "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+            "model": "geoscan_201",
+            "uav_ids": [
+              "UAV_mugb1t5y"
+            ],
+            "physical_edges": 7452,
+            "expanded_edges": 0,
+            "valid_orientations": 90,
+            "detailed_edges_s": 17.83943236991763,
+            "total_s": 29.960304986918345
+          }
+        ],
+        "knn": 4,
+        "corners": 294,
+        "base_connections": "all_corners",
+        "base_transfers": false,
+        "corner_spacing_m": 300.0,
+        "corner_policy": "both ends of boundary transects; recursive physical midpoint; existing H1 endpoints only",
+        "long_links_per_corner": 2,
+        "long_link_pairs": 588,
+        "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+        "transit_factor": 1.0,
+        "return_margin_s": 60.0,
+        "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+        "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+        "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+      },
+      "solution_sha256": "abbb827a6c4c4c3544df017073275cbb58818af93dbc053ee2b8a93732bb221c",
+      "shortcuts": {
+        "transfers_checked": 20,
+        "direct_evaluations": 28,
+        "blocked": 0,
+        "resource_rejections": 0,
+        "accepted": 16,
+        "removed_edges": 28,
+        "saved_flight_s": 697.944795416041,
+        "calculation_s": 0.060706484131515026,
+        "adopted": true,
+        "before_metrics": {
+          "makespan_s": 21148.539356891073,
+          "total_flight_s": 39689.03036076098,
+          "total_distance_m": 365531.6454034966,
+          "sortie_count": 17,
+          "used_uav_count": 3
+        },
+        "after_metrics": {
+          "makespan_s": 21073.52309746233,
+          "total_flight_s": 38991.08556534444,
+          "total_distance_m": 360303.8361156268,
+          "sortie_count": 17,
+          "used_uav_count": 3
+        },
+        "violations": [],
+        "repairs": 0,
+        "elapsed_s": 4.55933834600728,
+        "reason": "checked_objective_improvement"
+      }
+    }
+  ],
+  "sources": {
+    "h2/src/h2/routing_graph.py": "8b33f0ff24e0343b76930fb992726860b4a531bb03a1295250b95348a05edc5c",
+    "h2/src/h2/routing_shortcuts.py": "8cf10a47c27bbc20add01b5b6f85be9c92a2467a884574a17ced0468f416b631",
+    "h2/src/h2/routing_planner.py": "9084413de0e7764f1a1c395ceafa85fc495d14f7fff55859647497fc0e5a15be",
+    "h2/src/h2/routing_windows.py": "07563b3365f8042462baed055b40d1ec7eb004229a16ac948470fefc464417fc",
+    "h2/src/h2/routing_solver.py": "424aaa357202f40e2b4615367ed03844fab013d4d8eaee9602d1ce208a9bf28b",
+    "h2/src/h2/routing_seed.py": "597b8ac173bf6bfdd404dc68ff5e78067c57eaaad53ced5af5b4c51775048b44",
+    "h2/src/h2/routing_blocks.py": "a08ec55cb7c9b52f8f0376e10709768747301a6dc88390f1a3b5e5de564fa651",
+    "h1/h1_coverage/src/h1_coverage/coverage/grid.py": "44ec1ac36437ebd5d69b25cbce4d959737e64dcc1f0f888ecd9a3f9f6be3723e",
+    "h1/h1_coverage/src/h1_coverage/coverage/sweep.py": "ccad9a7413a7c07ca73845a720e8f4f833292c17327f3e20fc05b55ae76d9565",
+    "h1/h1_coverage/src/h1_coverage/coverage/complete.py": "748f6e88942a52303690df405207c06d10272df24ffaa989f94575ac16dd6e56",
+    "h1/h1_coverage/src/h1_coverage/coverage/candidates.py": "678ec4d2823276031275227c54c0069a8ac614cf6fc52360510097fa64a0c83f",
+    "h1/h1_coverage/src/h1_coverage/coverage/engine.py": "bcb68ea97d76147dc42ef17bcedde187ff78671aea852dca0b966a947ccf790b"
+  }
+}

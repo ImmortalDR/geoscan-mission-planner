@@ -1,0 +1,41 @@
+{
+  "ground_run": {
+    "id": "1963cdeb8d3244968e41fa1ebd5f5c4c",
+    "scene_id": "eb2f6f6bfc9840cbb4eff2a893e6c033",
+    "status": "SAFE",
+    "metrics": {
+      "distance_m": 9811.90524155021,
+      "total_flight_s": 1183.3202340602875,
+      "makespan_s": 1483.3202340602875,
+      "flight_completion_s": 1303.3202340602875,
+      "preparation_time_s": 120,
+      "data_download_time_s": 180,
+      "ground_operations_explicit": true,
+      "airborne_span_s": 1183.3202340602875,
+      "coverage_percent": 100,
+      "required_area_m2": 800000.0000011409,
+      "covered_area_m2": 800000.0000011409,
+      "sortie_count": 1,
+      "per_job": {
+        "JOB_RGB": {
+          "required_area_m2": 800000.0000011409,
+          "covered_area_m2": 800000.0000011409,
+          "coverage_percent": 100
+        }
+      },
+      "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+      "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+    }
+  },
+  "kml": {
+    "url": "/api/v1/plans/f73cfb29748949448693b1cbe6689eb8/export?format=kml&uav_id=UAV_0",
+    "bytes": 2247865
+  },
+  "geojson": {
+    "url": "/api/v1/plans/f73cfb29748949448693b1cbe6689eb8/export?format=geojson&uav_id=UAV_0",
+    "bytes": 1131720
+  },
+  "map_rendering": "Software WebGL context removed after initialization for stable DOM screenshots; map geometry unchanged.",
+  "javascript_errors": [],
+  "passed": true
+}

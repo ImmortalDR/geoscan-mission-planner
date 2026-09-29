@@ -1,0 +1,9 @@
+{
+  "scenario_id": "S10_different_start_end",
+  "description": "Tests explicitly permitted different take-off and landing sites.",
+  "seed": 20260928,
+  "vector_crs": "EPSG:4326",
+  "internal_generation_crs": "EPSG:32637",
+  "synthetic": true,
+  "not_operational_data": true
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "original_counts": {
+    "scenes": 19,
+    "plans": 16
+  },
+  "changed_or_missing": {
+    "scenes": [],
+    "plans": []
+  }
+}

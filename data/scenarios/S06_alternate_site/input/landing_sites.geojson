@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.339146628365995,
+          55.69756667489352
+        ]
+      },
+      "properties": {
+        "id": "BASE",
+        "role": "both",
+        "candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.52045664959698,
+          55.69988537649114
+        ]
+      },
+      "properties": {
+        "id": "CANDIDATE_NEAR",
+        "role": "both",
+        "candidate": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "roles": [
+    "viewer",
+    "planner",
+    "admin"
+  ],
+  "tls_verified": true,
+  "url": "https://localhost:9443",
+  "checked_at": "2026-09-25T15:57:22.420735+00:00",
+  "persisted_plan_and_certificate": "b3ca2e1e35dd45d28886e8a25d944c71",
+  "plan_id": "c958b075208f452ab1337ed6d9ff8361",
+  "live_status": "SAFE",
+  "passed": true
+}

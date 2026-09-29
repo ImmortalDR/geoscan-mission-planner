@@ -1,0 +1,6 @@
+{
+  "expected_status": "SAFE",
+  "coverage_required": 1.0,
+  "preserve_holes": true,
+  "preserve_multipolygon": true
+}

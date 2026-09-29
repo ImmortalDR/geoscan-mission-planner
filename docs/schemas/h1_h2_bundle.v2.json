@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "H1/H2 v2 bundle (semantic checks in H1 and H2 validators)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "scene_id",
+    "crs",
+    "generated_at",
+    "source",
+    "fleet",
+    "sites",
+    "mission",
+    "tasks",
+    "feasibility",
+    "warnings"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "gmp.h1_h2.v2"
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "job_id",
+          "payload_class",
+          "payload_profile_id",
+          "agl_m",
+          "transects",
+          "survey_length_m",
+          "turn_count",
+          "sweep_angle_deg",
+          "entry",
+          "exit",
+          "geom_coords",
+          "internal_transition_m",
+          "fixed_wing_safe",
+          "route_variants"
+        ],
+        "properties": {
+          "route_variants": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "geom_coords",
+                "internal_transition_m",
+                "fixed_wing_safe"
+              ],
+              "properties": {
+                "id": {
+                  "enum": [
+                    "primary",
+                    "alternate"
+                  ]
+                },
+                "geom_coords": {
+                  "type": "array",
+                  "minItems": 2,
+                  "items": {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                },
+                "internal_transition_m": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "fixed_wing_safe": {
+                  "type": "boolean"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "transects": {
+            "type": "array",
+            "minItems": 1
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "transects": {
+                  "maxItems": 1
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "route_variants": {
+                  "maxItems": 1
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "route_variants": {
+                  "minItems": 2
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

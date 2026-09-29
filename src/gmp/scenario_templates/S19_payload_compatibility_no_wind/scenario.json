@@ -1,0 +1,24 @@
+{
+  "id": "S19_payload_compatibility_no_wind",
+  "title": "Five survey classes and explicit compatibility — no wind",
+  "expected_status": "SAFE",
+  "objectives": [
+    "makespan"
+  ],
+  "real_elevation": false,
+  "checks": {
+    "minimum_used_uavs": 5,
+    "survey_types": [
+      "rgb",
+      "multispectral",
+      "thermal",
+      "lidar",
+      "geophysics"
+    ]
+  },
+  "proof": null,
+  "role": "payload",
+  "purpose_ru": "Копия S11 без ветра. При равной стоимости направление галсов выбирается по близости к базам подходящих БПЛА.",
+  "catalog_badge_ru": "Группа · 5 БВС",
+  "fleet_count": 5
+}

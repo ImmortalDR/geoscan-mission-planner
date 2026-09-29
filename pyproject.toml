@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gmp"
+version = "1.0.0"
+description = "Geoscan group UAV mission planning and distribution service"
+requires-python = ">=3.12"
+
+[project.scripts]
+gmp-cli = "gmp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+gmp = ["scenario_templates/README.md", "scenario_templates/*/scenario.json", "scenario_templates/*/input/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "h1/h1_coverage/src", "h2/src", "h2"]
+markers = ["slow: long-running acceptance scenarios", "integration: multi-module integration checks"]

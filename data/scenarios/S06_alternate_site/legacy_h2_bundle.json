@@ -1,0 +1,620 @@
+{
+  "schema_version": "gmp.h1_h2.v1",
+  "scene_id": "S06_recommend_alternative_site",
+  "crs": {
+    "metric_epsg": 32637,
+    "axis": "ENU_metres",
+    "note": "Coordinates in metres, not lon/lat"
+  },
+  "generated_at": "2026-09-21T01:19:20Z",
+  "source": "coverage",
+  "fleet": [
+    {
+      "id": "GS201_01",
+      "model": "geoscan_gemini",
+      "uav_class": "multirotor",
+      "ground_speed_ms": 12.0,
+      "operational_endurance_min": 24.0,
+      "max_wind_ms": 10.0,
+      "payload_classes": [
+        "rgb",
+        "multispectral"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 300.0,
+      "start_site": "BAD_BASE",
+      "landing_site": "BAD_BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 120.0
+    }
+  ],
+  "sites": [
+    {
+      "id": "BAD_BASE",
+      "x": 409500.0000000001,
+      "y": 6173499.999999998,
+      "role": "both",
+      "candidate": false
+    },
+    {
+      "id": "CANDIDATE_GOOD_BASE",
+      "x": 418599.9999999999,
+      "y": 6183999.999999999,
+      "role": "both",
+      "candidate": true
+    },
+    {
+      "id": "RES",
+      "x": 421600.00000000035,
+      "y": 6184200.0,
+      "role": "reserve",
+      "candidate": false
+    }
+  ],
+  "mission": {
+    "objectives": [
+      "makespan"
+    ],
+    "window_start": "2026-06-15T09:00:00+03:00",
+    "window_end": "2026-06-15T17:00:00+03:00",
+    "wind": {
+      "speed_ms": 3.0,
+      "direction_deg_from": 180.0
+    },
+    "allow_different_start_end": false,
+    "require_complete_coverage": true,
+    "require_schedule": true
+  },
+  "tasks": [
+    {
+      "id": "RGB_REMOTE#T000",
+      "job_id": "RGB_REMOTE",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              419200.0000000002,
+              6183849.0
+            ],
+            [
+              420200.0000000001,
+              6183849.0
+            ]
+          ],
+          "length_m": 999.9999999999418,
+          "job_id": "RGB_REMOTE"
+        },
+        {
+          "coords": [
+            [
+              420200.0000000001,
+              6183903.0
+            ],
+            [
+              419200.0000000001,
+              6183903.0
+            ]
+          ],
+          "length_m": 1000.0,
+          "job_id": "RGB_REMOTE"
+        },
+        {
+          "coords": [
+            [
+              419200.0000000001,
+              6183957.0
+            ],
+            [
+              420200.0000000001,
+              6183957.0
+            ]
+          ],
+          "length_m": 1000.0,
+          "job_id": "RGB_REMOTE"
+        }
+      ],
+      "survey_length_m": 2999.999999999942,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        419200.0000000002,
+        6183849.0
+      ],
+      "exit": [
+        420200.0000000001,
+        6183957.0
+      ],
+      "geom_coords": [
+        [
+          419200.0000000002,
+          6183849.0
+        ],
+        [
+          420200.0000000001,
+          6183849.0
+        ],
+        [
+          420200.0000000001,
+          6183903.0
+        ],
+        [
+          419200.0000000001,
+          6183903.0
+        ],
+        [
+          419200.0000000001,
+          6183957.0
+        ],
+        [
+          420200.0000000001,
+          6183957.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_REMOTE#T001",
+      "job_id": "RGB_REMOTE",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              420200.0000000001,
+              6184011.0
+            ],
+            [
+              419200.0000000001,
+              6184011.0
+            ]
+          ],
+          "length_m": 1000.0,
+          "job_id": "RGB_REMOTE"
+        },
+        {
+          "coords": [
+            [
+              419200.0000000001,
+              6184065.0
+            ],
+            [
+              420200.0000000001,
+              6184065.0
+            ]
+          ],
+          "length_m": 1000.0,
+          "job_id": "RGB_REMOTE"
+        },
+        {
+          "coords": [
+            [
+              420200.0000000001,
+              6184119.0
+            ],
+            [
+              419200.00000000006,
+              6184119.0
+            ]
+          ],
+          "length_m": 1000.0000000000582,
+          "job_id": "RGB_REMOTE"
+        }
+      ],
+      "survey_length_m": 3000.000000000058,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        420200.0000000001,
+        6184011.0
+      ],
+      "exit": [
+        419200.00000000006,
+        6184119.0
+      ],
+      "geom_coords": [
+        [
+          420200.0000000001,
+          6184011.0
+        ],
+        [
+          419200.0000000001,
+          6184011.0
+        ],
+        [
+          419200.0000000001,
+          6184065.0
+        ],
+        [
+          420200.0000000001,
+          6184065.0
+        ],
+        [
+          420200.0000000001,
+          6184119.0
+        ],
+        [
+          419200.00000000006,
+          6184119.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_REMOTE#T002",
+      "job_id": "RGB_REMOTE",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              419200.00000000006,
+              6184173.0
+            ],
+            [
+              420200.0000000001,
+              6184173.0
+            ]
+          ],
+          "length_m": 1000.0000000000582,
+          "job_id": "RGB_REMOTE"
+        },
+        {
+          "coords": [
+            [
+              420200.00000000006,
+              6184227.0
+            ],
+            [
+              419200.00000000006,
+              6184227.0
+            ]
+          ],
+          "length_m": 1000.0,
+          "job_id": "RGB_REMOTE"
+        },
+        {
+          "coords": [
+            [
+              419200.00000000006,
+              6184281.0
+            ],
+            [
+              420200.00000000006,
+              6184281.0
+            ]
+          ],
+          "length_m": 1000.0,
+          "job_id": "RGB_REMOTE"
+        }
+      ],
+      "survey_length_m": 3000.000000000058,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        419200.00000000006,
+        6184173.0
+      ],
+      "exit": [
+        420200.00000000006,
+        6184281.0
+      ],
+      "geom_coords": [
+        [
+          419200.00000000006,
+          6184173.0
+        ],
+        [
+          420200.0000000001,
+          6184173.0
+        ],
+        [
+          420200.00000000006,
+          6184227.0
+        ],
+        [
+          419200.00000000006,
+          6184227.0
+        ],
+        [
+          419200.00000000006,
+          6184281.0
+        ],
+        [
+          420200.00000000006,
+          6184281.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_REMOTE#T003",
+      "job_id": "RGB_REMOTE",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              420200.00000000006,
+              6184335.0
+            ],
+            [
+              419200.0,
+              6184335.0
+            ]
+          ],
+          "length_m": 1000.0000000000582,
+          "job_id": "RGB_REMOTE"
+        },
+        {
+          "coords": [
+            [
+              419200.0,
+              6184389.0
+            ],
+            [
+              420200.00000000006,
+              6184389.0
+            ]
+          ],
+          "length_m": 1000.0000000000582,
+          "job_id": "RGB_REMOTE"
+        },
+        {
+          "coords": [
+            [
+              420200.00000000006,
+              6184443.0
+            ],
+            [
+              419200.0,
+              6184443.0
+            ]
+          ],
+          "length_m": 1000.0000000000582,
+          "job_id": "RGB_REMOTE"
+        }
+      ],
+      "survey_length_m": 3000.0000000001746,
+      "turn_count": 2,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        420200.00000000006,
+        6184335.0
+      ],
+      "exit": [
+        419200.0,
+        6184443.0
+      ],
+      "geom_coords": [
+        [
+          420200.00000000006,
+          6184335.0
+        ],
+        [
+          419200.0,
+          6184335.0
+        ],
+        [
+          419200.0,
+          6184389.0
+        ],
+        [
+          420200.00000000006,
+          6184389.0
+        ],
+        [
+          420200.00000000006,
+          6184443.0
+        ],
+        [
+          419200.0,
+          6184443.0
+        ]
+      ],
+      "internal_transition_m": 108.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "RGB_REMOTE#T004",
+      "job_id": "RGB_REMOTE",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              419200.0,
+              6184497.0
+            ],
+            [
+              420200.00000000006,
+              6184497.0
+            ]
+          ],
+          "length_m": 1000.0000000000582,
+          "job_id": "RGB_REMOTE"
+        },
+        {
+          "coords": [
+            [
+              420200.00000000006,
+              6184551.0
+            ],
+            [
+              419199.99999999994,
+              6184551.0
+            ]
+          ],
+          "length_m": 1000.0000000001164,
+          "job_id": "RGB_REMOTE"
+        }
+      ],
+      "survey_length_m": 2000.0000000001746,
+      "turn_count": 1,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        419200.0,
+        6184497.0
+      ],
+      "exit": [
+        419199.99999999994,
+        6184551.0
+      ],
+      "geom_coords": [
+        [
+          419200.0,
+          6184497.0
+        ],
+        [
+          420200.00000000006,
+          6184497.0
+        ],
+        [
+          420200.00000000006,
+          6184551.0
+        ],
+        [
+          419199.99999999994,
+          6184551.0
+        ]
+      ],
+      "internal_transition_m": 54.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    }
+  ],
+  "feasibility": {
+    "eligible_uav_ids_by_task": {
+      "RGB_REMOTE#T000": [
+        "GS201_01"
+      ],
+      "RGB_REMOTE#T001": [
+        "GS201_01"
+      ],
+      "RGB_REMOTE#T002": [
+        "GS201_01"
+      ],
+      "RGB_REMOTE#T003": [
+        "GS201_01"
+      ],
+      "RGB_REMOTE#T004": [
+        "GS201_01"
+      ]
+    },
+    "ineligible_reasons": {},
+    "ineligible_reasons_human": {}
+  },
+  "coverage_meta": {
+    "coverage_percent": 100.0,
+    "task_count": 5,
+    "per_job": [
+      {
+        "job_id": "RGB_REMOTE",
+        "task_count": 5,
+        "sweep_angle_deg": 0.0,
+        "coverage_percent": 100.0,
+        "eligible_uavs": [
+          "GS201_01"
+        ]
+      }
+    ],
+    "sweep_candidates": {
+      "RGB_REMOTE": [
+        {
+          "label": "wind_perpendicular",
+          "angle_deg": 0.0,
+          "survey_length_m": 14000.0,
+          "turn_count": 13,
+          "score": 15642.0,
+          "maneuver_violations": 0,
+          "selected": true
+        },
+        {
+          "label": "wind_aligned",
+          "angle_deg": 90.0,
+          "survey_length_m": 14400.0,
+          "turn_count": 17,
+          "score": 15998.0,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_75",
+          "angle_deg": 75.0,
+          "survey_length_m": 14835.1,
+          "turn_count": 20,
+          "score": 17173.8,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_105",
+          "angle_deg": 105.0,
+          "survey_length_m": 14835.1,
+          "turn_count": 20,
+          "score": 17468.2,
+          "maneuver_violations": 0,
+          "selected": false
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "h1": {
+      "energy_hints": [
+        {
+          "scope": "mission",
+          "uav_id": "GS201_01",
+          "survey_length_m": 14000.0,
+          "need_flight_s": 1166.7,
+          "usable_endurance_s": 1152.0,
+          "sorties_hint": 2
+        }
+      ],
+      "site_recommendation": {
+        "recommended_site_id": "CANDIDATE_GOOD_BASE",
+        "distance_to_survey_m": 1118.0,
+        "reason": "closest_candidate_to_survey_centroid",
+        "replace_site_id": "BAD_BASE",
+        "replace_distance_m": 14782.8
+      },
+      "reserve_sites": [
+        "RES"
+      ],
+      "terrain": {
+        "dem_available": true,
+        "warning_count": 0,
+        "warnings": [],
+        "note": "planning checks only; terrain-following is autopilot/H3"
+      }
+    }
+  },
+  "warnings": [
+    "site BAD_BASE: outside survey area (+50m slack)",
+    "site CANDIDATE_GOOD_BASE: outside survey area (+50m slack)",
+    "site RES: outside survey area (+50m slack)",
+    "S04: mission ≈2 sorties on GS201_01 (total survey 14.0 km → 19 min vs usable 19 min) — multi-sortie, not H1 schedule",
+    "S06: prefer candidate site CANDIDATE_GOOD_BASE (1118m to survey) over BAD_BASE (14783m)"
+  ]
+}

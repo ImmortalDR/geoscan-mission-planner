@@ -1,0 +1,27 @@
+{
+  "objectives": [
+    "makespan"
+  ],
+  "mission_window": {
+    "start": "2026-06-15T08:30:00+03:00",
+    "end": "2026-06-15T20:00:00+03:00"
+  },
+  "wind": {
+    "speed_ms": 3,
+    "direction_deg_from": 270
+  },
+  "require_complete_coverage": true,
+  "require_schedule": true,
+  "service_time_min": 7,
+  "allow_different_start_end": false,
+  "candidate_sites_allowed": false,
+  "dem_sampling_step_m": 20,
+  "wind_energy_model_enabled": false,
+  "validation_policy": {
+    "coverage_tolerance_fraction": 0.001,
+    "min_agl_m": 40,
+    "altitude_tolerance_m": 3,
+    "terrain_sample_step_m": 20,
+    "takeoff_landing_corridor_radius_m": 100
+  }
+}

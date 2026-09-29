@@ -1,0 +1,18 @@
+FROM python:3.12-slim-bookworm
+RUN apt-get update && apt-get install -y --no-install-recommends fonts-dejavu-core libgomp1 libexpat1 ca-certificates && rm -rf /var/lib/apt/lists/*
+WORKDIR /opt/geoscan-h3/app
+COPY app/requirements.txt app/requirements.lock ./
+RUN python -m pip install --no-cache-dir -r requirements.txt
+COPY app/src ./src
+COPY app/web/h3 ./web/h3
+COPY app/docs ./docs
+COPY app/algorithms ./algorithms
+COPY app/examples ./examples
+COPY h1/src /opt/geoscan-h3/h1/src
+COPY h2/src /opt/geoscan-h3/h2/src
+COPY dataset /opt/geoscan-h3/dataset
+RUN useradd --system --uid 10001 --home-dir /var/lib/geoscan-h3 gmp && mkdir -p /var/lib/geoscan-h3 && chown gmp /var/lib/geoscan-h3
+ENV PYTHONPATH=/opt/geoscan-h3/app/src:/opt/geoscan-h3/h1/src:/opt/geoscan-h3/h2/src PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 GMP_DATA_DIR=/var/lib/geoscan-h3 GMP_DATASET_DIR=/opt/geoscan-h3/dataset GMP_WEB_DIR=/opt/geoscan-h3/app/web/h3 HOME=/var/lib/geoscan-h3
+USER gmp
+EXPOSE 8090
+CMD ["python", "-m", "uvicorn", "gmp.api.app:app", "--host", "0.0.0.0", "--port", "8090", "--workers", "1", "--proxy-headers", "--forwarded-allow-ips", "*"]

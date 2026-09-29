@@ -1,0 +1,64 @@
+name: Verify integrated service
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    services:
+      postgres:
+        image: postgres:16-bookworm
+        env:
+          POSTGRES_DB: geoscan_ci_test
+          POSTGRES_USER: geoscan_test
+          POSTGRES_HOST_AUTH_METHOD: trust
+        ports: ['127.0.0.1:5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U geoscan_test -d geoscan_ci_test"
+          --health-interval 5s --health-timeout 5s --health-retries 12
+    env:
+      GMP_TEST_DATABASE_URL: postgresql://geoscan_test@127.0.0.1:5432/geoscan_ci_test
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python scripts/install.py
+      - run: .venv/bin/python data/run_dataset.py verify --integrity
+      - run: .venv/bin/python scripts/validate_h1_h2_contract.py
+      - run: .venv/bin/python scripts/run_regression.py
+      - run: .venv/bin/python scripts/evaluate_algorithms.py --junit docs/evidence/system.junit.xml
+      - run: .venv/bin/python scripts/benchmark_algorithms.py
+      - run: |
+          python -m venv "$RUNNER_TEMP/security-tools"
+          "$RUNNER_TEMP/security-tools/bin/pip" install pip-audit==2.10.1
+          "$RUNNER_TEMP/security-tools/bin/pip-audit" --path "$PWD/.venv/lib/python3.12/site-packages" --format json --output docs/evidence/security/dependencies.json
+      - run: .venv/bin/pip install playwright==1.63.0
+      - run: .venv/bin/playwright install --with-deps chromium
+      - run: .venv/bin/python web/tests/reviewer_smoke.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: measured-evidence
+          path: docs/evidence/
+  compose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - run: python deploy/prepare_h3_bundle.py build/compose-test
+      - run: python deploy/bootstrap.py "$RUNNER_TEMP/geoscan-secrets"
+      - run: docker compose --env-file "$RUNNER_TEMP/geoscan-secrets/compose.env" -f build/compose-test/compose.yaml up --build --wait --wait-timeout 180
+      - run: python scripts/smoke_compose.py "$RUNNER_TEMP/geoscan-secrets"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: compose-evidence
+          path: docs/evidence/compose.json
+      - if: always()
+        run: docker compose --env-file "$RUNNER_TEMP/geoscan-secrets/compose.env" -f build/compose-test/compose.yaml down --volumes

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "status": "INFEASIBLE",
+  "violations": [],
+  "metrics": {
+    "proof_type": "unreachable_required_point",
+    "proof_verified": true,
+    "bounds": [
+      {
+        "uav_id": "U01",
+        "minimum_time_s": 1938.0844133831636,
+        "usable_time_s": 768.0
+      }
+    ],
+    "sensor_half_diagonal_m": 110.80309763410271,
+    "proof_scope": "entire_required_job",
+    "bound_model": "horizontal_distance_at_maximum_ground_speed"
+  },
+  "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+  "not_checked": [
+    "discrete_photo_front_overlap",
+    "side_overlap_quality",
+    "aircraft_dynamics",
+    "real_operational_permissions",
+    "global_optimality"
+  ]
+}

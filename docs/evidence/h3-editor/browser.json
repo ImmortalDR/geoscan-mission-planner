@@ -1,0 +1,71 @@
+{
+  "checks": [
+    "real map click and sidebar click select the matching object",
+    "ordinal duplicate names, per-zone delete and undo work",
+    "table materializes old permissions, preserves expansion, handles any/fixed/none",
+    "saved table choices and display name pass actual H1/H2/H3: SAFE",
+    "multi-base table only allows role-compatible active bases"
+  ],
+  "scene_id": "8a0dc8695c59495fb082a68483f239e8",
+  "run": {
+    "status": "SAFE",
+    "metrics": {
+      "distance_m": 9811.90524155021,
+      "total_flight_s": 1183.3202340602875,
+      "makespan_s": 1183.3202340602875,
+      "airborne_span_s": 1183.3202340602875,
+      "coverage_percent": 100,
+      "required_area_m2": 800000.0000011409,
+      "covered_area_m2": 800000.0000011409,
+      "sortie_count": 1,
+      "per_job": {
+        "JOB_RGB": {
+          "required_area_m2": 800000.0000011409,
+          "covered_area_m2": 800000.0000011409,
+          "coverage_percent": 100
+        }
+      },
+      "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+      "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+    },
+    "error": null,
+    "elapsed_s": 15.77
+  },
+  "multi_base_initial": {
+    "uav": {
+      "id": "U01",
+      "model": "geoscan_201",
+      "class": "fixed_wing",
+      "ground_speed_kmh": 79.2,
+      "operational_endurance_min": 144,
+      "max_wind_ms": 12,
+      "payload_classes": [
+        "rgb"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 300,
+      "start_site": "START",
+      "landing_site": "END",
+      "takeoff_time_s": 180,
+      "landing_time_s": 240,
+      "service_time_s": 420,
+      "parameter_status": "explicit_synthetic_operational_profile_not_manufacturer_guarantee"
+    },
+    "sites": [
+      {
+        "id": "START",
+        "role": "start",
+        "candidate": false
+      },
+      {
+        "id": "END",
+        "role": "landing",
+        "candidate": false
+      }
+    ]
+  },
+  "passed": true,
+  "javascript_errors": []
+}

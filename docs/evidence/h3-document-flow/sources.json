@@ -1,0 +1,8 @@
+{
+  "src/gmp/api/app.py": "59524f3a670a298dcca0b3dbc2999874061f57d527fb8efa15755d258fd4437e",
+  "web/h3/app.js": "37be2c3fb35f3986797379005dad8ba37eecc65971a660812026ee6767bc56ab",
+  "web/h3/index.html": "2cb6528d76a6f6a37a198618167a4cb916b9da96693d17d5f530350100d28feb",
+  "web/h3/styles.css": "3fa843103aa3ce0d16d93f508e43fecf03acf72f7080e9e9a7ae86760212dcb5",
+  "tests/api/test_h3_workspace.py": "9374fadf8c5c054e4cf8aa7b0421d451cee72f06efff58e04919ec66c35d73b2",
+  "web/tests/h3_document_flow.py": "0439fd39d899806a8561f072aa107195075ef9a241a91759b60ce7cfc7092e34"
+}

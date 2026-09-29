@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.502960686986135,
+          55.699673307785076
+        ]
+      },
+      "properties": {
+        "id": "BASE",
+        "role": "both",
+        "candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.55863046137362,
+          55.70033942193259
+        ]
+      },
+      "properties": {
+        "id": "RESERVE",
+        "role": "reserve",
+        "candidate": false
+      }
+    }
+  ]
+}

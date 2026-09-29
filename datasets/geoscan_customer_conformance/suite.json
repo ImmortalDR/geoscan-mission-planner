@@ -1,0 +1,19 @@
+{
+  "suite": "geoscan_customer_conformance_v1",
+  "seed": 20260918,
+  "scenario_count": 12,
+  "scenarios": [
+    "S00_smoke_rgb",
+    "S01_full_customer_acceptance_100km2",
+    "S02_multipolygon_holes",
+    "S03_temporal_airspace_daylight",
+    "S04_multi_sortie_energy",
+    "S05_4d_deconfliction",
+    "S06_recommend_alternative_site",
+    "S07_reserve_landing_failure",
+    "S08_fixed_wing_turnaround",
+    "S09_wind_feasibility",
+    "S10_different_start_end",
+    "S11_payload_compatibility"
+  ]
+}

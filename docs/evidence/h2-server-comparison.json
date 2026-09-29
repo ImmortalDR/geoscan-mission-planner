@@ -1,0 +1,5522 @@
+{
+  "date": "2026-09-27",
+  "mode": "LIVE HTTPS API on both deployments",
+  "seed": 20260918,
+  "requested_budget_s": 60,
+  "scenarios": 3,
+  "accepted_completed_runs": 12,
+  "all_safe": true,
+  "all_full_coverage": true,
+  "production_url": "https://45.87.246.124/",
+  "development_url": "https://45.87.246.124:9443/",
+  "runtime_caveat": "Shared server; observed API latency includes worker startup, persistence, network/polling. Some isolated diagnostics ran concurrently. These are not controlled runtime benchmarks.",
+  "algorithm_changes_deployed_in_this_comparison": false,
+  "runs": [
+    {
+      "server": "production",
+      "scenario": "S14_MSU_geo401_and_201",
+      "objective": "makespan",
+      "plan_id": "7a5f0fdd185d493b875de06bab2a2fb8",
+      "run_code": "RUN-20260927-7a5f0fdd185d",
+      "input_sha256": "c6a84cc5e4ff65e720316d9bb388be6d6f0340aade3f900245ab19abeb387d2b",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0,
+            "required_area_m2": 8821453.32666627
+          },
+          "JOB_mugady20": {
+            "covered_area_m2": 2539587.56019591,
+            "coverage_percent": 99.99999999999997,
+            "required_area_m2": 2539587.5601959103
+          },
+          "JOB_mugaf9eh": {
+            "covered_area_m2": 57439189.16001186,
+            "coverage_percent": 100.0,
+            "required_area_m2": 57439189.16001186
+          },
+          "JOB_mugafdz8": {
+            "covered_area_m2": 1953334.492514413,
+            "coverage_percent": 100.0,
+            "required_area_m2": 1953334.4925144129
+          }
+        },
+        "distance_m": 275312.19456615136,
+        "makespan_s": 12306.108584880829,
+        "sortie_count": 7,
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "total_flight_s": 20855.550014972687,
+        "airborne_span_s": 12306.108584880829,
+        "covered_area_m2": 70753564.53938845,
+        "coverage_percent": 100.0,
+        "required_area_m2": 70753564.53938845,
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 104.30725710897241,
+      "sorties": [
+        {
+          "id": "UAV_mugacog6_S1",
+          "uav_id": "UAV_mugacog6",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T08:58:56.533173+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1736.5331727459038,
+          "distance_m": 13676.693000500498,
+          "task_ids": [
+            "JOB_mug9k0vy#T000",
+            "JOB_mug9k0vy#T001"
+          ]
+        },
+        {
+          "id": "UAV_mugacog6_S2",
+          "uav_id": "UAV_mugacog6",
+          "t_start": "2026-06-15T09:05:56.533173+03:00",
+          "t_end": "2026-06-15T09:32:34.627964+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1598.0947915844395,
+          "distance_m": 12465.000093931661,
+          "task_ids": [
+            "JOB_mug9k0vy#T002",
+            "JOB_mug9k0vy#T003"
+          ]
+        },
+        {
+          "id": "UAV_mugacog6_S3",
+          "uav_id": "UAV_mugacog6",
+          "t_start": "2026-06-15T09:39:34.627964+03:00",
+          "t_end": "2026-06-15T10:04:25.272486+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1490.6445220731648,
+          "distance_m": 11494.279200813286,
+          "task_ids": [
+            "JOB_mug9k0vy#T004",
+            "JOB_mug9k0vy#T005"
+          ]
+        },
+        {
+          "id": "UAV_mugacog6_S4",
+          "uav_id": "UAV_mugacog6",
+          "t_start": "2026-06-15T10:11:25.272486+03:00",
+          "t_end": "2026-06-15T10:48:13.159573+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 2207.8870866565576,
+          "distance_m": 17339.21879495165,
+          "task_ids": [
+            "JOB_mugady20#T000",
+            "JOB_mugady20#T001"
+          ]
+        },
+        {
+          "id": "UAV_mugacog6_S5",
+          "uav_id": "UAV_mugacog6",
+          "t_start": "2026-06-15T10:55:13.159573+03:00",
+          "t_end": "2026-06-15T11:30:29.441430+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 2116.281856511314,
+          "distance_m": 16802.45062099342,
+          "task_ids": [
+            "JOB_mugafdz8#T000"
+          ]
+        },
+        {
+          "id": "UAV_mugaekoc_S1",
+          "uav_id": "UAV_mugaekoc",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T10:24:53.542473+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 6893.542472698188,
+          "distance_m": 119829.83837287495,
+          "task_ids": [
+            "JOB_mugaf9eh#T000",
+            "JOB_mugaf9eh#T001",
+            "JOB_mugaf9eh#T002",
+            "JOB_mugaf9eh#T003",
+            "JOB_mugaf9eh#T004",
+            "JOB_mugaf9eh#T005",
+            "JOB_mugaf9eh#T006",
+            "JOB_mugaf9eh#T007",
+            "JOB_mugaf9eh#T008",
+            "JOB_mugaf9eh#T009",
+            "JOB_mugaf9eh#T010",
+            "JOB_mugaf9eh#T011",
+            "JOB_mugaf9eh#T012",
+            "JOB_mugaf9eh#T013",
+            "JOB_mugaf9eh#T014",
+            "JOB_mugaf9eh#T015",
+            "JOB_mugaf9eh#T016",
+            "JOB_mugaf9eh#T017",
+            "JOB_mugaf9eh#T018"
+          ]
+        },
+        {
+          "id": "UAV_mugaekoc_S2",
+          "uav_id": "UAV_mugaekoc",
+          "t_start": "2026-06-15T10:34:53.542473+03:00",
+          "t_end": "2026-06-15T11:55:06.108585+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 4812.566112284875,
+          "distance_m": 83704.71448208726,
+          "task_ids": [
+            "JOB_mugaf9eh#T019",
+            "JOB_mugaf9eh#T020",
+            "JOB_mugaf9eh#T021",
+            "JOB_mugaf9eh#T022",
+            "JOB_mugaf9eh#T023",
+            "JOB_mugaf9eh#T024",
+            "JOB_mugaf9eh#T025",
+            "JOB_mugaf9eh#T026",
+            "JOB_mugaf9eh#T027",
+            "JOB_mugaf9eh#T028"
+          ]
+        }
+      ],
+      "routing": null,
+      "deconfliction": {
+        "before": [],
+        "remaining": [],
+        "ladder_used": [],
+        "ladder_actions": []
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 38 задач",
+          "duration_s": 0.5261921882629395
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 38 из 38 задач; 7 вылетов",
+          "duration_s": 61.80821418762207
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 16.588396787643433
+        }
+      ],
+      "makespan_before_ground_delays_s": 12306.108584983063,
+      "makespan_added_by_ground_delays_s": 0.0,
+      "sorties_per_uav": {
+        "UAV_mugacog6": 5,
+        "UAV_mugaekoc": 2
+      },
+      "plan_content_sha256": "6392fead09769066672adc44c26d2d7565c3ba784ec0412ea185e5ca6874f37e"
+    },
+    {
+      "server": "dev",
+      "scenario": "S14_MSU_geo401_and_201",
+      "objective": "makespan",
+      "plan_id": "69f773685d6842d8b38ed23bc8c68002",
+      "run_code": "RUN-20260927-69f773685d68",
+      "input_sha256": "c6a84cc5e4ff65e720316d9bb388be6d6f0340aade3f900245ab19abeb387d2b",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 287377.333483743,
+        "total_flight_s": 25788.439337730408,
+        "makespan_s": 15468.301271915436,
+        "airborne_span_s": 15468.301271915436,
+        "coverage_percent": 100.0,
+        "required_area_m2": 70753564.53938845,
+        "covered_area_m2": 70753564.53938845,
+        "sortie_count": 10,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugady20": {
+            "required_area_m2": 2539587.5601959103,
+            "covered_area_m2": 2539587.56019591,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugaf9eh": {
+            "required_area_m2": 57439189.16001186,
+            "covered_area_m2": 57439189.16001186,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugafdz8": {
+            "required_area_m2": 1953334.4925144129,
+            "covered_area_m2": 1953334.492514413,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 68.88250845507719,
+      "sorties": [
+        {
+          "id": "UAV_mugacog6_S1",
+          "uav_id": "UAV_mugacog6",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T08:56:28.572155+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1588.5721547013654,
+          "distance_m": 11494.279200813344,
+          "task_ids": [
+            "JOB_mug9k0vy#T005#G0000",
+            "JOB_mug9k0vy#T004#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugacog6_S2",
+          "uav_id": "UAV_mugacog6",
+          "t_start": "2026-06-15T09:03:28.572155+03:00",
+          "t_end": "2026-06-15T09:27:09.190652+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1420.6184970577865,
+          "distance_m": 9311.70242799755,
+          "task_ids": [
+            "JOB_mugady20#T001#G0001",
+            "JOB_mugady20#T001#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugacog6_copy1_S1",
+          "uav_id": "UAV_mugacog6_copy1",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T08:56:52.361467+03:00",
+          "start_site": "BASE_1",
+          "landing_site": "BASE_1",
+          "flight_time_s": 1612.3614669546782,
+          "distance_m": 10871.870483358487,
+          "task_ids": [
+            "JOB_mug9k0vy#T003#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugacog6_copy1_S2",
+          "uav_id": "UAV_mugacog6_copy1",
+          "t_start": "2026-06-15T09:03:52.361467+03:00",
+          "t_end": "2026-06-15T09:30:23.556129+03:00",
+          "start_site": "BASE_1",
+          "landing_site": "BASE_1",
+          "flight_time_s": 1591.1946625282408,
+          "distance_m": 10733.856897279595,
+          "task_ids": [
+            "JOB_mug9k0vy#T002#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugacog6_copy1_S3",
+          "uav_id": "UAV_mugacog6_copy1",
+          "t_start": "2026-06-15T09:37:23.556129+03:00",
+          "t_end": "2026-06-15T10:11:27.452642+03:00",
+          "start_site": "BASE_1",
+          "landing_site": "BASE_1",
+          "flight_time_s": 2043.8965121811393,
+          "distance_m": 13741.098379788364,
+          "task_ids": [
+            "JOB_mugady20#T000#G0000",
+            "JOB_mugady20#T000#G0001"
+          ]
+        },
+        {
+          "id": "UAV_mugacog6_copy1_copy1_S1",
+          "uav_id": "UAV_mugacog6_copy1_copy1",
+          "t_start": "2026-06-15T08:31:59.751000+03:00",
+          "t_end": "2026-06-15T08:56:39.993017+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 1480.242016567519,
+          "distance_m": 9831.649991070593,
+          "task_ids": [
+            "JOB_mugafdz8#T000#G0001",
+            "JOB_mugafdz8#T000#G0000",
+            "JOB_mugafdz8#T000#G0002"
+          ]
+        },
+        {
+          "id": "UAV_mugacog6_copy1_copy1_S2",
+          "uav_id": "UAV_mugacog6_copy1_copy1",
+          "t_start": "2026-06-15T09:03:39.993017+03:00",
+          "t_end": "2026-06-15T09:33:23.245772+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 1783.2527554390206,
+          "distance_m": 12839.193953075635,
+          "task_ids": [
+            "JOB_mug9k0vy#T001#G0000",
+            "JOB_mug9k0vy#T000#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugaekoc_S1",
+          "uav_id": "UAV_mugaekoc",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:27:55.066285+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 3475.066284843585,
+          "distance_m": 51608.185085795136,
+          "task_ids": [
+            "JOB_mugaf9eh#T000#G0000",
+            "JOB_mugaf9eh#T001#G0000",
+            "JOB_mugaf9eh#T002#G0000",
+            "JOB_mugaf9eh#T003#G0000",
+            "JOB_mugaf9eh#T004#G0000",
+            "JOB_mugaf9eh#T005#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugaekoc_S2",
+          "uav_id": "UAV_mugaekoc",
+          "t_start": "2026-06-15T09:37:55.066285+03:00",
+          "t_end": "2026-06-15T11:07:10.702336+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 5355.636051392813,
+          "distance_m": 73611.5462730747,
+          "task_ids": [
+            "JOB_mugaf9eh#T006#G0000",
+            "JOB_mugaf9eh#T007#G0000",
+            "JOB_mugaf9eh#T008#G0000",
+            "JOB_mugaf9eh#T009#G0000",
+            "JOB_mugaf9eh#T010#G0000",
+            "JOB_mugaf9eh#T011#G0000",
+            "JOB_mugaf9eh#T012#G0000",
+            "JOB_mugaf9eh#T013#G0000",
+            "JOB_mugaf9eh#T014#G0000",
+            "JOB_mugaf9eh#T014#G0001",
+            "JOB_mugaf9eh#T015#G0000",
+            "JOB_mugaf9eh#T015#G0001",
+            "JOB_mugaf9eh#T016#G0000",
+            "JOB_mugaf9eh#T017#G0000",
+            "JOB_mugaf9eh#T018#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugaekoc_S3",
+          "uav_id": "UAV_mugaekoc",
+          "t_start": "2026-06-15T11:17:10.702336+03:00",
+          "t_end": "2026-06-15T12:47:48.301272+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 5437.598935739938,
+          "distance_m": 83333.95079149658,
+          "task_ids": [
+            "JOB_mugaf9eh#T019#G0000",
+            "JOB_mugaf9eh#T020#G0000",
+            "JOB_mugaf9eh#T021#G0000",
+            "JOB_mugaf9eh#T022#G0000",
+            "JOB_mugaf9eh#T023#G0000",
+            "JOB_mugaf9eh#T024#G0000",
+            "JOB_mugaf9eh#T025#G0000",
+            "JOB_mugaf9eh#T028#G0000",
+            "JOB_mugaf9eh#T027#G0000",
+            "JOB_mugaf9eh#T026#G0000"
+          ]
+        }
+      ],
+      "routing": {
+        "graph": {
+          "preparation_s": 17.238647031015716,
+          "vertices": 93,
+          "transects": 44,
+          "orientations": 88,
+          "profiles": [
+            {
+              "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugacog6"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 5.18854961998295,
+              "total_s": 5.840344478026964
+            },
+            {
+              "id": "e41c112b8cab34220a23e4367247138d00b4dfb9002efdbf742d704bae33b156",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugacog6_copy1",
+                "UAV_mugacog6_copy1_copy1"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 4.634661571937613,
+              "total_s": 5.401215421035886
+            },
+            {
+              "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+              "model": "geoscan_201",
+              "uav_ids": [
+                "UAV_mugaekoc"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 5.1226017529843375,
+              "total_s": 5.921306501026265
+            }
+          ],
+          "knn": 4,
+          "corners": 86,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 172,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.25,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.41693691606633365,
+        "seed_s": 0.23793073499109596,
+        "initial_objective_s": 15493.7,
+        "search_s": 0.7036465050186962,
+        "solutions_seen": 13,
+        "branches": 1359,
+        "failures": 56,
+        "branch_limit": 5000,
+        "status": 2,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400000,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 5.49810384796001,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 15468.301271976336,
+            "violations": [],
+            "repairs": 1
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 15468.301271976336
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 15492.202360641046
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 15492.202360641046
+          }
+        ],
+        "total_s": 25.91986912197899,
+        "objective": "makespan",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "add73fc7503e7dff0a74bd1b9286da414ca5754ba821f318e7fe5121e1d144b8"
+      },
+      "deconfliction": {
+        "remaining": [],
+        "actions": [
+          {
+            "action": "shift_conflict",
+            "rung": 1,
+            "sortie": "UAV_mugacog6_copy1_copy1_S1",
+            "uav": "UAV_mugacog6_copy1_copy1",
+            "delay_s": 119.751
+          }
+        ]
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 38 задач",
+          "duration_s": 0.4357271194458008
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 44 из 44 галсов; 10 вылетов",
+          "duration_s": 26.4228994846344
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 17.243507385253906
+        }
+      ],
+      "makespan_before_ground_delays_s": 15468.301271976336,
+      "makespan_added_by_ground_delays_s": 0.0,
+      "sorties_per_uav": {
+        "UAV_mugacog6": 2,
+        "UAV_mugacog6_copy1": 3,
+        "UAV_mugacog6_copy1_copy1": 2,
+        "UAV_mugaekoc": 3
+      },
+      "plan_content_sha256": "71862adabb437f3f6612caff92db83fbecd5de6c3325fa925d67d41bb70df158"
+    },
+    {
+      "server": "production",
+      "scenario": "S14_MSU_geo401_and_201",
+      "objective": "total_flight",
+      "plan_id": "24a07207e70d4061add8cde93341815e",
+      "run_code": "RUN-20260927-24a07207e70d",
+      "input_sha256": "c6a84cc5e4ff65e720316d9bb388be6d6f0340aade3f900245ab19abeb387d2b",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0,
+            "required_area_m2": 8821453.32666627
+          },
+          "JOB_mugady20": {
+            "covered_area_m2": 2539587.56019591,
+            "coverage_percent": 99.99999999999997,
+            "required_area_m2": 2539587.5601959103
+          },
+          "JOB_mugaf9eh": {
+            "covered_area_m2": 57439189.16001186,
+            "coverage_percent": 100.0,
+            "required_area_m2": 57439189.16001186
+          },
+          "JOB_mugafdz8": {
+            "covered_area_m2": 1953334.492514413,
+            "coverage_percent": 100.0,
+            "required_area_m2": 1953334.4925144129
+          }
+        },
+        "distance_m": 272474.1524304974,
+        "makespan_s": 17191.95738506317,
+        "sortie_count": 3,
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "total_flight_s": 15991.957385063171,
+        "airborne_span_s": 17191.95738506317,
+        "covered_area_m2": 70753564.53938845,
+        "coverage_percent": 100.0,
+        "required_area_m2": 70753564.53938845,
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 117.10338761901949,
+      "sorties": [
+        {
+          "id": "UAV_mugaekoc_S1",
+          "uav_id": "UAV_mugaekoc",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T10:17:51.692346+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 6471.692346382432,
+          "distance_m": 112922.7333917689,
+          "task_ids": [
+            "JOB_mug9k0vy#T000",
+            "JOB_mug9k0vy#T001",
+            "JOB_mug9k0vy#T002",
+            "JOB_mug9k0vy#T003",
+            "JOB_mug9k0vy#T004",
+            "JOB_mug9k0vy#T005",
+            "JOB_mugady20#T000",
+            "JOB_mugady20#T001",
+            "JOB_mugaf9eh#T000",
+            "JOB_mugaf9eh#T001",
+            "JOB_mugaf9eh#T002",
+            "JOB_mugaf9eh#T003",
+            "JOB_mugaf9eh#T004",
+            "JOB_mugaf9eh#T005",
+            "JOB_mugaf9eh#T006",
+            "JOB_mugaf9eh#T007"
+          ]
+        },
+        {
+          "id": "UAV_mugaekoc_S2",
+          "uav_id": "UAV_mugaekoc",
+          "t_start": "2026-06-15T10:27:51.692346+03:00",
+          "t_end": "2026-06-15T12:12:25.758080+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 6274.06573372643,
+          "distance_m": 108299.34443743172,
+          "task_ids": [
+            "JOB_mugaf9eh#T008",
+            "JOB_mugaf9eh#T009",
+            "JOB_mugaf9eh#T010",
+            "JOB_mugaf9eh#T011",
+            "JOB_mugaf9eh#T012",
+            "JOB_mugaf9eh#T013",
+            "JOB_mugaf9eh#T014",
+            "JOB_mugaf9eh#T015",
+            "JOB_mugaf9eh#T016",
+            "JOB_mugaf9eh#T017",
+            "JOB_mugaf9eh#T018",
+            "JOB_mugaf9eh#T019",
+            "JOB_mugaf9eh#T020",
+            "JOB_mugaf9eh#T021",
+            "JOB_mugaf9eh#T022",
+            "JOB_mugaf9eh#T023",
+            "JOB_mugaf9eh#T024",
+            "JOB_mugaf9eh#T025"
+          ]
+        },
+        {
+          "id": "UAV_mugaekoc_S3",
+          "uav_id": "UAV_mugaekoc",
+          "t_start": "2026-06-15T12:22:25.758080+03:00",
+          "t_end": "2026-06-15T13:16:31.957385+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 3246.1993044520495,
+          "distance_m": 51252.074601306726,
+          "task_ids": [
+            "JOB_mugaf9eh#T026",
+            "JOB_mugaf9eh#T027",
+            "JOB_mugaf9eh#T028",
+            "JOB_mugafdz8#T000"
+          ]
+        }
+      ],
+      "routing": null,
+      "deconfliction": {
+        "before": [],
+        "remaining": [],
+        "ladder_used": [],
+        "ladder_actions": []
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 38 задач",
+          "duration_s": 0.7920389175415039
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 38 из 38 задач; 3 вылетов",
+          "duration_s": 62.3579580783844
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 15.08968210220337
+        }
+      ],
+      "makespan_before_ground_delays_s": 17191.957384560912,
+      "makespan_added_by_ground_delays_s": 5.022593541070819e-07,
+      "sorties_per_uav": {
+        "UAV_mugaekoc": 3
+      },
+      "plan_content_sha256": "79801129431e0f04d334c4bfebe99a904c65d522f0427a26d82c9061745659f0"
+    },
+    {
+      "server": "dev",
+      "scenario": "S14_MSU_geo401_and_201",
+      "objective": "total_flight",
+      "plan_id": "ccbf0860f4494e838993f1ca94778665",
+      "run_code": "RUN-20260927-ccbf0860f449",
+      "input_sha256": "c6a84cc5e4ff65e720316d9bb388be6d6f0340aade3f900245ab19abeb387d2b",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 271183.34090095153,
+        "total_flight_s": 19701.48899102211,
+        "makespan_s": 18487.151124954224,
+        "airborne_span_s": 18487.151124954224,
+        "coverage_percent": 100.0,
+        "required_area_m2": 70753564.53938845,
+        "covered_area_m2": 70753564.53938845,
+        "sortie_count": 5,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugady20": {
+            "required_area_m2": 2539587.5601959103,
+            "covered_area_m2": 2539587.56019591,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugaf9eh": {
+            "required_area_m2": 57439189.16001186,
+            "covered_area_m2": 57439189.16001186,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugafdz8": {
+            "required_area_m2": 1953334.4925144129,
+            "covered_area_m2": 1953334.492514413,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 69.33785116905347,
+      "sorties": [
+        {
+          "id": "UAV_mugacog6_S1",
+          "uav_id": "UAV_mugacog6",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T08:54:50.623920+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1490.6239200493094,
+          "distance_m": 9985.073582935105,
+          "task_ids": [
+            "JOB_mugady20#T000#G0000",
+            "JOB_mugady20#T000#G0001"
+          ]
+        },
+        {
+          "id": "UAV_mugacog6_copy1_copy1_S1",
+          "uav_id": "UAV_mugacog6_copy1_copy1",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T08:46:01.214946+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 961.214945560686,
+          "distance_m": 5984.756193541479,
+          "task_ids": [
+            "JOB_mugafdz8#T000#G0000",
+            "JOB_mugafdz8#T000#G0001"
+          ]
+        },
+        {
+          "id": "UAV_mugaekoc_S1",
+          "uav_id": "UAV_mugaekoc",
+          "t_start": "2026-06-15T08:30:37.501000+03:00",
+          "t_end": "2026-06-15T10:17:05.835688+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 6388.334687937613,
+          "distance_m": 95275.66613895235,
+          "task_ids": [
+            "JOB_mugaf9eh#T014#G0001",
+            "JOB_mugaf9eh#T014#G0000",
+            "JOB_mugaf9eh#T013#G0000",
+            "JOB_mugaf9eh#T012#G0000",
+            "JOB_mugaf9eh#T011#G0000",
+            "JOB_mugaf9eh#T009#G0000",
+            "JOB_mugaf9eh#T010#G0000",
+            "JOB_mugaf9eh#T001#G0000",
+            "JOB_mugaf9eh#T002#G0000",
+            "JOB_mugaf9eh#T000#G0000",
+            "JOB_mugaf9eh#T004#G0000",
+            "JOB_mugaf9eh#T003#G0000",
+            "JOB_mugaf9eh#T006#G0000",
+            "JOB_mugaf9eh#T005#G0000",
+            "JOB_mugafdz8#T000#G0002"
+          ]
+        },
+        {
+          "id": "UAV_mugaekoc_S2",
+          "uav_id": "UAV_mugaekoc",
+          "t_start": "2026-06-15T10:27:05.835688+03:00",
+          "t_end": "2026-06-15T11:56:13.582495+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 5347.746807540305,
+          "distance_m": 79546.49408010139,
+          "task_ids": [
+            "JOB_mug9k0vy#T000#G0000",
+            "JOB_mugaf9eh#T008#G0000",
+            "JOB_mugaf9eh#T007#G0000",
+            "JOB_mugaf9eh#T018#G0000",
+            "JOB_mugaf9eh#T019#G0000",
+            "JOB_mugaf9eh#T020#G0000",
+            "JOB_mugaf9eh#T021#G0000",
+            "JOB_mugaf9eh#T022#G0000",
+            "JOB_mugaf9eh#T023#G0000",
+            "JOB_mugaf9eh#T025#G0000",
+            "JOB_mugady20#T001#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugaekoc_S3",
+          "uav_id": "UAV_mugaekoc",
+          "t_start": "2026-06-15T12:06:13.582495+03:00",
+          "t_end": "2026-06-15T13:38:07.151125+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 5513.568629719359,
+          "distance_m": 80391.35090541976,
+          "task_ids": [
+            "JOB_mugady20#T001#G0001",
+            "JOB_mugaf9eh#T026#G0000",
+            "JOB_mugaf9eh#T027#G0000",
+            "JOB_mugaf9eh#T028#G0000",
+            "JOB_mugaf9eh#T024#G0000",
+            "JOB_mugaf9eh#T016#G0000",
+            "JOB_mugaf9eh#T015#G0001",
+            "JOB_mugaf9eh#T015#G0000",
+            "JOB_mugaf9eh#T017#G0000",
+            "JOB_mug9k0vy#T005#G0000",
+            "JOB_mug9k0vy#T004#G0000",
+            "JOB_mug9k0vy#T003#G0000",
+            "JOB_mug9k0vy#T002#G0000",
+            "JOB_mug9k0vy#T001#G0000"
+          ]
+        }
+      ],
+      "routing": {
+        "graph": {
+          "preparation_s": 17.354279350023717,
+          "vertices": 93,
+          "transects": 44,
+          "orientations": 88,
+          "profiles": [
+            {
+              "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugacog6"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 5.144706035964191,
+              "total_s": 5.775932191056199
+            },
+            {
+              "id": "e41c112b8cab34220a23e4367247138d00b4dfb9002efdbf742d704bae33b156",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugacog6_copy1",
+                "UAV_mugacog6_copy1_copy1"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 4.849547725985758,
+              "total_s": 5.495013408944942
+            },
+            {
+              "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+              "model": "geoscan_201",
+              "uav_ids": [
+                "UAV_mugaekoc"
+              ],
+              "physical_edges": 1732,
+              "expanded_edges": 0,
+              "valid_orientations": 88,
+              "detailed_edges_s": 5.2455199010437354,
+              "total_s": 5.972468181047589
+            }
+          ],
+          "knn": 4,
+          "corners": 86,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 172,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.25,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.420954470988363,
+        "seed_s": 0.1790074489545077,
+        "initial_objective_s": 22629.7,
+        "search_s": 0.8731771489838138,
+        "solutions_seen": 40,
+        "branches": 276,
+        "failures": 138,
+        "branch_limit": 5000,
+        "status": 1,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400000,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 4.342559332959354,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 19701.488990807273,
+            "violations": [],
+            "repairs": 1
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 19701.48899080728
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 19744.62844893056
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 20078.87809601246
+          }
+        ],
+        "total_s": 25.36805581895169,
+        "objective": "total_flight",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "fc83694482e98ebc6773f601f1824acc109a19ae5d4528b4a8b51bdb6e9a9050"
+      },
+      "deconfliction": {
+        "remaining": [],
+        "actions": [
+          {
+            "action": "shift_conflict",
+            "rung": 1,
+            "sortie": "UAV_mugaekoc_S1",
+            "uav": "UAV_mugaekoc",
+            "delay_s": 37.501
+          }
+        ]
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 38 задач",
+          "duration_s": 0.39433741569519043
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 44 из 44 галсов; 5 вылетов",
+          "duration_s": 25.86643958091736
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 16.09193205833435
+        }
+      ],
+      "makespan_before_ground_delays_s": 18449.650125197277,
+      "makespan_added_by_ground_delays_s": 37.50099975694684,
+      "sorties_per_uav": {
+        "UAV_mugacog6": 1,
+        "UAV_mugacog6_copy1_copy1": 1,
+        "UAV_mugaekoc": 3
+      },
+      "plan_content_sha256": "f7b83668334872cf380b4c470ed49fae0b93ce380721abd0b15a5a8d6f97f6cf"
+    },
+    {
+      "server": "production",
+      "scenario": "S15_MSU_geo401",
+      "objective": "makespan",
+      "plan_id": "9ba94e35544f444294f026332d766662",
+      "run_code": "RUN-20260927-9ba94e35544f",
+      "input_sha256": "129eb4905b0703ff4894edada0befefafa957126529627e9988382ac8d7accfd",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0,
+            "required_area_m2": 8821453.32666627
+          },
+          "JOB_mug9kanh": {
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0,
+            "required_area_m2": 50186139.47201809
+          },
+          "JOB_mug9zkpn": {
+            "covered_area_m2": 3986429.328159467,
+            "coverage_percent": 100.0,
+            "required_area_m2": 3986429.328159467
+          },
+          "JOB_mug9zsll": {
+            "covered_area_m2": 5012891.177459043,
+            "coverage_percent": 100.0,
+            "required_area_m2": 5012891.177459043
+          },
+          "JOB_mugb47tq": {
+            "covered_area_m2": 1189332.1336140027,
+            "coverage_percent": 99.99999999999997,
+            "required_area_m2": 1189332.133614003
+          }
+        },
+        "distance_m": 285849.5438310064,
+        "makespan_s": 10785.425450086594,
+        "sortie_count": 10,
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "total_flight_s": 23999.859987974167,
+        "airborne_span_s": 10785.425450086594,
+        "covered_area_m2": 69196245.43791687,
+        "coverage_percent": 100.0,
+        "required_area_m2": 69196245.43791687,
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 102.00170641893055,
+      "sorties": [
+        {
+          "id": "UAV_mugb19r3_copy1_S1",
+          "uav_id": "UAV_mugb19r3_copy1",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T08:58:56.533173+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1736.5331727459038,
+          "distance_m": 13676.693000500498,
+          "task_ids": [
+            "JOB_mug9k0vy#T000",
+            "JOB_mug9k0vy#T001"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_S2",
+          "uav_id": "UAV_mugb19r3_copy1",
+          "t_start": "2026-06-15T09:05:56.533173+03:00",
+          "t_end": "2026-06-15T09:32:34.627964+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1598.0947915844395,
+          "distance_m": 12465.000093931661,
+          "task_ids": [
+            "JOB_mug9k0vy#T002",
+            "JOB_mug9k0vy#T003"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_S3",
+          "uav_id": "UAV_mugb19r3_copy1",
+          "t_start": "2026-06-15T09:39:34.627964+03:00",
+          "t_end": "2026-06-15T10:05:08.444335+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1533.8163710158724,
+          "distance_m": 11868.071228072127,
+          "task_ids": [
+            "JOB_mug9zkpn#T001",
+            "JOB_mug9zkpn#T002"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_S4",
+          "uav_id": "UAV_mugb19r3_copy1",
+          "t_start": "2026-06-15T10:12:08.444335+03:00",
+          "t_end": "2026-06-15T10:40:49.470299+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1721.0259632984053,
+          "distance_m": 13512.65954457263,
+          "task_ids": [
+            "JOB_mug9zsll#T001"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_S5",
+          "uav_id": "UAV_mugb19r3_copy1",
+          "t_start": "2026-06-15T10:47:49.470299+03:00",
+          "t_end": "2026-06-15T11:11:04.843663+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1395.373364420704,
+          "distance_m": 10646.854166783933,
+          "task_ids": [
+            "JOB_mugb47tq#T000"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_copy1_S1",
+          "uav_id": "UAV_mugb19r3_copy1_copy1",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:00:48.949610+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 1848.9496098608822,
+          "distance_m": 14595.697074371219,
+          "task_ids": [
+            "JOB_mug9k0vy#T004",
+            "JOB_mug9k0vy#T005"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_copy1_S2",
+          "uav_id": "UAV_mugb19r3_copy1_copy1",
+          "t_start": "2026-06-15T09:07:48.949610+03:00",
+          "t_end": "2026-06-15T09:41:51.892987+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 2042.943377522408,
+          "distance_m": 16158.889850248383,
+          "task_ids": [
+            "JOB_mug9zkpn#T000",
+            "JOB_mug9zsll#T002"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_copy1_S3",
+          "uav_id": "UAV_mugb19r3_copy1_copy1",
+          "t_start": "2026-06-15T09:48:51.892987+03:00",
+          "t_end": "2026-06-15T10:21:09.590875+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 1937.6978875294444,
+          "distance_m": 15326.695676536048,
+          "task_ids": [
+            "JOB_mug9zsll#T000",
+            "JOB_mug9zsll#T003"
+          ]
+        },
+        {
+          "id": "UAV_mugb1t5y_S1",
+          "uav_id": "UAV_mugb1t5y",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T10:09:30.986973+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 5970.986972755197,
+          "distance_m": 106187.07359958209,
+          "task_ids": [
+            "JOB_mug9kanh#T000",
+            "JOB_mug9kanh#T002",
+            "JOB_mug9kanh#T003",
+            "JOB_mug9kanh#T004",
+            "JOB_mug9kanh#T005",
+            "JOB_mug9kanh#T006",
+            "JOB_mug9kanh#T007",
+            "JOB_mug9kanh#T008",
+            "JOB_mug9kanh#T009",
+            "JOB_mug9kanh#T010",
+            "JOB_mug9kanh#T011",
+            "JOB_mug9kanh#T012",
+            "JOB_mug9kanh#T013",
+            "JOB_mug9kanh#T001"
+          ]
+        },
+        {
+          "id": "UAV_mugb1t5y_S2",
+          "uav_id": "UAV_mugb1t5y",
+          "t_start": "2026-06-15T10:19:30.986973+03:00",
+          "t_end": "2026-06-15T11:29:45.425450+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 4214.438477217377,
+          "distance_m": 71411.90959641812,
+          "task_ids": [
+            "JOB_mug9kanh#T014",
+            "JOB_mug9kanh#T015",
+            "JOB_mug9kanh#T016",
+            "JOB_mug9kanh#T017",
+            "JOB_mug9kanh#T018",
+            "JOB_mug9kanh#T019",
+            "JOB_mug9kanh#T020",
+            "JOB_mug9kanh#T021",
+            "JOB_mug9kanh#T022",
+            "JOB_mug9kanh#T023",
+            "JOB_mug9kanh#T024",
+            "JOB_mug9kanh#T025",
+            "JOB_mug9kanh#T026",
+            "JOB_mug9kanh#T027",
+            "JOB_mug9kanh#T028"
+          ]
+        }
+      ],
+      "routing": null,
+      "deconfliction": {
+        "before": [],
+        "remaining": [],
+        "ladder_used": [],
+        "ladder_actions": []
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 43 задач",
+          "duration_s": 0.5856046676635742
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 43 из 43 задач; 10 вылетов",
+          "duration_s": 62.18005394935608
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 15.77309536933899
+        }
+      ],
+      "makespan_before_ground_delays_s": 10785.425449972574,
+      "makespan_added_by_ground_delays_s": 1.1401971278246492e-07,
+      "sorties_per_uav": {
+        "UAV_mugb19r3_copy1": 5,
+        "UAV_mugb19r3_copy1_copy1": 3,
+        "UAV_mugb1t5y": 2
+      },
+      "plan_content_sha256": "4c096b4b701abb127d814263033d963573feb36c6d2d6ae95c4d963ea03bc522"
+    },
+    {
+      "server": "dev",
+      "scenario": "S15_MSU_geo401",
+      "objective": "makespan",
+      "plan_id": "41983b7d3c8a404c9a7141b38fc95b3f",
+      "run_code": "RUN-20260927-41983b7d3c8a",
+      "input_sha256": "129eb4905b0703ff4894edada0befefafa957126529627e9988382ac8d7accfd",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 288579.1514833097,
+        "total_flight_s": 28533.77286696434,
+        "makespan_s": 12253.70215010643,
+        "airborne_span_s": 12253.70215010643,
+        "coverage_percent": 100.0,
+        "required_area_m2": 69196245.43791687,
+        "covered_area_m2": 69196245.43791687,
+        "sortie_count": 11,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9kanh": {
+            "required_area_m2": 50186139.47201809,
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zkpn": {
+            "required_area_m2": 3986429.328159467,
+            "covered_area_m2": 3986429.328159467,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zsll": {
+            "required_area_m2": 5012891.177459043,
+            "covered_area_m2": 5012891.177459043,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugb47tq": {
+            "required_area_m2": 1189332.133614003,
+            "covered_area_m2": 1189332.1336140027,
+            "coverage_percent": 99.99999999999997
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 57.56102801999077,
+      "sorties": [
+        {
+          "id": "UAV_mugb19r3_copy1_S1",
+          "uav_id": "UAV_mugb19r3_copy1",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:05:57.236681+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 2157.236681108692,
+          "distance_m": 15069.865324335335,
+          "task_ids": [
+            "JOB_mug9zsll#T001#G0000",
+            "JOB_mug9zkpn#T002#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_S2",
+          "uav_id": "UAV_mugb19r3_copy1",
+          "t_start": "2026-06-15T09:12:57.236681+03:00",
+          "t_end": "2026-06-15T09:40:14.135731+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1636.8990503433251,
+          "distance_m": 11612.745516079452,
+          "task_ids": [
+            "JOB_mug9zkpn#T000#G0000",
+            "JOB_mug9zkpn#T001#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_S3",
+          "uav_id": "UAV_mugb19r3_copy1",
+          "t_start": "2026-06-15T09:47:14.135731+03:00",
+          "t_end": "2026-06-15T10:19:01.106196+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1906.9704646206756,
+          "distance_m": 13676.693000500509,
+          "task_ids": [
+            "JOB_mug9k0vy#T000#G0000",
+            "JOB_mug9k0vy#T001#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_S4",
+          "uav_id": "UAV_mugb19r3_copy1",
+          "t_start": "2026-06-15T10:26:01.106196+03:00",
+          "t_end": "2026-06-15T10:54:51.370056+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1730.2638594808013,
+          "distance_m": 12465.000093931727,
+          "task_ids": [
+            "JOB_mug9k0vy#T003#G0000",
+            "JOB_mug9k0vy#T002#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_copy1_S1",
+          "uav_id": "UAV_mugb19r3_copy1_copy1",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T08:53:49.533503+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 1429.5335032734597,
+          "distance_m": 9098.951648853914,
+          "task_ids": [
+            "JOB_mugb47tq#T000#G0000",
+            "JOB_mugb47tq#T000#G0001"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_copy1_S2",
+          "uav_id": "UAV_mugb19r3_copy1_copy1",
+          "t_start": "2026-06-15T09:00:49.533503+03:00",
+          "t_end": "2026-06-15T09:33:04.150799+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 1934.6172957728281,
+          "distance_m": 12862.50612074873,
+          "task_ids": [
+            "JOB_mug9zsll#T003#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_copy1_S3",
+          "uav_id": "UAV_mugb19r3_copy1_copy1",
+          "t_start": "2026-06-15T09:40:04.150799+03:00",
+          "t_end": "2026-06-15T10:16:29.016048+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 2184.8652491937246,
+          "distance_m": 15200.5519901916,
+          "task_ids": [
+            "JOB_mug9zsll#T002#G0000",
+            "JOB_mug9zsll#T000#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_copy1_S4",
+          "uav_id": "UAV_mugb19r3_copy1_copy1",
+          "t_start": "2026-06-15T10:23:29.016048+03:00",
+          "t_end": "2026-06-15T10:56:32.829273+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 1983.813225138968,
+          "distance_m": 13400.071309268098,
+          "task_ids": [
+            "JOB_mug9k0vy#T004#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_copy1_S5",
+          "uav_id": "UAV_mugb19r3_copy1_copy1",
+          "t_start": "2026-06-15T11:03:32.829273+03:00",
+          "t_end": "2026-06-15T11:35:28.700661+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 1915.8713875153026,
+          "distance_m": 13169.797946721148,
+          "task_ids": [
+            "JOB_mugb47tq#T000#G0002",
+            "JOB_mug9k0vy#T005#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb1t5y_S1",
+          "uav_id": "UAV_mugb1t5y",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:51:46.467958+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 4906.467958225166,
+          "distance_m": 77378.4264373183,
+          "task_ids": [
+            "JOB_mug9kanh#T000#G0000",
+            "JOB_mug9kanh#T001#G0000",
+            "JOB_mug9kanh#T002#G0000",
+            "JOB_mug9kanh#T003#G0000",
+            "JOB_mug9kanh#T004#G0000",
+            "JOB_mug9kanh#T005#G0000",
+            "JOB_mug9kanh#T006#G0000",
+            "JOB_mug9kanh#T007#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb1t5y_S2",
+          "uav_id": "UAV_mugb1t5y",
+          "t_start": "2026-06-15T10:01:46.467958+03:00",
+          "t_end": "2026-06-15T11:54:13.702150+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 6747.234191996396,
+          "distance_m": 94644.5420953607,
+          "task_ids": [
+            "JOB_mug9kanh#T008#G0000",
+            "JOB_mug9kanh#T009#G0000",
+            "JOB_mug9kanh#T010#G0000",
+            "JOB_mug9kanh#T011#G0000",
+            "JOB_mug9kanh#T012#G0000",
+            "JOB_mug9kanh#T013#G0000",
+            "JOB_mug9kanh#T014#G0000",
+            "JOB_mug9kanh#T015#G0000",
+            "JOB_mug9kanh#T016#G0000",
+            "JOB_mug9kanh#T017#G0000",
+            "JOB_mug9kanh#T018#G0000",
+            "JOB_mug9kanh#T019#G0000",
+            "JOB_mug9kanh#T020#G0000",
+            "JOB_mug9kanh#T021#G0000",
+            "JOB_mug9kanh#T022#G0000",
+            "JOB_mug9kanh#T023#G0000",
+            "JOB_mug9kanh#T024#G0000",
+            "JOB_mug9kanh#T025#G0000",
+            "JOB_mug9kanh#T026#G0000",
+            "JOB_mug9kanh#T027#G0000",
+            "JOB_mug9kanh#T028#G0000"
+          ]
+        }
+      ],
+      "routing": {
+        "graph": {
+          "preparation_s": 11.071169776958413,
+          "vertices": 95,
+          "transects": 45,
+          "orientations": 90,
+          "profiles": [
+            {
+              "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugb19r3_copy1",
+                "UAV_mugb19r3_copy1_copy1"
+              ],
+              "physical_edges": 1734,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 4.603791484958492,
+              "total_s": 5.264934467966668
+            },
+            {
+              "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+              "model": "geoscan_201",
+              "uav_ids": [
+                "UAV_mugb1t5y"
+              ],
+              "physical_edges": 1734,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 4.989955012104474,
+              "total_s": 5.732507149106823
+            }
+          ],
+          "knn": 4,
+          "corners": 88,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 176,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.25,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.1293131859274581,
+        "seed_s": 0.17634878598619252,
+        "initial_objective_s": 12255.2,
+        "search_s": 0.7912247700151056,
+        "solutions_seen": 14,
+        "branches": 1178,
+        "failures": 72,
+        "branch_limit": 5000,
+        "status": 1,
+        "logical_nodes": 139,
+        "reload_copies": {
+          "UAV_mugb19r3_copy1": 16,
+          "UAV_mugb19r3_copy1_copy1": 16,
+          "UAV_mugb1t5y": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400010,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 3.0412686079507694,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 12253.702150221561,
+            "violations": [],
+            "repairs": 0
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 12253.702150221561
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 12253.702150221561
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 12253.702150221561
+          }
+        ],
+        "total_s": 16.229751236038283,
+        "objective": "makespan",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "b5ef78cf72b8d3494304cfcfe30548b53e1d180cb1d33dd35239195797ec79ff"
+      },
+      "deconfliction": {
+        "remaining": [],
+        "actions": []
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 43 задач",
+          "duration_s": 0.41808176040649414
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 45 из 45 галсов; 11 вылетов",
+          "duration_s": 16.672930002212524
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 15.55370283126831
+        }
+      ],
+      "makespan_before_ground_delays_s": 12253.702150221561,
+      "makespan_added_by_ground_delays_s": 0.0,
+      "sorties_per_uav": {
+        "UAV_mugb19r3_copy1": 4,
+        "UAV_mugb19r3_copy1_copy1": 5,
+        "UAV_mugb1t5y": 2
+      },
+      "plan_content_sha256": "874d7b3d4606fb17a0c35db61a34744ace22a53e87e9a1c2a502b8d3f1df4af2"
+    },
+    {
+      "server": "production",
+      "scenario": "S15_MSU_geo401",
+      "objective": "total_flight",
+      "plan_id": "4835a3609cb84f8a8dcfac910070c768",
+      "run_code": "RUN-20260927-4835a3609cb8",
+      "input_sha256": "129eb4905b0703ff4894edada0befefafa957126529627e9988382ac8d7accfd",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0,
+            "required_area_m2": 8821453.32666627
+          },
+          "JOB_mug9kanh": {
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0,
+            "required_area_m2": 50186139.47201809
+          },
+          "JOB_mug9zkpn": {
+            "covered_area_m2": 3986429.328159467,
+            "coverage_percent": 100.0,
+            "required_area_m2": 3986429.328159467
+          },
+          "JOB_mug9zsll": {
+            "covered_area_m2": 5012891.177459043,
+            "coverage_percent": 100.0,
+            "required_area_m2": 5012891.177459043
+          },
+          "JOB_mugb47tq": {
+            "covered_area_m2": 1189332.1336140027,
+            "coverage_percent": 99.99999999999997,
+            "required_area_m2": 1189332.133614003
+          }
+        },
+        "distance_m": 252934.0664778401,
+        "makespan_s": 13353.695847034454,
+        "sortie_count": 4,
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "total_flight_s": 16255.861755132675,
+        "airborne_span_s": 13353.695847034454,
+        "covered_area_m2": 69196245.43791687,
+        "coverage_percent": 100.0,
+        "required_area_m2": 69196245.43791687,
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 102.10008332889993,
+      "sorties": [
+        {
+          "id": "UAV_mugb19r3_copy1_copy1_S1",
+          "uav_id": "UAV_mugb19r3_copy1_copy1",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:04:44.764722+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 2084.7647221128077,
+          "distance_m": 16447.4338675484,
+          "task_ids": [
+            "JOB_mug9zkpn#T000",
+            "JOB_mug9zkpn#T001",
+            "JOB_mug9zkpn#T002"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_copy1_S2",
+          "uav_id": "UAV_mugb19r3_copy1_copy1",
+          "t_start": "2026-06-15T09:11:44.764722+03:00",
+          "t_end": "2026-06-15T09:35:22.165908+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 1417.4011862798848,
+          "distance_m": 10942.312448763829,
+          "task_ids": [
+            "JOB_mug9zsll#T000"
+          ]
+        },
+        {
+          "id": "UAV_mugb1t5y_S1",
+          "uav_id": "UAV_mugb1t5y",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T10:24:24.428856+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 6864.428856445245,
+          "distance_m": 124361.43891347857,
+          "task_ids": [
+            "JOB_mug9k0vy#T000",
+            "JOB_mug9k0vy#T001",
+            "JOB_mug9k0vy#T002",
+            "JOB_mug9k0vy#T003",
+            "JOB_mug9k0vy#T004",
+            "JOB_mug9k0vy#T005",
+            "JOB_mug9kanh#T000",
+            "JOB_mug9kanh#T001",
+            "JOB_mug9kanh#T002",
+            "JOB_mug9kanh#T003",
+            "JOB_mug9kanh#T004",
+            "JOB_mug9kanh#T005",
+            "JOB_mug9kanh#T006",
+            "JOB_mug9kanh#T007",
+            "JOB_mug9kanh#T008",
+            "JOB_mug9kanh#T009"
+          ]
+        },
+        {
+          "id": "UAV_mugb1t5y_S2",
+          "uav_id": "UAV_mugb1t5y",
+          "t_start": "2026-06-15T10:34:24.428856+03:00",
+          "t_end": "2026-06-15T12:12:33.695847+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 5889.266990530103,
+          "distance_m": 101182.8812480406,
+          "task_ids": [
+            "JOB_mug9kanh#T010",
+            "JOB_mug9kanh#T011",
+            "JOB_mug9kanh#T012",
+            "JOB_mug9kanh#T013",
+            "JOB_mug9kanh#T014",
+            "JOB_mug9kanh#T015",
+            "JOB_mug9kanh#T016",
+            "JOB_mug9kanh#T017",
+            "JOB_mug9kanh#T018",
+            "JOB_mug9kanh#T019",
+            "JOB_mug9kanh#T020",
+            "JOB_mug9kanh#T021",
+            "JOB_mug9kanh#T022",
+            "JOB_mug9kanh#T023",
+            "JOB_mug9kanh#T024",
+            "JOB_mug9kanh#T025",
+            "JOB_mug9kanh#T026",
+            "JOB_mug9kanh#T027",
+            "JOB_mug9kanh#T028",
+            "JOB_mug9zsll#T001",
+            "JOB_mug9zsll#T002",
+            "JOB_mug9zsll#T003",
+            "JOB_mugb47tq#T000"
+          ]
+        }
+      ],
+      "routing": null,
+      "deconfliction": {
+        "before": [],
+        "remaining": [],
+        "ladder_used": [],
+        "ladder_actions": []
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 43 задач",
+          "duration_s": 0.3659324645996094
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 43 из 43 задач; 4 вылетов",
+          "duration_s": 61.714028120040894
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 14.432873964309692
+        }
+      ],
+      "makespan_before_ground_delays_s": 13353.695846975348,
+      "makespan_added_by_ground_delays_s": 5.910624167881906e-08,
+      "sorties_per_uav": {
+        "UAV_mugb19r3_copy1_copy1": 2,
+        "UAV_mugb1t5y": 2
+      },
+      "plan_content_sha256": "1b93c88bc42f9eb35ea08c9b73b79b3af1fec6b81d6855b2d0f6d1cf8f19665d"
+    },
+    {
+      "server": "dev",
+      "scenario": "S15_MSU_geo401",
+      "objective": "total_flight",
+      "plan_id": "0b8bf591087a4adcbd6c6d5154accd53",
+      "run_code": "RUN-20260927-0b8bf591087a",
+      "input_sha256": "129eb4905b0703ff4894edada0befefafa957126529627e9988382ac8d7accfd",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 250968.06472115434,
+        "total_flight_s": 18927.525789022446,
+        "makespan_s": 17745.7118639946,
+        "airborne_span_s": 17745.7118639946,
+        "coverage_percent": 100.0,
+        "required_area_m2": 69196245.43791687,
+        "covered_area_m2": 69196245.43791687,
+        "sortie_count": 5,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9kanh": {
+            "required_area_m2": 50186139.47201809,
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zkpn": {
+            "required_area_m2": 3986429.328159467,
+            "covered_area_m2": 3986429.328159467,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9zsll": {
+            "required_area_m2": 5012891.177459043,
+            "covered_area_m2": 5012891.177459043,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugb47tq": {
+            "required_area_m2": 1189332.133614003,
+            "covered_area_m2": 1189332.1336140027,
+            "coverage_percent": 99.99999999999997
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 51.144304823013954,
+      "sorties": [
+        {
+          "id": "UAV_mugb19r3_copy1_S1",
+          "uav_id": "UAV_mugb19r3_copy1",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T08:48:07.623157+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1087.6231573435357,
+          "distance_m": 6634.634846203685,
+          "task_ids": [
+            "JOB_mugb47tq#T000#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb19r3_copy1_copy1_S1",
+          "uav_id": "UAV_mugb19r3_copy1_copy1",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T08:51:34.190768+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 1294.1907678631408,
+          "distance_m": 8605.99571426372,
+          "task_ids": [
+            "JOB_mug9zkpn#T000#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb1t5y_S1",
+          "uav_id": "UAV_mugb1t5y",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T10:19:42.855294+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 6582.855294323681,
+          "distance_m": 92216.00341752128,
+          "task_ids": [
+            "JOB_mug9k0vy#T001#G0000",
+            "JOB_mug9kanh#T016#G0000",
+            "JOB_mug9kanh#T017#G0000",
+            "JOB_mug9kanh#T018#G0000",
+            "JOB_mug9kanh#T019#G0000",
+            "JOB_mug9kanh#T020#G0000",
+            "JOB_mug9kanh#T021#G0000",
+            "JOB_mug9kanh#T022#G0000",
+            "JOB_mug9kanh#T023#G0000",
+            "JOB_mug9kanh#T024#G0000",
+            "JOB_mug9kanh#T025#G0000",
+            "JOB_mug9kanh#T027#G0000",
+            "JOB_mug9kanh#T028#G0000",
+            "JOB_mug9kanh#T026#G0000",
+            "JOB_mug9kanh#T012#G0000",
+            "JOB_mug9kanh#T011#G0000",
+            "JOB_mug9kanh#T010#G0000",
+            "JOB_mug9kanh#T009#G0000",
+            "JOB_mug9kanh#T008#G0000",
+            "JOB_mug9kanh#T007#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb1t5y_S2",
+          "uav_id": "UAV_mugb1t5y",
+          "t_start": "2026-06-15T10:29:42.855294+03:00",
+          "t_end": "2026-06-15T11:34:57.413522+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 3914.5582278387355,
+          "distance_m": 59443.847502440265,
+          "task_ids": [
+            "JOB_mug9kanh#T000#G0000",
+            "JOB_mug9kanh#T001#G0000",
+            "JOB_mug9kanh#T002#G0000",
+            "JOB_mug9kanh#T003#G0000",
+            "JOB_mug9kanh#T004#G0000",
+            "JOB_mug9kanh#T006#G0000"
+          ]
+        },
+        {
+          "id": "UAV_mugb1t5y_S3",
+          "uav_id": "UAV_mugb1t5y",
+          "t_start": "2026-06-15T11:44:57.413522+03:00",
+          "t_end": "2026-06-15T13:25:45.711864+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 6048.298341621587,
+          "distance_m": 84067.58324072398,
+          "task_ids": [
+            "JOB_mug9kanh#T005#G0000",
+            "JOB_mug9kanh#T015#G0000",
+            "JOB_mug9kanh#T014#G0000",
+            "JOB_mug9kanh#T013#G0000",
+            "JOB_mug9k0vy#T005#G0000",
+            "JOB_mug9zkpn#T001#G0000",
+            "JOB_mug9zkpn#T002#G0000",
+            "JOB_mugb47tq#T000#G0002",
+            "JOB_mugb47tq#T000#G0001",
+            "JOB_mug9zsll#T000#G0000",
+            "JOB_mug9zsll#T001#G0000",
+            "JOB_mug9zsll#T002#G0000",
+            "JOB_mug9zsll#T003#G0000",
+            "JOB_mug9k0vy#T004#G0000",
+            "JOB_mug9k0vy#T003#G0000",
+            "JOB_mug9k0vy#T002#G0000",
+            "JOB_mug9k0vy#T000#G0000"
+          ]
+        }
+      ],
+      "routing": {
+        "graph": {
+          "preparation_s": 10.463607946992852,
+          "vertices": 95,
+          "transects": 45,
+          "orientations": 90,
+          "profiles": [
+            {
+              "id": "d1cf3e68c5ce182a48dfca6ca6342da5c8db102595f18fd0f66ce4461eeeaa21",
+              "model": "geoscan_401",
+              "uav_ids": [
+                "UAV_mugb19r3_copy1",
+                "UAV_mugb19r3_copy1_copy1"
+              ],
+              "physical_edges": 1734,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 4.366597429965623,
+              "total_s": 5.217808980960399
+            },
+            {
+              "id": "7033a5f189f4bdfaf3681d86c0a1820d24383300c2794ffc072bd4a600bd1d2c",
+              "model": "geoscan_201",
+              "uav_ids": [
+                "UAV_mugb1t5y"
+              ],
+              "physical_edges": 1734,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 4.444393376004882,
+              "total_s": 5.1663738479837775
+            }
+          ],
+          "knn": 4,
+          "corners": 88,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 176,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.25,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.23031428107060492,
+        "seed_s": 0.20580937690101564,
+        "initial_objective_s": 21131.5,
+        "search_s": 0.8988384200492874,
+        "solutions_seen": 43,
+        "branches": 295,
+        "failures": 146,
+        "branch_limit": 5000,
+        "status": 1,
+        "logical_nodes": 139,
+        "reload_copies": {
+          "UAV_mugb19r3_copy1": 16,
+          "UAV_mugb19r3_copy1_copy1": 16,
+          "UAV_mugb1t5y": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400001,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 2.1617286789696664,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 18927.52578899068,
+            "violations": [],
+            "repairs": 0
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 18958.93498240617
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 19054.655273244065
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 19065.067677591614
+          }
+        ],
+        "total_s": 15.36326937994454,
+        "objective": "total_flight",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "00e9151e37181e60536e7afeca5f8ec689978bd995d831bc199a650c6edb99b7"
+      },
+      "deconfliction": {
+        "remaining": [],
+        "actions": []
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 43 задач",
+          "duration_s": 0.4989643096923828
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 45 из 45 галсов; 5 вылетов",
+          "duration_s": 15.853708267211914
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 13.097634077072144
+        }
+      ],
+      "makespan_before_ground_delays_s": 17745.711863784003,
+      "makespan_added_by_ground_delays_s": 2.1059531718492508e-07,
+      "sorties_per_uav": {
+        "UAV_mugb19r3_copy1": 1,
+        "UAV_mugb19r3_copy1_copy1": 1,
+        "UAV_mugb1t5y": 3
+      },
+      "plan_content_sha256": "7943b840940a2fa63d1bd409d1163c5853fb655aa9f771f267854eaf19be813c"
+    },
+    {
+      "server": "production",
+      "scenario": "S12_MSU_4bpla_4zones",
+      "objective": "makespan",
+      "plan_id": "4193d0f867194093812d5a3457ce43e8",
+      "run_code": "RUN-20260927-4193d0f86719",
+      "input_sha256": "ba20f0b084e3ef1ca728504a297500ae9aad283dd0264c05958f4c75a654fdb1",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "per_job": {
+          "JOB_mug9jv49": {
+            "covered_area_m2": 15520083.088088041,
+            "coverage_percent": 99.99999999999999,
+            "required_area_m2": 15520083.088088043
+          },
+          "JOB_mug9k0vy": {
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0,
+            "required_area_m2": 8821453.32666627
+          },
+          "JOB_mug9kanh": {
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0,
+            "required_area_m2": 50186139.47201809
+          }
+        },
+        "distance_m": 253782.16720721306,
+        "makespan_s": 5048.291007041931,
+        "sortie_count": 3,
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "total_flight_s": 13340.678112983704,
+        "airborne_span_s": 5048.291007041931,
+        "covered_area_m2": 74527675.8867724,
+        "coverage_percent": 99.99999999999997,
+        "required_area_m2": 74527675.88677241,
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 111.34396506601479,
+      "sorties": [
+        {
+          "id": "U01_S1",
+          "uav_id": "U01",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:35:16.829244+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 3916.8292443094633,
+          "distance_m": 77378.4264373186,
+          "task_ids": [
+            "JOB_mug9kanh#T000"
+          ]
+        },
+        {
+          "id": "U02_S1",
+          "uav_id": "U02",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:42:55.557862+03:00",
+          "start_site": "BASE_1",
+          "landing_site": "BASE_1",
+          "flight_time_s": 4375.5578624488535,
+          "distance_m": 83064.0273063023,
+          "task_ids": [
+            "JOB_mug9jv49#T000",
+            "JOB_mug9k0vy#T000"
+          ]
+        },
+        {
+          "id": "U03_S1",
+          "uav_id": "U03",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:54:08.291007+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 5048.291007045486,
+          "distance_m": 93339.71346359761,
+          "task_ids": [
+            "JOB_mug9kanh#T001"
+          ]
+        }
+      ],
+      "routing": null,
+      "deconfliction": {
+        "before": [],
+        "remaining": [],
+        "ladder_used": [],
+        "ladder_actions": []
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 4 задач",
+          "duration_s": 0.8075134754180908
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 4 из 4 задач; 3 вылетов",
+          "duration_s": 62.550761699676514
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 22.44827651977539
+        }
+      ],
+      "makespan_before_ground_delays_s": 5048.291007045486,
+      "makespan_added_by_ground_delays_s": 0.0,
+      "sorties_per_uav": {
+        "U01": 1,
+        "U02": 1,
+        "U03": 1
+      },
+      "plan_content_sha256": "276f1b84cf2f0d721f1d94e985c515e75526202255d6f2af3208783ef61b6bd3"
+    },
+    {
+      "server": "dev",
+      "scenario": "S12_MSU_4bpla_4zones",
+      "objective": "makespan",
+      "plan_id": "28fc3095988742648eb203c3b2db9232",
+      "run_code": "RUN-20260927-28fc30959887",
+      "input_sha256": "ba20f0b084e3ef1ca728504a297500ae9aad283dd0264c05958f4c75a654fdb1",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 323966.2409144389,
+        "total_flight_s": 18096.871933937073,
+        "makespan_s": 4758.534621953964,
+        "airborne_span_s": 4758.534621953964,
+        "coverage_percent": 99.99999999999997,
+        "required_area_m2": 74527675.88677241,
+        "covered_area_m2": 74527675.8867724,
+        "sortie_count": 4,
+        "per_job": {
+          "JOB_mug9jv49": {
+            "required_area_m2": 15520083.088088043,
+            "covered_area_m2": 15520083.088088041,
+            "coverage_percent": 99.99999999999999
+          },
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9kanh": {
+            "required_area_m2": 50186139.47201809,
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 185.85596528893802,
+      "sorties": [
+        {
+          "id": "U01_S1",
+          "uav_id": "U01",
+          "t_start": "2026-06-15T08:32:33.502000+03:00",
+          "t_end": "2026-06-15T09:46:51.686961+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 4458.184961411029,
+          "distance_m": 79635.5814746879,
+          "task_ids": [
+            "JOB_mug9k0vy#T000#G0001",
+            "JOB_mug9k0vy#T000#G0003",
+            "JOB_mug9jv49#T000#G0000",
+            "JOB_mug9jv49#T000#G0001",
+            "JOB_mug9kanh#T001#G0000",
+            "JOB_mug9kanh#T001#G0001",
+            "JOB_mug9kanh#T001#G0002",
+            "JOB_mug9kanh#T001#G0003",
+            "JOB_mug9kanh#T001#G0004",
+            "JOB_mug9kanh#T001#G0005",
+            "JOB_mug9kanh#T001#G0007",
+            "JOB_mug9kanh#T000#G0000"
+          ]
+        },
+        {
+          "id": "U02_S1",
+          "uav_id": "U02",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:45:14.783682+03:00",
+          "start_site": "BASE_1",
+          "landing_site": "BASE_1",
+          "flight_time_s": 4514.783682219553,
+          "distance_m": 83689.28407771184,
+          "task_ids": [
+            "JOB_mug9k0vy#T000#G0000",
+            "JOB_mug9k0vy#T000#G0002",
+            "JOB_mug9k0vy#T000#G0004",
+            "JOB_mug9k0vy#T000#G0005",
+            "JOB_mug9kanh#T000#G0003",
+            "JOB_mug9kanh#T000#G0004",
+            "JOB_mug9kanh#T000#G0002",
+            "JOB_mug9kanh#T000#G0006",
+            "JOB_mug9kanh#T000#G0001"
+          ]
+        },
+        {
+          "id": "U03_S1",
+          "uav_id": "U03",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:45:52.869669+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 4552.869669236496,
+          "distance_m": 79262.43597135326,
+          "task_ids": [
+            "JOB_mug9jv49#T000#G0002",
+            "JOB_mug9jv49#T000#G0006",
+            "JOB_mug9jv49#T000#G0003",
+            "JOB_mug9jv49#T000#G0008",
+            "JOB_mug9kanh#T001#G0018",
+            "JOB_mug9kanh#T001#G0019",
+            "JOB_mug9kanh#T001#G0017",
+            "JOB_mug9kanh#T001#G0015",
+            "JOB_mug9kanh#T001#G0013",
+            "JOB_mug9kanh#T001#G0011",
+            "JOB_mug9kanh#T001#G0009",
+            "JOB_mug9kanh#T001#G0008",
+            "JOB_mug9kanh#T000#G0007"
+          ]
+        },
+        {
+          "id": "U04_S1",
+          "uav_id": "U04",
+          "t_start": "2026-06-15T08:33:07.501000+03:00",
+          "t_end": "2026-06-15T09:49:18.534622+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 4571.033622024096,
+          "distance_m": 81378.93939068905,
+          "task_ids": [
+            "JOB_mug9jv49#T000#G0004",
+            "JOB_mug9jv49#T000#G0005",
+            "JOB_mug9jv49#T000#G0007",
+            "JOB_mug9jv49#T000#G0009",
+            "JOB_mug9kanh#T001#G0020",
+            "JOB_mug9kanh#T001#G0016",
+            "JOB_mug9kanh#T001#G0014",
+            "JOB_mug9kanh#T001#G0012",
+            "JOB_mug9kanh#T001#G0010",
+            "JOB_mug9kanh#T001#G0006",
+            "JOB_mug9kanh#T000#G0005"
+          ]
+        }
+      ],
+      "routing": {
+        "graph": {
+          "preparation_s": 1.6771878860890865,
+          "vertices": 95,
+          "transects": 45,
+          "orientations": 90,
+          "profiles": [
+            {
+              "id": "8a016cd2f77d07b13c74f2c03834d6b0e5685ac920102c6df2b601cca8d0552d",
+              "model": "geoscan_701",
+              "uav_ids": [
+                "U01",
+                "U02",
+                "U03",
+                "U04"
+              ],
+              "physical_edges": 562,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 1.3438839900773019,
+              "total_s": 1.6481121110264212
+            }
+          ],
+          "knn": 4,
+          "corners": 16,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 31,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.25,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.21376750199124217,
+        "seed_s": 0.12982577795628458,
+        "initial_objective_s": 4847.6,
+        "search_s": 0.4194498889846727,
+        "solutions_seen": 33,
+        "branches": 2144,
+        "failures": 94,
+        "branch_limit": 5000,
+        "status": 2,
+        "logical_nodes": 118,
+        "reload_copies": {
+          "U01": 3,
+          "U02": 3,
+          "U03": 3,
+          "U04": 3
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400000,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 137.6704854259733,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 4792.648925600751,
+            "violations": [],
+            "repairs": 4
+          },
+          {
+            "candidate": 2,
+            "passed": true,
+            "metric_s": 4815.991346970297,
+            "violations": [],
+            "repairs": 6
+          },
+          {
+            "candidate": 3,
+            "passed": true,
+            "metric_s": 4758.534622024096,
+            "violations": [],
+            "repairs": 3
+          },
+          {
+            "candidate": 4,
+            "passed": true,
+            "metric_s": 4795.841202586077,
+            "violations": [],
+            "repairs": 4
+          }
+        ],
+        "total_s": 140.2477665860206,
+        "objective": "makespan",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "87469111b38cd00fee4383d55d7894b0c8f42d4b054a101979bb0ae1dd4868a6"
+      },
+      "deconfliction": {
+        "remaining": [],
+        "actions": [
+          {
+            "action": "shift_conflict",
+            "rung": 1,
+            "sortie": "U04_S1",
+            "uav": "U04",
+            "delay_s": 187.501
+          },
+          {
+            "action": "shift_conflict",
+            "rung": 1,
+            "sortie": "U01_S1",
+            "uav": "U01",
+            "delay_s": 121.001
+          },
+          {
+            "action": "shift_conflict",
+            "rung": 1,
+            "sortie": "U01_S1",
+            "uav": "U01",
+            "delay_s": 32.501
+          }
+        ]
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 4 задач",
+          "duration_s": 0.9465508460998535
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 45 из 45 галсов; 4 вылетов",
+          "duration_s": 140.75551557540894
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 18.109477519989014
+        }
+      ],
+      "makespan_before_ground_delays_s": 4571.033622024096,
+      "makespan_added_by_ground_delays_s": 187.50099992986816,
+      "sorties_per_uav": {
+        "U01": 1,
+        "U02": 1,
+        "U03": 1,
+        "U04": 1
+      },
+      "plan_content_sha256": "c27a53692de37621c41504deeb5f514e0555cd9d0a20c33c3ee5d99dde71f30f"
+    },
+    {
+      "server": "production",
+      "scenario": "S12_MSU_4bpla_4zones",
+      "objective": "total_flight",
+      "plan_id": "5bdb191deaf74c2dbf5ce46ef9283414",
+      "run_code": "RUN-20260927-5bdb191deaf7",
+      "input_sha256": "ba20f0b084e3ef1ca728504a297500ae9aad283dd0264c05958f4c75a654fdb1",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "per_job": {
+          "JOB_mug9jv49": {
+            "covered_area_m2": 15520083.088088041,
+            "coverage_percent": 99.99999999999999,
+            "required_area_m2": 15520083.088088043
+          },
+          "JOB_mug9k0vy": {
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0,
+            "required_area_m2": 8821453.32666627
+          },
+          "JOB_mug9kanh": {
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0,
+            "required_area_m2": 50186139.47201809
+          }
+        },
+        "distance_m": 240908.25548913825,
+        "makespan_s": 11861.934622049332,
+        "sortie_count": 1,
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "total_flight_s": 11861.934622049332,
+        "airborne_span_s": 11861.934622049332,
+        "covered_area_m2": 74527675.8867724,
+        "coverage_percent": 99.99999999999997,
+        "required_area_m2": 74527675.88677241,
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 102.86090674402658,
+      "sorties": [
+        {
+          "id": "U01_S1",
+          "uav_id": "U01",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T11:47:41.934622+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 11861.934621777717,
+          "distance_m": 240908.25548913758,
+          "task_ids": [
+            "JOB_mug9kanh#T000",
+            "JOB_mug9kanh#T001",
+            "JOB_mug9jv49#T000",
+            "JOB_mug9k0vy#T000"
+          ]
+        }
+      ],
+      "routing": null,
+      "deconfliction": {
+        "before": [],
+        "remaining": [],
+        "ladder_used": [],
+        "ladder_actions": []
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 4 задач",
+          "duration_s": 0.9015350341796875
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 4 из 4 задач; 1 вылетов",
+          "duration_s": 62.363059520721436
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 14.31525182723999
+        }
+      ],
+      "makespan_before_ground_delays_s": 11861.934621777717,
+      "makespan_added_by_ground_delays_s": 2.716151357162744e-07,
+      "sorties_per_uav": {
+        "U01": 1
+      },
+      "plan_content_sha256": "15f8807c8487025f8139907d6fea2707646c600ce532f0cce67ecf3f0723cb05"
+    },
+    {
+      "server": "dev",
+      "scenario": "S12_MSU_4bpla_4zones",
+      "objective": "total_flight",
+      "plan_id": "907e48fc149140f185561900eb7e9da1",
+      "run_code": "RUN-20260927-907e48fc1491",
+      "input_sha256": "ba20f0b084e3ef1ca728504a297500ae9aad283dd0264c05958f4c75a654fdb1",
+      "status": "SAFE",
+      "error": null,
+      "metrics": {
+        "distance_m": 253607.77446041798,
+        "total_flight_s": 14810.186977148056,
+        "makespan_s": 8659.081326961517,
+        "airborne_span_s": 8659.081326961517,
+        "coverage_percent": 99.99999999999997,
+        "required_area_m2": 74527675.88677241,
+        "covered_area_m2": 74527675.8867724,
+        "sortie_count": 4,
+        "per_job": {
+          "JOB_mug9jv49": {
+            "required_area_m2": 15520083.088088043,
+            "covered_area_m2": 15520083.088088041,
+            "coverage_percent": 99.99999999999999
+          },
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mug9kanh": {
+            "required_area_m2": 50186139.47201809,
+            "covered_area_m2": 50186139.47201809,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "wall_s": 40.202139711007476,
+      "sorties": [
+        {
+          "id": "U01_S1",
+          "uav_id": "U01",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:11:18.435342+03:00",
+          "start_site": "BASE_0",
+          "landing_site": "BASE_0",
+          "flight_time_s": 2478.435341879844,
+          "distance_m": 42952.025376846665,
+          "task_ids": [
+            "JOB_mug9kanh#T000#G0000",
+            "JOB_mug9kanh#T000#G0003",
+            "JOB_mug9kanh#T000#G0002",
+            "JOB_mug9kanh#T000#G0001"
+          ]
+        },
+        {
+          "id": "U02_S1",
+          "uav_id": "U02",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T09:11:49.455322+03:00",
+          "start_site": "BASE_1",
+          "landing_site": "BASE_1",
+          "flight_time_s": 2509.455322325761,
+          "distance_m": 42733.63787485175,
+          "task_ids": [
+            "JOB_mug9kanh#T000#G0006",
+            "JOB_mug9kanh#T000#G0005",
+            "JOB_mug9kanh#T000#G0004",
+            "JOB_mug9kanh#T000#G0007"
+          ]
+        },
+        {
+          "id": "U03_S1",
+          "uav_id": "U03",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T08:49:23.214986+03:00",
+          "start_site": "BASE_2",
+          "landing_site": "BASE_2",
+          "flight_time_s": 1163.2149859712665,
+          "distance_m": 11670.096322716186,
+          "task_ids": [
+            "JOB_mug9k0vy#T000#G0004",
+            "JOB_mug9k0vy#T000#G0005"
+          ]
+        },
+        {
+          "id": "U04_S1",
+          "uav_id": "U04",
+          "t_start": "2026-06-15T08:30:00+03:00",
+          "t_end": "2026-06-15T10:54:19.081327+03:00",
+          "start_site": "BASE_3",
+          "landing_site": "BASE_3",
+          "flight_time_s": 8659.081326515296,
+          "distance_m": 156252.01488600645,
+          "task_ids": [
+            "JOB_mug9jv49#T000#G0000",
+            "JOB_mug9kanh#T001#G0020",
+            "JOB_mug9kanh#T001#G0019",
+            "JOB_mug9kanh#T001#G0018",
+            "JOB_mug9kanh#T001#G0017",
+            "JOB_mug9kanh#T001#G0016",
+            "JOB_mug9kanh#T001#G0015",
+            "JOB_mug9kanh#T001#G0014",
+            "JOB_mug9kanh#T001#G0013",
+            "JOB_mug9kanh#T001#G0012",
+            "JOB_mug9kanh#T001#G0011",
+            "JOB_mug9kanh#T001#G0010",
+            "JOB_mug9kanh#T001#G0009",
+            "JOB_mug9kanh#T001#G0008",
+            "JOB_mug9kanh#T001#G0007",
+            "JOB_mug9kanh#T001#G0006",
+            "JOB_mug9kanh#T001#G0005",
+            "JOB_mug9kanh#T001#G0004",
+            "JOB_mug9kanh#T001#G0003",
+            "JOB_mug9kanh#T001#G0002",
+            "JOB_mug9kanh#T001#G0001",
+            "JOB_mug9kanh#T001#G0000",
+            "JOB_mug9k0vy#T000#G0000",
+            "JOB_mug9k0vy#T000#G0001",
+            "JOB_mug9k0vy#T000#G0003",
+            "JOB_mug9k0vy#T000#G0002",
+            "JOB_mug9jv49#T000#G0002",
+            "JOB_mug9jv49#T000#G0001",
+            "JOB_mug9jv49#T000#G0004",
+            "JOB_mug9jv49#T000#G0003",
+            "JOB_mug9jv49#T000#G0005",
+            "JOB_mug9jv49#T000#G0006",
+            "JOB_mug9jv49#T000#G0007",
+            "JOB_mug9jv49#T000#G0008",
+            "JOB_mug9jv49#T000#G0009"
+          ]
+        }
+      ],
+      "routing": {
+        "graph": {
+          "preparation_s": 1.5401287350105122,
+          "vertices": 95,
+          "transects": 45,
+          "orientations": 90,
+          "profiles": [
+            {
+              "id": "8a016cd2f77d07b13c74f2c03834d6b0e5685ac920102c6df2b601cca8d0552d",
+              "model": "geoscan_701",
+              "uav_ids": [
+                "U01",
+                "U02",
+                "U03",
+                "U04"
+              ],
+              "physical_edges": 562,
+              "expanded_edges": 0,
+              "valid_orientations": 90,
+              "detailed_edges_s": 1.2616571789840236,
+              "total_s": 1.5079559909645468
+            }
+          ],
+          "knn": 4,
+          "corners": 16,
+          "base_connections": "all_corners",
+          "base_transfers": false,
+          "long_links_per_corner": 2,
+          "long_link_pairs": 31,
+          "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+          "transit_factor": 1.25,
+          "return_margin_s": 60.0,
+          "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+          "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+          "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+        },
+        "model_s": 0.19841034896671772,
+        "seed_s": 0.12880464002955705,
+        "initial_objective_s": 16020.5,
+        "search_s": 0.592738111037761,
+        "solutions_seen": 41,
+        "branches": 287,
+        "failures": 127,
+        "branch_limit": 5000,
+        "status": 1,
+        "logical_nodes": 118,
+        "reload_copies": {
+          "U01": 3,
+          "U02": 3,
+          "U03": 3,
+          "U04": 3
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 410730,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false,
+        "final_validation_s": 2.261874992051162,
+        "finalist_checks": [
+          {
+            "candidate": 1,
+            "passed": true,
+            "metric_s": 14810.186976692166,
+            "violations": [],
+            "repairs": 0
+          },
+          {
+            "candidate": 2,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 14810.228059208584
+          },
+          {
+            "candidate": 3,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 14970.879270064384
+          },
+          {
+            "candidate": 4,
+            "skipped": "dominated_before_ground_delays",
+            "lower_bound_s": 15003.024330089886
+          }
+        ],
+        "total_s": 4.856622957973741,
+        "objective": "total_flight",
+        "strict_search": null,
+        "copy_expansions": [],
+        "solution_sha256": "df63d268f3de14f0fa4c14ad7a6941419a6fbe9ae0b8077dfc5673228985fae5"
+      },
+      "deconfliction": {
+        "remaining": [],
+        "actions": []
+      },
+      "progress": [
+        {
+          "stage": "h1",
+          "status": "completed",
+          "message": "H1 завершён: 4 задач",
+          "duration_s": 0.88138747215271
+        },
+        {
+          "stage": "h2",
+          "status": "completed",
+          "message": "H2: назначено 45 из 45 галсов; 4 вылетов",
+          "duration_s": 5.289586305618286
+        },
+        {
+          "stage": "h3",
+          "status": "completed",
+          "message": "H3 завершён: SAFE",
+          "duration_s": 14.14060378074646
+        }
+      ],
+      "makespan_before_ground_delays_s": 8659.081326515296,
+      "makespan_added_by_ground_delays_s": 4.462217475520447e-07,
+      "sorties_per_uav": {
+        "U01": 1,
+        "U02": 1,
+        "U03": 1,
+        "U04": 1
+      },
+      "plan_content_sha256": "efa1abd329e48a39060307ac5f521de86d20a264b672e84dd3746652f08bca12"
+    }
+  ],
+  "msu_phase_breakdown": {
+    "production": [
+      {
+        "id": "UAV_mugaekoc_S1",
+        "flight_min": 114.8923745449698,
+        "phases_min": {
+          "takeoff": 3.0,
+          "transit": 21.504658783333277,
+          "survey": 86.38771576666733,
+          "landing": 4.0
+        },
+        "tasks": [
+          "JOB_mugaf9eh#T000",
+          "JOB_mugaf9eh#T001",
+          "JOB_mugaf9eh#T002",
+          "JOB_mugaf9eh#T003",
+          "JOB_mugaf9eh#T004",
+          "JOB_mugaf9eh#T005",
+          "JOB_mugaf9eh#T006",
+          "JOB_mugaf9eh#T007",
+          "JOB_mugaf9eh#T008",
+          "JOB_mugaf9eh#T009",
+          "JOB_mugaf9eh#T010",
+          "JOB_mugaf9eh#T011",
+          "JOB_mugaf9eh#T012",
+          "JOB_mugaf9eh#T013",
+          "JOB_mugaf9eh#T014",
+          "JOB_mugaf9eh#T015",
+          "JOB_mugaf9eh#T016",
+          "JOB_mugaf9eh#T017",
+          "JOB_mugaf9eh#T018"
+        ]
+      },
+      {
+        "id": "UAV_mugaekoc_S2",
+        "flight_min": 80.20943520474792,
+        "phases_min": {
+          "takeoff": 3.0,
+          "transit": 18.965206133333076,
+          "survey": 54.2442290666671,
+          "landing": 4.0
+        },
+        "tasks": [
+          "JOB_mugaf9eh#T019",
+          "JOB_mugaf9eh#T020",
+          "JOB_mugaf9eh#T021",
+          "JOB_mugaf9eh#T022",
+          "JOB_mugaf9eh#T023",
+          "JOB_mugaf9eh#T024",
+          "JOB_mugaf9eh#T025",
+          "JOB_mugaf9eh#T026",
+          "JOB_mugaf9eh#T027",
+          "JOB_mugaf9eh#T028"
+        ]
+      }
+    ],
+    "dev": [
+      {
+        "id": "UAV_mugaekoc_S1",
+        "flight_min": 57.91777141405975,
+        "phases_min": {
+          "takeoff": 3.0,
+          "transit": 14.70597899999985,
+          "survey": 36.211792416666874,
+          "landing": 4.0
+        },
+        "tasks": [
+          "JOB_mugaf9eh#T000#G0000",
+          "JOB_mugaf9eh#T001#G0000",
+          "JOB_mugaf9eh#T002#G0000",
+          "JOB_mugaf9eh#T003#G0000",
+          "JOB_mugaf9eh#T004#G0000",
+          "JOB_mugaf9eh#T005#G0000"
+        ]
+      },
+      {
+        "id": "UAV_mugaekoc_S2",
+        "flight_min": 89.26060085654689,
+        "phases_min": {
+          "takeoff": 3.0,
+          "transit": 34.09442293333354,
+          "survey": 48.16617791666695,
+          "landing": 4.0
+        },
+        "tasks": [
+          "JOB_mugaf9eh#T006#G0000",
+          "JOB_mugaf9eh#T007#G0000",
+          "JOB_mugaf9eh#T008#G0000",
+          "JOB_mugaf9eh#T009#G0000",
+          "JOB_mugaf9eh#T010#G0000",
+          "JOB_mugaf9eh#T011#G0000",
+          "JOB_mugaf9eh#T012#G0000",
+          "JOB_mugaf9eh#T013#G0000",
+          "JOB_mugaf9eh#T014#G0000",
+          "JOB_mugaf9eh#T014#G0001",
+          "JOB_mugaf9eh#T015#G0000",
+          "JOB_mugaf9eh#T015#G0001",
+          "JOB_mugaf9eh#T016#G0000",
+          "JOB_mugaf9eh#T017#G0000",
+          "JOB_mugaf9eh#T018#G0000"
+        ]
+      },
+      {
+        "id": "UAV_mugaekoc_S3",
+        "flight_min": 90.62664892899896,
+        "phases_min": {
+          "takeoff": 3.0,
+          "transit": 29.382419833333486,
+          "survey": 54.244229100000375,
+          "landing": 4.0
+        },
+        "tasks": [
+          "JOB_mugaf9eh#T019#G0000",
+          "JOB_mugaf9eh#T020#G0000",
+          "JOB_mugaf9eh#T021#G0000",
+          "JOB_mugaf9eh#T022#G0000",
+          "JOB_mugaf9eh#T023#G0000",
+          "JOB_mugaf9eh#T024#G0000",
+          "JOB_mugaf9eh#T025#G0000",
+          "JOB_mugaf9eh#T028#G0000",
+          "JOB_mugaf9eh#T027#G0000",
+          "JOB_mugaf9eh#T026#G0000"
+        ]
+      }
+    ]
+  },
+  "model_experiments": [
+    {
+      "experiment": "production_exact_order_in_current_graph",
+      "makespan_min": 236.24751891230102,
+      "total_flight_min": 396.80918264267916,
+      "sorties": [
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 31.78284107701127,
+          "required_min": 32.782841077177935,
+          "task_ids": [
+            "JOB_mug9k0vy#T000#G0000",
+            "JOB_mug9k0vy#T001#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 28.83773099134671,
+          "required_min": 30.703998408674387,
+          "task_ids": [
+            "JOB_mug9k0vy#T002#G0000",
+            "JOB_mug9k0vy#T003#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 26.47620257835609,
+          "required_min": 29.37890132545184,
+          "task_ids": [
+            "JOB_mug9k0vy#T004#G0000",
+            "JOB_mug9k0vy#T005#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 42.071466573544996,
+          "required_min": 43.07146657371166,
+          "task_ids": [
+            "JOB_mugady20#T000#G0001",
+            "JOB_mugady20#T000#G0000",
+            "JOB_mugady20#T001#G0000",
+            "JOB_mugady20#T001#G0001"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 41.393422510119066,
+          "required_min": 42.39342251028573,
+          "task_ids": [
+            "JOB_mugafdz8#T000#G0000",
+            "JOB_mugafdz8#T000#G0001",
+            "JOB_mugafdz8#T000#G0002"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 135.2225185055569,
+          "required_min": 136.22251850572357,
+          "task_ids": [
+            "JOB_mugaf9eh#T000#G0000",
+            "JOB_mugaf9eh#T001#G0000",
+            "JOB_mugaf9eh#T002#G0000",
+            "JOB_mugaf9eh#T003#G0000",
+            "JOB_mugaf9eh#T004#G0000",
+            "JOB_mugaf9eh#T005#G0000",
+            "JOB_mugaf9eh#T006#G0000",
+            "JOB_mugaf9eh#T007#G0000",
+            "JOB_mugaf9eh#T008#G0000",
+            "JOB_mugaf9eh#T009#G0000",
+            "JOB_mugaf9eh#T010#G0000",
+            "JOB_mugaf9eh#T011#G0000",
+            "JOB_mugaf9eh#T012#G0000",
+            "JOB_mugaf9eh#T013#G0000",
+            "JOB_mugaf9eh#T014#G0000",
+            "JOB_mugaf9eh#T014#G0001",
+            "JOB_mugaf9eh#T015#G0000",
+            "JOB_mugaf9eh#T015#G0001",
+            "JOB_mugaf9eh#T016#G0000",
+            "JOB_mugaf9eh#T017#G0000",
+            "JOB_mugaf9eh#T018#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 91.02500040674413,
+          "required_min": 92.02500040691078,
+          "task_ids": [
+            "JOB_mugaf9eh#T019#G0000",
+            "JOB_mugaf9eh#T020#G0000",
+            "JOB_mugaf9eh#T021#G0000",
+            "JOB_mugaf9eh#T022#G0000",
+            "JOB_mugaf9eh#T023#G0000",
+            "JOB_mugaf9eh#T024#G0000",
+            "JOB_mugaf9eh#T025#G0000",
+            "JOB_mugaf9eh#T026#G0000",
+            "JOB_mugaf9eh#T027#G0000",
+            "JOB_mugaf9eh#T028#G0000"
+          ]
+        }
+      ],
+      "reserve_violations": [
+        {
+          "code": "routing_return_reserve",
+          "sortie_id": "UAV_mugacog6_S4",
+          "required_s": 2584.2879944226997,
+          "usable_s": 2304.0
+        },
+        {
+          "code": "routing_return_reserve",
+          "sortie_id": "UAV_mugacog6_S5",
+          "required_s": 2543.605350617144,
+          "usable_s": 2304.0
+        },
+        {
+          "code": "routing_return_reserve",
+          "sortie_id": "UAV_mugaekoc_S1",
+          "required_s": 8173.351110343414,
+          "usable_s": 6912.0
+        }
+      ]
+    },
+    {
+      "experiment": "standard",
+      "elapsed_s": 0.9096424269955605,
+      "search": {
+        "seed_s": 0.12514689401723444,
+        "initial_objective_s": 15493.7,
+        "search_s": 0.5560358649818227,
+        "solutions_seen": 13,
+        "branches": 1359,
+        "failures": 56,
+        "branch_limit": 5000,
+        "status": 2,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400000,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false
+      },
+      "best": {
+        "makespan_min": 257.8050211996056,
+        "total_flight_min": 429.8073222901014,
+        "sorties": [
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 26.47620257835609,
+            "required_min": 29.034453495574244,
+            "task_ids": [
+              "JOB_mug9k0vy#T005#G0000",
+              "JOB_mug9k0vy#T004#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 23.676974950963107,
+            "required_min": 24.676974951129775,
+            "task_ids": [
+              "JOB_mugady20#T001#G0001",
+              "JOB_mugady20#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 26.872691115911305,
+            "required_min": 27.87269111607797,
+            "task_ids": [
+              "JOB_mug9k0vy#T003#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 26.519911042137345,
+            "required_min": 27.51991104230401,
+            "task_ids": [
+              "JOB_mug9k0vy#T002#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 34.064941869685654,
+            "required_min": 35.06494186985232,
+            "task_ids": [
+              "JOB_mugady20#T000#G0000",
+              "JOB_mugady20#T000#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 24.670700276125316,
+            "required_min": 25.67070027629199,
+            "task_ids": [
+              "JOB_mugafdz8#T000#G0001",
+              "JOB_mugafdz8#T000#G0000",
+              "JOB_mugafdz8#T000#G0002"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 29.720879257317012,
+            "required_min": 31.14517703702361,
+            "task_ids": [
+              "JOB_mug9k0vy#T001#G0000",
+              "JOB_mug9k0vy#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 57.91777141405975,
+            "required_min": 58.917771414226415,
+            "task_ids": [
+              "JOB_mugaf9eh#T000#G0000",
+              "JOB_mugaf9eh#T001#G0000",
+              "JOB_mugaf9eh#T002#G0000",
+              "JOB_mugaf9eh#T003#G0000",
+              "JOB_mugaf9eh#T004#G0000",
+              "JOB_mugaf9eh#T005#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 89.26060085654689,
+            "required_min": 90.26060085671355,
+            "task_ids": [
+              "JOB_mugaf9eh#T006#G0000",
+              "JOB_mugaf9eh#T007#G0000",
+              "JOB_mugaf9eh#T008#G0000",
+              "JOB_mugaf9eh#T009#G0000",
+              "JOB_mugaf9eh#T010#G0000",
+              "JOB_mugaf9eh#T011#G0000",
+              "JOB_mugaf9eh#T012#G0000",
+              "JOB_mugaf9eh#T013#G0000",
+              "JOB_mugaf9eh#T014#G0000",
+              "JOB_mugaf9eh#T014#G0001",
+              "JOB_mugaf9eh#T015#G0000",
+              "JOB_mugaf9eh#T015#G0001",
+              "JOB_mugaf9eh#T016#G0000",
+              "JOB_mugaf9eh#T017#G0000",
+              "JOB_mugaf9eh#T018#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 90.62664892899896,
+            "required_min": 91.62664892916563,
+            "task_ids": [
+              "JOB_mugaf9eh#T019#G0000",
+              "JOB_mugaf9eh#T020#G0000",
+              "JOB_mugaf9eh#T021#G0000",
+              "JOB_mugaf9eh#T022#G0000",
+              "JOB_mugaf9eh#T023#G0000",
+              "JOB_mugaf9eh#T024#G0000",
+              "JOB_mugaf9eh#T025#G0000",
+              "JOB_mugaf9eh#T028#G0000",
+              "JOB_mugaf9eh#T027#G0000",
+              "JOB_mugaf9eh#T026#G0000"
+            ]
+          }
+        ],
+        "reserve_violations": []
+      }
+    },
+    {
+      "experiment": "10x_work",
+      "elapsed_s": 5.717915907967836,
+      "search": {
+        "seed_s": 0.13095391204115003,
+        "initial_objective_s": 15493.7,
+        "search_s": 5.296307108947076,
+        "solutions_seen": 35,
+        "branches": 3664,
+        "failures": 118,
+        "branch_limit": 50000,
+        "status": 1,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 4000001,
+        "table_read_limit": 4000000,
+        "emergency_time_limit_s": 1200,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false
+      },
+      "best": {
+        "makespan_min": 257.8050211996056,
+        "total_flight_min": 426.0675859504934,
+        "sorties": [
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 26.47620257835609,
+            "required_min": 29.034453495574244,
+            "task_ids": [
+              "JOB_mug9k0vy#T005#G0000",
+              "JOB_mug9k0vy#T004#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 23.676974950963107,
+            "required_min": 24.676974951129775,
+            "task_ids": [
+              "JOB_mugady20#T001#G0001",
+              "JOB_mugady20#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 26.872691115911305,
+            "required_min": 27.87269111607797,
+            "task_ids": [
+              "JOB_mug9k0vy#T003#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 25.547032459112334,
+            "required_min": 28.647893781095274,
+            "task_ids": [
+              "JOB_mug9k0vy#T001#G0000",
+              "JOB_mug9k0vy#T002#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 34.06494186968566,
+            "required_min": 35.064941869852326,
+            "task_ids": [
+              "JOB_mugady20#T000#G0000",
+              "JOB_mugady20#T000#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 22.81514337325183,
+            "required_min": 24.261601874115165,
+            "task_ids": [
+              "JOB_mugafdz8#T000#G0002",
+              "JOB_mugafdz8#T000#G0001",
+              "JOB_mugafdz8#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 28.80957840360751,
+            "required_min": 30.23387618331411,
+            "task_ids": [
+              "JOB_mug9k0vy#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 57.91777141405975,
+            "required_min": 58.917771414226415,
+            "task_ids": [
+              "JOB_mugaf9eh#T000#G0000",
+              "JOB_mugaf9eh#T001#G0000",
+              "JOB_mugaf9eh#T002#G0000",
+              "JOB_mugaf9eh#T003#G0000",
+              "JOB_mugaf9eh#T004#G0000",
+              "JOB_mugaf9eh#T005#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 89.26060085654689,
+            "required_min": 90.26060085671355,
+            "task_ids": [
+              "JOB_mugaf9eh#T006#G0000",
+              "JOB_mugaf9eh#T007#G0000",
+              "JOB_mugaf9eh#T008#G0000",
+              "JOB_mugaf9eh#T009#G0000",
+              "JOB_mugaf9eh#T010#G0000",
+              "JOB_mugaf9eh#T011#G0000",
+              "JOB_mugaf9eh#T012#G0000",
+              "JOB_mugaf9eh#T013#G0000",
+              "JOB_mugaf9eh#T014#G0000",
+              "JOB_mugaf9eh#T014#G0001",
+              "JOB_mugaf9eh#T015#G0000",
+              "JOB_mugaf9eh#T015#G0001",
+              "JOB_mugaf9eh#T016#G0000",
+              "JOB_mugaf9eh#T017#G0000",
+              "JOB_mugaf9eh#T018#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 90.62664892899896,
+            "required_min": 91.62664892916563,
+            "task_ids": [
+              "JOB_mugaf9eh#T019#G0000",
+              "JOB_mugaf9eh#T020#G0000",
+              "JOB_mugaf9eh#T021#G0000",
+              "JOB_mugaf9eh#T022#G0000",
+              "JOB_mugaf9eh#T023#G0000",
+              "JOB_mugaf9eh#T024#G0000",
+              "JOB_mugaf9eh#T025#G0000",
+              "JOB_mugaf9eh#T028#G0000",
+              "JOB_mugaf9eh#T027#G0000",
+              "JOB_mugaf9eh#T026#G0000"
+            ]
+          }
+        ],
+        "reserve_violations": []
+      }
+    },
+    {
+      "experiment": "50x_work",
+      "elapsed_s": 19.562352608074434,
+      "search": {
+        "seed_s": 0.08848148689139634,
+        "initial_objective_s": 15493.7,
+        "search_s": 19.244371883105487,
+        "solutions_seen": 131,
+        "branches": 13739,
+        "failures": 414,
+        "branch_limit": 100000,
+        "status": 1,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 20011518,
+        "table_read_limit": 20000000,
+        "emergency_time_limit_s": 6000,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false
+      },
+      "best": {
+        "makespan_min": 257.80502119960556,
+        "total_flight_min": 425.1718496412301,
+        "sorties": [
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 26.47620257835609,
+            "required_min": 29.034453495574244,
+            "task_ids": [
+              "JOB_mug9k0vy#T005#G0000",
+              "JOB_mug9k0vy#T004#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 24.843732000821827,
+            "required_min": 25.843732000988492,
+            "task_ids": [
+              "JOB_mugady20#T000#G0000",
+              "JOB_mugady20#T000#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 26.51596432724873,
+            "required_min": 27.515964327415396,
+            "task_ids": [
+              "JOB_mug9k0vy#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 32.05943767406799,
+            "required_min": 33.059437674234665,
+            "task_ids": [
+              "JOB_mugady20#T001#G0001",
+              "JOB_mugady20#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 25.846770084270535,
+            "required_min": 28.94763140625348,
+            "task_ids": [
+              "JOB_mug9k0vy#T003#G0000",
+              "JOB_mug9k0vy#T002#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 22.81514337325183,
+            "required_min": 24.261601874115165,
+            "task_ids": [
+              "JOB_mugafdz8#T000#G0002",
+              "JOB_mugafdz8#T000#G0001",
+              "JOB_mugafdz8#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 28.809578403607517,
+            "required_min": 29.809578403774186,
+            "task_ids": [
+              "JOB_mug9k0vy#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 57.91777141405975,
+            "required_min": 58.917771414226415,
+            "task_ids": [
+              "JOB_mugaf9eh#T000#G0000",
+              "JOB_mugaf9eh#T001#G0000",
+              "JOB_mugaf9eh#T002#G0000",
+              "JOB_mugaf9eh#T003#G0000",
+              "JOB_mugaf9eh#T004#G0000",
+              "JOB_mugaf9eh#T005#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 90.62664892899897,
+            "required_min": 91.62664892916564,
+            "task_ids": [
+              "JOB_mugaf9eh#T019#G0000",
+              "JOB_mugaf9eh#T020#G0000",
+              "JOB_mugaf9eh#T021#G0000",
+              "JOB_mugaf9eh#T022#G0000",
+              "JOB_mugaf9eh#T023#G0000",
+              "JOB_mugaf9eh#T024#G0000",
+              "JOB_mugaf9eh#T025#G0000",
+              "JOB_mugaf9eh#T028#G0000",
+              "JOB_mugaf9eh#T027#G0000",
+              "JOB_mugaf9eh#T026#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 89.26060085654684,
+            "required_min": 90.26060085671351,
+            "task_ids": [
+              "JOB_mugaf9eh#T006#G0000",
+              "JOB_mugaf9eh#T007#G0000",
+              "JOB_mugaf9eh#T008#G0000",
+              "JOB_mugaf9eh#T009#G0000",
+              "JOB_mugaf9eh#T010#G0000",
+              "JOB_mugaf9eh#T011#G0000",
+              "JOB_mugaf9eh#T012#G0000",
+              "JOB_mugaf9eh#T013#G0000",
+              "JOB_mugaf9eh#T014#G0000",
+              "JOB_mugaf9eh#T014#G0001",
+              "JOB_mugaf9eh#T015#G0000",
+              "JOB_mugaf9eh#T015#G0001",
+              "JOB_mugaf9eh#T016#G0000",
+              "JOB_mugaf9eh#T017#G0000",
+              "JOB_mugaf9eh#T018#G0000"
+            ]
+          }
+        ],
+        "reserve_violations": []
+      }
+    },
+    {
+      "experiment": "50x_lambda_001",
+      "elapsed_s": 20.998517589992844,
+      "search": {
+        "seed_s": 0.11617345397826284,
+        "initial_objective_s": 15493.7,
+        "search_s": 20.64166873204522,
+        "solutions_seen": 126,
+        "branches": 13226,
+        "failures": 396,
+        "branch_limit": 100000,
+        "status": 1,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 20009525,
+        "table_read_limit": 20000000,
+        "emergency_time_limit_s": 6000,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false
+      },
+      "best": {
+        "makespan_min": 257.80502119960556,
+        "total_flight_min": 426.01059678698897,
+        "sorties": [
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 26.47620257835609,
+            "required_min": 29.034453495574244,
+            "task_ids": [
+              "JOB_mug9k0vy#T005#G0000",
+              "JOB_mug9k0vy#T004#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 23.676974950963107,
+            "required_min": 24.676974951129775,
+            "task_ids": [
+              "JOB_mugady20#T001#G0001",
+              "JOB_mugady20#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 26.51596432724873,
+            "required_min": 27.515964327415396,
+            "task_ids": [
+              "JOB_mug9k0vy#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 34.06494186968565,
+            "required_min": 35.06494186985231,
+            "task_ids": [
+              "JOB_mugady20#T000#G0000",
+              "JOB_mugady20#T000#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 25.846770084270535,
+            "required_min": 28.94763140625348,
+            "task_ids": [
+              "JOB_mug9k0vy#T003#G0000",
+              "JOB_mug9k0vy#T002#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 22.81514337325183,
+            "required_min": 24.261601874115165,
+            "task_ids": [
+              "JOB_mugafdz8#T000#G0002",
+              "JOB_mugafdz8#T000#G0001",
+              "JOB_mugafdz8#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 28.809578403607517,
+            "required_min": 29.809578403774186,
+            "task_ids": [
+              "JOB_mug9k0vy#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 57.91777141405975,
+            "required_min": 58.917771414226415,
+            "task_ids": [
+              "JOB_mugaf9eh#T000#G0000",
+              "JOB_mugaf9eh#T001#G0000",
+              "JOB_mugaf9eh#T002#G0000",
+              "JOB_mugaf9eh#T003#G0000",
+              "JOB_mugaf9eh#T004#G0000",
+              "JOB_mugaf9eh#T005#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 90.62664892899897,
+            "required_min": 91.62664892916564,
+            "task_ids": [
+              "JOB_mugaf9eh#T019#G0000",
+              "JOB_mugaf9eh#T020#G0000",
+              "JOB_mugaf9eh#T021#G0000",
+              "JOB_mugaf9eh#T022#G0000",
+              "JOB_mugaf9eh#T023#G0000",
+              "JOB_mugaf9eh#T024#G0000",
+              "JOB_mugaf9eh#T025#G0000",
+              "JOB_mugaf9eh#T028#G0000",
+              "JOB_mugaf9eh#T027#G0000",
+              "JOB_mugaf9eh#T026#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 89.26060085654684,
+            "required_min": 90.26060085671351,
+            "task_ids": [
+              "JOB_mugaf9eh#T006#G0000",
+              "JOB_mugaf9eh#T007#G0000",
+              "JOB_mugaf9eh#T008#G0000",
+              "JOB_mugaf9eh#T009#G0000",
+              "JOB_mugaf9eh#T010#G0000",
+              "JOB_mugaf9eh#T011#G0000",
+              "JOB_mugaf9eh#T012#G0000",
+              "JOB_mugaf9eh#T013#G0000",
+              "JOB_mugaf9eh#T014#G0000",
+              "JOB_mugaf9eh#T014#G0001",
+              "JOB_mugaf9eh#T015#G0000",
+              "JOB_mugaf9eh#T015#G0001",
+              "JOB_mugaf9eh#T016#G0000",
+              "JOB_mugaf9eh#T017#G0000",
+              "JOB_mugaf9eh#T018#G0000"
+            ]
+          }
+        ],
+        "reserve_violations": []
+      }
+    },
+    {
+      "experiment": "50x_lambda_1",
+      "elapsed_s": 19.613695046049543,
+      "search": {
+        "seed_s": 0.09065376792568713,
+        "initial_objective_s": 15493.7,
+        "search_s": 19.32435031607747,
+        "solutions_seen": 177,
+        "branches": 18467,
+        "failures": 753,
+        "branch_limit": 100000,
+        "status": 1,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 20000032,
+        "table_read_limit": 20000000,
+        "emergency_time_limit_s": 6000,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false
+      },
+      "best": {
+        "makespan_min": 257.80502119960556,
+        "total_flight_min": 425.1718496412301,
+        "sorties": [
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 26.47620257835609,
+            "required_min": 29.034453495574244,
+            "task_ids": [
+              "JOB_mug9k0vy#T005#G0000",
+              "JOB_mug9k0vy#T004#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 24.843732000821827,
+            "required_min": 25.843732000988492,
+            "task_ids": [
+              "JOB_mugady20#T000#G0000",
+              "JOB_mugady20#T000#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 26.51596432724872,
+            "required_min": 29.62194625231668,
+            "task_ids": [
+              "JOB_mug9k0vy#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 32.059437674068,
+            "required_min": 33.059437674234665,
+            "task_ids": [
+              "JOB_mugady20#T001#G0001",
+              "JOB_mugady20#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 25.846770084270535,
+            "required_min": 28.94763140625348,
+            "task_ids": [
+              "JOB_mug9k0vy#T003#G0000",
+              "JOB_mug9k0vy#T002#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 22.81514337325183,
+            "required_min": 24.261601874115165,
+            "task_ids": [
+              "JOB_mugafdz8#T000#G0002",
+              "JOB_mugafdz8#T000#G0001",
+              "JOB_mugafdz8#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 28.809578403607517,
+            "required_min": 29.809578403774186,
+            "task_ids": [
+              "JOB_mug9k0vy#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 57.91777141405975,
+            "required_min": 58.917771414226415,
+            "task_ids": [
+              "JOB_mugaf9eh#T000#G0000",
+              "JOB_mugaf9eh#T001#G0000",
+              "JOB_mugaf9eh#T002#G0000",
+              "JOB_mugaf9eh#T003#G0000",
+              "JOB_mugaf9eh#T004#G0000",
+              "JOB_mugaf9eh#T005#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 90.62664892899897,
+            "required_min": 91.62664892916564,
+            "task_ids": [
+              "JOB_mugaf9eh#T019#G0000",
+              "JOB_mugaf9eh#T020#G0000",
+              "JOB_mugaf9eh#T021#G0000",
+              "JOB_mugaf9eh#T022#G0000",
+              "JOB_mugaf9eh#T023#G0000",
+              "JOB_mugaf9eh#T024#G0000",
+              "JOB_mugaf9eh#T025#G0000",
+              "JOB_mugaf9eh#T028#G0000",
+              "JOB_mugaf9eh#T027#G0000",
+              "JOB_mugaf9eh#T026#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 89.26060085654684,
+            "required_min": 90.26060085671351,
+            "task_ids": [
+              "JOB_mugaf9eh#T006#G0000",
+              "JOB_mugaf9eh#T007#G0000",
+              "JOB_mugaf9eh#T008#G0000",
+              "JOB_mugaf9eh#T009#G0000",
+              "JOB_mugaf9eh#T010#G0000",
+              "JOB_mugaf9eh#T011#G0000",
+              "JOB_mugaf9eh#T012#G0000",
+              "JOB_mugaf9eh#T013#G0000",
+              "JOB_mugaf9eh#T014#G0000",
+              "JOB_mugaf9eh#T014#G0001",
+              "JOB_mugaf9eh#T015#G0000",
+              "JOB_mugaf9eh#T015#G0001",
+              "JOB_mugaf9eh#T016#G0000",
+              "JOB_mugaf9eh#T017#G0000",
+              "JOB_mugaf9eh#T018#G0000"
+            ]
+          }
+        ],
+        "reserve_violations": []
+      }
+    },
+    {
+      "experiment": "20x_path_lns",
+      "elapsed_s": 16.488484448986128,
+      "search": {
+        "seed_s": 0.11827189102768898,
+        "initial_objective_s": 15493.7,
+        "search_s": 16.17582808691077,
+        "solutions_seen": 17,
+        "branches": 100301,
+        "failures": 52765,
+        "branch_limit": 100000,
+        "status": 2,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 1626614,
+        "table_read_limit": 8000000,
+        "emergency_time_limit_s": 2400,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false
+      },
+      "best": {
+        "makespan_min": 257.8050211996056,
+        "total_flight_min": 406.47672637939496,
+        "sorties": [
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 35.10667471163094,
+            "required_min": 36.1066747117976,
+            "task_ids": [
+              "JOB_mugady20#T000#G0000",
+              "JOB_mugady20#T000#G0001",
+              "JOB_mugady20#T001#G0001",
+              "JOB_mugady20#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 26.872691115911305,
+            "required_min": 27.87269111607797,
+            "task_ids": [
+              "JOB_mug9k0vy#T003#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 26.519911042137345,
+            "required_min": 27.51991104230401,
+            "task_ids": [
+              "JOB_mug9k0vy#T002#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 27.636405679540932,
+            "required_min": 30.136514483069764,
+            "task_ids": [
+              "JOB_mug9k0vy#T005#G0000",
+              "JOB_mug9k0vy#T004#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 22.81514337325183,
+            "required_min": 24.261601874115165,
+            "task_ids": [
+              "JOB_mugafdz8#T000#G0002",
+              "JOB_mugafdz8#T000#G0001",
+              "JOB_mugafdz8#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 29.720879257317016,
+            "required_min": 31.14517703702362,
+            "task_ids": [
+              "JOB_mug9k0vy#T001#G0000",
+              "JOB_mug9k0vy#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 57.91777141405975,
+            "required_min": 58.917771414226415,
+            "task_ids": [
+              "JOB_mugaf9eh#T000#G0000",
+              "JOB_mugaf9eh#T001#G0000",
+              "JOB_mugaf9eh#T002#G0000",
+              "JOB_mugaf9eh#T003#G0000",
+              "JOB_mugaf9eh#T004#G0000",
+              "JOB_mugaf9eh#T005#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 89.26060085654689,
+            "required_min": 90.26060085671355,
+            "task_ids": [
+              "JOB_mugaf9eh#T006#G0000",
+              "JOB_mugaf9eh#T007#G0000",
+              "JOB_mugaf9eh#T008#G0000",
+              "JOB_mugaf9eh#T009#G0000",
+              "JOB_mugaf9eh#T010#G0000",
+              "JOB_mugaf9eh#T011#G0000",
+              "JOB_mugaf9eh#T012#G0000",
+              "JOB_mugaf9eh#T013#G0000",
+              "JOB_mugaf9eh#T014#G0000",
+              "JOB_mugaf9eh#T014#G0001",
+              "JOB_mugaf9eh#T015#G0000",
+              "JOB_mugaf9eh#T015#G0001",
+              "JOB_mugaf9eh#T016#G0000",
+              "JOB_mugaf9eh#T017#G0000",
+              "JOB_mugaf9eh#T018#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 90.62664892899896,
+            "required_min": 91.62664892916563,
+            "task_ids": [
+              "JOB_mugaf9eh#T019#G0000",
+              "JOB_mugaf9eh#T020#G0000",
+              "JOB_mugaf9eh#T021#G0000",
+              "JOB_mugaf9eh#T022#G0000",
+              "JOB_mugaf9eh#T023#G0000",
+              "JOB_mugaf9eh#T024#G0000",
+              "JOB_mugaf9eh#T025#G0000",
+              "JOB_mugaf9eh#T028#G0000",
+              "JOB_mugaf9eh#T027#G0000",
+              "JOB_mugaf9eh#T026#G0000"
+            ]
+          }
+        ],
+        "reserve_violations": []
+      }
+    },
+    {
+      "experiment": "production_order_without_25pct_transit_padding",
+      "makespan_min": 221.52245500235261,
+      "total_flight_min": 363.9580978417382,
+      "sorties": [
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 29.014840988653493,
+          "required_min": 30.014840988820158,
+          "task_ids": [
+            "JOB_mug9k0vy#T000#G0000",
+            "JOB_mug9k0vy#T001#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 26.644795782697884,
+          "required_min": 27.64479578286455,
+          "task_ids": [
+            "JOB_mug9k0vy#T002#G0000",
+            "JOB_mug9k0vy#T003#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 24.74057007083561,
+          "required_min": 25.740570071002285,
+          "task_ids": [
+            "JOB_mug9k0vy#T004#G0000",
+            "JOB_mug9k0vy#T005#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 36.730207983927315,
+          "required_min": 37.73020798409397,
+          "task_ids": [
+            "JOB_mugady20#T000#G0001",
+            "JOB_mugady20#T000#G0000",
+            "JOB_mugady20#T001#G0000",
+            "JOB_mugady20#T001#G0001"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 35.30522801327133,
+          "required_min": 36.30522801343802,
+          "task_ids": [
+            "JOB_mugafdz8#T000#G0000",
+            "JOB_mugafdz8#T000#G0001",
+            "JOB_mugafdz8#T000#G0002"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 126.45360886514021,
+          "required_min": 127.45360886530688,
+          "task_ids": [
+            "JOB_mugaf9eh#T000#G0000",
+            "JOB_mugaf9eh#T001#G0000",
+            "JOB_mugaf9eh#T002#G0000",
+            "JOB_mugaf9eh#T003#G0000",
+            "JOB_mugaf9eh#T004#G0000",
+            "JOB_mugaf9eh#T005#G0000",
+            "JOB_mugaf9eh#T006#G0000",
+            "JOB_mugaf9eh#T007#G0000",
+            "JOB_mugaf9eh#T008#G0000",
+            "JOB_mugaf9eh#T009#G0000",
+            "JOB_mugaf9eh#T010#G0000",
+            "JOB_mugaf9eh#T011#G0000",
+            "JOB_mugaf9eh#T012#G0000",
+            "JOB_mugaf9eh#T013#G0000",
+            "JOB_mugaf9eh#T014#G0000",
+            "JOB_mugaf9eh#T014#G0001",
+            "JOB_mugaf9eh#T015#G0000",
+            "JOB_mugaf9eh#T015#G0001",
+            "JOB_mugaf9eh#T016#G0000",
+            "JOB_mugaf9eh#T017#G0000",
+            "JOB_mugaf9eh#T018#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 85.0688461372124,
+          "required_min": 86.06884613737905,
+          "task_ids": [
+            "JOB_mugaf9eh#T019#G0000",
+            "JOB_mugaf9eh#T020#G0000",
+            "JOB_mugaf9eh#T021#G0000",
+            "JOB_mugaf9eh#T022#G0000",
+            "JOB_mugaf9eh#T023#G0000",
+            "JOB_mugaf9eh#T024#G0000",
+            "JOB_mugaf9eh#T025#G0000",
+            "JOB_mugaf9eh#T026#G0000",
+            "JOB_mugaf9eh#T027#G0000",
+            "JOB_mugaf9eh#T028#G0000"
+          ]
+        }
+      ],
+      "reserve_violations": [
+        {
+          "code": "routing_return_reserve",
+          "sortie_id": "UAV_mugaekoc_S1",
+          "required_s": 7647.216531918412,
+          "usable_s": 6912.0
+        }
+      ]
+    },
+    {
+      "experiment": "solver_without_25pct_transit_padding",
+      "search": {
+        "seed_s": 0.13974322308786213,
+        "initial_objective_s": 13308.4,
+        "search_s": 1.1971899030031636,
+        "solutions_seen": 19,
+        "branches": 2008,
+        "failures": 120,
+        "branch_limit": 5000,
+        "status": 2,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400002,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false
+      },
+      "best": {
+        "makespan_min": 220.38510209777127,
+        "total_flight_min": 372.4611057309201,
+        "sorties": [
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 20.42527618169,
+            "required_min": 21.425276181856663,
+            "task_ids": [
+              "JOB_mugady20#T001#G0001",
+              "JOB_mugady20#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 24.857885187427083,
+            "required_min": 25.85788518759375,
+            "task_ids": [
+              "JOB_mug9k0vy#T004#G0000",
+              "JOB_mug9k0vy#T003#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 29.241291999920325,
+            "required_min": 30.24129200008699,
+            "task_ids": [
+              "JOB_mugady20#T000#G0000",
+              "JOB_mugady20#T000#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 27.800504735601113,
+            "required_min": 28.800504735767777,
+            "task_ids": [
+              "JOB_mugafdz8#T000#G0000",
+              "JOB_mugafdz8#T000#G0001",
+              "JOB_mugafdz8#T000#G0002"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 32.38577399561222,
+            "required_min": 33.385773995778884,
+            "task_ids": [
+              "JOB_mug9k0vy#T005#G0000",
+              "JOB_mug9k0vy#T002#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 27.3652715328981,
+            "required_min": 28.365271533064767,
+            "task_ids": [
+              "JOB_mug9k0vy#T000#G0000",
+              "JOB_mug9k0vy#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 102.86256218545829,
+            "required_min": 103.86256218562495,
+            "task_ids": [
+              "JOB_mugaf9eh#T026#G0000",
+              "JOB_mugaf9eh#T027#G0000",
+              "JOB_mugaf9eh#T028#G0000",
+              "JOB_mugaf9eh#T025#G0000",
+              "JOB_mugaf9eh#T024#G0000",
+              "JOB_mugaf9eh#T023#G0000",
+              "JOB_mugaf9eh#T022#G0000",
+              "JOB_mugaf9eh#T021#G0000",
+              "JOB_mugaf9eh#T020#G0000",
+              "JOB_mugaf9eh#T019#G0000",
+              "JOB_mugaf9eh#T018#G0000",
+              "JOB_mugaf9eh#T017#G0000",
+              "JOB_mugaf9eh#T016#G0000",
+              "JOB_mugaf9eh#T015#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 107.52253991231298,
+            "required_min": 108.52253991247964,
+            "task_ids": [
+              "JOB_mugaf9eh#T005#G0000",
+              "JOB_mugaf9eh#T006#G0000",
+              "JOB_mugaf9eh#T007#G0000",
+              "JOB_mugaf9eh#T008#G0000",
+              "JOB_mugaf9eh#T009#G0000",
+              "JOB_mugaf9eh#T010#G0000",
+              "JOB_mugaf9eh#T011#G0000",
+              "JOB_mugaf9eh#T012#G0000",
+              "JOB_mugaf9eh#T013#G0000",
+              "JOB_mugaf9eh#T014#G0000",
+              "JOB_mugaf9eh#T014#G0001",
+              "JOB_mugaf9eh#T015#G0000",
+              "JOB_mugaf9eh#T004#G0000",
+              "JOB_mugaf9eh#T003#G0000",
+              "JOB_mugaf9eh#T002#G0000",
+              "JOB_mugaf9eh#T001#G0000",
+              "JOB_mugaf9eh#T000#G0000"
+            ]
+          }
+        ],
+        "reserve_violations": []
+      }
+    }
+  ],
+  "additional_lambda_experiments": [
+    {
+      "experiment": "production_exact_order_in_current_graph",
+      "makespan_min": 236.24751891230102,
+      "total_flight_min": 396.80918264267916,
+      "sorties": [
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 31.78284107701127,
+          "required_min": 32.782841077177935,
+          "task_ids": [
+            "JOB_mug9k0vy#T000#G0000",
+            "JOB_mug9k0vy#T001#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 28.83773099134671,
+          "required_min": 30.703998408674387,
+          "task_ids": [
+            "JOB_mug9k0vy#T002#G0000",
+            "JOB_mug9k0vy#T003#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 26.47620257835609,
+          "required_min": 29.37890132545184,
+          "task_ids": [
+            "JOB_mug9k0vy#T004#G0000",
+            "JOB_mug9k0vy#T005#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 42.071466573544996,
+          "required_min": 43.07146657371166,
+          "task_ids": [
+            "JOB_mugady20#T000#G0001",
+            "JOB_mugady20#T000#G0000",
+            "JOB_mugady20#T001#G0000",
+            "JOB_mugady20#T001#G0001"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 41.393422510119066,
+          "required_min": 42.39342251028573,
+          "task_ids": [
+            "JOB_mugafdz8#T000#G0000",
+            "JOB_mugafdz8#T000#G0001",
+            "JOB_mugafdz8#T000#G0002"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 135.2225185055569,
+          "required_min": 136.22251850572357,
+          "task_ids": [
+            "JOB_mugaf9eh#T000#G0000",
+            "JOB_mugaf9eh#T001#G0000",
+            "JOB_mugaf9eh#T002#G0000",
+            "JOB_mugaf9eh#T003#G0000",
+            "JOB_mugaf9eh#T004#G0000",
+            "JOB_mugaf9eh#T005#G0000",
+            "JOB_mugaf9eh#T006#G0000",
+            "JOB_mugaf9eh#T007#G0000",
+            "JOB_mugaf9eh#T008#G0000",
+            "JOB_mugaf9eh#T009#G0000",
+            "JOB_mugaf9eh#T010#G0000",
+            "JOB_mugaf9eh#T011#G0000",
+            "JOB_mugaf9eh#T012#G0000",
+            "JOB_mugaf9eh#T013#G0000",
+            "JOB_mugaf9eh#T014#G0000",
+            "JOB_mugaf9eh#T014#G0001",
+            "JOB_mugaf9eh#T015#G0000",
+            "JOB_mugaf9eh#T015#G0001",
+            "JOB_mugaf9eh#T016#G0000",
+            "JOB_mugaf9eh#T017#G0000",
+            "JOB_mugaf9eh#T018#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 91.02500040674413,
+          "required_min": 92.02500040691078,
+          "task_ids": [
+            "JOB_mugaf9eh#T019#G0000",
+            "JOB_mugaf9eh#T020#G0000",
+            "JOB_mugaf9eh#T021#G0000",
+            "JOB_mugaf9eh#T022#G0000",
+            "JOB_mugaf9eh#T023#G0000",
+            "JOB_mugaf9eh#T024#G0000",
+            "JOB_mugaf9eh#T025#G0000",
+            "JOB_mugaf9eh#T026#G0000",
+            "JOB_mugaf9eh#T027#G0000",
+            "JOB_mugaf9eh#T028#G0000"
+          ]
+        }
+      ],
+      "reserve_violations": [
+        {
+          "code": "routing_return_reserve",
+          "sortie_id": "UAV_mugacog6_S4",
+          "required_s": 2584.2879944226997,
+          "usable_s": 2304.0
+        },
+        {
+          "code": "routing_return_reserve",
+          "sortie_id": "UAV_mugacog6_S5",
+          "required_s": 2543.605350617144,
+          "usable_s": 2304.0
+        },
+        {
+          "code": "routing_return_reserve",
+          "sortie_id": "UAV_mugaekoc_S1",
+          "required_s": 8173.351110343414,
+          "usable_s": 6912.0
+        }
+      ]
+    },
+    {
+      "experiment": "50x_lambda_1000",
+      "elapsed_s": 17.02918729407247,
+      "search": {
+        "seed_s": 0.1028258140431717,
+        "initial_objective_s": 15493.7,
+        "search_s": 16.68934369389899,
+        "solutions_seen": 171,
+        "branches": 17920,
+        "failures": 734,
+        "branch_limit": 100000,
+        "status": 1,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 20005580,
+        "table_read_limit": 20000000,
+        "emergency_time_limit_s": 6000,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false
+      },
+      "best": {
+        "makespan_min": 257.8050211996056,
+        "total_flight_min": 425.2288388047345,
+        "sorties": [
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 26.47620257835609,
+            "required_min": 29.034453495574244,
+            "task_ids": [
+              "JOB_mug9k0vy#T005#G0000",
+              "JOB_mug9k0vy#T004#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 24.843732000821827,
+            "required_min": 25.843732000988492,
+            "task_ids": [
+              "JOB_mugady20#T000#G0000",
+              "JOB_mugady20#T000#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 25.54703245911232,
+            "required_min": 28.653014384180278,
+            "task_ids": [
+              "JOB_mug9k0vy#T002#G0000",
+              "JOB_mug9k0vy#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 32.05943767406799,
+            "required_min": 33.059437674234665,
+            "task_ids": [
+              "JOB_mugady20#T001#G0000",
+              "JOB_mugady20#T001#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 26.872691115911298,
+            "required_min": 29.735924579325417,
+            "task_ids": [
+              "JOB_mug9k0vy#T003#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 22.81514337325183,
+            "required_min": 24.261601874115165,
+            "task_ids": [
+              "JOB_mugafdz8#T000#G0002",
+              "JOB_mugafdz8#T000#G0001",
+              "JOB_mugafdz8#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 28.809578403607517,
+            "required_min": 29.809578403774186,
+            "task_ids": [
+              "JOB_mug9k0vy#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 57.91777141405975,
+            "required_min": 58.917771414226415,
+            "task_ids": [
+              "JOB_mugaf9eh#T000#G0000",
+              "JOB_mugaf9eh#T001#G0000",
+              "JOB_mugaf9eh#T002#G0000",
+              "JOB_mugaf9eh#T003#G0000",
+              "JOB_mugaf9eh#T004#G0000",
+              "JOB_mugaf9eh#T005#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 89.26060085654689,
+            "required_min": 90.26060085671355,
+            "task_ids": [
+              "JOB_mugaf9eh#T006#G0000",
+              "JOB_mugaf9eh#T007#G0000",
+              "JOB_mugaf9eh#T008#G0000",
+              "JOB_mugaf9eh#T009#G0000",
+              "JOB_mugaf9eh#T010#G0000",
+              "JOB_mugaf9eh#T011#G0000",
+              "JOB_mugaf9eh#T012#G0000",
+              "JOB_mugaf9eh#T013#G0000",
+              "JOB_mugaf9eh#T014#G0000",
+              "JOB_mugaf9eh#T014#G0001",
+              "JOB_mugaf9eh#T015#G0000",
+              "JOB_mugaf9eh#T015#G0001",
+              "JOB_mugaf9eh#T016#G0000",
+              "JOB_mugaf9eh#T017#G0000",
+              "JOB_mugaf9eh#T018#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 90.62664892899896,
+            "required_min": 91.62664892916563,
+            "task_ids": [
+              "JOB_mugaf9eh#T019#G0000",
+              "JOB_mugaf9eh#T020#G0000",
+              "JOB_mugaf9eh#T021#G0000",
+              "JOB_mugaf9eh#T022#G0000",
+              "JOB_mugaf9eh#T023#G0000",
+              "JOB_mugaf9eh#T024#G0000",
+              "JOB_mugaf9eh#T025#G0000",
+              "JOB_mugaf9eh#T028#G0000",
+              "JOB_mugaf9eh#T027#G0000",
+              "JOB_mugaf9eh#T026#G0000"
+            ]
+          }
+        ],
+        "reserve_violations": []
+      }
+    },
+    {
+      "experiment": "50x_lambda_100000",
+      "elapsed_s": 17.139258184004575,
+      "search": {
+        "seed_s": 0.08493380004074425,
+        "initial_objective_s": 15493.7,
+        "search_s": 16.894255465944298,
+        "solutions_seen": 137,
+        "branches": 14589,
+        "failures": 512,
+        "branch_limit": 100000,
+        "status": 1,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 20014645,
+        "table_read_limit": 20000000,
+        "emergency_time_limit_s": 6000,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false
+      },
+      "best": {
+        "makespan_min": 257.8050211996056,
+        "total_flight_min": 402.07498626917254,
+        "sorties": [
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 26.47620257835609,
+            "required_min": 29.034453495574244,
+            "task_ids": [
+              "JOB_mug9k0vy#T005#G0000",
+              "JOB_mug9k0vy#T004#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 24.843732000821827,
+            "required_min": 25.843732000988492,
+            "task_ids": [
+              "JOB_mugady20#T000#G0000",
+              "JOB_mugady20#T000#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 26.724752823061795,
+            "required_min": 29.587986286475907,
+            "task_ids": [
+              "JOB_mug9k0vy#T001#G0000",
+              "JOB_mug9k0vy#T003#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 32.059437674068,
+            "required_min": 33.059437674234665,
+            "task_ids": [
+              "JOB_mugady20#T001#G0001",
+              "JOB_mugady20#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 22.81514337325183,
+            "required_min": 24.261601874115165,
+            "task_ids": [
+              "JOB_mugafdz8#T000#G0002",
+              "JOB_mugafdz8#T000#G0001",
+              "JOB_mugafdz8#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 31.350696620007373,
+            "required_min": 32.350696620174034,
+            "task_ids": [
+              "JOB_mug9k0vy#T000#G0000",
+              "JOB_mug9k0vy#T002#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 57.91777141405975,
+            "required_min": 58.917771414226415,
+            "task_ids": [
+              "JOB_mugaf9eh#T000#G0000",
+              "JOB_mugaf9eh#T001#G0000",
+              "JOB_mugaf9eh#T002#G0000",
+              "JOB_mugaf9eh#T003#G0000",
+              "JOB_mugaf9eh#T004#G0000",
+              "JOB_mugaf9eh#T005#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 89.26060085654689,
+            "required_min": 90.26060085671355,
+            "task_ids": [
+              "JOB_mugaf9eh#T006#G0000",
+              "JOB_mugaf9eh#T007#G0000",
+              "JOB_mugaf9eh#T008#G0000",
+              "JOB_mugaf9eh#T009#G0000",
+              "JOB_mugaf9eh#T010#G0000",
+              "JOB_mugaf9eh#T011#G0000",
+              "JOB_mugaf9eh#T012#G0000",
+              "JOB_mugaf9eh#T013#G0000",
+              "JOB_mugaf9eh#T014#G0000",
+              "JOB_mugaf9eh#T014#G0001",
+              "JOB_mugaf9eh#T015#G0000",
+              "JOB_mugaf9eh#T015#G0001",
+              "JOB_mugaf9eh#T016#G0000",
+              "JOB_mugaf9eh#T017#G0000",
+              "JOB_mugaf9eh#T018#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 90.62664892899896,
+            "required_min": 91.62664892916563,
+            "task_ids": [
+              "JOB_mugaf9eh#T019#G0000",
+              "JOB_mugaf9eh#T020#G0000",
+              "JOB_mugaf9eh#T021#G0000",
+              "JOB_mugaf9eh#T022#G0000",
+              "JOB_mugaf9eh#T023#G0000",
+              "JOB_mugaf9eh#T024#G0000",
+              "JOB_mugaf9eh#T025#G0000",
+              "JOB_mugaf9eh#T028#G0000",
+              "JOB_mugaf9eh#T027#G0000",
+              "JOB_mugaf9eh#T026#G0000"
+            ]
+          }
+        ],
+        "reserve_violations": []
+      }
+    }
+  ],
+  "model_ablations": [
+    {
+      "experiment": "production_exact_order_in_current_graph",
+      "makespan_min": 236.24751891230102,
+      "total_flight_min": 396.80918264267916,
+      "sorties": [
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 31.78284107701127,
+          "required_min": 32.782841077177935,
+          "task_ids": [
+            "JOB_mug9k0vy#T000#G0000",
+            "JOB_mug9k0vy#T001#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 28.83773099134671,
+          "required_min": 30.703998408674387,
+          "task_ids": [
+            "JOB_mug9k0vy#T002#G0000",
+            "JOB_mug9k0vy#T003#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 26.47620257835609,
+          "required_min": 29.37890132545184,
+          "task_ids": [
+            "JOB_mug9k0vy#T004#G0000",
+            "JOB_mug9k0vy#T005#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 42.071466573544996,
+          "required_min": 43.07146657371166,
+          "task_ids": [
+            "JOB_mugady20#T000#G0001",
+            "JOB_mugady20#T000#G0000",
+            "JOB_mugady20#T001#G0000",
+            "JOB_mugady20#T001#G0001"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 41.393422510119066,
+          "required_min": 42.39342251028573,
+          "task_ids": [
+            "JOB_mugafdz8#T000#G0000",
+            "JOB_mugafdz8#T000#G0001",
+            "JOB_mugafdz8#T000#G0002"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 135.2225185055569,
+          "required_min": 136.22251850572357,
+          "task_ids": [
+            "JOB_mugaf9eh#T000#G0000",
+            "JOB_mugaf9eh#T001#G0000",
+            "JOB_mugaf9eh#T002#G0000",
+            "JOB_mugaf9eh#T003#G0000",
+            "JOB_mugaf9eh#T004#G0000",
+            "JOB_mugaf9eh#T005#G0000",
+            "JOB_mugaf9eh#T006#G0000",
+            "JOB_mugaf9eh#T007#G0000",
+            "JOB_mugaf9eh#T008#G0000",
+            "JOB_mugaf9eh#T009#G0000",
+            "JOB_mugaf9eh#T010#G0000",
+            "JOB_mugaf9eh#T011#G0000",
+            "JOB_mugaf9eh#T012#G0000",
+            "JOB_mugaf9eh#T013#G0000",
+            "JOB_mugaf9eh#T014#G0000",
+            "JOB_mugaf9eh#T014#G0001",
+            "JOB_mugaf9eh#T015#G0000",
+            "JOB_mugaf9eh#T015#G0001",
+            "JOB_mugaf9eh#T016#G0000",
+            "JOB_mugaf9eh#T017#G0000",
+            "JOB_mugaf9eh#T018#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 91.02500040674413,
+          "required_min": 92.02500040691078,
+          "task_ids": [
+            "JOB_mugaf9eh#T019#G0000",
+            "JOB_mugaf9eh#T020#G0000",
+            "JOB_mugaf9eh#T021#G0000",
+            "JOB_mugaf9eh#T022#G0000",
+            "JOB_mugaf9eh#T023#G0000",
+            "JOB_mugaf9eh#T024#G0000",
+            "JOB_mugaf9eh#T025#G0000",
+            "JOB_mugaf9eh#T026#G0000",
+            "JOB_mugaf9eh#T027#G0000",
+            "JOB_mugaf9eh#T028#G0000"
+          ]
+        }
+      ],
+      "reserve_violations": [
+        {
+          "code": "routing_return_reserve",
+          "sortie_id": "UAV_mugacog6_S4",
+          "required_s": 2584.2879944226997,
+          "usable_s": 2304.0
+        },
+        {
+          "code": "routing_return_reserve",
+          "sortie_id": "UAV_mugacog6_S5",
+          "required_s": 2543.605350617144,
+          "usable_s": 2304.0
+        },
+        {
+          "code": "routing_return_reserve",
+          "sortie_id": "UAV_mugaekoc_S1",
+          "required_s": 8173.351110343414,
+          "usable_s": 6912.0
+        }
+      ]
+    },
+    {
+      "experiment": "production_order_without_25pct_transit_padding",
+      "makespan_min": 221.52245500235261,
+      "total_flight_min": 363.9580978417382,
+      "sorties": [
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 29.014840988653493,
+          "required_min": 30.014840988820158,
+          "task_ids": [
+            "JOB_mug9k0vy#T000#G0000",
+            "JOB_mug9k0vy#T001#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 26.644795782697884,
+          "required_min": 27.64479578286455,
+          "task_ids": [
+            "JOB_mug9k0vy#T002#G0000",
+            "JOB_mug9k0vy#T003#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 24.74057007083561,
+          "required_min": 25.740570071002285,
+          "task_ids": [
+            "JOB_mug9k0vy#T004#G0000",
+            "JOB_mug9k0vy#T005#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 36.730207983927315,
+          "required_min": 37.73020798409397,
+          "task_ids": [
+            "JOB_mugady20#T000#G0001",
+            "JOB_mugady20#T000#G0000",
+            "JOB_mugady20#T001#G0000",
+            "JOB_mugady20#T001#G0001"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 35.30522801327133,
+          "required_min": 36.30522801343802,
+          "task_ids": [
+            "JOB_mugafdz8#T000#G0000",
+            "JOB_mugafdz8#T000#G0001",
+            "JOB_mugafdz8#T000#G0002"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 126.45360886514021,
+          "required_min": 127.45360886530688,
+          "task_ids": [
+            "JOB_mugaf9eh#T000#G0000",
+            "JOB_mugaf9eh#T001#G0000",
+            "JOB_mugaf9eh#T002#G0000",
+            "JOB_mugaf9eh#T003#G0000",
+            "JOB_mugaf9eh#T004#G0000",
+            "JOB_mugaf9eh#T005#G0000",
+            "JOB_mugaf9eh#T006#G0000",
+            "JOB_mugaf9eh#T007#G0000",
+            "JOB_mugaf9eh#T008#G0000",
+            "JOB_mugaf9eh#T009#G0000",
+            "JOB_mugaf9eh#T010#G0000",
+            "JOB_mugaf9eh#T011#G0000",
+            "JOB_mugaf9eh#T012#G0000",
+            "JOB_mugaf9eh#T013#G0000",
+            "JOB_mugaf9eh#T014#G0000",
+            "JOB_mugaf9eh#T014#G0001",
+            "JOB_mugaf9eh#T015#G0000",
+            "JOB_mugaf9eh#T015#G0001",
+            "JOB_mugaf9eh#T016#G0000",
+            "JOB_mugaf9eh#T017#G0000",
+            "JOB_mugaf9eh#T018#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 85.0688461372124,
+          "required_min": 86.06884613737905,
+          "task_ids": [
+            "JOB_mugaf9eh#T019#G0000",
+            "JOB_mugaf9eh#T020#G0000",
+            "JOB_mugaf9eh#T021#G0000",
+            "JOB_mugaf9eh#T022#G0000",
+            "JOB_mugaf9eh#T023#G0000",
+            "JOB_mugaf9eh#T024#G0000",
+            "JOB_mugaf9eh#T025#G0000",
+            "JOB_mugaf9eh#T026#G0000",
+            "JOB_mugaf9eh#T027#G0000",
+            "JOB_mugaf9eh#T028#G0000"
+          ]
+        }
+      ],
+      "reserve_violations": [
+        {
+          "code": "routing_return_reserve",
+          "sortie_id": "UAV_mugaekoc_S1",
+          "required_s": 7647.216531918412,
+          "usable_s": 6912.0
+        }
+      ]
+    },
+    {
+      "experiment": "solver_without_25pct_transit_padding",
+      "search": {
+        "seed_s": 0.13797148899175227,
+        "initial_objective_s": 13308.4,
+        "search_s": 0.6096682150382549,
+        "solutions_seen": 19,
+        "branches": 2008,
+        "failures": 120,
+        "branch_limit": 5000,
+        "status": 2,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400002,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false
+      },
+      "best": {
+        "makespan_min": 220.38510209777127,
+        "total_flight_min": 372.4611057309201,
+        "sorties": [
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 20.42527618169,
+            "required_min": 21.425276181856663,
+            "task_ids": [
+              "JOB_mugady20#T001#G0001",
+              "JOB_mugady20#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 24.857885187427083,
+            "required_min": 25.85788518759375,
+            "task_ids": [
+              "JOB_mug9k0vy#T004#G0000",
+              "JOB_mug9k0vy#T003#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 29.241291999920325,
+            "required_min": 30.24129200008699,
+            "task_ids": [
+              "JOB_mugady20#T000#G0000",
+              "JOB_mugady20#T000#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 27.800504735601113,
+            "required_min": 28.800504735767777,
+            "task_ids": [
+              "JOB_mugafdz8#T000#G0000",
+              "JOB_mugafdz8#T000#G0001",
+              "JOB_mugafdz8#T000#G0002"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 32.38577399561222,
+            "required_min": 33.385773995778884,
+            "task_ids": [
+              "JOB_mug9k0vy#T005#G0000",
+              "JOB_mug9k0vy#T002#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 27.3652715328981,
+            "required_min": 28.365271533064767,
+            "task_ids": [
+              "JOB_mug9k0vy#T000#G0000",
+              "JOB_mug9k0vy#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 102.86256218545829,
+            "required_min": 103.86256218562495,
+            "task_ids": [
+              "JOB_mugaf9eh#T026#G0000",
+              "JOB_mugaf9eh#T027#G0000",
+              "JOB_mugaf9eh#T028#G0000",
+              "JOB_mugaf9eh#T025#G0000",
+              "JOB_mugaf9eh#T024#G0000",
+              "JOB_mugaf9eh#T023#G0000",
+              "JOB_mugaf9eh#T022#G0000",
+              "JOB_mugaf9eh#T021#G0000",
+              "JOB_mugaf9eh#T020#G0000",
+              "JOB_mugaf9eh#T019#G0000",
+              "JOB_mugaf9eh#T018#G0000",
+              "JOB_mugaf9eh#T017#G0000",
+              "JOB_mugaf9eh#T016#G0000",
+              "JOB_mugaf9eh#T015#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 107.52253991231298,
+            "required_min": 108.52253991247964,
+            "task_ids": [
+              "JOB_mugaf9eh#T005#G0000",
+              "JOB_mugaf9eh#T006#G0000",
+              "JOB_mugaf9eh#T007#G0000",
+              "JOB_mugaf9eh#T008#G0000",
+              "JOB_mugaf9eh#T009#G0000",
+              "JOB_mugaf9eh#T010#G0000",
+              "JOB_mugaf9eh#T011#G0000",
+              "JOB_mugaf9eh#T012#G0000",
+              "JOB_mugaf9eh#T013#G0000",
+              "JOB_mugaf9eh#T014#G0000",
+              "JOB_mugaf9eh#T014#G0001",
+              "JOB_mugaf9eh#T015#G0000",
+              "JOB_mugaf9eh#T004#G0000",
+              "JOB_mugaf9eh#T003#G0000",
+              "JOB_mugaf9eh#T002#G0000",
+              "JOB_mugaf9eh#T001#G0000",
+              "JOB_mugaf9eh#T000#G0000"
+            ]
+          }
+        ],
+        "reserve_violations": []
+      }
+    },
+    {
+      "experiment": "production_order_without_padding_and_junction_turns_DIAGNOSTIC_ONLY",
+      "makespan_min": 198.74319608087023,
+      "total_flight_min": 339.9312734211957,
+      "sorties": [
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 28.848323424814502,
+          "required_min": 29.84832342498117,
+          "task_ids": [
+            "JOB_mug9k0vy#T000#G0000",
+            "JOB_mug9k0vy#T001#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 26.490077649456605,
+          "required_min": 27.490077649623274,
+          "task_ids": [
+            "JOB_mug9k0vy#T002#G0000",
+            "JOB_mug9k0vy#T003#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 24.605820137634435,
+          "required_min": 25.605820137801107,
+          "task_ids": [
+            "JOB_mug9k0vy#T004#G0000",
+            "JOB_mug9k0vy#T005#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 36.235937768551246,
+          "required_min": 37.23593776871791,
+          "task_ids": [
+            "JOB_mugady20#T000#G0001",
+            "JOB_mugady20#T000#G0000",
+            "JOB_mugady20#T001#G0000",
+            "JOB_mugady20#T001#G0001"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugacog6",
+          "flight_min": 35.00791835986872,
+          "required_min": 36.00791836003537,
+          "task_ids": [
+            "JOB_mugafdz8#T000#G0000",
+            "JOB_mugafdz8#T000#G0001",
+            "JOB_mugafdz8#T000#G0002"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 110.79562143793254,
+          "required_min": 111.7956214380992,
+          "task_ids": [
+            "JOB_mugaf9eh#T000#G0000",
+            "JOB_mugaf9eh#T001#G0000",
+            "JOB_mugaf9eh#T002#G0000",
+            "JOB_mugaf9eh#T003#G0000",
+            "JOB_mugaf9eh#T004#G0000",
+            "JOB_mugaf9eh#T005#G0000",
+            "JOB_mugaf9eh#T006#G0000",
+            "JOB_mugaf9eh#T007#G0000",
+            "JOB_mugaf9eh#T008#G0000",
+            "JOB_mugaf9eh#T009#G0000",
+            "JOB_mugaf9eh#T010#G0000",
+            "JOB_mugaf9eh#T011#G0000",
+            "JOB_mugaf9eh#T012#G0000",
+            "JOB_mugaf9eh#T013#G0000",
+            "JOB_mugaf9eh#T014#G0000",
+            "JOB_mugaf9eh#T014#G0001",
+            "JOB_mugaf9eh#T015#G0000",
+            "JOB_mugaf9eh#T015#G0001",
+            "JOB_mugaf9eh#T016#G0000",
+            "JOB_mugaf9eh#T017#G0000",
+            "JOB_mugaf9eh#T018#G0000"
+          ]
+        },
+        {
+          "uav_id": "UAV_mugaekoc",
+          "flight_min": 77.9475746429377,
+          "required_min": 78.94757464310436,
+          "task_ids": [
+            "JOB_mugaf9eh#T019#G0000",
+            "JOB_mugaf9eh#T020#G0000",
+            "JOB_mugaf9eh#T021#G0000",
+            "JOB_mugaf9eh#T022#G0000",
+            "JOB_mugaf9eh#T023#G0000",
+            "JOB_mugaf9eh#T024#G0000",
+            "JOB_mugaf9eh#T025#G0000",
+            "JOB_mugaf9eh#T026#G0000",
+            "JOB_mugaf9eh#T027#G0000",
+            "JOB_mugaf9eh#T028#G0000"
+          ]
+        }
+      ],
+      "reserve_violations": []
+    },
+    {
+      "experiment": "solver_without_padding_and_junction_turns_DIAGNOSTIC_ONLY",
+      "search": {
+        "seed_s": 0.10757109499536455,
+        "initial_objective_s": 11833.6,
+        "search_s": 0.6030467309756204,
+        "solutions_seen": 23,
+        "branches": 2429,
+        "failures": 100,
+        "branch_limit": 5000,
+        "status": 2,
+        "logical_nodes": 160,
+        "reload_copies": {
+          "UAV_mugacog6": 17,
+          "UAV_mugacog6_copy1": 17,
+          "UAV_mugacog6_copy1_copy1": 17,
+          "UAV_mugaekoc": 5
+        },
+        "greedy_missing": [],
+        "finalists": 4,
+        "reload_copy_limit_reached": [],
+        "depth": "standard",
+        "seed_candidates": 3,
+        "table_reads": 400000,
+        "table_read_limit": 400000,
+        "emergency_time_limit_s": 120,
+        "emergency_time_limit_reached": false,
+        "stop_policy": "deterministic branch/table-read limits; emergency time limit separately",
+        "seed": 20260918,
+        "diagnostic": false
+      },
+      "best": {
+        "makespan_min": 196.85510214871212,
+        "total_flight_min": 340.7022528226344,
+        "sorties": [
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 24.60582013763444,
+            "required_min": 25.605820137801107,
+            "task_ids": [
+              "JOB_mug9k0vy#T004#G0000",
+              "JOB_mug9k0vy#T005#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6",
+            "flight_min": 22.291316755900564,
+            "required_min": 23.29131675606723,
+            "task_ids": [
+              "JOB_mugady20#T001#G0000",
+              "JOB_mugady20#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 24.130449711626962,
+            "required_min": 25.13044971179363,
+            "task_ids": [
+              "JOB_mug9k0vy#T003#G0000",
+              "JOB_mug9k0vy#T002#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 27.505224867147934,
+            "required_min": 28.505224867314602,
+            "task_ids": [
+              "JOB_mugafdz8#T000#G0002",
+              "JOB_mugafdz8#T000#G0001",
+              "JOB_mugafdz8#T000#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1",
+            "flight_min": 28.108170771748814,
+            "required_min": 29.108170771915475,
+            "task_ids": [
+              "JOB_mugady20#T001#G0001",
+              "JOB_mugady20#T000#G0001"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugacog6_copy1_copy1",
+            "flight_min": 27.20616842986357,
+            "required_min": 28.206168430030235,
+            "task_ids": [
+              "JOB_mug9k0vy#T000#G0000",
+              "JOB_mug9k0vy#T001#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 109.25561131943694,
+            "required_min": 110.2556113196036,
+            "task_ids": [
+              "JOB_mugaf9eh#T000#G0000",
+              "JOB_mugaf9eh#T001#G0000",
+              "JOB_mugaf9eh#T002#G0000",
+              "JOB_mugaf9eh#T003#G0000",
+              "JOB_mugaf9eh#T004#G0000",
+              "JOB_mugaf9eh#T005#G0000",
+              "JOB_mugaf9eh#T006#G0000",
+              "JOB_mugaf9eh#T007#G0000",
+              "JOB_mugaf9eh#T008#G0000",
+              "JOB_mugaf9eh#T009#G0000",
+              "JOB_mugaf9eh#T010#G0000",
+              "JOB_mugaf9eh#T011#G0000",
+              "JOB_mugaf9eh#T012#G0000",
+              "JOB_mugaf9eh#T013#G0000",
+              "JOB_mugaf9eh#T014#G0000",
+              "JOB_mugaf9eh#T014#G0001",
+              "JOB_mugaf9eh#T015#G0000",
+              "JOB_mugaf9eh#T015#G0001",
+              "JOB_mugaf9eh#T016#G0000",
+              "JOB_mugaf9eh#T017#G0000",
+              "JOB_mugaf9eh#T018#G0000"
+            ]
+          },
+          {
+            "uav_id": "UAV_mugaekoc",
+            "flight_min": 77.5994908292752,
+            "required_min": 78.59949082944186,
+            "task_ids": [
+              "JOB_mugaf9eh#T019#G0000",
+              "JOB_mugaf9eh#T020#G0000",
+              "JOB_mugaf9eh#T021#G0000",
+              "JOB_mugaf9eh#T022#G0000",
+              "JOB_mugaf9eh#T023#G0000",
+              "JOB_mugaf9eh#T024#G0000",
+              "JOB_mugaf9eh#T025#G0000",
+              "JOB_mugaf9eh#T028#G0000",
+              "JOB_mugaf9eh#T027#G0000",
+              "JOB_mugaf9eh#T026#G0000"
+            ]
+          }
+        ],
+        "reserve_violations": []
+      }
+    }
+  ],
+  "current_h3_on_production_msu": {
+    "elapsed_s": 36.922150137019344,
+    "validation": {
+      "passed": true,
+      "status": "SAFE",
+      "violations": [],
+      "metrics": {
+        "distance_m": 275312.19456615136,
+        "total_flight_s": 20855.550014972687,
+        "makespan_s": 12306.108584880829,
+        "airborne_span_s": 12306.108584880829,
+        "coverage_percent": 100.0,
+        "required_area_m2": 70753564.53938845,
+        "covered_area_m2": 70753564.53938845,
+        "sortie_count": 7,
+        "per_job": {
+          "JOB_mug9k0vy": {
+            "required_area_m2": 8821453.32666627,
+            "covered_area_m2": 8821453.32666627,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugady20": {
+            "required_area_m2": 2539587.5601959103,
+            "covered_area_m2": 2539587.56019591,
+            "coverage_percent": 99.99999999999997
+          },
+          "JOB_mugaf9eh": {
+            "required_area_m2": 57439189.16001186,
+            "covered_area_m2": 57439189.16001186,
+            "coverage_percent": 100.0
+          },
+          "JOB_mugafdz8": {
+            "required_area_m2": 1953334.4925144129,
+            "covered_area_m2": 1953334.492514413,
+            "coverage_percent": 100.0
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+      "not_checked": [
+        "discrete_photo_front_overlap",
+        "side_overlap_quality",
+        "aircraft_dynamics",
+        "off_track_sensor_terrain_occlusion",
+        "real_operational_permissions",
+        "global_optimality"
+      ],
+      "coverage_policy": {
+        "required_fraction": 1.0,
+        "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+        "input_fractional_tolerance_does_not_relax_service_coverage": true
+      },
+      "claimed_status": "SAFE",
+      "certificate": {
+        "schema": "geoscan.h3.certificate.v1",
+        "validator_version": "geoscan.h3.validator.v1",
+        "validator_source_sha256": "fe67908a9ca8c6cd3df14dcb9c25aa219d7978e5d821d69686390b9f1c7e23dc",
+        "validator_gate_source_sha256": "37b382443da91fc4c8b58616b17bcb846b98cd8d5695e3b12060d959ab71b038",
+        "validator_geometry_source_sha256": "bb75fad87be93e2f16401c9b85dfe8783419e35f85db8c107791eb5ee03d3e4d",
+        "software_versions": {
+          "python": "3.12.3",
+          "numpy": "1.26.4",
+          "shapely": "2.0.7",
+          "pyproj": "3.8.0",
+          "rasterio": "1.3.11"
+        },
+        "issued_at": "2026-09-27T06:35:46.589936+00:00",
+        "plan_id": null,
+        "scene_id": "S01_msu_100km2",
+        "objective": "makespan",
+        "status": "SAFE",
+        "input_sha256": "c6a84cc5e4ff65e720316d9bb388be6d6f0340aade3f900245ab19abeb387d2b",
+        "input_files_sha256": {
+          "metadata.json": "8cb27d1c4d1583b7c0ddd71a5fe33ee49f844059b1039a5d394891060558c95f",
+          "mission.json": "1821ec91509f499552c99d109b7f76589484076e743d9b6dd773017c02e15c72",
+          "fleet.json": "4791b247dc42dd767d03c4a861cf5b1edeb957e2d5657aa1706b2d08cf31c5b2",
+          "payload_catalog.json": "01fb84fc7286592519096a807761e6ba0353a98dab5f9f51102a848566e9f259",
+          "survey_areas.geojson": "cad34b2b5237710c18dd7d1d9755614896d2498de2dc4a66404d6c560c81b1e4",
+          "allowed_airspace.geojson": "709d0013216ae2bde4a8a515371540518cdb789decaa4ec26d888365478bc0a3",
+          "no_fly_zones.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "temporal_airspace.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "obstacles.geojson": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1",
+          "landing_sites.geojson": "9b9f30761eca5c777a2dc2c5391d7b99712720bf4d6bb53b301f1b0cb5324963",
+          "dem.tif": "752d5b2dd3769afd9bbac6af5decddfde681550aededd641dbe6a9ab69c64246"
+        },
+        "result_sha256": "1cb64b98909e9251c2e70e6af278cc2bb70ae050856430e73fda72df908d9439",
+        "metrics": {
+          "distance_m": 275312.19456615136,
+          "total_flight_s": 20855.550014972687,
+          "makespan_s": 12306.108584880829,
+          "airborne_span_s": 12306.108584880829,
+          "coverage_percent": 100.0,
+          "required_area_m2": 70753564.53938845,
+          "covered_area_m2": 70753564.53938845,
+          "sortie_count": 7,
+          "per_job": {
+            "JOB_mug9k0vy": {
+              "required_area_m2": 8821453.32666627,
+              "covered_area_m2": 8821453.32666627,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugady20": {
+              "required_area_m2": 2539587.5601959103,
+              "covered_area_m2": 2539587.56019591,
+              "coverage_percent": 99.99999999999997
+            },
+            "JOB_mugaf9eh": {
+              "required_area_m2": 57439189.16001186,
+              "covered_area_m2": 57439189.16001186,
+              "coverage_percent": 100.0
+            },
+            "JOB_mugafdz8": {
+              "required_area_m2": 1953334.4925144129,
+              "covered_area_m2": 1953334.492514413,
+              "coverage_percent": 100.0
+            }
+          },
+          "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+          "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+        },
+        "coverage_policy": {
+          "required_fraction": 1.0,
+          "numerical_area_tolerance": "max(0.001 square metre, required_area * 1e-12)",
+          "input_fractional_tolerance_does_not_relax_service_coverage": true
+        },
+        "checks": [
+          "input_schema",
+          "original_required_coverage",
+          "full_segment_airspace",
+          "raster_cell_surface_clearance",
+          "continuous_temporal_airspace",
+          "continuous_pairwise_separation",
+          "resource_and_landing_suffix",
+          "payload_gsd",
+          "site_roles",
+          "service_and_mission_windows",
+          "wind_limits",
+          "declared_survey_turn_buffers",
+          "metric_claims"
+        ],
+        "model_scope": "Independent validation of the explicit demonstration trajectory model; not an operational flight certificate",
+        "not_checked": [
+          "discrete_photo_front_overlap",
+          "side_overlap_quality",
+          "aircraft_dynamics",
+          "off_track_sensor_terrain_occlusion",
+          "real_operational_permissions",
+          "global_optimality"
+        ],
+        "fingerprint_sha256": "457399a779f30d8251e51f533474fd5846a893802f7fce6c052b7bebd307cc27"
+      },
+      "validator_version": "geoscan.h3.validator.v1",
+      "validated_at": "2026-09-27T06:35:46.589936+00:00",
+      "input_sha256": "c6a84cc5e4ff65e720316d9bb388be6d6f0340aade3f900245ab19abeb387d2b",
+      "result_sha256": "1cb64b98909e9251c2e70e6af278cc2bb70ae050856430e73fda72df908d9439"
+    }
+  },
+  "two_sortie_exact_probe": {
+    "experiment": "fixed_plane_31_required_transects_max_two_sorties_all_other_transects_optional",
+    "status": "UNKNOWN",
+    "wall_s": 49.03811120905448,
+    "branches": 175419,
+    "conflicts": 183,
+    "best_bound_min": 7.9783333333333335,
+    "response": "CpSolverResponse summary:\nstatus: UNKNOWN\nobjective: 144240\nbest_bound: 4787\nintegers: 8190\nbooleans: 15849\nconflicts: 183\nbranches: 175419\npropagations: 15502027\ninteger_propagations: 8817107\nrestarts: 40376\nlp_iterations: 19704\nwalltime: 48.9472\nusertime: 48.9472\ndeterministic_time: 10.0018\ngap_integral: 10.2624\n",
+    "scope": "Isolated fixed-plane table subproblem, not a claim about every full mission schedule."
+  },
+  "interpretation": {
+    "old_two_sortie_route_rejected_by_current_graph_resource_model": true,
+    "two_sorties_globally_impossible_proved": false,
+    "msu_makespan_affected_by_deconfliction": false,
+    "msu_44_survey_transects_identical": true,
+    "production_reference_40s_matches_fresh_60s_route": true,
+    "ablations_are_not_deployed_and_not_full_H3_validated": true
+  },
+  "docs_sources": [
+    "https://developers.google.com/optimization/routing/routing_options",
+    "https://developers.google.com/optimization/routing/routing_tasks"
+  ]
+}

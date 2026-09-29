@@ -1,0 +1,110 @@
+{
+  "input_dir": "/root/h3/src/gmp/scenario_templates/S17_MSU_geo401_RGB_and_Lidar_alotofZones/input",
+  "input_sha256": "233da9c184d5b8dcf815f30fa40db735235f53ec3acb02e998dce3a9982e94ec",
+  "scene_id": "S01_msu_100km2",
+  "tasks": 117,
+  "transects": 384,
+  "h1_s": 4.298849473008886,
+  "scene_sidecar_s": 0.02737744909245521,
+  "preparation": {
+    "preparation_s": 5.759077013004571,
+    "profiles": [
+      {
+        "model": "geoscan_401",
+        "uav_ids": [
+          "UAV_mugb19r3_copy1",
+          "UAV_mugb19r3_copy1_copy1"
+        ],
+        "task_variants": 370,
+        "valid_variants": 370,
+        "grid_nodes": 17292,
+        "graph_sources": 343,
+        "endpoint_pairs": 140625,
+        "detailed_tasks_s": 0.3624301020754501,
+        "grid_and_return_field_s": 0.21199532703030854,
+        "task_return_thresholds_s": 1.2376894230255857,
+        "transition_matrix_s": 2.510417755926028
+      },
+      {
+        "model": "geoscan_201",
+        "uav_ids": [
+          "UAV_mugb1t5y"
+        ],
+        "task_variants": 82,
+        "valid_variants": 82,
+        "grid_nodes": 15750,
+        "graph_sources": 87,
+        "endpoint_pairs": 7569,
+        "detailed_tasks_s": 0.05318760103546083,
+        "grid_and_return_field_s": 0.4740785158937797,
+        "task_return_thresholds_s": 0.22175096301361918,
+        "transition_matrix_s": 0.6234536279225722
+      }
+    ],
+    "config": {
+      "grid_step_m": 100.0,
+      "transit_factor": 1.25,
+      "transit_height_margin_m": 30.0,
+      "horizontal_margin_m": 10.0,
+      "return_margin_s": 60.0,
+      "max_grid_nodes": 100000
+    },
+    "input_fingerprint": "108d48dacade37ab4eaa0f7fda55a7d40a828fee360f60c2e6aefea9073b87eb"
+  },
+  "first_evaluation_s": 0.11327769095078111,
+  "input_to_first_estimate_s": 10.199581403052434,
+  "repeat_same_plan": {
+    "count": 100,
+    "mean_s": 0.003451110479654744,
+    "p95_s": 0.005022807349450885,
+    "max_s": 0.04568314296193421
+  },
+  "different_fixed_plans": {
+    "count": 100,
+    "mean_s": 0.04171919228276238,
+    "p95_s": 0.054786061699269334,
+    "max_s": 0.11018819198943675
+  },
+  "different_plan_statuses": {
+    "ESTIMATE_REJECTED": 100
+  },
+  "example_plan": {
+    "status": "ESTIMATE_REJECTED",
+    "makespan_s": 150872.42843067693,
+    "sorties": 117,
+    "violations": {
+      "resource_or_return_reserve": 69,
+      "mission_window": 80
+    }
+  },
+  "full_transit_comparison": {
+    "sample_count": 1000,
+    "wall_s": 2.7831188939744607,
+    "underestimates": [],
+    "min_estimated_to_motion_ratio": 1.3440370047407781,
+    "median_estimated_to_motion_ratio": 1.6327933289591692,
+    "scope": "Full H2 terrain motion on the same chosen grid polylines; excludes H3 safety validation"
+  },
+  "notes": [
+    "No plan optimization or inter-aircraft deconfliction in benchmark.",
+    "Example assignments deliberately fixed; rejection is not proof that the scenario is infeasible.",
+    "first total includes H1 only when --bundle is omitted; imports excluded."
+  ],
+  "measured_at": "2026-09-26",
+  "code_paths": [
+    "h2/src/h2/fixed_estimator.py",
+    "h2/src/h2/estimate_grid.py",
+    "h2/scripts/benchmark_fixed_estimator.py"
+  ],
+  "verification": {
+    "h2_and_h3_integration_regression_passed": 163,
+    "final_estimator_tests_passed": 19,
+    "contract_bundles_passed": 22,
+    "legacy_e2e_scenarios_passed": 4,
+    "h3_controls": {
+      "S00_smoke_rgb": "SAFE",
+      "S05_multi_uav_simultaneous": "AIRCRAFT_CONFLICT",
+      "S05_multi_uav_explicit_sequential": "SAFE"
+    }
+  }
+}

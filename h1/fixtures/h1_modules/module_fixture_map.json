@@ -1,0 +1,20 @@
+{
+  "schema": "gmp.h1.fixture_map.v1",
+  "datasets_root_rel": "../../h3/datasets/geoscan_customer_conformance",
+  "bundle_root_rel": "../../h3/fixtures/h1_h2",
+  "modules": {
+    "M1": ["S00_smoke_rgb"],
+    "M2": ["m2_roundtrip_points.json"],
+    "M3": ["S00_smoke_rgb/dem.tif"],
+    "M4": ["../../h3/src/gmp/kb/uav_catalog_seed_v2.yaml"],
+    "M5": ["m5_payload_rgb.json"],
+    "M6": ["S00_smoke_rgb"],
+    "M7": ["S02_multipolygon_holes"],
+    "M8": ["S08_fixed_wing_turnaround", "m8_nfz_metric.json"],
+    "M9": ["S08_fixed_wing_turnaround"],
+    "M10": ["S09_wind_feasibility"],
+    "M11": ["S00_smoke_rgb"],
+    "M12": ["S09_wind_feasibility", "S11_payload_compatibility"],
+    "M13": ["S00_contract_smoke.bundle.json"]
+  }
+}

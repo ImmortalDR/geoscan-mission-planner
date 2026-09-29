@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "h1-coverage"
+version = "0.1.0"
+description = "H1 Scene Coverage — clean Geoscan coverage → H1H2Bundle"
+requires-python = ">=3.11"
+dependencies = [
+  "shapely>=2.0",
+  "pyproj>=3.6",
+  "rasterio>=1.3",
+  "pyyaml>=6",
+  "pydantic>=2.6",
+  "numpy>=1.26,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+f2c = ["fields2cover>=2.0"]
+
+[project.scripts]
+h1-coverage = "h1_coverage.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+h1_coverage = ["kb/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

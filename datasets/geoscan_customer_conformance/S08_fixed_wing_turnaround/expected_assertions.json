@@ -1,0 +1,5 @@
+{
+  "expected_status": "SAFE_OR_EXPLAINED_INFEASIBLE",
+  "fixed_wing_maneuver_buffer_must_be_checked": true,
+  "nfz_violations": 0
+}

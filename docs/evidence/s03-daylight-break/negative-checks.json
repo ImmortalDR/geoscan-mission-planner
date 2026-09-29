@@ -1,0 +1,21 @@
+[
+  {
+    "case": "before_daylight",
+    "violations": [
+      "DAYLIGHT_WINDOW",
+      "MISSION_WINDOW"
+    ]
+  },
+  {
+    "case": "during_closure",
+    "violations": [
+      "TEMPORAL_AIRSPACE"
+    ]
+  },
+  {
+    "case": "after_daylight",
+    "violations": [
+      "DAYLIGHT_WINDOW"
+    ]
+  }
+]

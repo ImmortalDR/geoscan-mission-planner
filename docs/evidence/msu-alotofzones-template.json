@@ -1,0 +1,42 @@
+{
+  "site": "https://45.87.246.124:9443/",
+  "template": {
+    "id": "S18_MSU_geo401_alotofZones",
+    "name": "MSU_geo401_alotofZones",
+    "description": "MSU surroundings, 100 square km",
+    "purpose_ru": "МГУ: 18 областей съёмки, 4 БВС. Сохранённый сценарий MSU_geo401_RGB_alotofZones.",
+    "role": "user_template",
+    "catalog_badge_ru": "Авторский сценарий",
+    "fleet_count": 4,
+    "objectives": [
+      "makespan",
+      "total_flight"
+    ],
+    "expected_status": null,
+    "real_elevation": true,
+    "legacy_h2_id": null,
+    "legacy_h2_bundle": null,
+    "legacy_task_count": 0,
+    "legacy_fleet_count": 0
+  },
+  "scene_id": "d05d74267d824f42ae7fbddd1e23915a",
+  "input_sha256": "02ce5995c2394b541130df20c8d74ba6502870a74a7f4d003bcffcb27472233f",
+  "template_readonly": true,
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "UAV characteristics contain user assumptions, not manufacturer-certified operating limits.",
+      "Model validation is not a flight permit or proof of real-world operational safety."
+    ],
+    "terrain_available": true
+  },
+  "terrain": {
+    "available": true,
+    "source": "copernicus",
+    "label": "Реальный рельеф · Copernicus DSM",
+    "covers_scene": true,
+    "filename": "dem.tif"
+  },
+  "catalog_count": 19
+}

@@ -1,0 +1,65 @@
+........................................................................ [ 25%]
+........................................................................ [ 50%]
+.................................................................. [ 73%]
+........................................................................ [ 98%]
+.....                                                                    [100%]
+=============================== warnings summary ===============================
+h2/tests/test_fixed_estimator.py: 3 warnings
+h2/tests/test_transit.py: 2 warnings
+tests/safety/test_h3_core.py: 27 warnings
+tests/safety/test_h3_gate.py: 20 warnings
+tests/safety/test_h3_proposals.py: 7 warnings
+  /root/.venv/lib/python3.12/site-packages/rasterio/transform.py:177: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    return Affine.translation(west, north) * Affine.scale(xsize, -ysize)
+
+h2/tests/test_fixed_estimator.py: 10 warnings
+h2/tests/test_transit.py: 3 warnings
+tests/api/test_h3_h2_pipeline.py: 18 warnings
+  /root/h3/h2/src/h2/transit.py:83: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    center = self._transform * (self._values.shape[1]/2, self._values.shape[0]/2)
+
+h2/tests/test_fixed_estimator.py: 20 warnings
+h2/tests/test_transit.py: 6 warnings
+tests/api/test_h3_h2_pipeline.py: 36 warnings
+  /root/h3/h2/src/h2/transit.py:84: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    neighbors = [self._transform * (self._values.shape[1]/2+dx, self._values.shape[0]/2+dy)
+
+h2/tests/test_fixed_estimator.py: 2 warnings
+tests/safety/test_h3_gate.py: 2 warnings
+tests/api/test_h3_h2_pipeline.py: 10 warnings
+  /root/h3/src/gmp/io/dem.py:52: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    col, row = ~self.transform * (rx, ry)
+
+h2/tests/test_fixed_estimator.py: 29 warnings
+tests/api/test_h3_h2_pipeline.py: 89 warnings
+  /root/h3/data/reference_builder.py:47: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    column, row = ~sampler.transform * (x, y)
+
+h2/tests/test_fixed_estimator.py: 2106 warnings
+h2/tests/test_transit.py: 13 warnings
+tests/api/test_h3_h2_pipeline.py: 7128 warnings
+  /root/h3/h2/src/h2/transit.py:110: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    col, row = self._inverse_transform * (rx, ry)
+
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+  /root/h3/h2/tests/test_transit.py:147: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    x, y = affine * (col, row)
+
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+h2/tests/test_transit.py::test_raster_affine_cache_preserves_rotated_cell_boundaries
+  /root/.venv/lib/python3.12/site-packages/rasterio/transform.py:497: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication
+    resx, resy = transform * (x, y)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+287 passed, 9545 warnings, 6 subtests passed in 22.81s

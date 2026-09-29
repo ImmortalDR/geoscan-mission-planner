@@ -1,0 +1,311 @@
+schema_version: 2
+catalog_name: "UAV planning reference catalog"
+retrieved_at: "2026-09-18"
+
+policy:
+  target_vendor: "Geoscan"
+  customer_profiles_override_public_sources: true
+  operational_values_must_apply_reserve: true
+  default_energy_reserve_fraction: 0.20
+  note: >
+    External models are reference/test profiles for heterogeneous solver validation.
+    Their presence in the catalog does not imply Geoscan compatibility.
+
+models:
+  - id: geoscan_201
+    manufacturer: Geoscan
+    model: "Geoscan 201"
+    catalog_role: target_vendor
+    vehicle_class: fixed_wing
+    specs:
+      max_flight_time_min: 180
+      max_route_km: 210
+      cruise_speed_kmh: 80
+      max_payload_kg: 1.5
+      max_wind_ms: 12
+      min_safe_altitude_m: 100
+      max_altitude_msl_m: 4000
+      launch: launcher
+      landing: automatic_parachute
+    payload_classes: [rgb, thermal, video]
+    sources:
+      - title: "Geoscan 201 Video / 2025 release"
+        url: "https://www.geoscan.ru/ru/press-releases/geoskan-predstavil-bespilotnyy-videosamolet-geoskan-201-video-s-umnoy-kameroy-sobstvennoy"
+        priority: official_current
+      - title: "Geoscan 201 Geodesy"
+        url: "https://www.geoscan.ru/ru/products/geoscan201/geo"
+        priority: official_product
+
+  - id: geoscan_401_geo
+    manufacturer: Geoscan
+    model: "Geoscan 401 Geodesy"
+    catalog_role: target_vendor
+    vehicle_class: multirotor
+    specs:
+      max_flight_time_min: 60
+      max_route_km: 30
+      max_speed_kmh: 36
+      max_payload_kg: 2.5
+      max_wind_ms: 12
+      min_safe_altitude_m: 25
+      max_altitude_agl_m: 500
+      takeoff_landing: vertical
+    payload_classes: [rgb, lidar, geophysics]
+    sources:
+      - title: "Geoscan 401 Geodesy"
+        url: "https://www.geoscan.ru/ru/products/geoscan401/geo"
+        priority: official_product
+
+  - id: geoscan_701
+    manufacturer: Geoscan
+    model: "Geoscan 701"
+    catalog_role: target_vendor
+    vehicle_class: fixed_wing
+    specs:
+      max_flight_time_min: 600
+      speed_min_kmh: 80
+      speed_max_kmh: 120
+      max_route_km: 1000
+      max_payload_kg: 3.5
+      max_altitude_msl_m: 4500
+      preparation_time_min: 30
+      launch: launcher
+      landing: parachute_airbag
+      max_wind_ms_reference: 12
+    payload_classes: [rgb, multispectral, video]
+    sources:
+      - title: "Geoscan 701"
+        url: "https://www.geoscan.ru/ru/products/geoscan701"
+        priority: official_product
+      - title: "Geoscan BAS for video monitoring"
+        url: "https://www.geoscan.ru/ru/blog/bas-geoskana-dlya-videomonitoringa"
+        priority: official_current_material
+
+  - id: geoscan_801
+    manufacturer: Geoscan
+    model: "Geoscan 801"
+    catalog_role: target_vendor
+    vehicle_class: multirotor
+    specs:
+      max_flight_time_min: 40
+      max_horizontal_speed_ms: 15
+      max_route_km_reference: 30
+      radio_range_km: 10
+      max_altitude_msl_m: 4000
+      max_wind_ms_operational_default: 10
+      source_conflict_max_wind_ms: [10, 12]
+      takeoff_landing: vertical
+    payload_classes: [rgb_video, thermal]
+    sources:
+      - title: "Geoscan 801"
+        url: "https://www.geoscan.ru/ru/products/geoscan801"
+        priority: official_product
+      - title: "Geoscan BAS for video monitoring"
+        url: "https://www.geoscan.ru/ru/blog/bas-geoskana-dlya-videomonitoringa"
+        priority: official_current_material
+      - title: "Geoscan 801 professional video monitoring"
+        url: "https://www.geoscan.ru/ru/blog/geoscan-801-kvadrokopter-dlya-professionalnogo-videomonitoringa-rossiyskogo-proizvodstva"
+        priority: official_material
+
+  - id: geoscan_gemini
+    manufacturer: Geoscan
+    model: "Geoscan Gemini"
+    catalog_role: target_vendor
+    vehicle_class: multirotor
+    specs:
+      max_flight_time_min: 40
+      max_horizontal_speed_kmh: 54
+      max_wind_ms: 10
+      max_altitude_agl_m: 500
+      max_altitude_msl_m: 4000
+      mass_kg: 2.0
+    payload_classes: [rgb, multispectral]
+    sources:
+      - title: "Geoscan Gemini"
+        url: "https://www.geoscan.ru/ru/products/gemini"
+        priority: official_product
+
+  - id: dji_mavic_3e
+    manufacturer: DJI
+    model: "Mavic 3 Enterprise"
+    catalog_role: reference_test_profile
+    vehicle_class: multirotor
+    specs:
+      max_flight_time_min: 45
+      max_horizontal_speed_ms: 21
+      max_wind_ms: 12
+      max_takeoff_altitude_msl_m: 6000
+    payload_classes: [rgb_mapping]
+    sources:
+      - title: "DJI Mavic 3 Enterprise Specs"
+        url: "https://enterprise.dji.com/mavic-3-enterprise/specs"
+        priority: official_product
+
+  - id: dji_matrice_4e
+    manufacturer: DJI
+    model: "Matrice 4E"
+    catalog_role: reference_test_profile
+    vehicle_class: multirotor
+    specs:
+      max_flight_time_min: 49
+      max_horizontal_speed_ms: 21
+      max_flight_distance_km: 35
+      max_wind_ms: 12
+      max_altitude_msl_m: 6000
+      max_payload_g: 200
+    payload_classes: [rgb_mapping]
+    sources:
+      - title: "DJI Matrice 4 Series Specs"
+        url: "https://enterprise.dji.com/matrice-4-series/specs"
+        priority: official_product
+
+  - id: dji_matrice_30
+    manufacturer: DJI
+    model: "Matrice 30 Series"
+    catalog_role: reference_test_profile
+    vehicle_class: multirotor
+    specs:
+      max_flight_time_min: 41
+      max_horizontal_speed_ms: 23
+      max_wind_ms: 12
+      service_ceiling_m: 5000
+    payload_classes: [rgb_video, thermal]
+    sources:
+      - title: "DJI Matrice 30 Series Specs"
+        url: "https://enterprise.dji.com/matrice-30/specs"
+        priority: official_product
+
+  - id: dji_matrice_350_rtk
+    manufacturer: DJI
+    model: "Matrice 350 RTK"
+    catalog_role: reference_test_profile
+    vehicle_class: multirotor
+    specs:
+      max_flight_time_min: 55
+      max_horizontal_speed_ms: 23
+      max_wind_ms: 12
+      max_flight_altitude_m: 5000
+    payload_classes: [rgb, thermal, lidar, third_party_certified]
+    compatible_payload_examples: [Zenmuse_P1, Zenmuse_L2, Zenmuse_H30T]
+    sources:
+      - title: "DJI Matrice 350 RTK Specs"
+        url: "https://enterprise.dji.com/matrice-350-rtk/specs"
+        priority: official_product
+
+  - id: wingtraone_gen2
+    manufacturer: Wingtra
+    model: "WingtraOne GEN II"
+    catalog_role: reference_test_profile
+    vehicle_class: vtol_fixed_wing
+    specs:
+      max_flight_time_min: 59
+      cruise_speed_ms: 16
+      max_sustained_wind_ms: 12
+      max_wind_gust_ms: 18
+      max_takeoff_weight_kg: 4.8
+      payload_capacity_g: 800
+    payload_classes: [rgb_mapping, multispectral, lidar]
+    sources:
+      - title: "WingtraOne GEN II"
+        url: "https://wingtra.com/wingtraone-gen-ii-drone/"
+        priority: official_product
+
+  - id: quantum_trinity_pro
+    manufacturer: "Quantum Systems"
+    model: "Trinity Pro"
+    catalog_role: reference_test_profile
+    vehicle_class: vtol_fixed_wing
+    specs:
+      max_flight_time_min: 90
+      optimal_cruise_speed_ms: 17
+      max_wind_cruise_ms: 14
+      max_wind_hover_ms: 11
+      max_altitude_msl_m: 5500
+      max_takeoff_weight_kg: 5.75
+      max_area_coverage_ha: 700
+    payload_classes: [rgb, multispectral, lidar, oblique]
+    sources:
+      - title: "Trinity Pro"
+        url: "https://quantum-systems.com/trinity-pro/"
+        priority: official_product
+
+  - id: ageagle_ebee_tac
+    manufacturer: AgEagle
+    model: "eBee TAC"
+    catalog_role: reference_test_profile
+    vehicle_class: fixed_wing
+    specs:
+      max_flight_time_min: 90
+      cruise_speed_min_ms: 11
+      cruise_speed_max_ms: 30
+      max_wind_ms: 12.8
+      max_flight_range_km: 55
+    payload_classes: [rgb_mapping, thermal]
+    sources:
+      - title: "eBee TAC tactical mapping drone"
+        url: "https://ageagle.com/drones/ebee-tac/"
+        priority: official_product
+
+  - id: parrot_anafi_ai
+    manufacturer: Parrot
+    model: "ANAFI Ai"
+    catalog_role: reference_test_profile
+    vehicle_class: multirotor
+    specs:
+      max_flight_time_min: 32
+      max_horizontal_speed_ms: 16
+      max_wind_flight_ms: 14
+      max_wind_takeoff_landing_ms: 12
+      service_ceiling_m: 5000
+      mass_g: 898
+    payload_classes: [rgb_mapping]
+    camera:
+      sensor_mp: 48
+    sources:
+      - title: "Parrot ANAFI Ai Technical Specifications"
+        url: "https://www.parrot.com/en/drones/anafi-ai/technical-documentation/technical-specifications"
+        priority: official_product
+
+  - id: autel_evo_max_4t
+    manufacturer: Autel Robotics
+    model: "EVO Max 4T"
+    catalog_role: reference_test_profile
+    vehicle_class: multirotor
+    specs:
+      max_flight_time_min: 42
+      max_horizontal_speed_ms: 23
+      max_wind_cruise_ms: 12
+      max_wind_takeoff_landing_ms: 10.7
+      max_takeoff_altitude_msl_m: 4000
+    payload_classes: [rgb_video, thermal]
+    sources:
+      - title: "EVO Max 4T Aircraft"
+        url: "https://shop.autelrobotics.com/pages/evo-max-4t-aircraft"
+        priority: official_product
+
+  - id: autel_dragonfish_standard
+    manufacturer: Autel Robotics
+    model: "Dragonfish Standard"
+    catalog_role: reference_test_profile
+    vehicle_class: vtol_fixed_wing
+    specs:
+      max_flight_time_min_product: 120
+      max_flight_time_min_manual_revision: 126
+      max_horizontal_speed_ms: 30
+      max_wind_ms: 12
+      service_ceiling_m: 6000
+      max_payload_kg: 1.5
+    payload_classes: [rgb_video, thermal, multispectral, third_party]
+    sources:
+      - title: "Dragonfish Specifications"
+        url: "https://shop.autelrobotics.com/pages/dragonfish-specification"
+        priority: official_product
+      - title: "Dragonfish Series Standard Aircraft Flight Manual"
+        url: "https://www.autelrobotics.com/wp-content/uploads/2025/01/EN_Dragonfish-Series-Standard-Aircraft-Flight-Manual-V2.2.2.pdf"
+        priority: official_manual
+
+derived_rules:
+  - "Public maximum endurance must be derated before mission planning."
+  - "Customer-provided operational profiles have priority over public specs."
+  - "Conflicting official values are retained, not silently overwritten."
+  - "Reference/test profiles are not a claim of direct hardware compatibility."

@@ -1,0 +1,226 @@
+{
+  "health": {
+    "status": "ready",
+    "storage": "sqlite",
+    "pipeline": "h1_coverage -> h2 -> h3",
+    "components": {
+      "h1_coverage": true,
+      "h2": true
+    },
+    "release": "h2-development"
+  },
+  "runs": [
+    {
+      "scenario": "S19_payload_compatibility_no_wind",
+      "objective": "makespan",
+      "plan_id": "e524995c85c24adc84e417a6a34896aa",
+      "status": "SAFE",
+      "error": null,
+      "wall_s": 16.73,
+      "metrics": {
+        "distance_m": 14338.726983314591,
+        "total_flight_s": 1938.9238104820251,
+        "makespan_s": 535.3069620132446,
+        "airborne_span_s": 535.3069620132446,
+        "coverage_percent": 99.99999999952178,
+        "required_area_m2": 511999.9999999348,
+        "covered_area_m2": 511999.99999748636,
+        "sortie_count": 5,
+        "per_job": {
+          "JOB_RGB": {
+            "required_area_m2": 102399.99999980442,
+            "covered_area_m2": 102399.99999980442,
+            "coverage_percent": 100.0
+          },
+          "JOB_MULTISPECTRAL": {
+            "required_area_m2": 102399.99999996275,
+            "covered_area_m2": 102399.99999996275,
+            "coverage_percent": 100.0
+          },
+          "JOB_THERMAL": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102400.00000006519,
+            "coverage_percent": 100.0
+          },
+          "JOB_LIDAR": {
+            "required_area_m2": 102400.00000006519,
+            "covered_area_m2": 102399.99999998264,
+            "coverage_percent": 99.99999999991938
+          },
+          "JOB_GEOPHYSICS": {
+            "required_area_m2": 102400.00000003725,
+            "covered_area_m2": 102399.99999767136,
+            "coverage_percent": 99.99999999768956
+          }
+        },
+        "terrain_model": "constant_height_per_raster_cell_with_linear_AMSL_segment",
+        "landing_reachability": "proved_by_resource_feasible_verified_suffix"
+      },
+      "graph": {
+        "preparation_s": 4.539256880059838,
+        "vertices": 61,
+        "transects": 28,
+        "orientations": 56,
+        "profiles": [
+          {
+            "id": "2d62b0a05f57a6f38c04b95b8a2d3e16fe2892ceca3f7c4e4b398edb3b654ced",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U01"
+            ],
+            "physical_edges": 524,
+            "expanded_edges": 0,
+            "valid_orientations": 8,
+            "detailed_edges_s": 0.7574850330129266,
+            "total_s": 0.9130397479748353
+          },
+          {
+            "id": "93a84facd1a5029710fbfaee4fa1ec5cf89583f8e513fbba081366d7c5da2eab",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U02"
+            ],
+            "physical_edges": 524,
+            "expanded_edges": 0,
+            "valid_orientations": 12,
+            "detailed_edges_s": 0.7554635560372844,
+            "total_s": 0.9307448520557955
+          },
+          {
+            "id": "01640fa260d0d9cba17f74beb819359a12942544a49659db0cf5af6b4d71894d",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U03"
+            ],
+            "physical_edges": 524,
+            "expanded_edges": 0,
+            "valid_orientations": 20,
+            "detailed_edges_s": 0.7137641470180824,
+            "total_s": 0.8652202000375837
+          },
+          {
+            "id": "420222f6883c48b0863f8ad11d0e74adb87fbd25f3acf7c718dcd411c6563d63",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U04"
+            ],
+            "physical_edges": 524,
+            "expanded_edges": 0,
+            "valid_orientations": 8,
+            "detailed_edges_s": 0.6918448549695313,
+            "total_s": 0.8346981939394027
+          },
+          {
+            "id": "fbbbb294295d57e2854df15a3323d79581be9867936a5d937e7198565b74db3e",
+            "model": "geoscan_401",
+            "uav_ids": [
+              "U05"
+            ],
+            "physical_edges": 524,
+            "expanded_edges": 0,
+            "valid_orientations": 8,
+            "detailed_edges_s": 0.777723551960662,
+            "total_s": 0.9689346220111474
+          }
+        ],
+        "knn": 4,
+        "corners": 20,
+        "base_connections": "all_corners",
+        "base_transfers": false,
+        "corner_spacing_m": 300.0,
+        "corner_policy": "both ends of boundary transects; recursive physical midpoint; existing H1 endpoints only",
+        "long_links_per_corner": 2,
+        "long_link_pairs": 40,
+        "long_link_policy": "two distance bands; angular diversity; stable geometric ordering",
+        "transit_factor": 1.0,
+        "return_margin_s": 60.0,
+        "transit_altitude_policy": "upper concave clearance envelope; exact endpoint AGL; immutable survey AGL",
+        "return_policy": "any active emergency landing site; onward service requires refuel_sites",
+        "path_policy": "heading-aware shortest paths; temporal transit checked/repaired before H3"
+      },
+      "solution_sha256": "cbad0e040e2df2ccc3a10df5fd5c163bcf30197930cf865d25433964db2157fc",
+      "shortcuts": {
+        "transfers_checked": 0,
+        "direct_evaluations": 0,
+        "blocked": 0,
+        "resource_rejections": 0,
+        "accepted": 0,
+        "removed_edges": 0,
+        "saved_flight_s": 0.0,
+        "calculation_s": 0.0,
+        "adopted": false,
+        "before_metrics": {
+          "makespan_s": 535.3069619702001,
+          "total_flight_s": 1938.9238108846425,
+          "total_distance_m": 14338.72698330653,
+          "sortie_count": 5,
+          "used_uav_count": 5
+        },
+        "reason": "no_resource_feasible_improvement",
+        "violations": [],
+        "elapsed_s": 0.007679078029468656
+      },
+      "window_search": {
+        "attempted": false,
+        "adopted": false,
+        "windows": [],
+        "policy": "whole transects; ground during union of temporal closures; intermediate ends must allow refuelling and final landing",
+        "baseline_feasible": true,
+        "baseline_metrics": {
+          "makespan_s": 535.3069619702001,
+          "total_flight_s": 1938.9238108846425,
+          "total_distance_m": 14338.72698330653,
+          "sortie_count": 5,
+          "used_uav_count": 5
+        },
+        "stages": [],
+        "reason": "no_split_operating_window"
+      }
+    }
+  ],
+  "catalog_pair": [
+    {
+      "id": "S11_payload_compatibility",
+      "name": "Five survey classes and explicit compatibility — wind",
+      "description": "Five survey classes and explicit compatibility",
+      "purpose_ru": "Пять классов полезной нагрузки и совместимость. Западный ветер 3 м/с; сравнение с S19 без ветра.",
+      "role": "payload",
+      "catalog_badge_ru": "Группа · 5 БВС",
+      "fleet_count": 5,
+      "objectives": [
+        "makespan"
+      ],
+      "expected_status": "SAFE",
+      "real_elevation": false,
+      "legacy_h2_id": "S11_payload_compatibility",
+      "legacy_h2_bundle": "legacy_h2_bundle.json",
+      "legacy_task_count": 54,
+      "legacy_fleet_count": 5
+    },
+    {
+      "id": "S19_payload_compatibility_no_wind",
+      "name": "Five survey classes and explicit compatibility — no wind",
+      "description": "Five survey classes and explicit compatibility — no wind",
+      "purpose_ru": "Копия S11 без ветра. При равной стоимости направление галсов выбирается по близости к базам подходящих БПЛА.",
+      "role": "payload",
+      "catalog_badge_ru": "Группа · 5 БВС",
+      "fleet_count": 5,
+      "objectives": [
+        "makespan"
+      ],
+      "expected_status": "SAFE",
+      "real_elevation": false,
+      "legacy_h2_id": null,
+      "legacy_h2_bundle": null,
+      "legacy_task_count": 0,
+      "legacy_fleet_count": 0
+    }
+  ],
+  "sources": {
+    "h1/h1_coverage/src/h1_coverage/coverage/grid.py": "f8985087f076ff0a3ba4f4e71074d1fb66a20fcc55fe06cc155c682b1a821e69",
+    "h1/h1_coverage/src/h1_coverage/coverage/sweep.py": "f944241a8d8d28fecff6a0c8d5f90f1c90d7a15f7e28577542a163a39c20f8d9",
+    "h1/h1_coverage/src/h1_coverage/coverage/complete.py": "748f6e88942a52303690df405207c06d10272df24ffaa989f94575ac16dd6e56",
+    "h1/h1_coverage/src/h1_coverage/coverage/candidates.py": "b819f793fb0719c15a77e8f26a478ab42a94f9fd343477b235436ea8e7e30511",
+    "h1/h1_coverage/src/h1_coverage/coverage/engine.py": "bcb68ea97d76147dc42ef17bcedde187ff78671aea852dca0b966a947ccf790b"
+  }
+}

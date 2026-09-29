@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-09-25T15:57:34Z",
+  "docker_version": "29.1.3",
+  "compose_version": "2.40.3+ds1-0ubuntu1~24.04.1",
+  "base_commit": "16441b1a01687034d07bf47f0491f99744650e21",
+  "application_source_changed": false,
+  "compose_sha256": "191b940af0852b9b2057c527aa54a8bbf5f1b8291ee8dc08860d29b5c4d5b4e8",
+  "dockerfile_sha256": "bfd9d7c00733b6532ed3de94f12409ecfc91342f5275d544e9e55b0bfacde750",
+  "smoke_script_sha256": "d975c91cfc263d881d9294189a6d24413e987235ea7b47ca8ea77791b5c47dee",
+  "requirements_lock_sha256": "959dd09e6c948491c168fbd5117ff83147bdd157c94af946674b1d9dfc34667a",
+  "application_image": "sha256:3555f886417ab737279acd65a8b3f91c74b418b70bff9ed6fed6b58cc660fc2d",
+  "postgres_image": "postgres@sha256:efedf3595f1d6f415c08568ba171029bf54052e754cc9f030e3f2412b21f3d67",
+  "nginx_image": "nginx@sha256:a8b39bd9cf0f83869a2162827a0caf6137ddf759d50a171451b335cecc87d236",
+  "build": {
+    "passed": true,
+    "builder": "legacy",
+    "network": "host"
+  },
+  "pip_check_passed": true,
+  "all_services_started": true,
+  "database_connection_tls": "TLSv1.3",
+  "database_role": {
+    "name": "geoscan",
+    "superuser": false,
+    "createdb": false,
+    "createrole": false
+  },
+  "application_restart": {
+    "passed": true,
+    "scenes_before": 1,
+    "plans_before": 1,
+    "database_records_unchanged": true,
+    "plan_and_certificate_retrievable_after_restart": true
+  },
+  "test_environment": {
+    "separate_daemon_and_volumes": true,
+    "https_bind": "127.0.0.1:9443",
+    "daemon_iptables": false,
+    "host_ipv4_forwarding": false,
+    "network_firewall_isolation_verified": false
+  },
+  "github_actions_status": "not_verified"
+}

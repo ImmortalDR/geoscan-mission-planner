@@ -1,0 +1,2964 @@
+{
+  "schema_version": "gmp.h1_h2.v1",
+  "scene_id": "S09_wind_feasibility",
+  "crs": {
+    "metric_epsg": 32637,
+    "axis": "ENU_metres",
+    "note": "Coordinates in metres, not lon/lat"
+  },
+  "generated_at": "2026-09-24T18:30:48Z",
+  "source": "coverage",
+  "fleet": [
+    {
+      "id": "GS201_01",
+      "model": "geoscan_201",
+      "uav_class": "fixed_wing",
+      "ground_speed_ms": 22.0,
+      "operational_endurance_min": 144.0,
+      "max_wind_ms": 12.0,
+      "payload_classes": [
+        "rgb",
+        "thermal"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 300.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 150.0
+    },
+    {
+      "id": "GS701_02",
+      "model": "geoscan_701",
+      "uav_class": "fixed_wing",
+      "ground_speed_ms": 28.0,
+      "operational_endurance_min": 480.0,
+      "max_wind_ms": 12.0,
+      "payload_classes": [
+        "rgb",
+        "multispectral"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 300.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 180.0
+    },
+    {
+      "id": "GS401_03",
+      "model": "geoscan_401_geo",
+      "uav_class": "multirotor",
+      "ground_speed_ms": 8.0,
+      "operational_endurance_min": 48.0,
+      "max_wind_ms": 12.0,
+      "payload_classes": [
+        "rgb",
+        "lidar",
+        "geophysics"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 30.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 80.0
+    },
+    {
+      "id": "GS801_04",
+      "model": "geoscan_801",
+      "uav_class": "multirotor",
+      "ground_speed_ms": 12.0,
+      "operational_endurance_min": 32.0,
+      "max_wind_ms": 10.0,
+      "payload_classes": [
+        "thermal",
+        "rgb_video"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 30.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 100.0
+    },
+    {
+      "id": "GEMINI_05",
+      "model": "geoscan_gemini",
+      "uav_class": "multirotor",
+      "ground_speed_ms": 12.0,
+      "operational_endurance_min": 32.0,
+      "max_wind_ms": 10.0,
+      "payload_classes": [
+        "rgb",
+        "multispectral"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 50.0,
+      "vertical_separation_m": 50.0,
+      "turnaround_buffer_m": 30.0,
+      "start_site": "BASE",
+      "landing_site": "BASE",
+      "takeoff_time_s": 60.0,
+      "landing_time_s": 60.0,
+      "service_time_s": 480.0,
+      "cruise_agl_m": 120.0
+    }
+  ],
+  "sites": [
+    {
+      "id": "BASE",
+      "x": 411650.0,
+      "y": 6177300.0,
+      "role": "both",
+      "candidate": false
+    },
+    {
+      "id": "RES",
+      "x": 418400.00000000006,
+      "y": 6177300.0,
+      "role": "reserve",
+      "candidate": false
+    }
+  ],
+  "mission": {
+    "objectives": [
+      "makespan"
+    ],
+    "window_start": "2026-06-15T09:00:00+03:00",
+    "window_end": "2026-06-15T17:00:00+03:00",
+    "wind": {
+      "speed_ms": 11.0,
+      "direction_deg_from": 270.0
+    },
+    "allow_different_start_end": false,
+    "require_complete_coverage": true,
+    "require_schedule": true
+  },
+  "tasks": [
+    {
+      "id": "WIND_RGB#T000",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000035,
+              6176030.999999999
+            ],
+            [
+              418000.0000000001,
+              6176030.999999999
+            ]
+          ],
+          "length_m": 5999.999999999767,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000035,
+        6176030.999999999
+      ],
+      "exit": [
+        418000.0000000001,
+        6176030.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.00000000035,
+          6176030.999999999
+        ],
+        [
+          418000.0000000001,
+          6176030.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T001",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.0000000001,
+              6176084.999999999
+            ],
+            [
+              412000.00000000035,
+              6176084.999999999
+            ]
+          ],
+          "length_m": 5999.999999999767,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.0000000001,
+        6176084.999999999
+      ],
+      "exit": [
+        412000.00000000035,
+        6176084.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.0000000001,
+          6176084.999999999
+        ],
+        [
+          412000.00000000035,
+          6176084.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T002",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000035,
+              6176138.999999999
+            ],
+            [
+              418000.0000000001,
+              6176138.999999999
+            ]
+          ],
+          "length_m": 5999.999999999767,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000035,
+        6176138.999999999
+      ],
+      "exit": [
+        418000.0000000001,
+        6176138.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.00000000035,
+          6176138.999999999
+        ],
+        [
+          418000.0000000001,
+          6176138.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T003",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.0000000001,
+              6176192.999999999
+            ],
+            [
+              412000.0000000003,
+              6176192.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.0000000001,
+        6176192.999999999
+      ],
+      "exit": [
+        412000.0000000003,
+        6176192.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.0000000001,
+          6176192.999999999
+        ],
+        [
+          412000.0000000003,
+          6176192.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T004",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176246.999999999
+            ],
+            [
+              418000.0000000001,
+              6176246.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6176246.999999999
+      ],
+      "exit": [
+        418000.0000000001,
+        6176246.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6176246.999999999
+        ],
+        [
+          418000.0000000001,
+          6176246.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T005",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.00000000006,
+              6176300.999999999
+            ],
+            [
+              412000.0000000003,
+              6176300.999999999
+            ]
+          ],
+          "length_m": 5999.999999999767,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.00000000006,
+        6176300.999999999
+      ],
+      "exit": [
+        412000.0000000003,
+        6176300.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.00000000006,
+          6176300.999999999
+        ],
+        [
+          412000.0000000003,
+          6176300.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T006",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176354.999999999
+            ],
+            [
+              418000.00000000006,
+              6176354.999999999
+            ]
+          ],
+          "length_m": 5999.999999999767,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6176354.999999999
+      ],
+      "exit": [
+        418000.00000000006,
+        6176354.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6176354.999999999
+        ],
+        [
+          418000.00000000006,
+          6176354.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T007",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.00000000006,
+              6176408.999999999
+            ],
+            [
+              412000.0000000003,
+              6176408.999999999
+            ]
+          ],
+          "length_m": 5999.999999999767,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.00000000006,
+        6176408.999999999
+      ],
+      "exit": [
+        412000.0000000003,
+        6176408.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.00000000006,
+          6176408.999999999
+        ],
+        [
+          412000.0000000003,
+          6176408.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T008",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000003,
+              6176462.999999999
+            ],
+            [
+              418000.00000000006,
+              6176462.999999999
+            ]
+          ],
+          "length_m": 5999.999999999767,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000003,
+        6176462.999999999
+      ],
+      "exit": [
+        418000.00000000006,
+        6176462.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0000000003,
+          6176462.999999999
+        ],
+        [
+          418000.00000000006,
+          6176462.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T009",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.00000000006,
+              6176516.999999999
+            ],
+            [
+              412000.0000000003,
+              6176516.999999999
+            ]
+          ],
+          "length_m": 5999.999999999767,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.00000000006,
+        6176516.999999999
+      ],
+      "exit": [
+        412000.0000000003,
+        6176516.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.00000000006,
+          6176516.999999999
+        ],
+        [
+          412000.0000000003,
+          6176516.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T010",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6176570.999999999
+            ],
+            [
+              418000.00000000006,
+              6176570.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6176570.999999999
+      ],
+      "exit": [
+        418000.00000000006,
+        6176570.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6176570.999999999
+        ],
+        [
+          418000.00000000006,
+          6176570.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T011",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.00000000006,
+              6176624.999999999
+            ],
+            [
+              412000.00000000023,
+              6176624.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.00000000006,
+        6176624.999999999
+      ],
+      "exit": [
+        412000.00000000023,
+        6176624.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.00000000006,
+          6176624.999999999
+        ],
+        [
+          412000.00000000023,
+          6176624.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T012",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6176678.999999999
+            ],
+            [
+              418000.00000000006,
+              6176678.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6176678.999999999
+      ],
+      "exit": [
+        418000.00000000006,
+        6176678.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6176678.999999999
+        ],
+        [
+          418000.00000000006,
+          6176678.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T013",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.00000000006,
+              6176732.999999999
+            ],
+            [
+              412000.00000000023,
+              6176732.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.00000000006,
+        6176732.999999999
+      ],
+      "exit": [
+        412000.00000000023,
+        6176732.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.00000000006,
+          6176732.999999999
+        ],
+        [
+          412000.00000000023,
+          6176732.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T014",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6176786.999999999
+            ],
+            [
+              418000.0,
+              6176786.999999999
+            ]
+          ],
+          "length_m": 5999.999999999767,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6176786.999999999
+      ],
+      "exit": [
+        418000.0,
+        6176786.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6176786.999999999
+        ],
+        [
+          418000.0,
+          6176786.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T015",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.0,
+              6176840.999999999
+            ],
+            [
+              412000.00000000023,
+              6176840.999999999
+            ]
+          ],
+          "length_m": 5999.999999999767,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.0,
+        6176840.999999999
+      ],
+      "exit": [
+        412000.00000000023,
+        6176840.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.0,
+          6176840.999999999
+        ],
+        [
+          412000.00000000023,
+          6176840.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T016",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000023,
+              6176894.999999999
+            ],
+            [
+              418000.0,
+              6176894.999999999
+            ]
+          ],
+          "length_m": 5999.999999999767,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999767,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000023,
+        6176894.999999999
+      ],
+      "exit": [
+        418000.0,
+        6176894.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.00000000023,
+          6176894.999999999
+        ],
+        [
+          418000.0,
+          6176894.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T017",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.0,
+              6176948.999999999
+            ],
+            [
+              412000.0000000002,
+              6176948.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.0,
+        6176948.999999999
+      ],
+      "exit": [
+        412000.0000000002,
+        6176948.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.0,
+          6176948.999999999
+        ],
+        [
+          412000.0000000002,
+          6176948.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T018",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6177002.999999999
+            ],
+            [
+              418000.0,
+              6177002.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6177002.999999999
+      ],
+      "exit": [
+        418000.0,
+        6177002.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6177002.999999999
+        ],
+        [
+          418000.0,
+          6177002.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T019",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.0,
+              6177056.999999999
+            ],
+            [
+              412000.0000000002,
+              6177056.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.0,
+        6177056.999999999
+      ],
+      "exit": [
+        412000.0000000002,
+        6177056.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.0,
+          6177056.999999999
+        ],
+        [
+          412000.0000000002,
+          6177056.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T020",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6177110.999999999
+            ],
+            [
+              418000.0,
+              6177110.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6177110.999999999
+      ],
+      "exit": [
+        418000.0,
+        6177110.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6177110.999999999
+        ],
+        [
+          418000.0,
+          6177110.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T021",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.0,
+              6177164.999999999
+            ],
+            [
+              412000.0000000002,
+              6177164.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.0,
+        6177164.999999999
+      ],
+      "exit": [
+        412000.0000000002,
+        6177164.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.0,
+          6177164.999999999
+        ],
+        [
+          412000.0000000002,
+          6177164.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T022",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000002,
+              6177218.999999999
+            ],
+            [
+              418000.0,
+              6177218.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000002,
+        6177218.999999999
+      ],
+      "exit": [
+        418000.0,
+        6177218.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0000000002,
+          6177218.999999999
+        ],
+        [
+          418000.0,
+          6177218.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T023",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              418000.0,
+              6177272.999999999
+            ],
+            [
+              412000.0000000002,
+              6177272.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        418000.0,
+        6177272.999999999
+      ],
+      "exit": [
+        412000.0000000002,
+        6177272.999999999
+      ],
+      "geom_coords": [
+        [
+          418000.0,
+          6177272.999999999
+        ],
+        [
+          412000.0000000002,
+          6177272.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T024",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6177326.999999999
+            ],
+            [
+              417999.99999999994,
+              6177326.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6177326.999999999
+      ],
+      "exit": [
+        417999.99999999994,
+        6177326.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6177326.999999999
+        ],
+        [
+          417999.99999999994,
+          6177326.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T025",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.99999999994,
+              6177380.999999999
+            ],
+            [
+              412000.0000000001,
+              6177380.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.99999999994,
+        6177380.999999999
+      ],
+      "exit": [
+        412000.0000000001,
+        6177380.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.99999999994,
+          6177380.999999999
+        ],
+        [
+          412000.0000000001,
+          6177380.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T026",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6177434.999999999
+            ],
+            [
+              417999.99999999994,
+              6177434.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6177434.999999999
+      ],
+      "exit": [
+        417999.99999999994,
+        6177434.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6177434.999999999
+        ],
+        [
+          417999.99999999994,
+          6177434.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T027",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.99999999994,
+              6177488.999999999
+            ],
+            [
+              412000.0000000001,
+              6177488.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.99999999994,
+        6177488.999999999
+      ],
+      "exit": [
+        412000.0000000001,
+        6177488.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.99999999994,
+          6177488.999999999
+        ],
+        [
+          412000.0000000001,
+          6177488.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T028",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6177542.999999999
+            ],
+            [
+              417999.99999999994,
+              6177542.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6177542.999999999
+      ],
+      "exit": [
+        417999.99999999994,
+        6177542.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6177542.999999999
+        ],
+        [
+          417999.99999999994,
+          6177542.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T029",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.99999999994,
+              6177596.999999999
+            ],
+            [
+              412000.0000000001,
+              6177596.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.99999999994,
+        6177596.999999999
+      ],
+      "exit": [
+        412000.0000000001,
+        6177596.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.99999999994,
+          6177596.999999999
+        ],
+        [
+          412000.0000000001,
+          6177596.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T030",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0000000001,
+              6177650.999999999
+            ],
+            [
+              417999.99999999994,
+              6177650.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0000000001,
+        6177650.999999999
+      ],
+      "exit": [
+        417999.99999999994,
+        6177650.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0000000001,
+          6177650.999999999
+        ],
+        [
+          417999.99999999994,
+          6177650.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T031",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.99999999994,
+              6177704.999999999
+            ],
+            [
+              412000.00000000006,
+              6177704.999999999
+            ]
+          ],
+          "length_m": 5999.999999999884,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.99999999994,
+        6177704.999999999
+      ],
+      "exit": [
+        412000.00000000006,
+        6177704.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.99999999994,
+          6177704.999999999
+        ],
+        [
+          412000.00000000006,
+          6177704.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T032",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000006,
+              6177758.999999999
+            ],
+            [
+              417999.99999999994,
+              6177758.999999999
+            ]
+          ],
+          "length_m": 5999.999999999884,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000006,
+        6177758.999999999
+      ],
+      "exit": [
+        417999.99999999994,
+        6177758.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.00000000006,
+          6177758.999999999
+        ],
+        [
+          417999.99999999994,
+          6177758.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T033",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.99999999994,
+              6177812.999999999
+            ],
+            [
+              412000.00000000006,
+              6177812.999999999
+            ]
+          ],
+          "length_m": 5999.999999999884,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.99999999994,
+        6177812.999999999
+      ],
+      "exit": [
+        412000.00000000006,
+        6177812.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.99999999994,
+          6177812.999999999
+        ],
+        [
+          412000.00000000006,
+          6177812.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T034",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000006,
+              6177866.999999999
+            ],
+            [
+              417999.9999999999,
+              6177866.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000006,
+        6177866.999999999
+      ],
+      "exit": [
+        417999.9999999999,
+        6177866.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.00000000006,
+          6177866.999999999
+        ],
+        [
+          417999.9999999999,
+          6177866.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T035",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.9999999999,
+              6177920.999999999
+            ],
+            [
+              412000.00000000006,
+              6177920.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.9999999999,
+        6177920.999999999
+      ],
+      "exit": [
+        412000.00000000006,
+        6177920.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.9999999999,
+          6177920.999999999
+        ],
+        [
+          412000.00000000006,
+          6177920.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T036",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.00000000006,
+              6177974.999999999
+            ],
+            [
+              417999.9999999999,
+              6177974.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.00000000006,
+        6177974.999999999
+      ],
+      "exit": [
+        417999.9999999999,
+        6177974.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.00000000006,
+          6177974.999999999
+        ],
+        [
+          417999.9999999999,
+          6177974.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T037",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.9999999999,
+              6178028.999999999
+            ],
+            [
+              412000.00000000006,
+              6178028.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.9999999999,
+        6178028.999999999
+      ],
+      "exit": [
+        412000.00000000006,
+        6178028.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.9999999999,
+          6178028.999999999
+        ],
+        [
+          412000.00000000006,
+          6178028.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T038",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0,
+              6178082.999999999
+            ],
+            [
+              417999.9999999999,
+              6178082.999999999
+            ]
+          ],
+          "length_m": 5999.999999999884,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0,
+        6178082.999999999
+      ],
+      "exit": [
+        417999.9999999999,
+        6178082.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0,
+          6178082.999999999
+        ],
+        [
+          417999.9999999999,
+          6178082.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T039",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.9999999999,
+              6178136.999999999
+            ],
+            [
+              412000.0,
+              6178136.999999999
+            ]
+          ],
+          "length_m": 5999.999999999884,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.9999999999,
+        6178136.999999999
+      ],
+      "exit": [
+        412000.0,
+        6178136.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.9999999999,
+          6178136.999999999
+        ],
+        [
+          412000.0,
+          6178136.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T040",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0,
+              6178190.999999999
+            ],
+            [
+              417999.9999999999,
+              6178190.999999999
+            ]
+          ],
+          "length_m": 5999.999999999884,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0,
+        6178190.999999999
+      ],
+      "exit": [
+        417999.9999999999,
+        6178190.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0,
+          6178190.999999999
+        ],
+        [
+          417999.9999999999,
+          6178190.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T041",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.9999999999,
+              6178244.999999999
+            ],
+            [
+              412000.0,
+              6178244.999999999
+            ]
+          ],
+          "length_m": 5999.999999999884,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.9999999999,
+        6178244.999999999
+      ],
+      "exit": [
+        412000.0,
+        6178244.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.9999999999,
+          6178244.999999999
+        ],
+        [
+          412000.0,
+          6178244.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T042",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0,
+              6178298.999999999
+            ],
+            [
+              417999.9999999999,
+              6178298.999999999
+            ]
+          ],
+          "length_m": 5999.999999999884,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0,
+        6178298.999999999
+      ],
+      "exit": [
+        417999.9999999999,
+        6178298.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0,
+          6178298.999999999
+        ],
+        [
+          417999.9999999999,
+          6178298.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T043",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.9999999998,
+              6178352.999999999
+            ],
+            [
+              412000.0,
+              6178352.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.9999999998,
+        6178352.999999999
+      ],
+      "exit": [
+        412000.0,
+        6178352.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.9999999998,
+          6178352.999999999
+        ],
+        [
+          412000.0,
+          6178352.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T044",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              412000.0,
+              6178406.999999999
+            ],
+            [
+              417999.9999999998,
+              6178406.999999999
+            ]
+          ],
+          "length_m": 5999.999999999825,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999825,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        412000.0,
+        6178406.999999999
+      ],
+      "exit": [
+        417999.9999999998,
+        6178406.999999999
+      ],
+      "geom_coords": [
+        [
+          412000.0,
+          6178406.999999999
+        ],
+        [
+          417999.9999999998,
+          6178406.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T045",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.9999999998,
+              6178460.999999999
+            ],
+            [
+              411999.99999999994,
+              6178460.999999999
+            ]
+          ],
+          "length_m": 5999.999999999884,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.9999999998,
+        6178460.999999999
+      ],
+      "exit": [
+        411999.99999999994,
+        6178460.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.9999999998,
+          6178460.999999999
+        ],
+        [
+          411999.99999999994,
+          6178460.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T046",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              411999.99999999994,
+              6178514.999999999
+            ],
+            [
+              417999.9999999998,
+              6178514.999999999
+            ]
+          ],
+          "length_m": 5999.999999999884,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        411999.99999999994,
+        6178514.999999999
+      ],
+      "exit": [
+        417999.9999999998,
+        6178514.999999999
+      ],
+      "geom_coords": [
+        [
+          411999.99999999994,
+          6178514.999999999
+        ],
+        [
+          417999.9999999998,
+          6178514.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    },
+    {
+      "id": "WIND_RGB#T047",
+      "job_id": "WIND_RGB",
+      "payload_class": "rgb",
+      "payload_profile_id": "RGB_STD",
+      "agl_m": 123.07692307692308,
+      "transects": [
+        {
+          "coords": [
+            [
+              417999.9999999998,
+              6178568.999999999
+            ],
+            [
+              411999.99999999994,
+              6178568.999999999
+            ]
+          ],
+          "length_m": 5999.999999999884,
+          "job_id": "WIND_RGB"
+        }
+      ],
+      "survey_length_m": 5999.999999999884,
+      "turn_count": 0,
+      "sweep_angle_deg": 0.0,
+      "entry": [
+        417999.9999999998,
+        6178568.999999999
+      ],
+      "exit": [
+        411999.99999999994,
+        6178568.999999999
+      ],
+      "geom_coords": [
+        [
+          417999.9999999998,
+          6178568.999999999
+        ],
+        [
+          411999.99999999994,
+          6178568.999999999
+        ]
+      ],
+      "internal_transition_m": 0.0,
+      "fixed_wing_safe": true,
+      "notes": []
+    }
+  ],
+  "feasibility": {
+    "eligible_uav_ids_by_task": {
+      "WIND_RGB#T000": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T001": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T002": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T003": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T004": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T005": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T006": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T007": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T008": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T009": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T010": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T011": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T012": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T013": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T014": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T015": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T016": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T017": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T018": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T019": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T020": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T021": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T022": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T023": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T024": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T025": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T026": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T027": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T028": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T029": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T030": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T031": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T032": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T033": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T034": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T035": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T036": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T037": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T038": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T039": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T040": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T041": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T042": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T043": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T044": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T045": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T046": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ],
+      "WIND_RGB#T047": [
+        "GS201_01",
+        "GS701_02",
+        "GS401_03"
+      ]
+    },
+    "ineligible_reasons": {
+      "WIND_RGB#T000:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T000:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T001:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T001:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T002:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T002:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T003:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T003:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T004:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T004:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T005:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T005:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T006:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T006:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T007:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T007:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T008:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T008:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T009:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T009:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T010:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T010:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T011:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T011:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T012:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T012:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T013:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T013:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T014:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T014:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T015:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T015:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T016:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T016:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T017:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T017:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T018:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T018:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T019:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T019:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T020:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T020:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T021:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T021:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T022:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T022:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T023:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T023:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T024:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T024:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T025:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T025:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T026:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T026:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T027:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T027:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T028:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T028:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T029:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T029:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T030:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T030:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T031:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T031:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T032:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T032:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T033:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T033:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T034:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T034:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T035:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T035:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T036:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T036:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T037:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T037:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T038:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T038:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T039:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T039:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T040:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T040:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T041:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T041:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T042:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T042:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T043:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T043:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T044:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T044:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T045:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T045:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T046:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T046:GEMINI_05": "wind_11.0ms_exceeds_10.0ms",
+      "WIND_RGB#T047:GS801_04": "payload_class_mismatch",
+      "WIND_RGB#T047:GEMINI_05": "wind_11.0ms_exceeds_10.0ms"
+    },
+    "ineligible_reasons_human": {
+      "WIND_RGB#T000:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T000:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T001:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T001:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T002:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T002:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T003:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T003:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T004:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T004:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T005:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T005:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T006:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T006:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T007:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T007:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T008:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T008:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T009:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T009:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T010:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T010:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T011:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T011:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T012:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T012:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T013:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T013:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T014:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T014:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T015:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T015:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T016:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T016:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T017:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T017:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T018:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T018:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T019:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T019:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T020:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T020:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T021:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T021:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T022:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T022:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T023:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T023:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T024:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T024:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T025:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T025:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T026:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T026:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T027:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T027:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T028:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T028:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T029:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T029:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T030:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T030:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T031:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T031:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T032:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T032:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T033:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T033:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T034:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T034:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T035:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T035:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T036:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T036:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T037:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T037:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T038:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T038:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T039:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T039:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T040:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T040:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T041:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T041:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T042:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T042:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T043:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T043:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T044:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T044:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T045:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T045:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T046:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T046:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)",
+      "WIND_RGB#T047:GS801_04": "geoscan_801: нагрузка задачи несовместима с полезной нагрузкой борта",
+      "WIND_RGB#T047:GEMINI_05": "geoscan_gemini: ветер слишком сильный для этого борта (wind_11.0ms_exceeds_10.0ms)"
+    }
+  },
+  "coverage_meta": {
+    "coverage_percent": 100.0,
+    "task_count": 48,
+    "per_job": [
+      {
+        "job_id": "WIND_RGB",
+        "task_count": 48,
+        "sweep_angle_deg": 0.0,
+        "coverage_percent": 100.0,
+        "eligible_uavs": [
+          "GS201_01",
+          "GS701_02",
+          "GS401_03"
+        ]
+      }
+    ],
+    "sweep_candidates": {
+      "WIND_RGB": [
+        {
+          "label": "wind_aligned",
+          "angle_deg": 0.0,
+          "survey_length_m": 288000.0,
+          "turn_count": 47,
+          "score": 312686.2,
+          "maneuver_violations": 0,
+          "selected": true
+        },
+        {
+          "label": "grid_15",
+          "angle_deg": 15.0,
+          "survey_length_m": 288915.5,
+          "turn_count": 74,
+          "score": 340425.2,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_165",
+          "angle_deg": 165.0,
+          "survey_length_m": 288915.5,
+          "turn_count": 74,
+          "score": 340426.1,
+          "maneuver_violations": 0,
+          "selected": false
+        },
+        {
+          "label": "grid_150",
+          "angle_deg": 150.0,
+          "survey_length_m": 288909.8,
+          "turn_count": 96,
+          "score": 358489.7,
+          "maneuver_violations": 0,
+          "selected": false
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "h1": {
+      "energy_hints": [
+        {
+          "scope": "mission",
+          "uav_id": "GS201_01",
+          "survey_length_m": 288000.0,
+          "need_flight_s": 13090.9,
+          "usable_endurance_s": 6912.0,
+          "sorties_hint": 2
+        },
+        {
+          "scope": "mission",
+          "uav_id": "GS401_03",
+          "survey_length_m": 288000.0,
+          "need_flight_s": 36000.0,
+          "usable_endurance_s": 2304.0,
+          "sorties_hint": 16
+        },
+        {
+          "scope": "mission",
+          "uav_id": "GS801_04",
+          "survey_length_m": 288000.0,
+          "need_flight_s": 24000.0,
+          "usable_endurance_s": 1536.0,
+          "sorties_hint": 16
+        },
+        {
+          "scope": "mission",
+          "uav_id": "GEMINI_05",
+          "survey_length_m": 288000.0,
+          "need_flight_s": 24000.0,
+          "usable_endurance_s": 1536.0,
+          "sorties_hint": 16
+        }
+      ],
+      "reserve_sites": [
+        "RES"
+      ],
+      "terrain": {
+        "dem_available": true,
+        "warning_count": 0,
+        "warnings": [],
+        "note": "planning checks only; terrain-following is autopilot/H3"
+      }
+    }
+  },
+  "warnings": [
+    "site BASE: outside survey area (+50m slack)",
+    "site RES: outside survey area (+50m slack)",
+    "S04: mission ≈2 sorties on GS201_01 (total survey 288.0 km → 218 min vs usable 115 min) — multi-sortie, not H1 schedule",
+    "S04: mission ≈16 sorties on GS401_03 (total survey 288.0 km → 600 min vs usable 38 min) — multi-sortie, not H1 schedule",
+    "S04: mission ≈16 sorties on GS801_04 (total survey 288.0 km → 400 min vs usable 26 min) — multi-sortie, not H1 schedule",
+    "S04: mission ≈16 sorties on GEMINI_05 (total survey 288.0 km → 400 min vs usable 26 min) — multi-sortie, not H1 schedule"
+  ]
+}

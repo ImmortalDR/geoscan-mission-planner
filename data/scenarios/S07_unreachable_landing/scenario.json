@@ -1,0 +1,22 @@
+{
+  "id": "S07_unreachable_landing",
+  "title": "Only permitted landing exceeds the available resource",
+  "expected_status": "INFEASIBLE",
+  "objectives": [
+    "makespan"
+  ],
+  "real_elevation": false,
+  "checks": {},
+  "proof": {
+    "type": "unreachable_required_point",
+    "job_id": "JOB_RGB",
+    "point": [
+      37.53,
+      55.7
+    ]
+  },
+  "role": "infeasible",
+  "purpose_ru": "Отказ: посадка вне ресурса",
+  "catalog_badge_ru": "1 БВС · отказ",
+  "fleet_count": 1
+}

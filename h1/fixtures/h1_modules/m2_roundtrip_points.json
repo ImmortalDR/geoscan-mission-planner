@@ -1,0 +1,11 @@
+{
+  "schema": "gmp.h1.fixture.m2.v1",
+  "description": "Lon/lat points for CRS round-trip (Moscow area → UTM 37N)",
+  "expected_metric_epsg": "EPSG:32637",
+  "points": [
+    {"name": "moscow_center", "lon": 37.6173, "lat": 55.7558},
+    {"name": "sw", "lon": 37.50, "lat": 55.70},
+    {"name": "ne", "lon": 37.70, "lat": 55.80}
+  ],
+  "max_roundtrip_error_deg": 1e-6
+}

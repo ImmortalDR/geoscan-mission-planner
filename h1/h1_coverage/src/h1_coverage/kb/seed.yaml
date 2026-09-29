@@ -1,0 +1,134 @@
+# UAV knowledge base seed — contract h1.m4.uav_kb.v1
+catalog_name: h1_coverage_seed
+schema_version: "1.0"
+defaults:
+  provenance:
+    source: geoscan_mvp_seed
+    confidence: medium
+    note: operational values are derated vs passport max
+models:
+  - id: geoscan_201
+    display: Geoscan 201
+    class: fixed_wing
+    ground_speed_ms: 22.0
+    passport_endurance_min: 180
+    operational_endurance_min: 144
+    max_wind_ms: 12
+    payload_classes: [rgb, thermal]
+    turnaround_buffer_m: 300
+    cruise_agl_m: 150
+    provenance:
+      source: geoscan_datasheet_derated
+      confidence: high
+      note: operational_endurance = passport * (1 - energy_reserve≈0.2)
+  - id: geoscan_401
+    display: Geoscan 401
+    class: multirotor
+    ground_speed_ms: 8.0
+    passport_endurance_min: 60
+    operational_endurance_min: 48
+    max_wind_ms: 12
+    payload_classes: [rgb, lidar, geophysics]
+    turnaround_buffer_m: 30
+    cruise_agl_m: 80
+    provenance:
+      source: geoscan_datasheet_derated
+      confidence: high
+      note: operational ≠ passport (reserve applied)
+  - id: geoscan_401_geo
+    display: Geoscan 401 Geo
+    aliases: [geoscan_401]
+    class: multirotor
+    ground_speed_ms: 8.0
+    passport_endurance_min: 60
+    operational_endurance_min: 48
+    max_wind_ms: 12
+    payload_classes: [rgb, lidar, geophysics]
+    turnaround_buffer_m: 30
+    cruise_agl_m: 80
+    provenance: {source: geoscan_datasheet_derated, confidence: high}
+  - id: geoscan_701
+    display: Geoscan 701
+    class: fixed_wing
+    ground_speed_ms: 28.0
+    passport_endurance_min: 600
+    operational_endurance_min: 480
+    max_wind_ms: 12
+    payload_classes: [rgb, multispectral]
+    turnaround_buffer_m: 300
+    cruise_agl_m: 180
+    provenance:
+      source: geoscan_datasheet_derated
+      confidence: high
+      note: operational ≠ passport (reserve applied)
+  - id: geoscan_801
+    display: Geoscan 801
+    class: multirotor
+    ground_speed_ms: 12.0
+    passport_endurance_min: 40
+    operational_endurance_min: 32
+    max_wind_ms: 10
+    payload_classes: [thermal, rgb_video]
+    turnaround_buffer_m: 30
+    cruise_agl_m: 100
+    provenance: {source: geoscan_datasheet_derated, confidence: high}
+  - id: geoscan_gemini
+    display: Geoscan Gemini
+    class: multirotor
+    ground_speed_ms: 12.0
+    passport_endurance_min: 40
+    operational_endurance_min: 32
+    max_wind_ms: 10
+    payload_classes: [rgb, multispectral]
+    turnaround_buffer_m: 10
+    cruise_agl_m: 120
+    provenance: {source: geoscan_datasheet_derated, confidence: high}
+  # Reference-only models (not required in every fleet bundle)
+  - id: ref_multirotor_light
+    display: Reference MR light
+    class: multirotor
+    ground_speed_ms: 10.0
+    operational_endurance_min: 25
+    max_wind_ms: 8
+    payload_classes: [rgb]
+    turnaround_buffer_m: 20
+    cruise_agl_m: 80
+    provenance: {source: synthetic_reference, confidence: low}
+  - id: ref_multirotor_heavy
+    display: Reference MR heavy
+    class: multirotor
+    ground_speed_ms: 7.0
+    operational_endurance_min: 20
+    max_wind_ms: 10
+    payload_classes: [rgb, lidar]
+    turnaround_buffer_m: 25
+    cruise_agl_m: 60
+    provenance: {source: synthetic_reference, confidence: low}
+  - id: ref_fixed_wing_small
+    display: Reference FW small
+    class: fixed_wing
+    ground_speed_ms: 18.0
+    operational_endurance_min: 90
+    max_wind_ms: 10
+    payload_classes: [rgb]
+    turnaround_buffer_m: 200
+    cruise_agl_m: 120
+    provenance: {source: synthetic_reference, confidence: low}
+  - id: ref_vtol_mapper
+    display: Reference VTOL
+    class: vtol
+    ground_speed_ms: 16.0
+    operational_endurance_min: 60
+    max_wind_ms: 12
+    payload_classes: [rgb, multispectral]
+    turnaround_buffer_m: 80
+    cruise_agl_m: 120
+    provenance: {source: synthetic_reference, confidence: low}
+
+cameras:
+  rgb_default:
+    id: rgb_default
+    image_width_px: 6000
+    image_height_px: 4000
+    focal_length_mm: 16.0
+    pixel_pitch_um: 3.9

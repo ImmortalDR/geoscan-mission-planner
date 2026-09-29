@@ -1,0 +1,15 @@
+{
+  "id": "S08_fixed_wing_nfz",
+  "title": "Fixed-wing turn buffers, NFZ and obstacle",
+  "expected_status": "SAFE",
+  "objectives": [
+    "makespan"
+  ],
+  "real_elevation": false,
+  "checks": {},
+  "proof": null,
+  "role": "fixed_wing",
+  "purpose_ru": "Самолёт, NFZ и буферы разворота",
+  "catalog_badge_ru": "1 БВС · fixed-wing",
+  "fleet_count": 1
+}

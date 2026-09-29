@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geoscan | Документация и испытания</title>
+  <link rel="stylesheet" href="/static/documentation.css">
+  <script defer src="/static/vendor/lucide.min.js"></script>
+  <script defer src="/static/documentation.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="/">GEOSCAN</a><strong>Документация и испытания</strong><a href="/" title="Рабочее пространство"><i data-lucide="arrow-left"></i><span>К планированию</span></a></header>
+  <main>
+    <nav aria-label="Раздел документации"><button data-view="overview" class="active">Обзор</button><button data-view="algorithms">Алгоритмы</button><button data-view="testing">Испытания</button></nav>
+    <p id="status" role="status">Загрузка материалов...</p>
+    <section id="overview" hidden><h1>Сервис планирования авиационных работ</h1><p>H1: покрытие → H2: назначение и расписание → H3: независимая проверка.</p><div id="documents" class="document-list"></div><p class="note">SAFE подтверждает проверку в объявленной вычислительной модели. Глобальная оптимальность и допуск к реальному полёту не заявлены.</p></section>
+    <section id="algorithms" hidden><h1>Каталог алгоритмов</h1><div class="table-scroll"><table><thead><tr><th>Алгоритм</th><th>Основа реализации</th><th>Проверки</th><th>Материалы</th></tr></thead><tbody id="algorithm-rows"></tbody></table></div></section>
+    <section id="testing" hidden><h1>Измеренные результаты</h1><div id="test-summary"></div><h2>Нагрузка</h2><div id="load-results"></div><p class="note">Конфигурация 16 CPU / 64 ГБ является целевым профилем. Фактически использованное оборудование указано в отчёте. Контролируемый отказ очереди 429 учитывается отдельно от ошибок сервера.</p></section>
+  </main>
+</body>
+</html>

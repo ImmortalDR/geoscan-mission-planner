@@ -1,0 +1,22 @@
+{
+  "uavs": [
+    {
+      "id": "GS201_01",
+      "model": "geoscan_201",
+      "class": "fixed_wing",
+      "ground_speed_kmh": 80,
+      "operational_endurance_min": 180,
+      "max_wind_ms": 12,
+      "payload_classes": [
+        "rgb",
+        "thermal"
+      ],
+      "energy_reserve_fraction": 0.2,
+      "horizontal_separation_m": 300,
+      "vertical_separation_m": 50,
+      "turnaround_buffer_m": 300,
+      "start_site": "START_W",
+      "landing_site": "LAND_E"
+    }
+  ]
+}

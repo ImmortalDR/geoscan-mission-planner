@@ -1,0 +1,26 @@
+{
+  "portal_points": 294,
+  "rendered_edges": 4731,
+  "health": {
+    "status": "ready",
+    "storage": "sqlite",
+    "pipeline": "h1_coverage -> h2 -> h3",
+    "components": {
+      "h1_coverage": true,
+      "h2": true
+    },
+    "release": "h2-development"
+  },
+  "production_health": {
+    "status": "ready",
+    "storage": "postgresql",
+    "pipeline": "h1_coverage -> h2 -> h3",
+    "components": {
+      "h1_coverage": true,
+      "h2": true
+    },
+    "release": "20260927-routing-workspace"
+  },
+  "passed": true,
+  "javascript_errors": []
+}

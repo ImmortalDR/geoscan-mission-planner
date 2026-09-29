@@ -1,0 +1,37 @@
+[Unit]
+Description=Geoscan integrated H1 H2 H3 mission workspace
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=geoscan-h3
+Group=geoscan-h3
+WorkingDirectory=/opt/geoscan-mvp/current/app
+EnvironmentFile=/etc/geoscan-h3/environment
+EnvironmentFile=/etc/geoscan-mvp/environment
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/geoscan-h3/venv/bin/python -m uvicorn gmp.api.app:app --host 127.0.0.1 --port 8092 --workers 1 --proxy-headers --forwarded-allow-ips 127.0.0.1
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=45
+KillMode=mixed
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/geoscan-h3 /var/lib/geoscan-mvp-staging
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+MemoryMax=3G
+TasksMax=128
+
+[Install]
+WantedBy=multi-user.target

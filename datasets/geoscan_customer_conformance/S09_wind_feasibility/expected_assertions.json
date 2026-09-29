@@ -1,0 +1,6 @@
+{
+  "expected_status": "SAFE_IF_COMPATIBLE_AIRCRAFT_AVAILABLE",
+  "wind_limit_must_filter_fleet": true,
+  "wind_direction_must_affect_sweep_score": true,
+  "wind_must_not_modify_energy_model": true
+}

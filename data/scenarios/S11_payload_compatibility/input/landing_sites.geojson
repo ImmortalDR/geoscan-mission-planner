@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.49519788906838,
+          55.69463583046652
+        ]
+      },
+      "properties": {
+        "id": "BASE_0",
+        "role": "both",
+        "candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.51269154032426,
+          55.69484899261014
+        ]
+      },
+      "properties": {
+        "id": "BASE_1",
+        "role": "both",
+        "candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.53018542498685,
+          55.695059663272524
+        ]
+      },
+      "properties": {
+        "id": "BASE_2",
+        "role": "both",
+        "candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.54767954031615,
+          55.6952678423825
+        ]
+      },
+      "properties": {
+        "id": "BASE_3",
+        "role": "both",
+        "candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.565173883571966,
+          55.69547352986978
+        ]
+      },
+      "properties": {
+        "id": "BASE_4",
+        "role": "both",
+        "candidate": false
+      }
+    }
+  ]
+}

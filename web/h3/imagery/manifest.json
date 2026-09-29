@@ -1,0 +1,204 @@
+{
+  "schema": "geoscan.h3.imagery.v1",
+  "attribution": "Contains modified Copernicus Sentinel data 2025",
+  "source_url": "https://registry.opendata.aws/sentinel-2-l2a-cogs/",
+  "license_url": "https://cds.climate.copernicus.eu/licences/ec-sentinel",
+  "fetched_at": "2026-09-21T06:45:53.236773+00:00",
+  "role": "visual_basemap_only_not_dem_or_obstacle_inventory",
+  "images": [
+    {
+      "id": "msu",
+      "name": "МГУ и окрестности",
+      "scenario_id": "S01_msu_100km2",
+      "url": "/static/imagery/msu.jpg",
+      "geotiff_url": "/static/imagery/msu.tif",
+      "coordinates": [
+        [
+          37.39293147022018,
+          55.78057261073286
+        ],
+        [
+          37.66787244790287,
+          55.78057261073286
+        ],
+        [
+          37.66787244790287,
+          55.62539405358795
+        ],
+        [
+          37.39293147022018,
+          55.62539405358795
+        ]
+      ],
+      "bounds": [
+        37.39293147022018,
+        55.62539405358795,
+        37.66787244790287,
+        55.78057261073286
+      ],
+      "scene_bounds": [
+        37.424815873291,
+        55.64339189354139,
+        37.63598804483205,
+        55.76263785136121
+      ],
+      "acquired_at": "2025-05-28T08:55:01.033000Z",
+      "resolution_m": 10,
+      "crs": "EPSG:3857",
+      "width": 1725,
+      "height": 1728,
+      "source_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_37UDB_20250528_0_L2A",
+      "sources": [
+        {
+          "id": "S2C_37UDB_20250528_0_L2A",
+          "source_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_37UDB_20250528_0_L2A",
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/37/U/DB/2025/5/S2C_37UDB_20250528_0_L2A/TCI.tif",
+          "acquired_at": "2025-05-28T08:55:01.033000Z",
+          "tile_cloud_cover_percent": 0.003249
+        },
+        {
+          "id": "S2C_37UCB_20250528_0_L2A",
+          "source_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_37UCB_20250528_0_L2A",
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/37/U/CB/2025/5/S2C_37UCB_20250528_0_L2A/TCI.tif",
+          "acquired_at": "2025-05-28T08:55:05.371000Z",
+          "tile_cloud_cover_percent": 0.000747
+        }
+      ],
+      "sha256": "f9ae68ea8623660a0ea0b3f719218a57ab61fddb0bcdba68c2de6419067f1d6d",
+      "geotiff_sha256": "556d34cd17c6eb8f630b27510aff7913fbb209fd326bb459dd3160e8bbba58eb",
+      "missing_pixel_fraction": 0,
+      "rgb_channel_std": [
+        51.37308284633172,
+        41.01189138450596,
+        40.677210243162186
+      ]
+    },
+    {
+      "id": "peredelkino",
+      "name": "Переделкино",
+      "scenario_id": "S02_peredelkino",
+      "url": "/static/imagery/peredelkino.jpg",
+      "geotiff_url": "/static/imagery/peredelkino.tif",
+      "coordinates": [
+        [
+          37.24665870975763,
+          55.69475755082954
+        ],
+        [
+          37.430124324809846,
+          55.69475755082954
+        ],
+        [
+          37.430124324809846,
+          55.604241299680595
+        ],
+        [
+          37.24665870975763,
+          55.604241299680595
+        ]
+      ],
+      "bounds": [
+        37.24665870975763,
+        55.604241299680595,
+        37.430124324809846,
+        55.69475755082954
+      ],
+      "scene_bounds": [
+        37.27849953814542,
+        55.62222424848174,
+        37.39828349642206,
+        55.676807888608955
+      ],
+      "acquired_at": "2025-05-28T08:55:01.033000Z",
+      "resolution_m": 10,
+      "crs": "EPSG:3857",
+      "width": 1153,
+      "height": 1008,
+      "source_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_37UDB_20250528_0_L2A",
+      "sources": [
+        {
+          "id": "S2C_37UDB_20250528_0_L2A",
+          "source_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_37UDB_20250528_0_L2A",
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/37/U/DB/2025/5/S2C_37UDB_20250528_0_L2A/TCI.tif",
+          "acquired_at": "2025-05-28T08:55:01.033000Z",
+          "tile_cloud_cover_percent": 0.003249
+        },
+        {
+          "id": "S2C_37UCB_20250528_0_L2A",
+          "source_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_37UCB_20250528_0_L2A",
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/37/U/CB/2025/5/S2C_37UCB_20250528_0_L2A/TCI.tif",
+          "acquired_at": "2025-05-28T08:55:05.371000Z",
+          "tile_cloud_cover_percent": 0.000747
+        }
+      ],
+      "sha256": "9969d11c603c5caf4d7ce1746ea7063e90af4e475cd41b606f88bf68a3d718c5",
+      "geotiff_sha256": "eeff15fb9cde83916047d3e6a0343bbdf62e190c07c109bdd571f3c398ea72cc",
+      "missing_pixel_fraction": 0,
+      "rgb_channel_std": [
+        53.00596558987119,
+        41.06749593492699,
+        39.62457599208205
+      ]
+    },
+    {
+      "id": "orekhovo",
+      "name": "Орехово - Домодедовская",
+      "scenario_id": "S03_orekhovo_domodedovskaya",
+      "url": "/static/imagery/orekhovo.jpg",
+      "geotiff_url": "/static/imagery/orekhovo.tif",
+      "coordinates": [
+        [
+          37.618215478538886,
+          55.657473041219625
+        ],
+        [
+          37.79470891402393,
+          55.657473041219625
+        ],
+        [
+          37.79470891402393,
+          55.56646939121875
+        ],
+        [
+          37.618215478538886,
+          55.56646939121875
+        ]
+      ],
+      "bounds": [
+        37.618215478538886,
+        55.56646939121875,
+        37.79470891402393,
+        55.657473041219625
+      ],
+      "scene_bounds": [
+        37.65002582787898,
+        55.58445242826328,
+        37.762898564683844,
+        55.63952346730801
+      ],
+      "acquired_at": "2025-05-28T08:55:01.033000Z",
+      "resolution_m": 10,
+      "crs": "EPSG:3857",
+      "width": 1110,
+      "height": 1014,
+      "source_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_37UDB_20250528_0_L2A",
+      "sources": [
+        {
+          "id": "S2C_37UDB_20250528_0_L2A",
+          "source_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_37UDB_20250528_0_L2A",
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/37/U/DB/2025/5/S2C_37UDB_20250528_0_L2A/TCI.tif",
+          "acquired_at": "2025-05-28T08:55:01.033000Z",
+          "tile_cloud_cover_percent": 0.003249
+        }
+      ],
+      "sha256": "7cac333a915c9ab0ac0c13fa1863efe677e27667dad37b43d54e9c780eca0239",
+      "geotiff_sha256": "f6f28bdd70994c125bb0246361293f19ef090ab07672d17b503c70fac8da1861",
+      "missing_pixel_fraction": 0,
+      "rgb_channel_std": [
+        53.73986681878816,
+        39.693084112794466,
+        37.83956927330568
+      ]
+    }
+  ]
+}
