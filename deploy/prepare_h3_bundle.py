@@ -56,7 +56,7 @@ def main():
                  "nginx-h3.conf", "install_h3.py", "prepare_h3_bundle.py",
                  "geoscan-mvp.service", "nginx-mvp.conf", "postgres-tls.sh", "postgres-init.sh", "bootstrap.py", "cutover_mvp.py"]:
         shutil.copy2(REPO / "deploy" / name, dest / "app/deploy" / name)
-    for name in ["requirements.txt", "requirements.lock", "pyproject.toml", "README.md", "DEMO_PATH.md"]:
+    for name in ["requirements.txt", "requirements.lock", "pyproject.toml", "README.md"]:
         if (REPO / name).exists():
             shutil.copy2(REPO / name, dest / "app" / name)
     shutil.copytree(args.h1 / "src", dest / "h1/src", ignore=ignore)

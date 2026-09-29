@@ -27,15 +27,12 @@
 
 ## Установка / тесты / запуск
 
+Установите общее окружение по [корневому README](../../README.md).
+Из корня репозитория:
+
 ```bash
-cd h1
-source .venv/bin/activate
-pip install -e "./h1_coverage[dev]"
-pytest h1_coverage/tests -v
-h1-coverage modules
-h1-coverage run \
-  --scene h1_coverage/fixtures/conformance/S00_smoke_rgb \
-  --output /tmp/S00.bundle.json
+.venv/bin/python -m pytest -c pyproject.toml h1/h1_coverage/tests -q
+.venv/bin/python scripts/validate_h1_h2_contract.py
 ```
 
 ### M6 / Fields2Cover

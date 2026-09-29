@@ -10,7 +10,7 @@ from h2.estimate_grid import EstimateConfig, Elevations, motion
 from h2.scheduler import Settings, Scheduler
 from h2.scenarios import make_bundle
 from h2.transit import TransitContext
-from test_route_variants import variant_bundle
+from test_h2_route_variants import variant_bundle
 
 
 def fixed(bundle):
@@ -154,13 +154,22 @@ def test_dem_bytes_are_in_fingerprint_and_nodata_blocks_motion(tmp_path):
     assert not third.task('u0','t0')['valid']
 
 
-def test_h3_detects_conflict_and_accepts_explicit_sequential_schedule():
+def test_h3_detects_conflict_and_accepts_explicit_sequential_schedule(tmp_path):
     from pathlib import Path
     from gmp.api.planner_adapter import build_h1
     from gmp.api.h2_adapter import build_scene_sidecar,export_sorties
     from gmp.safety.h3_gate import recompute_metrics,validate_result
     root=Path(__file__).resolve().parents[2]
-    inputs=root/'data/scenarios/S05_multi_uav/input'
+    # Make simultaneous flights conflict independently of H1's chosen sweep angle.
+    # Use an explicit large separation requirement; do not mutate the fixture.
+    import shutil
+    inputs=tmp_path/'input'
+    shutil.copytree(root/'data/scenarios/S05_multi_uav/input',inputs)
+    fleet_path=inputs/'fleet.json'
+    fleet=json.loads(fleet_path.read_text())
+    for uav in fleet['uavs']:
+        uav.update(horizontal_separation_m=5000,vertical_separation_m=500)
+    fleet_path.write_text(json.dumps(fleet))
     bundle=build_h1(inputs,root/'data','makespan')['h1_bundle']
     payloads=json.loads((inputs/'payload_catalog.json').read_text())['payload_profiles']
     settings=Settings(sample_step_m=20,survey_speed_factor=min(p['survey_speed_factor'] for p in payloads))

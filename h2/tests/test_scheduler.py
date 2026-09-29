@@ -56,12 +56,13 @@ def test_candidate_site_not_activated():
         Scheduler(d,Settings()).schedule_uav("u0",["t0"])
 
 
-def test_unpinned_uav_chooses_best_launch_and_reserve_landing_sites():
+@pytest.mark.parametrize("end_role,expected_end", [("landing", "near_end"), ("reserve", "far")])
+def test_unpinned_uav_chooses_best_allowed_landing_site(end_role, expected_end):
     d = make_bundle(1, 1)
     d["sites"] = [
         dict(id="far", x=499000., y=6000000., role="both", candidate=False),
         dict(id="near_start", x=500090., y=6000000., role="start", candidate=False),
-        dict(id="reserve_end", x=500510., y=6000000., role="reserve", candidate=False),
+        dict(id="near_end", x=500510., y=6000000., role=end_role, candidate=False),
     ]
     d["fleet"][0]["start_site"] = None
     d["fleet"][0]["landing_site"] = None
@@ -70,9 +71,9 @@ def test_unpinned_uav_chooses_best_launch_and_reserve_landing_sites():
     route = Scheduler(d, Settings(survey_speed_factor=1)).schedule_uav("u0", ["t0"])[0]
 
     assert route["start_site_id"] == "near_start"
-    assert route["landing_site_id"] == "reserve_end"
+    assert route["landing_site_id"] == expected_end
     assert route["waypoints"][0]["x"] == pytest.approx(500090)
-    assert route["waypoints"][-1]["x"] == pytest.approx(500510)
+    assert route["waypoints"][-1]["x"] == pytest.approx(500510 if end_role == "landing" else 499000)
     assert route["task_ids"] == ["t0"]
 
 

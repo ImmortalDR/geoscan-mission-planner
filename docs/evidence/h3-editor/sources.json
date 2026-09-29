@@ -1,9 +1,0 @@
-{
-  "web/h3/app.js": "8d0d6134f3fc20ac1efc7569bbdfeb10194bc5875b0a5f95fae388076eef512c",
-  "web/h3/editor.js": "efb04d3a635509eb23e45da0eb6528dc107fc408911381634dac5db9f476d7c9",
-  "web/h3/styles.css": "30b51a01883ed20cdfdc3bfed9c5e648d86e983af9634f799e7df7593f1d114b",
-  "web/h3/index.html": "a5cf12b72b7929e112ac4ce4a86e38cdd29f1fecc4cc96d888f533ccd3c6908f",
-  "web/tests/editor_rules.cjs": "b58863ee3c8a968bd3192edac2ee21a310eb788fe7e4ef9a723ac7e52dfb2fb5",
-  "web/tests/h3_editor_smoke.py": "a6f91a9d67a2632c57296f800589e962d101457d612726a860c82aae06f703c2",
-  "tests/api/test_editor_site_choices.py": "512989bc29c6d1f2434a0938db5c19330ba0865327dffee99a84171df112fabd"
-}

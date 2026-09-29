@@ -44,7 +44,7 @@ RGB-GeoTIFF является изображением, **не моделью в�
 
 ```bash
 .venv/bin/python scripts/prepare_h3_imagery.py \
-  --dataset /root/h3/data \
+  --dataset data \
   --output /tmp/h3-imagery-new
 PYTHONPATH=src .venv/bin/python -m pytest tests/api/test_h3_imagery.py -q
 ```

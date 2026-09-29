@@ -152,7 +152,7 @@ def test_total_flight_keeps_checked_incumbent_when_grid_is_more_expensive():
 
 @pytest.mark.parametrize('count,expected', [(1,2),(2,4)])
 def test_annealing_enumerates_h1_variants_without_changing_geometry(count,expected):
-    from test_route_variants import variant_bundle
+    from test_h2_route_variants import variant_bundle
     b=variant_bundle(count);before=deepcopy(b)
     e=SequenceEvaluator(FixedPlanEstimator(b))
     assert len(e.options['u0','t0'])==expected

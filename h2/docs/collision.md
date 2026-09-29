@@ -7,15 +7,15 @@
 
 Источники:
 
-- [ТЗ, §15 — 4D Deconfliction](../docs/reference/spec.md):
+- [ТЗ, §15 — 4D Deconfliction](../../docs/current-planning.md):
   после построения расписания проверяются пары траекторий `p(t)=(x,y,z)`
   с горизонтальной и вертикальной сепарацией, зависящей от типа аппарата.
   Collision avoidance обязателен. Финальный checklist требует zero final 4D conflicts.
-- [ТЗ, §12](../docs/reference/spec.md): fixed-wing требует большей
+- [ТЗ, §12](../../docs/current-planning.md): fixed-wing требует большей
   separation zone; обычный hover для fixed-wing запрещён.
-- [Контракт H1–H2, §2.4](docs/contract/H1_H2.md): каждый аппарат передаёт
+- [Контракт H1–H2, §2.4](../../docs/contract/H1_H2.md): каждый аппарат передаёт
   положительные `horizontal_separation_m` и `vertical_separation_m`.
-- [Роль H2, §3.2](docs/process/roles.md): детектор, resolver и проверка
+- [Роль H2, §3.2](../../docs/architecture.md): детектор, resolver и проверка
   S05-подобного сценария относятся к H2. Итоговая safety-проверка — к H3.
 
 ТЗ требует сепарацию, но не выписывает точную формулу объединения порогов двух
@@ -107,11 +107,11 @@ horizontal(t) >= H  ИЛИ  vertical(t) >= V
 
 | Файл / функция | Назначение |
 |---|---|
-| [src/h2/deconfliction.py](src/h2/deconfliction.py), `detect_conflicts(sorties, fleet)` | Основной детектор: пороги пары, интервалы конфликтов, одновременные вылеты одного БПЛА |
+| [src/h2/deconfliction.py](../src/h2/deconfliction.py), `detect_conflicts(sorties, fleet)` | Основной детектор: пороги пары, интервалы конфликтов, одновременные вылеты одного БПЛА |
 | Там же, `_segments`, `_position`, `_inside_interval` | Валидация сегментов, интерполяция, аналитическое решение неравенств |
-| [src/h2/checks.py](src/h2/checks.py), `check_plan` | Повторно вызывает `detect_conflicts`; добавляет нарушение с кодом `conflict` |
-| [src/h2/planner.py](src/h2/planner.py), `plan_bundle` | Проверка до/после resolver и условия выдачи FEASIBLE |
-| [src/h2/deconfliction.py](src/h2/deconfliction.py), `resolve_conflicts` | Изменяет расписание для устранения конфликтов; это не сам детектор |
+| [src/h2/checks.py](../src/h2/checks.py), `check_plan` | Повторно вызывает `detect_conflicts`; добавляет нарушение с кодом `conflict` |
+| [src/h2/planner.py](../src/h2/planner.py), `plan_bundle` | Проверка до/после resolver и условия выдачи FEASIBLE |
+| [src/h2/deconfliction.py](../src/h2/deconfliction.py), `resolve_conflicts` | Изменяет расписание для устранения конфликтов; это не сам детектор |
 
 Прямой вызов:
 
@@ -161,7 +161,7 @@ downstream сдвигаются до конца другого вылета (+1e
 
 ## 6. Существующие тесты
 
-Основной файл: [tests/test_deconfliction.py](tests/test_deconfliction.py).
+Основной файл: [tests/test_deconfliction.py](../tests/test_deconfliction.py).
 
 | Тест | Что проверяется |
 |---|---|
@@ -186,17 +186,17 @@ downstream сдвигаются до конца другого вылета (+1e
 
 Дополнительные тесты:
 
-- [tests/test_mapf.py](tests/test_mapf.py): десять маршрутов по сетке, устранение
+- [tests/test_mapf.py](../tests/test_mapf.py): десять маршрутов по сетке, устранение
   конфликтов без изменения геометрии; встречное движение по одному ребру;
   невозможность устранения при тесном окне. Четвёртый тест проверяет поиск
   пути с препятствиями, а не сепарацию.
-- [tests/test_adversarial.py](tests/test_adversarial.py),
+- [tests/test_adversarial.py](../tests/test_adversarial.py),
   `test_unresolved_conflicts_never_mark_feasible`: конфликт при выключенном
   resolver приводит к UNRESOLVED и провалу checks.
-- [tests/test_checks.py](tests/test_checks.py),
+- [tests/test_checks.py](../tests/test_checks.py),
   `test_service_and_same_uav_overlap`: дублирующий вылет обнаруживается
   итоговой проверкой как конфликт и нарушение обслуживания.
-- [tests/test_planner.py](tests/test_planner.py),
+- [tests/test_planner.py](../tests/test_planner.py),
   `test_plan_invariants_and_two_objectives`: для обеих целей успешный план
   имеет пустой список оставшихся конфликтов и требует проверки H3.
 

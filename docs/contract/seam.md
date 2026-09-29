@@ -1,9 +1,12 @@
 # Seam agreements H1 ↔ H2 (S08–S11)
 
+Historical compatibility notes for **v1**; the current service uses v3
+([current model](../current-planning.md)).
+
 Status: **accepted policy** for v1 — do not silently expand `eligible_*` or mutate
 task geometry. Align scenes / chunking / fleet with the model instead.
 
-Contract: [`H1_H2.md`](H1_H2.md) · ship bars: [`../guide.md`](../guide.md).
+Contract: [`H1_H2.md`](H1_H2.md) · architecture: [service structure](../architecture.md).
 
 ## Shared principles
 

@@ -9,7 +9,6 @@ import shutil
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-ADDITIONS = ("scripts/prepare_public_repo.py", "scripts/run_local.sh", "docs/PUBLICATION.md")
 FORBIDDEN_PARTS = {".git", ".venv", "__pycache__", ".ssh", ".codex", ".cursor", ".cache", "artifacts", "secrets", "build", "dist"}
 FORBIDDEN_NAMES = {".gitmodules", "ACCESS.txt", "credentials.txt", "compose.env", "users.json", "db_password", "db_admin_password", "database_url"}
 PATTERNS = {
@@ -31,7 +30,7 @@ def main():
     dest = args.destination.absolute()
     if dest.exists() or dest.is_symlink():
         parser.error("Destination must not exist")
-    names = sorted(set(filter(None, git("ls-files", "-z").split("\0"))) | set(ADDITIONS))
+    names = sorted(set(filter(None, git("ls-files", "-z").split("\0"))) - {"PUBLIC_MANIFEST.json"})
     errors = []
     rows = []
     for name in names:

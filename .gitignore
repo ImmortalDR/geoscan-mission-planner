@@ -51,5 +51,5 @@ public-release/
 .vscode/
 .DS_Store
 
-# Preserve measured evidence logs in source snapshots
-!docs/evidence/**/*.log
+# Generated archive manifest (Git identifies the source tree)
+/PUBLIC_MANIFEST.json

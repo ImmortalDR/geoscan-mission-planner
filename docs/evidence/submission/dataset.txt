@@ -1,0 +1,34 @@
+Integrity: 267 files PASS
+verify: S00_smoke_rgb / makespan
+  PASS 100.0%, 1 sorties
+verify: S01_msu_100km2 / makespan
+  PASS 100.0%, 2 sorties
+verify: S01_msu_100km2 / total_flight
+  PASS 100.0%, 1 sorties
+verify: S02_peredelkino / total_flight
+  PASS 100.0%, 1 sorties
+verify: S03_orekhovo_domodedovskaya / makespan
+  PASS 99.99999999999999%, 1 sorties
+verify: S04_multi_sortie / makespan
+  PASS 100.0%, 7 sorties
+verify: S05_multi_uav / makespan
+  PASS 100.0%, 2 sorties
+verify: S06_alternate_site / makespan
+  PASS proof%, 0 sorties
+verify: S06_alternate_site/alternative / makespan
+  PASS 100.0%, 1 sorties
+verify: S07_unreachable_landing / makespan
+  PASS proof%, 0 sorties
+verify: S08_fixed_wing_nfz / makespan
+  PASS 100.0%, 1 sorties
+verify: S09_wind_refusal / makespan
+  PASS proof%, 0 sorties
+verify: S10_different_start_end / makespan
+  PASS 100.0%, 1 sorties
+verify: S11_payload_compatibility / makespan
+  PASS 99.99999999975927%, 5 sorties
+{
+  "passed": 14,
+  "failed": 0,
+  "failures": []
+}

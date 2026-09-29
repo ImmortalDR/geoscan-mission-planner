@@ -1,0 +1,1 @@
+Installation verified. Python: /tmp/geoscan-submission-check/.venv/bin/python. Logs: /tmp/geoscan-submission-check/artifacts/h3_workspace/logs

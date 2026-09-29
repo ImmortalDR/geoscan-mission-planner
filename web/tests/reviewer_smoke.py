@@ -26,7 +26,9 @@ from gmp.api.auth import password_hash
 def main():
     output = ROOT / "docs/evidence/browser"
     output.mkdir(parents=True, exist_ok=True)
-    report = {"viewports": [], "roles": [], "javascript_errors": []}
+    skip_webgl = os.environ.get("GMP_BROWSER_SKIP_WEBGL") == "1"
+    report = {"viewports": [], "roles": [], "javascript_errors": [],
+              "map_check": "skipped explicitly: DOM-only run" if skip_webgl else "required"}
     with tempfile.TemporaryDirectory(prefix="geoscan-browser-") as temporary:
         directory = Path(temporary)
         password, code = secrets.token_urlsafe(24), secrets.token_urlsafe(24)
@@ -73,16 +75,24 @@ def main():
                         page.locator("#login-form button[type=submit]").click()
                         page.wait_for_function("state.csrf && document.getElementById('login-screen').hidden")
                         assert page.evaluate("state.role") == ("admin" if role == "legacy" else role)
+                        if skip_webgl:
+                            page.evaluate("state.map?.remove(); state.map=null; state.mapReady=false")
                         if role == "admin":
                             page.locator("#catalog-open").click()
                             page.locator("#open-templates").click()
                             page.locator(".scenario-item").filter(has_text="S00").click()
                             page.wait_for_function("state.scene?.scenario_id === 'S00_smoke_rgb'")
                             page.wait_for_timeout(1000)
-                            assert page.locator("canvas").count() > 0
-                            pixels = Image.open(io.BytesIO(page.locator("#map").screenshot())).convert("RGB").resize((64, 64))
-                            report["map_colors"] = len(pixels.getcolors(4096))
-                            assert report["map_colors"] > 32, "Map is blank"
+                            if not skip_webgl:
+                                assert page.locator("canvas").count() > 0
+                                # Capture the viewport rectangle directly: locator screenshots wait for
+                                # layout stability and can stall on continuously rendered WebGL.
+                                page.evaluate("state.map?.stop()")
+                                bounds = page.locator("#map").bounding_box()
+                                assert bounds and bounds["width"] > 0 and bounds["height"] > 0
+                                pixels = Image.open(io.BytesIO(page.screenshot(clip=bounds, animations="disabled"))).convert("RGB").resize((64, 64))
+                                report["map_colors"] = len(pixels.getcolors(4096))
+                                assert report["map_colors"] > 32, "Map is blank"
                             page.screenshot(path=str(output / "workspace-desktop.png"))
                         page.goto(url + "/documentation")
                         page.locator("#overview").wait_for(state="visible")
@@ -93,7 +103,8 @@ def main():
                                 page.locator(f"#{tab}").wait_for(state="visible")
                                 assert page.evaluate("document.documentElement.scrollWidth <= innerWidth"), (role, width, tab)
                                 if tab == "algorithms":
-                                    assert page.locator("#algorithm-rows tr").count() == 20
+                                    expected = json.loads((ROOT / "algorithms/catalog.json").read_text())["algorithms"]
+                                    assert page.locator("#algorithm-rows tr").count() == len(expected)
                                 if role == "admin":
                                     page.screenshot(path=str(output / f"{tab}-{width}.png"), full_page=True)
                             if role == "admin":

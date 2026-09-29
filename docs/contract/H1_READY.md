@@ -1,51 +1,20 @@
-# H1 → H2 READY
+# Проверка интеграции H1 → H2
 
-**Status:** READY  
-**Date:** 2026-09-20  
-**Schema:** `gmp.h1_h2.v1`  
-**Owner H1:** zone `h1` · package `h1_coverage`  
-**For:** owner / agent H2
+Текущий сервис использует `gmp.h1_h2.v3` с отдельными полными галсами.
+Поддержка v1/v2 сохранена для эталонов и совместимости.
+[Описание контракта](H1_H2.md) · [Текущий алгоритм](../current-planning.md).
 
-## What you can use now
+H1 не назначает конкретный `uav_id` и время вылета. H2 не перемещает
+геометрию галсов и не расширяет совместимость БВС без изменения входной сцены.
+Полный маршрут проверяется независимым H3.
 
-Live bundles (read these, do not invent fields):
-
-```text
-h3/fixtures/h1_h2/*.bundle.json
-h1/fixtures/h1_h2/*.bundle.json   # same content
-```
-
-Smoke set: `S00`, `S01` (large, **10 UAV**), `S02`, `S08`, `S09`, `S10`, `S11` (+ `S00_contract_smoke` if present).
-
-Где H2 тестировать сложные алгосы (сайт vs bundles): [`H2_TEST_SCENES.md`](H2_TEST_SCENES.md).
-
-Coverage honesty: production engine is **DIY lawnmower** (`diy_lawnmower_v1`); Fields2Cover bridge is unwired — see [`../../h1/docs/architecture.md`](../../h1/docs/architecture.md) §14.
-
-Seam policy for S09/S10/S11: [`seam.md`](seam.md).
-Ship bars (demo vs §29): [`../guide.md`](../guide.md).
-
-Optional visuals (not required by H2): `*_transects.geojson`, `*_map.html` next to bundles under `h1/fixtures/h1_h2/`.
-
-## Contract
-
-- Spec: [`H1_H2.md`](H1_H2.md)
-- Check: `python3 h3/scripts/validate_h1_h2_contract.py` → must exit 0
-- H2 **must not** move task geometry; H1 **does not** assign `uav_id` / departure time
-- Additive only: `extensions.h1.*` (energy_hints, site_recommendation, terrain, …) — ignore if unused
-
-## How H1 regenerates fixtures
+Фикстуры включены в `fixtures/h1_h2/`, `h1/fixtures/h1_h2/` и `h2/fixtures/`.
+Из корня репозитория после установки общего окружения:
 
 ```bash
-cd h1 && source .venv/bin/activate
-h1-coverage export-fixtures --out-dir fixtures/h1_h2
-cp fixtures/h1_h2/*.bundle.json ../h3/fixtures/h1_h2/
-python3 ../h3/scripts/validate_h1_h2_contract.py
+.venv/bin/python scripts/validate_h1_h2_contract.py
+.venv/bin/python -m pytest -c pyproject.toml h1/h1_coverage/tests h2/tests -q
 ```
 
-## H1 done means
-
-- Backlog P0/P1/P2 closed ([`../../h1/docs/backlog.md`](../../h1/docs/backlog.md))
-- `pytest h1_coverage/tests` green
-- Validator green on `fixtures/h1_h2`
-
-**Next product step is H2**, not more H1 polish.
+Шаблоны пользовательского интерфейса и эталонные bundles — разные входы;
+экранные номера нельзя автоматически отождествлять с внутренними ID.

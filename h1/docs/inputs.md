@@ -1,7 +1,7 @@
 # H1 inputs — все входы в Scene & Coverage
 
-Канон загрузки: [`h1_coverage.io.scene.load_scene`](h1_coverage/src/h1_coverage/io/scene.py)  
-Машиночитаемый реестр: [`h1_coverage.io.manifest`](h1_coverage/src/h1_coverage/io/manifest.py)  
+Канон загрузки: [`h1_coverage.io.scene.load_scene`](../h1_coverage/src/h1_coverage/io/scene.py)
+Машиночитаемый реестр: [`h1_coverage.io.manifest`](../h1_coverage/src/h1_coverage/io/manifest.py)
 Проверка папки: `h1-coverage inspect --scene <dir>`
 
 ---
@@ -20,7 +20,7 @@
 | gmp bridge | `gmp.coverage.engine.build_coverage(scene)` | `scene.source_dir` → `run_h1` |
 | gmp shim | `gmp.h1.run_h1` / `gmp` CLI `coverage` | то же |
 
-**Не вход H1:** готовый `*.bundle.json` (это *выход* M13 для H2).  
+**Не вход H1:** готовый `*.bundle.json` (это *выход* M13 для H2).
 **Не вход H1:** HTTP/API upload — пока нет; кладите файлы в каталог и зовите CLI/Python.
 
 ---
@@ -58,7 +58,7 @@
 
 ### Сайты
 
-`role`: `both` | `start` | `landing` | `reserve`. Нужен ≥1 start/landing/both.  
+`role`: `both` | `start` | `landing` | `reserve`. Нужен ≥1 start/landing/both.
 Polygon pad → centroid. Только `reserve` → ошибка.
 
 ### Ошибки vs warn
