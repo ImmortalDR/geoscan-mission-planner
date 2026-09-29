@@ -15,7 +15,15 @@
   <script defer src="/static/app.js"></script>
 </head>
 <body>
-  <div id="login-screen" class="login-screen">
+  <div id="startup-screen" class="startup-screen" role="status" aria-live="polite">
+    <div class="startup-card">
+      <div class="brand login-brand"><span class="brand-mark"><i data-lucide="scan-line"></i></span><strong>GEOSCAN</strong></div>
+      <span id="startup-message">Открываем рабочее пространство…</span>
+      <span class="progress-spinner" aria-hidden="true"></span>
+      <button id="startup-retry" class="quiet" type="button" hidden>Обновить страницу</button>
+    </div>
+  </div>
+  <div id="login-screen" class="login-screen" hidden>
     <form id="login-form" class="login-form" method="post" action="/api/v1/auth/login">
       <div class="brand login-brand"><span class="brand-mark"><i data-lucide="scan-line"></i></span><strong>GEOSCAN</strong></div>
       <h1>Планирование миссий</h1>

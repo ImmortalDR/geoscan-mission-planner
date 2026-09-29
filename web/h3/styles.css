@@ -178,3 +178,6 @@
   #catalog-dialog .scenario-item { min-height:0; }
   .template-folder > svg { display:none; }
 }
+
+
+.startup-screen{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:24px;background:var(--canvas)}.startup-card{display:flex;min-width:260px;flex-direction:column;align-items:center;gap:18px;padding:32px;background:white;border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 28px #21302a12;color:var(--muted)}.startup-card .brand{color:var(--ink)}.startup-card .progress-spinner{width:22px;height:22px}

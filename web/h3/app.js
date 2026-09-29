@@ -94,6 +94,7 @@ function lock() {
   clearTimeout(state.poll);
   pausePlayback();
   $("app").hidden = true;
+  $("startup-screen").hidden = true;
   $("login-screen").hidden = false;
   $("connection-status").textContent = "Введите общий код доступа";
 }
@@ -104,6 +105,7 @@ async function unlock(auth) {
   $("logout").hidden = Boolean(auth.public_access);
   $("session-role").textContent = {viewer:"Наблюдатель", planner:"Планировщик", admin:"Администратор"}[state.role];
   $("access-code").value = "";
+  $("startup-screen").hidden = true;
   $("login-screen").hidden = true;
   $("app").hidden = false;
   initializeMap();
@@ -1781,5 +1783,13 @@ api("/auth/status").then((auth) => {
   $("password-label").textContent=state.namedUsers ? "Пароль" : "Код доступа";
   if(state.namedUsers) $("access-code").removeAttribute("inputmode");
   if (auth.authenticated) return unlock(auth);
+  $("startup-screen").hidden = true;
+  $("login-screen").hidden = false;
   $("connection-status").textContent = auth.configured === false ? "Доступ ещё не настроен администратором" : "Введите общий код доступа";
-}).catch((error) => { $("connection-status").textContent = errorMessage(error); }).finally(() => { $("login-form").querySelector("button[type=submit]").disabled = false; });
+}).catch((error) => {
+  $("startup-message").textContent = "Не удалось подключиться к серверу";
+  $("startup-screen").querySelector(".progress-spinner").hidden = true;
+  $("startup-retry").hidden = false;
+  console.error(error);
+}).finally(() => { $("login-form").querySelector("button[type=submit]").disabled = false; });
+$("startup-retry").addEventListener("click", () => location.reload());
